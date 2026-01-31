@@ -18,11 +18,13 @@ export default function PostCard({ post }: PostCardProps) {
       <Link href={`/posts/${post.slug}`}>
         <div className="relative h-48 bg-gradient-to-br from-[#c41e3a] to-[#e85a70]">
           {post.image ? (
-            <img
-              src={post.image}
-              alt={post.title}
-              className="w-full h-full object-cover"
-            />
+            <div className="w-full h-full flex items-center justify-center bg-white p-4">
+              <img
+                src={post.image}
+                alt={post.title}
+                className="max-w-full max-h-full object-contain"
+              />
+            </div>
           ) : (
             <div className="absolute inset-0 flex items-center justify-center">
               <svg className="w-16 h-16 text-white/30" viewBox="0 0 24 24" fill="currentColor">
