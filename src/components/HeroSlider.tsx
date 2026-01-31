@@ -20,7 +20,7 @@ export default function HeroSlider() {
   }, []);
 
   return (
-    <div className="relative h-[40vh] md:h-[50vh] lg:h-[60vh] overflow-hidden">
+    <div className="relative w-full aspect-[4/3] sm:aspect-[16/9] md:aspect-[2/1] lg:aspect-[21/9] overflow-hidden">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
@@ -33,22 +33,23 @@ export default function HeroSlider() {
             src={slide.image}
             alt={slide.alt}
             fill
-            className="object-cover"
+            className="object-cover object-center"
+            sizes="100vw"
             priority={index === 0}
           />
         </div>
       ))}
 
       {/* Slide indicators */}
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+      <div className="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5 sm:gap-2">
         {slides.map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-2 h-2 rounded-full transition-all ${
+            className={`h-1.5 sm:h-2 rounded-full transition-all ${
               index === currentSlide
-                ? "bg-white w-8"
-                : "bg-white/50 hover:bg-white/70"
+                ? "bg-white w-6 sm:w-8"
+                : "bg-white/50 hover:bg-white/70 w-1.5 sm:w-2"
             }`}
             aria-label={`スライド${index + 1}へ`}
           />

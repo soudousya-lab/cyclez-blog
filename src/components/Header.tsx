@@ -10,17 +10,17 @@ export default function Header() {
   return (
     <header className="bg-white sticky top-0 z-50">
       {/* Top bar - matching main site exactly */}
-      <div className="bg-[#c41e3a] text-white text-[10px] md:text-xs py-1.5 px-4">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-1 md:gap-0">
-          <span>岡山にあるロードバイク・クロスバイク・スポーツ自転車・サイクルウェアを楽しめるサイクルショップ</span>
+      <div className="bg-[#c41e3a] text-white text-[9px] sm:text-[10px] md:text-xs py-1 sm:py-1.5 px-2 sm:px-4">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-0.5 md:gap-0">
+          <span className="text-center md:text-left">岡山のロードバイク・サイクルウェア専門店</span>
           <span className="hidden md:block">営業時間【11：00〜19：00】定休日：水曜日　〒700-0033 岡山県岡山市北区島田本町1−1−47</span>
         </div>
       </div>
 
       {/* Main header */}
       <div className="border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="flex justify-between items-center h-20 md:h-24">
+        <div className="max-w-6xl mx-auto px-2 sm:px-4">
+          <div className="flex justify-between items-center h-14 sm:h-16 md:h-20 lg:h-24">
             {/* Logo - using actual logo image */}
             <Link href="/" className="flex items-center">
               <Image
@@ -28,7 +28,7 @@ export default function Header() {
                 alt="cycleZ - サイクルゼット"
                 width={180}
                 height={60}
-                className="h-12 md:h-14 w-auto"
+                className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto"
                 priority
               />
             </Link>
