@@ -10,9 +10,9 @@ export default function Header() {
   return (
     <header className="bg-white sticky top-0 z-50">
       {/* Top bar - matching main site exactly */}
-      <div className="bg-[#c41e3a] text-white text-[9px] sm:text-[10px] md:text-xs py-1 sm:py-1.5 px-2 sm:px-4">
+      <div className="bg-[#c41e3a] text-white text-[9px] sm:text-[10px] md:text-xs py-1 sm:py-1.5 px-2 sm:px-4 overflow-hidden">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-0.5 md:gap-0">
-          <span className="text-center md:text-left">岡山のロードバイク・サイクルウェア専門店</span>
+          <span className="text-center md:text-left whitespace-nowrap">岡山のロードバイク・サイクルウェア専門店</span>
           <span className="hidden md:block">営業時間【11：00〜19：00】定休日：水曜日　〒700-0033 岡山県岡山市北区島田本町1−1−47</span>
         </div>
       </div>
