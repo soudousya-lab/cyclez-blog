@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const slides = [
-  { image: "/beginner.jpg", alt: "初心者の方へ" },
-  { image: "/woman.jpg", alt: "女性のお客様へ" },
-  { image: "/contact.jpg", alt: "お気軽にご相談ください" },
+  { image: "/beginner.jpg", alt: "初心者の方へ", width: 2400, height: 1000 },
+  { image: "/woman.jpg", alt: "女性のお客様へ", width: 2400, height: 1000 },
+  { image: "/contact.jpg", alt: "お気軽にご相談ください", width: 1920, height: 584 },
 ];
 
 export default function HeroSlider() {
@@ -20,31 +20,20 @@ export default function HeroSlider() {
   }, []);
 
   return (
-    <div className="relative w-full bg-white overflow-hidden">
-      {/* Slides container - contain to show full image */}
-      <div className="relative w-full">
-        {slides.map((slide, index) => (
-          <div
-            key={index}
-            className={`${index === 0 ? 'relative' : 'absolute inset-0'} transition-opacity duration-1000 ${
-              index === currentSlide ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            <Image
-              src={slide.image}
-              alt={slide.alt}
-              width={2400}
-              height={1000}
-              className="w-full h-auto"
-              sizes="100vw"
-              priority={index === 0}
-            />
-          </div>
-        ))}
-      </div>
+    <div className="relative w-full bg-white">
+      {/* Current slide image - full width, auto height */}
+      <Image
+        src={slides[currentSlide].image}
+        alt={slides[currentSlide].alt}
+        width={slides[currentSlide].width}
+        height={slides[currentSlide].height}
+        className="w-full h-auto"
+        sizes="100vw"
+        priority
+      />
 
       {/* Slide indicators */}
-      <div className="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5 sm:gap-2">
+      <div className="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5 sm:gap-2 z-10">
         {slides.map((_, index) => (
           <button
             key={index}
