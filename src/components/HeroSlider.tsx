@@ -33,7 +33,7 @@ export default function HeroSlider() {
             src={slide.image}
             alt={slide.alt}
             fill
-            className="object-cover object-center"
+            className="object-cover object-left sm:object-center"
             sizes="100vw"
             priority={index === 0}
           />
