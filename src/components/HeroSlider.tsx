@@ -20,25 +20,28 @@ export default function HeroSlider() {
   }, []);
 
   return (
-    <div className="relative w-full aspect-[4/3] sm:aspect-[16/9] md:aspect-[2/1] lg:aspect-[21/9] overflow-hidden">
-      {/* Slides */}
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ${
-            index === currentSlide ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <Image
-            src={slide.image}
-            alt={slide.alt}
-            fill
-            className="object-cover object-left sm:object-center"
-            sizes="100vw"
-            priority={index === 0}
-          />
-        </div>
-      ))}
+    <div className="relative w-full bg-white overflow-hidden">
+      {/* Slides container - contain to show full image */}
+      <div className="relative w-full">
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`${index === 0 ? 'relative' : 'absolute inset-0'} transition-opacity duration-1000 ${
+              index === currentSlide ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            <Image
+              src={slide.image}
+              alt={slide.alt}
+              width={2400}
+              height={1000}
+              className="w-full h-auto"
+              sizes="100vw"
+              priority={index === 0}
+            />
+          </div>
+        ))}
+      </div>
 
       {/* Slide indicators */}
       <div className="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5 sm:gap-2">
@@ -48,8 +51,8 @@ export default function HeroSlider() {
             onClick={() => setCurrentSlide(index)}
             className={`h-1.5 sm:h-2 rounded-full transition-all ${
               index === currentSlide
-                ? "bg-white w-6 sm:w-8"
-                : "bg-white/50 hover:bg-white/70 w-1.5 sm:w-2"
+                ? "bg-white w-6 sm:w-8 shadow-md"
+                : "bg-white/50 hover:bg-white/70 w-1.5 sm:w-2 shadow-md"
             }`}
             aria-label={`スライド${index + 1}へ`}
           />
