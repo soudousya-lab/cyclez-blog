@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { format } from "date-fns";
 import { ja } from "date-fns/locale";
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 import React, { ReactElement } from "react";
 
@@ -363,8 +364,14 @@ export default async function PostPage({ params }: Props) {
             {/* Author & Date info */}
             <div className="flex items-center justify-between pb-6 border-b border-gray-100 mb-8">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-[#c41e3a] flex items-center justify-center text-white font-bold">
-                  CZ
+                <div className="w-12 h-12 rounded-full overflow-hidden">
+                  <Image
+                    src="/cyclezmainlogo.png"
+                    alt="cycleZ"
+                    width={48}
+                    height={48}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <p className="font-medium text-gray-900">cycleZ</p>
