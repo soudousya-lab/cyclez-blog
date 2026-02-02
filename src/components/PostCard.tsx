@@ -1,7 +1,10 @@
+"use client";
+
 import Link from "next/link";
 import { PostData } from "@/lib/posts";
 import { format } from "date-fns";
 import { ja } from "date-fns/locale";
+import { FaBicycle } from "react-icons/fa";
 
 interface PostCardProps {
   post: PostData;
@@ -13,12 +16,17 @@ export default function PostCard({ post }: PostCardProps) {
     : "";
 
   return (
-    <article className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+    <article className="group relative bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+      {/* Subtle bike decoration on hover */}
+      <div className="absolute top-3 right-3 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <FaBicycle size={16} className="text-[#c41e3a]/30" />
+      </div>
+
       {/* Thumbnail */}
       <Link href={`/posts/${post.slug}`}>
-        <div className="relative h-36 sm:h-40 md:h-48 bg-gradient-to-br from-[#c41e3a] to-[#e85a70]">
+        <div className="relative h-36 sm:h-40 md:h-48 bg-gradient-to-br from-[#c41e3a] to-[#e85a70] overflow-hidden">
           {post.image ? (
-            <div className="w-full h-full flex items-center justify-center bg-white p-2 sm:p-3 md:p-4">
+            <div className="w-full h-full flex items-center justify-center bg-white p-2 sm:p-3 md:p-4 group-hover:scale-105 transition-transform duration-300">
               <img
                 src={post.image}
                 alt={post.title}
@@ -26,24 +34,30 @@ export default function PostCard({ post }: PostCardProps) {
               />
             </div>
           ) : (
-            <div className="absolute inset-0 flex items-center justify-center">
-              <svg className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 text-white/30" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
-              </svg>
+            <div className="absolute inset-0 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+              <FaBicycle className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 text-white/20" />
             </div>
           )}
           {/* Category badge */}
-          <span className="absolute top-2 left-2 sm:top-3 sm:left-3 bg-white text-[#c41e3a] text-[10px] sm:text-xs font-medium px-2 py-0.5 sm:px-3 sm:py-1 rounded-full">
+          <span className="absolute top-2 left-2 sm:top-3 sm:left-3 bg-white text-[#c41e3a] text-[10px] sm:text-xs font-medium px-2 py-0.5 sm:px-3 sm:py-1 rounded-full shadow-sm">
             {post.category}
           </span>
         </div>
       </Link>
 
-      {/* Content */}
-      <div className="p-3 sm:p-4 md:p-5">
-        <time className="text-gray-500 text-xs sm:text-sm">{formattedDate}</time>
+      {/* Content - with subtle background card effect */}
+      <div className="relative p-3 sm:p-4 md:p-5 bg-gradient-to-b from-white to-gray-50/50">
+        {/* Decorative line */}
+        <div className="absolute top-0 left-4 right-4 h-px bg-gradient-to-r from-transparent via-[#c41e3a]/10 to-transparent" />
+
+        <time className="text-gray-500 text-xs sm:text-sm flex items-center gap-1.5">
+          <svg className="w-3 h-3 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+          {formattedDate}
+        </time>
         <Link href={`/posts/${post.slug}`}>
-          <h2 className="text-sm sm:text-base md:text-lg font-bold mt-1.5 sm:mt-2 text-gray-900 hover:text-[#c41e3a] transition-colors line-clamp-2">
+          <h2 className="text-sm sm:text-base md:text-lg font-bold mt-1.5 sm:mt-2 text-gray-900 hover:text-[#c41e3a] transition-colors line-clamp-2 group-hover:text-[#c41e3a]">
             {post.title}
           </h2>
         </Link>
@@ -57,7 +71,7 @@ export default function PostCard({ post }: PostCardProps) {
             {post.tags.slice(0, 3).map((tag) => (
               <span
                 key={tag}
-                className="text-[10px] sm:text-xs text-gray-500 bg-gray-100 px-1.5 py-0.5 sm:px-2 sm:py-1 rounded"
+                className="text-[10px] sm:text-xs text-gray-500 bg-gray-100/80 px-1.5 py-0.5 sm:px-2 sm:py-1 rounded-full"
               >
                 #{tag}
               </span>
@@ -68,10 +82,10 @@ export default function PostCard({ post }: PostCardProps) {
         {/* Read more */}
         <Link
           href={`/posts/${post.slug}`}
-          className="inline-flex items-center gap-1 text-[#c41e3a] text-xs sm:text-sm font-medium mt-3 sm:mt-4 hover:gap-2 transition-all"
+          className="inline-flex items-center gap-1 text-[#c41e3a] text-xs sm:text-sm font-medium mt-3 sm:mt-4 group-hover:gap-2 transition-all"
         >
           続きを読む
-          <svg className="w-3 h-3 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-3 h-3 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </Link>

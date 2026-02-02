@@ -3,6 +3,7 @@ import PostCard from "@/components/PostCard";
 import HeroSlider from "@/components/HeroSlider";
 import Link from "next/link";
 import Image from "next/image";
+import { BikePatternBg, ChainDivider } from "@/components/decorations/BikeDecorations";
 
 export default function Home() {
   const posts = getAllPosts();
@@ -12,9 +13,10 @@ export default function Home() {
       {/* Hero Slider */}
       <HeroSlider />
 
-      {/* Message Section */}
-      <section className="bg-white py-10 sm:py-14 md:py-20">
-        <div className="max-w-4xl mx-auto px-4 text-center">
+      {/* Message Section with bike decorations */}
+      <section className="relative bg-white py-10 sm:py-14 md:py-20 overflow-hidden">
+        <BikePatternBg />
+        <div className="relative max-w-4xl mx-auto px-4 text-center">
           <div className="inline-flex items-center gap-2 text-[#c41e3a] text-xs sm:text-sm font-medium mb-4 sm:mb-6">
             <span className="w-6 sm:w-8 h-[1px] bg-[#c41e3a]"></span>
             CONCEPT
@@ -75,7 +77,7 @@ export default function Home() {
       </section>
 
       {/* Posts Grid */}
-      <section className="py-8 sm:py-12 md:py-16">
+      <section className="relative py-8 sm:py-12 md:py-16">
         <div className="max-w-6xl mx-auto px-3 sm:px-4">
           <div className="flex items-center justify-between mb-6 sm:mb-8 md:mb-10">
             <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 flex items-center gap-2 sm:gap-3">
@@ -102,6 +104,9 @@ export default function Home() {
           )}
         </div>
       </section>
+
+      {/* Chain divider */}
+      <ChainDivider />
 
       {/* CTA Section */}
       <section className="relative py-12 sm:py-16 md:py-20 overflow-hidden">
