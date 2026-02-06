@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="'Hiragino Sans', 'Noto Sans JP', sans-serif">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#333">自転車はどこを走る？ ー 道路の断面図</text>
+
+  <!-- Ground base -->
+  <rect x="0" y="280" width="800" height="4" fill="#666"/>
+
+  <!-- Sidewalk (left) -->
+  <rect x="30" y="200" width="140" height="80" fill="#d4c5a9" rx="2"/>
+  <rect x="30" y="195" width="140" height="8" fill="#b8a88a" rx="2"/>
+  <!-- Sidewalk pattern -->
+  <line x1="60" y1="210" x2="60" y2="275" stroke="#c4b594" stroke-width="1"/>
+  <line x1="100" y1="210" x2="100" y2="275" stroke="#c4b594" stroke-width="1"/>
+  <line x1="140" y1="210" x2="140" y2="275" stroke="#c4b594" stroke-width="1"/>
+
+  <!-- Curb left -->
+  <rect x="170" y="270" width="15" height="14" fill="#999" rx="1"/>
+
+  <!-- Gutter / road shoulder left -->
+  <rect x="185" y="275" width="50" height="5" fill="#aaa"/>
+
+  <!-- Road surface -->
+  <rect x="185" y="220" width="430" height="60" fill="#555" rx="0"/>
+
+  <!-- Lane divider (center line) -->
+  <line x1="400" y1="225" x2="400" y2="275" stroke="#f0c040" stroke-width="3" stroke-dasharray="15,10"/>
+
+  <!-- Left lane (bicycle side) -->
+  <!-- Road shoulder line -->
+  <line x1="235" y1="225" x2="235" y2="275" stroke="white" stroke-width="2"/>
+
+  <!-- Right lane -->
+
+  <!-- Curb right -->
+  <rect x="615" y="270" width="15" height="14" fill="#999" rx="1"/>
+
+  <!-- Gutter / road shoulder right -->
+  <rect x="565" y="275" width="50" height="5" fill="#aaa"/>
+
+  <!-- Sidewalk (right) -->
+  <rect x="630" y="200" width="140" height="80" fill="#d4c5a9" rx="2"/>
+  <rect x="630" y="195" width="140" height="8" fill="#b8a88a" rx="2"/>
+  <line x1="660" y1="210" x2="660" y2="275" stroke="#c4b594" stroke-width="1"/>
+  <line x1="700" y1="210" x2="700" y2="275" stroke="#c4b594" stroke-width="1"/>
+  <line x1="740" y1="210" x2="740" y2="275" stroke="#c4b594" stroke-width="1"/>
+
+  <!-- Pedestrian on left sidewalk -->
+  <circle cx="80" cy="210" r="8" fill="#6b8e9b"/>
+  <line x1="80" y1="218" x2="80" y2="245" stroke="#6b8e9b" stroke-width="3"/>
+  <line x1="80" y1="245" x2="72" y2="265" stroke="#6b8e9b" stroke-width="3"/>
+  <line x1="80" y1="245" x2="88" y2="265" stroke="#6b8e9b" stroke-width="3"/>
+  <line x1="80" y1="228" x2="70" y2="238" stroke="#6b8e9b" stroke-width="3"/>
+  <line x1="80" y1="228" x2="90" y2="238" stroke="#6b8e9b" stroke-width="3"/>
+
+  <!-- Bicycle rider (correct position - left side of left lane) -->
+  <!-- Wheel back -->
+  <circle cx="215" cy="262" r="13" fill="none" stroke="#c41e3a" stroke-width="2.5"/>
+  <!-- Wheel front -->
+  <circle cx="245" cy="262" r="13" fill="none" stroke="#c41e3a" stroke-width="2.5"/>
+  <!-- Frame -->
+  <line x1="215" y1="262" x2="225" y2="240" stroke="#c41e3a" stroke-width="2.5"/>
+  <line x1="245" y1="262" x2="235" y2="240" stroke="#c41e3a" stroke-width="2.5"/>
+  <line x1="225" y1="240" x2="235" y2="240" stroke="#c41e3a" stroke-width="2.5"/>
+  <line x1="215" y1="262" x2="235" y2="240" stroke="#c41e3a" stroke-width="2"/>
+  <!-- Handlebar -->
+  <line x1="235" y1="240" x2="242" y2="232" stroke="#c41e3a" stroke-width="2"/>
+  <!-- Rider body -->
+  <circle cx="225" cy="222" r="7" fill="#c41e3a"/>
+  <line x1="225" y1="229" x2="228" y2="240" stroke="#c41e3a" stroke-width="2.5"/>
+  <line x1="228" y1="236" x2="238" y2="232" stroke="#c41e3a" stroke-width="2"/>
+
+  <!-- Car in right lane -->
+  <rect x="430" y="232" width="80" height="38" fill="#4a7fb5" rx="8"/>
+  <rect x="438" y="236" width="25" height="16" fill="#a8d4f0" rx="3"/>
+  <rect x="478" y="236" width="25" height="16" fill="#a8d4f0" rx="3"/>
+  <circle cx="445" cy="272" r="7" fill="#333"/>
+  <circle cx="495" cy="272" r="7" fill="#333"/>
+
+  <!-- Labels area (below road) -->
+
+  <!-- Sidewalk label left -->
+  <text x="100" y="310" text-anchor="middle" font-size="13" fill="#666">歩道</text>
+
+  <!-- Road shoulder label -->
+  <text x="210" y="310" text-anchor="middle" font-size="11" fill="#666">路側帯</text>
+
+  <!-- Left lane label -->
+  <text x="310" y="310" text-anchor="middle" font-size="13" fill="#666">車道（左側）</text>
+
+  <!-- Right lane label -->
+  <text x="490" y="310" text-anchor="middle" font-size="13" fill="#666">車道（右側）</text>
+
+  <!-- Sidewalk label right -->
+  <text x="700" y="310" text-anchor="middle" font-size="13" fill="#666">歩道</text>
+
+  <!-- Arrow pointing to correct position -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#c41e3a"/>
+    </marker>
+  </defs>
+
+  <!-- "Ride here" annotation -->
+  <rect x="160" y="130" width="170" height="36" fill="#c41e3a" rx="18"/>
+  <text x="245" y="153" text-anchor="middle" font-size="14" font-weight="bold" fill="white">ここを走る</text>
+  <line x1="230" y1="166" x2="225" y2="210" stroke="#c41e3a" stroke-width="2.5" marker-end="url(#arrowhead)"/>
+
+  <!-- "NG" annotation for sidewalk -->
+  <rect x="55" y="130" width="50" height="30" fill="#999" rx="15"/>
+  <text x="80" y="150" text-anchor="middle" font-size="13" font-weight="bold" fill="white">NG</text>
+  <line x1="80" y1="160" x2="80" y2="195" stroke="#999" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- "NG" annotation for right side -->
+  <rect x="455" y="130" width="80" height="30" fill="#999" rx="15"/>
+  <text x="495" y="150" text-anchor="middle" font-size="13" font-weight="bold" fill="white">逆走NG</text>
+  <line x1="495" y1="160" x2="480" y2="220" stroke="#999" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Direction arrows on road -->
+  <!-- Left lane: going left (towards viewer) -->
+  <polygon points="280,250 295,242 295,258" fill="rgba(255,255,255,0.3)"/>
+  <polygon points="340,250 355,242 355,258" fill="rgba(255,255,255,0.3)"/>
+
+  <!-- Right lane: going right -->
+  <polygon points="560,250 545,242 545,258" fill="rgba(255,255,255,0.3)"/>
+  <polygon points="500,250 485,242 485,258" fill="rgba(255,255,255,0.3)"/>
+
+  <!-- Bottom note -->
+  <rect x="100" y="340" width="600" height="44" fill="#fff3f3" rx="8" stroke="#c41e3a" stroke-width="1"/>
+  <text x="400" y="358" text-anchor="middle" font-size="12" fill="#c41e3a" font-weight="bold">歩道と車道が分かれている場所では、原則として車道の左端を走行</text>
+  <text x="400" y="375" text-anchor="middle" font-size="11" fill="#888">※ 13歳未満・70歳以上・やむを得ない場合は歩道通行可（徐行・歩行者優先）</text>
+</svg>
