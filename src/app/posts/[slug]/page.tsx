@@ -48,6 +48,9 @@ function formatContent(content: string): ReactElement[] {
   let keyIndex = 0;
   let inTable = false;
   let tableRows: string[][] = [];
+  let inCustomBlock = false;
+  let customBlockType = "";
+  let customBlockLines: string[] = [];
 
   // Parse inline markdown (bold, links)
   const parseInline = (text: string): (string | ReactElement)[] => {
@@ -107,34 +110,123 @@ function formatContent(content: string): ReactElement[] {
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
 
+    // Multi-line custom block: closing :::
+    if (inCustomBlock && line.trim() === ":::") {
+      const blockText = customBlockLines.join(" ");
+      if (customBlockType === "point") {
+        elements.push(
+          <div key={`point-${keyIndex++}`} className="my-6 bg-gradient-to-r from-[#c41e3a]/10 to-[#c41e3a]/5 border-l-4 border-[#c41e3a] rounded-r-xl p-5">
+            <div className="flex items-start gap-3">
+              <span className="flex-shrink-0 w-8 h-8 bg-[#c41e3a] rounded-full flex items-center justify-center">
+                <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </span>
+              <p className="text-gray-800 font-medium leading-relaxed">
+                {parseInline(blockText)}
+              </p>
+            </div>
+          </div>
+        );
+      } else if (customBlockType === "warning") {
+        elements.push(
+          <div key={`warning-${keyIndex++}`} className="my-6 bg-gradient-to-r from-amber-50 to-amber-50/50 border-l-4 border-amber-500 rounded-r-xl p-5">
+            <div className="flex items-start gap-3">
+              <span className="flex-shrink-0 w-8 h-8 bg-amber-500 rounded-full flex items-center justify-center">
+                <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+              </span>
+              <p className="text-gray-800 font-medium leading-relaxed">
+                {parseInline(blockText)}
+              </p>
+            </div>
+          </div>
+        );
+      } else if (customBlockType === "success") {
+        elements.push(
+          <div key={`success-${keyIndex++}`} className="my-6 bg-gradient-to-r from-green-50 to-green-50/50 border-l-4 border-green-500 rounded-r-xl p-5">
+            <div className="flex items-start gap-3">
+              <span className="flex-shrink-0 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p className="text-gray-800 font-medium leading-relaxed">
+                {parseInline(blockText)}
+              </p>
+            </div>
+          </div>
+        );
+      }
+      inCustomBlock = false;
+      customBlockType = "";
+      customBlockLines = [];
+      continue;
+    }
+
+    // Multi-line custom block: opening :::type
+    if (!inCustomBlock && (line.trim() === ":::point" || line.trim() === ":::warning" || line.trim() === ":::success")) {
+      inCustomBlock = true;
+      customBlockType = line.trim().replace(":::", "");
+      customBlockLines = [];
+      continue;
+    }
+
+    // Multi-line custom block: content lines
+    if (inCustomBlock) {
+      customBlockLines.push(line);
+      continue;
+    }
+
     // Empty line
     if (line.trim() === "") {
       // End table if we were in one
       if (inTable && tableRows.length > 0) {
+        const headers = tableRows[0].map(c => c.trim());
+        const dataRows = tableRows.slice(2);
         elements.push(
-          <div key={`table-${keyIndex++}`} className="overflow-x-auto my-6">
-            <table className="w-full border-collapse bg-white rounded-lg overflow-hidden shadow-sm">
-              <thead>
-                <tr className="bg-[#c41e3a] text-white">
-                  {tableRows[0].map((cell, cellIndex) => (
-                    <th key={cellIndex} className="px-4 py-3 text-left text-sm font-medium">
-                      {cell.trim()}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {tableRows.slice(2).map((row, rowIndex) => (
-                  <tr key={rowIndex} className={rowIndex % 2 === 0 ? "bg-gray-50" : "bg-white"}>
-                    {row.map((cell, cellIndex) => (
-                      <td key={cellIndex} className="px-4 py-3 text-sm text-gray-700 border-t border-gray-100">
-                        {cell.trim()}
-                      </td>
+          <div key={`table-${keyIndex++}`} className="my-6">
+            {/* Desktop table */}
+            <div className="hidden sm:block overflow-x-auto">
+              <table className="w-full border-collapse bg-white rounded-lg overflow-hidden shadow-sm">
+                <thead>
+                  <tr className="bg-[#c41e3a] text-white">
+                    {headers.map((cell, cellIndex) => (
+                      <th key={cellIndex} className="px-4 py-3 text-left text-sm font-medium">
+                        {cell}
+                      </th>
                     ))}
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {dataRows.map((row, rowIndex) => (
+                    <tr key={rowIndex} className={rowIndex % 2 === 0 ? "bg-gray-50" : "bg-white"}>
+                      {row.map((cell, cellIndex) => (
+                        <td key={cellIndex} className="px-4 py-3 text-sm text-gray-700 border-t border-gray-100">
+                          {parseInline(cell.trim())}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            {/* Mobile card layout */}
+            <div className="sm:hidden space-y-3">
+              {dataRows.map((row, rowIndex) => (
+                <div key={rowIndex} className="bg-white rounded-lg shadow-sm border border-gray-100 p-4">
+                  {row.map((cell, cellIndex) => (
+                    <div key={cellIndex} className={cellIndex === 0 ? "font-bold text-[#c41e3a] text-sm mb-1" : "text-sm text-gray-700 mb-1 last:mb-0"}>
+                      {cellIndex > 0 && headers[cellIndex] && (
+                        <span className="text-gray-400 text-xs mr-1">{headers[cellIndex]}:</span>
+                      )}
+                      {parseInline(cell.trim())}
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </div>
           </div>
         );
         tableRows = [];
