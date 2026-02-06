@@ -82,10 +82,14 @@ cycleZのブログ記事を書いてほしい。
 
 ### ワークフロー（記事の作り方）
 
-1. **一次情報の投入**：新チャットで店舗エピソードをどんどん追加していく
-2. **記事テーマの選定**：`cycleZ_blog_themes_40.docx` などのテーマリストから記事を選ぶ
+1. **一次情報の投入**：新チャットで店舗エピソードをどんどん追加していく → `content/primary-sources/store-episodes.md` に追記
+2. **記事テーマの選定**：テーマリストから記事を選ぶ
+   - 既存テーマ：`cycleZ_blog_themes_40.docx`
+   - 追加テーマ：`content/article-plans/upcoming-themes.md`
 3. **記事の執筆**：上記ルールに従い、一次情報を活用して記事を書く
-4. **store-episodes.md の更新**：新しいエピソードが入ったら追記。使用済みフラグも管理する
+4. **管理ファイルの更新**：
+   - `store-episodes.md`：新エピソード追記、使用済みフラグ管理
+   - `upcoming-themes.md`：新テーマ追加、ステータス更新
 
 ---
 
