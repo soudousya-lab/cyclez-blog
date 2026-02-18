@@ -378,6 +378,29 @@ function formatContent(content: string): ReactElement[] {
       continue;
     }
 
+    // Image ![alt](url)
+    const imageMatch = line.match(/^!\[([^\]]*)\]\(([^)]+)\)/);
+    if (imageMatch) {
+      const alt = imageMatch[1];
+      const src = imageMatch[2];
+      elements.push(
+        <figure key={`img-${keyIndex++}`} className="my-8">
+          <img
+            src={src}
+            alt={alt}
+            className="w-full max-w-2xl mx-auto rounded-lg shadow-sm"
+            loading="lazy"
+          />
+          {alt && (
+            <figcaption className="text-center text-sm text-gray-500 mt-2">
+              {alt}
+            </figcaption>
+          )}
+        </figure>
+      );
+      continue;
+    }
+
     // Quote block (> text)
     if (line.startsWith("> ")) {
       const quoteText = line.replace("> ", "");
