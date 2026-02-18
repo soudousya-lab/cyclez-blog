@@ -32,11 +32,12 @@
 
 ### 既存記事（品質基準として参照）
 
-`content/articles/` 内の記事を必要に応じて読むこと。特に：
+`content/posts/` 内の記事を必要に応じて読むこと。特に：
 
 - **`roadbike-beginner-guide.md`** — 本音ベースの語り、具体的な数字、読者への共感。品質のベンチマーク。
 - **`kurashiki-minivelo-tyrell-loox.md`** — お客様起点のストーリー、実在スポットの詳細、予算内訳。
 - **`roadbike-vs-crossbike.md`** — 比較記事の構成の参考。
+- **`okayama-stylish-crossbike-gios-ampio.md`** — 競合対策記事の構成例。コスト比較テーブル、親訴求、商品を前面に出さない構成。
 
 ### 絶対に守ること（要約）
 
