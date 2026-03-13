@@ -41,14 +41,3 @@ export function ChainDivider() {
     </div>
   );
 }
-
-// セクションタイトル用の装飾
-export function SectionDecorator({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="relative inline-flex items-center gap-3">
-      <FaBicycle size={20} className="text-[#c41e3a] opacity-30" />
-      {children}
-      <FaBicycle size={20} className="text-[#c41e3a] opacity-30 scale-x-[-1]" />
-    </div>
-  );
-}
