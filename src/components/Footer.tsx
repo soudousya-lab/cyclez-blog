@@ -51,15 +51,25 @@ export default function Footer() {
             </a>
           </div>
 
-          {/* ブログ */}
+          {/* お知らせ・ラインナップ */}
           <div>
-            <h3 className="font-bold text-gray-900 mb-3">ブログ</h3>
+            <h3 className="font-bold text-gray-900 mb-3">お知らせ</h3>
+            <ul className="space-y-2 text-sm mb-4">
+              <li className="flex items-center gap-2">
+                <svg className="w-3 h-3 text-[#c41e3a]" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 5l7 7-7 7" />
+                </svg>
+                <Link href="/category/news" className="text-gray-600 hover:text-[#c41e3a]">お知らせ一覧</Link>
+              </li>
+            </ul>
+
+            <h3 className="font-bold text-gray-900 mb-3">ラインナップ</h3>
             <ul className="space-y-2 text-sm">
               <li className="flex items-center gap-2">
                 <svg className="w-3 h-3 text-[#c41e3a]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 5l7 7-7 7" />
                 </svg>
-                <Link href="/" className="text-gray-600 hover:text-[#c41e3a]">最新記事</Link>
+                <Link href="/lineup" className="text-gray-600 hover:text-[#c41e3a]">取り扱いブランド</Link>
               </li>
             </ul>
           </div>
