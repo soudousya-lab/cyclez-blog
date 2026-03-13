@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif;
+    color: #1a1a1a;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ===== HEADER ===== */
+  .header {
+    background: #0d0d0d;
+    padding: 3.5mm 15mm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #c41e3a, #FF6B35);
+  }
+
+  .header-brand {
+    font-size: 14pt;
+    font-weight: 900;
+    color: #c41e3a;
+    letter-spacing: 2px;
+  }
+
+  .header-collab {
+    font-size: 8pt;
+    color: #888;
+    letter-spacing: 1px;
+  }
+
+  .header-collab span {
+    color: #FF6B35;
+    font-weight: 700;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    text-align: center;
+    padding: 7mm 18mm 4mm;
+  }
+
+  .hero-lead {
+    font-size: 12pt;
+    color: #888;
+    margin-bottom: 2mm;
+  }
+
+  .hero-main {
+    font-size: 32pt;
+    font-weight: 900;
+    line-height: 1.3;
+    color: #0d0d0d;
+  }
+
+  .hero-main .em {
+    color: #c41e3a;
+    font-size: 38pt;
+  }
+
+  .hero-sub {
+    font-size: 11pt;
+    color: #555;
+    margin-top: 3mm;
+    line-height: 1.5;
+  }
+
+  /* ===== DIVIDER ===== */
+  .divider {
+    width: 50mm;
+    height: 2px;
+    background: linear-gradient(90deg, #c41e3a, #FF6B35);
+    margin: 0 auto;
+  }
+
+  /* ===== PROBLEM ===== */
+  .problem-section {
+    padding: 5mm 18mm 4mm;
+  }
+
+  .problem-title {
+    font-size: 12pt;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 4mm;
+    color: #333;
+  }
+
+  .problem-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5mm;
+  }
+
+  .problem-item {
+    display: flex;
+    align-items: center;
+    gap: 3mm;
+    padding: 3mm 4mm;
+    background: #f5f5f5;
+    border-radius: 2mm;
+    border-left: 3px solid #c41e3a;
+  }
+
+  .problem-check {
+    width: 5mm;
+    height: 5mm;
+    background: #c41e3a;
+    color: #fff;
+    font-size: 7pt;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .problem-text {
+    font-size: 10pt;
+    font-weight: 700;
+    color: #222;
+    line-height: 1.3;
+  }
+
+  /* ===== MESSAGE ===== */
+  .message-section {
+    padding: 3mm 18mm;
+    text-align: center;
+  }
+
+  .message-box {
+    background: #1a1a1a;
+    border-radius: 3mm;
+    padding: 5mm 8mm;
+  }
+
+  .message-main {
+    font-size: 18pt;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.4;
+  }
+
+  .message-main .em {
+    color: #FF6B35;
+  }
+
+  .message-sub {
+    font-size: 9pt;
+    color: #999;
+    margin-top: 2mm;
+    line-height: 1.4;
+  }
+
+  /* ===== FLOW ===== */
+  .flow-section {
+    padding: 4mm 18mm 3mm;
+  }
+
+  .flow-title {
+    font-size: 10pt;
+    font-weight: 900;
+    text-align: center;
+    color: #666;
+    margin-bottom: 3mm;
+    letter-spacing: 1px;
+  }
+
+  .flow-steps {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .flow-step {
+    flex: 1;
+    text-align: center;
+    padding: 3mm 2mm;
+    border-radius: 2mm;
+  }
+
+  .step-cyclez { background: #fdf2f4; }
+  .step-fire { background: #fff5f0; }
+
+  .flow-step-num {
+    width: 9mm;
+    height: 9mm;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 11pt;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2mm;
+  }
+
+  .step-cyclez .flow-step-num { background: #c41e3a; }
+  .step-fire .flow-step-num { background: #FF6B35; }
+
+  .flow-step-label {
+    font-size: 7pt;
+    font-weight: 700;
+    margin-bottom: 1mm;
+  }
+
+  .step-cyclez .flow-step-label { color: #c41e3a; }
+  .step-fire .flow-step-label { color: #FF6B35; }
+
+  .flow-step-main {
+    font-size: 11pt;
+    font-weight: 900;
+    color: #1a1a1a;
+    line-height: 1.3;
+  }
+
+  .flow-arrow {
+    font-size: 18pt;
+    color: #ccc;
+    flex-shrink: 0;
+    width: 7mm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+  }
+
+  /* ===== CTA ===== */
+  .cta-section {
+    padding: 3mm 18mm 2mm;
+    text-align: center;
+  }
+
+  .cta-main {
+    background: #c41e3a;
+    color: #fff;
+    font-size: 18pt;
+    font-weight: 900;
+    padding: 4mm 10mm;
+    border-radius: 3mm;
+    display: inline-block;
+    margin: 0 auto;
+    letter-spacing: 1px;
+  }
+
+  .cta-sub {
+    margin-top: 2mm;
+    font-size: 10pt;
+    color: #666;
+    line-height: 1.4;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    display: flex;
+    height: 10mm;
+    margin-top: auto;
+  }
+
+  .footer-left {
+    flex: 1;
+    background: #0d0d0d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c41e3a;
+  }
+
+  .footer-right {
+    flex: 1;
+    background: #FF6B35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .footer-brand {
+    font-weight: 900;
+    font-size: 10pt;
+    letter-spacing: 2px;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-brand">cycleZ</div>
+    <div class="header-collab">連携パートナー: <span>FIRE FITNESS 2F</span></div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-lead">フィッティングを受けたあなたへ</div>
+    <div class="hero-main">
+      ポジションは合った。<br>
+      <span class="em">次は、身体。</span>
+    </div>
+    <div class="hero-sub">
+      機材では解決しない痛みと効率の問題。<br>
+      その原因は「身体の使い方」にあります。
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- PROBLEM -->
+  <div class="problem-section">
+    <div class="problem-title">フィッティングでこんな指摘を受けていませんか？</div>
+    <div class="problem-grid">
+      <div class="problem-item">
+        <div class="problem-check">!</div>
+        <div class="problem-text">ペダリング中に<br>腹圧が抜けている</div>
+      </div>
+      <div class="problem-item">
+        <div class="problem-check">!</div>
+        <div class="problem-text">骨盤が安定せず<br>左右にブレる</div>
+      </div>
+      <div class="problem-item">
+        <div class="problem-check">!</div>
+        <div class="problem-text">股関節が硬く<br>ペダリングが窮屈</div>
+      </div>
+      <div class="problem-item">
+        <div class="problem-check">!</div>
+        <div class="problem-text">長距離で腰・膝に<br>痛みが出る</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MESSAGE -->
+  <div class="message-section">
+    <div class="message-box">
+      <div class="message-main">
+        その課題、<span class="em">上の階</span>で改善できます。
+      </div>
+      <div class="message-sub">
+        2FのパーソナルジムFIRE FITNESSでは、サイクリスト向けの身体改善プログラムを提供しています。
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOW -->
+  <div class="flow-section">
+    <div class="flow-title">同じビル内で完結する改善サイクル</div>
+    <div class="flow-steps">
+      <div class="flow-step step-cyclez">
+        <div class="flow-step-num">1</div>
+        <div class="flow-step-label">1F cycleZ</div>
+        <div class="flow-step-main">フィッティングで<br>課題を発見</div>
+      </div>
+      <div class="flow-arrow">&rsaquo;</div>
+      <div class="flow-step step-fire">
+        <div class="flow-step-num">2</div>
+        <div class="flow-step-label">2F FIRE FITNESS</div>
+        <div class="flow-step-main">パーソナルで<br>身体を改善</div>
+      </div>
+      <div class="flow-arrow">&rsaquo;</div>
+      <div class="flow-step step-cyclez">
+        <div class="flow-step-num">3</div>
+        <div class="flow-step-label">1F cycleZ</div>
+        <div class="flow-step-main">再フィッティングで<br>成果を確認</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <div>
+      <div class="cta-main">スタッフにお声がけください</div>
+      <div class="cta-sub">
+        そのまま2Fへご案内できます。体験トレーニングも受付中。
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-left">
+      <div class="footer-brand">cycleZ ── 1F</div>
+    </div>
+    <div class="footer-right">
+      <div class="footer-brand">FIRE FITNESS ── 2F</div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

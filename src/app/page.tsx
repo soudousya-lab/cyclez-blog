@@ -131,25 +131,21 @@ export default function Home() {
             お気軽にお問い合わせください。
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
-            <a
-              href="https://cycle-z.com/#contact"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/contact"
               className="inline-flex items-center justify-center gap-2 bg-white text-[#c41e3a] px-6 sm:px-8 py-2.5 sm:py-3 rounded-full hover:bg-gray-100 transition-all hover:scale-105 font-bold text-sm sm:text-base"
             >
               お問い合わせ
               <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-            </a>
-            <a
-              href="https://cycle-z.com"
-              target="_blank"
-              rel="noopener noreferrer"
+            </Link>
+            <Link
+              href="/about"
               className="inline-flex items-center justify-center gap-2 bg-transparent text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-full hover:bg-white/10 transition-all font-medium border-2 border-white text-sm sm:text-base"
             >
-              店舗サイトを見る
-            </a>
+              CycleZとは？
+            </Link>
           </div>
         </div>
       </section>

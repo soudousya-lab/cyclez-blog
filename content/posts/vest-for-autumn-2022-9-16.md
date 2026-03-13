@@ -1,0 +1,243 @@
+---
+title: "秋のサイクリングに大活躍のベスト"
+date: "2022-09-16"
+description: ""
+category: "news"
+tags: ["news", "maintenance-blog"]
+wp_id: 3999
+wp_url: "https://cycle-z.com/blog/2022/09/16/vest-for-autumn-2022-9-16/"
+---
+
+9月に入り、真夏の暑さは少しずつ緩和されているように思います。
+
+気温が30度ならばギリギリ耐えられそうだと私、仙田も思っております……！
+
+過ごしやすくなる反面、朝と晩のライドは少し肌寒くなりどんな装備がいるか頭を悩ます時期にもなります。
+
+そんな時あると便利なのがベストです。
+
+今回はベストの利便性、使ってみてほしい場面の紹介をしていくゼーーーット！！
+
+ 
+
+### ベストの利便性
+
+ 
+
+#### ＜❶ポケットに忍ばせられるコンパクトさ＞
+
+袖がない分小さいので、ジャージのポケットの中に収められるサイズ感。
+
+大体どのようなものでも嵩張らないので、小さく折り畳めます。
+
+#### ＜❷サイズに縛られにくい＞
+
+ウィンドブレーカーなど袖のあるものはボディ部分の丈や太さ、袖の長さなどピッタリ合わせるために考慮する部分が必然的に多くなりますよね。
+
+しかしベストは袖がないぶん長さには縛られません！
+
+#### ＜❸暖かさの微調整がしやすい＞
+
+大体羽織ると暑い、脱ぐと寒い！そんな経験をするのが多い秋。
+
+日中の日が出ているタイミングでは暑いですが、日が沈むと途端に冷え込んできます。
+
+そんな時にはポケットに忍ばせておいて、体温を上げるのに役立ててください。
+
+サイクルウェアのベストは背中部分がメッシュになっているものが多いです。
+
+走行中に前面の風は出来るだけ防いで、背面は熱が篭りやすいので出来るだけ抜けを良くしています。
+
+		
+			#gallery-54 {
+				margin: auto;
+			}
+			#gallery-54 .gallery-item {
+				float: left;
+				margin-top: 10px;
+				text-align: center;
+				width: 50%;
+			}
+			#gallery-54 img {
+				border: 2px solid #cfcfcf;
+			}
+			#gallery-54 .gallery-caption {
+				margin-left: 0;
+			}
+			/* see gallery_shortcode() in wp-includes/media.php */
+		
+		
+			
+				![assos背面](https://cycle-z.com/wp-content/uploads/2022/09/423eaf91e2b21836de26dd2480cfa871-768x1024.jpg)
+
+			
+			
+				![assos背面メッシュ](https://cycle-z.com/wp-content/uploads/2022/09/8dbedb1d293e46fc8037ca17ade31456-768x1024.jpg)
+
+			
+		
+袖口の部分から風が入ると背中がパラシュートみたいになってしまうので、メッシュがあると更に抜けが良いですね。
+
+暖かさを担保しながらも、サイクリングは自らがかなり熱を出すので、風の通りを作り逃げ道を作ってあげることが大事なんです。
+
+その役割を担えるのはベストになります！
+
+ちょい足しにするにはウィンドブレーカーより便利です。
+
+#### ＜❹放熱が可能＞
+
+脇の下の関節部を出すことによる絶妙な体温調整。
+
+サイクリングのコースは平坦だけじゃなくて常にアップダウンがあるので、この良さを知って欲しいです！
+
+ 
+
+### 意外と山道でも使えます
+
+あとは長い距離を走ると必ず出てくるのが山です！
+
+山を登る時は風を食らって体が冷える速度よりも、むしろ体が熱くなってくる速度の方が早いですよね。
+
+その時にはジッパーを開け放ち、熱を全開放しましょう。
+
+山頂に着いた時には汗だくになっていても、下る際の汗冷えを防ぐために首元からジッパーをしっかり閉めれば、胴体部分をしっかり守ってあげられます。
+
+日本でサイクリングするならば必須でしょう。
+
+山を登るのが更に快適になること間違いなしです。
+
+ 
+
+### サイクルZおすすめベスト紹介！
+
+ 
+
+#### ＜①ASSOSの防風タイプ＞
+
+世界のトッププロ選手からの支持も厚い、実力派のASSOSアソス！
+
+本当に風だけを防ぐ[MILLE GT WIND VEST](https://www.e-apst.com/products/mille-gt-wind-vest-black)！
+
+		
+			#gallery-55 {
+				margin: auto;
+			}
+			#gallery-55 .gallery-item {
+				float: left;
+				margin-top: 10px;
+				text-align: center;
+				width: 50%;
+			}
+			#gallery-55 img {
+				border: 2px solid #cfcfcf;
+			}
+			#gallery-55 .gallery-caption {
+				margin-left: 0;
+			}
+			/* see gallery_shortcode() in wp-includes/media.php */
+		
+		
+			
+				![assos防風ベスト背面](https://cycle-z.com/wp-content/uploads/2022/09/fb11029345393096ea51a0716dd2d1cc.png)
+
+			
+			
+				![](https://cycle-z.com/wp-content/uploads/2022/09/a2d5a5bdb917ec4aa2caa00b90374ba0.png)
+
+			
+		
+画像引用元：[ASSOS PROSHOP TOKYO](https://www.e-apst.com/)
+
+防水機能を備えながらも蒸れはないように外に逃す。
+
+この機能がいかに優れているかでベストとしての良し悪しは決まってきます！
+
+実際に触ってみると分かる薄さ。
+
+丸めると簡単にバックポケットに入るサイズにもなります。
+
+ベスト自体にポケットを設けていないため、本当に携帯性を重視した作りになっています。
+
+ 
+
+#### ＜②ASSOSの背面メッシュタイプ＞
+
+こちらが完全に背中がメッシュ素材となったモデル、[MILLE GTS SPRING FALL VEST C2](https://www.e-apst.com/products/assos-mille-gts-spring-fall-vest-c2-black)！
+
+		
+			#gallery-56 {
+				margin: auto;
+			}
+			#gallery-56 .gallery-item {
+				float: left;
+				margin-top: 10px;
+				text-align: center;
+				width: 50%;
+			}
+			#gallery-56 img {
+				border: 2px solid #cfcfcf;
+			}
+			#gallery-56 .gallery-caption {
+				margin-left: 0;
+			}
+			/* see gallery_shortcode() in wp-includes/media.php */
+		
+		
+			
+				![assosのベスト背面](https://cycle-z.com/wp-content/uploads/2022/09/d095f457a19ecf587831c30722134d93-768x1024.jpg)
+
+			
+			
+				![assos背面メッシュ](https://cycle-z.com/wp-content/uploads/2022/09/8dbedb1d293e46fc8037ca17ade31456-768x1024.jpg)
+
+			
+		
+実物で体感して欲しいのが正面の素材ですね。
+
+![](https://cycle-z.com/wp-content/uploads/2022/09/911405f94640e3d540e2add7cfbeeeed-768x1024.jpg)
+
+最新の透湿防水性素材が使われており表面にジグザグ模様が見てとれます。
+
+よくあるウィンドブレーカーに使われる素材のシャカシャカしたモノとはかなり違います。
+
+ジャージに近いような、それでいて撥水性もある不思議な触り心地です。
+
+ 
+
+#### ＜③夜道も安心のsigr＞
+
+光を当てると模様が浮かび上がり、服自体が光り輝くリフレクティブで出来ている[sigr](https://www.qbei.jp/item/pi-916416/)シーガーというブランドのベストです。
+
+![](https://cycle-z.com/wp-content/uploads/2022/09/f858dab95d2d4d2bdd1c3b91c3112ad1-688x1024.jpg)
+
+安全性とデザイン性を兼ね備えていて良いですね。
+
+こちらは背面にポケットを用意しており、ポケットを使用することで折り畳んでジッパー内に収納することができます。
+
+パッカブル仕様兼ポケットとして使えるのはやはり便利ですね。
+
+値段もASSOSよりお手頃です！
+
+ 
+
+### 秋のサイクリングシーズンをより快適に
+
+9月に入りまだまだ暑くてそんな装備いらないでしょー！と思っていたらすぐに涼しい時期がやってきますので快適度アップのためにぜひ取り入れてみてください。
+
+サイクリングに最高の季節はもう目の前ですよ！
+
+ 
+
+### 気軽に参加できる様々なイベントを企画してます！
+
+サイクルZでは、スポーツバイクのメンテナンスも学べる初心者講習会や、ロードバイク、スポーツバイクファンが気軽に楽しく参加できるようなサイクリングイベントをどんどん企画していきます！
+
+ロードバイク、スポーツバイクなど愛車のメンテナンス方法でお悩みのあなた！
+
+ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
+
+ 
+
+[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+
+](https://cycle-z.com/first/)

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif;
+    color: #1a1a1a;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ===== TOP BAR ===== */
+  .top-bar {
+    background: #0d0d0d;
+    padding: 3mm 15mm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .top-bar-left {
+    font-size: 9pt;
+    color: #999;
+    letter-spacing: 1px;
+  }
+
+  .top-bar-right {
+    font-size: 9pt;
+    color: #c41e3a;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    text-align: center;
+    padding: 7mm 18mm 4mm;
+  }
+
+  .hero-problem {
+    font-size: 12pt;
+    color: #666;
+    margin-bottom: 2mm;
+  }
+
+  .hero-main {
+    font-size: 30pt;
+    font-weight: 900;
+    line-height: 1.3;
+    color: #0d0d0d;
+  }
+
+  .hero-main .em {
+    color: #c41e3a;
+    font-size: 36pt;
+  }
+
+  .hero-sub {
+    font-size: 11pt;
+    color: #888;
+    margin-top: 2mm;
+    line-height: 1.4;
+  }
+
+  /* ===== DIVIDER ===== */
+  .divider {
+    width: 50mm;
+    height: 2px;
+    background: linear-gradient(90deg, #c41e3a, #FF6B35);
+    margin: 0 auto;
+  }
+
+  /* ===== REASON SECTION ===== */
+  .reason-section {
+    padding: 4mm 18mm 3mm;
+  }
+
+  .reason-title {
+    font-size: 11pt;
+    font-weight: 900;
+    text-align: center;
+    color: #333;
+    margin-bottom: 3mm;
+  }
+
+  .reason-grid {
+    display: flex;
+    gap: 3mm;
+  }
+
+  .reason-card {
+    flex: 1;
+    background: #fafafa;
+    border-radius: 2mm;
+    padding: 3mm;
+    text-align: center;
+    border-top: 3px solid #c41e3a;
+  }
+
+  .reason-card-num {
+    font-size: 8pt;
+    color: #c41e3a;
+    font-weight: 900;
+    margin-bottom: 1mm;
+    letter-spacing: 1px;
+  }
+
+  .reason-card-title {
+    font-size: 11pt;
+    font-weight: 900;
+    color: #1a1a1a;
+    margin-bottom: 1mm;
+    line-height: 1.3;
+  }
+
+  .reason-card-desc {
+    font-size: 8pt;
+    color: #666;
+    line-height: 1.4;
+  }
+
+  /* ===== BEFORE/AFTER ===== */
+  .ba-section {
+    padding: 3mm 18mm 2mm;
+  }
+
+  .ba-box {
+    display: flex;
+    align-items: center;
+    gap: 3mm;
+  }
+
+  .ba-before, .ba-after {
+    flex: 1;
+    padding: 3mm;
+    border-radius: 2mm;
+    text-align: center;
+  }
+
+  .ba-before {
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+  }
+
+  .ba-after {
+    background: #fff5f0;
+    border: 1px solid #FF6B35;
+  }
+
+  .ba-label {
+    font-size: 8pt;
+    font-weight: 700;
+    margin-bottom: 1mm;
+  }
+
+  .ba-before .ba-label { color: #999; }
+  .ba-after .ba-label { color: #FF6B35; }
+
+  .ba-text {
+    font-size: 10pt;
+    font-weight: 900;
+    line-height: 1.3;
+  }
+
+  .ba-before .ba-text { color: #666; }
+  .ba-after .ba-text { color: #1a1a1a; }
+
+  .ba-arrow {
+    font-size: 20pt;
+    color: #c41e3a;
+    font-weight: 900;
+    flex-shrink: 0;
+  }
+
+  /* ===== FLOW ===== */
+  .flow-section {
+    padding: 3mm 18mm 2mm;
+  }
+
+  .flow-title {
+    font-size: 10pt;
+    font-weight: 900;
+    text-align: center;
+    color: #333;
+    margin-bottom: 2mm;
+  }
+
+  .flow-bar {
+    display: flex;
+    align-items: center;
+    background: #f8f8f8;
+    border-radius: 2mm;
+    padding: 2mm;
+    gap: 0;
+  }
+
+  .flow-item {
+    flex: 1;
+    text-align: center;
+    padding: 2mm 2mm;
+  }
+
+  .flow-item-label {
+    font-size: 7pt;
+    color: #999;
+    font-weight: 700;
+    margin-bottom: 1mm;
+  }
+
+  .flow-item-main {
+    font-size: 10pt;
+    font-weight: 900;
+    color: #1a1a1a;
+    line-height: 1.3;
+  }
+
+  .flow-item-loc {
+    font-size: 7pt;
+    color: #c41e3a;
+    font-weight: 700;
+    margin-top: 1mm;
+  }
+
+  .flow-item-loc.fire { color: #FF6B35; }
+
+  .flow-chevron {
+    font-size: 14pt;
+    color: #ccc;
+    flex-shrink: 0;
+    width: 5mm;
+    text-align: center;
+  }
+
+  /* ===== CTA ===== */
+  .cta-section {
+    padding: 3mm 18mm 2mm;
+    text-align: center;
+  }
+
+  .cta-main {
+    background: #c41e3a;
+    color: #fff;
+    font-size: 16pt;
+    font-weight: 900;
+    padding: 3mm 10mm;
+    border-radius: 3mm;
+    display: inline-block;
+    margin: 0 auto;
+    letter-spacing: 1px;
+  }
+
+  .cta-sub {
+    margin-top: 2mm;
+    font-size: 9pt;
+    color: #666;
+    line-height: 1.4;
+  }
+
+  .cta-sub strong {
+    color: #1a1a1a;
+    font-size: 10pt;
+  }
+
+  /* ===== PROFILE ===== */
+  .profile-section {
+    padding: 2mm 18mm 2mm;
+  }
+
+  .profile-box {
+    display: flex;
+    align-items: center;
+    gap: 4mm;
+    background: #f8f8f8;
+    border-radius: 2mm;
+    padding: 3mm 5mm;
+  }
+
+  .profile-photo {
+    width: 14mm;
+    height: 14mm;
+    border-radius: 50%;
+    background: #ddd;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7pt;
+    color: #999;
+  }
+
+  .profile-info {
+    flex: 1;
+  }
+
+  .profile-name {
+    font-size: 10pt;
+    font-weight: 900;
+    color: #1a1a1a;
+  }
+
+  .profile-title {
+    font-size: 8pt;
+    color: #666;
+    margin-top: 0.5mm;
+    line-height: 1.3;
+  }
+
+  .profile-qr {
+    width: 14mm;
+    height: 14mm;
+    background: #eee;
+    border-radius: 2mm;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7pt;
+    color: #999;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    display: flex;
+    height: 10mm;
+    margin-top: auto;
+  }
+
+  .footer-left {
+    flex: 1;
+    background: #0d0d0d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .footer-right {
+    flex: 1;
+    background: #FF6B35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .footer-brand {
+    font-weight: 900;
+    font-size: 10pt;
+    letter-spacing: 2px;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+    <div class="top-bar-left">医療職 &times; 競技者</div>
+    <div class="top-bar-right">LOGICAL BIKE FITTING</div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-problem">
+      ポジションを変えても、まだ痛い？
+    </div>
+    <div class="hero-main">
+      原因は<span class="em">機材</span>じゃなく<br>
+      <span class="em">身体</span>かもしれません。
+    </div>
+    <div class="hero-sub">
+      作業療法士 &times; JBCF E1選手が、医学的根拠に基づくフィッティングを行います。
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- REASON -->
+  <div class="reason-section">
+    <div class="reason-title">一般的なフィッティングとの違い</div>
+    <div class="reason-grid">
+      <div class="reason-card">
+        <div class="reason-card-num">01</div>
+        <div class="reason-card-title">痛みの原因を<br>「身体」から特定</div>
+        <div class="reason-card-desc">サドル高ではなく、<br>股関節・腹圧・代償動作を評価</div>
+      </div>
+      <div class="reason-card">
+        <div class="reason-card-num">02</div>
+        <div class="reason-card-title">解剖学に基づく<br>論理的な説明</div>
+        <div class="reason-card-desc">「なぜそこが痛むのか」を<br>医学的に言語化して伝える</div>
+      </div>
+      <div class="reason-card">
+        <div class="reason-card-num">03</div>
+        <div class="reason-card-title">指摘で終わらない<br>改善への接続</div>
+        <div class="reason-card-desc">2Fのパーソナルジムと連携し<br>身体の課題を実際に改善</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BEFORE → AFTER -->
+  <div class="ba-section">
+    <div class="ba-box">
+      <div class="ba-before">
+        <div class="ba-label">BEFORE</div>
+        <div class="ba-text">ポジション調整しても<br>痛みが消えない</div>
+      </div>
+      <div class="ba-arrow">&rarr;</div>
+      <div class="ba-after">
+        <div class="ba-label">AFTER</div>
+        <div class="ba-text">原因を特定し<br>身体から改善できる</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOW -->
+  <div class="flow-section">
+    <div class="flow-title">同じビル内で完結する改善サイクル</div>
+    <div class="flow-bar">
+      <div class="flow-item">
+        <div class="flow-item-label">STEP 1</div>
+        <div class="flow-item-main">フィッティング<br>で評価</div>
+        <div class="flow-item-loc">1F cycleZ</div>
+      </div>
+      <div class="flow-chevron">&rsaquo;</div>
+      <div class="flow-item">
+        <div class="flow-item-label">STEP 2</div>
+        <div class="flow-item-main">パーソナルで<br>身体を改善</div>
+        <div class="flow-item-loc fire">2F FIRE FITNESS</div>
+      </div>
+      <div class="flow-chevron">&rsaquo;</div>
+      <div class="flow-item">
+        <div class="flow-item-label">STEP 3</div>
+        <div class="flow-item-main">再評価で<br>成果を確認</div>
+        <div class="flow-item-loc">1F cycleZ</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <div>
+      <div class="cta-main">cycleZ スタッフにお声がけください</div>
+      <div class="cta-sub">
+        <strong>フィッティングのご予約・ご相談</strong>を承ります。2Fジムへのご案内もそのまま可能です。
+      </div>
+    </div>
+  </div>
+
+  <!-- PROFILE -->
+  <div class="profile-section">
+    <div class="profile-box">
+      <div class="profile-photo">PHOTO</div>
+      <div class="profile-info">
+        <div class="profile-name">武井 龍世</div>
+        <div class="profile-title">作業療法士 / JBCF E1 / 2026全日本選手権出場</div>
+      </div>
+      <div class="profile-qr">QR</div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-left">
+      <div class="footer-brand">cycleZ ── 1F</div>
+    </div>
+    <div class="footer-right">
+      <div class="footer-brand">FIRE FITNESS ── 2F</div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+---
+title: "自転車のフレーム素材について知ろう！"
+date: "2023-05-05"
+description: ""
+category: "maintenance-blog"
+tags: ["maintenance-blog"]
+wp_id: 4891
+wp_url: "https://cycle-z.com/blog/2023/05/05/bicycle-frame-materials-2023-5-5/"
+---
+
+皆さんはご自身が乗っている自転車のフレーム素材を気にしたことはありますか？
+
+フレームに使われる素材には大きく分けて、クロモリ、アルミ、カーボンの3つがあります。
+
+フレームは自転車において最も重要なパーツであり、性能やデザインに大きく影響します。
+
+そこで今回は、皆さんに知っていただきたいフレームの特徴と違いについて紹介していくゼーーーット！！
+
+ 
+
+### ❶クロモリ
+
+まずは「クロモリ」。この素材は実は鉄製品です。
+
+![クロモリ](https://cycle-z.com/wp-content/uploads/2023/05/72ca6f5f9b724ae0b5f6bdc9656cd471-768x1024.jpg)
+
+ママチャリなど一般的な自転車フレームに使われるハイテン鋼よりも高品質なクロムモリブデン鋼を使用しており、高級素材のスチールバイクとして知られています。
+
+クロモリの素材は鉄に添加物を混ぜることで、さまざまな特性を持ったスチールバイクが生み出されます。
+
+ 
+
+### ❷アルミ
+
+次に「アルミ」。
+
+文字通りアルミ素材を使用したバイクで、1970年頃から自転車の素材として広く使用されるようになりました。
+
+アルミバイクは軽量かつ強度があり、高い剛性を持つため、スピードを追求するロードバイクや競技用バイクに多く採用されます。
+
+また、アルミには添加物を混ぜることで硬度や耐食性などの特性を変化させたものがあり、それぞれに適した用途があります。
+
+		
+			#gallery-7 {
+				margin: auto;
+			}
+			#gallery-7 .gallery-item {
+				float: left;
+				margin-top: 10px;
+				text-align: center;
+				width: 50%;
+			}
+			#gallery-7 img {
+				border: 2px solid #cfcfcf;
+			}
+			#gallery-7 .gallery-caption {
+				margin-left: 0;
+			}
+			/* see gallery_shortcode() in wp-includes/media.php */
+		
+		
+			
+				![アルミの自由な造型](https://cycle-z.com/wp-content/uploads/2023/05/a6df8bfb539081ad47036edc5bd06b9c-768x1024.jpg)
+
+			
+			
+				![アルミの溶接部分](https://cycle-z.com/wp-content/uploads/2023/05/53c10096ecfa71fe550fd2070d888c16-768x1024.jpg)
+
+			
+		
+ 
+
+### ❸カーボン
+
+最後に紹介するのは「カーボン」です。
+
+カーボン素材を使用した自転車は、1980年頃にアルミバイクと同時期に登場しました。
+
+カーボンは軽さや剛性に優れる素材で、最新のプロレースでは主流となっています。
+
+		
+			#gallery-8 {
+				margin: auto;
+			}
+			#gallery-8 .gallery-item {
+				float: left;
+				margin-top: 10px;
+				text-align: center;
+				width: 50%;
+			}
+			#gallery-8 img {
+				border: 2px solid #cfcfcf;
+			}
+			#gallery-8 .gallery-caption {
+				margin-left: 0;
+			}
+			/* see gallery_shortcode() in wp-includes/media.php */
+		
+		
+			
+				![カーボンの横から見たら太いところ](https://cycle-z.com/wp-content/uploads/2023/05/ca1f8512769a8f2a5d2e5b575256f47a-768x1024.jpg)
+
+			
+			
+				![カーボンによる薄いところ](https://cycle-z.com/wp-content/uploads/2023/05/c4fbebc23efe802eaf2cb2186e9895e5-1024x768.jpg)
+
+			
+		
+そのため、ロードバイクやトライアスロンバイクなどの競技用バイクに広く採用されています。
+
+また、カーボンにも様々な種類があり、耐久性や剛性、振動吸収性などの特性を変化させたものがあります。
+
+		
+			#gallery-9 {
+				margin: auto;
+			}
+			#gallery-9 .gallery-item {
+				float: left;
+				margin-top: 10px;
+				text-align: center;
+				width: 50%;
+			}
+			#gallery-9 img {
+				border: 2px solid #cfcfcf;
+			}
+			#gallery-9 .gallery-caption {
+				margin-left: 0;
+			}
+			/* see gallery_shortcode() in wp-includes/media.php */
+		
+		
+			
+				![カーボンの自由な造型2](https://cycle-z.com/wp-content/uploads/2023/05/eafecbf550548dde92da5228e272dd43-768x1024.jpg)
+
+			
+			
+				![カーボンの自由な造型](https://cycle-z.com/wp-content/uploads/2023/05/b85d77d52b43c0eb4846ee2293bfa744-768x1024.jpg)
+
+			
+		
+ 
+
+### フレーム素材の違いについて
+
+このほかにも、マグネシウム、チタン、ステンレス、スカンジウムなどが使われていますが、普及率は先に挙げた3大素材に比べると低いです。
+
+クロモリは、昔から自転車に使われ続けている素材で、スチールバイクの味わいを残しながら、細いパイプを繋ぎ合わせた形状によって独特の見た目を持ちます。
+
+アルミやカーボンは、素材自体を薄くし形状を工夫することで、クロモリよりも軽量化を実現しています。
+
+プロ選手が使うバイクは、特にカーボン素材が多くなっています。
+
+形状も細く角ばらせたものが多く、軽さだけでなくエアロ効果も狙っています。
+
+ 
+
+### スチールバイクがおすすめ！でも素材だけでは判断できない？
+
+自転車を選ぶ際には、多くの観点から見る必要がありますが、なかでも素材については特に重視される方が多いと思います。
+
+当店のスタッフたちは、スチールバイクが特にお気に入りで、皆様にもぜひおすすめしたい素材です！
+
+しかし、自転車の性能は、カーボンなどの新しい素材を導入するなど日々進化しています。
+
+素材だけで自転車の良し悪しを決めることはできず、しっかり試乗することが大切です。
+
+素材以外にも、乗り心地、フレームの重量、装備など、様々な要素を考慮することが重要です。
+
+そこで、2023年5月14日に、クロモリのオーダーメイドバイクを製作している「[macchi cycles](http://www.macchicycles.com/)」さんの試乗会がサイクルZにて開催されます。
+
+![クロモリ2](https://cycle-z.com/wp-content/uploads/2023/05/ed282ed6c1b9903d483363300de254a7-1024x768.jpg)
+
+ぜひ、この機会にクロモリに興味を持っていただければと思います！
+
+ 
+
+### 気軽に参加できる様々なイベントを企画してます！
+
+サイクルZでは、スポーツバイクのメンテナンスも学べる初心者講習会や、ロードバイク、スポーツバイクファンが気軽に楽しく参加できるようなサイクリングイベントをどんどん企画していきます！
+
+ロードバイク、スポーツバイクなど愛車のメンテナンス方法でお悩みのあなた！
+
+ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
+
+ 
+
+[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+
+](https://cycle-z.com/first/)

@@ -23,7 +23,7 @@ export default function PostCard({ post }: PostCardProps) {
       </div>
 
       {/* Thumbnail */}
-      <Link href={`/posts/${post.slug}`}>
+      <Link href={`/blog/${post.slug}`}>
         <div className="relative h-36 sm:h-40 md:h-48 bg-gradient-to-br from-[#c41e3a] to-[#e85a70] overflow-hidden">
           {post.image ? (
             <div className="w-full h-full flex items-center justify-center bg-white p-2 sm:p-3 md:p-4 group-hover:scale-105 transition-transform duration-300">
@@ -56,7 +56,7 @@ export default function PostCard({ post }: PostCardProps) {
           </svg>
           {formattedDate}
         </time>
-        <Link href={`/posts/${post.slug}`}>
+        <Link href={`/blog/${post.slug}`}>
           <h2 className="text-sm sm:text-base md:text-lg font-bold mt-1.5 sm:mt-2 text-gray-900 hover:text-[#c41e3a] transition-colors line-clamp-2 group-hover:text-[#c41e3a]">
             {post.title}
           </h2>
@@ -81,7 +81,7 @@ export default function PostCard({ post }: PostCardProps) {
 
         {/* Read more */}
         <Link
-          href={`/posts/${post.slug}`}
+          href={`/blog/${post.slug}`}
           className="inline-flex items-center gap-1 text-[#c41e3a] text-xs sm:text-sm font-medium mt-3 sm:mt-4 group-hover:gap-2 transition-all"
         >
           続きを読む

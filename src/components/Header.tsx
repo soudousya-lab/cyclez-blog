@@ -9,7 +9,7 @@ export default function Header() {
 
   return (
     <header className="bg-white sticky top-0 z-50">
-      {/* Top bar - matching main site exactly */}
+      {/* Top bar */}
       <div className="bg-[#c41e3a] text-white text-[9px] sm:text-[10px] md:text-xs py-1 sm:py-1.5 px-2 sm:px-4 overflow-hidden">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-0.5 md:gap-0">
           <span className="text-center md:text-left whitespace-nowrap">岡山のロードバイク・サイクルウェア専門店</span>
@@ -21,7 +21,7 @@ export default function Header() {
       <div className="border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-2 sm:px-4">
           <div className="flex justify-between items-center h-14 sm:h-16 md:h-20 lg:h-24">
-            {/* Logo - using actual logo image */}
+            {/* Logo */}
             <Link href="/" className="flex items-center">
               <Image
                 src="/logo.png"
@@ -62,12 +62,12 @@ export default function Header() {
               </a>
 
               {/* Access */}
-              <a href="https://cycle-z.com/#access" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-gray-700 hover:text-[#c41e3a] text-sm">
+              <Link href="/access" className="flex items-center gap-1 text-gray-700 hover:text-[#c41e3a] text-sm">
                 <svg className="w-4 h-4 text-[#c41e3a]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                 </svg>
                 アクセス
-              </a>
+              </Link>
 
               {/* Phone */}
               <a href="tel:086-252-7744" className="flex items-center gap-1 text-[#c41e3a] font-bold text-lg">
@@ -78,17 +78,15 @@ export default function Header() {
               </a>
 
               {/* Contact button */}
-              <a
-                href="https://cycle-z.com/#contact"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/contact"
                 className="bg-[#c41e3a] text-white px-6 py-2.5 rounded-full hover:bg-[#a01830] transition-colors flex items-center gap-2 text-sm font-medium"
               >
                 お問い合わせ
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-              </a>
+              </Link>
             </div>
 
             {/* Mobile menu button */}
@@ -124,44 +122,39 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Navigation bar - matching main site */}
+      {/* Navigation bar - desktop */}
       <nav className="hidden md:block border-b border-gray-200 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <ul className="flex justify-center gap-0">
             <li>
-              <a href="https://cycle-z.com/#news" target="_blank" rel="noopener noreferrer" className="block px-6 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
-                お知らせ
-              </a>
+              <Link href="/" className="block px-6 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
+                ブログ
+              </Link>
             </li>
             <li>
-              <a href="https://cycle-z.com/beginner/" target="_blank" rel="noopener noreferrer" className="block px-6 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
+              <Link href="/first" className="block px-6 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
                 初めての方へ
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://cycle-z.com/maintenance/" target="_blank" rel="noopener noreferrer" className="block px-6 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
+              <Link href="/maintenance" className="block px-6 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
                 メンテナンス
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://cycle-z.com/fitting/" target="_blank" rel="noopener noreferrer" className="block px-6 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
+              <Link href="/fitting" className="block px-6 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
                 フィッティング
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://cycle-z.com/about/" target="_blank" rel="noopener noreferrer" className="block px-6 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
+              <Link href="/about" className="block px-6 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
                 CycleZとは？
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://cycle-z.com/lineup/" target="_blank" rel="noopener noreferrer" className="block px-6 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
-                ラインナップ
-              </a>
-            </li>
-            <li>
-              <a href="https://cycle-z.com/faq/" target="_blank" rel="noopener noreferrer" className="block px-6 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
+              <Link href="/faq" className="block px-6 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
                 よくある質問
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -171,20 +164,20 @@ export default function Header() {
       {isMenuOpen && (
         <nav className="md:hidden py-4 border-t bg-white">
           <div className="flex flex-col">
-            <a href="https://cycle-z.com/#news" className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">お知らせ</a>
-            <a href="https://cycle-z.com/beginner/" className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">初めての方へ</a>
-            <a href="https://cycle-z.com/maintenance/" className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">メンテナンス</a>
-            <a href="https://cycle-z.com/fitting/" className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">フィッティング</a>
-            <a href="https://cycle-z.com/about/" className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">CycleZとは？</a>
-            <a href="https://cycle-z.com/lineup/" className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">ラインナップ</a>
-            <a href="https://cycle-z.com/faq/" className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">よくある質問</a>
+            <Link href="/" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">ブログ</Link>
+            <Link href="/first" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">初めての方へ</Link>
+            <Link href="/maintenance" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">メンテナンス</Link>
+            <Link href="/fitting" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">フィッティング</Link>
+            <Link href="/about" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">CycleZとは？</Link>
+            <Link href="/faq" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">よくある質問</Link>
             <div className="px-6 py-4 border-t mt-2">
-              <a
-                href="https://cycle-z.com/#contact"
+              <Link
+                href="/contact"
+                onClick={() => setIsMenuOpen(false)}
                 className="block w-full bg-[#c41e3a] text-white px-5 py-3 rounded-full hover:bg-[#a01830] transition-colors text-center font-medium"
               >
                 お問い合わせ
-              </a>
+              </Link>
             </div>
           </div>
         </nav>

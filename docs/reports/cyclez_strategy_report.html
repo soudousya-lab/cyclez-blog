@@ -1,0 +1,1488 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    padding: 0;
+    page-break-after: always;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* ==================== SLIDE 1: COVER ==================== */
+  .cover {
+    background: linear-gradient(135deg, #0d0d0d 0%, #1a1a2e 50%, #16213e 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40mm 20mm;
+  }
+
+  .cover-tag {
+    font-size: 11pt;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #e74c3c;
+    font-weight: 700;
+    margin-bottom: 10mm;
+    border: 2px solid #e74c3c;
+    padding: 3mm 8mm;
+  }
+
+  .cover h1 {
+    font-size: 28pt;
+    font-weight: 900;
+    line-height: 1.3;
+    margin-bottom: 8mm;
+    letter-spacing: 1px;
+  }
+
+  .cover h1 span {
+    color: #e74c3c;
+  }
+
+  .cover-sub {
+    font-size: 13pt;
+    color: #aaa;
+    margin-bottom: 15mm;
+    line-height: 1.6;
+  }
+
+  .cover-meta {
+    font-size: 10pt;
+    color: #666;
+    margin-top: 20mm;
+  }
+
+  .cover-meta strong {
+    color: #aaa;
+  }
+
+  .cover-line {
+    width: 60mm;
+    height: 2px;
+    background: #e74c3c;
+    margin: 8mm auto;
+  }
+
+  /* ==================== COMMON SLIDE ==================== */
+  .slide {
+    padding: 15mm 18mm;
+    background: #fff;
+  }
+
+  .slide-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8mm;
+    padding-bottom: 4mm;
+    border-bottom: 3px solid #0d0d0d;
+  }
+
+  .slide-num {
+    font-size: 36pt;
+    font-weight: 900;
+    color: #e74c3c;
+    margin-right: 5mm;
+    line-height: 1;
+  }
+
+  .slide-title {
+    font-size: 18pt;
+    font-weight: 900;
+    color: #0d0d0d;
+    line-height: 1.2;
+  }
+
+  .slide-title small {
+    display: block;
+    font-size: 9pt;
+    color: #888;
+    font-weight: 400;
+    margin-top: 1mm;
+  }
+
+  /* Metric cards */
+  .metrics-row {
+    display: flex;
+    gap: 3mm;
+    margin-bottom: 5mm;
+  }
+
+  .metric-card {
+    flex: 1;
+    padding: 4mm;
+    border-radius: 2mm;
+    text-align: center;
+  }
+
+  .metric-card.red {
+    background: #fdf0f0;
+    border: 1.5px solid #e74c3c;
+  }
+
+  .metric-card.dark {
+    background: #f0f0f0;
+    border: 1.5px solid #333;
+  }
+
+  .metric-card.green {
+    background: #f0fdf4;
+    border: 1.5px solid #27ae60;
+  }
+
+  .metric-card.blue {
+    background: #f0f4fd;
+    border: 1.5px solid #2980b9;
+  }
+
+  .metric-card.orange {
+    background: #fff8f0;
+    border: 1.5px solid #e67e22;
+  }
+
+  .metric-label {
+    font-size: 7.5pt;
+    color: #666;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 1mm;
+  }
+
+  .metric-value {
+    font-size: 18pt;
+    font-weight: 900;
+    line-height: 1.1;
+  }
+
+  .metric-card.red .metric-value { color: #e74c3c; }
+  .metric-card.dark .metric-value { color: #1a1a1a; }
+  .metric-card.green .metric-value { color: #27ae60; }
+  .metric-card.blue .metric-value { color: #2980b9; }
+  .metric-card.orange .metric-value { color: #e67e22; }
+
+  .metric-note {
+    font-size: 7pt;
+    color: #999;
+    margin-top: 1mm;
+  }
+
+  /* Section titles */
+  .section-title {
+    font-size: 11pt;
+    font-weight: 900;
+    color: #0d0d0d;
+    margin: 5mm 0 3mm;
+    padding-left: 3mm;
+    border-left: 4px solid #e74c3c;
+  }
+
+  /* Tables */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 4mm;
+    font-size: 8pt;
+  }
+
+  .data-table th {
+    background: #1a1a2e;
+    color: #fff;
+    padding: 2mm 3mm;
+    font-weight: 700;
+    text-align: left;
+    font-size: 7.5pt;
+  }
+
+  .data-table td {
+    padding: 2mm 3mm;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .data-table tr:nth-child(even) td {
+    background: #fafafa;
+  }
+
+  .data-table .highlight {
+    background: #fff8f8 !important;
+    font-weight: 700;
+  }
+
+  .data-table .val-good { color: #27ae60; font-weight: 700; }
+  .data-table .val-bad { color: #e74c3c; font-weight: 700; }
+  .data-table .val-warn { color: #e67e22; font-weight: 700; }
+
+  /* Bullet points */
+  .bullet-list {
+    margin: 2mm 0 4mm 0;
+    padding-left: 5mm;
+    font-size: 9pt;
+    line-height: 1.7;
+  }
+
+  .bullet-list li {
+    margin-bottom: 1mm;
+  }
+
+  .bullet-list li strong {
+    color: #e74c3c;
+  }
+
+  /* Alert box */
+  .alert-box {
+    background: #1a1a2e;
+    color: #fff;
+    padding: 4mm 5mm;
+    border-radius: 2mm;
+    margin: 4mm 0;
+    font-size: 9pt;
+    line-height: 1.6;
+  }
+
+  .alert-box.red {
+    background: #e74c3c;
+  }
+
+  .alert-box .alert-title {
+    font-size: 10pt;
+    font-weight: 900;
+    margin-bottom: 2mm;
+  }
+
+  .alert-box.warn {
+    background: #fff3e0;
+    color: #e65100;
+    border: 2px solid #e65100;
+  }
+
+  .alert-box.green-box {
+    background: #1b5e20;
+    color: #fff;
+  }
+
+  /* Problem cards */
+  .problem-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3mm;
+    margin: 3mm 0;
+  }
+
+  .problem-card {
+    width: calc(50% - 1.5mm);
+    padding: 3mm 4mm;
+    border-radius: 2mm;
+    border-left: 4px solid #e74c3c;
+    background: #fdf8f8;
+    font-size: 8.5pt;
+    line-height: 1.5;
+  }
+
+  .problem-card .p-title {
+    font-weight: 900;
+    color: #e74c3c;
+    font-size: 9pt;
+    margin-bottom: 1mm;
+  }
+
+  /* Action items */
+  .action-card {
+    padding: 4mm 5mm;
+    margin-bottom: 3mm;
+    border-radius: 2mm;
+    border: 2px solid #1a1a2e;
+    background: #fff;
+  }
+
+  .action-card .a-num {
+    display: inline-block;
+    background: #e74c3c;
+    color: #fff;
+    font-weight: 900;
+    font-size: 9pt;
+    width: 7mm;
+    height: 7mm;
+    line-height: 7mm;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 2mm;
+  }
+
+  .action-card .a-title {
+    display: inline;
+    font-weight: 900;
+    font-size: 10pt;
+    color: #0d0d0d;
+  }
+
+  .action-card .a-body {
+    font-size: 8.5pt;
+    color: #444;
+    margin-top: 2mm;
+    padding-left: 9mm;
+    line-height: 1.6;
+  }
+
+  /* Priority badge */
+  .priority {
+    display: inline-block;
+    font-size: 7pt;
+    font-weight: 700;
+    padding: 0.5mm 2mm;
+    border-radius: 1mm;
+    margin-left: 2mm;
+    vertical-align: middle;
+  }
+  .priority.high { background: #e74c3c; color: #fff; }
+  .priority.mid { background: #e67e22; color: #fff; }
+  .priority.low { background: #2980b9; color: #fff; }
+
+  /* Timeline */
+  .timeline {
+    margin: 3mm 0;
+  }
+
+  .tl-row {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 2mm;
+  }
+
+  .tl-phase {
+    width: 22mm;
+    padding: 3mm;
+    font-size: 8pt;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    border-radius: 2mm 0 0 2mm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tl-phase.p1 { background: #e74c3c; }
+  .tl-phase.p2 { background: #e67e22; }
+  .tl-phase.p3 { background: #2980b9; }
+
+  .tl-content {
+    flex: 1;
+    padding: 3mm 4mm;
+    border: 1.5px solid #ddd;
+    border-left: none;
+    border-radius: 0 2mm 2mm 0;
+    font-size: 8pt;
+    line-height: 1.6;
+  }
+
+  .tl-content strong {
+    color: #1a1a1a;
+  }
+
+  /* Verdict box */
+  .verdict {
+    background: #0d0d0d;
+    color: #fff;
+    padding: 5mm 6mm;
+    border-radius: 2mm;
+    margin-top: 4mm;
+    text-align: center;
+  }
+
+  .verdict h3 {
+    font-size: 14pt;
+    font-weight: 900;
+    margin-bottom: 2mm;
+    color: #e74c3c;
+  }
+
+  .verdict p {
+    font-size: 10pt;
+    line-height: 1.6;
+    color: #ccc;
+  }
+
+  .verdict p strong {
+    color: #fff;
+  }
+
+  /* Footer */
+  .page-footer {
+    position: absolute;
+    bottom: 5mm;
+    left: 18mm;
+    right: 18mm;
+    display: flex;
+    justify-content: space-between;
+    font-size: 7pt;
+    color: #bbb;
+  }
+
+  /* Blog list */
+  .blog-topic {
+    display: flex;
+    align-items: center;
+    padding: 2mm 0;
+    border-bottom: 1px solid #eee;
+    font-size: 8.5pt;
+  }
+
+  .blog-topic .bt-num {
+    width: 6mm;
+    height: 6mm;
+    background: #1a1a2e;
+    color: #fff;
+    font-weight: 900;
+    font-size: 8pt;
+    text-align: center;
+    line-height: 6mm;
+    border-radius: 50%;
+    margin-right: 3mm;
+    flex-shrink: 0;
+  }
+
+  .blog-topic .bt-title {
+    font-weight: 700;
+    flex: 1;
+  }
+
+  .blog-topic .bt-kw {
+    font-size: 7pt;
+    color: #888;
+    width: 35mm;
+    text-align: right;
+  }
+
+  .blog-topic .bt-purpose {
+    font-size: 7pt;
+    color: #e74c3c;
+    width: 25mm;
+    text-align: right;
+    font-weight: 700;
+  }
+
+  /* Comparison bar */
+  .bar-container {
+    margin: 2mm 0;
+  }
+
+  .bar-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2mm;
+    font-size: 8pt;
+  }
+
+  .bar-label {
+    width: 30mm;
+    font-weight: 700;
+    text-align: right;
+    padding-right: 3mm;
+  }
+
+  .bar-track {
+    flex: 1;
+    height: 6mm;
+    background: #f0f0f0;
+    border-radius: 1mm;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .bar-fill {
+    height: 100%;
+    border-radius: 1mm;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 2mm;
+    font-size: 7pt;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .bar-fill.red { background: #e74c3c; }
+  .bar-fill.blue { background: #2980b9; }
+  .bar-fill.green { background: #27ae60; }
+  .bar-fill.orange { background: #e67e22; }
+  .bar-fill.dark { background: #1a1a2e; }
+
+  .small-text {
+    font-size: 7.5pt;
+    color: #888;
+    line-height: 1.5;
+  }
+
+  .bold-text {
+    font-weight: 900;
+    color: #1a1a1a;
+  }
+
+  .highlight-text {
+    background: #fef3cd;
+    padding: 0.5mm 1.5mm;
+    font-weight: 700;
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: 7pt;
+    padding: 0.5mm 2mm;
+    border-radius: 1mm;
+    font-weight: 700;
+    margin-right: 1mm;
+  }
+
+  .tag.red { background: #fde; color: #c0392b; }
+  .tag.blue { background: #def; color: #2471a3; }
+  .tag.green { background: #dfe; color: #1e8449; }
+  .tag.orange { background: #fef3cd; color: #e65100; }
+
+  /* Donut chart (CSS only) */
+  .donut-wrap {
+    display: flex;
+    gap: 5mm;
+    align-items: center;
+    margin: 3mm 0;
+  }
+
+  .donut-legend {
+    font-size: 8pt;
+    line-height: 1.8;
+  }
+
+  .donut-legend .dot {
+    display: inline-block;
+    width: 3mm;
+    height: 3mm;
+    border-radius: 50%;
+    margin-right: 1.5mm;
+    vertical-align: middle;
+  }
+
+  /* Insight box */
+  .insight-box {
+    background: #f8f9fa;
+    border: 2px solid #e74c3c;
+    border-radius: 2mm;
+    padding: 3mm 4mm;
+    margin: 3mm 0;
+    font-size: 8.5pt;
+    line-height: 1.6;
+  }
+
+  .insight-box .ib-title {
+    font-weight: 900;
+    color: #e74c3c;
+    font-size: 9pt;
+    margin-bottom: 1mm;
+  }
+</style>
+</head>
+<body>
+
+<!-- ==================== SLIDE 1: COVER ==================== -->
+<div class="page cover">
+  <div class="cover-tag">CONFIDENTIAL</div>
+  <h1>cycleZ<br><span>現状分析と戦略書</span></h1>
+  <div class="cover-line"></div>
+  <div class="cover-sub">
+    ローカルベンチマーク × Google Ads × cycleZ DAY データ<br>
+    業界動向・法改正を踏まえた経営改善・集客改善のための提言
+  </div>
+  <div class="cover-meta">
+    <strong>対象:</strong> cycleZ 代表・スタッフ<br>
+    <strong>作成日:</strong> 2026年2月10日<br>
+    <strong>データ期間:</strong> 2026年1月11日〜2月9日（Google Ads）/ cycleZ DAY 10周年イベント
+  </div>
+</div>
+
+<!-- ==================== SLIDE 2: 経営の現実 ==================== -->
+<div class="page slide">
+  <div class="slide-header">
+    <div class="slide-num">01</div>
+    <div class="slide-title">経営の現実を直視する<small>ローカルベンチマーク 財務データより</small></div>
+  </div>
+
+  <div class="metrics-row">
+    <div class="metric-card red">
+      <div class="metric-label">年間売上高</div>
+      <div class="metric-value">7,384万円</div>
+      <div class="metric-note">前年比 -8.1%</div>
+    </div>
+    <div class="metric-card red">
+      <div class="metric-label">自己資本比率</div>
+      <div class="metric-value">-29.7%</div>
+      <div class="metric-note">債務超過</div>
+    </div>
+    <div class="metric-card dark">
+      <div class="metric-label">従業員数</div>
+      <div class="metric-value">3名</div>
+      <div class="metric-note">代表 + スタッフ2名</div>
+    </div>
+    <div class="metric-card green">
+      <div class="metric-label">労働生産性</div>
+      <div class="metric-value">業界7倍</div>
+      <div class="metric-note">3人で7,384万円</div>
+    </div>
+  </div>
+
+  <div class="alert-box red">
+    <div class="alert-title">▶ 売上は減少中、資本は赤字。「現状維持」は後退と同義。</div>
+    労働生産性が高いのは強み。しかし3名体制で売上が落ちているということは、<strong>「少ない人数で効率よく回す」だけではもう限界</strong>ということ。新規顧客の流入が細っている。
+  </div>
+
+  <div class="section-title">財務指標の業界比較</div>
+  <table class="data-table">
+    <tr>
+      <th>指標</th><th>cycleZ</th><th>業界平均</th><th>判定</th>
+    </tr>
+    <tr><td>売上高増減率</td><td class="val-bad">-8.1%</td><td>+2.3%</td><td class="val-bad">✕ 縮小</td></tr>
+    <tr><td>営業利益率</td><td class="val-warn">2.3%</td><td>2.8%</td><td class="val-warn">△ やや低い</td></tr>
+    <tr><td>自己資本比率</td><td class="val-bad">-29.7%</td><td>38.5%</td><td class="val-bad">✕ 債務超過</td></tr>
+    <tr><td>労働生産性</td><td class="val-good">2,461万円/人</td><td>345万円/人</td><td class="val-good">◎ 7倍</td></tr>
+    <tr><td>EBITDA有利子負債倍率</td><td class="val-bad">19.3倍</td><td>6.0倍</td><td class="val-bad">✕ 危険水準</td></tr>
+  </table>
+
+  <div class="section-title">ローカルベンチマークが示す課題</div>
+  <div class="problem-grid">
+    <div class="problem-card">
+      <div class="p-title">初心者・女性の取り込み不足</div>
+      既存客はエンスージアスト中心。「これから始める層」へのリーチが致命的に弱い。
+    </div>
+    <div class="problem-card">
+      <div class="p-title">メンテ・修理の収益化不足</div>
+      高い技術力があるのに、修理・メンテの売上比率が低い。安定収益の柱になっていない。
+    </div>
+    <div class="problem-card">
+      <div class="p-title">コミュニティの外部発信不足</div>
+      走行会・イベントは実施しているが、外部への情報発信がほぼなく、新規が参加できない。
+    </div>
+    <div class="problem-card">
+      <div class="p-title">デジタル集客の未活用</div>
+      IT活用力は高い（自己評価）が、広告・ブログ・SNSの戦略的運用は出来ていない。
+    </div>
+  </div>
+
+  <div class="section-title" style="border-left-color: #27ae60;">cycleZの「武器」── 活かしきれていない強み</div>
+  <div class="problem-grid">
+    <div class="problem-card" style="border-left-color: #27ae60; background: #f0fdf4;">
+      <div class="p-title" style="color: #27ae60;">接客力・提案力の高さ</div>
+      お客様一人ひとりに合った1台を提案する接客技術。来店さえすれば高確率で成約する現場力がある。
+    </div>
+    <div class="problem-card" style="border-left-color: #27ae60; background: #f0fdf4;">
+      <div class="p-title" style="color: #27ae60;">スタッフの熱量と専門知識</div>
+      自転車を心から愛しているスタッフの熱量。技術・知識ともに深く、信頼されるプロがいる。
+    </div>
+    <div class="problem-card" style="border-left-color: #27ae60; background: #f0fdf4;">
+      <div class="p-title" style="color: #27ae60;">コミュニティの求心力</div>
+      走行会やイベントで築いた既存客との絆。「買って終わり」ではない関係性が他店との差別化。
+    </div>
+    <div class="problem-card" style="border-left-color: #27ae60; background: #f0fdf4;">
+      <div class="p-title" style="color: #27ae60;">3名で7,384万円の生産性</div>
+      3名で業界平均7倍の労働生産性。少数精鋭で密度の高いサービスを提供できている。
+    </div>
+  </div>
+  <div class="alert-box green-box">
+    <div class="alert-title">▶ 問題は「強みがない」ことではない。「強みが外に伝わっていない」こと。</div>
+    接客力も熱量もコミュニティも、来店した人だけが知っている。<strong>店の外にいる人には見えない</strong>。<br>
+    この「見えない強み」をデジタルで可視化することが、この戦略の核心。
+  </div>
+
+  <div class="page-footer">
+    <span>cycleZ 現状分析と戦略書</span>
+    <span>CONFIDENTIAL | Page 2</span>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 3: cycleZ DAY 10周年 ==================== -->
+<div class="page slide">
+  <div class="slide-header">
+    <div class="slide-num">02</div>
+    <div class="slide-title">cycleZ DAY 10周年イベント分析<small>参加者191名のデータが教える「既存顧客の正体」</small></div>
+  </div>
+
+  <div class="metrics-row">
+    <div class="metric-card dark">
+      <div class="metric-label">総参加者数</div>
+      <div class="metric-value">191名</div>
+      <div class="metric-note">本人151名 + 同伴者40名</div>
+    </div>
+    <div class="metric-card blue">
+      <div class="metric-label">同伴者率</div>
+      <div class="metric-value">20.9%</div>
+      <div class="metric-note">家族・友人を連れてくる文化</div>
+    </div>
+    <div class="metric-card orange">
+      <div class="metric-label">女性比率</div>
+      <div class="metric-value">19.7%</div>
+      <div class="metric-note">38名 / 男性155名</div>
+    </div>
+    <div class="metric-card green">
+      <div class="metric-label">情報経路（複数回答）</div>
+      <div class="metric-value">6チャネル</div>
+      <div class="metric-note">LINE・Instagram・口コミ・チラシ等</div>
+    </div>
+  </div>
+
+  <div class="section-title">年代別参加者分布</div>
+  <div class="bar-container">
+    <div class="bar-row">
+      <div class="bar-label">10代以下</div>
+      <div class="bar-track"><div class="bar-fill blue" style="width: 11%;">5名</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">10代</div>
+      <div class="bar-track"><div class="bar-fill blue" style="width: 8%;">12名</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">20代</div>
+      <div class="bar-track"><div class="bar-fill green" style="width: 19%;">29名</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">30代</div>
+      <div class="bar-track"><div class="bar-fill green" style="width: 12%;">19名</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">40代</div>
+      <div class="bar-track"><div class="bar-fill orange" style="width: 23%;">35名</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label" style="color: #e74c3c; font-weight:900;">50代</div>
+      <div class="bar-track"><div class="bar-fill red" style="width: 25%;">38名 ← 最多</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">60代以上</div>
+      <div class="bar-track"><div class="bar-fill dark" style="width: 12%;">18名</div></div>
+    </div>
+  </div>
+
+  <div class="section-title">来場経緯（情報経路）── 複数回答・延べ185件</div>
+  <div class="bar-container">
+    <div class="bar-row">
+      <div class="bar-label" style="color: #27ae60; font-weight:900;">LINE</div>
+      <div class="bar-track"><div class="bar-fill green" style="width: 100%;">55件（29.7%）</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">Instagram</div>
+      <div class="bar-track"><div class="bar-fill orange" style="width: 76%;">42件（22.7%）</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">口コミ</div>
+      <div class="bar-track"><div class="bar-fill blue" style="width: 69%;">38件（20.5%）</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">チラシ</div>
+      <div class="bar-track"><div class="bar-fill dark" style="width: 51%;">28件（15.1%）</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">DM</div>
+      <div class="bar-track"><div class="bar-fill red" style="width: 22%;">12件（6.5%）</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">その他</div>
+      <div class="bar-track"><div class="bar-fill dark" style="width: 18%;">10件（5.4%）</div></div>
+    </div>
+  </div>
+  <p class="small-text">※ 1人が複数チャネルを選択可。その他 = シクロワイヤード2、店頭2、ホームページ1、紹介・友人等6</p>
+
+  <div class="section-title">データが示す4つの事実</div>
+  <div class="problem-grid">
+    <div class="problem-card" style="border-left-color: #e74c3c;">
+      <div class="p-title">① 顧客の高齢化</div>
+      40代以上が全体の<strong>60%</strong>（91名）。50代が最大ボリューム層。若年層の取り込みが急務。
+    </div>
+    <div class="problem-card" style="border-left-color: #e67e22;">
+      <div class="p-title">② 情報経路はLINEが最多だがSNS・口コミも強い</div>
+      LINE 55件、Instagram 42件、口コミ 38件、チラシ 28件、DM 12件。<strong>複数チャネルが機能しているが、デジタル外部への発信はまだ弱い</strong>。
+    </div>
+    <div class="problem-card" style="border-left-color: #e67e22;">
+      <div class="p-title">③ 女性比率の低さ</div>
+      女性は約20%。業界全体で女性サイクリスト増加傾向にある中、取りこぼしている。
+    </div>
+    <div class="problem-card" style="border-left-color: #27ae60;">
+      <div class="p-title">④ 同伴者率20%は強い</div>
+      5人に1人が誰かを連れてきている。<strong>「人を連れて行きたくなる店」</strong>の証拠。これを戦略的に活かす。
+    </div>
+  </div>
+
+  <div class="alert-box">
+    <div class="alert-title">▶ 191名のイベントを開ける力はある。LINE・Instagram・口コミが三大チャネル。</div>
+    10年かけて築いたコミュニティは本物。LINE・Instagram・口コミの3チャネルで全体の73%を占める。<strong>しかしGoogle検索やブログ経由の流入はゼロ</strong>。<br>
+    既存チャネルの強みを活かしつつ、ブログ・広告で「既存コミュニティの外側」にリーチすることが次の10年の鍵。
+  </div>
+
+  <div class="insight-box">
+    <div class="ib-title">戦略への示唆</div>
+    ① 20〜30代の若年層獲得 → ブログ・広告のターゲティング<br>
+    ② 女性向けコンテンツの充実 → 「女性が始めた体験談」「女性向けバイク選び」記事<br>
+    ③ 同伴者率を武器にする → 「友人紹介キャンペーン」「カップル・夫婦でサイクリング」企画<br>
+    ④ Google検索からの流入を作る → ブログ・Google広告で「検索する人」へのリーチを開拓
+  </div>
+
+  <div class="page-footer">
+    <span>cycleZ 現状分析と戦略書</span>
+    <span>CONFIDENTIAL | Page 3</span>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 4: Google Ads 分析 ==================== -->
+<div class="page slide">
+  <div class="slide-header">
+    <div class="slide-num">03</div>
+    <div class="slide-title">Google Ads の現状<small>アカウント 995-624-3791 / 過去30日間</small></div>
+  </div>
+
+  <div class="metrics-row">
+    <div class="metric-card dark">
+      <div class="metric-label">月間広告費</div>
+      <div class="metric-value">¥31,944</div>
+      <div class="metric-note">日予算¥2,300の46%のみ消化</div>
+    </div>
+    <div class="metric-card green">
+      <div class="metric-label">CPA</div>
+      <div class="metric-value">¥138</div>
+      <div class="metric-note">1コンバージョンあたり</div>
+    </div>
+    <div class="metric-card green">
+      <div class="metric-label">CVR</div>
+      <div class="metric-value">9.38%</div>
+      <div class="metric-note">業界平均の3〜4倍</div>
+    </div>
+    <div class="metric-card blue">
+      <div class="metric-label">クリック数</div>
+      <div class="metric-value">1,337</div>
+      <div class="metric-note">CPC ¥24</div>
+    </div>
+  </div>
+
+  <div class="section-title">キャンペーン別パフォーマンス</div>
+  <table class="data-table">
+    <tr>
+      <th>キャンペーン</th><th>費用</th><th>クリック</th><th>CV数</th><th>CVR</th><th>判定</th>
+    </tr>
+    <tr class="highlight">
+      <td><strong>購入後に学ぶこと</strong></td><td>¥15,362</td><td>569</td>
+      <td class="val-good">127</td><td class="val-good">22.3%</td><td class="val-good">◎ エース</td>
+    </tr>
+    <tr>
+      <td>はじめてみませんか</td><td>¥14,988</td><td>639</td>
+      <td class="val-good">104</td><td class="val-good">16.3%</td><td class="val-good">○ 好調</td>
+    </tr>
+    <tr>
+      <td>新生活にぴったり</td><td>¥1,595</td><td>129</td>
+      <td class="val-bad">0</td><td class="val-bad">0.0%</td><td class="val-bad">✕ 要改善</td>
+    </tr>
+    <tr>
+      <td>P-Max</td><td>¥1,595</td><td>129</td>
+      <td class="val-bad">0</td><td class="val-bad">0.0%</td><td class="val-bad">✕ 機能停止</td>
+    </tr>
+  </table>
+
+  <div class="section-title">致命的な6つの問題</div>
+  <div class="problem-grid">
+    <div class="problem-card">
+      <div class="p-title">① 予算が売上の0.04%</div>
+      月3.2万円は少なすぎる。業界標準は売上の3〜5%。月額18〜30万円あるべき。
+    </div>
+    <div class="problem-card">
+      <div class="p-title">② CVの定義が不明確</div>
+      231件のCVが何（電話？フォーム？来店？）なのか不明。コンバージョン値も全て0円。
+    </div>
+    <div class="problem-card">
+      <div class="p-title">③ 除外キーワード未設定</div>
+      無駄クリックのフィルタが一切ない。指名検索「サイクルz」にも広告費がかかっている。
+    </div>
+    <div class="problem-card">
+      <div class="p-title">④ P-Max がポリシー違反</div>
+      アセットグループが制約を受けておりCV 0。前月比-74%で実質停止状態。
+    </div>
+    <div class="problem-card">
+      <div class="p-title">⑤ 来店CVが未計測</div>
+      実店舗ビジネスなのに来店コンバージョンが未設定。Google推奨にも出ている。
+    </div>
+    <div class="problem-card">
+      <div class="p-title">⑥ モバイル93%への対応</div>
+      アクセスの93%がスマホ。LP・サイトのモバイル体験の品質が最重要。
+    </div>
+  </div>
+
+  <div class="alert-box warn">
+    <div class="alert-title">▶ 広告の効率は良い。しかし「何が起きているか見えていない」。</div>
+    CPA ¥138、CVR 9.38%は素晴らしい数字。問題は計測基盤が整っていないこと。<strong>良い数字が出ているのに、それを拡大する判断材料がない</strong>。
+  </div>
+
+  <div class="page-footer">
+    <span>cycleZ 現状分析と戦略書</span>
+    <span>CONFIDENTIAL | Page 4</span>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 5: 広告データが教える真実 ==================== -->
+<div class="page slide">
+  <div class="slide-header">
+    <div class="slide-num">04</div>
+    <div class="slide-title">広告データが教える真実<small>数字が示す「顧客が本当に求めているもの」</small></div>
+  </div>
+
+  <div class="section-title">CVR比較：何が顧客を動かすか</div>
+  <div class="bar-container">
+    <div class="bar-row">
+      <div class="bar-label">購入後に学ぶこと</div>
+      <div class="bar-track"><div class="bar-fill red" style="width: 100%;">CVR 22.3%</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">はじめてみませんか</div>
+      <div class="bar-track"><div class="bar-fill orange" style="width: 73%;">CVR 16.3%</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">新生活にぴったり</div>
+      <div class="bar-track"><div class="bar-fill blue" style="width: 3%;">0%</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">P-Max</div>
+      <div class="bar-track"><div class="bar-fill blue" style="width: 3%;">0%</div></div>
+    </div>
+  </div>
+
+  <div class="alert-box">
+    <div class="alert-title">▶ 結論：「買った後どうなるか」を知りたい人が最も来店する。</div>
+    ロードバイクの検討者は、購入前に「買った後のこと」を調べている。不安の解消が来店のトリガー。<br>
+    逆に「新生活」のような漠然としたテーマでは行動に繋がらない。
+  </div>
+
+  <div class="section-title">ここから見えるユーザー心理</div>
+  <table class="data-table">
+    <tr><th>段階</th><th>ユーザーの頭の中</th><th>必要なコンテンツ</th><th>現状</th></tr>
+    <tr><td><strong>認知</strong></td><td>ロードバイク面白そう</td><td>楽しさを見せる体験記</td><td><span class="tag green">対応中</span></td></tr>
+    <tr><td><strong>興味</strong></td><td>自分にもできる？いくらかかる？</td><td>費用・難易度・年齢の不安解消</td><td><span class="tag red">不足</span></td></tr>
+    <tr><td><strong>検討</strong></td><td>買った後ちゃんと乗れる？</td><td>購入後のサポート・コミュニティ情報</td><td><span class="tag red">不足</span></td></tr>
+    <tr><td><strong>行動</strong></td><td>どの店に行けばいい？</td><td>店の特徴・試乗体験・アクセス</td><td><span class="tag red">不足</span></td></tr>
+  </table>
+
+  <div class="section-title">デバイス分析</div>
+  <div class="bar-container">
+    <div class="bar-row">
+      <div class="bar-label">モバイル</div>
+      <div class="bar-track"><div class="bar-fill red" style="width: 93%;">92.8%</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">PC</div>
+      <div class="bar-track"><div class="bar-fill blue" style="width: 5%;">4.7%</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label">タブレット</div>
+      <div class="bar-track"><div class="bar-fill green" style="width: 2.5%;">2.4%</div></div>
+    </div>
+  </div>
+  <p class="small-text" style="margin-top: 2mm;">→ ユーザーの<strong class="bold-text">93%がスマホ</strong>で検索している。ブログ記事もLPも、スマホで3秒以内に読みやすいかが勝負。</p>
+
+  <div class="section-title">広告費の位置づけ</div>
+  <div class="bar-container">
+    <div class="bar-row">
+      <div class="bar-label" style="font-size: 7pt;">cycleZ 現状</div>
+      <div class="bar-track"><div class="bar-fill red" style="width: 1.3%;">0.04%</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label" style="font-size: 7pt;">業界最低ライン</div>
+      <div class="bar-track"><div class="bar-fill orange" style="width: 30%;">3%</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label" style="font-size: 7pt;">業界標準</div>
+      <div class="bar-track"><div class="bar-fill green" style="width: 50%;">5%</div></div>
+    </div>
+  </div>
+  <p class="small-text">売上7,384万円に対する広告費比率。月3.2万円 vs 業界標準 月30万円。<strong class="bold-text">投資額が少なすぎる。</strong></p>
+
+  <div class="page-footer">
+    <span>cycleZ 現状分析と戦略書</span>
+    <span>CONFIDENTIAL | Page 5</span>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 6: 業界トレンド ==================== -->
+<div class="page slide">
+  <div class="slide-header">
+    <div class="slide-num">05</div>
+    <div class="slide-title">スポーツバイク業界の潮流<small>市場環境の変化とcycleZへの影響</small></div>
+  </div>
+
+  <div class="alert-box red">
+    <div class="alert-title">▶ 日本のスポーツ自転車市場は「コロナ特需の終焉」で縮小フェーズに入った。</div>
+    国内生産台数は前年比-6.2%。サイクルモード東京は規模縮小。<strong>待っているだけでは客は来ない時代</strong>。
+  </div>
+
+  <div class="section-title">市場の構造変化</div>
+  <table class="data-table">
+    <tr><th>トレンド</th><th>内容</th><th>cycleZへの影響</th></tr>
+    <tr>
+      <td><strong>ロードバイク市場の成熟</strong></td>
+      <td>コア層に支持されるが裾野は広がりにくい。「レースの乗り物」イメージが壁。</td>
+      <td class="val-warn">△ 初心者獲得が一層難しい</td>
+    </tr>
+    <tr>
+      <td><strong>グラベルバイクの台頭</strong></td>
+      <td>世界市場CAGR 5.7%成長。舗装路+未舗装路の「冒険」訴求で新規層を開拓。</td>
+      <td class="val-good">◎ 品揃え・記事テーマの拡張機会</td>
+    </tr>
+    <tr>
+      <td><strong>eバイクの急成長</strong></td>
+      <td>世界市場CAGR 10.3%。日本でもCAGR 6.1%予測。国内生産の81%が電動アシスト。</td>
+      <td class="val-good">◎ 年配層・女性層の新規獲得チャネル</td>
+    </tr>
+    <tr>
+      <td><strong>価格高騰</strong></td>
+      <td>円安・原材料高でエントリーモデルも高価格化。「初心者に勧められるモデルがない」問題。</td>
+      <td class="val-bad">✕ 価格が参入障壁に</td>
+    </tr>
+    <tr>
+      <td><strong>中国メーカーの台頭</strong></td>
+      <td>高品質・低価格帯で海外ブランドに挑戦。EC直販で専門店を経由しないケースも。</td>
+      <td class="val-bad">✕ 価格競争力の脅威</td>
+    </tr>
+    <tr>
+      <td><strong>多様化するカテゴリー</strong></td>
+      <td>ロード・グラベル・eバイク・ミニベロ。顧客はライフスタイルで選ぶ時代。</td>
+      <td class="val-good">○ 提案型接客が活きる</td>
+    </tr>
+  </table>
+
+  <div class="section-title">cycleZ DAYデータとの照合</div>
+  <div class="insight-box">
+    <div class="ib-title">40代以上が60%、女性20%、来場経緯はLINE+Instagram+口コミが7割 ── 業界トレンドと一致</div>
+    スポーツバイク市場の中心は40〜50代男性。cycleZ DAYの参加者構成がまさにそれを証明している。<br>
+    来場経緯はLINE（30%）・Instagram（23%）・口コミ（21%）の3チャネルが主力。<strong>一方でGoogle検索・ブログ経由の流入はゼロ。成長セグメント（女性・若年層・eバイク利用者）へのリーチにはデジタル集客の強化が不可欠</strong>。
+  </div>
+
+  <div class="section-title">業界の方向性とcycleZの立ち位置</div>
+  <div class="bar-container">
+    <div class="bar-row">
+      <div class="bar-label" style="font-size: 7pt;">ロードバイク</div>
+      <div class="bar-track"><div class="bar-fill dark" style="width: 60%;"> コア層向け・成熟</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label" style="font-size: 7pt;">グラベルバイク</div>
+      <div class="bar-track"><div class="bar-fill green" style="width: 75%;"> CAGR 5.7% 成長</div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-label" style="font-size: 7pt;">eバイク</div>
+      <div class="bar-track"><div class="bar-fill orange" style="width: 90%;"> CAGR 10.3% 急成長</div></div>
+    </div>
+  </div>
+
+  <div class="alert-box green-box">
+    <div class="alert-title">▶ cycleZの強み「提案型接客」は、多様化時代にこそ価値が増す。</div>
+    カテゴリーが増えるほど、初心者は「何を買えばいいかわからない」。<strong>お客様の生活を聞いて最適な1台を提案できるcycleZの接客力</strong>は、EC直販や量販店には真似できない。<br>
+    問題は、その価値が「来店前の人」に伝わっていないこと。
+  </div>
+
+  <div class="page-footer">
+    <span>cycleZ 現状分析と戦略書</span>
+    <span>CONFIDENTIAL | Page 6</span>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 7: 自転車青切符 ==================== -->
+<div class="page slide">
+  <div class="slide-header">
+    <div class="slide-num">06</div>
+    <div class="slide-title">2026年4月「自転車青切符」導入<small>法改正をcycleZのチャンスに変える</small></div>
+  </div>
+
+  <div class="metrics-row">
+    <div class="metric-card red">
+      <div class="metric-label">施行日</div>
+      <div class="metric-value">2026.4.1</div>
+      <div class="metric-note">あと約2ヶ月</div>
+    </div>
+    <div class="metric-card dark">
+      <div class="metric-label">対象違反</div>
+      <div class="metric-value">113種類</div>
+      <div class="metric-note">16歳以上の自転車利用者</div>
+    </div>
+    <div class="metric-card orange">
+      <div class="metric-label">反則金</div>
+      <div class="metric-value">5千〜1.2万円</div>
+      <div class="metric-note">ながらスマホ12,000円</div>
+    </div>
+    <div class="metric-card blue">
+      <div class="metric-label">自転車事故構成比</div>
+      <div class="metric-value">23.2%</div>
+      <div class="metric-note">全交通事故の約1/4</div>
+    </div>
+  </div>
+
+  <div class="section-title">主な違反行為と反則金</div>
+  <table class="data-table">
+    <tr><th>違反行為</th><th>反則金</th><th>備考</th></tr>
+    <tr><td><strong>ながらスマホ・通話運転</strong></td><td class="val-bad">12,000円</td><td>最も高額。社会的関心も高い</td></tr>
+    <tr><td>信号無視</td><td class="val-bad">6,000円</td><td>自転車事故の主要原因</td></tr>
+    <tr><td>逆走（右側通行）</td><td class="val-warn">6,000円</td><td>スポーツバイク購入者に特に関係</td></tr>
+    <tr><td>一時不停止</td><td class="val-warn">5,000円</td><td>初心者が知らずに違反しやすい</td></tr>
+    <tr><td>傘差し運転</td><td>5,000円</td><td>ママチャリ層に多い違反</td></tr>
+    <tr><td>イヤホン使用</td><td>5,000円</td><td>若年層に多い</td></tr>
+  </table>
+
+  <div class="alert-box" style="background: #e74c3c;">
+    <div class="alert-title">▶ この法改正は「自転車の正しい乗り方」への関心を爆発的に高める。</div>
+    4月以降、「自転車 交通ルール」「自転車 違反 何したらダメ」の検索が急増する。<br>
+    <strong>この需要を捉えるコンテンツを3月中に準備できれば、cycleZは「信頼できる情報源」になれる。</strong>
+  </div>
+
+  <div class="section-title">cycleZが取るべきアクション</div>
+  <div class="problem-grid">
+    <div class="problem-card" style="border-left-color: #e74c3c;">
+      <div class="p-title">① ブログ記事を3月中に公開</div>
+      「スポーツバイク乗りが知っておくべき青切符の全て」──交通ルールの正しい知識を専門店の視点で発信。SEO+広告で集客。
+    </div>
+    <div class="problem-card" style="border-left-color: #e74c3c;">
+      <div class="p-title">② 安全講習イベントの開催</div>
+      青切符施行に合わせた「安全走行講習会」をcycleZ主催で実施。新規顧客との接点を作り、コミュニティへの入口にする。
+    </div>
+    <div class="problem-card" style="border-left-color: #e67e22;">
+      <div class="p-title">③ 店頭での啓発活動</div>
+      購入時の安全講習・ルール説明を強化。「cycleZで買えば安全な乗り方も教えてもらえる」を差別化ポイントに。
+    </div>
+    <div class="problem-card" style="border-left-color: #2980b9;">
+      <div class="p-title">④ 安全装備の提案強化</div>
+      ヘルメット・ライト・ベルなど安全装備の提案。購入後のクロスセルと単価アップに繋げる。
+    </div>
+  </div>
+
+  <div class="insight-box">
+    <div class="ib-title">タイムライン：いつ何をするか</div>
+    <strong>2月中:</strong> 青切符解説ブログ記事の執筆・公開準備<br>
+    <strong>3月上旬:</strong> 記事公開 + Google広告キャンペーン「自転車 交通ルール」系KW追加<br>
+    <strong>3月中旬:</strong> 安全講習イベントの告知開始（LINE + ブログ + 広告）<br>
+    <strong>4月1日以降:</strong> 検索需要の急増を記事で受け止め → 来店・LINE登録に誘導
+  </div>
+
+  <div class="page-footer">
+    <span>cycleZ 現状分析と戦略書</span>
+    <span>CONFIDENTIAL | Page 7</span>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 8: Phase 1 アクション ==================== -->
+<div class="page slide">
+  <div class="slide-header">
+    <div class="slide-num">07</div>
+    <div class="slide-title">即時アクション：広告基盤の整備<small>Phase 1 ── 最初にやるべき5つ</small></div>
+  </div>
+
+  <div class="action-card">
+    <span class="a-num">1</span>
+    <span class="a-title">コンバージョン設定の再定義</span>
+    <span class="priority high">最優先</span>
+    <div class="a-body">
+      現在のCV定義を確認し、以下を設定。<br>
+      <strong>① 電話タップ</strong>（通話CV） / <strong>② LINE登録</strong> / <strong>③ 経路検索</strong> / <strong>④ 来店CV</strong>（Google推奨）<br>
+      各CVにコンバージョン値を割り当てる（来店1件 = ¥5,000 等）
+    </div>
+  </div>
+
+  <div class="action-card">
+    <span class="a-num">2</span>
+    <span class="a-title">除外キーワードの設定</span>
+    <span class="priority high">最優先</span>
+    <div class="a-body">
+      <strong>指名検索を除外:</strong>「サイクルz」「cyclez」「cycle-z」（自然検索で1位のため広告費が無駄）<br>
+      <strong>非見込み客を除外:</strong>「中古」「売りたい」「修理 自分で」「東京」「大阪」など
+    </div>
+  </div>
+
+  <div class="action-card">
+    <span class="a-num">3</span>
+    <span class="a-title">P-Maxのポリシー違反解消</span>
+    <span class="priority high">最優先</span>
+    <div class="a-body">
+      アセットグループの制約を確認・修正。画像・テキスト・動画をGoogle推奨最低数まで拡充。<br>
+      ポリシー違反が解消できない場合は一旦停止し、予算を検索キャンペーンに集中。
+    </div>
+  </div>
+
+  <div class="action-card">
+    <span class="a-num">4</span>
+    <span class="a-title">エースキャンペーンへの予算集中</span>
+    <span class="priority mid">短期</span>
+    <div class="a-body">
+      「購入後に学ぶこと」（CVR 22%）と「はじめてみませんか」（CVR 16%）に予算を集中。<br>
+      「新生活」キャンペーンは一旦停止し、広告文と遷移先を見直してから再開。
+    </div>
+  </div>
+
+  <div class="action-card">
+    <span class="a-num">5</span>
+    <span class="a-title">モバイルLP/サイトの体験チェック</span>
+    <span class="priority mid">短期</span>
+    <div class="a-body">
+      93%がスマホ。遷移先のページをスマホで確認。<br>
+      <strong>表示速度3秒以内</strong> / <strong>電話ボタンが画面内に常に見える</strong> / <strong>LINE導線が明確</strong> を基準にする。
+    </div>
+  </div>
+
+  <div class="alert-box">
+    <div class="alert-title">▶ Phase 1 のゴール</div>
+    「何が起きているか」を正確に計測できる状態にする。良い数字が出ているのに、拡大の判断ができない現状を解消する。
+  </div>
+
+  <div class="page-footer">
+    <span>cycleZ 現状分析と戦略書</span>
+    <span>CONFIDENTIAL | Page 8</span>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 9: ブログ × 広告 戦略 ==================== -->
+<div class="page slide">
+  <div class="slide-header">
+    <div class="slide-num">08</div>
+    <div class="slide-title">ブログ × 広告 連携戦略<small>Phase 2 ── コンテンツで初心者を掴む</small></div>
+  </div>
+
+  <div class="alert-box">
+    <div class="alert-title">▶ 広告データ+イベントデータ+法改正 ── 3つの示唆を記事戦略に落とし込む</div>
+    ブログ記事を「SEO + 広告LP」の二刀流で使う。<strong>cycleZの接客力・熱量・コミュニティの魅力を記事で体験させ</strong>、記事内CTAで来店に誘導。
+  </div>
+
+  <div class="section-title">優先ブログ記事テーマ（広告連携前提）</div>
+
+  <div class="blog-topic">
+    <div class="bt-num">1</div>
+    <div class="bt-title">ロードバイク購入後1ヶ月で覚えること</div>
+    <div class="bt-kw">購入後 / 初心者</div>
+    <div class="bt-purpose">CV直結</div>
+  </div>
+  <div class="blog-topic">
+    <div class="bt-num">2</div>
+    <div class="bt-title" style="color: #e74c3c;">【青切符対策】スポーツバイク乗りの交通ルール完全ガイド</div>
+    <div class="bt-kw">青切符 / 交通ルール</div>
+    <div class="bt-purpose">時事SEO</div>
+  </div>
+  <div class="blog-topic">
+    <div class="bt-num">3</div>
+    <div class="bt-title">初心者が最初の1台を選ぶ基準と予算</div>
+    <div class="bt-kw">選び方 / 費用</div>
+    <div class="bt-purpose">CV直結</div>
+  </div>
+  <div class="blog-topic">
+    <div class="bt-num">4</div>
+    <div class="bt-title">女性がロードバイクを始めて変わったこと</div>
+    <div class="bt-kw">女性 / 体験談</div>
+    <div class="bt-purpose">新規層開拓</div>
+  </div>
+  <div class="blog-topic">
+    <div class="bt-num">5</div>
+    <div class="bt-title">メンテナンス費用は月いくらかかる？</div>
+    <div class="bt-kw">維持費 / コスト</div>
+    <div class="bt-purpose">不安解消</div>
+  </div>
+  <div class="blog-topic">
+    <div class="bt-num">6</div>
+    <div class="bt-title">一人で始めても大丈夫？岡山の自転車仲間</div>
+    <div class="bt-kw">コミュニティ / 仲間</div>
+    <div class="bt-purpose">コミュニティ誘導</div>
+  </div>
+  <div class="blog-topic">
+    <div class="bt-num">7</div>
+    <div class="bt-title">30代・40代から始めるロードバイク入門</div>
+    <div class="bt-kw">年齢 / 始め方</div>
+    <div class="bt-purpose">新規層開拓</div>
+  </div>
+  <div class="blog-topic">
+    <div class="bt-num">8</div>
+    <div class="bt-title" style="color: #2980b9;">eバイクという選択肢 ── 体力に自信がなくても</div>
+    <div class="bt-kw">eバイク / 初心者</div>
+    <div class="bt-purpose">市場トレンド</div>
+  </div>
+  <div class="blog-topic">
+    <div class="bt-num">9</div>
+    <div class="bt-title">岡山のおすすめサイクリングコース5選</div>
+    <div class="bt-kw">岡山 / コース</div>
+    <div class="bt-purpose">地域SEO</div>
+  </div>
+  <div class="blog-topic">
+    <div class="bt-num" style="background: #e74c3c;">10</div>
+    <div class="bt-title">試乗してわかる「自分に合う1台」の見つけ方</div>
+    <div class="bt-kw">試乗 / 来店</div>
+    <div class="bt-purpose">来店誘導</div>
+  </div>
+
+  <div class="section-title" style="margin-top: 4mm;">新規広告キャンペーン案（青切符・業界トレンド反映）</div>
+  <table class="data-table">
+    <tr><th>キーワード群</th><th>遷移先</th><th>狙い</th></tr>
+    <tr><td><strong>自転車 青切符 交通ルール</strong></td><td>ブログ記事 #2</td><td><span class="tag red">4月検索急増</span></td></tr>
+    <tr><td>岡山 ロードバイク ショップ</td><td>トップページ or LP</td><td>来店意図の高い検索</td></tr>
+    <tr><td>ロードバイク 初心者 費用</td><td>ブログ記事 #3</td><td>不安解消 → 来店</td></tr>
+    <tr><td>ロードバイク 女性 おすすめ</td><td>ブログ記事 #4</td><td>女性層開拓</td></tr>
+    <tr><td><strong>eバイク 岡山 おすすめ</strong></td><td>ブログ記事 #8</td><td><span class="tag orange">成長市場</span></td></tr>
+  </table>
+
+  <div class="page-footer">
+    <span>cycleZ 現状分析と戦略書</span>
+    <span>CONFIDENTIAL | Page 9</span>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 10: ロードマップ ==================== -->
+<div class="page slide">
+  <div class="slide-header">
+    <div class="slide-num">09</div>
+    <div class="slide-title">実行ロードマップ<small>3フェーズで段階的に改善する</small></div>
+  </div>
+
+  <div class="timeline">
+    <div class="tl-row">
+      <div class="tl-phase p1">Phase 1<br><span style="font-size:7pt;">基盤整備</span></div>
+      <div class="tl-content">
+        <strong>広告の計測基盤を整える</strong><br>
+        ① CV設定の見直し（来店CV・電話CV・LINE CV追加）<br>
+        ② 除外キーワード設定（指名検索・非見込み客）<br>
+        ③ P-Maxポリシー違反修正 or 停止<br>
+        ④ エースキャンペーンに予算集中<br>
+        ⑤ モバイルLP/サイトの表示速度・UI確認
+      </div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-phase p2">Phase 2<br><span style="font-size:7pt;">コンテンツ</span></div>
+      <div class="tl-content">
+        <strong>ブログ記事を戦略的に量産 → 広告LPとして活用</strong><br>
+        ① <span style="color:#e74c3c; font-weight:700;">【最優先】青切符解説記事を3月中に公開</span>（4月の検索急増に備える）<br>
+        ② 優先10記事を順次公開（購入後・費用・女性・eバイク・コミュニティ…）<br>
+        ③ 記事内CTAの設計（LINE相談・電話・来店予約）<br>
+        ④ 新規広告キャンペーン追加（青切符KW・地域KW・初心者KW・eバイクKW）<br>
+        ⑤ GA4でブログ → CVの導線を計測開始
+      </div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-phase p3">Phase 3<br><span style="font-size:7pt;">拡大</span></div>
+      <div class="tl-content">
+        <strong>データに基づいて予算拡大 → 新規顧客の安定獲得</strong><br>
+        ① 広告予算: 月3.2万→5万→10万（効果検証しながら段階的に）<br>
+        ② CVデータを基にROASを算出、投資判断を明確化<br>
+        ③ 安全講習会・走行会を定期開催、ブログ+広告で新規集客<br>
+        ④ eバイク・グラベルバイクのラインナップ拡充を検討<br>
+        ⑤ 若年層・女性向けコンテンツの充実 → 顧客構成の多様化
+      </div>
+    </div>
+  </div>
+
+  <div class="section-title">予算シミュレーション</div>
+  <table class="data-table">
+    <tr>
+      <th>月間広告費</th><th>想定CV数</th><th>CPA ¥138想定</th><th>来店率30%の場合</th><th>客単価10万円の場合</th>
+    </tr>
+    <tr><td>¥32,000（現状）</td><td>231件</td><td>—</td><td>約69人来店</td><td>売上 690万円/月</td></tr>
+    <tr><td>¥50,000</td><td>約362件</td><td>¥138</td><td>約108人来店</td><td>売上 1,080万円/月</td></tr>
+    <tr class="highlight"><td><strong>¥100,000</strong></td><td><strong>約724件</strong></td><td><strong>¥138</strong></td><td><strong>約217人来店</strong></td><td><strong>売上 2,170万円/月</strong></td></tr>
+  </table>
+  <p class="small-text">※ 現状のCPA維持を前提とした理論値。CV定義の明確化後に精緻化が必要。来店率・客単価は仮定値。</p>
+
+  <div class="section-title">KPI設定</div>
+  <table class="data-table">
+    <tr><th>指標</th><th>現状</th><th>Phase 1 後</th><th>Phase 3 後</th></tr>
+    <tr><td>月間広告費</td><td>¥32,000</td><td>¥32,000</td><td>¥100,000</td></tr>
+    <tr><td>CV定義</td><td class="val-bad">不明確</td><td class="val-good">明確化済み</td><td class="val-good">ROAS算出可能</td></tr>
+    <tr><td>除外キーワード</td><td class="val-bad">0件</td><td class="val-good">20件以上</td><td class="val-good">継続追加</td></tr>
+    <tr><td>ブログ記事数</td><td>数本</td><td>数本</td><td>20本以上</td></tr>
+    <tr><td>情報チャネル</td><td class="val-warn">LINE・Instagram・口コミ中心</td><td>+ ブログ・広告</td><td class="val-good">LINE + Instagram + ブログ + 広告</td></tr>
+    <tr><td>コミュニティ規模</td><td>191名（イベント実績）</td><td>計測開始</td><td>300名目標</td></tr>
+  </table>
+
+  <div class="page-footer">
+    <span>cycleZ 現状分析と戦略書</span>
+    <span>CONFIDENTIAL | Page 10</span>
+  </div>
+</div>
+
+<!-- ==================== SLIDE 11: 結論 ==================== -->
+<div class="page slide" style="padding: 12mm 18mm;">
+  <div class="slide-header">
+    <div class="slide-num">10</div>
+    <div class="slide-title">結論<small>cycleZがやるべきことは明確</small></div>
+  </div>
+
+  <div class="verdict" style="margin-bottom: 4mm;">
+    <h3 style="font-size: 12pt;">現状維持は「緩やかな撤退」である。</h3>
+    <p style="font-size: 8.5pt;">売上-8.1%。債務超過。広告費は売上の0.04%。集客はLINE・Instagram・口コミ頼み。顧客は高齢化。<br>
+    業界は縮小フェーズ。4月には青切符で自転車への社会的注目が変わる。<strong>動くなら、今。</strong></p>
+  </div>
+
+  <div style="background: #f8f8f8; padding: 3mm 4mm; border-radius: 2mm; margin-bottom: 3mm;">
+    <div class="section-title" style="margin-top: 0; margin-bottom: 2mm;">しかし、cycleZには武器がある。</div>
+    <ul class="bullet-list" style="font-size: 8pt; line-height: 1.5; margin-bottom: 0;">
+      <li><strong>来店すれば伝わる接客力</strong> ── お客様に合った1台を提案できるプロの目と技術。来店さえすれば成約率は高い。</li>
+      <li><strong>スタッフの熱量は本物</strong> ── 自転車を心から愛しているからこそ伝わる説得力。これはマニュアルでは作れない。</li>
+      <li><strong>191名を集めるコミュニティ</strong> ── LINE・Instagram・口コミの3チャネルで191名を動員。「人を連れて行きたくなる店」の証拠。</li>
+      <li><strong>CPA ¥138の広告効率</strong> ── 投資すれば返ってくる下地がある。問題は投資額が少なすぎること。</li>
+      <li><strong>CVR 22%のキャンペーン</strong> ── 「何が顧客を動かすか」が既にデータで見えている。</li>
+    </ul>
+  </div>
+
+  <div class="section-title" style="margin-bottom: 2mm;">今日から始める3つのこと</div>
+
+  <div class="action-card" style="border-color: #e74c3c; border-width: 3px; margin-bottom: 2mm;">
+    <span class="a-num">1</span>
+    <span class="a-title" style="font-size: 9pt;">広告のコンバージョン設定を整理する</span>
+    <div class="a-body" style="font-size: 7.5pt;">
+      何を計測しているか分からない状態を今日終わらせる。来店CV・電話CV・LINE CVを設定し、「いくら使ったら何が起きるか」を見える化する。
+    </div>
+  </div>
+
+  <div class="action-card" style="border-color: #e74c3c; border-width: 3px; margin-bottom: 2mm;">
+    <span class="a-num">2</span>
+    <span class="a-title" style="font-size: 9pt;">青切符解説記事を3月中に公開する</span>
+    <div class="a-body" style="font-size: 7.5pt;">
+      4月の法改正で「自転車 交通ルール」検索が急増する。その需要をcycleZのブログで受け止める。これは期限がある。早い者勝ち。
+    </div>
+  </div>
+
+  <div class="action-card" style="border-color: #e74c3c; border-width: 3px; margin-bottom: 2mm;">
+    <span class="a-num">3</span>
+    <span class="a-title" style="font-size: 9pt;">Google検索からの流入を作る</span>
+    <div class="a-body" style="font-size: 7.5pt;">
+      191名の来場経緯はLINE・Instagram・口コミが73%。一方でGoogle検索やブログ経由はゼロ。ブログと広告で「既存コミュニティの外側」にいる見込み客への接点を作る。
+    </div>
+  </div>
+
+  <div style="background: #0d0d0d; color: #fff; padding: 4mm 5mm; border-radius: 2mm; margin-top: 2mm; text-align: center;">
+    <p style="font-size: 11pt; font-weight: 900; line-height: 1.5;">
+      cycleZの接客力と熱量は、来た人だけが知っている。<br>
+      <span style="color: #e74c3c;">その「来店後の感動」を、来店前に届ける。</span><br>
+      それがこの戦略の全て。
+    </p>
+  </div>
+
+  <div class="page-footer">
+    <span>cycleZ 現状分析と戦略書</span>
+    <span>CONFIDENTIAL | Page 11</span>
+  </div>
+</div>
+
+</body>
+</html>

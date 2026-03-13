@@ -1,0 +1,205 @@
+---
+title: "秋のサイクリング時の服装について考える"
+date: "2022-10-28"
+description: ""
+category: "maintenance-blog"
+tags: ["maintenance-blog"]
+wp_id: 4175
+wp_url: "https://cycle-z.com/blog/2022/10/28/autumn-clothing-2022-10-28/"
+---
+
+サイクリング時の秋の服装。
+
+とても悩ましいと思います……！
+
+特に今年から自転車に乗り始めた方の中には、これからの寒い時期の服装をどうすれば良いか心配な方もいらっしゃるのではないでしょうか。
+
+実際に今年の秋の気候に直面して思うのが、朝は肌寒いので相当暖かい格好が適していますが、昼には夏のような日差しが差し込み暑いほどです。
+
+今回はロードバイクやクロスバイクで出かける際の装いを1日どうやって運用していくかお教えします。
+
+天気予報の最高気温と最低気温の見方も交えながら服装選びを考えていくゼーーーット！！
+
+ 
+
+### まずは近年の秋の平均気温を知ろう
+
+気温の感じ方は人それぞれ違いますので、ざっくりとした参考程度に見て頂ければと思います。
+
+まずこの10月の気温をざっと見てみましょう！
+
+大体最高気温は20℃前後、最低気温は10℃前後を指しています。
+
+正に寒暖差の大きい、秋の気温ですね。
+
+自転車乗りは朝早くに家を出ることも多いため、朝7時前後ならばそれこそ最低気温10℃の状態で家を出ることが多いでしょう。
+
+まずこの時間の寒さに合わせて、ただ暖かい服装で出れば日中の日差しに間違いなくやられてしまうでしょう。
+
+10℃前後で履きたくなる冬用の起毛したタイツは、昼になり暑くなってきた時に脱ぐことが難しいです。
+
+上着も厚手のものとなれば荷物となり、持ち歩くために別途バックパックなどを用意したりととても面倒くさいです。
+
+ 
+
+### 秋のサイクリング服は重ね着を前提に
+
+秋の装備で重要なのは重ね着が出来る装備であること。
+
+パーツ毎に取り外しが出来るアイテムを揃えていくことです。
+
+夏用に使っていたアイテムを重ねて着ることも良いですね。
+
+スタッフ仙田であればこんな風に、夏用のジャージやビブをベースに秋用の装備を増やしていきます。
+
+		
+			#gallery-44 {
+				margin: auto;
+			}
+			#gallery-44 .gallery-item {
+				float: left;
+				margin-top: 10px;
+				text-align: center;
+				width: 50%;
+			}
+			#gallery-44 img {
+				border: 2px solid #cfcfcf;
+			}
+			#gallery-44 .gallery-caption {
+				margin-left: 0;
+			}
+			/* see gallery_shortcode() in wp-includes/media.php */
+		
+		
+			
+				![](https://cycle-z.com/wp-content/uploads/2022/10/7e66864662d5cdb1c28062c002a7dbfb-768x1024.jpg)
+
+			
+			
+				![](https://cycle-z.com/wp-content/uploads/2022/10/7156dff9835a74c644e2ea93f4d510d8-768x1024.jpg)
+
+			
+		
+
+#### <❶まずインナーから>
+
+気温帯15℃前後が快適になるような最適なアイテムがあります！
+
+それがアソスのベースレイヤー。
+
+![アソスの春秋用インナー](https://cycle-z.com/wp-content/uploads/2022/10/f1051c2c1c7249d34d3a490165adc90e-768x1024.jpg)
+
+夏用の半袖ジャージの下にまずはこちらを着ましょう。
+
+![秋用インナー半袖ジャージ](https://cycle-z.com/wp-content/uploads/2022/10/1ecf3657cac7c763e9099934e4a0c465-768x1024.jpg)
+
+ 
+
+#### <❷上着は薄手のものを>
+
+上着にはウィンドブレーカーを使いましょう。
+
+ウィンドブレーカーの中でも起毛などがなく、完全に風を遮ることだけを目的とした薄手のものを選びましょう。
+
+![ステムデザインウィンドブレーカー前](https://cycle-z.com/wp-content/uploads/2022/10/22637bf0b1289f02758bd5b64d873a34-768x1024.jpg)
+
+昼になり暑さが増し、上着を脱いだ時にはジャージのポケットに収まる携帯性の高いものをおすすめします。
+
+自転車に乗る限り、通気性・透湿性のあるものはとても重要なので、風を防ぐためだけの上着が1枚あれば薄手でも体感温度が格段に変わります。
+
+ペラペラの素材で心もとなく感じるかもしれませんが、とても大事なアイテムです。
+
+サイクルZ取扱いの中ではステムデザインのウィンドブレーカーとアソスのウィンドブレーカーがおすすめです。
+
+		
+			#gallery-45 {
+				margin: auto;
+			}
+			#gallery-45 .gallery-item {
+				float: left;
+				margin-top: 10px;
+				text-align: center;
+				width: 50%;
+			}
+			#gallery-45 img {
+				border: 2px solid #cfcfcf;
+			}
+			#gallery-45 .gallery-caption {
+				margin-left: 0;
+			}
+			/* see gallery_shortcode() in wp-includes/media.php */
+		
+		
+			
+				![ステムデザインウィンドブレーカー後ろ](https://cycle-z.com/wp-content/uploads/2022/10/ce023275e89021b902f7ece84b250c49-768x1024.jpg)
+
+			
+			
+				![アソスのウィンドブレーカー](https://cycle-z.com/wp-content/uploads/2022/10/ef112e5f004cf7fa07c45bf207e31d53-768x1024.jpg)
+
+			
+		
+上着も起毛のものではなく、薄手のものの方が真冬に入った時にも重ね着の１つとして使えるため重宝します。
+
+ 
+
+#### <❸着脱が簡単なアームカバーとレッグカバー>
+
+腕と脚の寒さにはそれぞれアームカバーとレッグカバーをつけて対処することも出来ます。
+
+![アームカバー](https://cycle-z.com/wp-content/uploads/2022/10/d94e67db6bd4cb4d8d2652230cd12947-1024x768.jpg)
+
+![アームカバー装着](https://cycle-z.com/wp-content/uploads/2022/10/3fc0417ef2b4be39572bafbda1aae66a-768x1024.jpg)
+
+運動量が多いと昼には脚部分は特に脱ぎたくなりますから、秋の時期にはカバーで対処するのがよいでしょう。
+
+![レッグカバー](https://cycle-z.com/wp-content/uploads/2022/10/929601fd37d77124a792859eaf6fd0a7-768x1024.jpg)
+
+秋用のグローブもあります！
+
+		
+			#gallery-46 {
+				margin: auto;
+			}
+			#gallery-46 .gallery-item {
+				float: left;
+				margin-top: 10px;
+				text-align: center;
+				width: 50%;
+			}
+			#gallery-46 img {
+				border: 2px solid #cfcfcf;
+			}
+			#gallery-46 .gallery-caption {
+				margin-left: 0;
+			}
+			/* see gallery_shortcode() in wp-includes/media.php */
+		
+		
+			
+				![秋用グローブ](https://cycle-z.com/wp-content/uploads/2022/10/9d8e7c969d33a511771f67a417b7a9ab-768x1024.jpg)
+
+			
+			
+				![秋用グローブ2](https://cycle-z.com/wp-content/uploads/2022/10/4447f43117aab6a1eb268096e782a683-768x1024.jpg)
+
+			
+		
+
+服装での温度調整が難しい秋ですが、他の季節でも使えるアイテムを揃えることで快適にサイクリングを楽しみましょう！
+
+ 
+
+### 気軽に参加できる様々なイベントを企画してます！
+
+サイクルZでは、スポーツバイクのメンテナンスも学べる初心者講習会や、ロードバイク、スポーツバイクファンが気軽に楽しく参加できるようなサイクリングイベントをどんどん企画していきます！
+
+ロードバイク、スポーツバイクなど愛車のメンテナンス方法でお悩みのあなた！
+
+ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
+
+ 
+
+[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+
+](https://cycle-z.com/first/)

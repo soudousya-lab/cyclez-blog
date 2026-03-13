@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -23,17 +24,15 @@ export default function Footer() {
               <p>営業時間　11:00〜19:00</p>
               <p>定休日　水曜日</p>
             </div>
-            <a
-              href="https://cycle-z.com/#contact"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/contact"
               className="inline-flex items-center gap-2 mt-4 bg-[#c41e3a] text-white px-6 py-2.5 rounded-full hover:bg-[#a01830] transition-colors text-sm font-medium"
             >
               お問い合わせ
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-            </a>
+            </Link>
           </div>
 
           {/* Contact & Access */}
@@ -42,7 +41,7 @@ export default function Footer() {
               <svg className="w-4 h-4 text-[#c41e3a]" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
               </svg>
-              <a href="https://cycle-z.com/#access" target="_blank" rel="noopener noreferrer" className="hover:text-[#c41e3a]">アクセス</a>
+              <Link href="/access" className="hover:text-[#c41e3a]">アクセス</Link>
             </div>
             <a href="tel:086-252-7744" className="flex items-center gap-2 text-[#c41e3a] font-bold text-lg">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -52,17 +51,15 @@ export default function Footer() {
             </a>
           </div>
 
-          {/* お知らせ */}
+          {/* ブログ */}
           <div>
-            <h3 className="font-bold text-gray-900 mb-3">お知らせ</h3>
+            <h3 className="font-bold text-gray-900 mb-3">ブログ</h3>
             <ul className="space-y-2 text-sm">
               <li className="flex items-center gap-2">
                 <svg className="w-3 h-3 text-[#c41e3a]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 5l7 7-7 7" />
                 </svg>
-                <a href="https://cycle-z.com/#news" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#c41e3a]">
-                  イベント開催
-                </a>
+                <Link href="/" className="text-gray-600 hover:text-[#c41e3a]">最新記事</Link>
               </li>
             </ul>
           </div>
@@ -75,25 +72,13 @@ export default function Footer() {
                 <svg className="w-3 h-3 text-[#c41e3a]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 5l7 7-7 7" />
                 </svg>
-                <a href="https://cycle-z.com/beginner/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#c41e3a]">
-                  初心者講習会について
-                </a>
+                <Link href="/first" className="text-gray-600 hover:text-[#c41e3a]">初めての方へ</Link>
               </li>
               <li className="flex items-center gap-2">
                 <svg className="w-3 h-3 text-[#c41e3a]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 5l7 7-7 7" />
                 </svg>
-                <a href="https://cycle-z.com/beginner/#workshop" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#c41e3a]">
-                  初心者講習会
-                </a>
-              </li>
-              <li className="flex items-center gap-2">
-                <svg className="w-3 h-3 text-[#c41e3a]" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M9 5l7 7-7 7" />
-                </svg>
-                <a href="https://cycle-z.com/beginner/#video" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#c41e3a]">
-                  初心者向け講習動画
-                </a>
+                <Link href="/faq" className="text-gray-600 hover:text-[#c41e3a]">よくある質問</Link>
               </li>
             </ul>
           </div>
@@ -106,17 +91,7 @@ export default function Footer() {
                 <svg className="w-3 h-3 text-[#c41e3a]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 5l7 7-7 7" />
                 </svg>
-                <a href="https://cycle-z.com/maintenance/#video" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#c41e3a]">
-                  メンテナンス動画
-                </a>
-              </li>
-              <li className="flex items-center gap-2">
-                <svg className="w-3 h-3 text-[#c41e3a]" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M9 5l7 7-7 7" />
-                </svg>
-                <a href="https://cycle-z.com/maintenance/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#c41e3a]">
-                  メンテナンスブログ
-                </a>
+                <Link href="/maintenance" className="text-gray-600 hover:text-[#c41e3a]">メンテナンス</Link>
               </li>
             </ul>
 
@@ -126,9 +101,7 @@ export default function Footer() {
                 <svg className="w-3 h-3 text-[#c41e3a]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 5l7 7-7 7" />
                 </svg>
-                <a href="https://cycle-z.com/fitting/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#c41e3a]">
-                  フィッティングとは
-                </a>
+                <Link href="/fitting" className="text-gray-600 hover:text-[#c41e3a]">フィッティングとは</Link>
               </li>
             </ul>
 
@@ -138,37 +111,25 @@ export default function Footer() {
                 <svg className="w-3 h-3 text-[#c41e3a]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 5l7 7-7 7" />
                 </svg>
-                <a href="https://cycle-z.com/about/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#c41e3a]">
-                  代表挨拶
-                </a>
+                <Link href="/about/greeting" className="text-gray-600 hover:text-[#c41e3a]">代表挨拶</Link>
               </li>
               <li className="flex items-center gap-2">
                 <svg className="w-3 h-3 text-[#c41e3a]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 5l7 7-7 7" />
                 </svg>
-                <a href="https://cycle-z.com/about/#voice" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#c41e3a]">
-                  お客様の声
-                </a>
-              </li>
-              <li className="flex items-center gap-2">
-                <svg className="w-3 h-3 text-[#c41e3a]" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M9 5l7 7-7 7" />
-                </svg>
-                <a href="https://cycle-z.com/about/#movie" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-[#c41e3a]">
-                  動画紹介
-                </a>
+                <Link href="/about" className="text-gray-600 hover:text-[#c41e3a]">CycleZとは？</Link>
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      {/* Copyright bar - red background like main site */}
+      {/* Copyright bar */}
       <div className="bg-[#c41e3a] text-white py-4">
         <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-2 text-sm">
-          <a href="https://cycle-z.com/privacy/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+          <Link href="/privacy" className="hover:underline">
             個人情報保護方針
-          </a>
+          </Link>
           <p>Copyright CycleZ（サイクルゼット）岡山駅すぐのロードバイク・クロスバイク・スポーツ自転車屋さん . All Rights Reserved.</p>
         </div>
       </div>

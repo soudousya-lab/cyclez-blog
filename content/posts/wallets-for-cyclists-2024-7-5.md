@@ -1,0 +1,172 @@
+---
+title: "サイクリストに重宝する機能性抜群のお財布"
+date: "2024-07-05"
+description: ""
+category: "maintenance-blog"
+tags: ["maintenance-blog"]
+wp_id: 5960
+wp_url: "https://cycle-z.com/blog/2024/07/05/wallets-for-cyclists-2024-7-5/"
+---
+
+rawlow mountain worksさんから新しくお財布が登場したゼーーーット！！
+
+ 
+
+サイクルZではバックパックにもなるサドルバック「Bike'n Hike Post Bag」が人気を博しているお馴染みのブランドです。
+
+rawlow（ロウロウ）さんはハイカーでありサイクリストでもある2人によって作られたブランドで、「自分達が使いたいもの」をコンセプトに自社工房で１つ１つハンドメイドで商品を作っておられます。
+
+商品の受注は年に１回しか行われていないため希少価値が高く、品質の良さは既に界隈には知れ渡っております！
+
+そしてクオリティの高さに対して、値段も決して高くない設定なのがまた嬉しいところ！
+
+今回はそのrawlow mountain worksさんからミニウォレットが発売したということで、ご紹介させて頂きたいと思います。
+
+ 
+
+![](https://cycle-z.com/wp-content/uploads/2024/07/IMG_20240701_144723-1024x768.jpg)
+
+ 
+
+ 
+
+### 細部までこだわりが詰まった三つ折り財布
+
+ 
+
+山財布として使えるrawlowさんの製品は、我々サイクリストの使用にも耐えうるものに仕上がっています。
+
+元々悩みの種として尽きない汗や水に対する製品を作っている点では、共通のものとして使えるアイテムが多い山製品。
+
+自分たちも入荷しない理由がありませんでした。笑
+
+ 
+
+#### 1. 耐水性抜群！
+
+ 
+
+![](https://cycle-z.com/wp-content/uploads/2024/07/27d6d54abacb1bf51a9037792f2e1e7d-1024x1024.jpg)
+
+ ![](https://cycle-z.com/wp-content/uploads/2024/07/a4c738b6e7cf6667cf6a9839b2883381-1024x768.jpg)
+
+今回入荷した三つ折り財布【¥17,600-inTAX】は上質な防水レザーが使用されており、サイクリング中の使用からそのまま日常生活でも使えるようになっています。
+
+レザー製品なのに、水がついたり汗で湿気たりしても大丈夫なのかと思われるかもしれませんが、こちらの防水レザーは革の内部からしっかり撥水加工してありますので、基本的なお手入れも乾いた布で拭き取るだけでOK！
+
+更に細かく製品を見ていくと、レザーの端の処理も全て折り込みで切りっぱなしになっていません。
+
+![](https://cycle-z.com/wp-content/uploads/2024/07/1f3b9b41625d13f4fcdebdf2086ea384-1024x768.jpg)
+
+ここが切りっぱなしになると水も中に侵入しやすく水の拭き取りも難しくなります。
+
+レザーの商品としてとても丁寧に作られていることが分かります。さすがrawlowさんの商品です。
+
+ 
+
+#### 2. 小ぶりながらも充実の収納力
+
+ 
+
+![](https://cycle-z.com/wp-content/uploads/2024/07/9c47d52cd13cf82aaf85298797e79110-1024x768.jpg)
+
+三つ折り財布で厚みはあるものの、中身の収納は厚み以上の充実ぶりなのも特筆すべきポイントです。
+
+ 
+
+![](https://cycle-z.com/wp-content/uploads/2024/07/c0d254a0d80e3aa003120c6d983aaf40-1024x768.jpg)
+
+使う頻度の高いカードはこちらのスペースに入れておくとよいでしょう。
+
+ 
+
+![](https://cycle-z.com/wp-content/uploads/2024/07/f111abc783734459452ff77f523fbcc9-1024x768.jpg)
+
+小銭入れ側にもスリーブが多く設けてあり、自分の使いやすいように区分け出来ますね。
+
+ 
+
+#### 3. 機能面だけではない！おしゃれな配色デザイン
+
+ 
+
+今回、個人的に好きなポイントが色使いです。
+
+単色にせず、ニュアンスカラーを内部に入れているのはオシャレですよね。
+
+ 
+
+サイクルZでは、
+
+★black x lavender
+★coyote x mint
+
+の2種を在庫しております。
+
+ 
+
+更に、形違いで長財布タイプ【¥20,900-inTAX】もお取扱いがございます。
+
+（コインケースタイプもございますが当店では入荷しておりませんので、何卒ご了承ください。）
+
+![](https://cycle-z.com/wp-content/uploads/2024/07/a2cbe546a9c5dc855dd58a6cc764b48e-1024x768.jpg)
+
+ ![](https://cycle-z.com/wp-content/uploads/2024/07/6b31a462c966f7687c29c2ac75a6b620-1024x768.jpg)
+
+今回主にご紹介した三つ折りタイプは既にオンライン上では在庫切れになっているようなので、気になる方はお早めに店頭までよろしくお願いします。
+
+ 
+
+他にもBike'n Hike Post Bag【¥19,250-inTAX】、　※商品詳細は[コチラ](https://cycle-z.com/blog/2021/09/03/recommended-backpack-2021-9-3/)
+
+![](https://cycle-z.com/wp-content/uploads/2024/07/67e38a7d4a9c3e813baae343ccfd7112-1024x768.jpg)
+
+![](https://cycle-z.com/wp-content/uploads/2024/07/f989ea392d27c841d88500e1b1a2a771-1024x768.jpg)
+
+ ![](https://cycle-z.com/wp-content/uploads/2024/07/1be822bf876584b5b88f8310a99630c8-1024x768.jpg)
+
+ 
+
+TABITIBI トートバッグ【¥6,820-inTAX】、
+
+![](https://cycle-z.com/wp-content/uploads/2024/07/dcfceea5ae03fc240c81813c3d4024fc-1024x768.jpg)
+
+![](https://cycle-z.com/wp-content/uploads/2024/07/5069731fcce848645b93fe473a757b3c-1024x768.jpg)
+
+ ![](https://cycle-z.com/wp-content/uploads/2024/07/02ac6f157a8afd000a3ac8997c485569-1024x768.jpg)
+
+これらの商品も同時に入荷しておりますので、ぜひこの機会にrawlow mountain worksさんの商品を手に取ってみてください。
+
+大満足の使い心地です！
+
+ 
+
+銀色の箔押しのワンポイントっていいよね！！！
+
+![](https://cycle-z.com/wp-content/uploads/2024/07/12a270d1107d1dafca085c53e6d173fc-1024x768.jpg)
+
+ 
+
+※rawlow moutain works／Instagram
+
+[https://www.instagram.com/p/C7wR_oaPLX6/?igsh=MXg3NGl1bjB0YzdpMw==](https://www.instagram.com/p/C7wR_oaPLX6/?igsh=MXg3NGl1bjB0YzdpMw==)
+
+ 
+
+ 
+
+### 気軽に参加できる様々なイベントを企画してます！
+
+ 
+
+サイクルZでは、スポーツバイクのメンテナンスも学べる初心者講習会や、ロードバイク、スポーツバイクファンが気軽に楽しく参加できるようなサイクリングイベントをどんどん企画していきます！
+
+ロードバイク、スポーツバイクなど愛車のメンテナンス方法でお悩みのあなた！
+
+ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
+
+ 
+
+[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+
+](https://cycle-z.com/first/)

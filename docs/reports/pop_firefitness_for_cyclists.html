@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
+
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Noto Sans JP', 'Hiragino Sans', sans-serif;
+    color: #1a1a1a;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ===== HEADER ===== */
+  .header {
+    background: #FF6B35;
+    padding: 3.5mm 15mm;
+    text-align: center;
+    position: relative;
+  }
+
+  .header-top {
+    font-size: 8pt;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 2px;
+    margin-bottom: 0.5mm;
+  }
+
+  .header-brand {
+    font-size: 16pt;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 3px;
+  }
+
+  /* ===== HERO ===== */
+  .hero {
+    text-align: center;
+    padding: 6mm 18mm 4mm;
+  }
+
+  .hero-tag {
+    display: inline-block;
+    background: #FF6B35;
+    color: #fff;
+    font-size: 9pt;
+    font-weight: 700;
+    padding: 1mm 5mm;
+    border-radius: 2mm;
+    margin-bottom: 3mm;
+    letter-spacing: 1px;
+  }
+
+  .hero-main {
+    font-size: 30pt;
+    font-weight: 900;
+    line-height: 1.3;
+    color: #0d0d0d;
+  }
+
+  .hero-main .em {
+    color: #FF6B35;
+    font-size: 36pt;
+  }
+
+  .hero-sub {
+    font-size: 11pt;
+    color: #666;
+    margin-top: 3mm;
+    line-height: 1.5;
+  }
+
+  /* ===== DIVIDER ===== */
+  .divider {
+    width: 50mm;
+    height: 2px;
+    background: #FF6B35;
+    margin: 0 auto;
+  }
+
+  /* ===== SYMPTOMS ===== */
+  .symptoms {
+    padding: 5mm 18mm 3mm;
+  }
+
+  .symptoms-title {
+    font-size: 12pt;
+    font-weight: 900;
+    text-align: center;
+    color: #333;
+    margin-bottom: 3mm;
+  }
+
+  .symptom-row {
+    display: flex;
+    gap: 2.5mm;
+    margin-bottom: 2.5mm;
+  }
+
+  .symptom-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 3mm;
+    padding: 3mm 4mm;
+    background: #fff8f5;
+    border-radius: 2mm;
+    border-left: 3px solid #FF6B35;
+  }
+
+  .symptom-icon {
+    font-size: 10pt;
+    flex-shrink: 0;
+  }
+
+  .symptom-text {
+    font-size: 10pt;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.3;
+  }
+
+  /* ===== APPROACH ===== */
+  .approach {
+    padding: 3mm 18mm;
+  }
+
+  .approach-title {
+    font-size: 11pt;
+    font-weight: 900;
+    text-align: center;
+    color: #FF6B35;
+    margin-bottom: 3mm;
+  }
+
+  .approach-cards {
+    display: flex;
+    gap: 3mm;
+  }
+
+  .approach-card {
+    flex: 1;
+    background: #1a1a1a;
+    border-radius: 3mm;
+    padding: 3.5mm;
+    text-align: center;
+  }
+
+  .approach-card-num {
+    font-size: 7pt;
+    color: #FF6B35;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 1.5mm;
+  }
+
+  .approach-card-title {
+    font-size: 11pt;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.3;
+    margin-bottom: 1.5mm;
+  }
+
+  .approach-card-desc {
+    font-size: 8pt;
+    color: #aaa;
+    line-height: 1.4;
+  }
+
+  /* ===== LINK SECTION ===== */
+  .link-section {
+    padding: 3mm 18mm;
+  }
+
+  .link-box {
+    background: #f8f8f8;
+    border-radius: 3mm;
+    padding: 3.5mm 5mm;
+    display: flex;
+    align-items: center;
+    gap: 4mm;
+    border: 1px solid #eee;
+  }
+
+  .link-icon {
+    width: 12mm;
+    height: 12mm;
+    background: #c41e3a;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 9pt;
+    font-weight: 900;
+  }
+
+  .link-content {
+    flex: 1;
+  }
+
+  .link-label {
+    font-size: 8pt;
+    color: #999;
+    margin-bottom: 0.5mm;
+  }
+
+  .link-main {
+    font-size: 11pt;
+    font-weight: 900;
+    color: #1a1a1a;
+    line-height: 1.3;
+  }
+
+  .link-sub {
+    font-size: 8pt;
+    color: #666;
+    margin-top: 0.5mm;
+  }
+
+  /* ===== CTA ===== */
+  .cta-section {
+    padding: 4mm 18mm 2mm;
+    text-align: center;
+  }
+
+  .cta-main {
+    background: #FF6B35;
+    color: #fff;
+    font-size: 16pt;
+    font-weight: 900;
+    padding: 3.5mm 10mm;
+    border-radius: 3mm;
+    display: inline-block;
+    margin: 0 auto;
+    letter-spacing: 1px;
+  }
+
+  .cta-detail {
+    margin-top: 3mm;
+    font-size: 10pt;
+    color: #555;
+    line-height: 1.5;
+  }
+
+  .cta-detail strong {
+    color: #FF6B35;
+    font-size: 13pt;
+  }
+
+  .cta-note {
+    margin-top: 1.5mm;
+    font-size: 9pt;
+    color: #999;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    display: flex;
+    height: 10mm;
+    margin-top: auto;
+  }
+
+  .footer-left {
+    flex: 1;
+    background: #FF6B35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .footer-right {
+    flex: 1;
+    background: #0d0d0d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .footer-brand {
+    font-weight: 900;
+    font-size: 10pt;
+    letter-spacing: 2px;
+  }
+
+  .footer-right .footer-brand {
+    color: #c41e3a;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-top">PERSONAL TRAINING GYM</div>
+    <div class="header-brand">FIRE FITNESS</div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-tag">FOR CYCLISTS</div>
+    <div class="hero-main">
+      ペダリングの悩み、<br>
+      <span class="em">身体</span>から解決します。
+    </div>
+    <div class="hero-sub">
+      フィッティングで見つかった課題を<br>
+      パーソナルトレーニングで改善するプログラム。
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- SYMPTOMS -->
+  <div class="symptoms">
+    <div class="symptoms-title">こんな課題を指摘されていませんか？</div>
+    <div class="symptom-row">
+      <div class="symptom-item">
+        <div class="symptom-icon">&bull;</div>
+        <div class="symptom-text">腹圧が抜けて<br>体幹が不安定</div>
+      </div>
+      <div class="symptom-item">
+        <div class="symptom-icon">&bull;</div>
+        <div class="symptom-text">骨盤が左右に<br>ブレる</div>
+      </div>
+    </div>
+    <div class="symptom-row">
+      <div class="symptom-item">
+        <div class="symptom-icon">&bull;</div>
+        <div class="symptom-text">股関節が硬く<br>可動域が狭い</div>
+      </div>
+      <div class="symptom-item">
+        <div class="symptom-icon">&bull;</div>
+        <div class="symptom-text">長距離で腰・膝に<br>痛みが出る</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- APPROACH -->
+  <div class="approach">
+    <div class="approach-title">FIRE FITNESSのアプローチ</div>
+    <div class="approach-cards">
+      <div class="approach-card">
+        <div class="approach-card-num">STEP 1</div>
+        <div class="approach-card-title">アライメント<br>評価</div>
+        <div class="approach-card-desc">姿勢・可動域・筋バランスを<br>パーソナルで詳細チェック</div>
+      </div>
+      <div class="approach-card">
+        <div class="approach-card-num">STEP 2</div>
+        <div class="approach-card-title">モビリティ &<br>体幹強化</div>
+        <div class="approach-card-desc">ピラティス系メソッドで<br>腹圧・骨盤制御を改善</div>
+      </div>
+      <div class="approach-card">
+        <div class="approach-card-num">STEP 3</div>
+        <div class="approach-card-title">ペダリングに<br>落とし込む</div>
+        <div class="approach-card-desc">改善した身体機能を<br>実際の動きに接続</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 1F LINK -->
+  <div class="link-section">
+    <div class="link-box">
+      <div class="link-icon">1F</div>
+      <div class="link-content">
+        <div class="link-label">1F cycleZ との連携</div>
+        <div class="link-main">改善の成果はフィッティングで確認できます</div>
+        <div class="link-sub">1Fのバイクフィッティングで、トレーニング前後の変化を可視化。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <div>
+      <div class="cta-main">まずは体験トレーニングへ</div>
+      <div class="cta-detail">
+        体験料 <strong>無料</strong><br>
+        フィッティング結果をお持ちの方は、<br>それに基づいたプログラムをご提案します。
+      </div>
+      <div class="cta-note">
+        スタッフにお声がけいただくか、1F cycleZでもご案内可能です。
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-left">
+      <div class="footer-brand">FIRE FITNESS ── 2F</div>
+    </div>
+    <div class="footer-right">
+      <div class="footer-brand">cycleZ ── 1F</div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

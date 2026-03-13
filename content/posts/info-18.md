@@ -1,0 +1,27 @@
+---
+title: "春のロードバイクを一緒に楽しみませんか？？4/1吉備路春ライド"
+date: "2018-03-23"
+description: ""
+category: "event"
+tags: ["event", "news"]
+wp_id: 1046
+wp_url: "https://cycle-z.com/blog/2018/03/23/info-18/"
+---
+
+２０１８年４月１日に、吉備路春ライドを開催します！
+
+この機会に、岡山の景色を感じながらロードバイクを満喫してみませんか？
+
+参加ご希望の方は、店頭スタッフまでお気軽にお問い合わせください。
+
+当日参加の方は事前にサイクルゼットまでお電話ください。
+
+TEL:086-252-7744
+
+![](http://cycle-z.com/wp-content/uploads/2018/03/d41d8cd9.jpg)
+
+![](http://cycle-z.com/wp-content/uploads/2018/03/43ccecf316616162efaf17b81928074a.png)
+
+![](http://cycle-z.com/wp-content/uploads/2018/03/4185e2a70907cf8407f8b80a4cc121bd.png)
+
+![](http://cycle-z.com/wp-content/uploads/2018/03/29020205_355338724978695_1285704741_n.jpg)

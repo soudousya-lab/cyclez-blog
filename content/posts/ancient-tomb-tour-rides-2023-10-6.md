@@ -1,0 +1,285 @@
+---
+title: "岡山吉備の古墳巡りライド"
+date: "2023-10-06"
+description: ""
+category: "event"
+tags: ["event", "event-report"]
+wp_id: 5398
+wp_url: "https://cycle-z.com/blog/2023/10/06/ancient-tomb-tour-rides-2023-10-6/"
+---
+
+今回、古代吉備国の古墳を訪れるために、ポタリングイベントを開催しました。
+
+この日の和気あいあいとしたイベントの様子を、スタッフ仙田の視点からお届けするゼーーーット！！
+
+ 
+
+### サイクルZ集合組と現地集合組に分かれて出発！
+
+当日の朝、参加者はサイクルZ集合組ときびじアリーナ現地集合組に分かれてスタートしました。
+
+今回仙田はアリーナ現地集合の方達を迎えるために単身自宅から向かいました！
+
+サイクルZ出発組の最初の目的地は、きびじアリーナにある『LEGARE COFFEE STAND(レガーレコーヒースタンド)』。
+
+![](https://cycle-z.com/wp-content/uploads/2023/10/IMG_0549-1024x768.jpg)
+
+スタッフ全員が大満足した素敵なお店でした！
+
+今回、現地集合組は行くことは出来ませんでしたが、オシャレな外観と相まってとても気になります。
+
+ぜひ皆さんも足を運んでみてください！
+
+■LEGARE COFFEE STAND(レガーレコーヒースタンド)
+[https://maps.app.goo.gl/fZFmwUEHttRhafJg7?g_st=ic](https://maps.app.goo.gl/fZFmwUEHttRhafJg7?g_st=ic)
+
+ 
+
+### 美味しいカフェと韓国料理屋を紹介！
+
+サイクルZ集合組より一足先にきびじアリーナへ向かう途中、オススメしたいお店を見つけたのでご紹介しておきます！
+
+まずは、『古宮道（こぐんどう）』という韓国料理店。
+
+こちらはオシャレな古民家で、韓国料理以外に和パフェも味わうことが出来ます！
+
+特にランチセットが美味しそうです✨
+
+![古宮道](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2778-768x1024.jpg)
+
+ 
+
+さらに近くにもう1つ、喫茶店『茶蘭呉（ちゃらんこ）』もオススメです。
+
+![茶蘭呉（ちゃらんこ）](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2776-768x1024.jpg)
+
+少し坂の上にあるため、坂を登るのが辛い方には、ここをご褒美として目標にするのも良いかもしれません。
+
+まだ行ったことのない方は、ぜひ訪れてみてください。
+
+■茶蘭呉(ちゃらんこ)
+[https://maps.app.goo.gl/jGzBG6B7CHhaNqZKA?g_st=ic](https://maps.app.goo.gl/jGzBG6B7CHhaNqZKA?g_st=ic)
+
+ 
+
+### 『もてなしの館』でようやく合流！
+
+今回のポタリングには総勢35名の方にご参加頂きました！
+
+アリーナ集合はその内7名で、気候もとても良かったので皆さん走る気満々のようでした。
+
+![現地集合組](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2785-768x1024.jpg)
+
+しかし、きびじアリーナの駐車場がイベントにより予想外に混雑していたため、急遽集合場所を『もてなしの館』に変更しました。
+
+最終的には五重の塔前で全員が揃い、ようやく合流できました。
+
+![五重の塔前で合流](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2792-1024x768.jpg)
+
+ 
+
+### 古墳巡りの前に腹ごしらえ
+
+合流後、早速ご飯タイムに突入しました！
+
+サイクルZのライドイベントで空腹は許されません(笑)
+
+海鮮DON 丼丸の海鮮丼をテイクアウトさせて頂きました。
+
+		
+			#gallery-1 {
+				margin: auto;
+			}
+			#gallery-1 .gallery-item {
+				float: left;
+				margin-top: 10px;
+				text-align: center;
+				width: 50%;
+			}
+			#gallery-1 img {
+				border: 2px solid #cfcfcf;
+			}
+			#gallery-1 .gallery-caption {
+				margin-left: 0;
+			}
+			/* see gallery_shortcode() in wp-includes/media.php */
+		
+		
+			
+				![海鮮DON 丼丸の丼](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2809-768x1024.jpg)
+
+			
+			
+				![海鮮DON 丼丸総社店外観](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2797-768x1024.jpg)
+
+			
+		
+具材たっぷりでご飯もたっぷり入っており、大盛りのボリュームに皆さん大満足だったようです。
+
+		
+			#gallery-2 {
+				margin: auto;
+			}
+			#gallery-2 .gallery-item {
+				float: left;
+				margin-top: 10px;
+				text-align: center;
+				width: 50%;
+			}
+			#gallery-2 img {
+				border: 2px solid #cfcfcf;
+			}
+			#gallery-2 .gallery-caption {
+				margin-left: 0;
+			}
+			/* see gallery_shortcode() in wp-includes/media.php */
+		
+		
+			
+				![海鮮DON 丼丸の海鮮丼を味わう参加者達](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2804-1024x768.jpg)
+
+			
+			
+				![海鮮DON 丼丸の海鮮丼を持って笑顔で写真に写る男女](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2800-1024x768.jpg)
+
+			
+		
+■海鮮DON 丼丸
+[https://maps.app.goo.gl/7nirFDUncx4Wa6iL8?g_st=ic](https://maps.app.goo.gl/7nirFDUncx4Wa6iL8?g_st=ic)
+
+そして休憩後に、ナンバベーカリーにも寄ることになりました。
+
+![ナンバベーカリー](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2825-1024x768.jpg)
+
+マンゴースムージーが美味しかったです！
+
+		
+			#gallery-3 {
+				margin: auto;
+			}
+			#gallery-3 .gallery-item {
+				float: left;
+				margin-top: 10px;
+				text-align: center;
+				width: 50%;
+			}
+			#gallery-3 img {
+				border: 2px solid #cfcfcf;
+			}
+			#gallery-3 .gallery-caption {
+				margin-left: 0;
+			}
+			/* see gallery_shortcode() in wp-includes/media.php */
+		
+		
+			
+				![ナンバベーカリーの前で写真に写る男性2](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2827-768x1024.jpg)
+
+			
+			
+				![ナンバベーカリーの前で写真に写る男性1](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2826-768x1024.jpg)
+
+			
+		
+さすがに皆さんパンまではお腹に入りませんでした😆
+
+■ナンバベーカリー
+[https://maps.app.goo.gl/AFBJ3YxQZxR3Qe5YA?g_st=ic](https://maps.app.goo.gl/AFBJ3YxQZxR3Qe5YA?g_st=ic)
+
+ 
+
+### ようやく本題の古墳巡りがスタート
+
+ここまでコーヒー、海鮮丼、パンと食べまくりライドになっていますが、ようやく古墳巡りスタートです！
+
+#### ＜❶まずは作山古墳＞
+
+最初に訪れたのは『作山古墳』。
+
+自転車道の脇にあり、周りを散歩したり古墳を登ったりすることができる古墳です。
+
+document.createElement('video');
+[https://cycle-z.com/wp-content/uploads/2023/10/IMG_2840.mp4](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2840.mp4)
+外周を走ることで丘の形状をより詳しく知ることができて面白かったです。
+
+#### ＜❷次に江崎古墳＞
+
+江崎古墳では石室に入ることはできませんが、その存在が今でもはっきりと残っていることに感動しました。
+
+![江崎古墳2](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2852-768x1024.jpg)
+
+山の中に位置しているため、なかなか訪れる人が少ないのではないでしょうか。
+
+![江崎古墳1](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2844-1024x768.jpg)
+
+ 
+
+#### ＜❸鳶尾塚古墳も巡りました＞
+
+次に訪れたのは『鳶尾塚古墳』。
+
+![鳶尾塚古墳入口](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2871-768x1024.jpg)
+
+田んぼの中にあり、少し入り組んだ場所にあるため、探しに来る人は少ないかもしれません。
+
+鳶と名前がついてる古墳の石室内にはコウモリが3匹いました。
+
+![鳶尾塚古墳にいたコウモリ](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2874-768x1024.jpg)
+
+騒がしくライト当ててごめんなさい。
+
+休憩がてらビジターセンターにも立ち寄りました。
+
+ここでもさまざまな資料を見ることができます。
+
+ 
+
+#### ＜❹最後に千足古墳＞
+
+最後に訪れたのは『千足古墳』。
+
+![千足古墳](https://cycle-z.com/wp-content/uploads/2023/10/20231001_140833-1024x461.jpg)
+
+見渡しの良い場所にあり、石室には入ることはできませんが、モニターで展示室のように見ることができます。
+
+![千足古墳の中をモニターでチェック](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2898-768x1024.jpg)
+
+ここまで回ると、吉備の王国の広大さを実感しました。
+
+古墳の数には驚かされますね。
+
+![千足古墳の前で記念撮影](https://cycle-z.com/wp-content/uploads/2023/10/20231001_140952-1-1024x461.jpg)
+
+ 
+
+### 楽しい一日の締めくくり！
+
+もう一つ回る予定でしたが、規模が大きく、ここで解散となりました。
+
+自由解散の雰囲気が良いですね。
+
+サイクルZまで帰るメンバー同士が年齢関係なく談笑し、コンビニで休憩している光景が仙田として一番印象的でした。
+
+![コンビニの前で談笑する参加者達](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2913-1024x768.jpg)
+
+今回のイベントも怪我もなく、安全に終えることができ、何より皆さんが楽しんでくださって嬉しい限りです。
+
+古墳巡りだけでなく、美味しい食事や気持ちの良い道を走る爽快さなど、色々な楽しい時間を同時に楽しめた最高の1日となりました。
+
+ご参加いただいた皆さん、ありがとうございました！
+
+ 
+
+### 気軽に参加できる様々なイベントを企画してます！
+
+サイクルZでは、スポーツバイクのメンテナンスも学べる初心者講習会や、ロードバイク、スポーツバイクファンが気軽に楽しく参加できるようなサイクリングイベントをどんどん企画していきます！
+
+ロードバイク、スポーツバイクなど愛車のメンテナンス方法でお悩みのあなた！
+
+ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
+
+ 
+
+[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+
+](https://cycle-z.com/first/)
