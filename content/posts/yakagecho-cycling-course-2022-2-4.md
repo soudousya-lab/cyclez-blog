@@ -6,6 +6,7 @@ category: "event-report"
 tags: ["event-report", "news"]
 wp_id: 3150
 wp_url: "https://cycle-z.com/blog/2022/02/04/yakagecho-cycling-course-2022-2-4/"
+image: "/logo.png"
 ---
 
 毎回イベントで色んなコースを案内してくださる松岡さん！

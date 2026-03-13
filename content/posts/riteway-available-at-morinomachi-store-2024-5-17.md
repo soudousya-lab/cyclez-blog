@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 5885
 wp_url: "https://cycle-z.com/blog/2024/05/17/riteway-available-at-morinomachi-store-2024-5-17/"
+image: "/logo.png"
 ---
 
 4月27日（土）から杜の街プラザ2階で始まっているポップアップストアで、新たに『RITEWAY（ライトウェイ）』さんの自転車をラインナップしています。

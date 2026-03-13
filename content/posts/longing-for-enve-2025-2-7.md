@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 6219
 wp_url: "https://cycle-z.com/blog/2025/02/07/longing-for-enve-2025-2-7/"
+image: "/logo.png"
 ---
 
 皆さん、こんにちは！

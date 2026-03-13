@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 2974
 wp_url: "https://cycle-z.com/blog/2021/12/10/info-122/"
+image: "/logo.png"
 ---
 
 ### 【12月の初心者講習会のお知らせ】

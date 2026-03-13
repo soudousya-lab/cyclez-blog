@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 2454
 wp_url: "https://cycle-z.com/blog/2021/08/20/beginner-workshop-2021-8-20/"
+image: "/logo.png"
 ---
 
 ８月に入り、めちゃくちゃ暑くなりました。

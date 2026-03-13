@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 4711
 wp_url: "https://cycle-z.com/blog/2023/03/25/choose-a-key-2023-3-25/"
+image: "/logo.png"
 ---
 
 間もなく新生活が始まり、自転車の保管場所が変わるなど、新たに鍵を用意することになる方もいらっしゃるのではないでしょうか。

@@ -6,6 +6,7 @@ category: "news"
 tags: ["news", "maintenance-blog"]
 wp_id: 3265
 wp_url: "https://cycle-z.com/blog/2022/03/08/stretches-for-cycling-2022-3-8/"
+image: "/logo.png"
 ---
 
 皆さん、自転車に乗る前にストレッチや準備運動をした方が良いということは感じてると思います。

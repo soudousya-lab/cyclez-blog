@@ -6,6 +6,7 @@ category: "news"
 tags: ["news", "lineup"]
 wp_id: 6160
 wp_url: "https://cycle-z.com/blog/2024/10/23/apparel202411/"
+image: "/logo.png"
 ---
 
 ## **表面を毛羽立たせたコットンフランネルのシャツはやわらかく温かい秋冬の定番シャツ！**

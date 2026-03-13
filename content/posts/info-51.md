@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 1695
 wp_url: "https://cycle-z.com/blog/2019/09/30/info-51/"
+image: "/logo.png"
 ---
 
 大好評のロードバイク初心者講習会をAM9時～サイクルゼットで行います！詳細は店頭スタッフまでお問い合わせください。

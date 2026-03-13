@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 2266
 wp_url: "https://cycle-z.com/blog/2021/05/14/info-112/"
+image: "/logo.png"
 ---
 
 緊急事態宣言にともない5/23(日)の初心者講習会は中止いたします。

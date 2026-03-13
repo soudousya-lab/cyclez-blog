@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 1775
 wp_url: "https://cycle-z.com/blog/2020/02/01/info-75/"
+image: "/logo.png"
 ---
 
 ![basso・VENTA（ベンタ）・ロードバイクフェア開催　岡山・サイクルZ](/images/wp/2020-02-basso-roadbike-fair2020.jpg)

@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 4175
 wp_url: "https://cycle-z.com/blog/2022/10/28/autumn-clothing-2022-10-28/"
+image: "/logo.png"
 ---
 
 サイクリング時の秋の服装。

@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 2202
 wp_url: "https://cycle-z.com/blog/2021/01/06/info-100/"
+image: "/logo.png"
 ---
 
 2020初詣ライドを1月10日（日）に行います！

@@ -6,6 +6,7 @@ category: "event-report"
 tags: ["event-report", "maintenance-blog"]
 wp_id: 5457
 wp_url: "https://cycle-z.com/blog/2023/10/27/tokushima-trip-2023-10-27/"
+image: "/logo.png"
 ---
 
 先日、お休みを利用して個人的に輪行でのんびり徳島日帰り旅行にいってきました！

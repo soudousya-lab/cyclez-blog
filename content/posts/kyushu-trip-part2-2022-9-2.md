@@ -6,6 +6,7 @@ category: "event-report"
 tags: ["event-report", "news"]
 wp_id: 3939
 wp_url: "https://cycle-z.com/blog/2022/09/02/kyushu-trip-part2-2022-9-2/"
+image: "/logo.png"
 ---
 
 サイクルZの店長とスタッフ仙田と西井の九州輪行旅2,3日目。

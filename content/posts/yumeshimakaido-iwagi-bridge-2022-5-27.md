@@ -6,6 +6,7 @@ category: "event-report"
 tags: ["event-report", "news"]
 wp_id: 3565
 wp_url: "https://cycle-z.com/blog/2022/05/27/yumeshimakaido-iwagi-bridge-2022-5-27/"
+image: "/logo.png"
 ---
 
 今回のライドイベントでは因島いんのしまをスタート地点として、ゆめしま海道を走ってきました！

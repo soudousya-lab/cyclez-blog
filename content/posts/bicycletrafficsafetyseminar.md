@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 6483
 wp_url: "https://cycle-z.com/blog/2026/02/28/bicycletrafficsafetyseminar/"
+image: "/logo.png"
 ---
 
 ## 2026年3月14日（土）

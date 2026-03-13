@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 4052
 wp_url: "https://cycle-z.com/blog/2022/10/06/info-139/"
+image: "/logo.png"
 ---
 
 おかげさまでcycleZ（サイクルゼット）は10月10日で7周年を迎えます！

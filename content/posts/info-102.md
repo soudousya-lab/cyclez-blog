@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 2215
 wp_url: "https://cycle-z.com/blog/2021/03/09/info-102/"
+image: "/logo.png"
 ---
 
 ロードバイク初心者講習会を、3月は14日（日）、28日（日）に実施いたします！

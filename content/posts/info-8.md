@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 964
 wp_url: "https://cycle-z.com/blog/2017/12/08/info-8/"
+image: "/logo.png"
 ---
 
 大好評のロードバイク初心者講習会を12月10日にサイクルゼットで行います！詳細は店頭スタッフまでお問い合わせください。

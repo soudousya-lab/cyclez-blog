@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 1323
 wp_url: "https://cycle-z.com/blog/2019/04/26/info-53/"
+image: "/logo.png"
 ---
 
 **2019年5月1日（水）5日（日）、6日（月）**をお休みさせていただきます！

@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 5645
 wp_url: "https://cycle-z.com/blog/2023/12/01/road-bike-for-beginner-2023-12-1/"
+image: "/logo.png"
 ---
 
 今回は、改めてサイクルZで取り扱っている自転車のラインナップを紹介するゼーーーット！！

@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 2223
 wp_url: "https://cycle-z.com/blog/2021/03/09/info-104/"
+image: "/logo.png"
 ---
 
 4月25日（日）『BASSO』『macchi cycles』試乗会&オーダーフェアを開催します！！

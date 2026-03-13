@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 1020
 wp_url: "https://cycle-z.com/blog/2018/02/16/info-15/"
+image: "/logo.png"
 ---
 
 2018年2月18日に予定していたロードバイクランディングセミナーが翌日曜日、2018年2月25日に変更になりました。

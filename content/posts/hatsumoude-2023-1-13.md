@@ -6,6 +6,7 @@ category: "event-report"
 tags: ["event-report"]
 wp_id: 4430
 wp_url: "https://cycle-z.com/blog/2023/01/12/hatsumoude-2023-1-13/"
+image: "/logo.png"
 ---
 
 皆さん明けましておめでとうございます。

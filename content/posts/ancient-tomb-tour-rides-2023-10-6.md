@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "event-report"]
 wp_id: 5398
 wp_url: "https://cycle-z.com/blog/2023/10/06/ancient-tomb-tour-rides-2023-10-6/"
+image: "/logo.png"
 ---
 
 今回、古代吉備国の古墳を訪れるために、ポタリングイベントを開催しました。

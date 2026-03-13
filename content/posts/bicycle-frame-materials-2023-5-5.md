@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 4891
 wp_url: "https://cycle-z.com/blog/2023/05/05/bicycle-frame-materials-2023-5-5/"
+image: "/logo.png"
 ---
 
 皆さんはご自身が乗っている自転車のフレーム素材を気にしたことはありますか？

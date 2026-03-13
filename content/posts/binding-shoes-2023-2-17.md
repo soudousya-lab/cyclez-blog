@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 4542
 wp_url: "https://cycle-z.com/blog/2023/02/17/binding-shoes-2023-2-17/"
+image: "/logo.png"
 ---
 
 「ロードバイクにも慣れてきてそろそろビンディングシューズとビンディングペダルを導入したいけど、どういう物が良いのか分からない！」

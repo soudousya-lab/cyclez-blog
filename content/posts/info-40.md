@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 1189
 wp_url: "https://cycle-z.com/blog/2018/10/12/info-40/"
+image: "/logo.png"
 ---
 
 10月14日（日）9:00～からロードバイク初心者講習会のため、営業開始時間がAM11：30～となります。皆様にはご不便をおかけしますが、何卒ご理頂きますようお願い申し上げます。

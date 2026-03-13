@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 1225
 wp_url: "https://cycle-z.com/blog/2018/12/18/info-44/"
+image: "/logo.png"
 ---
 
 2019年1月27日にロードバイクランディングセミナーを開催いたします。

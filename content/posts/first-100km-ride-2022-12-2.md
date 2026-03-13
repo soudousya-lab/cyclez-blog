@@ -6,6 +6,7 @@ category: "event-report"
 tags: ["event-report"]
 wp_id: 4290
 wp_url: "https://cycle-z.com/blog/2022/12/02/first-100km-ride-2022-12-2/"
+image: "/logo.png"
 ---
 
 2回の順延を経て、遂に100kmチルライド開催しましたー！

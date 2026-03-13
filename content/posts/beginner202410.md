@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "beginner-training"]
 wp_id: 6151
 wp_url: "https://cycle-z.com/blog/2024/10/18/beginner202410/"
+image: "/logo.png"
 ---
 
 【10月の初心者講習会のお知らせ】

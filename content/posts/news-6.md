@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 5072
 wp_url: "https://cycle-z.com/blog/2023/06/30/news-6/"
+image: "/logo.png"
 ---
 
 2023年7月1日(土)午前11:00から、サイクルゼットが杜の街プラザ2Fに3か月間限定オープンします！

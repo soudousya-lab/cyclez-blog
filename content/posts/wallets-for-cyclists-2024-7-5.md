@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 5960
 wp_url: "https://cycle-z.com/blog/2024/07/05/wallets-for-cyclists-2024-7-5/"
+image: "/logo.png"
 ---
 
 rawlow mountain worksさんから新しくお財布が登場したゼーーーット！！

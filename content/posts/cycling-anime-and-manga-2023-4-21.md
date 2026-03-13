@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 4837
 wp_url: "https://cycle-z.com/blog/2023/04/21/cycling-anime-and-manga-2023-4-21/"
+image: "/logo.png"
 ---
 
 天気は良いのに黄砂や花粉で、なかなかサイクリングができない方へ。

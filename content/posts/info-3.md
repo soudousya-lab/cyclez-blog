@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 552
 wp_url: "https://cycle-z.com/blog/2016/08/01/info-3/"
+image: "/logo.png"
 ---
 
 誠に勝手ながら下記の通り定休日をいただいております。ご来店の際は何卒ご注意ください。 

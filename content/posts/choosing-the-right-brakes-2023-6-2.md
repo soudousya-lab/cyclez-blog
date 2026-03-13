@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 4933
 wp_url: "https://cycle-z.com/blog/2023/06/02/choosing-the-right-brakes-2023-6-2/"
+image: "/logo.png"
 ---
 
 最新のスポーツバイクでは、ブレーキの仕様が進化し続けています。

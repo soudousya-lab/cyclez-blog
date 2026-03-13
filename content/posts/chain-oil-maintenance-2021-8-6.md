@@ -6,6 +6,7 @@ category: "news"
 tags: ["news", "maintenance-blog"]
 wp_id: 2424
 wp_url: "https://cycle-z.com/blog/2021/08/05/chain-oil-maintenance-2021-8-6/"
+image: "/logo.png"
 ---
 
 ロードバイクを買ってから数ヶ月が経ち、ワイヤーの初期伸び調整も終わり、変速も快調になり出したあなた！！

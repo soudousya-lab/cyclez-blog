@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 1356
 wp_url: "https://cycle-z.com/blog/2019/05/18/info-56/"
+image: "/logo.png"
 ---
 
 5月19日はサイクルイベントの為、休業させていただきます。

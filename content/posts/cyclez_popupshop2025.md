@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 6285
 wp_url: "https://cycle-z.com/blog/2025/04/05/cyclez_popupshop2025/"
+image: "/logo.png"
 ---
 
 ### 4/5～6/30 サイクルZ -杜の街店-期間限定ポップアップショップ開催中！

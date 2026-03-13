@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 1391
 wp_url: "https://cycle-z.com/blog/2019/07/20/info-63/"
+image: "/logo.png"
 ---
 
 7月21日（日）はイベントのため、営業開始時間が13：00～となります。皆様にはご不便をおかけしますが、何卒ご理頂きますようお願い申し上げます。

@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 2263
 wp_url: "https://cycle-z.com/blog/2021/05/07/info-111/"
+image: "/logo.png"
 ---
 
 ロードバイク初心者講習会を、5月9・23日（日）に実施いたします！

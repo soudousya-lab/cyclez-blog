@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 2393
 wp_url: "https://cycle-z.com/blog/2021/07/30/road-bike-maintenance-2021-7-30/"
+image: "/logo.png"
 ---
 
 ロードバイクと長く楽しく付き合っていくためには、大切な愛車のメンテナンスが欠かせません。

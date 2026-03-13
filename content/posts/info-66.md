@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 1728
 wp_url: "https://cycle-z.com/blog/2019/11/08/info-66/"
+image: "/logo.png"
 ---
 
 11月16・17日（土・日）『BASSO』『macchi』試乗会を開催します！！

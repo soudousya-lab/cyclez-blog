@@ -6,6 +6,7 @@ category: "event-report"
 tags: ["event-report", "maintenance-blog"]
 wp_id: 5110
 wp_url: "https://cycle-z.com/blog/2023/07/08/from-okayama-to-tottori-2023-7-8/"
+image: "/logo.png"
 ---
 
 今回はサイクルZスタッフ2人で鳥取まで行ってきたので、そのレポをお届けするゼーーーット！！

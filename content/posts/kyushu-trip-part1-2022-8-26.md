@@ -6,6 +6,7 @@ category: "event-report"
 tags: ["event-report", "news"]
 wp_id: 3874
 wp_url: "https://cycle-z.com/blog/2022/08/26/kyushu-trip-part1-2022-8-26/"
+image: "/logo.png"
 ---
 
 お盆休みを利用し、サイクルZの店長とスタッフの仙田と西井の3人で、九州へ輪行旅行してきました。

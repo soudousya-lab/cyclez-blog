@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 1302
 wp_url: "https://cycle-z.com/blog/2019/04/12/info-52/"
+image: "/logo.png"
 ---
 
 ★場所　

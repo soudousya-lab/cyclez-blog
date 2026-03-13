@@ -6,6 +6,7 @@ category: "news"
 tags: ["news", "beginner-training"]
 wp_id: 6356
 wp_url: "https://cycle-z.com/blog/2025/09/08/beginner202509/"
+image: "/logo.png"
 ---
 
 【9月の初心者講習会のお知らせ】 

@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 2144
 wp_url: "https://cycle-z.com/blog/2020/10/28/info-95/"
+image: "/logo.png"
 ---
 
 吉備高原ライドを11月1日(日)に行います！

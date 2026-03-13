@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 2017
 wp_url: "https://cycle-z.com/blog/2020/07/27/info-87/"
+image: "/logo.png"
 ---
 
 誠に勝手ではございますが、

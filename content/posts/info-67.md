@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 1735
 wp_url: "https://cycle-z.com/blog/2019/11/26/info-67/"
+image: "/logo.png"
 ---
 
 12月21・22日（土・日）『BOMA』2020モデル試乗会を開催します！！

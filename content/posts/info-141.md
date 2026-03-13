@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 4218
 wp_url: "https://cycle-z.com/blog/2022/10/30/info-141/"
+image: "/logo.png"
 ---
 
 11/5、6の土日はmacchi、GIOS、BASSO試乗会開催です！夢のハイエンドからオーダーメイドまで心ゆくまで乗り倒しに来て下さい！

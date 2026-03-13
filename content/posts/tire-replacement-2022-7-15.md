@@ -6,6 +6,7 @@ category: "news"
 tags: ["news", "maintenance-blog"]
 wp_id: 3671
 wp_url: "https://cycle-z.com/blog/2022/07/15/tire-replacement-2022-7-15/"
+image: "/logo.png"
 ---
 
 皆さんは、今乗っている自転車のタイヤを替えることで、乗り心地が格段に変わることをご存じですか？

@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 2206
 wp_url: "https://cycle-z.com/blog/2021/01/25/info-101/"
+image: "/logo.png"
 ---
 
 ロードバイク初心者講習会を、当初、2月28日のみとしておりましたがお申し込み多数の為、2月14日(日)も実施いたします！

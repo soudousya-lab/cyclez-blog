@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 5717
 wp_url: "https://cycle-z.com/blog/2024/01/13/bike-packing-2024-1-13/"
+image: "/logo.png"
 ---
 
 今回は、JACK the bike rackというアイテムをご紹介します！

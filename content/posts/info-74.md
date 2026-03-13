@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 1782
 wp_url: "https://cycle-z.com/blog/2020/02/21/info-74/"
+image: "/logo.png"
 ---
 
 中級者ライドを3月1日（日曜日）に行います！

@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 3491
 wp_url: "https://cycle-z.com/blog/2022/04/25/info-131/"
+image: "/logo.png"
 ---
 
 4/30には滋賀県のmacchi cyclesさんの試乗会！

@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 6050
 wp_url: "https://cycle-z.com/blog/2024/08/16/started-handling-chapter2-2024-8-16/"
+image: "/logo.png"
 ---
 
 Chapter2の取扱してるゼーーーット！！

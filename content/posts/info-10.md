@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 997
 wp_url: "https://cycle-z.com/blog/2018/01/10/info-10/"
+image: "/logo.png"
 ---
 
 2018年1月14日にロードバイク初詣ライド開催します！

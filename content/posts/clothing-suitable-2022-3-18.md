@@ -6,6 +6,7 @@ category: "news"
 tags: ["news", "maintenance-blog"]
 wp_id: 3318
 wp_url: "https://cycle-z.com/blog/2022/03/18/clothing-suitable-2022-3-18/"
+image: "/logo.png"
 ---
 
 新生活で通勤や通学が自転車になる方もいらっしゃいますよね。

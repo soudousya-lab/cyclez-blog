@@ -6,6 +6,7 @@ category: "news"
 tags: ["news", "maintenance-blog"]
 wp_id: 3999
 wp_url: "https://cycle-z.com/blog/2022/09/16/vest-for-autumn-2022-9-16/"
+image: "/logo.png"
 ---
 
 9月に入り、真夏の暑さは少しずつ緩和されているように思います。

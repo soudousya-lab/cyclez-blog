@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 6240
 wp_url: "https://cycle-z.com/blog/2025/02/21/hand-assembled-wheels-2025-2-21/"
+image: "/logo.png"
 ---
 
 皆さん、こんにちは！cycleZスタッフの仙田です。

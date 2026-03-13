@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 4678
 wp_url: "https://cycle-z.com/blog/2023/03/10/solo-long-rides-2023-3-10/"
+image: "/logo.png"
 ---
 
 ようやく寒い冬が明けて、暖かさを感じられるようになってきました！

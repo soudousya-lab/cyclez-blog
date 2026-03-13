@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 5874
 wp_url: "https://cycle-z.com/blog/2024/05/04/beginner202405/"
+image: "/logo.png"
 ---
 
 【5月の初心者講習会のお知らせ】

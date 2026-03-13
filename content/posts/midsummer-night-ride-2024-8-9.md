@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 6012
 wp_url: "https://cycle-z.com/blog/2024/08/09/midsummer-night-ride-2024-8-9/"
+image: "/logo.png"
 ---
 
 7/18(木)にサイクルZのナイトライドをやりました！

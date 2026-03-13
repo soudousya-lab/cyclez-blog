@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 3142
 wp_url: "https://cycle-z.com/blog/2022/01/22/info-125/"
+image: "/logo.png"
 ---
 
 明日1/23（日）の初心者講習会は天候不良の為、2/13（日）に順延いたします。

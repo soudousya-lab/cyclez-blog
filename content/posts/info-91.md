@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 2063
 wp_url: "https://cycle-z.com/blog/2020/09/12/info-91/"
+image: "/logo.png"
 ---
 
 9月19・20日（土・日）『BOMA』NEWモデル試乗会を開催します！！

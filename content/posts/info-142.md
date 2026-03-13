@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 4287
 wp_url: "https://cycle-z.com/blog/2022/11/25/info-142/"
+image: "/logo.png"
 ---
 
 ### 【初心者講習会順延のお知らせ】

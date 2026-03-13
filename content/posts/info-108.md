@@ -6,6 +6,7 @@ category: "event"
 tags: ["event"]
 wp_id: 2251
 wp_url: "https://cycle-z.com/blog/2021/04/22/info-108/"
+image: "/logo.png"
 ---
 
 4/24（土）BASSO試乗会・macchi鉄ミーティングを開催いたします！

@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 4491
 wp_url: "https://cycle-z.com/blog/2023/01/27/warm-goods-for-cycling-2023-1-27/"
+image: "/logo.png"
 ---
 
 寒すぎる……。

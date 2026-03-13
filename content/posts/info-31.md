@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 1136
 wp_url: "https://cycle-z.com/blog/2018/07/27/info-31/"
+image: "/logo.png"
 ---
 
 7月29日（日）9:00～から予定しておりました大好評のロードバイク初心者講習会を天候不順の為中止いたします。詳細は店頭スタッフまでお問い合わせください。

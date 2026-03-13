@@ -6,6 +6,7 @@ category: "news"
 tags: ["news", "beginner-training"]
 wp_id: 2317
 wp_url: "https://cycle-z.com/blog/2021/06/14/info-113/"
+image: "/logo.png"
 ---
 
 非常事態宣言が解除された場合は、6月27日に　初心者講習会を開催したいと思います。

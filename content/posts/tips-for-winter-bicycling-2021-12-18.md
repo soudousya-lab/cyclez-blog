@@ -6,6 +6,7 @@ category: "news"
 tags: ["news", "maintenance-blog"]
 wp_id: 2978
 wp_url: "https://cycle-z.com/blog/2021/12/17/tips-for-winter-bicycling-2021-12-18/"
+image: "/logo.png"
 ---
 
 カジュアルウェアを多く取り揃えているサイクルZ！

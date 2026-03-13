@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 1027
 wp_url: "https://cycle-z.com/blog/2018/03/17/info-16/"
+image: "/logo.png"
 ---
 
 ロードバイク専門店サイクルゼットは3月21日休まず営業しています！お近くにお越しの際には是非お気軽にお立寄ください！

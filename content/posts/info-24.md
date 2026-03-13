@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 1075
 wp_url: "https://cycle-z.com/blog/2018/04/30/info-24/"
+image: "/logo.png"
 ---
 
 初心者講習会と同じく、大好評のロードバイクランディングセミナーを5月27日9:00～サイクルゼットで行います！詳細は店頭スタッフまでお問い合わせください。 

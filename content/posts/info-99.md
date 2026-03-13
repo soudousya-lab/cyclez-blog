@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 2196
 wp_url: "https://cycle-z.com/blog/2020/12/25/info-99/"
+image: "/logo.png"
 ---
 
 2020年もサイクルゼットをご愛顧いただきありがとうございます。

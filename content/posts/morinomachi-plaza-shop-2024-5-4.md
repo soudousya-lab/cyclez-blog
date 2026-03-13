@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 5870
 wp_url: "https://cycle-z.com/blog/2024/05/04/morinomachi-plaza-shop-2024-5-4/"
+image: "/logo.png"
 ---
 
 ### サイクルZ -杜の街店-期間限定ポップアップショップ開催中！

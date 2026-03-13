@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 3558
 wp_url: "https://cycle-z.com/blog/2022/05/13/info-133/"
+image: "/logo.png"
 ---
 
 【5月の臨時休業のお知らせ】

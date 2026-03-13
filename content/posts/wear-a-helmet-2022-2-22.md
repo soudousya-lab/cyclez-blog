@@ -6,6 +6,7 @@ category: "news"
 tags: ["news", "maintenance-blog"]
 wp_id: 3213
 wp_url: "https://cycle-z.com/blog/2022/02/22/wear-a-helmet-2022-2-22/"
+image: "/logo.png"
 ---
 
 自転車を本格的に乗り始めた時に揃える装備の一つ、ヘルメット！！

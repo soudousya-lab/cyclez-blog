@@ -6,6 +6,7 @@ category: "news"
 tags: ["news", "maintenance-blog"]
 wp_id: 3029
 wp_url: "https://cycle-z.com/blog/2022/01/07/sunglass-for-winter-2022-1-7/"
+image: "/logo.png"
 ---
 
 紫外線だけでなく、風や異物から目を守るために基本的にはサングラスを着用しておきたいところです。

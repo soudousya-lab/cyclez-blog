@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 6258
 wp_url: "https://cycle-z.com/blog/2025/03/08/cyclez_event_20250308/"
+image: "/logo.png"
 ---
 
 **春の乗り換え応援キャンペーン！** 🚴✨

@@ -6,6 +6,7 @@ category: "news"
 tags: ["news", "beginner-training"]
 wp_id: 6344
 wp_url: "https://cycle-z.com/blog/2025/07/27/beginner202508/"
+image: "/logo.png"
 ---
 
 ※8月の初心者講習会の日程が変更になりました。

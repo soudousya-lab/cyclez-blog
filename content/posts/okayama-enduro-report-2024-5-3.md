@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 5844
 wp_url: "https://cycle-z.com/blog/2024/05/03/okayama-enduro-report-2024-5-3/"
+image: "/logo.png"
 ---
 
 今回は、4月21日（日）に岡山国際サーキットにて開催された『おかやまエンデューロ』のレポをお届けするゼーーーット！！

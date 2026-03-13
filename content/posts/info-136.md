@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 3820
 wp_url: "https://cycle-z.com/blog/2022/08/11/info-136/"
+image: "/logo.png"
 ---
 
 お盆休み中の営業日のご案内になります。

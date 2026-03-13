@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 1896
 wp_url: "https://cycle-z.com/blog/2020/05/09/info-81/"
+image: "/logo.png"
 ---
 
 明日、予定しておりました｢予約された方の初心者講習会｣は天候不順の為、5月24日（日）の9:00に順延いたします。ご都合の悪い方はご連絡お願い致します。

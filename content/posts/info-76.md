@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 1872
 wp_url: "https://cycle-z.com/blog/2020/02/01/info-76/"
+image: "/logo.png"
 ---
 
 ![basso・gios・ロードバイクフェア開催　岡山・サイクルZ](/images/wp/2020-02-basso-gios-fair.jpg)

@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 6009
 wp_url: "https://cycle-z.com/blog/2024/08/05/beginner202408/"
+image: "/logo.png"
 ---
 
 【8月の初心者講習会のお知らせ】

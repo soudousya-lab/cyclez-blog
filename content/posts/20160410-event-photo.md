@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 169
 wp_url: "https://cycle-z.com/blog/2016/04/11/20160410-event-photo/"
+image: "/logo.png"
 ---
 
 天候にも恵まれ桜の花もまだちらほら残る絶好のロケーションの中、

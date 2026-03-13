@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 4387
 wp_url: "https://cycle-z.com/blog/2022/12/16/bicyclel-overhaul-2022-12-16/"
+image: "/logo.png"
 ---
 
 冬のこの時期になるとサイクリングが億劫になり外出を控えることも多くなる方もいらっしゃると思います。

@@ -6,6 +6,7 @@ category: "news"
 tags: ["news", "maintenance-blog"]
 wp_id: 2500
 wp_url: "https://cycle-z.com/blog/2021/09/03/recommended-backpack-2021-9-3/"
+image: "/logo.png"
 ---
 
 残暑も落ち着き始めた今日この頃。

@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 6328
 wp_url: "https://cycle-z.com/blog/2025/06/14/narifuri_assos_popupstore/"
+image: "/logo.png"
 ---
 
 ### narifuri

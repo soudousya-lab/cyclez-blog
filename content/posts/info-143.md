@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 4376
 wp_url: "https://cycle-z.com/blog/2022/12/01/info-143/"
+image: "/logo.png"
 ---
 
 12/4（日）にステムデザインのデザイナー栃原代表がご来場されます！

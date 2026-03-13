@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 3025
 wp_url: "https://cycle-z.com/blog/2021/12/28/info-124/"
+image: "/logo.png"
 ---
 
 2021年もサイクルゼットをご愛顧いただき誠にありがとうございます。

@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 3660
 wp_url: "https://cycle-z.com/blog/2022/06/07/info-134/"
+image: "/logo.png"
 ---
 
 ### 【6月の臨時休業のお知らせ】

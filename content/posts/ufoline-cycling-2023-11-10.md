@@ -6,6 +6,7 @@ category: "event-report"
 tags: ["event-report", "maintenance-blog"]
 wp_id: 5575
 wp_url: "https://cycle-z.com/blog/2023/11/11/ufoline-cycling-2023-11-10/"
+image: "/logo.png"
 ---
 
 サイクリングに最適な時期なので、またまた仙田の旅行記が続きます！

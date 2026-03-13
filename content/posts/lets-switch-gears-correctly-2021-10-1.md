@@ -6,6 +6,7 @@ category: "news"
 tags: ["news", "maintenance-blog"]
 wp_id: 2613
 wp_url: "https://cycle-z.com/blog/2021/10/01/lets-switch-gears-correctly-2021-10-1/"
+image: "/logo.png"
 ---
 
 皆さんは使ってはいけないギアがある事を知っていますか？

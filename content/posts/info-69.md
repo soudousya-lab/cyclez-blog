@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 1748
 wp_url: "https://cycle-z.com/blog/2020/01/10/info-69/"
+image: "/logo.png"
 ---
 
 2020初詣ライド（行先は最上稲荷）を1月12日に行います！

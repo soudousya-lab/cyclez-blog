@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 6362
 wp_url: "https://cycle-z.com/blog/2025/09/10/cyclez_event_202509_2/"
+image: "/logo.png"
 ---
 
 ## ■9月のイベントのご案内

@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 1364
 wp_url: "https://cycle-z.com/blog/2019/06/15/info-58/"
+image: "/logo.png"
 ---
 
 6月16日はイベントの為、11時30分からの営業となります。

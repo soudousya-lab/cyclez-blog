@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 1350
 wp_url: "https://cycle-z.com/blog/2019/05/17/info-55/"
+image: "/logo.png"
 ---
 
 5月19日開催のロードバイクイベント「サイクルZ小豆島ライド」は予定通りです。

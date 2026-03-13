@@ -6,6 +6,7 @@ category: "event"
 tags: ["event"]
 wp_id: 2671
 wp_url: "https://cycle-z.com/blog/2021/10/08/cycle-events-2021-10-8/"
+image: "/logo.png"
 ---
 
 2021年の10月23日(土)・24日(日)にマッキ試乗イベント＆オーダー会

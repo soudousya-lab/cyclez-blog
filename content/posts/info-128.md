@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 3246
 wp_url: "https://cycle-z.com/blog/2022/02/21/info-128/"
+image: "/logo.png"
 ---
 
 平素は格別のご高配を賜り誠にありがとうございます！

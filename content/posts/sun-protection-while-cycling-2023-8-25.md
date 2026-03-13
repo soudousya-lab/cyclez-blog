@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 5272
 wp_url: "https://cycle-z.com/blog/2023/08/25/sun-protection-while-cycling-2023-8-25/"
+image: "/logo.png"
 ---
 
 昼間は日差しが強すぎて走ることが出来ないほど、太陽が照りつける日が長い間続きましたね！

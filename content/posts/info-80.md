@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 1893
 wp_url: "https://cycle-z.com/blog/2020/05/04/info-80/"
+image: "/logo.png"
 ---
 
 平素よりサイクルゼットをご愛顧いただきまして誠にありがとうございます。

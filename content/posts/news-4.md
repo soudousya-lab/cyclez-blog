@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 766
 wp_url: "https://cycle-z.com/blog/2016/11/15/news-4/"
+image: "/logo.png"
 ---
 
 BOMA【ロードバイク】試乗会開催します！

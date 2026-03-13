@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 5665
 wp_url: "https://cycle-z.com/blog/2023/12/19/cyclez-event-info-2023-12-19/"
+image: "/logo.png"
 ---
 
 今回は、サイクルZで開催している様々なイベントを紹介します！

@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 6306
 wp_url: "https://cycle-z.com/blog/2025/05/10/childrensbicyclelessons20250622/"
+image: "/logo.png"
 ---
 
 ![](/images/wp/2025-05-Image-3.jpg)

@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 4172
 wp_url: "https://cycle-z.com/blog/2022/10/21/info-140/"
+image: "/logo.png"
 ---
 
 ### 【10・11月の初心者講習会のお知らせ】

@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 2854
 wp_url: "https://cycle-z.com/blog/2021/12/03/lets-washing-2021-12-3/"
+image: "/logo.png"
 ---
 
 ロードバイクやクロスバイクでの通勤が日常に浸透し始めている中、走る姿はカッコイイ！

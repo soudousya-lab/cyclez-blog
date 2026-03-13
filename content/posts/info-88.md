@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 2020
 wp_url: "https://cycle-z.com/blog/2020/08/11/info-88/"
+image: "/logo.png"
 ---
 
 誠に勝手ながら

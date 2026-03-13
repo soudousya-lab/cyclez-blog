@@ -6,6 +6,7 @@ category: "news"
 tags: ["news", "maintenance-blog"]
 wp_id: 4227
 wp_url: "https://cycle-z.com/blog/2022/11/18/cycling-luggage-2022-11-18/"
+image: "/logo.png"
 ---
 
 自転車を買ったものの、備品を揃える際に何から揃えれば良いか、またどこに積めば良いかお悩みの方もいらっしゃるのではないでしょうか。

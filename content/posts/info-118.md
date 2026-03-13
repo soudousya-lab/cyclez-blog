@@ -6,6 +6,7 @@ category: "event"
 tags: ["event"]
 wp_id: 2757
 wp_url: "https://cycle-z.com/blog/2021/10/18/info-118/"
+image: "/logo.png"
 ---
 
 なだらかな勾配が続くおだやかな坂道をゆっくり上る楽しみをみなさまに是非知ってほしいと思い

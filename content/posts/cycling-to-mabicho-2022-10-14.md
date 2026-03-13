@@ -6,6 +6,7 @@ category: "event-report"
 tags: ["event-report"]
 wp_id: 4070
 wp_url: "https://cycle-z.com/blog/2022/10/14/cycling-to-mabicho-2022-10-14/"
+image: "/logo.png"
 ---
 
 10/2(日)高梁ヒルクライムの開催日に合わせて、サイクルZでは真備町ライドのイベントを開催したゼーーーット！！

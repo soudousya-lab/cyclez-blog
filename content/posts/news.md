@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 751
 wp_url: "https://cycle-z.com/blog/2016/03/05/news/"
+image: "/logo.png"
 ---
 
 岡山県岡山市北区島田本町1－1－47にて自転車・ロードバイク・サイクルウェアを取り揃えた自転車屋さんです。どうぞお気軽にご来店下さい。

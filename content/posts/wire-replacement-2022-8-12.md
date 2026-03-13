@@ -6,6 +6,7 @@ category: "news"
 tags: ["news", "maintenance-blog"]
 wp_id: 3818
 wp_url: "https://cycle-z.com/blog/2022/08/12/wire-replacement-2022-8-12/"
+image: "/logo.png"
 ---
 
 メンテナンス系の記事が続いておりますが、自転車を購入し、2・3年経過するとワイヤーを交換するタイミングも訪れます。

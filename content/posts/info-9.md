@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 990
 wp_url: "https://cycle-z.com/blog/2017/12/26/info-9/"
+image: "/logo.png"
 ---
 
 年末年始　営業日のご案内

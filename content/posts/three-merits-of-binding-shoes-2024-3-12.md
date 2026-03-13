@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 5800
 wp_url: "https://cycle-z.com/blog/2024/03/12/three-merits-of-binding-shoes-2024-3-12/"
+image: "/logo.png"
 ---
 
 最近靴のお問い合わせが多かったので、改めてビンディングシューズについてスタッフ仙田の主観で色々書き連ねていくゼーーーット！！

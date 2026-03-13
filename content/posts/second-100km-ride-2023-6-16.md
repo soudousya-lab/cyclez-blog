@@ -6,6 +6,7 @@ category: "event-report"
 tags: ["event-report"]
 wp_id: 4976
 wp_url: "https://cycle-z.com/blog/2023/06/16/second-100km-ride-2023-6-16/"
+image: "/logo.png"
 ---
 
 今回の100kmライドは多くの参加者にお集まりいただきました！

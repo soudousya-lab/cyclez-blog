@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 2013
 wp_url: "https://cycle-z.com/blog/2020/07/25/info-86/"
+image: "/logo.png"
 ---
 
 7月26日(日)の初心者講習会は雨の為中止といたします。

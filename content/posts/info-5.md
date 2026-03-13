@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 754
 wp_url: "https://cycle-z.com/blog/2016/10/23/info-5/"
+image: "/logo.png"
 ---
 
 ★10/23（日）『本日 cycleZはFUNRIDE鏡野に出店』

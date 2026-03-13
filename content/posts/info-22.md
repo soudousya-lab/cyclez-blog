@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 1070
 wp_url: "https://cycle-z.com/blog/2018/04/30/info-22/"
+image: "/logo.png"
 ---
 
 2018年5月2日、3日は連休とさせていただきます。ご迷惑をお掛けいたしますが宜しくお願いいたします。

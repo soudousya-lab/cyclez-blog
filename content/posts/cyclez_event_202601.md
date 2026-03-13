@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 6451
 wp_url: "https://cycle-z.com/blog/2025/12/17/cyclez_event_202601/"
+image: "/logo.png"
 ---
 
 ## ■新年初ライドはコレ！1月のイベントのご案内✨

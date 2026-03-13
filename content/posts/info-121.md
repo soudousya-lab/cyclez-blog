@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 2929
 wp_url: "https://cycle-z.com/blog/2021/11/19/info-121/"
+image: "/logo.png"
 ---
 
 11/20（土）21（日）11:00～「サイクルウェア祭＆試乗会」を開催します！！

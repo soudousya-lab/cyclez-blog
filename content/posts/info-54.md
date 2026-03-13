@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 1338
 wp_url: "https://cycle-z.com/blog/2019/04/26/info-54/"
+image: "/logo.png"
 ---
 
 カーボンの雄　日本のブランド『BOMA』

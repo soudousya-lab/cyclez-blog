@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 1223
 wp_url: "https://cycle-z.com/blog/2018/12/18/info-43/"
+image: "/logo.png"
 ---
 
 大好評のロードバイク初心者講習会&2019初詣ライドを1月1３日サイクルゼットで行います！詳細は店頭スタッフまでお問い合わせください。

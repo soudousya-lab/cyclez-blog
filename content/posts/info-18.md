@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 1046
 wp_url: "https://cycle-z.com/blog/2018/03/23/info-18/"
+image: "/logo.png"
 ---
 
 ２０１８年４月１日に、吉備路春ライドを開催します！

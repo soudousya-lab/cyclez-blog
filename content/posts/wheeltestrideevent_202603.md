@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 6491
 wp_url: "https://cycle-z.com/blog/2026/03/02/wheeltestrideevent_202603/"
+image: "/logo.png"
 ---
 
 ## 🚨ホイール試乗会急遽開催決定‼️

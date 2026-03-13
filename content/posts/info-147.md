@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 6076
 wp_url: "https://cycle-z.com/blog/2024/09/27/info-147/"
+image: "/logo.png"
 ---
 
 ### サイクルZの9周年を記念して、みんなで力を合わせ、地球一周分の距離を自転車で走ろう！

@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 6237
 wp_url: "https://cycle-z.com/blog/2025/02/14/beginner202502/"
+image: "/logo.png"
 ---
 
 【2月の初心者講習会のお知らせ】 

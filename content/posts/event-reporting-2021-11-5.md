@@ -6,6 +6,7 @@ category: "event-report"
 tags: ["event-report"]
 wp_id: 2765
 wp_url: "https://cycle-z.com/blog/2021/11/05/event-reporting-2021-11-5/"
+image: "/logo.png"
 ---
 
 10月23日は辻善光さんによるフィッティングセミナー、BASSO試乗会、macchiのクロモリミーティングとイベント盛り沢山な内容のイベントとなりました！

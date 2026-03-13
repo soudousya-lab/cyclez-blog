@@ -6,6 +6,7 @@ category: "event-report"
 tags: ["event-report", "news"]
 wp_id: 3620
 wp_url: "https://cycle-z.com/blog/2022/06/07/cycling-wear-event-2022-6-7/"
+image: "/logo.png"
 ---
 
 イベントレポが続きますが、5/28・29に開催したイベントもなかなか濃厚だったのでご紹介させていただきます！

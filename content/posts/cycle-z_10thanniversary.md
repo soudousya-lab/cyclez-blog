@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 6365
 wp_url: "https://cycle-z.com/blog/2025/09/30/cycle-z_10thanniversary/"
+image: "/logo.png"
 ---
 
 ## 🌟Cycle Z 創業10周年記念 創業祭イベント🌟

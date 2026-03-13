@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 2451
 wp_url: "https://cycle-z.com/blog/2021/08/06/info-115/"
+image: "/logo.png"
 ---
 
 ### 【8月の初心者講習会のお知らせ】

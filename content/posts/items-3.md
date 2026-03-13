@@ -6,6 +6,7 @@ category: "lineup"
 tags: ["lineup"]
 wp_id: 1600
 wp_url: "https://cycle-z.com/blog/2019/09/24/items-3/"
+image: "/logo.png"
 ---
 
 [埋め込みコンテンツ](https://webshop.cycle-z.com/items/20648057/widget/large)

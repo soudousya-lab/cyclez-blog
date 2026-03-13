@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 1004
 wp_url: "https://cycle-z.com/blog/2018/02/02/info-12/"
+image: "/logo.png"
 ---
 
 大好評のロードバイク初心者講習会を2月11日にサイクルゼットで行います！詳細は店頭スタッフまでお問い合わせください。 ロードバイクを買ったけど、うまく乗れない。もっとうまく乗りたい。自転車で走るオススメの道を聞いてみたい。

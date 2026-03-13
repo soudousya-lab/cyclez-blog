@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 1072
 wp_url: "https://cycle-z.com/blog/2018/04/30/info-23/"
+image: "/logo.png"
 ---
 
 大好評のロードバイク初心者講習会を5月13日の9時からサイクルゼットで行います！詳細は店頭スタッフまでお問い合わせください。

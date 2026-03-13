@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 1878
 wp_url: "https://cycle-z.com/blog/2020/03/07/info-77/"
+image: "/logo.png"
 ---
 
 天候不順の為3月8日（日）から延期しておりました大好評のロードバイク初心者講習会を、3月15日（日）9:00から開催いたします。（9:00にCycleZ集合となっています ）

@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 4587
 wp_url: "https://cycle-z.com/blog/2023/02/24/wear-a-helmet-2023-2-24/"
+image: "/logo.png"
 ---
 
 4/1よりヘルメットの着用が『努力義務』になることはご存知ですか！？

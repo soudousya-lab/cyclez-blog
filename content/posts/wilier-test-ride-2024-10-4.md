@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 6091
 wp_url: "https://cycle-z.com/blog/2024/10/04/wilier-test-ride-2024-10-4/"
+image: "/logo.png"
 ---
 
 またまたバイクの取扱いの記事が続きますが、この度Wilier（ウィリエール）のお取扱いがスタートしたゼーーーット！！

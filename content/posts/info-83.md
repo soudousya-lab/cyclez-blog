@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 2005
 wp_url: "https://cycle-z.com/blog/2020/06/13/info-83/"
+image: "/logo.png"
 ---
 
 6月14日（日）開催の初心者講習会は予定通り行いますので、9:00からマスク持参と体温を測ってご来場ください！

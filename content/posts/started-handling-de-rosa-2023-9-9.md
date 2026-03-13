@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 5340
 wp_url: "https://cycle-z.com/blog/2023/09/09/started-handling-de-rosa-2023-9-9/"
+image: "/logo.png"
 ---
 
 この度、サイクルZではDE ROSAの取り扱いがスタートしました。

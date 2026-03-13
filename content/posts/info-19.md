@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 1052
 wp_url: "https://cycle-z.com/blog/2018/03/24/info-19/"
+image: "/logo.png"
 ---
 
 ２０１８年４月７日、８日にGIOS BASSO試乗会を開催いたします。

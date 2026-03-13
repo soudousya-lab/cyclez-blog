@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 1081
 wp_url: "https://cycle-z.com/blog/2018/05/12/info-25/"
+image: "/logo.png"
 ---
 
 5月13日（日）開催予定のロードバイク初心者講習会が5月20日（日）に順延となりました。

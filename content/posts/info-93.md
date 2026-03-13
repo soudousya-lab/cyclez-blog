@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 2136
 wp_url: "https://cycle-z.com/blog/2020/10/04/info-93/"
+image: "/logo.png"
 ---
 
 ロードバイク初心者講習会を、10月11・25日(日)9:00から開催予定です！

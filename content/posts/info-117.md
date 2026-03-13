@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 2737
 wp_url: "https://cycle-z.com/blog/2021/10/08/info-117/"
+image: "/logo.png"
 ---
 
 ### 【10月の初心者講習会のお知らせ】

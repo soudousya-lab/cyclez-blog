@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 5176
 wp_url: "https://cycle-z.com/blog/2023/07/22/morinomachi-plaza-shop-2023-7-22/"
+image: "/logo.png"
 ---
 
 杜の街店がオープンし1ヶ月ほどが経ちました。

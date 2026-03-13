@@ -6,6 +6,7 @@ category: "event-report"
 tags: ["event-report"]
 wp_id: 3404
 wp_url: "https://cycle-z.com/blog/2022/04/15/womens-cycling-event-2022-4-15/"
+image: "/logo.png"
 ---
 
 2022年4月3日(日)に早島観光を体験するライドツアーを女性限定で行いました！

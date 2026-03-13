@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 5763
 wp_url: "https://cycle-z.com/blog/2024/02/10/bike-packing-part2-2024-2-10/"
+image: "/logo.png"
 ---
 
 前回のラックに引き続き、またまた良いフロントバッグを見つけたので紹介していくゼーーーット！！

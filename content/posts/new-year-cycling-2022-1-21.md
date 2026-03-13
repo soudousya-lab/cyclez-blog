@@ -6,6 +6,7 @@ category: "event-report"
 tags: ["event-report", "news"]
 wp_id: 3073
 wp_url: "https://cycle-z.com/blog/2022/01/21/new-year-cycling-2022-1-21/"
+image: "/logo.png"
 ---
 
 2022年初イベントの初詣ポタリングを1月9日に開催しました。

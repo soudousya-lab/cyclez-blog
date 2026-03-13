@@ -6,6 +6,7 @@ category: "news"
 tags: ["news", "maintenance-blog"]
 wp_id: 3345
 wp_url: "https://cycle-z.com/blog/2022/03/30/bicycles-storage-area-2022-4-2/"
+image: "/logo.png"
 ---
 
 進学や就職で環境が大きく変わる方も多いこの時期！

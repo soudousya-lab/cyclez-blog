@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 5571
 wp_url: "https://cycle-z.com/blog/2023/11/07/beginner202311/"
+image: "/logo.png"
 ---
 
 【11月の初心者講習会のお知らせ】

@@ -6,6 +6,7 @@ category: "event-report"
 tags: ["event-report", "news"]
 wp_id: 3501
 wp_url: "https://cycle-z.com/blog/2022/05/06/kibitu-cycling-course-2022-5-6/"
+image: "/logo.png"
 ---
 
 サイクリングコースのおすすめ第二弾として、今回は[スポーツバイク岡山散走](https://n-bun.com/2021/09/18/bunko-322/)に載っているコースを紹介するゼーーーット！！

@@ -6,6 +6,7 @@ category: "news"
 tags: ["news", "maintenance-blog"]
 wp_id: 2578
 wp_url: "https://cycle-z.com/blog/2021/09/17/pre-ride-inspection-2021-9-17/"
+image: "/logo.png"
 ---
 
 2021年の夏は雨が多く、不意の雨に降られる機会も多かったのではないでしょうか？

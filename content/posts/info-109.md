@@ -6,6 +6,7 @@ category: "event"
 tags: ["event"]
 wp_id: 2257
 wp_url: "https://cycle-z.com/blog/2021/04/22/info-109/"
+image: "/logo.png"
 ---
 
 5/1（土）2（日）にBOMA&YONEX試乗会を開催します！

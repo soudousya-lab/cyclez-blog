@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 2326
 wp_url: "https://cycle-z.com/blog/2021/07/09/publication-cycle-shop/"
+image: "/logo.png"
 ---
 
 7月8日（木）に発刊された、山陽新聞の「ゆとりコーナー」に当店cycleZとオーナーの岡田宗明が掲載されました。

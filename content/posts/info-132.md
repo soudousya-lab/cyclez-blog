@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 3494
 wp_url: "https://cycle-z.com/blog/2022/05/01/info-132/"
+image: "/logo.png"
 ---
 
 ゴールデンウィーク中の営業日のご案内になります。

@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 5911
 wp_url: "https://cycle-z.com/blog/2024/06/14/fast-and-cool-road-bike-2024-6-14/"
+image: "/logo.png"
 ---
 
 こんにちは！CycleZの西井です。

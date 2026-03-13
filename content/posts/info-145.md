@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 4422
 wp_url: "https://cycle-z.com/blog/2022/12/30/info-145/"
+image: "/logo.png"
 ---
 
 目次

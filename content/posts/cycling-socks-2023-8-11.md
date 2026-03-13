@@ -6,6 +6,7 @@ category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 5224
 wp_url: "https://cycle-z.com/blog/2023/08/11/cycling-socks-2023-8-11/"
+image: "/logo.png"
 ---
 
 自転車用アイテムを揃えていく中で、まだお持ちでない方も多そうなアイテム。

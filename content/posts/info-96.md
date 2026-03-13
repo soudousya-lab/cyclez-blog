@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 2146
 wp_url: "https://cycle-z.com/blog/2020/10/31/info-96/"
+image: "/logo.png"
 ---
 
 11/1(日)はサイクルイベントの為　午後4:00からの営業となります。

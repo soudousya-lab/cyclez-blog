@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 2040
 wp_url: "https://cycle-z.com/blog/2020/09/26/info-90/"
+image: "/logo.png"
 ---
 
 9月27日(日)秋のポタリングイベントのため営業時間が15:00～となります。

@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 2008
 wp_url: "https://cycle-z.com/blog/2020/07/07/info-84/"
+image: "/logo.png"
 ---
 
 大好評のロードバイク初心者講習会を、7月12日（日）9:00から開催いたします。（cycleZ 9:00集合）

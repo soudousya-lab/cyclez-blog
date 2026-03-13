@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 1172
 wp_url: "https://cycle-z.com/blog/2018/09/07/info-37/"
+image: "/logo.png"
 ---
 
 2018年10月28日に、サイクルイベント『サイクルＺ 2018足守オータムRIDE＆散走』を開催します！

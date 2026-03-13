@@ -6,6 +6,7 @@ category: "event-report"
 tags: ["event-report"]
 wp_id: 4763
 wp_url: "https://cycle-z.com/blog/2023/04/07/cherry-blossom-ride-2023-4-7/"
+image: "/logo.png"
 ---
 
 今年は暖かくなるのが早く、4/2は予報では雨となっていたこともあり不安でしたが、当日は最高の花見日和となりました！

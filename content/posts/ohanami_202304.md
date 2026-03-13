@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 4660
 wp_url: "https://cycle-z.com/blog/2023/03/06/ohanami_202304/"
+image: "/logo.png"
 ---
 
 ## ■　4月のイベントのご案内

@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 2218
 wp_url: "https://cycle-z.com/blog/2021/04/09/info-103/"
+image: "/logo.png"
 ---
 
 ## 2021ハルノヒRIDE 白石島に行く

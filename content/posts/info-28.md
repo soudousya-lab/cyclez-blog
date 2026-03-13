@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 1113
 wp_url: "https://cycle-z.com/blog/2018/07/06/info-28/"
+image: "/logo.png"
 ---
 
 7月8日（日）9:00～から予定しておりました大好評のロードバイク初心者講習会を天候不順の為、7月29日に順延いたします。詳細は店頭スタッフまでお問い合わせください。

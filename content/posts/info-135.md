@@ -6,6 +6,7 @@ category: "news"
 tags: ["news", "beginner-training"]
 wp_id: 3666
 wp_url: "https://cycle-z.com/blog/2022/07/08/info-135/"
+image: "/logo.png"
 ---
 
 ### 【7月の初心者講習会のお知らせ】

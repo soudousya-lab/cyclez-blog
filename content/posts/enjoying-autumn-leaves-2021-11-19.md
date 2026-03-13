@@ -6,6 +6,7 @@ category: "event-report"
 tags: ["event-report"]
 wp_id: 2892
 wp_url: "https://cycle-z.com/blog/2021/11/19/enjoying-autumn-leaves-2021-11-19/"
+image: "/logo.png"
 ---
 
 2021年11月7日に紅葉を楽しみながら行く、サイクリングイベントを開催しました。

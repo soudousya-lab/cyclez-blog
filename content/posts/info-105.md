@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 2237
 wp_url: "https://cycle-z.com/blog/2021/03/26/info-105/"
+image: "/logo.png"
 ---
 
 3月28日の初心者講習会はは雨天のため、4月11日に順延といたします。

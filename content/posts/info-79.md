@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 1888
 wp_url: "https://cycle-z.com/blog/2020/04/11/info-79/"
+image: "/logo.png"
 ---
 
 明日の初心者講習会は天候不順の為、中止といたします。

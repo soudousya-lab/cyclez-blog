@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 5909
 wp_url: "https://cycle-z.com/blog/2024/06/11/beginner202406/"
+image: "/logo.png"
 ---
 
 【6月の初心者講習会のお知らせ】

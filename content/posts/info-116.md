@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 2491
 wp_url: "https://cycle-z.com/blog/2021/08/23/info-116/"
+image: "/logo.png"
 ---
 
 社員研修中止のため8月24日（火）、26日（木）は通常通り営業いたします。

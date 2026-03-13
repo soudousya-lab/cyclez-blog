@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 5784
 wp_url: "https://cycle-z.com/blog/2024/02/23/beginner202402/"
+image: "/logo.png"
 ---
 
 **※明日の初心者講習会は雨天のため、中止とさせていただきます。**

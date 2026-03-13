@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 6434
 wp_url: "https://cycle-z.com/blog/2025/11/12/cyclez_event_202511_1/"
+image: "/logo.png"
 ---
 
 ## ■11月のイベントのご案内

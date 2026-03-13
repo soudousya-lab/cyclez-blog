@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 1753
 wp_url: "https://cycle-z.com/blog/2019/12/29/info-70/"
+image: "/logo.png"
 ---
 
 2019年もサイクルゼットをご愛顧いただき誠にありがとうございます。

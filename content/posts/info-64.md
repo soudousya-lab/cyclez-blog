@@ -6,6 +6,7 @@ category: "news"
 tags: ["news"]
 wp_id: 1395
 wp_url: "https://cycle-z.com/blog/2019/08/09/info-64/"
+image: "/logo.png"
 ---
 
 皆さん、暑い日が続いていますがお身体の調子はいかがですか？

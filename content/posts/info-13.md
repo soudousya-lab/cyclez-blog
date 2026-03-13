@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news", "beginner-training"]
 wp_id: 1006
 wp_url: "https://cycle-z.com/blog/2018/02/02/info-13/"
+image: "/logo.png"
 ---
 
 2018年2月18日にロードバイクランディングセミナーを開催いたします。

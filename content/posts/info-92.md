@@ -6,6 +6,7 @@ category: "event"
 tags: ["event", "news"]
 wp_id: 2065
 wp_url: "https://cycle-z.com/blog/2020/09/15/info-92/"
+image: "/logo.png"
 ---
 
 ついに今週末、9月19・20日（土・日）にcycleZで緊急開催される試乗会に、『BOMA』NEWモデルのディスクエアロロードが登場します！
