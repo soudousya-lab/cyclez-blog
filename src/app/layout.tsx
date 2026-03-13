@@ -37,9 +37,18 @@ export const metadata: Metadata = {
     title: "cycleZ ブログ | 岡山のロードバイク・自転車情報",
     description:
       "岡山市のロードバイク専門店cycleZのブログ。初心者向けガイド、メンテナンス情報、サイクリングコース紹介など。",
+    images: [
+      {
+        url: "https://blog.cycle-z.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "cycleZ ブログ",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["https://blog.cycle-z.com/og-image.jpg"],
   },
   robots: {
     index: true,
