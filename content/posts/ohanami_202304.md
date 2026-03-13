@@ -19,4 +19,4 @@ cycleZ集合
 
 みなさまのご参加おまちしております！
 
-![](https://cycle-z.com/wp-content/uploads/2023/03/17760359-AE71-49F9-A361-95E79D368016.png)
+![](/images/wp/2023-03-17760359-AE71-49F9-A361-95E79D368016.png)

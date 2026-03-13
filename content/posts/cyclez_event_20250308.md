@@ -26,11 +26,11 @@ wp_url: "https://cycle-z.com/blog/2025/03/08/cyclez_event_20250308/"
 
 さらに、分割払いもOK！12回払いまでなら無金利でご利用いただけます。
 
-![](https://cycle-z.com/wp-content/uploads/2025/03/1741425554929-338a2b8b-3eec-451e-8e84-b24085e4c113_1-212x300.jpg)
+![](/images/wp/2025-03-1741425554929-338a2b8b-3eec-451e-8e84-b24085e4c113_1-212x300.jpg)
 
 ## 対象のロードバイク
 
-![](https://cycle-z.com/wp-content/uploads/2025/03/IMG_5950-768x1024.jpeg)
+![](/images/wp/2025-03-IMG_5950-768x1024.jpeg)
 
 上記画像以外のロードバイクも対象モデルはございますので、お問い合わせください。
 

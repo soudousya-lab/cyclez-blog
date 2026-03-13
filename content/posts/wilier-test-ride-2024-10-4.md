@@ -44,15 +44,15 @@ wp_url: "https://cycle-z.com/blog/2024/10/04/wilier-test-ride-2024-10-4/"
 
 デザインについても、アスタナが使用する水色を基調とした配色はとても綺麗です。
 
-![](https://cycle-z.com/wp-content/uploads/2024/10/204e96c8b48ca21a82000e7fff959b21-1024x629.png)
+![](/images/wp/2024-10-204e96c8b48ca21a82000e7fff959b21-1024x629.png)
 
 この大理石のようなカラーがかっこいい！
 
 そしてトレードマークの三又の槍も印象的ですよね。
 
-![](https://cycle-z.com/wp-content/uploads/2024/10/wilierlogo-2.jpg)
+![](/images/wp/2024-10-wilierlogo-2.jpg)
 
-![](https://cycle-z.com/wp-content/uploads/2024/10/wilierlogo.jpg)
+![](/images/wp/2024-10-wilierlogo.jpg)
 
  
 
@@ -82,7 +82,7 @@ wp_url: "https://cycle-z.com/blog/2024/10/04/wilier-test-ride-2024-10-4/"
 
  
 
-![](https://cycle-z.com/wp-content/uploads/2024/10/207d649d42d7b76fc033cbf1bdc43152-1024x621.png)
+![](/images/wp/2024-10-207d649d42d7b76fc033cbf1bdc43152-1024x621.png)
 
 まずスタッフ全員の最推し！「GRANTURISMO R TEAM」
 
@@ -96,7 +96,7 @@ wp_url: "https://cycle-z.com/blog/2024/10/04/wilier-test-ride-2024-10-4/"
 
 リムブレーキに関して、ブレーキは105以上のグレードを選ぶに越したことはないですからね！
 
-![](https://cycle-z.com/wp-content/uploads/2024/10/4197324b197012c8ff52f85ca6b5231d.jpg)
+![](/images/wp/2024-10-4197324b197012c8ff52f85ca6b5231d.jpg)
 
  
 
@@ -108,7 +108,7 @@ wp_url: "https://cycle-z.com/blog/2024/10/04/wilier-test-ride-2024-10-4/"
 
 カーボンのエントリーだからといって手抜きの作りではなく、気持ち良く速度を上げていけます！
 
-![](https://cycle-z.com/wp-content/uploads/2024/10/523ad040ee415eab76ad4c6ceefdfa1e-1024x319.jpg)
+![](/images/wp/2024-10-523ad040ee415eab76ad4c6ceefdfa1e-1024x319.jpg)
 
 105のパーツは全て純正が使われている！
 
@@ -145,7 +145,7 @@ wp_url: "https://cycle-z.com/blog/2024/10/04/wilier-test-ride-2024-10-4/"
 
 一台のモデルについて熱く語ってしまったので、今回の試乗会に来るモデルとあわせて注目モデルもざっと紹介します！
 
-![](https://cycle-z.com/wp-content/uploads/2024/10/8a6e0835f1ed20f4b009928810c89009-1024x628.png)
+![](/images/wp/2024-10-8a6e0835f1ed20f4b009928810c89009-1024x628.png)
 
 やはりハイエンドの中でも新しくチェックしておかねばならないのが、「VERTICALE SLR」
 
@@ -155,7 +155,7 @@ wp_url: "https://cycle-z.com/blog/2024/10/04/wilier-test-ride-2024-10-4/"
 
 試乗で自分にも乗りこなせるか存分に体験しましょう。
 
-![](https://cycle-z.com/wp-content/uploads/2024/10/7e0cd106ee46f1d3a4e0582b4e5ca870-1024x319.jpg)
+![](/images/wp/2024-10-7e0cd106ee46f1d3a4e0582b4e5ca870-1024x319.jpg)
 
  
 
@@ -193,6 +193,6 @@ wp_url: "https://cycle-z.com/blog/2024/10/04/wilier-test-ride-2024-10-4/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

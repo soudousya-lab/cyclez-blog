@@ -14,7 +14,7 @@ wp_url: "https://cycle-z.com/blog/2021/08/20/beginner-workshop-2021-8-20/"
 
 集合時間の10分前ぐらいの段階では1人しかおらず不安になりましたが、時間になると今回は結構集まってくれました！
 
-![猛暑の中、自転車講習会に集まる人達](https://cycle-z.com/wp-content/uploads/2021/08/267fe256324c6b416f3c5b668379b954-1024x768.jpg)
+![猛暑の中、自転車講習会に集まる人達](/images/wp/2021-08-267fe256324c6b416f3c5b668379b954-1024x768.jpg)
 
 暑い中皆さんお疲れ様です！
 
@@ -26,7 +26,7 @@ wp_url: "https://cycle-z.com/blog/2021/08/20/beginner-workshop-2021-8-20/"
 
 次回の初心者講習会の時にも用意していきますが、皆さん個人的にも準備をお願いします！
 
-![水分補給のためのスイカジュース](https://cycle-z.com/wp-content/uploads/2021/08/0ae627cb8072eeb8bce85cc3897855b4-768x1024.jpg)
+![水分補給のためのスイカジュース](/images/wp/2021-08-0ae627cb8072eeb8bce85cc3897855b4-768x1024.jpg)
 
  
 
@@ -40,7 +40,7 @@ wp_url: "https://cycle-z.com/blog/2021/08/20/beginner-workshop-2021-8-20/"
 
 日陰が欲しかったので、百間川のせせらぎ広場付近をお借りして、木漏れ日が出ている場所で乗り方講習させて頂きました。
 
-![講師から自転車の正しい乗り方の講習を受ける人達](https://cycle-z.com/wp-content/uploads/2021/08/48f0ec564d97685a9b7b757103d0daa3-1024x768.jpg)
+![講師から自転車の正しい乗り方の講習を受ける人達](/images/wp/2021-08-48f0ec564d97685a9b7b757103d0daa3-1024x768.jpg)
 
 今回は基本的な乗り降りから、ハンドルの握り方の違いなどもクロスバイク、ロードバイク、共にレクチャーしました！
 
@@ -58,7 +58,7 @@ wp_url: "https://cycle-z.com/blog/2021/08/20/beginner-workshop-2021-8-20/"
 
  
 
-![猛暑の中、自転車講習会に集まる人達](https://cycle-z.com/wp-content/uploads/2021/08/cebef2d7aa5f47c28509e45a44d6036b-1-1024x768.jpg)
+![猛暑の中、自転車講習会に集まる人達](/images/wp/2021-08-cebef2d7aa5f47c28509e45a44d6036b-1-1024x768.jpg)
 
 今回は完全にスポーツバイクが初めての方から、長年、我流で乗られていた方の基本の学び直しなど様々な人が来てくれました！
 
@@ -78,6 +78,6 @@ wp_url: "https://cycle-z.com/blog/2021/08/20/beginner-workshop-2021-8-20/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

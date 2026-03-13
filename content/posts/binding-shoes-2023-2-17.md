@@ -22,7 +22,7 @@ wp_url: "https://cycle-z.com/blog/2023/02/17/binding-shoes-2023-2-17/"
 
 まずビンディングとは自転車のペダルと靴を固定する用品のことです。
 
-![](https://cycle-z.com/wp-content/uploads/2023/02/742c15ded4396476bf7ca3e7385fb536-848x1024.jpg)
+![](/images/wp/2023-02-742c15ded4396476bf7ca3e7385fb536-848x1024.jpg)
 
 固定させることでペダルがより回しやすくなり、楽に自転車を走らせることが出来ます。
 
@@ -46,14 +46,14 @@ wp_url: "https://cycle-z.com/blog/2023/02/17/binding-shoes-2023-2-17/"
 		
 		
 			
-				![3つ穴用ペダル](https://cycle-z.com/wp-content/uploads/2023/02/8248bd8311e4090a863f3910f23a6936-768x1024.jpg)
+				![3つ穴用ペダル](/images/wp/2023-02-8248bd8311e4090a863f3910f23a6936-768x1024.jpg)
 
 			
 				
 				3つ穴用ペダル
 				
 			
-				![4つ穴用ペダル](https://cycle-z.com/wp-content/uploads/2023/02/e38b185c6888eaa2708de670fb078378-768x1024.jpg)
+				![4つ穴用ペダル](/images/wp/2023-02-e38b185c6888eaa2708de670fb078378-768x1024.jpg)
 
 			
 				
@@ -76,7 +76,7 @@ wp_url: "https://cycle-z.com/blog/2023/02/17/binding-shoes-2023-2-17/"
 
 大きく分けてビンディングにはマウンテンバイク用とロードバイク用に分けられた物が存在します。
 
-![ロードバイク用ビンディングシューズ](https://cycle-z.com/wp-content/uploads/2023/02/8c7f9343203e895e48e671039fe1a4b5-1024x768.jpg)
+![ロードバイク用ビンディングシューズ](/images/wp/2023-02-8c7f9343203e895e48e671039fe1a4b5-1024x768.jpg)
 
 ロードバイク用
 
@@ -100,14 +100,14 @@ wp_url: "https://cycle-z.com/blog/2023/02/17/binding-shoes-2023-2-17/"
 		
 		
 			
-				![4つ穴の靴](https://cycle-z.com/wp-content/uploads/2023/02/08fb2a2ec49028fecd3aac160240c5f1-1024x768.jpg)
+				![4つ穴の靴](/images/wp/2023-02-08fb2a2ec49028fecd3aac160240c5f1-1024x768.jpg)
 
 			
 				
 				マウンテンバイク用
 				
 			
-				![ダイヤル4つ穴](https://cycle-z.com/wp-content/uploads/2023/02/ac4ee99b179dd2960963c8d70b84f353-1024x768.jpg)
+				![ダイヤル4つ穴](/images/wp/2023-02-ac4ee99b179dd2960963c8d70b84f353-1024x768.jpg)
 
 			
 				
@@ -128,13 +128,13 @@ wp_url: "https://cycle-z.com/blog/2023/02/17/binding-shoes-2023-2-17/"
 
 ロードバイク用は靴裏を見ると穴が三角形に3つ空いています。
 
-![3つ穴](https://cycle-z.com/wp-content/uploads/2023/02/8dae7302e870aa56569223d1b71c4fdf-768x1024.jpg)
+![3つ穴](/images/wp/2023-02-8dae7302e870aa56569223d1b71c4fdf-768x1024.jpg)
 
 この穴はペダルと合体させる時に使うクリートと呼ばれるものを取り付ける穴となっています。
 
 ここにクリートを付けるとロードバイク用は靴裏から出っ張った状態になります。
 
-![3つ穴はクリートが出っ張る](https://cycle-z.com/wp-content/uploads/2023/02/67ee478a26ffbb0aac4e109e557f98fa-768x1024.jpg)
+![3つ穴はクリートが出っ張る](/images/wp/2023-02-67ee478a26ffbb0aac4e109e557f98fa-768x1024.jpg)
 
  
 
@@ -162,17 +162,17 @@ wp_url: "https://cycle-z.com/blog/2023/02/17/binding-shoes-2023-2-17/"
 		
 		
 			
-				![4つ穴](https://cycle-z.com/wp-content/uploads/2023/02/99675c1c8659bc0fa2da49174ac24f06-768x1024.jpg)
+				![4つ穴](/images/wp/2023-02-99675c1c8659bc0fa2da49174ac24f06-768x1024.jpg)
 
 			
 			
-				![レース系4つ穴](https://cycle-z.com/wp-content/uploads/2023/02/f2e95cfff560d63f516a79317fe6dff8-768x1024.jpg)
+				![レース系4つ穴](/images/wp/2023-02-f2e95cfff560d63f516a79317fe6dff8-768x1024.jpg)
 
 			
 		
 穴の周りはソールが盛り上がっていて金具が出っ張らない状態でセットできます。
 
-![4つ穴はクリートが収まる](https://cycle-z.com/wp-content/uploads/2023/02/efe65dc41482e17c71580bf7b62f583e-768x1024.jpg)
+![4つ穴はクリートが収まる](/images/wp/2023-02-efe65dc41482e17c71580bf7b62f583e-768x1024.jpg)
 
  
 
@@ -218,11 +218,11 @@ wp_url: "https://cycle-z.com/blog/2023/02/17/binding-shoes-2023-2-17/"
 		
 		
 			
-				![rumble1](https://cycle-z.com/wp-content/uploads/2023/02/rumble1-1024x768.jpg)
+				![rumble1](/images/wp/2023-02-rumble1-1024x768.jpg)
 
 			
 			
-				![rumble2](https://cycle-z.com/wp-content/uploads/2023/02/rumble2-1024x768.jpg)
+				![rumble2](/images/wp/2023-02-rumble2-1024x768.jpg)
 
 			
 		
@@ -230,7 +230,7 @@ wp_url: "https://cycle-z.com/blog/2023/02/17/binding-shoes-2023-2-17/"
 
 もちろん靴紐収納もついています。
 
-![rumble靴紐収納](https://cycle-z.com/wp-content/uploads/2023/02/b05062b0c2c31ee777d8d02e67006b47-1024x768.jpg)
+![rumble靴紐収納](/images/wp/2023-02-b05062b0c2c31ee777d8d02e67006b47-1024x768.jpg)
 
 サイクルZいちおしの普段着スタイルにもピッタリなので、ぜひフィッティングしてみて下さい。
 
@@ -246,6 +246,6 @@ wp_url: "https://cycle-z.com/blog/2023/02/17/binding-shoes-2023-2-17/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

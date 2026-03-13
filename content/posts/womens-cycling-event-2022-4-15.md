@@ -22,7 +22,7 @@ wp_url: "https://cycle-z.com/blog/2022/04/15/womens-cycling-event-2022-4-15/"
 
 まずはサイクルZスタート組の出発！
 
-![](https://cycle-z.com/wp-content/uploads/2022/04/ee5269ab66e132cd6250b3d06c4ba801-1024x683.jpg)
+![](/images/wp/2022-04-ee5269ab66e132cd6250b3d06c4ba801-1024x683.jpg)
 
  
 
@@ -48,15 +48,15 @@ wp_url: "https://cycle-z.com/blog/2022/04/15/womens-cycling-event-2022-4-15/"
 		
 		
 			
-				![桜の木の下を歩く参加者達](https://cycle-z.com/wp-content/uploads/2022/04/54478d6493b2f4e9950a6b934cf1ad09-300x225.jpg)
+				![桜の木の下を歩く参加者達](/images/wp/2022-04-54478d6493b2f4e9950a6b934cf1ad09-300x225.jpg)
 
 			
 			
-				![満開の桜並木](https://cycle-z.com/wp-content/uploads/2022/04/1bfbd693ee4c08c111a48832b4faec93-300x225.jpg)
+				![満開の桜並木](/images/wp/2022-04-1bfbd693ee4c08c111a48832b4faec93-300x225.jpg)
 
 			
 			
-				![桜が満開の中サイクリングをする女性たち](https://cycle-z.com/wp-content/uploads/2022/04/b61cb61f1da9f45f44a989c9be0fd528-300x200.jpg)
+				![桜が満開の中サイクリングをする女性たち](/images/wp/2022-04-b61cb61f1da9f45f44a989c9be0fd528-300x200.jpg)
 
 			
 		
@@ -64,7 +64,7 @@ wp_url: "https://cycle-z.com/blog/2022/04/15/womens-cycling-event-2022-4-15/"
 
 現地集合組と倉敷スポーツ公園で合流し、謎のゾウと記念撮影！
 
-![象のモニュメントの前で写真に写る参加者達](https://cycle-z.com/wp-content/uploads/2022/04/e2b0f8b6426c958af338c42ea1dd4c7c-1024x683.jpg)
+![象のモニュメントの前で写真に写る参加者達](/images/wp/2022-04-e2b0f8b6426c958af338c42ea1dd4c7c-1024x683.jpg)
 
  
 
@@ -72,19 +72,19 @@ wp_url: "https://cycle-z.com/blog/2022/04/15/womens-cycling-event-2022-4-15/"
 
 1つ目の目的地、国鉾くにほこ神社(つつじ公園)に到着！
 
-![国鉾神社](https://cycle-z.com/wp-content/uploads/2022/04/760bd84b7c9e2268d51873fe68e21d37.jpg)
+![国鉾神社](/images/wp/2022-04-760bd84b7c9e2268d51873fe68e21d37.jpg)
 
  
 
 国鉾神社にある石灯籠いしどうろうは文化15年(西暦1818年)に第九代領主 戸川安梯とがわやすちかが、国鉾神社に奉納したものだそうです。
 
-![国鉾神社石灯籠](https://cycle-z.com/wp-content/uploads/2022/04/1b714887d70fbddaf7483c9903f46fd5.jpg)
+![国鉾神社石灯籠](/images/wp/2022-04-1b714887d70fbddaf7483c9903f46fd5.jpg)
 
  
 
 ここでも皆で記念撮影をしました！
 
-![つつじ公園の桜の下で記念撮影](https://cycle-z.com/wp-content/uploads/2022/04/a4ddf3f453d0e9d16e1c8537692b26e1.jpg)
+![つつじ公園の桜の下で記念撮影](/images/wp/2022-04-a4ddf3f453d0e9d16e1c8537692b26e1.jpg)
 
  
 
@@ -114,21 +114,21 @@ wp_url: "https://cycle-z.com/blog/2022/04/15/womens-cycling-event-2022-4-15/"
 		
 		
 			
-				![戸川家記念館](https://cycle-z.com/wp-content/uploads/2022/04/d8bbc974831a2b5097bcbbdfa0c5d2e6-225x300.jpg)
+				![戸川家記念館](/images/wp/2022-04-d8bbc974831a2b5097bcbbdfa0c5d2e6-225x300.jpg)
 
 			
 			
-				![戸川家記念館2](https://cycle-z.com/wp-content/uploads/2022/04/442552ff41fa9912846bda74be0d187c-225x300.jpg)
+				![戸川家記念館2](/images/wp/2022-04-442552ff41fa9912846bda74be0d187c-225x300.jpg)
 
 			
 			
-				![戸川家記念館3](https://cycle-z.com/wp-content/uploads/2022/04/45a23704e8ca96fa586543d02b5331a3-225x300.jpg)
+				![戸川家記念館3](/images/wp/2022-04-45a23704e8ca96fa586543d02b5331a3-225x300.jpg)
 
 			
 		
 入館時にパンフレットと一緒にお菓子もいただきました！
 
-![戸川家記念館でもらったお菓子](https://cycle-z.com/wp-content/uploads/2022/04/8af4e8f004e4d45a91e1ed2c7ca8e958.jpg)
+![戸川家記念館でもらったお菓子](/images/wp/2022-04-8af4e8f004e4d45a91e1ed2c7ca8e958.jpg)
 
 職員さんの丁寧な解説に聞き入る私たち。
 
@@ -152,11 +152,11 @@ wp_url: "https://cycle-z.com/blog/2022/04/15/womens-cycling-event-2022-4-15/"
 		
 		
 			
-				![戸川家記念館を周る参加者達](https://cycle-z.com/wp-content/uploads/2022/04/f574bc78018b81d2ef5a1f60dc039e02-300x225.jpg)
+				![戸川家記念館を周る参加者達](/images/wp/2022-04-f574bc78018b81d2ef5a1f60dc039e02-300x225.jpg)
 
 			
 			
-				![戸川家陣屋跡の記念館で案内をうける女性たち](https://cycle-z.com/wp-content/uploads/2022/04/1f64ecc6ac390add0692351e3a030a9a-300x200.jpg)
+				![戸川家陣屋跡の記念館で案内をうける女性たち](/images/wp/2022-04-1f64ecc6ac390add0692351e3a030a9a-300x200.jpg)
 
 			
 		
@@ -164,7 +164,7 @@ wp_url: "https://cycle-z.com/blog/2022/04/15/womens-cycling-event-2022-4-15/"
 
 その後、安養院の階段でサイクルZのZポーズで記念撮影(^^)
 
-![安養院の前でZポーズで写真移る参加者達](https://cycle-z.com/wp-content/uploads/2022/04/a52dae972dcbdc9daec38ef40facb861-1024x683.jpg)
+![安養院の前でZポーズで写真移る参加者達](/images/wp/2022-04-a52dae972dcbdc9daec38ef40facb861-1024x683.jpg)
 
  
 
@@ -194,11 +194,11 @@ wp_url: "https://cycle-z.com/blog/2022/04/15/womens-cycling-event-2022-4-15/"
 		
 		
 			
-				![たまごのお店こひよのプリン](https://cycle-z.com/wp-content/uploads/2022/04/3776a7e2b37ddbf85ca6b6527d670635-225x300.jpg)
+				![たまごのお店こひよのプリン](/images/wp/2022-04-3776a7e2b37ddbf85ca6b6527d670635-225x300.jpg)
 
 			
 			
-				![こひよの看板](https://cycle-z.com/wp-content/uploads/2022/04/a1e095489dfacb84d3d6ea0d2b995bae-300x225.jpg)
+				![こひよの看板](/images/wp/2022-04-a1e095489dfacb84d3d6ea0d2b995bae-300x225.jpg)
 
 			
 		
@@ -233,11 +233,11 @@ wp_url: "https://cycle-z.com/blog/2022/04/15/womens-cycling-event-2022-4-15/"
 		
 		
 			
-				![](https://cycle-z.com/wp-content/uploads/2022/04/8de7dcf1cc90bad52dab4527fe88174d-225x300.jpg)
+				![](/images/wp/2022-04-8de7dcf1cc90bad52dab4527fe88174d-225x300.jpg)
 
 			
 			
-				![いかしの舎喫茶入口](https://cycle-z.com/wp-content/uploads/2022/04/d4996c762047f96180cc42b4512f2f71-225x300.jpg)
+				![いかしの舎喫茶入口](/images/wp/2022-04-d4996c762047f96180cc42b4512f2f71-225x300.jpg)
 
 			
 		
@@ -246,7 +246,7 @@ wp_url: "https://cycle-z.com/blog/2022/04/15/womens-cycling-event-2022-4-15/"
 
 『いかしの舎けんちんカレー』も美味しそうだったので個人的にまた行ってみようと思います！
 
-![いかしの舎喫茶まで記念撮影](https://cycle-z.com/wp-content/uploads/2022/04/becf8b8b003aa592e0af47242be2a4f5-1024x768.jpg)
+![いかしの舎喫茶まで記念撮影](/images/wp/2022-04-becf8b8b003aa592e0af47242be2a4f5-1024x768.jpg)
 
  
 
@@ -254,7 +254,7 @@ wp_url: "https://cycle-z.com/blog/2022/04/15/womens-cycling-event-2022-4-15/"
 
 帰り道にはとび太くんがたくさんいる道を通って帰りました(^^)
 
-![とび太くん](https://cycle-z.com/wp-content/uploads/2022/04/73fad850bc7815abf799f7270142c580.jpg)
+![とび太くん](/images/wp/2022-04-73fad850bc7815abf799f7270142c580.jpg)
 
  
 
@@ -280,6 +280,6 @@ wp_url: "https://cycle-z.com/blog/2022/04/15/womens-cycling-event-2022-4-15/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

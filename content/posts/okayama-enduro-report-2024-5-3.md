@@ -34,7 +34,7 @@ wp_url: "https://cycle-z.com/blog/2024/05/03/okayama-enduro-report-2024-5-3/"
 
 本当にありがとうございました！
 
-![](https://cycle-z.com/wp-content/uploads/2024/05/a11b4bb3ba448d1fa402ac3dc62cc91f-1024x768.jpg)
+![](/images/wp/2024-05-a11b4bb3ba448d1fa402ac3dc62cc91f-1024x768.jpg)
 
 みんなで6時間の部に出場したのですが、賞状を貰ったチームが全部で4チームも！
 
@@ -80,9 +80,9 @@ wp_url: "https://cycle-z.com/blog/2024/05/03/okayama-enduro-report-2024-5-3/"
 
 （この時点で少し雨が降り始め、今回のレースの荒れ具合を想起させました…）
 
-![](https://cycle-z.com/wp-content/uploads/2024/05/718b909bb241719750b378ba64473aa5-1024x768.jpg)
+![](/images/wp/2024-05-718b909bb241719750b378ba64473aa5-1024x768.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2024/05/dee301719406c72559af6a2ebbeb20e4-1024x768.jpg)
+ ![](/images/wp/2024-05-dee301719406c72559af6a2ebbeb20e4-1024x768.jpg)
 
 時間も限られているので、みんな2周か3周ほどの試走をしていたかと思います。
 
@@ -102,11 +102,11 @@ wp_url: "https://cycle-z.com/blog/2024/05/03/okayama-enduro-report-2024-5-3/"
 
 9時過ぎぐらいに第一走者の人が集まり、いよいよ会場の雰囲気も盛り上がってきました。
 
-![](https://cycle-z.com/wp-content/uploads/2024/05/d13bee2a45d07fd6e3882944495cd4dd-1024x768.jpg)
+![](/images/wp/2024-05-d13bee2a45d07fd6e3882944495cd4dd-1024x768.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2024/05/27511454ba4b8148c0cd8a3dd5964760-1024x768.jpg)
+ ![](/images/wp/2024-05-27511454ba4b8148c0cd8a3dd5964760-1024x768.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2024/05/63fabc82454ffc16adc55a7636e7d76c-1024x768.jpg)
+ ![](/images/wp/2024-05-63fabc82454ffc16adc55a7636e7d76c-1024x768.jpg)
 
 私はサイクルZのAチームでの出場でしたが、一人一人が一度に走る時間が長かったので待機の時間もかなり長めでした。
 
@@ -118,19 +118,19 @@ wp_url: "https://cycle-z.com/blog/2024/05/03/okayama-enduro-report-2024-5-3/"
 
 色々なリアクションがあり面白かったです。
 
-![](https://cycle-z.com/wp-content/uploads/2024/05/7c1aa0e2e00357b69b9ce3b4b5a56d2a-1024x768.jpg)
+![](/images/wp/2024-05-7c1aa0e2e00357b69b9ce3b4b5a56d2a-1024x768.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2024/05/b6bda9a702ca8f75fc1aed4ffecf29f1-1024x768.jpg)
+ ![](/images/wp/2024-05-b6bda9a702ca8f75fc1aed4ffecf29f1-1024x768.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2024/05/65ed47bcbd25d1b0fed2cb44ee059d52-1024x768.jpg)
+ ![](/images/wp/2024-05-65ed47bcbd25d1b0fed2cb44ee059d52-1024x768.jpg)
 
 あとは、山の気候ということに加えて雨も降っていたので、とても寒かったのも印象的でした。
 
 防寒の大事さが染みました。（着替えも！）
 
-![](https://cycle-z.com/wp-content/uploads/2024/05/e3e2c8a52680aadf82c6ec39d744fe4e-1024x768.jpg)
+![](/images/wp/2024-05-e3e2c8a52680aadf82c6ec39d744fe4e-1024x768.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2024/05/f9509bb9993baa81d440a96a6b86c737-1024x768.jpg)
+ ![](/images/wp/2024-05-f9509bb9993baa81d440a96a6b86c737-1024x768.jpg)
 
  
 
@@ -152,7 +152,7 @@ wp_url: "https://cycle-z.com/blog/2024/05/03/okayama-enduro-report-2024-5-3/"
 
 更に、みんな自分のタイムを確認しながら１周のタイムで1番速いのはどれだ！？という事を気にしていたので、やはりレースを体験するのはいいなぁと思いました。
 
-![](https://cycle-z.com/wp-content/uploads/2024/05/3093a2d9d3e24a30463b2337555c4e25-1024x768.jpg)
+![](/images/wp/2024-05-3093a2d9d3e24a30463b2337555c4e25-1024x768.jpg)
 
 スポーツバイクに乗っている以上、
 
@@ -184,11 +184,11 @@ wp_url: "https://cycle-z.com/blog/2024/05/03/okayama-enduro-report-2024-5-3/"
 
 サイクルZのメンバーが賞状を貰いに行くところはしっかり見られてよかったです！
 
-![](https://cycle-z.com/wp-content/uploads/2024/05/90697bb1a302ccb294efb3a19bc08bc3-1024x768.jpg)
+![](/images/wp/2024-05-90697bb1a302ccb294efb3a19bc08bc3-1024x768.jpg)
 
 そして、レース終わりで帰路に着いた時のラーメンは格別でした。
 
-![](https://cycle-z.com/wp-content/uploads/2024/05/34067f74cf380a318be4e98d03cb1fd8-768x1024.jpg)
+![](/images/wp/2024-05-34067f74cf380a318be4e98d03cb1fd8-768x1024.jpg)
 
  
 
@@ -210,7 +210,7 @@ wp_url: "https://cycle-z.com/blog/2024/05/03/okayama-enduro-report-2024-5-3/"
 
 来年も出場しようと思っていますので、新たに参加する方がいることも今からとても楽しみです！
 
-![](https://cycle-z.com/wp-content/uploads/2024/05/71f3edca64830cbcbe144d4a994baa8a-1024x576.jpg)
+![](/images/wp/2024-05-71f3edca64830cbcbe144d4a994baa8a-1024x576.jpg)
 
  
 
@@ -228,6 +228,6 @@ wp_url: "https://cycle-z.com/blog/2024/05/03/okayama-enduro-report-2024-5-3/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

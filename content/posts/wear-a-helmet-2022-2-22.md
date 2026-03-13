@@ -20,13 +20,13 @@ wp_url: "https://cycle-z.com/blog/2022/02/22/wear-a-helmet-2022-2-22/"
 
 おでこがかなり出ている・目深に被れていない
 
-![悪い例おでこ出過ぎ](https://cycle-z.com/wp-content/uploads/2022/02/dfdbf43bad55ebca13d617482dd2f67d-768x1024.jpg)
+![悪い例おでこ出過ぎ](/images/wp/2022-02-dfdbf43bad55ebca13d617482dd2f67d-768x1024.jpg)
 
  
 
 顎紐の合わせ、耳たぶの下の合わせの位置が下過ぎる・顎紐がピッタリと顎に沿ってしまっている
 
-![悪い例耳たぶ下](https://cycle-z.com/wp-content/uploads/2022/02/a05e2c5a3a08c8c15be23637f83bfe55-768x1024.jpg)
+![悪い例耳たぶ下](/images/wp/2022-02-a05e2c5a3a08c8c15be23637f83bfe55-768x1024.jpg)
 
  
 
@@ -74,11 +74,11 @@ wp_url: "https://cycle-z.com/blog/2022/02/22/wear-a-helmet-2022-2-22/"
 		
 		
 			
-				![良い例おでこの出っ張りの位置](https://cycle-z.com/wp-content/uploads/2022/02/e17c1389895372c6c883e6a27c4f5194-225x300.jpg)
+				![良い例おでこの出っ張りの位置](/images/wp/2022-02-e17c1389895372c6c883e6a27c4f5194-225x300.jpg)
 
 			
 			
-				![良い例おでこの出っ張り位置](https://cycle-z.com/wp-content/uploads/2022/02/134f9ae7d8efa12ca14ee455defe684d-225x300.jpg)
+				![良い例おでこの出っ張り位置](/images/wp/2022-02-134f9ae7d8efa12ca14ee455defe684d-225x300.jpg)
 
 			
 		
@@ -108,17 +108,17 @@ wp_url: "https://cycle-z.com/blog/2022/02/22/wear-a-helmet-2022-2-22/"
 		
 		
 			
-				![調整ねじ](https://cycle-z.com/wp-content/uploads/2022/02/382fec84d52312e76306883aff1b741f-300x225.jpg)
+				![調整ねじ](/images/wp/2022-02-382fec84d52312e76306883aff1b741f-300x225.jpg)
 
 			
 			
-				![調整ねじ上下位置](https://cycle-z.com/wp-content/uploads/2022/02/563538f4bd62fe6604a33b0106b5182c-300x225.jpg)
+				![調整ねじ上下位置](/images/wp/2022-02-563538f4bd62fe6604a33b0106b5182c-300x225.jpg)
 
 			
 		
 この部分は首の後ろ、頭骨と首の骨の継ぎ目部分に合わせて締め上げる位置がくるよう上下の調整もしてあげて下さい。
 
-![良い例頭骨と首の骨の位置](https://cycle-z.com/wp-content/uploads/2022/02/349ca2028f9f2e83e7737073535dfc8c-768x1024.jpg)
+![良い例頭骨と首の骨の位置](/images/wp/2022-02-349ca2028f9f2e83e7737073535dfc8c-768x1024.jpg)
 
 ここが頭へのフィットをより強固にする部分です。
 
@@ -136,7 +136,7 @@ wp_url: "https://cycle-z.com/blog/2022/02/22/wear-a-helmet-2022-2-22/"
 
 長さの調整として、まず耳たぶの下にキチンと顎紐の集合部分がくるようにして下さい。
 
-![良い例耳たぶの真下](https://cycle-z.com/wp-content/uploads/2022/02/ae7a6ac391edeffaf8b9a7a0001f8771-768x1024.jpg)
+![良い例耳たぶの真下](/images/wp/2022-02-ae7a6ac391edeffaf8b9a7a0001f8771-768x1024.jpg)
 
  
 
@@ -148,7 +148,7 @@ wp_url: "https://cycle-z.com/blog/2022/02/22/wear-a-helmet-2022-2-22/"
 
 顎下と紐の間は指一本入るぐらいの余裕を持たせ方がよいです。
 
-![良い例顎紐の位置指一本](https://cycle-z.com/wp-content/uploads/2022/02/e953745d667733369e3ce5f7991de59f-768x1024.jpg)
+![良い例顎紐の位置指一本](/images/wp/2022-02-e953745d667733369e3ce5f7991de59f-768x1024.jpg)
 
 これで運動中に息が上がってきても、息苦しさや圧迫感を与えず安全に被ることが出来ます！
 
@@ -176,6 +176,6 @@ wp_url: "https://cycle-z.com/blog/2022/02/22/wear-a-helmet-2022-2-22/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

@@ -30,7 +30,7 @@ wp_url: "https://cycle-z.com/blog/2021/12/03/lets-washing-2021-12-3/"
 
 車用品売り場などで手に入るウエスや、既に着なくなった柔らかい素材の服でも良いので、拭くものを用意します。
 
-![ウエスの準備 のコピー](https://cycle-z.com/wp-content/uploads/2021/12/56235c89c093c84da0ce58439853af1d-1-1024x576.jpg)
+![ウエスの準備 のコピー](/images/wp/2021-12-56235c89c093c84da0ce58439853af1d-1-1024x576.jpg)
 
 とりあえずはこれが一枚あればOKです！
 
@@ -42,7 +42,7 @@ wp_url: "https://cycle-z.com/blog/2021/12/03/lets-washing-2021-12-3/"
 
 これを払ってあげるようなイメージで一度、サッと優しく表面を拭き取るだけで大丈夫です！
 
-![車体を空拭きする様子](https://cycle-z.com/wp-content/uploads/2021/11/a22b602dcb8e0f15bf25c2edd67d58b1-1024x576.png)
+![車体を空拭きする様子](/images/wp/2021-11-a22b602dcb8e0f15bf25c2edd67d58b1-1024x576.png)
 
 ### こまめな拭き取りが大切
 
@@ -104,6 +104,6 @@ wp_url: "https://cycle-z.com/blog/2021/12/03/lets-washing-2021-12-3/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

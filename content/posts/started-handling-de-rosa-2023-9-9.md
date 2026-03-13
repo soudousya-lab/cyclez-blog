@@ -18,7 +18,7 @@ wp_url: "https://cycle-z.com/blog/2023/09/09/started-handling-de-rosa-2023-9-9/"
 
 デローザは、1953年にイタリアで創業したブランドです。
 
-![DE ROSA3](https://cycle-z.com/wp-content/uploads/2023/09/582d5cfb7d60423b1c9bb456b66da504-1024x768.jpg)
+![DE ROSA3](/images/wp/2023-09-582d5cfb7d60423b1c9bb456b66da504-1024x768.jpg)
 
 ツール・ド・フランスの黄金時代には、クロモリバイクが一世を風靡し、デローザはその中心的な存在として活躍しました。
 
@@ -34,7 +34,7 @@ wp_url: "https://cycle-z.com/blog/2023/09/09/started-handling-de-rosa-2023-9-9/"
 
 弱虫ペダルの御堂筋君が乗っているバイクのモデルはデローザという設定があり、その高価な値段に驚いたことでデローザの魅力に触れた方も少なくないはずです。
 
-![DE ROSA2](https://cycle-z.com/wp-content/uploads/2023/09/de53c995321f53c828d7f3ec9abf9493-1024x768.jpg)
+![DE ROSA2](/images/wp/2023-09-de53c995321f53c828d7f3ec9abf9493-1024x768.jpg)
 
  
 
@@ -44,7 +44,7 @@ wp_url: "https://cycle-z.com/blog/2023/09/09/started-handling-de-rosa-2023-9-9/"
 
 色使いや塗装は一見の価値があり、見ているだけでも満たされるようなバイクはやはりデローザだからこそ！
 
-![DE ROSA1](https://cycle-z.com/wp-content/uploads/2023/09/b3d53a2d5cbd0fa140b19d8aafe73c3b-768x1024.jpg)
+![DE ROSA1](/images/wp/2023-09-b3d53a2d5cbd0fa140b19d8aafe73c3b-768x1024.jpg)
 
  
 
@@ -60,7 +60,7 @@ wp_url: "https://cycle-z.com/blog/2023/09/09/started-handling-de-rosa-2023-9-9/"
 
 クロモリバイクの黄金時代の設計思想を継承し、フォークのラグにはデローザのマークが刻印されています。
 
-![NEOクラシコ2フォーク部分](https://cycle-z.com/wp-content/uploads/2023/09/e24754161bdc1e6216d57237e187c52c-768x1024.jpg)
+![NEOクラシコ2フォーク部分](/images/wp/2023-09-e24754161bdc1e6216d57237e187c52c-768x1024.jpg)
 
 これらのディテールが所有欲を掻き立てます。
 
@@ -84,11 +84,11 @@ wp_url: "https://cycle-z.com/blog/2023/09/09/started-handling-de-rosa-2023-9-9/"
 		
 		
 			
-				![NEO クラシコ1](https://cycle-z.com/wp-content/uploads/2023/09/ff37b9cf741273b1f7c63944a333f50a-768x1024.jpg)
+				![NEO クラシコ1](/images/wp/2023-09-ff37b9cf741273b1f7c63944a333f50a-768x1024.jpg)
 
 			
 			
-				![NEOクラシコ3](https://cycle-z.com/wp-content/uploads/2023/09/4f44445db50b3998debeb1127941976c-768x1024.jpg)
+				![NEOクラシコ3](/images/wp/2023-09-4f44445db50b3998debeb1127941976c-768x1024.jpg)
 
 			
 		
@@ -118,11 +118,11 @@ wp_url: "https://cycle-z.com/blog/2023/09/09/started-handling-de-rosa-2023-9-9/"
 		
 		
 			
-				![ANIMA4](https://cycle-z.com/wp-content/uploads/2023/09/ANIMA4-768x1024.jpg)
+				![ANIMA4](/images/wp/2023-09-ANIMA4-768x1024.jpg)
 
 			
 			
-				![ANIMA5](https://cycle-z.com/wp-content/uploads/2023/09/ANIMA5-768x1024.jpg)
+				![ANIMA5](/images/wp/2023-09-ANIMA5-768x1024.jpg)
 
 			
 		
@@ -136,7 +136,7 @@ wp_url: "https://cycle-z.com/blog/2023/09/09/started-handling-de-rosa-2023-9-9/"
 
 エンド部分に使われている3Dプリント技術も見逃せません。
 
-![ANIMA2エンド部](https://cycle-z.com/wp-content/uploads/2023/09/0164567d13199a4d0090115ccdbbe743-768x1024.jpg)
+![ANIMA2エンド部](/images/wp/2023-09-0164567d13199a4d0090115ccdbbe743-768x1024.jpg)
 
  
 
@@ -166,11 +166,11 @@ wp_url: "https://cycle-z.com/blog/2023/09/09/started-handling-de-rosa-2023-9-9/"
 		
 		
 			
-				![SOLO6](https://cycle-z.com/wp-content/uploads/2023/09/SOLO6-768x1024.jpg)
+				![SOLO6](/images/wp/2023-09-SOLO6-768x1024.jpg)
 
 			
 			
-				![SOLO7](https://cycle-z.com/wp-content/uploads/2023/09/SOLO7-1024x768.jpg)
+				![SOLO7](/images/wp/2023-09-SOLO7-1024x768.jpg)
 
 			
 		
@@ -195,11 +195,11 @@ wp_url: "https://cycle-z.com/blog/2023/09/09/started-handling-de-rosa-2023-9-9/"
 		
 		
 			
-				![SOLO1](https://cycle-z.com/wp-content/uploads/2023/09/SOLO1-768x1024.jpg)
+				![SOLO1](/images/wp/2023-09-SOLO1-768x1024.jpg)
 
 			
 			
-				![SOLO2](https://cycle-z.com/wp-content/uploads/2023/09/SOLO2-768x1024.jpg)
+				![SOLO2](/images/wp/2023-09-SOLO2-768x1024.jpg)
 
 			
 		
@@ -229,11 +229,11 @@ wp_url: "https://cycle-z.com/blog/2023/09/09/started-handling-de-rosa-2023-9-9/"
 		
 		
 			
-				![settanta1](https://cycle-z.com/wp-content/uploads/2023/09/settanta1-768x1024.jpg)
+				![settanta1](/images/wp/2023-09-settanta1-768x1024.jpg)
 
 			
 			
-				![settanta2](https://cycle-z.com/wp-content/uploads/2023/09/settanta2-768x1024.jpg)
+				![settanta2](/images/wp/2023-09-settanta2-768x1024.jpg)
 
 			
 		
@@ -263,11 +263,11 @@ wp_url: "https://cycle-z.com/blog/2023/09/09/started-handling-de-rosa-2023-9-9/"
 		
 		
 			
-				![settanta3](https://cycle-z.com/wp-content/uploads/2023/09/settanta3-768x1024.jpg)
+				![settanta3](/images/wp/2023-09-settanta3-768x1024.jpg)
 
 			
 			
-				![settanta5](https://cycle-z.com/wp-content/uploads/2023/09/settanta5-1024x768.jpg)
+				![settanta5](/images/wp/2023-09-settanta5-1024x768.jpg)
 
 			
 		
@@ -299,11 +299,11 @@ wp_url: "https://cycle-z.com/blog/2023/09/09/started-handling-de-rosa-2023-9-9/"
 		
 		
 			
-				![838 3](https://cycle-z.com/wp-content/uploads/2023/09/838-3-1024x768.jpg)
+				![838 3](/images/wp/2023-09-838-3-1024x768.jpg)
 
 			
 			
-				![838 2](https://cycle-z.com/wp-content/uploads/2023/09/838-2-1024x768.jpg)
+				![838 2](/images/wp/2023-09-838-2-1024x768.jpg)
 
 			
 		
@@ -317,7 +317,7 @@ wp_url: "https://cycle-z.com/blog/2023/09/09/started-handling-de-rosa-2023-9-9/"
 
 ガッチガチのレーシングモデル「SK」も只今試乗車としてお借りしています！
 
-![SK3](https://cycle-z.com/wp-content/uploads/2023/09/SK3-1024x768.jpg)
+![SK3](/images/wp/2023-09-SK3-1024x768.jpg)
 
 		
 			#gallery-8 {
@@ -339,11 +339,11 @@ wp_url: "https://cycle-z.com/blog/2023/09/09/started-handling-de-rosa-2023-9-9/"
 		
 		
 			
-				![SK2](https://cycle-z.com/wp-content/uploads/2023/09/SK2-768x1024.jpg)
+				![SK2](/images/wp/2023-09-SK2-768x1024.jpg)
 
 			
 			
-				![SK1](https://cycle-z.com/wp-content/uploads/2023/09/SK1-768x1024.jpg)
+				![SK1](/images/wp/2023-09-SK1-768x1024.jpg)
 
 			
 		
@@ -361,6 +361,6 @@ wp_url: "https://cycle-z.com/blog/2023/09/09/started-handling-de-rosa-2023-9-9/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

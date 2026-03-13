@@ -8,7 +8,7 @@ wp_id: 1512
 wp_url: "https://cycle-z.com/blog/2019/09/24/voice/"
 ---
 
-![MASH](http://cycle-z.com/wp-content/uploads/2017/12/26056884_314159422429959_1174822742_n.jpg)
+![MASH](/images/wp/2017-12-26056884_314159422429959_1174822742_n.jpg)
 
 お客様が遊びに来てくださいました！！
 

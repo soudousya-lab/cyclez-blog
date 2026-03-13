@@ -16,7 +16,7 @@ wp_url: "https://cycle-z.com/blog/2021/11/05/event-reporting-2021-11-5/"
 
 当日は弊社のスタッフを含めて4人のフィッティングをしていただきました。
 
-![辻善光氏にフィッティングをしてもらう西井](https://cycle-z.com/wp-content/uploads/2021/11/2ec6a30af55cb8821c288ce3a0fc6028.jpg)
+![辻善光氏にフィッティングをしてもらう西井](/images/wp/2021-11-2ec6a30af55cb8821c288ce3a0fc6028.jpg)
 
 1人2時間ほど時間をとっていただけたので、1日だとちょうど良い人数でした。
 
@@ -38,7 +38,7 @@ wp_url: "https://cycle-z.com/blog/2021/11/05/event-reporting-2021-11-5/"
 
 だいぶ完成されていると思っていたフォームにも早速手が入ります。
 
-![辻善光氏にフィッティングをしてもらう西井](https://cycle-z.com/wp-content/uploads/2021/11/5b0275b8f29a96107f396fff4e21454c.jpg)
+![辻善光氏にフィッティングをしてもらう西井](/images/wp/2021-11-5b0275b8f29a96107f396fff4e21454c.jpg)
 
 ハンドルの変更、ステムの長さの変更、クリートの位置調整など、より脚を回転させやすいように手直し。
 
@@ -64,11 +64,11 @@ wp_url: "https://cycle-z.com/blog/2021/11/05/event-reporting-2021-11-5/"
 		
 		
 			
-				![辻善光氏にフィッティングをしてもらう西井](https://cycle-z.com/wp-content/uploads/2021/11/84800fcee5fca8746b95bfb50d5c9f53-300x183.jpg)
+				![辻善光氏にフィッティングをしてもらう西井](/images/wp/2021-11-84800fcee5fca8746b95bfb50d5c9f53-300x183.jpg)
 
 			
 			
-				![辻善光氏にフィッティングをしてもらう西井](https://cycle-z.com/wp-content/uploads/2021/11/db04c5ecca8a11fd35f75f26085819ef-300x184.jpg)
+				![辻善光氏にフィッティングをしてもらう西井](/images/wp/2021-11-db04c5ecca8a11fd35f75f26085819ef-300x184.jpg)
 
 			
 		
@@ -87,7 +87,7 @@ wp_url: "https://cycle-z.com/blog/2021/11/05/event-reporting-2021-11-5/"
 
 前回に引き続き、今回も6人ほどお集まりいただきました。
 
-![クロモリミーティング](https://cycle-z.com/wp-content/uploads/2021/11/c4a3c83801355d0926c0af1d047e1032-1024x768.jpg)
+![クロモリミーティング](/images/wp/2021-11-c4a3c83801355d0926c0af1d047e1032-1024x768.jpg)
 
 既にオーダーされている方もいて
 
@@ -98,7 +98,7 @@ wp_url: "https://cycle-z.com/blog/2021/11/05/event-reporting-2021-11-5/"
 
 自転車になる前のパイプを見て触れる機会もほとんどないはず。
 
-![](https://cycle-z.com/wp-content/uploads/2021/11/a819d4e1d2e461af63829758b76d90c3-1024x768.jpg)
+![](/images/wp/2021-11-a819d4e1d2e461af63829758b76d90c3-1024x768.jpg)
 
 同じクロモリという素材のパイプでも配合の比率を変えて作られていたり、一本のパイプでも“バテッド”と呼ばれる薄いところと厚いところがあったりと、その違いを間近で見ることができました。
 
@@ -120,6 +120,6 @@ wp_url: "https://cycle-z.com/blog/2021/11/05/event-reporting-2021-11-5/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

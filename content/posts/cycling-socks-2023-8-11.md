@@ -24,7 +24,7 @@ wp_url: "https://cycle-z.com/blog/2023/08/11/cycling-socks-2023-8-11/"
 
 まず、自転車用ソックスの特徴の一つとして、全体的に薄い素材が使用されていることが挙げられます。
 
-![](https://cycle-z.com/wp-content/uploads/2023/08/ed19a5af6c7eb0ca603d66c98178456a-768x1024.jpg)
+![](/images/wp/2023-08-ed19a5af6c7eb0ca603d66c98178456a-768x1024.jpg)
 
 自転車は走りや歩きに比べて、地面からの衝撃を受けることが少ないため、足の裏側が厚手である必要がありません。
 
@@ -40,7 +40,7 @@ wp_url: "https://cycle-z.com/blog/2023/08/11/cycling-socks-2023-8-11/"
 
 速乾性のあるメッシュ素材を使用し、通気性を高めているため、快適な履き心地をキープしてくれます。
 
-![](https://cycle-z.com/wp-content/uploads/2023/08/a95a1d57419374398d05db0812004596-768x1024.jpg)
+![](/images/wp/2023-08-a95a1d57419374398d05db0812004596-768x1024.jpg)
 
 踵や爪先など、動きによって擦れやすい部分は頑丈に作られています。
 
@@ -80,7 +80,7 @@ wp_url: "https://cycle-z.com/blog/2023/08/11/cycling-socks-2023-8-11/"
 
 自転車用ソックスといえば、まずはこのDefeetデフィートを思い浮かべる方も多いのではないでしょうか。
 
-![](https://cycle-z.com/wp-content/uploads/2023/08/defeet3-768x1024.jpg)
+![](/images/wp/2023-08-defeet3-768x1024.jpg)
 
  
 
@@ -106,11 +106,11 @@ wp_url: "https://cycle-z.com/blog/2023/08/11/cycling-socks-2023-8-11/"
 		
 		
 			
-				![defeet1](https://cycle-z.com/wp-content/uploads/2023/08/defeet1-768x1024.jpg)
+				![defeet1](/images/wp/2023-08-defeet1-768x1024.jpg)
 
 			
 			
-				![defeet2](https://cycle-z.com/wp-content/uploads/2023/08/defeet2-768x1024.jpg)
+				![defeet2](/images/wp/2023-08-defeet2-768x1024.jpg)
 
 			
 		
@@ -124,7 +124,7 @@ wp_url: "https://cycle-z.com/blog/2023/08/11/cycling-socks-2023-8-11/"
 
 ソックスにもその派手さはもちろん引き継がれています！
 
-![](https://cycle-z.com/wp-content/uploads/2023/08/7ddec9937163f79f9096f2d12a0eb02e-1024x768.jpg)
+![](/images/wp/2023-08-7ddec9937163f79f9096f2d12a0eb02e-1024x768.jpg)
 
 サイズ選びに悩む必要なしのワンサイズ展開となっています。好きな柄で派手にキメちゃいましょう！
 
@@ -134,7 +134,7 @@ wp_url: "https://cycle-z.com/blog/2023/08/11/cycling-socks-2023-8-11/"
 
 機能性を重視のであれば、やはりアソスがおすすめです！
 
-![](https://cycle-z.com/wp-content/uploads/2023/08/2c735e2214f83907439fb0c403bd07be-1024x768.jpg)
+![](/images/wp/2023-08-2c735e2214f83907439fb0c403bd07be-1024x768.jpg)
 
 追求された機能美がカッコいい、唯一無二のブランドです。
 
@@ -162,6 +162,6 @@ wp_url: "https://cycle-z.com/blog/2023/08/11/cycling-socks-2023-8-11/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

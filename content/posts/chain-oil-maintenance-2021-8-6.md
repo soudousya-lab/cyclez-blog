@@ -46,14 +46,14 @@ wp_url: "https://cycle-z.com/blog/2021/08/05/chain-oil-maintenance-2021-8-6/"
 		
 		
 			
-				![ロードバイクのチェーン空拭き前の画像](https://cycle-z.com/wp-content/uploads/2021/08/4b3d6b0e3541be22d7308ae0e8aac9eb-225x300.jpg)
+				![ロードバイクのチェーン空拭き前の画像](/images/wp/2021-08-4b3d6b0e3541be22d7308ae0e8aac9eb-225x300.jpg)
 
 			
 				
 				から拭き前の汚れたチェーン！
 				
 			
-				![ロードバイクのチェーン空拭き後の画像](https://cycle-z.com/wp-content/uploads/2021/08/78321368d5ca348fa10f3092c7447c26-225x300.jpg)
+				![ロードバイクのチェーン空拭き後の画像](/images/wp/2021-08-78321368d5ca348fa10f3092c7447c26-225x300.jpg)
 
 			
 				
@@ -114,6 +114,6 @@ wp_url: "https://cycle-z.com/blog/2021/08/05/chain-oil-maintenance-2021-8-6/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

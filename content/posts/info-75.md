@@ -8,7 +8,7 @@ wp_id: 1775
 wp_url: "https://cycle-z.com/blog/2020/02/01/info-75/"
 ---
 
-![basso・VENTA（ベンタ）・ロードバイクフェア開催　岡山・サイクルZ](https://cycle-z.com/wp-content/uploads/2020/02/basso-roadbike-fair2020.jpg)
+![basso・VENTA（ベンタ）・ロードバイクフェア開催　岡山・サイクルZ](/images/wp/2020-02-basso-roadbike-fair2020.jpg)
 
 【ロードバイクフェア】
 

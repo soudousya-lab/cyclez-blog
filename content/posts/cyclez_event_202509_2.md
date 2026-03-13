@@ -21,4 +21,4 @@ wp_url: "https://cycle-z.com/blog/2025/09/10/cyclez_event_202509_2/"
 
 参加応募は**[こちら](https://docs.google.com/forms/d/e/1FAIpQLScHwulA9LL9bkVwoxaAMU8mh9gE9dnE5MiPVFOwQh3lwgkgZQ/viewform?usp=dialog)**から
 
-![](https://cycle-z.com/wp-content/uploads/2025/09/Image-59.jpg)
+![](/images/wp/2025-09-Image-59.jpg)

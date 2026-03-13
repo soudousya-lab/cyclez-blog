@@ -24,7 +24,7 @@ wp_url: "https://cycle-z.com/blog/2022/02/04/yakagecho-cycling-course-2022-2-4/"
 
 今回はスタッフ仙田もお気に入りの矢掛に向かうルートです。
 
-![矢掛町サイクリングコース](https://cycle-z.com/wp-content/uploads/2022/02/c76d12de15cce47e4d5e34812ec7d16e-1024x460.png)
+![矢掛町サイクリングコース](/images/wp/2022-02-c76d12de15cce47e4d5e34812ec7d16e-1024x460.png)
 
 (※ルート全容は[こちら](https://ridewithgps.com/routes/32441759)からもご確認いただけます)
 
@@ -52,7 +52,7 @@ wp_url: "https://cycle-z.com/blog/2022/02/04/yakagecho-cycling-course-2022-2-4/"
 
 ### 矢掛はサイクリストに優しい街
 
-![矢掛町の街並み](https://cycle-z.com/wp-content/uploads/2022/02/img-eat_buy01.jpg)
+![矢掛町の街並み](/images/wp/2022-02-img-eat_buy01.jpg)
 
 引用元：[矢掛町ふるさと納税サイト](https://www.rakuten.ne.jp/gold/f334618-yakage/)
 
@@ -96,6 +96,6 @@ wp_url: "https://cycle-z.com/blog/2022/02/04/yakagecho-cycling-course-2022-2-4/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

@@ -34,9 +34,9 @@ wp_url: "https://cycle-z.com/blog/2023/11/11/ufoline-cycling-2023-11-10/"
 
 今回スタート地点までは車移動でした。
 
-![](https://cycle-z.com/wp-content/uploads/2023/11/48a56c1385f8e8f5672d28d1a4e1ea11-768x1024.jpg)
+![](/images/wp/2023-11-48a56c1385f8e8f5672d28d1a4e1ea11-768x1024.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2023/11/dbfed5d333597ee46d80f8faff6ffbde-1024x768.jpg)
+ ![](/images/wp/2023-11-dbfed5d333597ee46d80f8faff6ffbde-1024x768.jpg)
 
 海側に位置する愛媛県西条市まで車で向かい、そこから自転車で出発することにしました。
 
@@ -44,9 +44,9 @@ wp_url: "https://cycle-z.com/blog/2023/11/11/ufoline-cycling-2023-11-10/"
 
 平坦な場所からのスタートでしたが、既に登る予定の山々を壮大に見渡すことが出来ます。
 
-![](https://cycle-z.com/wp-content/uploads/2023/11/7aae552846267204e1aa10fd0df4f0b5-1024x768.jpg)
+![](/images/wp/2023-11-7aae552846267204e1aa10fd0df4f0b5-1024x768.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2023/11/dd6c6829d9abc2e5d3fff9192c02f81e-1024x683.jpg)
+ ![](/images/wp/2023-11-dd6c6829d9abc2e5d3fff9192c02f81e-1024x683.jpg)
 
 これからあの峰まで行くのかと思うと、かなり気合が入りますね！
 
@@ -62,7 +62,7 @@ wp_url: "https://cycle-z.com/blog/2023/11/11/ufoline-cycling-2023-11-10/"
 
 とても走りやすい良いルートでした。
 
-![](https://cycle-z.com/wp-content/uploads/2023/11/31a619de83c2a75835b6cd8cab1bc5a6-768x1024.jpg)
+![](/images/wp/2023-11-31a619de83c2a75835b6cd8cab1bc5a6-768x1024.jpg)
 
 この日は11月にしては日差しが非常に強く、山に入る前には既に汗ばんでいました。
 
@@ -74,9 +74,9 @@ wp_url: "https://cycle-z.com/blog/2023/11/11/ufoline-cycling-2023-11-10/"
 
 実際に登り始め、涼しく感じる場所は木々が紅葉していました。
 
-![](https://cycle-z.com/wp-content/uploads/2023/11/4f691a992e73417387934ac32f184b42-768x1024.jpg)
+![](/images/wp/2023-11-4f691a992e73417387934ac32f184b42-768x1024.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2023/11/67ac10892ff25139d2b54ff635ad3d63-768x1024.jpg)
+ ![](/images/wp/2023-11-67ac10892ff25139d2b54ff635ad3d63-768x1024.jpg)
 
 今年は例年に比べてかなり暖かいので、この記事を見たあとでも紅葉ライドに行くことが出来そうですね！
 
@@ -86,7 +86,7 @@ wp_url: "https://cycle-z.com/blog/2023/11/11/ufoline-cycling-2023-11-10/"
 
 登り進めていくと、「寒風山トンネル」というひたすらに真っ直ぐ5kmも続くトンネルが出現します。
 
-![](https://cycle-z.com/wp-content/uploads/2023/11/5f2944d437f37a5ef3155962f4819211-1024x683.jpg)
+![](/images/wp/2023-11-5f2944d437f37a5ef3155962f4819211-1024x683.jpg)
 
 海側から登る人達ならこの辺りが踏ん張りどころになると思います！
 
@@ -106,7 +106,7 @@ wp_url: "https://cycle-z.com/blog/2023/11/11/ufoline-cycling-2023-11-10/"
 
 トンネルを抜けて下ると道の駅「木の香」に着きます。
 
-![](https://cycle-z.com/wp-content/uploads/2023/11/cc5a8872be9f590f48f63590dc53a0b4-1024x683.jpg)
+![](/images/wp/2023-11-cc5a8872be9f590f48f63590dc53a0b4-1024x683.jpg)
 
 ここがUFOラインを登る時にスタート地点としてよく使われる場所です。
 
@@ -126,7 +126,7 @@ wp_url: "https://cycle-z.com/blog/2023/11/11/ufoline-cycling-2023-11-10/"
 
 今回はある程度備えをして行っており、既に道の駅からスタートした店長を追うために先を急ぐことにしました。
 
-![](https://cycle-z.com/wp-content/uploads/2023/11/55f3a4e67703aa3052353296edf230a2-768x1024.jpg)
+![](/images/wp/2023-11-55f3a4e67703aa3052353296edf230a2-768x1024.jpg)
 
  
 
@@ -144,21 +144,21 @@ wp_url: "https://cycle-z.com/blog/2023/11/11/ufoline-cycling-2023-11-10/"
 
 入口には分かりやすく「UFOライン」と書かれた看板があるので、早速登っていきました！
 
-![](https://cycle-z.com/wp-content/uploads/2023/11/b982aa71fbb23f7693d9571f21a132ea-768x1024.jpg)
+![](/images/wp/2023-11-b982aa71fbb23f7693d9571f21a132ea-768x1024.jpg)
 
 先ほどまでは普通に車が通れる広い道路でしたが、ここからは車のすれ違いも困難な道が続いていきます。
 
 とは言え、森林に囲まれマイナスイオンが全身で感じられるような道で、サイクリングには最高です！
 
-![](https://cycle-z.com/wp-content/uploads/2023/11/742ec68336a005ad475037fa864462ae-768x1024.jpg)
+![](/images/wp/2023-11-742ec68336a005ad475037fa864462ae-768x1024.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2023/11/f42f607b731509be6e624b7988e304fe-768x1024.jpg)
+ ![](/images/wp/2023-11-f42f607b731509be6e624b7988e304fe-768x1024.jpg)
 
 度々休憩も兼ねて景色の良いところで写真も撮って貰いました。
 
-![](https://cycle-z.com/wp-content/uploads/2023/11/9aa8531eb3fe27ede778b6e9d39f3c99-1024x768.jpg)
+![](/images/wp/2023-11-9aa8531eb3fe27ede778b6e9d39f3c99-1024x768.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2023/11/62eb4dfcdc26dedbb1aaca3ee0daa5cb-1024x683.jpg)
+ ![](/images/wp/2023-11-62eb4dfcdc26dedbb1aaca3ee0daa5cb-1024x683.jpg)
 
  
 
@@ -170,7 +170,7 @@ wp_url: "https://cycle-z.com/blog/2023/11/11/ufoline-cycling-2023-11-10/"
 
 登っていく途中に、「CAFE BASE」という休憩スポットがあります。
 
-![](https://cycle-z.com/wp-content/uploads/2023/11/CAFE-BASE1-1024x768.jpg)
+![](/images/wp/2023-11-CAFE-BASE1-1024x768.jpg)
 
 こちらは土日祝日のみ営業されているお店なので、平日だったこの日は空いていませんでした。
 
@@ -224,21 +224,21 @@ wp_url: "https://cycle-z.com/blog/2023/11/11/ufoline-cycling-2023-11-10/"
 
 いくつかの小さいトンネルを抜けた先には山頂からの綺麗な景色が待っていました。
 
-![](https://cycle-z.com/wp-content/uploads/2023/11/7d974004dca015b2f2525bdf31ac3ab8-1024x768.jpg)
+![](/images/wp/2023-11-7d974004dca015b2f2525bdf31ac3ab8-1024x768.jpg)
 
-![](https://cycle-z.com/wp-content/uploads/2023/11/59531c0efcf3309688dc2678b9873730-1024x683.jpg)
+![](/images/wp/2023-11-59531c0efcf3309688dc2678b9873730-1024x683.jpg)
 
 先に登って楽しんでいた店長とすれ違い、その後は景色を楽しみながらおにぎりを貪りました！
 
-![](https://cycle-z.com/wp-content/uploads/2023/11/926359bec3a062699820dbc2f882bf19-1024x385.jpg)
+![](/images/wp/2023-11-926359bec3a062699820dbc2f882bf19-1024x385.jpg)
 
-![](https://cycle-z.com/wp-content/uploads/2023/11/d2536be89a632f06420d7047c26aa5e2-768x1024.jpg)
+![](/images/wp/2023-11-d2536be89a632f06420d7047c26aa5e2-768x1024.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2023/11/74eac534a1602426178e0d9d1dffa7a5-1024x683.jpg)
+ ![](/images/wp/2023-11-74eac534a1602426178e0d9d1dffa7a5-1024x683.jpg)
 
-![](https://cycle-z.com/wp-content/uploads/2023/11/c620f0c36377392e7d68e207fa7f2dee-1024x683.jpg)
+![](/images/wp/2023-11-c620f0c36377392e7d68e207fa7f2dee-1024x683.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2023/11/26f826f5c5dfde6db6748687aa0cb817-1024x683.jpg)
+ ![](/images/wp/2023-11-26f826f5c5dfde6db6748687aa0cb817-1024x683.jpg)
 
 山頂を楽しんだあとは、長い長い下り坂をただただ楽しみながらサイクリング。
 
@@ -256,23 +256,23 @@ wp_url: "https://cycle-z.com/blog/2023/11/11/ufoline-cycling-2023-11-10/"
 
 帰りは店長が待っていたので、道の駅に寄っていきました。
 
-![](https://cycle-z.com/wp-content/uploads/2023/11/79784c16e630066c51ea6244a336f6e1-1024x683.jpg)
+![](/images/wp/2023-11-79784c16e630066c51ea6244a336f6e1-1024x683.jpg)
 
-![](https://cycle-z.com/wp-content/uploads/2023/11/6e1967e99822b4bfef16ccc2d58af705-1024x768.jpg)
+![](/images/wp/2023-11-6e1967e99822b4bfef16ccc2d58af705-1024x768.jpg)
 
 店長は待ち時間にここにある温泉を楽しんでいた模様。
 
 紅葉がかなり進み、一段と素晴らしい景色が見られるのでオススメのスポットです。
 
-![](https://cycle-z.com/wp-content/uploads/2023/11/acaf61e46fa8f6e7bc59f476a5f62352-1024x683.jpg)
+![](/images/wp/2023-11-acaf61e46fa8f6e7bc59f476a5f62352-1024x683.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2023/11/129bacc65ab867ce39e07d9f4fcc9f02-1024x683.jpg)
+ ![](/images/wp/2023-11-129bacc65ab867ce39e07d9f4fcc9f02-1024x683.jpg)
 
  
 
 ここでご飯を補給して、最後の下りに備えます。
 
-![](https://cycle-z.com/wp-content/uploads/2023/11/738700481dc6e09bf1772ecfc0deafa6-scaled-e1699620403317-1024x768.jpg)
+![](/images/wp/2023-11-738700481dc6e09bf1772ecfc0deafa6-scaled-e1699620403317-1024x768.jpg)
 
 道の駅に着いて感じたのは、標高が高いと寒い！！この日はここで凍えそうな程の寒さを感じました。
 
@@ -282,7 +282,7 @@ wp_url: "https://cycle-z.com/blog/2023/11/11/ufoline-cycling-2023-11-10/"
 
 そして今回は最後に愛媛県西条市にある「ひうちの湯」で温泉に浸かり、疲れを癒して帰ってきました！
 
-![](https://cycle-z.com/wp-content/uploads/2023/11/c1898f3616a135f1c1372ab1810244bf-768x1024.jpg)
+![](/images/wp/2023-11-c1898f3616a135f1c1372ab1810244bf-768x1024.jpg)
 
  
 
@@ -308,9 +308,9 @@ wp_url: "https://cycle-z.com/blog/2023/11/11/ufoline-cycling-2023-11-10/"
 
 また今度登りの講習会もあるので、挑戦してみたい人はぜひご参加くださいね！
 
-![](https://cycle-z.com/wp-content/uploads/2023/11/e9f00504141e534b9d0b78e2857f0d0e-1024x683.jpg)
+![](/images/wp/2023-11-e9f00504141e534b9d0b78e2857f0d0e-1024x683.jpg)
 
-![](https://cycle-z.com/wp-content/uploads/2023/11/d0cf6fa9152d9d5333114ec6899b793f-1024x683.jpg)
+![](/images/wp/2023-11-d0cf6fa9152d9d5333114ec6899b793f-1024x683.jpg)
 
  
 
@@ -324,6 +324,6 @@ wp_url: "https://cycle-z.com/blog/2023/11/11/ufoline-cycling-2023-11-10/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

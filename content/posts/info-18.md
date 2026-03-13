@@ -18,10 +18,10 @@ wp_url: "https://cycle-z.com/blog/2018/03/23/info-18/"
 
 TEL:086-252-7744
 
-![](http://cycle-z.com/wp-content/uploads/2018/03/d41d8cd9.jpg)
+![](/images/wp/2018-03-d41d8cd9.jpg)
 
-![](http://cycle-z.com/wp-content/uploads/2018/03/43ccecf316616162efaf17b81928074a.png)
+![](/images/wp/2018-03-43ccecf316616162efaf17b81928074a.png)
 
-![](http://cycle-z.com/wp-content/uploads/2018/03/4185e2a70907cf8407f8b80a4cc121bd.png)
+![](/images/wp/2018-03-4185e2a70907cf8407f8b80a4cc121bd.png)
 
-![](http://cycle-z.com/wp-content/uploads/2018/03/29020205_355338724978695_1285704741_n.jpg)
+![](/images/wp/2018-03-29020205_355338724978695_1285704741_n.jpg)

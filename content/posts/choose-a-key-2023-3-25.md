@@ -46,7 +46,7 @@ wp_url: "https://cycle-z.com/blog/2023/03/25/choose-a-key-2023-3-25/"
 
 鍵の重量が重く、留め方が難しいものほど頑丈で破壊されにくいため、まずはU字ロックが候補に挙がってきます。
 
-![ABUS(アブス)自転車 鍵 ロック ロードバイク鍵 U字ロック](https://cycle-z.com/wp-content/uploads/2023/03/51DEatoktSL._AC_SX679_.jpg)
+![ABUS(アブス)自転車 鍵 ロック ロードバイク鍵 U字ロック](/images/wp/2023-03-51DEatoktSL._AC_SX679_.jpg)
 
 (画像引用元：[ABUS Amazonサイト](https://www.amazon.co.jp/dp/B07CYYJNPB/ref=emc_bcc_2_i?th=1))
 
@@ -82,14 +82,14 @@ wp_url: "https://cycle-z.com/blog/2023/03/25/choose-a-key-2023-3-25/"
 		
 		
 			
-				![ABUSのチェーンロック](https://cycle-z.com/wp-content/uploads/2023/03/aec116f9a0fd0ccae88d7f7f5d7ef99c-1024x768.jpg)
+				![ABUSのチェーンロック](/images/wp/2023-03-aec116f9a0fd0ccae88d7f7f5d7ef99c-1024x768.jpg)
 
 			
 				
 				チェーンロック
 				
 			
-				![](https://cycle-z.com/wp-content/uploads/2023/03/29d8bd65ba74555feec7b2d643f144d7-768x1024.jpg)
+				![](/images/wp/2023-03-29d8bd65ba74555feec7b2d643f144d7-768x1024.jpg)
 
 			
 				
@@ -128,7 +128,7 @@ wp_url: "https://cycle-z.com/blog/2023/03/25/choose-a-key-2023-3-25/"
 
 サイクルZでの取扱ではknogのscoutが1番のオススメです。
 
-![knogのscout](https://cycle-z.com/wp-content/uploads/2023/03/54-3607500102_2-1024x1024.jpg)
+![knogのscout](/images/wp/2023-03-54-3607500102_2-1024x1024.jpg)
 
 (画像引用元：[KONG ノグ日本公式サイト](https://www.cog.inc/knog/product/scout))
 
@@ -142,14 +142,14 @@ Apple認定のAirTag機能そのものを内蔵し、場所の特定だけでな
 
 - ABUSのチェーンロック
 
-![ABUSのチェーンロック](https://cycle-z.com/wp-content/uploads/2023/03/5805key-l1.jpg)
+![ABUSのチェーンロック](/images/wp/2023-03-5805key-l1.jpg)
 
 (画像引用元：[ダイアテック公式サイト](https://catalog.diatechproducts.com/shop/g/g85-3603096702/))
 [https://catalog.diatechproducts.com/shop/g/g85-3603096702/](https://catalog.diatechproducts.com/shop/g/g85-3603096702/)
 
 - ケーブルロックはcrops
 
-![](https://cycle-z.com/wp-content/uploads/2023/03/7cbf27a30e524079130a3a28e84236ac-768x1024.jpg)
+![](/images/wp/2023-03-7cbf27a30e524079130a3a28e84236ac-768x1024.jpg)
 
 [https://www.crops-sports.com/product-crops-qbiro](https://www.crops-sports.com/product-crops-qbiro)
 
@@ -173,6 +173,6 @@ Apple認定のAirTag機能そのものを内蔵し、場所の特定だけでな
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

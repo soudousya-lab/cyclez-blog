@@ -53,7 +53,7 @@ wp_url: "https://cycle-z.com/blog/2023/02/24/wear-a-helmet-2023-2-24/"
 
 ミドルクラスからはS・M・Lの3サイズも多くあります。
 
-![ヘルメットサイズSML](https://cycle-z.com/wp-content/uploads/2023/02/99243f6b95b1aef0eb8b5b347c750555-1024x768.jpg)
+![ヘルメットサイズSML](/images/wp/2023-02-99243f6b95b1aef0eb8b5b347c750555-1024x768.jpg)
 
 3サイズ展開であれば、ピッタリのものを見つけやすくなります。
 
@@ -87,14 +87,14 @@ wp_url: "https://cycle-z.com/blog/2023/02/24/wear-a-helmet-2023-2-24/"
 		
 		
 			
-				![海外向け楕円](https://cycle-z.com/wp-content/uploads/2023/02/66134e62849df4dc98770492d4e35c36-768x1024.jpg)
+				![海外向け楕円](/images/wp/2023-02-66134e62849df4dc98770492d4e35c36-768x1024.jpg)
 
 			
 				
 				海外向け楕円
 				
 			
-				![アジアン向け真円](https://cycle-z.com/wp-content/uploads/2023/02/c0d1217f3037a04a45e903690ba63757-768x1024.jpg)
+				![アジアン向け真円](/images/wp/2023-02-c0d1217f3037a04a45e903690ba63757-768x1024.jpg)
 
 			
 				
@@ -135,11 +135,11 @@ wp_url: "https://cycle-z.com/blog/2023/02/24/wear-a-helmet-2023-2-24/"
 		
 		
 			
-				![あっていない1](https://cycle-z.com/wp-content/uploads/2023/02/3e9ff32ed072623d4a44aed8f6a04e11-768x1024.jpg)
+				![あっていない1](/images/wp/2023-02-3e9ff32ed072623d4a44aed8f6a04e11-768x1024.jpg)
 
 			
 			
-				![あっていない2](https://cycle-z.com/wp-content/uploads/2023/02/1f02beb2a063eea499702ca12b798296-768x1024.jpg)
+				![あっていない2](/images/wp/2023-02-1f02beb2a063eea499702ca12b798296-768x1024.jpg)
 
 			
 		
@@ -166,11 +166,11 @@ wp_url: "https://cycle-z.com/blog/2023/02/24/wear-a-helmet-2023-2-24/"
 		
 		
 			
-				![あっている1](https://cycle-z.com/wp-content/uploads/2023/02/14b72f734470b8a85ce76942ed600ad2-768x1024.jpg)
+				![あっている1](/images/wp/2023-02-14b72f734470b8a85ce76942ed600ad2-768x1024.jpg)
 
 			
 			
-				![あっている2](https://cycle-z.com/wp-content/uploads/2023/02/776682b34c74e145c1efbaa6286cf37a-768x1024.jpg)
+				![あっている2](/images/wp/2023-02-776682b34c74e145c1efbaa6286cf37a-768x1024.jpg)
 
 			
 		
@@ -190,13 +190,13 @@ wp_url: "https://cycle-z.com/blog/2023/02/24/wear-a-helmet-2023-2-24/"
 
 - **OGKキャンバス**
 
-![OGKキャンバス](https://cycle-z.com/wp-content/uploads/2023/02/a1d97193b6c7a4ad41ab0ffdf40c750a-768x1024.jpg)
+![OGKキャンバス](/images/wp/2023-02-a1d97193b6c7a4ad41ab0ffdf40c750a-768x1024.jpg)
 
 街中で少し被るぐらいならありですが、あくまで街乗り用なので長距離を走る際は通気性の悪さが仇になるかもしれません。
 
 - **KASKラピッド**
 
-![KASKラピッド](https://cycle-z.com/wp-content/uploads/2023/02/33e2a29b3809fc9ac662aafe13a498f7-768x1024.jpg)
+![KASKラピッド](/images/wp/2023-02-33e2a29b3809fc9ac662aafe13a498f7-768x1024.jpg)
 
 スポーツ用のヘルメットとしてしっかり作られているため、頭の形に合えばぜひオススメしたい商品です！
 
@@ -208,7 +208,7 @@ wp_url: "https://cycle-z.com/blog/2023/02/24/wear-a-helmet-2023-2-24/"
 
 - **GIROシンタックス**
 
-![GIROシンタックス](https://cycle-z.com/wp-content/uploads/2023/02/eb78d5522b9a506a5d4a2047c7c64051-768x1024.jpg)
+![GIROシンタックス](/images/wp/2023-02-eb78d5522b9a506a5d4a2047c7c64051-768x1024.jpg)
 
 アジアンフィットモデルも作られていて、ヘルメットにこんなフィット感が良いものがあるのかと驚くレベルです！！
 
@@ -218,7 +218,7 @@ wp_url: "https://cycle-z.com/blog/2023/02/24/wear-a-helmet-2023-2-24/"
 
 - **ABUS VIANTOR**
 
-![あっていない2](https://cycle-z.com/wp-content/uploads/2023/02/1f02beb2a063eea499702ca12b798296-768x1024.jpg)
+![あっていない2](/images/wp/2023-02-1f02beb2a063eea499702ca12b798296-768x1024.jpg)
 
 グローバルフィットを打ち出して作られているヘルメットでかなり万人受けしやすいモデルです！
 
@@ -232,7 +232,7 @@ wp_url: "https://cycle-z.com/blog/2023/02/24/wear-a-helmet-2023-2-24/"
 
 - **GIRO アリエス**
 
-![GIROアリエス](https://cycle-z.com/wp-content/uploads/2023/02/218d52a750a6d10ff3ca00fbd6e16200-768x1024.jpg)
+![GIROアリエス](/images/wp/2023-02-218d52a750a6d10ff3ca00fbd6e16200-768x1024.jpg)
 
 スポーツヘルメットにおける最高峰！！
 
@@ -256,6 +256,6 @@ wp_url: "https://cycle-z.com/blog/2023/02/24/wear-a-helmet-2023-2-24/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

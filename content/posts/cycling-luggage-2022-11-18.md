@@ -24,7 +24,7 @@ wp_url: "https://cycle-z.com/blog/2022/11/18/cycling-luggage-2022-11-18/"
 
 ロードバイク・クロスバイクの本体はとても軽く、ママチャリでは当たり前に付けていたカゴを付けるとバランスを崩しやすいです。
 
-![フロントラックバランス悪い](https://cycle-z.com/wp-content/uploads/2022/11/76930428be63fabab9e693434552e846-1024x768.jpg)
+![フロントラックバランス悪い](/images/wp/2022-11-76930428be63fabab9e693434552e846-1024x768.jpg)
 
 前カゴをつけてバランスが悪くなった自転車
 
@@ -42,7 +42,7 @@ wp_url: "https://cycle-z.com/blog/2022/11/18/cycling-luggage-2022-11-18/"
 
 なのでサイクリングに必須な飲み物を設置出来るボトルケージは、初めに装備するアイテムとして覚えておきましょう。
 
-![通常積載](https://cycle-z.com/wp-content/uploads/2022/11/01ff101d32f95ee93ddfb3dbf14761ca-1024x768.jpg)
+![通常積載](/images/wp/2022-11-01ff101d32f95ee93ddfb3dbf14761ca-1024x768.jpg)
 
 ボトルケージ
 
@@ -76,14 +76,14 @@ wp_url: "https://cycle-z.com/blog/2022/11/18/cycling-luggage-2022-11-18/"
 		
 		
 			
-				![ツールケースの中](https://cycle-z.com/wp-content/uploads/2022/11/83214257f718c88f4f26fa0ee1623d5f-768x1024.jpg)
+				![ツールケースの中](/images/wp/2022-11-83214257f718c88f4f26fa0ee1623d5f-768x1024.jpg)
 
 			
 				
 				ツールボトル中
 				
 			
-				![ツールケース](https://cycle-z.com/wp-content/uploads/2022/11/28f2ad54260f9231338af85caa77754c-768x1024.jpg)
+				![ツールケース](/images/wp/2022-11-28f2ad54260f9231338af85caa77754c-768x1024.jpg)
 
 			
 				
@@ -96,7 +96,7 @@ wp_url: "https://cycle-z.com/blog/2022/11/18/cycling-luggage-2022-11-18/"
 
 スタッフ仙田のツールボトルを例に出すと、チューブ・タイヤレバー・空気入れ・携帯工具・カギをここに収めています。
 
-![ツールケースの中内訳](https://cycle-z.com/wp-content/uploads/2022/11/5e2bf5eaa42844df1146371b583d9978-1024x768.jpg)
+![ツールケースの中内訳](/images/wp/2022-11-5e2bf5eaa42844df1146371b583d9978-1024x768.jpg)
 
 仙田のツールボトルの中身
 
@@ -110,7 +110,7 @@ wp_url: "https://cycle-z.com/blog/2022/11/18/cycling-luggage-2022-11-18/"
 
 この時に初めて候補に挙がるのが、ハンドルバーバッグとサドルバッグですね。
 
-![ハンドルバッグ中](https://cycle-z.com/wp-content/uploads/2022/11/668508d2ad756dab6f39d55a4a3d91b7-1024x768.jpg)
+![ハンドルバッグ中](/images/wp/2022-11-668508d2ad756dab6f39d55a4a3d91b7-1024x768.jpg)
 
 ハンドルバーバッグ
 
@@ -134,14 +134,14 @@ wp_url: "https://cycle-z.com/blog/2022/11/18/cycling-luggage-2022-11-18/"
 		
 		
 			
-				![サドルバッグ小](https://cycle-z.com/wp-content/uploads/2022/11/965b0be78021e95ff4c9154d1cab0c20-768x1024.jpg)
+				![サドルバッグ小](/images/wp/2022-11-965b0be78021e95ff4c9154d1cab0c20-768x1024.jpg)
 
 			
 				
 				サドルバッグ
 				
 			
-				![サドルバッグサイズ比較](https://cycle-z.com/wp-content/uploads/2022/11/df810863429e2fb80ee8c7c8d1e1339d-scaled-e1668750382242-768x1024.jpg)
+				![サドルバッグサイズ比較](/images/wp/2022-11-df810863429e2fb80ee8c7c8d1e1339d-scaled-e1668750382242-768x1024.jpg)
 
 			
 				
@@ -154,7 +154,7 @@ wp_url: "https://cycle-z.com/blog/2022/11/18/cycling-luggage-2022-11-18/"
 
 こちらは持ち物の量に合わせたサイズのものがあれば、なお良いですね。
 
-![ハンドルバッグサイズ比較](https://cycle-z.com/wp-content/uploads/2022/11/f2a5975ec134f60e827b076bc878a04b-1024x768.jpg)
+![ハンドルバッグサイズ比較](/images/wp/2022-11-f2a5975ec134f60e827b076bc878a04b-1024x768.jpg)
 
 ハンドルバックのサイズ比較
 
@@ -168,7 +168,7 @@ wp_url: "https://cycle-z.com/blog/2022/11/18/cycling-luggage-2022-11-18/"
 
 外側にはスマートフォンも収納できるポケットが付いたマルチボトルホルダーなんかもあります！
 
-![マルチボトルホルダー2](https://cycle-z.com/wp-content/uploads/2022/11/957e9791aab36900ee27e37e9869947d-768x1024.jpg)
+![マルチボトルホルダー2](/images/wp/2022-11-957e9791aab36900ee27e37e9869947d-768x1024.jpg)
 
 リンプロジェクトのマルチホルダー
 
@@ -176,7 +176,7 @@ wp_url: "https://cycle-z.com/blog/2022/11/18/cycling-luggage-2022-11-18/"
 
 前カゴを付けるより先に、後ろにキャリアを付ける方が安定します！
 
-![リアキャリア](https://cycle-z.com/wp-content/uploads/2022/11/6ece922ca416b83a170511ae29fe0bfc-768x1024.jpg)
+![リアキャリア](/images/wp/2022-11-6ece922ca416b83a170511ae29fe0bfc-768x1024.jpg)
 
 リアキャリア
 
@@ -184,7 +184,7 @@ wp_url: "https://cycle-z.com/blog/2022/11/18/cycling-luggage-2022-11-18/"
 
 リアキャリアの中でも、aeroeエロエから出ている[Spider Rear Rack](https://aeroe.com/products/spider-rear-rack)はどんな自転車にも付けられておすすめです。
 
-![どんなバイクにもつけられるaeroe](https://cycle-z.com/wp-content/uploads/2022/11/6712070e0730045f56d7a7042d22d96f.jpg)
+![どんなバイクにもつけられるaeroe](/images/wp/2022-11-6712070e0730045f56d7a7042d22d96f.jpg)
 
 aeroe のリアキャリア
 
@@ -202,6 +202,6 @@ aeroe のリアキャリア
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

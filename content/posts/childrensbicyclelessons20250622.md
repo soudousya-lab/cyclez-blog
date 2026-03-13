@@ -8,7 +8,7 @@ wp_id: 6306
 wp_url: "https://cycle-z.com/blog/2025/05/10/childrensbicyclelessons20250622/"
 ---
 
-![](https://cycle-z.com/wp-content/uploads/2025/05/Image-3.jpg)
+![](/images/wp/2025-05-Image-3.jpg)
 
 子供自転車教室開催！！
 
@@ -31,7 +31,7 @@ wp_url: "https://cycle-z.com/blog/2025/05/10/childrensbicyclelessons20250622/"
 **イベント対象：６歳～10歳くらい（幼稚園、小学校低学年を対象としてますが、それ以外でもOK） **
 **申し込みフォーム：cycleZホームページにて受付**
 
-[![](https://cycle-z.com/wp-content/uploads/2025/05/4fbdf9d23f85479322c15ea44dd0ae2c-1000x250-1.png)
+[![](/images/wp/2025-05-4fbdf9d23f85479322c15ea44dd0ae2c-1000x250-1.png)
 
 ](https://docs.google.com/forms/d/e/1FAIpQLSc2QT0Skw1E0bgjkL1rQANHqO38-4GXdk2h0npxR2GmvkBpCA/viewform?usp=header)
 
@@ -56,4 +56,4 @@ wp_url: "https://cycle-z.com/blog/2025/05/10/childrensbicyclelessons20250622/"
 15:45～15:55　自転車安全ミニ講座（クイズ形式） 
 15:55～16:00　修了証配布・記念撮影・閉会あいさつ
 
-![](https://cycle-z.com/wp-content/uploads/2025/05/Image-4.jpg)
+![](/images/wp/2025-05-Image-4.jpg)

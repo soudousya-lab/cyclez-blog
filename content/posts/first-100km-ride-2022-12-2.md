@@ -24,7 +24,7 @@ wp_url: "https://cycle-z.com/blog/2022/12/02/first-100km-ride-2022-12-2/"
 
 サポートライダーも含めて総勢21名でチャレンジです！
 
-![](https://cycle-z.com/wp-content/uploads/2022/11/e43e14529a128e7e69cd6460028b2412-1024x576.jpg)
+![](/images/wp/2022-11-e43e14529a128e7e69cd6460028b2412-1024x576.jpg)
 
 朝の集合時間8:30から日中の暖かさに変わっていく時間まで少し肌寒く感じます。
 
@@ -64,11 +64,11 @@ wp_url: "https://cycle-z.com/blog/2022/12/02/first-100km-ride-2022-12-2/"
 		
 		
 			
-				![賞田廃寺跡での記念撮影4](https://cycle-z.com/wp-content/uploads/2022/11/ff70e7dd23081500f8c512f815c5b45c-1024x576.jpg)
+				![賞田廃寺跡での記念撮影4](/images/wp/2022-11-ff70e7dd23081500f8c512f815c5b45c-1024x576.jpg)
 
 			
 			
-				![賞田廃寺跡での記念撮影](https://cycle-z.com/wp-content/uploads/2022/11/aee7737c99e2352286f53a35ee484b2f-1024x768.jpg)
+				![賞田廃寺跡での記念撮影](/images/wp/2022-11-aee7737c99e2352286f53a35ee484b2f-1024x768.jpg)
 
 			
 		
@@ -96,11 +96,11 @@ wp_url: "https://cycle-z.com/blog/2022/12/02/first-100km-ride-2022-12-2/"
 		
 		
 			
-				![鷹取醤油](https://cycle-z.com/wp-content/uploads/2022/11/96563c1eab84f63e3834da6bba04998a-768x1024.jpg)
+				![鷹取醤油](/images/wp/2022-11-96563c1eab84f63e3834da6bba04998a-768x1024.jpg)
 
 			
 			
-				![鷹取醤油ソフト](https://cycle-z.com/wp-content/uploads/2022/11/62097b2aadfd852ebc9a03233294a286-576x1024.jpg)
+				![鷹取醤油ソフト](/images/wp/2022-11-62097b2aadfd852ebc9a03233294a286-576x1024.jpg)
 
 			
 		
@@ -140,11 +140,11 @@ wp_url: "https://cycle-z.com/blog/2022/12/02/first-100km-ride-2022-12-2/"
 		
 		
 			
-				![](https://cycle-z.com/wp-content/uploads/2022/11/01a369dba98939603109d549406d4caa-1024x576.jpg)
+				![](/images/wp/2022-11-01a369dba98939603109d549406d4caa-1024x576.jpg)
 
 			
 			
-				![](https://cycle-z.com/wp-content/uploads/2022/11/392b02cbb9c7628e0e824828f74f08c9-1024x576.jpg)
+				![](/images/wp/2022-11-392b02cbb9c7628e0e824828f74f08c9-1024x576.jpg)
 
 			
 		
@@ -169,11 +169,11 @@ wp_url: "https://cycle-z.com/blog/2022/12/02/first-100km-ride-2022-12-2/"
 		
 		
 			
-				![サイクルZポーズで写真に写る二人の女性](https://cycle-z.com/wp-content/uploads/2022/11/0bb71a42b6f73cf2679144edf3590ead-1024x768.jpg)
+				![サイクルZポーズで写真に写る二人の女性](/images/wp/2022-11-0bb71a42b6f73cf2679144edf3590ead-1024x768.jpg)
 
 			
 			
-				![](https://cycle-z.com/wp-content/uploads/2022/11/3840b044cb39a1225815101a07472da8-1024x768.jpg)
+				![](/images/wp/2022-11-3840b044cb39a1225815101a07472da8-1024x768.jpg)
 
 			
 		
@@ -202,18 +202,18 @@ wp_url: "https://cycle-z.com/blog/2022/12/02/first-100km-ride-2022-12-2/"
 		
 		
 			
-				![](https://cycle-z.com/wp-content/uploads/2022/11/ffae6ff18c58d9f010bb1a9f5ca9d1b2-576x1024.jpg)
+				![](/images/wp/2022-11-ffae6ff18c58d9f010bb1a9f5ca9d1b2-576x1024.jpg)
 
 			
 			
-				![閑谷学校の紅葉した木々の脇道を歩く参加者たち](https://cycle-z.com/wp-content/uploads/2022/11/8025860b39c5b168ffed8fc9147dc059-576x1024.jpg)
+				![閑谷学校の紅葉した木々の脇道を歩く参加者たち](/images/wp/2022-11-8025860b39c5b168ffed8fc9147dc059-576x1024.jpg)
 
 			
 		
 
 閑谷学校でのお弁当はローストビーフ丼。
 
-![](https://cycle-z.com/wp-content/uploads/2022/11/a7d995f7e3cd9b878d2bffb2bdee6bfe-1024x768.jpg)
+![](/images/wp/2022-11-a7d995f7e3cd9b878d2bffb2bdee6bfe-1024x768.jpg)
 
 お弁当としてはかなりのボリュームでこれには大満足！！
 
@@ -237,15 +237,15 @@ wp_url: "https://cycle-z.com/blog/2022/12/02/first-100km-ride-2022-12-2/"
 		
 		
 			
-				![](https://cycle-z.com/wp-content/uploads/2022/11/77dcf1a349e38f0de4e592edae69cfcc-1024x576.jpg)
+				![](/images/wp/2022-11-77dcf1a349e38f0de4e592edae69cfcc-1024x576.jpg)
 
 			
 			
-				![](https://cycle-z.com/wp-content/uploads/2022/11/9c9110dcbee70eb3646c45e3310b135a-1024x576.jpg)
+				![](/images/wp/2022-11-9c9110dcbee70eb3646c45e3310b135a-1024x576.jpg)
 
 			
 			
-				![](https://cycle-z.com/wp-content/uploads/2022/11/7ca24114b1bcb1d80162da3f057d472a-1024x576.jpg)
+				![](/images/wp/2022-11-7ca24114b1bcb1d80162da3f057d472a-1024x576.jpg)
 
 			
 		
@@ -257,7 +257,7 @@ wp_url: "https://cycle-z.com/blog/2022/12/02/first-100km-ride-2022-12-2/"
 
 ローソン岡山原店まできたらあと一息。
 
-![](https://cycle-z.com/wp-content/uploads/2022/11/3ff0b5774e259d539b1b11fde2b56682-1024x576.jpg)
+![](/images/wp/2022-11-3ff0b5774e259d539b1b11fde2b56682-1024x576.jpg)
 
 先導の松岡さんは楽しくなり過ぎてついついペース上がっちゃってました。
 
@@ -287,11 +287,11 @@ wp_url: "https://cycle-z.com/blog/2022/12/02/first-100km-ride-2022-12-2/"
 		
 		
 			
-				![](https://cycle-z.com/wp-content/uploads/2022/11/31371ec92ec6c8107c15f216de93c4d4-1024x768.jpg)
+				![](/images/wp/2022-11-31371ec92ec6c8107c15f216de93c4d4-1024x768.jpg)
 
 			
 			
-				![](https://cycle-z.com/wp-content/uploads/2022/11/aade0bf2863b0d7d5fceddae03a77b49-1024x768.jpg)
+				![](/images/wp/2022-11-aade0bf2863b0d7d5fceddae03a77b49-1024x768.jpg)
 
 			
 		
@@ -307,6 +307,6 @@ wp_url: "https://cycle-z.com/blog/2022/12/02/first-100km-ride-2022-12-2/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

@@ -24,7 +24,7 @@ wp_url: "https://cycle-z.com/blog/2024/02/10/bike-packing-part2-2024-2-10/"
 
 まずこちらのバッグですが、上部にサイコン（サイクルコンピュータ）を取り付けることが出来ます！
 
-![](https://cycle-z.com/wp-content/uploads/2024/02/1b65ab8554f416efa5406a3567910550-768x1024.jpg)
+![](/images/wp/2024-02-1b65ab8554f416efa5406a3567910550-768x1024.jpg)
 
 今まで、「フロントバッグ自体は便利だけど使っていない...」という方は、このマウント問題を気にしている方も多かったのではないでしょうか。
 
@@ -34,9 +34,9 @@ wp_url: "https://cycle-z.com/blog/2024/02/10/bike-packing-part2-2024-2-10/"
 
 上のマウント部はあらゆるメーカーのサイコンマウントにも対応しますし、携帯マウントにも対応しています。
 
-![](https://cycle-z.com/wp-content/uploads/2024/02/3358bc2b3cb2fba146d6d723340308b7-768x1024.jpg)
+![](/images/wp/2024-02-3358bc2b3cb2fba146d6d723340308b7-768x1024.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2024/02/d446913748cc97fa9a98f20219544696-768x1024.jpg)
+ ![](/images/wp/2024-02-d446913748cc97fa9a98f20219544696-768x1024.jpg)
 
 ※詳しい取り付け方は[こちら](https://brand.intertecinc.co.jp/special/sp-connect-mounthowto/)。
 
@@ -50,7 +50,7 @@ wp_url: "https://cycle-z.com/blog/2024/02/10/bike-packing-part2-2024-2-10/"
 
 しかしこちらのバッグは、サイドにライトを巻くための突起を追加出来るのです。
 
-![](https://cycle-z.com/wp-content/uploads/2024/02/62c417915a2f95dcee543cbcd315b949-768x1024.jpg)
+![](/images/wp/2024-02-62c417915a2f95dcee543cbcd315b949-768x1024.jpg)
 
 このスペックは今までありそうで実はなかった物です。
 
@@ -62,21 +62,21 @@ wp_url: "https://cycle-z.com/blog/2024/02/10/bike-packing-part2-2024-2-10/"
 
 実際のフロントバッグの使い心地としても、取り外しがワンタッチで出来る機構で、しっかり頑丈なので、ストレスなく長く愛用していただけます。
 
-![](https://cycle-z.com/wp-content/uploads/2024/02/78675677ccd77dc129e0e195ef4186ac-768x1024.jpg)
+![](/images/wp/2024-02-78675677ccd77dc129e0e195ef4186ac-768x1024.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2024/02/aac038c9706ca21ba247ed4404464244-768x1024.jpg)
+ ![](/images/wp/2024-02-aac038c9706ca21ba247ed4404464244-768x1024.jpg)
 
 更に、キチンと小分けされたバッグ内部は蛍光カラーで配色されているので、中身がとても見えやすい作りになっています！
 
-![](https://cycle-z.com/wp-content/uploads/2024/02/4337bca3a7516abcf88bedbae39184a9-768x1024.jpg)
+![](/images/wp/2024-02-4337bca3a7516abcf88bedbae39184a9-768x1024.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2024/02/0333196e81fc8ca978a1754ca5b0b1de-768x1024.jpg)
+ ![](/images/wp/2024-02-0333196e81fc8ca978a1754ca5b0b1de-768x1024.jpg)
 
 そして、貴重品が入っている場合、取り外したあとの持ち運びのしやすさも大事になってきます。
 
 その点については、標準で肩がけの紐がついているのでポーチのように持つことができます。
 
-![](https://cycle-z.com/wp-content/uploads/2024/02/7fe4c0f28e2f5e6d08b624c37252c804-768x1024.jpg)
+![](/images/wp/2024-02-7fe4c0f28e2f5e6d08b624c37252c804-768x1024.jpg)
 
 また、コンデジなどを入れてサイクリングしながら撮影をする方にもオススメです。
 
@@ -110,6 +110,6 @@ wp_url: "https://cycle-z.com/blog/2024/02/10/bike-packing-part2-2024-2-10/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

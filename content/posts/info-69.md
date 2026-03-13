@@ -16,7 +16,7 @@ wp_url: "https://cycle-z.com/blog/2020/01/10/info-69/"
 
 予定表
 
-[2020最上稲荷初詣ライド予定表](https://cycle-z.com/wp-content/uploads/2019/12/20200112_schedule.pdf)
+[2020最上稲荷初詣ライド予定表](/images/wp/2019-12-20200112_schedule.pdf)
 
 詳細は店頭スタッフまでお問い合わせください！
 

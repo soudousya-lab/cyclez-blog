@@ -20,7 +20,7 @@ cycleZにてホイールをお試しできます🚵‍♀️
 **・BOMA**
 **・DT Swiss**
 
-![](https://cycle-z.com/wp-content/uploads/2026/03/wheeltestrideevent.jpg)
+![](/images/wp/2026-03-wheeltestrideevent.jpg)
 
 ご自身のバイクにつけてホイールの違いをしっかりと‼️体感してください‼️
 

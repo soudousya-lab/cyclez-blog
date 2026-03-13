@@ -46,7 +46,7 @@ wp_url: "https://cycle-z.com/blog/2022/03/08/stretches-for-cycling-2022-3-8/"
 
 やり方として注意する点は、腰から下は真っ直ぐに固定し、上半身のみを横に傾けるようにして下さい。
 
-![腹斜筋のストレッチ](https://cycle-z.com/wp-content/uploads/2022/03/742813c2145e6ec92f8b92650455e65b.png)
+![腹斜筋のストレッチ](/images/wp/2022-03-742813c2145e6ec92f8b92650455e65b.png)
 
    
 
@@ -72,11 +72,11 @@ wp_url: "https://cycle-z.com/blog/2022/03/08/stretches-for-cycling-2022-3-8/"
 		
 		
 			
-				![僧帽筋、肩甲骨周りのストレッチ](https://cycle-z.com/wp-content/uploads/2022/03/8487edea12e778d639643b4e71a7ec01-300x169.png)
+				![僧帽筋、肩甲骨周りのストレッチ](/images/wp/2022-03-8487edea12e778d639643b4e71a7ec01-300x169.png)
 
 			
 			
-				![僧帽筋、肩甲骨周りのストレッチ２](https://cycle-z.com/wp-content/uploads/2022/03/7fe26be0e840433c1526e73b5bf2ef2f-300x169.png)
+				![僧帽筋、肩甲骨周りのストレッチ２](/images/wp/2022-03-7fe26be0e840433c1526e73b5bf2ef2f-300x169.png)
 
 			
 		
@@ -95,7 +95,7 @@ wp_url: "https://cycle-z.com/blog/2022/03/08/stretches-for-cycling-2022-3-8/"
 
 このストレッチを行う時の注意点はそもそも片脚立ちが出来るかどうか！
 
-![股関節周りのストレッチ](https://cycle-z.com/wp-content/uploads/2022/03/d22ec84f6e4d212611b1bc86b1fb595f.png)
+![股関節周りのストレッチ](/images/wp/2022-03-d22ec84f6e4d212611b1bc86b1fb595f.png)
 
 久々にやってみると、片脚立ちの状態で脚を伸ばす動きは結構バランスを崩してしまうものです。
 
@@ -125,6 +125,6 @@ wp_url: "https://cycle-z.com/blog/2022/03/08/stretches-for-cycling-2022-3-8/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

@@ -104,7 +104,7 @@ wp_url: "https://cycle-z.com/blog/2024/03/12/three-merits-of-binding-shoes-2024-
 
 初心者に優しい値段設定の【FLR】というブランドが、現在サイクルZでキャンペーン中です。
 
-![](https://cycle-z.com/wp-content/uploads/2024/03/4572c7da400ac2f316ed252b276811a1-1.png)
+![](/images/wp/2024-03-4572c7da400ac2f316ed252b276811a1-1.png)
 
  
 
@@ -132,6 +132,6 @@ wp_url: "https://cycle-z.com/blog/2024/03/12/three-merits-of-binding-shoes-2024-
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

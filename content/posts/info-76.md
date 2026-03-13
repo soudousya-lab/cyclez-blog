@@ -8,7 +8,7 @@ wp_id: 1872
 wp_url: "https://cycle-z.com/blog/2020/02/01/info-76/"
 ---
 
-![basso・gios・ロードバイクフェア開催　岡山・サイクルZ](https://cycle-z.com/wp-content/uploads/2020/02/basso-gios-fair.jpg)
+![basso・gios・ロードバイクフェア開催　岡山・サイクルZ](/images/wp/2020-02-basso-gios-fair.jpg)
 
 【ロードバイクフェア】
 

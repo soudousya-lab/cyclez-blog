@@ -22,7 +22,7 @@ wp_url: "https://cycle-z.com/blog/2023/04/21/cycling-anime-and-manga-2023-4-21/"
 
 『め組の大吾』や『capetaカペタ』で有名な曽田正人先生の作品です。
 
-![シャカリキ](https://cycle-z.com/wp-content/uploads/2023/04/51KT8S8wKAL.jpg)
+![シャカリキ](/images/wp/2023-04-51KT8S8wKAL.jpg)
 
 （画像引用元：[Amazon.co.jp](https://www.amazon.co.jp/%E3%82%B7%E3%83%A3%E3%82%AB%E3%83%AA%E3%82%AD-Vol-1-%E3%83%93%E3%83%83%E3%82%B0%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9%E3%83%AF%E3%82%A4%E3%83%89-%E6%9B%BD%E7%94%B0-%E6%AD%A3%E4%BA%BA/dp/4091868010)）
 
@@ -43,7 +43,7 @@ wp_url: "https://cycle-z.com/blog/2023/04/21/cycling-anime-and-manga-2023-4-21/"
 
 2つ目はアニメーション映画『茄子 アンダルシアの夏』。
 
-![茄子アンダルシアの夏](https://cycle-z.com/wp-content/uploads/2023/04/51JjLnGhfL._AC_.jpg)
+![茄子アンダルシアの夏](/images/wp/2023-04-51JjLnGhfL._AC_.jpg)
 
 （画像引用元：[Amazon.co.jp](https://www.amazon.co.jp/%E8%8C%84%E5%AD%90-%E3%82%A2%E3%83%B3%E3%83%80%E3%83%AB%E3%82%B7%E3%82%A2%E3%81%AE%E5%A4%8F-DVD-%E5%A4%A7%E6%B3%89%E6%B4%8B/dp/B000UX9F1C)）
 
@@ -60,7 +60,7 @@ wp_url: "https://cycle-z.com/blog/2023/04/21/cycling-anime-and-manga-2023-4-21/"
 
 ここまではロードレースが題材の熱い作品の紹介でしたが、最後に紹介する『のりりん』は、ある意味一番サイクルZらしいかもしれません！
 
-![のりりん](https://cycle-z.com/wp-content/uploads/2023/04/51N1pwc0VrL._SX350_BO1204203200_.jpg)
+![のりりん](/images/wp/2023-04-51N1pwc0VrL._SX350_BO1204203200_.jpg)
 
 （画像引用元：[Amazon.co.jp](https://www.amazon.co.jp/%E3%81%AE%E3%82%8A%E3%82%8A%E3%82%93%EF%BC%88%EF%BC%91%EF%BC%89-%E3%82%A4%E3%83%96%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%B3%E3%83%9F%E3%83%83%E3%82%AF%E3%82%B9-%E9%AC%BC%E9%A0%AD%E8%8E%AB%E5%AE%8F-ebook/dp/B00A2MD0SA/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&crid=2NB6BJXSX29SH&keywords=%E3%81%AE%E3%82%8A%E3%82%8A%E3%82%93&qid=1682065775&s=books&sprefix=%E3%81%AE%E3%82%8A%E3%82%8A%E3%82%93%2Cstripbooks%2C172&sr=1-1)）
 
@@ -90,6 +90,6 @@ wp_url: "https://cycle-z.com/blog/2023/04/21/cycling-anime-and-manga-2023-4-21/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

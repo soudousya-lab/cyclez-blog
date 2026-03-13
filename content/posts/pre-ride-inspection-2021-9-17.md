@@ -48,11 +48,11 @@ wp_url: "https://cycle-z.com/blog/2021/09/17/pre-ride-inspection-2021-9-17/"
 		
 		
 			
-				![ロードバイク全体にガタが来ていないか確認](https://cycle-z.com/wp-content/uploads/2021/09/251c24b0ababbc6c96934ea4d60755d2-225x300.jpg)
+				![ロードバイク全体にガタが来ていないか確認](/images/wp/2021-09-251c24b0ababbc6c96934ea4d60755d2-225x300.jpg)
 
 			
 			
-				![ロードバイク全体にガタが来ていないか確認](https://cycle-z.com/wp-content/uploads/2021/09/b14c1599376b9425b635780c4e125306-225x300.jpg)
+				![ロードバイク全体にガタが来ていないか確認](/images/wp/2021-09-b14c1599376b9425b635780c4e125306-225x300.jpg)
 
 			
 		
@@ -80,11 +80,11 @@ wp_url: "https://cycle-z.com/blog/2021/09/17/pre-ride-inspection-2021-9-17/"
 		
 		
 			
-				![ハンドル、ステムの固定されているか確認](https://cycle-z.com/wp-content/uploads/2021/09/26935ca62139f2e40c5e807d868befbc-225x300.jpg)
+				![ハンドル、ステムの固定されているか確認](/images/wp/2021-09-26935ca62139f2e40c5e807d868befbc-225x300.jpg)
 
 			
 			
-				![ハンドル、ステムの固定されているか確認](https://cycle-z.com/wp-content/uploads/2021/09/bcddb148b982f0767e67522d138c6d45-225x300.jpg)
+				![ハンドル、ステムの固定されているか確認](/images/wp/2021-09-bcddb148b982f0767e67522d138c6d45-225x300.jpg)
 
 			
 		
@@ -112,7 +112,7 @@ wp_url: "https://cycle-z.com/blog/2021/09/17/pre-ride-inspection-2021-9-17/"
 		
 		
 			
-				![ホイールにガタが来ていないかの確認](https://cycle-z.com/wp-content/uploads/2021/09/52527d6765748a6f56567b817a677a6d-225x300.jpg)
+				![ホイールにガタが来ていないかの確認](/images/wp/2021-09-52527d6765748a6f56567b817a677a6d-225x300.jpg)
 
 			
 		
@@ -140,7 +140,7 @@ wp_url: "https://cycle-z.com/blog/2021/09/17/pre-ride-inspection-2021-9-17/"
 		
 		
 			
-				![ホイールを回転させブレーキパッドに当たっていないかフレを確認](https://cycle-z.com/wp-content/uploads/2021/09/a49c688f6fb3c609ecf0ad2eb17eafdb-225x300.jpg)
+				![ホイールを回転させブレーキパッドに当たっていないかフレを確認](/images/wp/2021-09-a49c688f6fb3c609ecf0ad2eb17eafdb-225x300.jpg)
 
 			
 		
@@ -172,6 +172,6 @@ wp_url: "https://cycle-z.com/blog/2021/09/17/pre-ride-inspection-2021-9-17/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

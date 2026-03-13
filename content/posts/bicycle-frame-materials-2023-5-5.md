@@ -22,7 +22,7 @@ wp_url: "https://cycle-z.com/blog/2023/05/05/bicycle-frame-materials-2023-5-5/"
 
 まずは「クロモリ」。この素材は実は鉄製品です。
 
-![クロモリ](https://cycle-z.com/wp-content/uploads/2023/05/72ca6f5f9b724ae0b5f6bdc9656cd471-768x1024.jpg)
+![クロモリ](/images/wp/2023-05-72ca6f5f9b724ae0b5f6bdc9656cd471-768x1024.jpg)
 
 ママチャリなど一般的な自転車フレームに使われるハイテン鋼よりも高品質なクロムモリブデン鋼を使用しており、高級素材のスチールバイクとして知られています。
 
@@ -60,11 +60,11 @@ wp_url: "https://cycle-z.com/blog/2023/05/05/bicycle-frame-materials-2023-5-5/"
 		
 		
 			
-				![アルミの自由な造型](https://cycle-z.com/wp-content/uploads/2023/05/a6df8bfb539081ad47036edc5bd06b9c-768x1024.jpg)
+				![アルミの自由な造型](/images/wp/2023-05-a6df8bfb539081ad47036edc5bd06b9c-768x1024.jpg)
 
 			
 			
-				![アルミの溶接部分](https://cycle-z.com/wp-content/uploads/2023/05/53c10096ecfa71fe550fd2070d888c16-768x1024.jpg)
+				![アルミの溶接部分](/images/wp/2023-05-53c10096ecfa71fe550fd2070d888c16-768x1024.jpg)
 
 			
 		
@@ -98,11 +98,11 @@ wp_url: "https://cycle-z.com/blog/2023/05/05/bicycle-frame-materials-2023-5-5/"
 		
 		
 			
-				![カーボンの横から見たら太いところ](https://cycle-z.com/wp-content/uploads/2023/05/ca1f8512769a8f2a5d2e5b575256f47a-768x1024.jpg)
+				![カーボンの横から見たら太いところ](/images/wp/2023-05-ca1f8512769a8f2a5d2e5b575256f47a-768x1024.jpg)
 
 			
 			
-				![カーボンによる薄いところ](https://cycle-z.com/wp-content/uploads/2023/05/c4fbebc23efe802eaf2cb2186e9895e5-1024x768.jpg)
+				![カーボンによる薄いところ](/images/wp/2023-05-c4fbebc23efe802eaf2cb2186e9895e5-1024x768.jpg)
 
 			
 		
@@ -130,11 +130,11 @@ wp_url: "https://cycle-z.com/blog/2023/05/05/bicycle-frame-materials-2023-5-5/"
 		
 		
 			
-				![カーボンの自由な造型2](https://cycle-z.com/wp-content/uploads/2023/05/eafecbf550548dde92da5228e272dd43-768x1024.jpg)
+				![カーボンの自由な造型2](/images/wp/2023-05-eafecbf550548dde92da5228e272dd43-768x1024.jpg)
 
 			
 			
-				![カーボンの自由な造型](https://cycle-z.com/wp-content/uploads/2023/05/b85d77d52b43c0eb4846ee2293bfa744-768x1024.jpg)
+				![カーボンの自由な造型](/images/wp/2023-05-b85d77d52b43c0eb4846ee2293bfa744-768x1024.jpg)
 
 			
 		
@@ -168,7 +168,7 @@ wp_url: "https://cycle-z.com/blog/2023/05/05/bicycle-frame-materials-2023-5-5/"
 
 そこで、2023年5月14日に、クロモリのオーダーメイドバイクを製作している「[macchi cycles](http://www.macchicycles.com/)」さんの試乗会がサイクルZにて開催されます。
 
-![クロモリ2](https://cycle-z.com/wp-content/uploads/2023/05/ed282ed6c1b9903d483363300de254a7-1024x768.jpg)
+![クロモリ2](/images/wp/2023-05-ed282ed6c1b9903d483363300de254a7-1024x768.jpg)
 
 ぜひ、この機会にクロモリに興味を持っていただければと思います！
 
@@ -184,6 +184,6 @@ wp_url: "https://cycle-z.com/blog/2023/05/05/bicycle-frame-materials-2023-5-5/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

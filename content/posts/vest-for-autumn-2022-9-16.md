@@ -68,11 +68,11 @@ wp_url: "https://cycle-z.com/blog/2022/09/16/vest-for-autumn-2022-9-16/"
 		
 		
 			
-				![assos背面](https://cycle-z.com/wp-content/uploads/2022/09/423eaf91e2b21836de26dd2480cfa871-768x1024.jpg)
+				![assos背面](/images/wp/2022-09-423eaf91e2b21836de26dd2480cfa871-768x1024.jpg)
 
 			
 			
-				![assos背面メッシュ](https://cycle-z.com/wp-content/uploads/2022/09/8dbedb1d293e46fc8037ca17ade31456-768x1024.jpg)
+				![assos背面メッシュ](/images/wp/2022-09-8dbedb1d293e46fc8037ca17ade31456-768x1024.jpg)
 
 			
 		
@@ -138,11 +138,11 @@ wp_url: "https://cycle-z.com/blog/2022/09/16/vest-for-autumn-2022-9-16/"
 		
 		
 			
-				![assos防風ベスト背面](https://cycle-z.com/wp-content/uploads/2022/09/fb11029345393096ea51a0716dd2d1cc.png)
+				![assos防風ベスト背面](/images/wp/2022-09-fb11029345393096ea51a0716dd2d1cc.png)
 
 			
 			
-				![](https://cycle-z.com/wp-content/uploads/2022/09/a2d5a5bdb917ec4aa2caa00b90374ba0.png)
+				![](/images/wp/2022-09-a2d5a5bdb917ec4aa2caa00b90374ba0.png)
 
 			
 		
@@ -184,17 +184,17 @@ wp_url: "https://cycle-z.com/blog/2022/09/16/vest-for-autumn-2022-9-16/"
 		
 		
 			
-				![assosのベスト背面](https://cycle-z.com/wp-content/uploads/2022/09/d095f457a19ecf587831c30722134d93-768x1024.jpg)
+				![assosのベスト背面](/images/wp/2022-09-d095f457a19ecf587831c30722134d93-768x1024.jpg)
 
 			
 			
-				![assos背面メッシュ](https://cycle-z.com/wp-content/uploads/2022/09/8dbedb1d293e46fc8037ca17ade31456-768x1024.jpg)
+				![assos背面メッシュ](/images/wp/2022-09-8dbedb1d293e46fc8037ca17ade31456-768x1024.jpg)
 
 			
 		
 実物で体感して欲しいのが正面の素材ですね。
 
-![](https://cycle-z.com/wp-content/uploads/2022/09/911405f94640e3d540e2add7cfbeeeed-768x1024.jpg)
+![](/images/wp/2022-09-911405f94640e3d540e2add7cfbeeeed-768x1024.jpg)
 
 最新の透湿防水性素材が使われており表面にジグザグ模様が見てとれます。
 
@@ -208,7 +208,7 @@ wp_url: "https://cycle-z.com/blog/2022/09/16/vest-for-autumn-2022-9-16/"
 
 光を当てると模様が浮かび上がり、服自体が光り輝くリフレクティブで出来ている[sigr](https://www.qbei.jp/item/pi-916416/)シーガーというブランドのベストです。
 
-![](https://cycle-z.com/wp-content/uploads/2022/09/f858dab95d2d4d2bdd1c3b91c3112ad1-688x1024.jpg)
+![](/images/wp/2022-09-f858dab95d2d4d2bdd1c3b91c3112ad1-688x1024.jpg)
 
 安全性とデザイン性を兼ね備えていて良いですね。
 
@@ -238,6 +238,6 @@ wp_url: "https://cycle-z.com/blog/2022/09/16/vest-for-autumn-2022-9-16/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

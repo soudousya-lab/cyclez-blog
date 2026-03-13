@@ -8,7 +8,7 @@ wp_id: 1010
 wp_url: "https://cycle-z.com/blog/2018/02/01/info-14/"
 ---
 
-![ロードバイクフェア開催](http://cycle-z.com/wp-content/uploads/2018/02/fair.jpg)
+![ロードバイクフェア開催](/images/wp/2018-02-fair.jpg)
 
 【ロードバイクフェア】
 

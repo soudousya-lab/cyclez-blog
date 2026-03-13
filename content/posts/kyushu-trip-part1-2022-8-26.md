@@ -28,11 +28,11 @@ wp_url: "https://cycle-z.com/blog/2022/08/26/kyushu-trip-part1-2022-8-26/"
 
 乗り換え地点の松山から
 
-![1日目乗り換え　松山駅](https://cycle-z.com/wp-content/uploads/2022/08/70899da105458819a890472b861b17dd-768x1024.jpg)
+![1日目乗り換え　松山駅](/images/wp/2022-08-70899da105458819a890472b861b17dd-768x1024.jpg)
 
 八幡浜に到着！
 
-![1日目電車到着場所](https://cycle-z.com/wp-content/uploads/2022/08/e5bdf6ecf5d80d264ffc9b0039059fb3-473x1024.png)
+![1日目電車到着場所](/images/wp/2022-08-e5bdf6ecf5d80d264ffc9b0039059fb3-473x1024.png)
 
 #### ＜八幡浜で絶品ちゃんぽんを食す＞
 
@@ -44,13 +44,13 @@ wp_url: "https://cycle-z.com/blog/2022/08/26/kyushu-trip-part1-2022-8-26/"
 
 開店後間もない11時台でも行列ができてました……！
 
-![ちゃんぽん亭 イーグルの行列](https://cycle-z.com/wp-content/uploads/2022/08/b7d475ab1d86fb8be9d362b410f7e256-768x1024.jpg)
+![ちゃんぽん亭 イーグルの行列](/images/wp/2022-08-b7d475ab1d86fb8be9d362b410f7e256-768x1024.jpg)
 
 人気店ですね、ここは。
 
 ちゃんぽんと炒飯小のセットを頂きました。
 
-![ちゃんぽん亭 イーグルで食べたちゃんぽん](https://cycle-z.com/wp-content/uploads/2022/08/9a2004d461c8bf45abd5d8c030b0f5d6-1024x768.jpg)
+![ちゃんぽん亭 イーグルで食べたちゃんぽん](/images/wp/2022-08-9a2004d461c8bf45abd5d8c030b0f5d6-1024x768.jpg)
 
 写真はありませんが、炒飯の焦がし醤油がうま過ぎました！
 
@@ -66,13 +66,13 @@ wp_url: "https://cycle-z.com/blog/2022/08/26/kyushu-trip-part1-2022-8-26/"
 
 佐田岬へ向かう途中、店長のタイヤがサイドカットによりパンク……！
 
-![サイドカットしたタイヤ](https://cycle-z.com/wp-content/uploads/2022/08/1ffa7e3ba38c2284aecff1eee760e84a-768x1024.jpg)
+![サイドカットしたタイヤ](/images/wp/2022-08-1ffa7e3ba38c2284aecff1eee760e84a-768x1024.jpg)
 
 旅にトラブルはつきものですね……！
 
 応急処置により包帯を巻かれ再登板しました。
 
-![サイドカットの応急処置で包帯を巻かれたタイヤ](https://cycle-z.com/wp-content/uploads/2022/08/bf3c088d46499a9563ded42dff0c3c8d-768x1024.jpg)
+![サイドカットの応急処置で包帯を巻かれたタイヤ](/images/wp/2022-08-bf3c088d46499a9563ded42dff0c3c8d-768x1024.jpg)
 
 頼む……！自転車店でタイヤを買うまでもってくれーとお祈りしながら走らせました。
 
@@ -108,11 +108,11 @@ wp_url: "https://cycle-z.com/blog/2022/08/26/kyushu-trip-part1-2022-8-26/"
 		
 		
 			
-				![大分県に到着1](https://cycle-z.com/wp-content/uploads/2022/08/b8553a964f25f1ade5cef7625e318963-225x300.jpg)
+				![大分県に到着1](/images/wp/2022-08-b8553a964f25f1ade5cef7625e318963-225x300.jpg)
 
 			
 			
-				![大分県に到着2](https://cycle-z.com/wp-content/uploads/2022/08/4b63d7355c7ac6986e87c4afd4be4a88-225x300.jpg)
+				![大分県に到着2](/images/wp/2022-08-4b63d7355c7ac6986e87c4afd4be4a88-225x300.jpg)
 
 			
 		
@@ -146,7 +146,7 @@ wp_url: "https://cycle-z.com/blog/2022/08/26/kyushu-trip-part1-2022-8-26/"
 
 まだまだ見どころがあるのでぜひご覧ください。
 
-[![九州輪行旅の後編への遷移をイメージした画像](https://cycle-z.com/wp-content/uploads/2022/08/87d57a85715cc43453db75a065382e41-1024x361.jpg)
+[![九州輪行旅の後編への遷移をイメージした画像](/images/wp/2022-08-87d57a85715cc43453db75a065382e41-1024x361.jpg)
 
 ](https://cycle-z.com/blog/2022/09/02/kyushu-trip-part2-2022-9-2/)
 
@@ -162,6 +162,6 @@ wp_url: "https://cycle-z.com/blog/2022/08/26/kyushu-trip-part1-2022-8-26/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

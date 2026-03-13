@@ -46,19 +46,19 @@ wp_url: "https://cycle-z.com/blog/2022/09/02/kyushu-trip-part2-2022-9-2/"
 		
 		
 			
-				![2日目鶴見岳ロープウェイ前](https://cycle-z.com/wp-content/uploads/2022/08/b08164bb8ccfde1078d57d02c63628e0-225x300.jpg)
+				![2日目鶴見岳ロープウェイ前](/images/wp/2022-08-b08164bb8ccfde1078d57d02c63628e0-225x300.jpg)
 
 			
 			
-				![2日目鶴見岳ロープウェイ前2](https://cycle-z.com/wp-content/uploads/2022/08/1bf72d27e48483c13558be0620581eb2-300x225.jpg)
+				![2日目鶴見岳ロープウェイ前2](/images/wp/2022-08-1bf72d27e48483c13558be0620581eb2-300x225.jpg)
 
 			
 		
-![2日目鶴見岳ロープウェイ前](https://cycle-z.com/wp-content/uploads/2022/08/e224ba38678080859146233ef94b8a8e-1024x768.jpg)
+![2日目鶴見岳ロープウェイ前](/images/wp/2022-08-e224ba38678080859146233ef94b8a8e-1024x768.jpg)
 
 この日は天気の悪さから、大きな霧に包まれた別府を見下ろすことができました！
 
-![2日目鶴見岳山頂からの景色](https://cycle-z.com/wp-content/uploads/2022/08/f48eed8e332b5858d1ac2b4710c73800-768x1024.jpg)
+![2日目鶴見岳山頂からの景色](/images/wp/2022-08-f48eed8e332b5858d1ac2b4710c73800-768x1024.jpg)
 
 日本一の温泉県だけあって、いたるところから温泉の湯気が立ち昇っているので、霧か湯気か判別がつかないほど。
 
@@ -84,11 +84,11 @@ wp_url: "https://cycle-z.com/blog/2022/09/02/kyushu-trip-part2-2022-9-2/"
 		
 		
 			
-				![2日目鶴見岳山頂](https://cycle-z.com/wp-content/uploads/2022/08/471b8d0951637187b17dda10f2af1a56-225x300.jpg)
+				![2日目鶴見岳山頂](/images/wp/2022-08-471b8d0951637187b17dda10f2af1a56-225x300.jpg)
 
 			
 			
-				![2日目鶴見岳山頂5](https://cycle-z.com/wp-content/uploads/2022/08/e0dfa06c578bf7435ed4e31e55dfb9d3-225x300.jpg)
+				![2日目鶴見岳山頂5](/images/wp/2022-08-e0dfa06c578bf7435ed4e31e55dfb9d3-225x300.jpg)
 
 			
 		
@@ -113,11 +113,11 @@ wp_url: "https://cycle-z.com/blog/2022/09/02/kyushu-trip-part2-2022-9-2/"
 		
 		
 			
-				![2日目鶴見岳山頂2](https://cycle-z.com/wp-content/uploads/2022/08/e545c202def309875cf542da3cd64259-225x300.jpg)
+				![2日目鶴見岳山頂2](/images/wp/2022-08-e545c202def309875cf542da3cd64259-225x300.jpg)
 
 			
 			
-				![2日目鶴見岳山頂3](https://cycle-z.com/wp-content/uploads/2022/08/c828296d9472658bce692703c048b33c-225x300.jpg)
+				![2日目鶴見岳山頂3](/images/wp/2022-08-c828296d9472658bce692703c048b33c-225x300.jpg)
 
 			
 		
@@ -129,7 +129,7 @@ wp_url: "https://cycle-z.com/blog/2022/09/02/kyushu-trip-part2-2022-9-2/"
 
 火山性の土の影響で木が生えにくいそうです。
 
-![2日目由布岳](https://cycle-z.com/wp-content/uploads/2022/08/d2671fa71a7827a0ef430b881b989cd7-1024x768.jpg)
+![2日目由布岳](/images/wp/2022-08-d2671fa71a7827a0ef430b881b989cd7-1024x768.jpg)
 
 ここらでそろそろ天気が悪くなりそうな気配を感じたので、ホテルに一度戻って徒歩での観光に切り替えることに。
 
@@ -161,14 +161,14 @@ wp_url: "https://cycle-z.com/blog/2022/09/02/kyushu-trip-part2-2022-9-2/"
 		
 		
 			
-				![海地獄](https://cycle-z.com/wp-content/uploads/2022/09/385523b84b83fb4fc5909a2d566ffa1c-225x300.jpg)
+				![海地獄](/images/wp/2022-09-385523b84b83fb4fc5909a2d566ffa1c-225x300.jpg)
 
 			
 				
 				海地獄
 				
 			
-				![](https://cycle-z.com/wp-content/uploads/2022/09/d05950c1e257ab4fefa7d004d283f9ef-225x300.jpg)
+				![](/images/wp/2022-09-d05950c1e257ab4fefa7d004d283f9ef-225x300.jpg)
 
 			
 				
@@ -197,15 +197,15 @@ wp_url: "https://cycle-z.com/blog/2022/09/02/kyushu-trip-part2-2022-9-2/"
 		
 		
 			
-				![地獄釜の蒸し料理](https://cycle-z.com/wp-content/uploads/2022/09/035983b0ffd835783bf088fd8ba9810d-300x225.jpg)
+				![地獄釜の蒸し料理](/images/wp/2022-09-035983b0ffd835783bf088fd8ba9810d-300x225.jpg)
 
 			
 			
-				![地獄釜で蒸されたまんじゅう](https://cycle-z.com/wp-content/uploads/2022/09/ae57528ecc5255081773ba51efa82d0a-225x300.jpg)
+				![地獄釜で蒸されたまんじゅう](/images/wp/2022-09-ae57528ecc5255081773ba51efa82d0a-225x300.jpg)
 
 			
 			
-				![地獄釜でできたゆで卵](https://cycle-z.com/wp-content/uploads/2022/09/88aa8bd9d2b7249f23fcc9ad6eb0b234-225x300.jpg)
+				![地獄釜でできたゆで卵](/images/wp/2022-09-88aa8bd9d2b7249f23fcc9ad6eb0b234-225x300.jpg)
 
 			
 		
@@ -213,7 +213,7 @@ wp_url: "https://cycle-z.com/blog/2022/09/02/kyushu-trip-part2-2022-9-2/"
 
 自然の蒸気で、一瞬でゆで卵が出来上がります。
 
-![地獄釜のゆで卵](https://cycle-z.com/wp-content/uploads/2022/09/15a872db9c0f3d9045ba0a1fd200f028-1024x768.jpg)
+![地獄釜のゆで卵](/images/wp/2022-09-15a872db9c0f3d9045ba0a1fd200f028-1024x768.jpg)
 
 この後は温泉探しに奔走し、源泉掛け流しの[海門寺温泉](https://www.city.beppu.oita.jp/sisetu/shieionsen/detail7.html)に浸かり、今日の疲れを癒やしました。
 
@@ -249,11 +249,11 @@ wp_url: "https://cycle-z.com/blog/2022/09/02/kyushu-trip-part2-2022-9-2/"
 		
 		
 			
-				![大阿蘇](https://cycle-z.com/wp-content/uploads/2022/09/a80579a97c1460294a8110fa89b0ea35-225x300.jpg)
+				![大阿蘇](/images/wp/2022-09-a80579a97c1460294a8110fa89b0ea35-225x300.jpg)
 
 			
 			
-				![大阿蘇の馬刺し](https://cycle-z.com/wp-content/uploads/2022/09/17af7a083d99e29f849822382b9faf06-225x300.jpg)
+				![大阿蘇の馬刺し](/images/wp/2022-09-17af7a083d99e29f849822382b9faf06-225x300.jpg)
 
 			
 		
@@ -279,7 +279,7 @@ wp_url: "https://cycle-z.com/blog/2022/09/02/kyushu-trip-part2-2022-9-2/"
 
 昨日まで雨予報だったのに見事快晴。
 
-![3日目国東半島サイクリングルートの真ん中に生えてる木](https://cycle-z.com/wp-content/uploads/2022/08/f8a2125ee41097fa3056ff9ae697b536-768x1024.jpg)
+![3日目国東半島サイクリングルートの真ん中に生えてる木](/images/wp/2022-08-f8a2125ee41097fa3056ff9ae697b536-768x1024.jpg)
 
 今回の自転車コースは最高に走りやすかったです。
 
@@ -305,11 +305,11 @@ wp_url: "https://cycle-z.com/blog/2022/09/02/kyushu-trip-part2-2022-9-2/"
 		
 		
 			
-				![3日目国東半島サイクリングルート](https://cycle-z.com/wp-content/uploads/2022/08/dcaebaa9da820db51e8f0006c80cd503-300x225.jpg)
+				![3日目国東半島サイクリングルート](/images/wp/2022-08-dcaebaa9da820db51e8f0006c80cd503-300x225.jpg)
 
 			
 			
-				![3日目国東半島サイクリングルートくにみ道の駅](https://cycle-z.com/wp-content/uploads/2022/08/91aea83195baa1eda1a77c2feef2449b-300x225.jpg)
+				![3日目国東半島サイクリングルートくにみ道の駅](/images/wp/2022-08-91aea83195baa1eda1a77c2feef2449b-300x225.jpg)
 
 			
 		
@@ -348,11 +348,11 @@ wp_url: "https://cycle-z.com/blog/2022/09/02/kyushu-trip-part2-2022-9-2/"
 		
 		
 			
-				![3日目竹田津港フェリー乗り場](https://cycle-z.com/wp-content/uploads/2022/08/0025c6be7907d593e955ee7800f8d7ee-300x225.jpg)
+				![3日目竹田津港フェリー乗り場](/images/wp/2022-08-0025c6be7907d593e955ee7800f8d7ee-300x225.jpg)
 
 			
 			
-				![3日目フェリー内](https://cycle-z.com/wp-content/uploads/2022/08/4283ab09fb4f86d2df282fbcc1bc3ebf-225x300.jpg)
+				![3日目フェリー内](/images/wp/2022-08-4283ab09fb4f86d2df282fbcc1bc3ebf-225x300.jpg)
 
 			
 		
@@ -378,11 +378,11 @@ wp_url: "https://cycle-z.com/blog/2022/09/02/kyushu-trip-part2-2022-9-2/"
 		
 		
 			
-				![3日目徳山帰り](https://cycle-z.com/wp-content/uploads/2022/08/e606eb492e6ff5d400cf3f83b91a6fc1-300x225.jpg)
+				![3日目徳山帰り](/images/wp/2022-08-e606eb492e6ff5d400cf3f83b91a6fc1-300x225.jpg)
 
 			
 			
-				![3日目徳山帰り](https://cycle-z.com/wp-content/uploads/2022/08/cd6fcf8b77caee11a4d48f6e7945b039-300x225.jpg)
+				![3日目徳山帰り](/images/wp/2022-08-cd6fcf8b77caee11a4d48f6e7945b039-300x225.jpg)
 
 			
 		
@@ -400,7 +400,7 @@ wp_url: "https://cycle-z.com/blog/2022/09/02/kyushu-trip-part2-2022-9-2/"
 
 輪行旅最高ですよ(^^)
 
-[![九州輪行旅の前編への遷移をイメージした画像](https://cycle-z.com/wp-content/uploads/2022/09/5792045ffa516a4ce64d9d2d0bb7ee42-1024x362.jpg)
+[![九州輪行旅の前編への遷移をイメージした画像](/images/wp/2022-09-5792045ffa516a4ce64d9d2d0bb7ee42-1024x362.jpg)
 
 ](https://cycle-z.com/blog/2022/08/26/kyushu-trip-part1-2022-8-26/)
 
@@ -416,6 +416,6 @@ wp_url: "https://cycle-z.com/blog/2022/09/02/kyushu-trip-part2-2022-9-2/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

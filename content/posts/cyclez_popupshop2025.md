@@ -14,7 +14,7 @@ cycleZ杜の街グレース店が期間限定再オープン！
 
 2025年4月5日(土)から6月30日(月)の間、期間限定のポップアップショップとして再オープンするゼーーーット！
 
-![](https://cycle-z.com/wp-content/uploads/2025/04/ImportedPhoto.765504083.068949.jpeg)
+![](/images/wp/2025-04-ImportedPhoto.765504083.068949.jpeg)
 
 ※店舗イメージ(写真は昨年のもの)
 
@@ -26,7 +26,7 @@ cycleZ杜の街グレース店が期間限定再オープン！
 
 ＊ミニベロ・タイヤ径が通常の自転車よりも小さい自転車
 
-![](https://cycle-z.com/wp-content/uploads/2025/04/ImportedPhoto.765501895.756708.jpeg)
+![](/images/wp/2025-04-ImportedPhoto.765501895.756708.jpeg)
 
 サイクルZ本店とはまた違う形で商品展開しておりますので、まだお越しになっていない方もぜひお立ち寄りください！
 
@@ -38,7 +38,7 @@ cycleZ杜の街グレース店が期間限定再オープン！
 取扱商品：自転車（ロードバイク、クロスバイク、電動自転車）、バイクウェア、ヘルメット、バイク関連用品
 
 ポップアップショップは杜の街プラザ2階にあります。
-![](https://cycle-z.com/wp-content/uploads/2025/04/ImportedPhoto.765501895.757253.jpeg)
+![](/images/wp/2025-04-ImportedPhoto.765501895.757253.jpeg)
 
 [📍〒700-0907 岡山県岡山市北区下石井２丁目１０−８ 杜の街プラザ 2階](https://goo.gl/maps/xHemaRdfxxbuBgoU6)
 

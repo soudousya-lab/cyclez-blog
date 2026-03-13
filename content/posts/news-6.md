@@ -16,9 +16,9 @@ wp_url: "https://cycle-z.com/blog/2023/06/30/news-6/"
 
 新しい店舗で皆様のご来店をお待ちしております♪
 
-  ![cycleZ リーフレット 表面](https://cycle-z.com/wp-content/uploads/2023/06/20230623-cyclez-leaflet-3ori-omote-ol.jpg)
+  ![cycleZ リーフレット 表面](/images/wp/2023-06-20230623-cyclez-leaflet-3ori-omote-ol.jpg)
 
-  ![cycleZ リーフレット 中面](https://cycle-z.com/wp-content/uploads/2023/06/20230623-cyclez-leaflet-3ori-naka-ol.jpg)
+  ![cycleZ リーフレット 中面](/images/wp/2023-06-20230623-cyclez-leaflet-3ori-naka-ol.jpg)
 
 リーフレットのダウンロードはこちら→
-  [cycleZ リーフレット](https://cycle-z.com/wp-content/uploads/2023/06/202307-cyclez-leaflet.pdf)
+  [cycleZ リーフレット](/images/wp/2023-06-202307-cyclez-leaflet.pdf)

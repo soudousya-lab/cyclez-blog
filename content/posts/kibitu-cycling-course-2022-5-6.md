@@ -18,7 +18,7 @@ wp_url: "https://cycle-z.com/blog/2022/05/06/kibitu-cycling-course-2022-5-6/"
 
 サイクルZ発、吉備津神社～庭瀬城址じょうしのコース全容は[こちら](https://goo.gl/maps/WnV9oSMPPV74M2WT7)！！
 
-![サイクリングコース吉備津神社～庭瀬城址コース](https://cycle-z.com/wp-content/uploads/2022/05/dbdd6196e0f303525eae76bab12a783c-1024x516.jpg)
+![サイクリングコース吉備津神社～庭瀬城址コース](/images/wp/2022-05-dbdd6196e0f303525eae76bab12a783c-1024x516.jpg)
 
  
 
@@ -100,6 +100,6 @@ wp_url: "https://cycle-z.com/blog/2022/05/06/kibitu-cycling-course-2022-5-6/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

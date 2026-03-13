@@ -88,7 +88,7 @@ wp_url: "https://cycle-z.com/blog/2023/03/10/solo-long-rides-2023-3-10/"
 
 固形物であればクッキーもおススメです。
 
-![固形物で満腹感を得られるクッキー](https://cycle-z.com/wp-content/uploads/2023/03/02b4f5337fbbf16714f9b0d649afdd41-768x1024.jpg)
+![固形物で満腹感を得られるクッキー](/images/wp/2023-03-02b4f5337fbbf16714f9b0d649afdd41-768x1024.jpg)
 
  
 
@@ -96,13 +96,13 @@ wp_url: "https://cycle-z.com/blog/2023/03/10/solo-long-rides-2023-3-10/"
 
 補給食にジェルや粉状の水に溶けるものなどを用意しておくと良いでしょう。
 
-![水に溶かして飲むスポーツドリンク](https://cycle-z.com/wp-content/uploads/2023/03/1ed6d742b1a872d4724aaf6c155c477a-768x1024.jpg)
+![水に溶かして飲むスポーツドリンク](/images/wp/2023-03-1ed6d742b1a872d4724aaf6c155c477a-768x1024.jpg)
 
 山奥で1人力尽きたら大変ですから万が一のことも考えて。
 
 コンビニで買えるものだと羊羹はエネルギーの吸収効率が良いので補給食にもってこいです！
 
-![吸収の早いエネルギー羊羹](https://cycle-z.com/wp-content/uploads/2023/03/60e1cb875b776e22e74bb9806cefd49e-768x1024.jpg)
+![吸収の早いエネルギー羊羹](/images/wp/2023-03-60e1cb875b776e22e74bb9806cefd49e-768x1024.jpg)
 
 腹持ちと吸収の早さをバランス良く考えて補給していくことをおススメします。
 
@@ -174,6 +174,6 @@ wp_url: "https://cycle-z.com/blog/2023/03/10/solo-long-rides-2023-3-10/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

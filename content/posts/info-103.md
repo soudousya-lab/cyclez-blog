@@ -27,7 +27,7 @@ Isadire Rideを併催いたします！
 
 ■　7:30にサイクルZ集合
 
-![春のサイクルイベント](https://cycle-z.com/wp-content/uploads/2021/03/2021-shiraishi-1.jpg)
+![春のサイクルイベント](/images/wp/2021-03-2021-shiraishi-1.jpg)
 
 （注）
 

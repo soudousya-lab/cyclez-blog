@@ -14,7 +14,7 @@ wp_url: "https://cycle-z.com/blog/2022/01/21/new-year-cycling-2022-1-21/"
 
 今回のルートの全容はこちら！！
 
-![初詣ライドルート](https://cycle-z.com/wp-content/uploads/2022/01/0d02ff6945386adfe77a969fbb9b7263-737x1024.jpg)
+![初詣ライドルート](/images/wp/2022-01-0d02ff6945386adfe77a969fbb9b7263-737x1024.jpg)
 
  
 
@@ -24,7 +24,7 @@ wp_url: "https://cycle-z.com/blog/2022/01/21/new-year-cycling-2022-1-21/"
 
 参加者はスタッフを含めて30名ほどとなりました。
 
-![サイクルZに集合](https://cycle-z.com/wp-content/uploads/2022/01/2d98cc870a2a714824c3eb260808a43a-768x1024.jpg)
+![サイクルZに集合](/images/wp/2022-01-2d98cc870a2a714824c3eb260808a43a-768x1024.jpg)
 
 女性の方達にも大勢ご参加いただき、ありがとうございました！
 
@@ -33,7 +33,7 @@ wp_url: "https://cycle-z.com/blog/2022/01/21/new-year-cycling-2022-1-21/"
 彼のルートは相変わらず信号のほとんどない快速コースで、気温もこの時期にしては暖かく走りやすかったです。
 
 document.createElement('video');
-[https://cycle-z.com/wp-content/uploads/2022/01/outputcompress-video-online.com-6.mp4](https://cycle-z.com/wp-content/uploads/2022/01/outputcompress-video-online.com-6.mp4) 
+[/images/wp/2022-01-outputcompress-video-online.com-6.mp4](/images/wp/2022-01-outputcompress-video-online.com-6.mp4) 
 
 		
 			#gallery-94 {
@@ -55,18 +55,18 @@ document.createElement('video');
 		
 		
 			
-				![サイクルZから吉備津へ1](https://cycle-z.com/wp-content/uploads/2022/01/f6092eb1df58b12b14be54d8e1338b3a-225x300.jpg)
+				![サイクルZから吉備津へ1](/images/wp/2022-01-f6092eb1df58b12b14be54d8e1338b3a-225x300.jpg)
 
 			
 			
-				![サイクルZから吉備津へ2](https://cycle-z.com/wp-content/uploads/2022/01/670e18fe40130edf6db0efc61a965b81-225x300.jpg)
+				![サイクルZから吉備津へ2](/images/wp/2022-01-670e18fe40130edf6db0efc61a965b81-225x300.jpg)
 
 			
 		
 
 おみくじは行列が出来ていたので諦めました。
 
-![吉備津神社のおみくじの行列](https://cycle-z.com/wp-content/uploads/2022/01/91f1639841580a3648e3b01629e16056-768x1024.jpg)
+![吉備津神社のおみくじの行列](/images/wp/2022-01-91f1639841580a3648e3b01629e16056-768x1024.jpg)
 
  
 
@@ -92,18 +92,18 @@ document.createElement('video');
 		
 		
 			
-				![吉備津神社1](https://cycle-z.com/wp-content/uploads/2022/01/8de2cd1983495e0b0aa3ea1d5093c655-225x300.jpg)
+				![吉備津神社1](/images/wp/2022-01-8de2cd1983495e0b0aa3ea1d5093c655-225x300.jpg)
 
 			
 			
-				![吉備津神社](https://cycle-z.com/wp-content/uploads/2022/01/125cc2a493590202b2ca8f67e596d2c5-225x300.jpg)
+				![吉備津神社](/images/wp/2022-01-125cc2a493590202b2ca8f67e596d2c5-225x300.jpg)
 
 			
 		
 
 吉備津神社は長い回廊も有名ですが、意外に斜度がありました！
 
-![吉備津神社の回廊](https://cycle-z.com/wp-content/uploads/2022/01/a1ce74f26ee0bd6dca9b606a47887f63-768x1024.jpg)
+![吉備津神社の回廊](/images/wp/2022-01-a1ce74f26ee0bd6dca9b606a47887f63-768x1024.jpg)
 
 参拝を終えたら次は吉備津彦神社へ向けて出発。
 
@@ -119,7 +119,7 @@ document.createElement('video');
 
 20分ほど休憩してから裏山を自転車を押して登りました。
 
-[https://cycle-z.com/wp-content/uploads/2022/01/outputcompress-video-online.com-7.mp4](https://cycle-z.com/wp-content/uploads/2022/01/outputcompress-video-online.com-7.mp4) 
+[/images/wp/2022-01-outputcompress-video-online.com-7.mp4](/images/wp/2022-01-outputcompress-video-online.com-7.mp4) 
 
 		
 			#gallery-96 {
@@ -141,15 +141,15 @@ document.createElement('video');
 		
 		
 			
-				![吉備の中山](https://cycle-z.com/wp-content/uploads/2022/01/8a5dde027b0c09e240181cbda178ae2d-225x300.jpg)
+				![吉備の中山](/images/wp/2022-01-8a5dde027b0c09e240181cbda178ae2d-225x300.jpg)
 
 			
 			
-				![吉備の中山1](https://cycle-z.com/wp-content/uploads/2022/01/1a1e2801c178539454b7fc1bfc334a39-225x300.jpg)
+				![吉備の中山1](/images/wp/2022-01-1a1e2801c178539454b7fc1bfc334a39-225x300.jpg)
 
 			
 			
-				![吉備の中山2](https://cycle-z.com/wp-content/uploads/2022/01/b3bccc756e1f230fb9539ed4df0b3d54-225x300.jpg)
+				![吉備の中山2](/images/wp/2022-01-b3bccc756e1f230fb9539ed4df0b3d54-225x300.jpg)
 
 			
 		
@@ -181,14 +181,14 @@ document.createElement('video');
 		
 		
 			
-				![鏡石](https://cycle-z.com/wp-content/uploads/2022/01/0c82d36ffc7f1799ef68173504f0aa38-225x300.jpg)
+				![鏡石](/images/wp/2022-01-0c82d36ffc7f1799ef68173504f0aa38-225x300.jpg)
 
 			
 				
 				鏡石
 				
 			
-				![比翼入母屋造](https://cycle-z.com/wp-content/uploads/2022/01/0494b92a74fc97fe7c075260f7e2a4e1-225x300.jpg)
+				![比翼入母屋造](/images/wp/2022-01-0494b92a74fc97fe7c075260f7e2a4e1-225x300.jpg)
 
 			
 				
@@ -223,6 +223,6 @@ document.createElement('video');
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

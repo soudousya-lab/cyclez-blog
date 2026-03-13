@@ -10,7 +10,7 @@ wp_url: "https://cycle-z.com/blog/2025/09/08/cyclez_event_202509_1/"
 
 ## **📢 イベントのお知らせ 📢**
 
-![](https://cycle-z.com/wp-content/uploads/2025/09/Image-58.jpg)
+![](/images/wp/2025-09-Image-58.jpg)
 
 9/14(日)、9/15(月) Wilierロードバイクの試乗会を開催します🎉
 

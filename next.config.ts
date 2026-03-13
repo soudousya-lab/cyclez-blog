@@ -1,16 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // WPの画像をそのまま参照可能にする
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "cycle-z.com",
-        pathname: "/wp-content/uploads/**",
-      },
-    ],
-  },
   async redirects() {
     return [
       // WP旧URL: /blog/YYYY/MM/DD/slug/ → 新URL: /blog/slug

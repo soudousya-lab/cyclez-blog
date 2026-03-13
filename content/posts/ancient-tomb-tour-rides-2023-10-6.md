@@ -22,7 +22,7 @@ wp_url: "https://cycle-z.com/blog/2023/10/06/ancient-tomb-tour-rides-2023-10-6/"
 
 サイクルZ出発組の最初の目的地は、きびじアリーナにある『LEGARE COFFEE STAND(レガーレコーヒースタンド)』。
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/IMG_0549-1024x768.jpg)
+![](/images/wp/2023-10-IMG_0549-1024x768.jpg)
 
 スタッフ全員が大満足した素敵なお店でした！
 
@@ -45,13 +45,13 @@ wp_url: "https://cycle-z.com/blog/2023/10/06/ancient-tomb-tour-rides-2023-10-6/"
 
 特にランチセットが美味しそうです✨
 
-![古宮道](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2778-768x1024.jpg)
+![古宮道](/images/wp/2023-10-IMG_2778-768x1024.jpg)
 
  
 
 さらに近くにもう1つ、喫茶店『茶蘭呉（ちゃらんこ）』もオススメです。
 
-![茶蘭呉（ちゃらんこ）](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2776-768x1024.jpg)
+![茶蘭呉（ちゃらんこ）](/images/wp/2023-10-IMG_2776-768x1024.jpg)
 
 少し坂の上にあるため、坂を登るのが辛い方には、ここをご褒美として目標にするのも良いかもしれません。
 
@@ -68,13 +68,13 @@ wp_url: "https://cycle-z.com/blog/2023/10/06/ancient-tomb-tour-rides-2023-10-6/"
 
 アリーナ集合はその内7名で、気候もとても良かったので皆さん走る気満々のようでした。
 
-![現地集合組](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2785-768x1024.jpg)
+![現地集合組](/images/wp/2023-10-IMG_2785-768x1024.jpg)
 
 しかし、きびじアリーナの駐車場がイベントにより予想外に混雑していたため、急遽集合場所を『もてなしの館』に変更しました。
 
 最終的には五重の塔前で全員が揃い、ようやく合流できました。
 
-![五重の塔前で合流](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2792-1024x768.jpg)
+![五重の塔前で合流](/images/wp/2023-10-IMG_2792-1024x768.jpg)
 
  
 
@@ -106,11 +106,11 @@ wp_url: "https://cycle-z.com/blog/2023/10/06/ancient-tomb-tour-rides-2023-10-6/"
 		
 		
 			
-				![海鮮DON 丼丸の丼](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2809-768x1024.jpg)
+				![海鮮DON 丼丸の丼](/images/wp/2023-10-IMG_2809-768x1024.jpg)
 
 			
 			
-				![海鮮DON 丼丸総社店外観](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2797-768x1024.jpg)
+				![海鮮DON 丼丸総社店外観](/images/wp/2023-10-IMG_2797-768x1024.jpg)
 
 			
 		
@@ -136,11 +136,11 @@ wp_url: "https://cycle-z.com/blog/2023/10/06/ancient-tomb-tour-rides-2023-10-6/"
 		
 		
 			
-				![海鮮DON 丼丸の海鮮丼を味わう参加者達](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2804-1024x768.jpg)
+				![海鮮DON 丼丸の海鮮丼を味わう参加者達](/images/wp/2023-10-IMG_2804-1024x768.jpg)
 
 			
 			
-				![海鮮DON 丼丸の海鮮丼を持って笑顔で写真に写る男女](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2800-1024x768.jpg)
+				![海鮮DON 丼丸の海鮮丼を持って笑顔で写真に写る男女](/images/wp/2023-10-IMG_2800-1024x768.jpg)
 
 			
 		
@@ -149,7 +149,7 @@ wp_url: "https://cycle-z.com/blog/2023/10/06/ancient-tomb-tour-rides-2023-10-6/"
 
 そして休憩後に、ナンバベーカリーにも寄ることになりました。
 
-![ナンバベーカリー](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2825-1024x768.jpg)
+![ナンバベーカリー](/images/wp/2023-10-IMG_2825-1024x768.jpg)
 
 マンゴースムージーが美味しかったです！
 
@@ -173,11 +173,11 @@ wp_url: "https://cycle-z.com/blog/2023/10/06/ancient-tomb-tour-rides-2023-10-6/"
 		
 		
 			
-				![ナンバベーカリーの前で写真に写る男性2](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2827-768x1024.jpg)
+				![ナンバベーカリーの前で写真に写る男性2](/images/wp/2023-10-IMG_2827-768x1024.jpg)
 
 			
 			
-				![ナンバベーカリーの前で写真に写る男性1](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2826-768x1024.jpg)
+				![ナンバベーカリーの前で写真に写る男性1](/images/wp/2023-10-IMG_2826-768x1024.jpg)
 
 			
 		
@@ -199,18 +199,18 @@ wp_url: "https://cycle-z.com/blog/2023/10/06/ancient-tomb-tour-rides-2023-10-6/"
 自転車道の脇にあり、周りを散歩したり古墳を登ったりすることができる古墳です。
 
 document.createElement('video');
-[https://cycle-z.com/wp-content/uploads/2023/10/IMG_2840.mp4](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2840.mp4)
+[/images/wp/2023-10-IMG_2840.mp4](/images/wp/2023-10-IMG_2840.mp4)
 外周を走ることで丘の形状をより詳しく知ることができて面白かったです。
 
 #### ＜❷次に江崎古墳＞
 
 江崎古墳では石室に入ることはできませんが、その存在が今でもはっきりと残っていることに感動しました。
 
-![江崎古墳2](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2852-768x1024.jpg)
+![江崎古墳2](/images/wp/2023-10-IMG_2852-768x1024.jpg)
 
 山の中に位置しているため、なかなか訪れる人が少ないのではないでしょうか。
 
-![江崎古墳1](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2844-1024x768.jpg)
+![江崎古墳1](/images/wp/2023-10-IMG_2844-1024x768.jpg)
 
  
 
@@ -218,13 +218,13 @@ document.createElement('video');
 
 次に訪れたのは『鳶尾塚古墳』。
 
-![鳶尾塚古墳入口](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2871-768x1024.jpg)
+![鳶尾塚古墳入口](/images/wp/2023-10-IMG_2871-768x1024.jpg)
 
 田んぼの中にあり、少し入り組んだ場所にあるため、探しに来る人は少ないかもしれません。
 
 鳶と名前がついてる古墳の石室内にはコウモリが3匹いました。
 
-![鳶尾塚古墳にいたコウモリ](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2874-768x1024.jpg)
+![鳶尾塚古墳にいたコウモリ](/images/wp/2023-10-IMG_2874-768x1024.jpg)
 
 騒がしくライト当ててごめんなさい。
 
@@ -238,17 +238,17 @@ document.createElement('video');
 
 最後に訪れたのは『千足古墳』。
 
-![千足古墳](https://cycle-z.com/wp-content/uploads/2023/10/20231001_140833-1024x461.jpg)
+![千足古墳](/images/wp/2023-10-20231001_140833-1024x461.jpg)
 
 見渡しの良い場所にあり、石室には入ることはできませんが、モニターで展示室のように見ることができます。
 
-![千足古墳の中をモニターでチェック](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2898-768x1024.jpg)
+![千足古墳の中をモニターでチェック](/images/wp/2023-10-IMG_2898-768x1024.jpg)
 
 ここまで回ると、吉備の王国の広大さを実感しました。
 
 古墳の数には驚かされますね。
 
-![千足古墳の前で記念撮影](https://cycle-z.com/wp-content/uploads/2023/10/20231001_140952-1-1024x461.jpg)
+![千足古墳の前で記念撮影](/images/wp/2023-10-20231001_140952-1-1024x461.jpg)
 
  
 
@@ -260,7 +260,7 @@ document.createElement('video');
 
 サイクルZまで帰るメンバー同士が年齢関係なく談笑し、コンビニで休憩している光景が仙田として一番印象的でした。
 
-![コンビニの前で談笑する参加者達](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2913-1024x768.jpg)
+![コンビニの前で談笑する参加者達](/images/wp/2023-10-IMG_2913-1024x768.jpg)
 
 今回のイベントも怪我もなく、安全に終えることができ、何より皆さんが楽しんでくださって嬉しい限りです。
 
@@ -280,6 +280,6 @@ document.createElement('video');
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

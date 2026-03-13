@@ -18,7 +18,7 @@ wp_url: "https://cycle-z.com/blog/2023/04/07/cherry-blossom-ride-2023-4-7/"
 
 この日のルートは[こちらから](https://ridewithgps.com/routes/41816651)もご覧いただけます！
 
-![松岡さん考案のサイクリングコース](https://cycle-z.com/wp-content/uploads/2023/04/a5427ea152c79c64b8d826954c24ab8d-731x1024.jpg)
+![松岡さん考案のサイクリングコース](/images/wp/2023-04-a5427ea152c79c64b8d826954c24ab8d-731x1024.jpg)
 
  
 
@@ -30,7 +30,7 @@ wp_url: "https://cycle-z.com/blog/2023/04/07/cherry-blossom-ride-2023-4-7/"
 
 集合場所のサイクルZには総勢31名の方にお集まり頂きました！ご参加ありがとうございました。
 
-![朝集合](https://cycle-z.com/wp-content/uploads/2023/04/70db942158cadd6f6ca55d7d74b8c2a4-1024x768.jpg)
+![朝集合](/images/wp/2023-04-70db942158cadd6f6ca55d7d74b8c2a4-1024x768.jpg)
 
 スタート地点からの出発はいつも壮大な行列になります。
 
@@ -54,11 +54,11 @@ wp_url: "https://cycle-z.com/blog/2023/04/07/cherry-blossom-ride-2023-4-7/"
 		
 		
 			
-				![朝集合からのスタート2](https://cycle-z.com/wp-content/uploads/2023/04/29932dcd38a1b9628bd0dffe4a872bdb-768x1024.jpg)
+				![朝集合からのスタート2](/images/wp/2023-04-29932dcd38a1b9628bd0dffe4a872bdb-768x1024.jpg)
 
 			
 			
-				![朝集合からのスタート](https://cycle-z.com/wp-content/uploads/2023/04/3aa45278c717193870f3c270c3c4ab4c-768x1024.jpg)
+				![朝集合からのスタート](/images/wp/2023-04-3aa45278c717193870f3c270c3c4ab4c-768x1024.jpg)
 
 			
 		
@@ -81,7 +81,7 @@ wp_url: "https://cycle-z.com/blog/2023/04/07/cherry-blossom-ride-2023-4-7/"
 
 お昼ご飯はお弁当をテイクアウトして桜の下で頂きました。
 
-![お昼ご飯2](https://cycle-z.com/wp-content/uploads/2023/04/2031b4c06ed0e9afa8bc89f5fd1edaf7-768x1024.jpg)
+![お昼ご飯2](/images/wp/2023-04-2031b4c06ed0e9afa8bc89f5fd1edaf7-768x1024.jpg)
 
 サイクルZのライドイベントはグルメもお楽しみのひとつ！
 
@@ -113,7 +113,7 @@ wp_url: "https://cycle-z.com/blog/2023/04/07/cherry-blossom-ride-2023-4-7/"
 
 店長とおかず交換で味見しましたが、ヘルシーな見た目に反してしっかりした味付けで美味しかったです。
 
-![お昼ご飯](https://cycle-z.com/wp-content/uploads/2023/04/2cdd7ef71a29f4b255336e129988ec2a-1024x768.jpg)
+![お昼ご飯](/images/wp/2023-04-2cdd7ef71a29f4b255336e129988ec2a-1024x768.jpg)
 
 そのあとは岡南空港で離着陸を見たりのんびりして過ごしました。
 
@@ -137,11 +137,11 @@ wp_url: "https://cycle-z.com/blog/2023/04/07/cherry-blossom-ride-2023-4-7/"
 		
 		
 			
-				![岡南空港2](https://cycle-z.com/wp-content/uploads/2023/04/ff0a3a6ab8d316c8df9f1d1ddc1aab6e-1024x768.jpg)
+				![岡南空港2](/images/wp/2023-04-ff0a3a6ab8d316c8df9f1d1ddc1aab6e-1024x768.jpg)
 
 			
 			
-				![岡南空港](https://cycle-z.com/wp-content/uploads/2023/04/7dfbddbd88f58a70a1deabc1af7b7d5f-1024x768.jpg)
+				![岡南空港](/images/wp/2023-04-7dfbddbd88f58a70a1deabc1af7b7d5f-1024x768.jpg)
 
 			
 		
@@ -167,11 +167,11 @@ wp_url: "https://cycle-z.com/blog/2023/04/07/cherry-blossom-ride-2023-4-7/"
 		
 		
 			
-				![お昼ご飯集合](https://cycle-z.com/wp-content/uploads/2023/04/cd799a2d0bd6f767979683ea56627226-1024x768.jpg)
+				![お昼ご飯集合](/images/wp/2023-04-cd799a2d0bd6f767979683ea56627226-1024x768.jpg)
 
 			
 			
-				![サイクルZポーズ](https://cycle-z.com/wp-content/uploads/2023/04/8c67b7343c3ea2b63e1602eabeadc806-1024x768.jpg)
+				![サイクルZポーズ](/images/wp/2023-04-8c67b7343c3ea2b63e1602eabeadc806-1024x768.jpg)
 
 			
 		
@@ -196,11 +196,11 @@ wp_url: "https://cycle-z.com/blog/2023/04/07/cherry-blossom-ride-2023-4-7/"
 
 お天気が良かったこともあり、大勢の人達が集まっていました。
 
-![笹ヶ瀬川2](https://cycle-z.com/wp-content/uploads/2023/04/c69f8383b9fc96134f8caa8bb9a3b778-1024x768.jpg)
+![笹ヶ瀬川2](/images/wp/2023-04-c69f8383b9fc96134f8caa8bb9a3b778-1024x768.jpg)
 
 風に舞った花びら達が地面をピンクに覆っていて、自転車で駆け抜けるのも爽快でした。
 
-![笹ヶ瀬川](https://cycle-z.com/wp-content/uploads/2023/04/36dcde8b805b94a0cd9775172ebb0957-768x1024.jpg)
+![笹ヶ瀬川](/images/wp/2023-04-36dcde8b805b94a0cd9775172ebb0957-768x1024.jpg)
 
  
 
@@ -243,6 +243,6 @@ wp_url: "https://cycle-z.com/blog/2023/04/07/cherry-blossom-ride-2023-4-7/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

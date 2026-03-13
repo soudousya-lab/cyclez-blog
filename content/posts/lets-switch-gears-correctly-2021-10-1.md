@@ -44,28 +44,28 @@ wp_url: "https://cycle-z.com/blog/2021/10/01/lets-switch-gears-correctly-2021-10
 		
 		
 			
-				![アウターロー前から](https://cycle-z.com/wp-content/uploads/2021/09/51f4e1088c85b0a8fdbe0a35f72b54db-225x300.jpg)
+				![アウターロー前から](/images/wp/2021-09-51f4e1088c85b0a8fdbe0a35f72b54db-225x300.jpg)
 
 			
 				
 				アウターロー前から
 				
 			
-				![アウターロー後ろから](https://cycle-z.com/wp-content/uploads/2021/09/167e8f8fa0ca78286008f5a212751963-225x300.jpg)
+				![アウターロー後ろから](/images/wp/2021-09-167e8f8fa0ca78286008f5a212751963-225x300.jpg)
 
 			
 				
 				アウターロー後ろから
 				
 			
-				![インナートップ前から](https://cycle-z.com/wp-content/uploads/2021/09/9c6b857bfd518263c04a5c7d82728108-225x300.jpg)
+				![インナートップ前から](/images/wp/2021-09-9c6b857bfd518263c04a5c7d82728108-225x300.jpg)
 
 			
 				
 				インナートップ前から
 				
 			
-				![インナートップ後ろから](https://cycle-z.com/wp-content/uploads/2021/09/50aab29e98e30e0c9645c657b5e27927-225x300.jpg)
+				![インナートップ後ろから](/images/wp/2021-09-50aab29e98e30e0c9645c657b5e27927-225x300.jpg)
 
 			
 				
@@ -114,7 +114,7 @@ wp_url: "https://cycle-z.com/blog/2021/10/01/lets-switch-gears-correctly-2021-10
 
 ですが、長距離を走ると平坦だけではなく、山があり陸橋があり坂があるということです。
 
-![坂道をロードバイクで上る男性](https://cycle-z.com/wp-content/uploads/2021/09/cc26f8b4967af33f85590b6e2e42ca33-1024x768.jpg)
+![坂道をロードバイクで上る男性](/images/wp/2021-09-cc26f8b4967af33f85590b6e2e42ca33-1024x768.jpg)
 
 平坦だと思っている場所でも少しずつ登っていたりもします。
 
@@ -146,6 +146,6 @@ wp_url: "https://cycle-z.com/blog/2021/10/01/lets-switch-gears-correctly-2021-10
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

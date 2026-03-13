@@ -36,14 +36,14 @@ wp_url: "https://cycle-z.com/blog/2021/07/30/road-bike-maintenance-2021-7-30/"
 		
 		
 			
-				![ロードバークのワイヤー初期伸びを横からチェックしている写真](https://cycle-z.com/wp-content/uploads/2021/07/5ec16097ce9ea1bd14222ca77e9be297-225x300.jpg)
+				![ロードバークのワイヤー初期伸びを横からチェックしている写真](/images/wp/2021-07-5ec16097ce9ea1bd14222ca77e9be297-225x300.jpg)
 
 			
 				
 				横から確認！
 				
 			
-				![ロードバークのワイヤー初期伸びを後方からチェックしている写真](https://cycle-z.com/wp-content/uploads/2021/07/e3c9499ecd125d6202ed54634e67625c-225x300.jpg)
+				![ロードバークのワイヤー初期伸びを後方からチェックしている写真](/images/wp/2021-07-e3c9499ecd125d6202ed54634e67625c-225x300.jpg)
 
 			
 				
@@ -82,6 +82,6 @@ wp_url: "https://cycle-z.com/blog/2021/07/30/road-bike-maintenance-2021-7-30/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

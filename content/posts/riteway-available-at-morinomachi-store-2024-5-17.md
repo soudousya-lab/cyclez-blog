@@ -34,19 +34,19 @@ wp_url: "https://cycle-z.com/blog/2024/05/17/riteway-available-at-morinomachi-st
 
 クロモリでのホリゾンタルフレームの自転車です！
 
-![](https://cycle-z.com/wp-content/uploads/2024/05/styles3-1024x768.jpg)
+![](/images/wp/2024-05-styles3-1024x768.jpg)
 
 ライトウェイさんの特徴の１つとして、どんな身長の方にもホリゾンタルフレームのカッコ良さを味わえるように設計しています！
 
 ホイールのサイズを変えることで、ホリゾンタル(トップチューブが地面と水平)を維持しています！
 
-![](https://cycle-z.com/wp-content/uploads/2024/05/styles5-1024x768.jpg)
+![](/images/wp/2024-05-styles5-1024x768.jpg)
 
 小柄な女性の方では乗ることができなかったホリゾンタルを実現し、カラー展開もとてもオシャレ！
 
 オススメはやはりグロスベージュ！一目惚れしちゃいますね。
 
-![](https://cycle-z.com/wp-content/uploads/2024/05/styles1-1024x768.jpg)
+![](/images/wp/2024-05-styles1-1024x768.jpg)
 
 ハンドルの形状もヴィンテージを思わせるような、手前にバックスウィープしている形状ですね〜。
 
@@ -54,7 +54,7 @@ wp_url: "https://cycle-z.com/blog/2024/05/17/riteway-available-at-morinomachi-st
 
 タイヤの太さもキャリパーブレーキにも関わらず太めの35cがついております。
 
-![](https://cycle-z.com/wp-content/uploads/2024/05/styles2-768x1024.jpg)
+![](/images/wp/2024-05-styles2-768x1024.jpg)
 
 軽快さと段差などの恐怖感を無くすちょうど良いところのタイヤサイズですね。
 
@@ -62,7 +62,7 @@ wp_url: "https://cycle-z.com/blog/2024/05/17/riteway-available-at-morinomachi-st
 
 スタンドも標準装備のため日常使いをホントに想定していることが分かりますね。
 
-![](https://cycle-z.com/wp-content/uploads/2024/05/styles4-768x1024.jpg)
+![](/images/wp/2024-05-styles4-768x1024.jpg)
 
 走行した感想ですが、よく走る！
 
@@ -76,21 +76,21 @@ wp_url: "https://cycle-z.com/blog/2024/05/17/riteway-available-at-morinomachi-st
 
 トップチューブが低くタイヤが太いミニベロ！これもいいですね！
 
-![](https://cycle-z.com/wp-content/uploads/2024/05/GLACIER2-1024x768.jpg)
+![](/images/wp/2024-05-GLACIER2-1024x768.jpg)
 
 まさに、現代のオシャレに乗りたい自転車の具現化でしょう！
 
 自転車のトップチューブが高いと乗り降りに苦労される方がいらっしゃるので、そこを配慮したデザインとなっています。
 
-![](https://cycle-z.com/wp-content/uploads/2024/05/GLACIER3-768x1024.jpg)
+![](/images/wp/2024-05-GLACIER3-768x1024.jpg)
 
 ミニベロ自体も街乗りとして使いやすく、タイヤの太さも溝にハマるようなことは無さそうな安心感がいいですよね！
 
-![](https://cycle-z.com/wp-content/uploads/2024/05/GLACIER1-768x1024.jpg)
+![](/images/wp/2024-05-GLACIER1-768x1024.jpg)
 
 タイヤもゴツゴツのオフロード用の見た目をしている物が標準装備になっているバージョンもあるので、ここが好みで選べるのも良いところです。
 
-![](https://cycle-z.com/wp-content/uploads/2024/05/GLACIER4-1024x768.jpg)
+![](/images/wp/2024-05-GLACIER4-1024x768.jpg)
 
  
 
@@ -98,17 +98,17 @@ wp_url: "https://cycle-z.com/blog/2024/05/17/riteway-available-at-morinomachi-st
 
 カラーラインナップ豊富なキッズバイク達。
 
-![](https://cycle-z.com/wp-content/uploads/2024/05/ZIT1-1024x768.jpg)
+![](/images/wp/2024-05-ZIT1-1024x768.jpg)
 
 年齢に合わせて乗れるバイクのラインナップをここまで揃えられるのはさすがです👏
 
 その上業界内でも最軽量！
 
-![](https://cycle-z.com/wp-content/uploads/2024/05/ZIT2-768x1024.jpg)
+![](/images/wp/2024-05-ZIT2-768x1024.jpg)
 
 ブレーキの形状も手の小さいお子さんに配慮して独自開発されており、サドルの高さも極限まで下げられるようオリジナルで開発された仕様となっています。
 
-![](https://cycle-z.com/wp-content/uploads/2024/05/ZIT3-768x1024.jpg)
+![](/images/wp/2024-05-ZIT3-768x1024.jpg)
 
 お子さまが安全に乗れるよう、ここまでしっかりと配慮しているバイクはなかなかないですよ！
 
@@ -154,6 +154,6 @@ wp_url: "https://cycle-z.com/blog/2024/05/17/riteway-available-at-morinomachi-st
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

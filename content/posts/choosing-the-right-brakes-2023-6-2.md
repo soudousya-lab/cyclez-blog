@@ -42,11 +42,11 @@ wp_url: "https://cycle-z.com/blog/2023/06/02/choosing-the-right-brakes-2023-6-2/
 		
 		
 			
-				![リムブレーキ](https://cycle-z.com/wp-content/uploads/2023/05/6cd0e88160976a69546fddb64280ad27-768x1024.jpg)
+				![リムブレーキ](/images/wp/2023-05-6cd0e88160976a69546fddb64280ad27-768x1024.jpg)
 
 			
 			
-				![リブブレーキ2](https://cycle-z.com/wp-content/uploads/2023/05/b079dc454d1261545eb9497fac46254b-768x1024.jpg)
+				![リブブレーキ2](/images/wp/2023-05-b079dc454d1261545eb9497fac46254b-768x1024.jpg)
 
 			
 		
@@ -72,11 +72,11 @@ wp_url: "https://cycle-z.com/blog/2023/06/02/choosing-the-right-brakes-2023-6-2/
 		
 		
 			
-				![ディスクブレーキ](https://cycle-z.com/wp-content/uploads/2023/05/6343357f4f9ea8107de77db65cb4844d-768x1024.jpg)
+				![ディスクブレーキ](/images/wp/2023-05-6343357f4f9ea8107de77db65cb4844d-768x1024.jpg)
 
 			
 			
-				![ディスクブレーキ2](https://cycle-z.com/wp-content/uploads/2023/05/2261cc1dde091e68dcb9d7698ae3240e-768x1024.jpg)
+				![ディスクブレーキ2](/images/wp/2023-05-2261cc1dde091e68dcb9d7698ae3240e-768x1024.jpg)
 
 			
 		
@@ -98,7 +98,7 @@ wp_url: "https://cycle-z.com/blog/2023/06/02/choosing-the-right-brakes-2023-6-2/
 
 - シンプルでわかりやすい構造: 視覚的に確認しやすい位置にあり、微調整が必要なことはほとんどありません。
 
-![リブブレー3](https://cycle-z.com/wp-content/uploads/2023/05/6fd813d80ed54ebe849ef350ec3d4ea1-768x1024.jpg)
+![リブブレー3](/images/wp/2023-05-6fd813d80ed54ebe849ef350ec3d4ea1-768x1024.jpg)
 
 一方、ディスクブレーキのメリットは次の通りです。
 
@@ -134,6 +134,6 @@ wp_url: "https://cycle-z.com/blog/2023/06/02/choosing-the-right-brakes-2023-6-2/
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

@@ -26,7 +26,7 @@ wp_url: "https://cycle-z.com/blog/2023/12/19/cyclez-event-info-2023-12-19/"
 
  
 
-![](https://cycle-z.com/wp-content/uploads/2023/12/e641213faa3f02bbd3abaf90c34c7917.jpg)
+![](/images/wp/2023-12-e641213faa3f02bbd3abaf90c34c7917.jpg)
 
  
 
@@ -42,7 +42,7 @@ wp_url: "https://cycle-z.com/blog/2023/12/19/cyclez-event-info-2023-12-19/"
 
 まだ参加出来ていないという方はぜひ！一度は来てみてください！
 
-![](https://cycle-z.com/wp-content/uploads/2023/12/453babb362a61d150bc85e1ce8a9489e.jpg)
+![](/images/wp/2023-12-453babb362a61d150bc85e1ce8a9489e.jpg)
 
 ※社長が出演したラジオでも初心者講習会の様子をお話していますので、宜しければ**[こちら](https://youtu.be/DzRVrsftsr0?si=4CB6aT18BzWIUb_G)**も聞いてみてください。
 
@@ -83,7 +83,7 @@ wp_url: "https://cycle-z.com/blog/2023/12/19/cyclez-event-info-2023-12-19/"
 松岡さんのコース案内ありきで、自転車が通るのに適した道をサイクリングしていきます。
 
 document.createElement('video');
-[https://cycle-z.com/wp-content/uploads/2023/10/IMG_2840.mp4](https://cycle-z.com/wp-content/uploads/2023/10/IMG_2840.mp4) 
+[/images/wp/2023-10-IMG_2840.mp4](/images/wp/2023-10-IMG_2840.mp4) 
 
 松岡さんが設定するルートはただ自転車道を通るだけではなく、それ以外の場所も多く存在します。
 
@@ -91,7 +91,7 @@ document.createElement('video');
 
 距離的に完走できるか不安..という方でも、食べることがメインだったり、途中合流が出来るものもあるので、自転車乗りたてでも参加出来るようなライトなものになっています！
 
-![](https://cycle-z.com/wp-content/uploads/2023/12/ccc198bba371c52223348014f5130e49-1024x461.jpg)
+![](/images/wp/2023-12-ccc198bba371c52223348014f5130e49-1024x461.jpg)
 
 今年10/1に開催した古墳巡りライドの1コマ
 
@@ -139,6 +139,6 @@ document.createElement('video');
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

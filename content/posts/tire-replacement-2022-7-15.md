@@ -56,14 +56,14 @@ wp_url: "https://cycle-z.com/blog/2022/07/15/tire-replacement-2022-7-15/"
 		
 		
 			
-				![タイヤのみ](https://cycle-z.com/wp-content/uploads/2022/07/5157ebdf718291352fd1cb7866d0009d-225x300.jpg)
+				![タイヤのみ](/images/wp/2022-07-5157ebdf718291352fd1cb7866d0009d-225x300.jpg)
 
 			
 				
 				タイヤのみ
 				
 			
-				![ホイールのタイヤ部分](https://cycle-z.com/wp-content/uploads/2022/07/218993bcc89f31490e728d3f0afddd09-225x300.jpg)
+				![ホイールのタイヤ部分](/images/wp/2022-07-218993bcc89f31490e728d3f0afddd09-225x300.jpg)
 
 			
 				
@@ -118,7 +118,7 @@ wp_url: "https://cycle-z.com/blog/2022/07/15/tire-replacement-2022-7-15/"
 
 スタッフ仙田の通勤兼サイクリングで大活躍のタイヤ！
 
-![ヴィットリア ルビノプロ](https://cycle-z.com/wp-content/uploads/2022/07/5bbbb6b236e9a2612d8ced674664ec06.jpg)
+![ヴィットリア ルビノプロ](/images/wp/2022-07-5bbbb6b236e9a2612d8ced674664ec06.jpg)
 
 画像引用元：[Amazon公式サイト](https://www.amazon.co.jp/%E3%83%93%E3%83%83%E3%83%88%E3%83%AA%E3%82%A2-Vittoria-%E3%82%AF%E3%83%AA%E3%83%B3%E3%83%81%E3%83%A3%E3%83%BC-rubino-700%C3%9723c/dp/B07PP72BNL/ref=sr_1_2?adgrpid=134867757291&gclid=Cj0KCQjwlK-WBhDjARIsAO2sErS_XUDQR_SAS3UoOYFHib9ZxvjdRBmWoC-aLhMlDO8GGc7BZSGbd6AaApE5EALw_wcB&hvadid=594908958410&hvdev=c&hvlocphy=1009637&hvnetw=g&hvqmt=e&hvrand=18347264519688347740&hvtargid=kwd-525602660632&hydadcr=2246_13489178&jp-ad-ap=0&keywords=%E3%83%B4%E3%82%A3%E3%83%83%E3%83%88%E3%83%AA%E3%82%A2+%E3%83%AB%E3%83%93%E3%83%8E%E3%83%97%E3%83%AD&qid=1657608714&s=sports&sr=1-2)
 
@@ -138,7 +138,7 @@ wp_url: "https://cycle-z.com/blog/2022/07/15/tire-replacement-2022-7-15/"
 
 現在の税込価格8,000円。
 
-![コンチネンタル　ゲータースキン](https://cycle-z.com/wp-content/uploads/2022/07/b220154d3cca4e03c4ab340e10e84388-768x1024.jpg)
+![コンチネンタル　ゲータースキン](/images/wp/2022-07-b220154d3cca4e03c4ab340e10e84388-768x1024.jpg)
 
 タイヤの高騰もあり、6,050円で買えていた時期を考えると、かなりハイエンドに近い価格になってしまいました...！
 
@@ -152,7 +152,7 @@ wp_url: "https://cycle-z.com/blog/2022/07/15/tire-replacement-2022-7-15/"
 
 現在の税込価格は6,820円。
 
-![パナレーサー　アジリストライト](https://cycle-z.com/wp-content/uploads/2022/07/b0a556ee7bce0d66c483088d5b2faa6d-768x1024.jpg)
+![パナレーサー　アジリストライト](/images/wp/2022-07-b0a556ee7bce0d66c483088d5b2faa6d-768x1024.jpg)
 
 日本が誇るタイヤメーカーが出した、鬼軽・・タイヤです。
 
@@ -168,7 +168,7 @@ wp_url: "https://cycle-z.com/blog/2022/07/15/tire-replacement-2022-7-15/"
 
 現在の税込価格は4,950円。
 
-![ウルフパックroadrace](https://cycle-z.com/wp-content/uploads/2022/07/eea634141b09745ffb4c463c805d3da8.jpg)
+![ウルフパックroadrace](/images/wp/2022-07-eea634141b09745ffb4c463c805d3da8.jpg)
 
 画像引用元：[TRISPORT OFFICIAL WEB SITE](https://www.trisports.jp/products/1552/)
 
@@ -208,6 +208,6 @@ wp_url: "https://cycle-z.com/blog/2022/07/15/tire-replacement-2022-7-15/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

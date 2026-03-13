@@ -33,6 +33,6 @@ wp_url: "https://cycle-z.com/blog/2025/12/17/cyclez_event_202601/"
 参加のお申込みは**[こちら](https://docs.google.com/forms/d/e/1FAIpQLSdMgk9ahyLMBFcJTpRCvC1Hp16WGNVVYz3Wl9HDbe32OhbTqw/viewform?usp=publish-editor)**から✨
 
 お申込みお待ちしております😊
-[![](https://cycle-z.com/wp-content/uploads/2025/12/cd37ae7a7e9d9811f5940a6d7ba6aff2.jpg)
+[![](/images/wp/2025-12-cd37ae7a7e9d9811f5940a6d7ba6aff2.jpg)
 
-](https://cycle-z.com/wp-content/uploads/2025/12/cd37ae7a7e9d9811f5940a6d7ba6aff2.jpg)
+](/images/wp/2025-12-cd37ae7a7e9d9811f5940a6d7ba6aff2.jpg)

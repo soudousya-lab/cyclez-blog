@@ -25,7 +25,7 @@ wp_url: "https://cycle-z.com/blog/2022/08/12/wire-replacement-2022-8-12/"
 
 他のパーツとは違い、種類は多くはありません。
 
-![NISSENインナー](https://cycle-z.com/wp-content/uploads/2022/08/c09c95ea325a2a6edd577a2ce50f6b1c-1024x768.jpg)
+![NISSENインナー](/images/wp/2022-08-c09c95ea325a2a6edd577a2ce50f6b1c-1024x768.jpg)
 
 良くて竹、交換のタイミングがあるなら松もオススメしたいところ！
 
@@ -49,7 +49,7 @@ wp_url: "https://cycle-z.com/blog/2022/08/12/wire-replacement-2022-8-12/"
 
 アウターワイヤーの色です。
 
-![シマノアウターワイヤー](https://cycle-z.com/wp-content/uploads/2022/08/377846fda12216ec5f9c138f627f3580-1024x768.jpg)
+![シマノアウターワイヤー](/images/wp/2022-08-377846fda12216ec5f9c138f627f3580-1024x768.jpg)
 
 シマノ アウターワイヤー
 
@@ -79,11 +79,11 @@ wp_url: "https://cycle-z.com/blog/2022/08/12/wire-replacement-2022-8-12/"
 		
 		
 			
-				![アウターワイヤー色変2](https://cycle-z.com/wp-content/uploads/2022/08/fa6bb43e1907174bdf113e72aff35368-300x225.jpg)
+				![アウターワイヤー色変2](/images/wp/2022-08-fa6bb43e1907174bdf113e72aff35368-300x225.jpg)
 
 			
 			
-				![アウターワイヤー色変4](https://cycle-z.com/wp-content/uploads/2022/08/ed465afd6e34343499f0aaf2642514be-300x225.jpg)
+				![アウターワイヤー色変4](/images/wp/2022-08-ed465afd6e34343499f0aaf2642514be-300x225.jpg)
 
 			
 		
@@ -109,14 +109,14 @@ wp_url: "https://cycle-z.com/blog/2022/08/12/wire-replacement-2022-8-12/"
 		
 		
 			
-				![nissenアウターワイヤー](https://cycle-z.com/wp-content/uploads/2022/08/f8f4b13ffcb78d589b7b7b3fadf1cfe2-225x300.jpg)
+				![nissenアウターワイヤー](/images/wp/2022-08-f8f4b13ffcb78d589b7b7b3fadf1cfe2-225x300.jpg)
 
 			
 				
 				NISSENアウターワイヤー
 				
 			
-				![nissenアウターワイヤー2](https://cycle-z.com/wp-content/uploads/2022/08/7a0ebb8a799af04be16d7bdd6b2b4cee-225x300.jpg)
+				![nissenアウターワイヤー2](/images/wp/2022-08-7a0ebb8a799af04be16d7bdd6b2b4cee-225x300.jpg)
 
 			
 				
@@ -155,6 +155,6 @@ wp_url: "https://cycle-z.com/blog/2022/08/12/wire-replacement-2022-8-12/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

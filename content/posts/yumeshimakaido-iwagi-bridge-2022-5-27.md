@@ -50,11 +50,11 @@ wp_url: "https://cycle-z.com/blog/2022/05/27/yumeshimakaido-iwagi-bridge-2022-5-
 		
 		
 			
-				![新幹線輪行準備](https://cycle-z.com/wp-content/uploads/2022/05/aaf68cadb3eb5ab215ffe8b9609aeedf-300x225.jpg)
+				![新幹線輪行準備](/images/wp/2022-05-aaf68cadb3eb5ab215ffe8b9609aeedf-300x225.jpg)
 
 			
 			
-				![新幹線輪行準備2](https://cycle-z.com/wp-content/uploads/2022/05/862f4e004575eaf0ea047876e1b57a90-300x225.jpg)
+				![新幹線輪行準備2](/images/wp/2022-05-862f4e004575eaf0ea047876e1b57a90-300x225.jpg)
 
 			
 		
@@ -62,7 +62,7 @@ wp_url: "https://cycle-z.com/blog/2022/05/27/yumeshimakaido-iwagi-bridge-2022-5-
 
 三原駅を降りてそのまま高速船に乗り換え、因島まで向かいます。
 
-![新幹線から高速船](https://cycle-z.com/wp-content/uploads/2022/05/9d77a4ad2aac4b40d473541fc4ba9dbd-1024x768.jpg)
+![新幹線から高速船](/images/wp/2022-05-9d77a4ad2aac4b40d473541fc4ba9dbd-1024x768.jpg)
 
 今回はしまなみ海道の途中にある因島からスタートしました。
 
@@ -106,15 +106,15 @@ wp_url: "https://cycle-z.com/blog/2022/05/27/yumeshimakaido-iwagi-bridge-2022-5-
 		
 		
 			
-				![たい屋](https://cycle-z.com/wp-content/uploads/2022/05/7539f094dec2621bd70aa0bf566e0e0c-300x225.jpg)
+				![たい屋](/images/wp/2022-05-7539f094dec2621bd70aa0bf566e0e0c-300x225.jpg)
 
 			
 			
-				![たい屋6](https://cycle-z.com/wp-content/uploads/2022/05/5040c18a22ef380a581ad0a6a1c99694-300x225.jpg)
+				![たい屋6](/images/wp/2022-05-5040c18a22ef380a581ad0a6a1c99694-300x225.jpg)
 
 			
 			
-				![たい屋8](https://cycle-z.com/wp-content/uploads/2022/05/47d9ea9790230e9f932be4f7eb5849ce-300x225.jpg)
+				![たい屋8](/images/wp/2022-05-47d9ea9790230e9f932be4f7eb5849ce-300x225.jpg)
 
 			
 		
@@ -148,11 +148,11 @@ wp_url: "https://cycle-z.com/blog/2022/05/27/yumeshimakaido-iwagi-bridge-2022-5-
 		
 		
 			
-				![積善山3](https://cycle-z.com/wp-content/uploads/2022/05/f7517e7e07711a1ff5592acd1fc2dfb8-300x225.jpg)
+				![積善山3](/images/wp/2022-05-f7517e7e07711a1ff5592acd1fc2dfb8-300x225.jpg)
 
 			
 			
-				![積善山2](https://cycle-z.com/wp-content/uploads/2022/05/987626098e413e0d85f02c6147daaf5c-300x225.jpg)
+				![積善山2](/images/wp/2022-05-987626098e413e0d85f02c6147daaf5c-300x225.jpg)
 
 			
 		
@@ -181,11 +181,11 @@ wp_url: "https://cycle-z.com/blog/2022/05/27/yumeshimakaido-iwagi-bridge-2022-5-
 		
 		
 			
-				![桜越しの積善山からの景色](https://cycle-z.com/wp-content/uploads/2022/05/cce3b5f18118455cdf7da50e4f9c1efc-225x300.jpg)
+				![桜越しの積善山からの景色](/images/wp/2022-05-cce3b5f18118455cdf7da50e4f9c1efc-225x300.jpg)
 
 			
 			
-				![積善山からの景色](https://cycle-z.com/wp-content/uploads/2022/05/157c0e255418e2d0ac2cfb5326027bb3-300x225.jpg)
+				![積善山からの景色](/images/wp/2022-05-157c0e255418e2d0ac2cfb5326027bb3-300x225.jpg)
 
 			
 		
@@ -223,11 +223,11 @@ wp_url: "https://cycle-z.com/blog/2022/05/27/yumeshimakaido-iwagi-bridge-2022-5-
 		
 		
 			
-				![岩城橋](https://cycle-z.com/wp-content/uploads/2022/05/9a45069e7925eb4d30f395e9cf45e08e-300x225.jpg)
+				![岩城橋](/images/wp/2022-05-9a45069e7925eb4d30f395e9cf45e08e-300x225.jpg)
 
 			
 			
-				![岩城橋2](https://cycle-z.com/wp-content/uploads/2022/05/c3b10fb4737b3d517939060daf105178-300x225.jpg)
+				![岩城橋2](/images/wp/2022-05-c3b10fb4737b3d517939060daf105178-300x225.jpg)
 
 			
 		
@@ -254,11 +254,11 @@ wp_url: "https://cycle-z.com/blog/2022/05/27/yumeshimakaido-iwagi-bridge-2022-5-
 
 帰りのフェリーの時間まで、休憩がてらチキンバーを食べたりしながらのんびり過ごしました。
 
-![チキンバー](https://cycle-z.com/wp-content/uploads/2022/05/3e67b405dbf34a9987048e97bcdbd52d-768x1024.jpg)
+![チキンバー](/images/wp/2022-05-3e67b405dbf34a9987048e97bcdbd52d-768x1024.jpg)
 
 最後はゆめしま海道にサヨナラをして、因島の集合場所の重井西港の駐車場までまっすぐ帰りました。
 
-![重井西港集合](https://cycle-z.com/wp-content/uploads/2022/05/a9d4c99cbedb3385d3d44d1f367d4841-1024x768.jpg)
+![重井西港集合](/images/wp/2022-05-a9d4c99cbedb3385d3d44d1f367d4841-1024x768.jpg)
 
 解散後の帰り方も自由に選択できたので、尾道まで自転車を走らせて輪行で帰りました！
 
@@ -266,7 +266,7 @@ wp_url: "https://cycle-z.com/blog/2022/05/27/yumeshimakaido-iwagi-bridge-2022-5-
 
 途中で食べたパンも美味しく頂きました。
 
-![パン屋](https://cycle-z.com/wp-content/uploads/2022/05/835e401fcf4e34945f7c3ad32513e716-1024x768.jpg)
+![パン屋](/images/wp/2022-05-835e401fcf4e34945f7c3ad32513e716-1024x768.jpg)
 
 甘いは美味い！昔ながらの菓子パンならこれだよねぇ！
 
@@ -297,6 +297,6 @@ wp_url: "https://cycle-z.com/blog/2022/05/27/yumeshimakaido-iwagi-bridge-2022-5-
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

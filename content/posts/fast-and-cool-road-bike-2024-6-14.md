@@ -84,7 +84,7 @@ wp_url: "https://cycle-z.com/blog/2024/06/14/fast-and-cool-road-bike-2024-6-14/"
 
  
 
-![](https://cycle-z.com/wp-content/uploads/2024/06/f0925c47910fd5f270347426a469b803-1024x683.jpg)
+![](/images/wp/2024-06-f0925c47910fd5f270347426a469b803-1024x683.jpg)
 
 ### 完成！！
 
@@ -130,19 +130,19 @@ wp_url: "https://cycle-z.com/blog/2024/06/14/fast-and-cool-road-bike-2024-6-14/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2024/06/4c53ae19cd35afd1190f4956d19ec6cd-1-724x1024.jpg)
+[![](/images/wp/2024-06-4c53ae19cd35afd1190f4956d19ec6cd-1-724x1024.jpg)
 
-](https://cycle-z.com/wp-content/uploads/2024/06/4c53ae19cd35afd1190f4956d19ec6cd-1.jpg)画像をクリックすると大きく表示されます。
+](/images/wp/2024-06-4c53ae19cd35afd1190f4956d19ec6cd-1.jpg)画像をクリックすると大きく表示されます。
 
-![](https://cycle-z.com/wp-content/uploads/2024/06/492e28ca990bd4d16cc19b56ab2d111f-1-556x1024.jpg)
+![](/images/wp/2024-06-492e28ca990bd4d16cc19b56ab2d111f-1-556x1024.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2024/06/369709635dc7147cc1cd920ceaf643a1-1-555x1024.jpg)
+ ![](/images/wp/2024-06-369709635dc7147cc1cd920ceaf643a1-1-555x1024.jpg)
 
-![](https://cycle-z.com/wp-content/uploads/2024/06/3b327be38f1d78ee76b0a795889a76be-1024x683.jpg)
+![](/images/wp/2024-06-3b327be38f1d78ee76b0a795889a76be-1024x683.jpg)
 
-  ![](https://cycle-z.com/wp-content/uploads/2024/06/d8317fbf70cfc7c322bbe18702a24952-1024x683.jpg)
+  ![](/images/wp/2024-06-d8317fbf70cfc7c322bbe18702a24952-1024x683.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2024/06/9d44b5217ed9d8bba89d9351d20fc50e-1024x683.jpg)
+ ![](/images/wp/2024-06-9d44b5217ed9d8bba89d9351d20fc50e-1024x683.jpg)
 
 こちらの現物はCycleZに置いていますので、もっとじっくり見たい方は店舗までぜひ！！！お越しください！
 
@@ -162,6 +162,6 @@ wp_url: "https://cycle-z.com/blog/2024/06/14/fast-and-cool-road-bike-2024-6-14/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

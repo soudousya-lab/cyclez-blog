@@ -18,7 +18,7 @@ wp_url: "https://cycle-z.com/blog/2023/07/08/from-okayama-to-tottori-2023-7-8/"
 
 2人なら行けるだろうという余裕の気持ちで、遅めの9時にサイクルZに集合しました。
 
-![Z集合](https://cycle-z.com/wp-content/uploads/2023/07/e48e91a6c71fad607cc14b8687c51730-1024x768.jpg)
+![Z集合](/images/wp/2023-07-e48e91a6c71fad607cc14b8687c51730-1024x768.jpg)
 
 今回はまずお昼ごはんに食べるために、お客様に教えていただいた「ファミリーレストランつぼや」を目指します！
 
@@ -46,22 +46,22 @@ wp_url: "https://cycle-z.com/blog/2023/07/08/from-okayama-to-tottori-2023-7-8/"
 		
 		
 			
-				![輪行袋](https://cycle-z.com/wp-content/uploads/2023/07/3b344661fadeec978a7f5eeb13165b32-768x1024.jpg)
+				![輪行袋](/images/wp/2023-07-3b344661fadeec978a7f5eeb13165b32-768x1024.jpg)
 
 			
 			
-				![輪行袋収納服](https://cycle-z.com/wp-content/uploads/2023/07/58d040bbfd581ca38ea139f947296ad3-768x1024.jpg)
+				![輪行袋収納服](/images/wp/2023-07-58d040bbfd581ca38ea139f947296ad3-768x1024.jpg)
 
 			
 			
-				![輪行袋収納](https://cycle-z.com/wp-content/uploads/2023/07/0ecab2b51859ed6bfc20bc703c539ce1-768x1024.jpg)
+				![輪行袋収納](/images/wp/2023-07-0ecab2b51859ed6bfc20bc703c539ce1-768x1024.jpg)
 
 			
 		
 
 サイクルZからのスタートは松岡さんがいつも初心者講習会で使うコースを行くことにしました。
 
-![初心者講習の道](https://cycle-z.com/wp-content/uploads/2023/07/6de7232181701ea576e300650d665be8-768x1024.jpg)
+![初心者講習の道](/images/wp/2023-07-6de7232181701ea576e300650d665be8-768x1024.jpg)
 
 旭川へ行く時はこのルート取りが優秀です。
 
@@ -75,7 +75,7 @@ wp_url: "https://cycle-z.com/blog/2023/07/08/from-okayama-to-tottori-2023-7-8/"
 
 2人共食べたのはホルモン定食！
 
-![つぼやホルモン定食](https://cycle-z.com/wp-content/uploads/2023/07/4cb2a20ac9c6dcfb0972a7096d24c453-1024x768.jpg)
+![つぼやホルモン定食](/images/wp/2023-07-4cb2a20ac9c6dcfb0972a7096d24c453-1024x768.jpg)
 
 「つぼやのホルモン定食は美味いぞ！」とお客様から太鼓判を押されていたので他の選択肢はありませんでした。
 
@@ -92,7 +92,7 @@ wp_url: "https://cycle-z.com/blog/2023/07/08/from-okayama-to-tottori-2023-7-8/"
 
 この後は、満腹のまま北上して奈義町方面を目指しました。
 
-![つぼやの後の道](https://cycle-z.com/wp-content/uploads/2023/07/52f14c04cb0edf0993cf0acabb53c275-768x1024.jpg)
+![つぼやの後の道](/images/wp/2023-07-52f14c04cb0edf0993cf0acabb53c275-768x1024.jpg)
 
 奈義山の麓を通れば、山に登ることもなく鳥取側に抜けることができます！
 
@@ -100,7 +100,7 @@ wp_url: "https://cycle-z.com/blog/2023/07/08/from-okayama-to-tottori-2023-7-8/"
 
 奈義町を目指して走っている途中でたまたま見かけたお店「ファミリートコ」。
 
-![ファミリートコ](https://cycle-z.com/wp-content/uploads/2023/07/aa7fb72127190b1f28e96bc63bc41892-768x1024.jpg)
+![ファミリートコ](/images/wp/2023-07-aa7fb72127190b1f28e96bc63bc41892-768x1024.jpg)
 
 外観がオシャレなのでどんなお店かチェックしていると今日は定休日だったみたいです。
 
@@ -110,18 +110,18 @@ wp_url: "https://cycle-z.com/blog/2023/07/08/from-okayama-to-tottori-2023-7-8/"
 
 定休日にも関わらず快く出していただいたパンとジュースは最高の味でした。
 
-![カフェトコパンとドリンク](https://cycle-z.com/wp-content/uploads/2023/07/6f9e8e71ab34e83abc6efed11e5e5bb1-768x1024.jpg)
+![カフェトコパンとドリンク](/images/wp/2023-07-6f9e8e71ab34e83abc6efed11e5e5bb1-768x1024.jpg)
 
 バイカーの方々もよく立ち寄るお店とのことで、雰囲気もとても良く奈義町に行く際はまた訪れたいお店です！
 
-![ファミリートコ内装](https://cycle-z.com/wp-content/uploads/2023/07/87ab9e0c33cbe6f61222653ecbde7096-1024x768.jpg)
+![ファミリートコ内装](/images/wp/2023-07-87ab9e0c33cbe6f61222653ecbde7096-1024x768.jpg)
 
 ■ファミリートコ
 [https://maps.app.goo.gl/2P9WTX8zpgcvCNEp9?g_st=ic](https://maps.app.goo.gl/2P9WTX8zpgcvCNEp9?g_st=ic)
 
 奈義山の周りも景色が素晴らしく、バイカーの方々がこの地を訪れるのも納得です。
 
-![奈義山が見える](https://cycle-z.com/wp-content/uploads/2023/07/ee32444f7f3a209fca1e0b2417f56769-768x1024.jpg)
+![奈義山が見える](/images/wp/2023-07-ee32444f7f3a209fca1e0b2417f56769-768x1024.jpg)
 
 もちろん自転車も走りやすいです！
 
@@ -139,11 +139,11 @@ wp_url: "https://cycle-z.com/blog/2023/07/08/from-okayama-to-tottori-2023-7-8/"
 
 回転寿司のお店で、名前は北海道ですが所在地は鳥取です！
 
-![北海道寿司](https://cycle-z.com/wp-content/uploads/2023/07/9020db378c9f6f412e73f6018bc2c012-768x1024.jpg)
+![北海道寿司](/images/wp/2023-07-9020db378c9f6f412e73f6018bc2c012-768x1024.jpg)
 
 やはり日本海のお寿司はめちゃくちゃ美味しいです！疲れた身体に染み渡っていきます。
 
-![北海道寿司2](https://cycle-z.com/wp-content/uploads/2023/07/ebdc1ee77d2ea071035319415fc7ac32-768x1024.jpg)
+![北海道寿司2](/images/wp/2023-07-ebdc1ee77d2ea071035319415fc7ac32-768x1024.jpg)
 
 鳥取を訪れた際は、ぜひ海鮮を味わってみてください！
 
@@ -176,11 +176,11 @@ wp_url: "https://cycle-z.com/blog/2023/07/08/from-okayama-to-tottori-2023-7-8/"
 		
 		
 			
-				![鳥取から帰るぞ2](https://cycle-z.com/wp-content/uploads/2023/07/9df3715d57f87cc7736eb8b4215f6f81-1024x768.jpg)
+				![鳥取から帰るぞ2](/images/wp/2023-07-9df3715d57f87cc7736eb8b4215f6f81-1024x768.jpg)
 
 			
 			
-				![鳥取から帰るぞ](https://cycle-z.com/wp-content/uploads/2023/07/d66259888555d4260545bf70fe8f71c1-1024x768.jpg)
+				![鳥取から帰るぞ](/images/wp/2023-07-d66259888555d4260545bf70fe8f71c1-1024x768.jpg)
 
 			
 		
@@ -192,7 +192,7 @@ wp_url: "https://cycle-z.com/blog/2023/07/08/from-okayama-to-tottori-2023-7-8/"
 
 輪行の自転車を置くスペースも十分にあり、2時間しっかり寝て、疲れを癒して岡山駅で解散しました。
 
-![終点岡山駅解散2](https://cycle-z.com/wp-content/uploads/2023/07/6346584745642887159f0e0906299871-768x1024.jpg)
+![終点岡山駅解散2](/images/wp/2023-07-6346584745642887159f0e0906299871-768x1024.jpg)
 
  
 
@@ -224,11 +224,11 @@ wp_url: "https://cycle-z.com/blog/2023/07/08/from-okayama-to-tottori-2023-7-8/"
 		
 		
 			
-				![つぼやの後のエモい駅](https://cycle-z.com/wp-content/uploads/2023/07/5b126c8ad3d99b67458e06bfb2def859-1024x768.jpg)
+				![つぼやの後のエモい駅](/images/wp/2023-07-5b126c8ad3d99b67458e06bfb2def859-1024x768.jpg)
 
 			
 			
-				![鳥取市近くに下ったところにあった休憩所](https://cycle-z.com/wp-content/uploads/2023/07/0dc56e555feb432bc1597a359b4915ff-1024x768.jpg)
+				![鳥取市近くに下ったところにあった休憩所](/images/wp/2023-07-0dc56e555feb432bc1597a359b4915ff-1024x768.jpg)
 
 			
 		
@@ -244,6 +244,6 @@ wp_url: "https://cycle-z.com/blog/2023/07/08/from-okayama-to-tottori-2023-7-8/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

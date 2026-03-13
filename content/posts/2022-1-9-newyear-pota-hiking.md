@@ -38,7 +38,7 @@ wp_url: "https://cycle-z.com/blog/2021/12/23/2022-1-9-newyear-pota-hiking/"
 
 サイクルZ（14:30頃）
 
-![2022初詣ポタ&磐座ハイキング](https://cycle-z.com/wp-content/uploads/2021/12/2022hatsumoude-pota-hiking.jpg)
+![2022初詣ポタ&磐座ハイキング](/images/wp/2021-12-2022hatsumoude-pota-hiking.jpg)
 
 （注）
 

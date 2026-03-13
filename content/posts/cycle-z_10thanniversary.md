@@ -18,14 +18,14 @@ wp_url: "https://cycle-z.com/blog/2025/09/30/cycle-z_10thanniversary/"
 
 今後ともcycleZをどうぞよろしくお願いいたします！！
 
-![cycleZ day 10周年イベント](https://cycle-z.com/wp-content/uploads/2025/10/cycleZ10.jpg)
+![cycleZ day 10周年イベント](/images/wp/2025-10-cycleZ10.jpg)
 
 Cycle Zは2025年10月に創業10周年を迎えます🎊
 日頃のご愛顧への感謝を込めて、特別なイベントを開催いたします！
 試乗会・模擬レース・ビンゴ大会など盛りだくさん！！
 見て、乗って、体験できる盛りだくさんの内容をぜひお楽しみください♪
 
-![](https://cycle-z.com/wp-content/uploads/2025/09/IMG_6416.jpg)
+![](/images/wp/2025-09-IMG_6416.jpg)
 
 **📅 cycleZ 創業10周年記念 創業祭イベント cycleZ day**
 
@@ -35,7 +35,7 @@ Cycle Zは2025年10月に創業10周年を迎えます🎊
 アクセス方法：**[https://nadasaki.com/guide](https://nadasaki.com/guide)
 **※10周年イベント開催のためお店はお休みとなります。ご不便をおかけいたしますが何卒よろしくお願いいたします。
 
-![](https://cycle-z.com/wp-content/uploads/2025/09/b7c27642d80c4624f2c4b76d75b11c6f.jpg)
+![](/images/wp/2025-09-b7c27642d80c4624f2c4b76d75b11c6f.jpg)
 
 **🎉実施コンテンツ タイムスケジュール**
 

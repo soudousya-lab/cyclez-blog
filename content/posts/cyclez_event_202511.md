@@ -20,4 +20,4 @@ wp_url: "https://cycle-z.com/blog/2025/11/01/cyclez_event_202511/"
 参加応募フォームは下記URLからお願いします🙇‍♂️
 
 参加応募は**[こちら](https://docs.google.com/forms/d/e/1FAIpQLScVTI0-SqzG4ZxIEKk0EsMIVThDMa-Egcf0KTzQATWJqRC7Fw/viewform?usp=header)**から
-![](https://cycle-z.com/wp-content/uploads/2025/11/Image-80.jpg)
+![](/images/wp/2025-11-Image-80.jpg)

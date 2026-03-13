@@ -14,4 +14,4 @@ wp_url: "https://cycle-z.com/blog/2021/10/18/info-118/"
 
 和気あいあいと和気、吉永の丘陵地で紅葉RUNを一緒に楽しみましょう！
 
-![2021紅葉RUN](https://cycle-z.com/wp-content/uploads/2021/10/2021-autumn-event.jpg)
+![2021紅葉RUN](/images/wp/2021-10-2021-autumn-event.jpg)

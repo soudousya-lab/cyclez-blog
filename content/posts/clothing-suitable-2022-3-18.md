@@ -44,14 +44,14 @@ wp_url: "https://cycle-z.com/blog/2022/03/18/clothing-suitable-2022-3-18/"
 		
 		
 			
-				![ボトムスの裾](https://cycle-z.com/wp-content/uploads/2022/03/05241b66a11a43e5a5c672154c324429-225x300.jpg)
+				![ボトムスの裾](/images/wp/2022-03-05241b66a11a43e5a5c672154c324429-225x300.jpg)
 
 			
 				
 				裾止め前
 				
 			
-				![裾止めバンド](https://cycle-z.com/wp-content/uploads/2022/03/8935e38743f450cf6970cc65ce8d6367-225x300.jpg)
+				![裾止めバンド](/images/wp/2022-03-8935e38743f450cf6970cc65ce8d6367-225x300.jpg)
 
 			
 				
@@ -112,6 +112,6 @@ wp_url: "https://cycle-z.com/blog/2022/03/18/clothing-suitable-2022-3-18/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

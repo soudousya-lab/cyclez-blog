@@ -22,7 +22,7 @@ Chapter2の取扱してるゼーーーット！！
 
  
 
-![](https://cycle-z.com/wp-content/uploads/2024/08/IMG_20240812_110834-1024x768.jpg)
+![](/images/wp/2024-08-IMG_20240812_110834-1024x768.jpg)
 
 Chapter2は元々ヨットの盛んなニュージーランドで産まれたブランドです！
 
@@ -56,7 +56,7 @@ Chapter2は元々ヨットの盛んなニュージーランドで産まれたブ
 
 トライブ柄のようなデザインが施されているモデルが特にスタッフ仙田は大好きです！最高！
 
-[![](https://cycle-z.com/wp-content/uploads/2024/08/0a9fae7f8f064ca9b39a4ae9ca756f81-1024x606.png)
+[![](/images/wp/2024-08-0a9fae7f8f064ca9b39a4ae9ca756f81-1024x606.png)
 
 ](https://jp-jp.chapter2bikes.com/product/toa-white-gold-koura)画像をクリックすると商品詳細をご覧いただけます。
 
@@ -72,7 +72,7 @@ Chapter2は元々ヨットの盛んなニュージーランドで産まれたブ
 
  
 
-![](https://cycle-z.com/wp-content/uploads/2024/08/IMG_20240812_111003-1024x768.jpg)
+![](/images/wp/2024-08-IMG_20240812_111003-1024x768.jpg)
 
 今回仙田が買った「KAHA」は、最先端なグラベルロードバイクになります。
 
@@ -96,9 +96,9 @@ Chapter2は元々ヨットの盛んなニュージーランドで産まれたブ
 
  
 
-![](https://cycle-z.com/wp-content/uploads/2024/08/IMG_20240812_110753-1024x768.jpg)
+![](/images/wp/2024-08-IMG_20240812_110753-1024x768.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2024/08/IMG_20240812_111219-1024x768.jpg)
+ ![](/images/wp/2024-08-IMG_20240812_111219-1024x768.jpg)
 
 写真でも分かる通り隙間がめちゃくちゃあいているので、太いタイヤを装着した状態でも早く乗ってみたいですね！
 
@@ -110,9 +110,9 @@ Chapter2は元々ヨットの盛んなニュージーランドで産まれたブ
 
  
 
-![](https://cycle-z.com/wp-content/uploads/2024/08/IMG_20240812_110915-1024x768.jpg)
+![](/images/wp/2024-08-IMG_20240812_110915-1024x768.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2024/08/IMG_20240812_110844-1024x768.jpg)
+ ![](/images/wp/2024-08-IMG_20240812_110844-1024x768.jpg)
 
 ダボ穴もいっぱい付いているので、キャリアやラックもつけて走りたいものです！
 
@@ -126,9 +126,9 @@ Chapter2では多くの限定カラーがリリースされていますが、毎
 
 泥をぶち撒けたようなデザインは正にグラベルに相応しい色合いです。
 
-![](https://cycle-z.com/wp-content/uploads/2024/08/IMG_20240812_110822-1024x768.jpg)
+![](/images/wp/2024-08-IMG_20240812_110822-1024x768.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2024/08/IMG_20240812_110953-1024x768.jpg)
+ ![](/images/wp/2024-08-IMG_20240812_110953-1024x768.jpg)
 
  
 
@@ -148,7 +148,7 @@ Chapter2では多くの限定カラーがリリースされていますが、毎
 
 スタッフ仙田のバイクはサイクルZに来れば試乗も出来ますので、是非体感しにきてください！
 
-![](https://cycle-z.com/wp-content/uploads/2024/08/IMG_20240812_110932-1024x768.jpg)
+![](/images/wp/2024-08-IMG_20240812_110932-1024x768.jpg)
 
  
 
@@ -166,6 +166,6 @@ Chapter2では多くの限定カラーがリリースされていますが、毎
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

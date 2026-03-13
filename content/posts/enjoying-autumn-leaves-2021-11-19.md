@@ -38,11 +38,11 @@ wp_url: "https://cycle-z.com/blog/2021/11/19/enjoying-autumn-leaves-2021-11-19/"
 
 この人数が揃うとさすがの壮観！！
 
-![紅葉RUN集合写真](https://cycle-z.com/wp-content/uploads/2021/11/3062f637502116144378e5c20340f9de-1024x768.jpg)
+![紅葉RUN集合写真](/images/wp/2021-11-3062f637502116144378e5c20340f9de-1024x768.jpg)
 
 ここからは、和気神社に向かい、ゆったり神社を巡るチームと、紅葉を眺めながらサイクリングを楽しむチームの2組に分かれてサイクリング。
 
-![神社巡りチームの記念撮影](https://cycle-z.com/wp-content/uploads/2021/11/42afc47d6ebb6c644e202e284ff6e618-1024x498.jpg)
+![神社巡りチームの記念撮影](/images/wp/2021-11-42afc47d6ebb6c644e202e284ff6e618-1024x498.jpg)
 
 今回のメインは、上り坂は少しありますが、そこを越えれば綺麗な紅葉と気持ちの良い下り坂を楽しめるサイクリングコースでしたので、40名ほどは私仙田のチームに。
 
@@ -64,7 +64,7 @@ wp_url: "https://cycle-z.com/blog/2021/11/19/enjoying-autumn-leaves-2021-11-19/"
 
 皆で坂を下り、紅葉本番のあかね橋に来ました。
 
-![あかね橋](https://cycle-z.com/wp-content/uploads/2021/11/d0adccb977f9a5761bf6d38fe289de0f-768x1024.jpg)
+![あかね橋](/images/wp/2021-11-d0adccb977f9a5761bf6d38fe289de0f-768x1024.jpg)
 
 あかね橋付近は紅葉がだいぶ進んでおり、観光のタイミングとして最適でした！
 
@@ -86,7 +86,7 @@ wp_url: "https://cycle-z.com/blog/2021/11/19/enjoying-autumn-leaves-2021-11-19/"
 
 集合写真も撮影させていただきました。この人数は圧巻ですね！
 
-![レ・マーニさんのレンガ広場で総勢55名の集合写真](https://cycle-z.com/wp-content/uploads/2021/11/b32f17e12f01d5116a2b745106dc23a0-1024x576.jpg)
+![レ・マーニさんのレンガ広場で総勢55名の集合写真](/images/wp/2021-11-b32f17e12f01d5116a2b745106dc23a0-1024x576.jpg)
 
 自社でビール製造をされていて、年に2回ほどビール半額祭を開催しているので、ぜひ美味しいピザと合わせて堪能しに行ってみてください！
 
@@ -116,11 +116,11 @@ wp_url: "https://cycle-z.com/blog/2021/11/19/enjoying-autumn-leaves-2021-11-19/"
 		
 		
 			
-				![レストラン レ・マーニさんのピザ](https://cycle-z.com/wp-content/uploads/2021/11/e639c985ee2f12b08e2dc525bc0d0601-300x225.jpg)
+				![レストラン レ・マーニさんのピザ](/images/wp/2021-11-e639c985ee2f12b08e2dc525bc0d0601-300x225.jpg)
 
 			
 			
-				![ヤギと記念撮影](https://cycle-z.com/wp-content/uploads/2021/11/1499b10419683245a85f3aff0d134db7-225x300.jpg)
+				![ヤギと記念撮影](/images/wp/2021-11-1499b10419683245a85f3aff0d134db7-225x300.jpg)
 
 			
 		
@@ -160,6 +160,6 @@ wp_url: "https://cycle-z.com/blog/2021/11/19/enjoying-autumn-leaves-2021-11-19/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

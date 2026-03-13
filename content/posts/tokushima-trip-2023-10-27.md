@@ -24,19 +24,19 @@ wp_url: "https://cycle-z.com/blog/2023/10/27/tokushima-trip-2023-10-27/"
 
 左上のサドルバッグに着替えを一式詰めています。
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/2cbc3a5816eaa8065237f0ac001ce090-1-1024x717.jpg)
+![](/images/wp/2023-10-2cbc3a5816eaa8065237f0ac001ce090-1-1024x717.jpg)
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/4c5a5bc5e61b5f979824c5385746ca11-1024x576.jpg)
+![](/images/wp/2023-10-4c5a5bc5e61b5f979824c5385746ca11-1024x576.jpg)
 
 更に今の時期は寒暖差も激しいので、夏の暑さと秋の涼しさどちらにも対応出来るような装備にしました。
 
 レッグウォーマーとウィンドブレーカー、もしくはジレがあると対応しやすいので朝は着用していきました！
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/5e11437e792c95161d9eae0904047985-1024x768.jpg)
+![](/images/wp/2023-10-5e11437e792c95161d9eae0904047985-1024x768.jpg)
 
 自転車はサドルバッグをつけてこのような状態です。
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/da673c21d62f6ce5693c7271a43b1fe4-1024x768.jpg)
+![](/images/wp/2023-10-da673c21d62f6ce5693c7271a43b1fe4-1024x768.jpg)
 
  
 
@@ -50,23 +50,23 @@ wp_url: "https://cycle-z.com/blog/2023/10/27/tokushima-trip-2023-10-27/"
 
 輪行の場合、電車の出発20分前ぐらいに駅に到着していれば、余裕を持って準備が出来ると思います（輪行袋の種類や慣れで変わるので、あくまでも目安として）。
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/943c306ee67f32d05277257f2cc9fab4-768x1024.jpg)
+![](/images/wp/2023-10-943c306ee67f32d05277257f2cc9fab4-768x1024.jpg)
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/ca58782a0a7ab007349234054d7689c4-1024x768.jpg)
+![](/images/wp/2023-10-ca58782a0a7ab007349234054d7689c4-1024x768.jpg)
 
 徳島までは、途中高松での乗り換えを含めて2時間強、電車に揺られて向かいました。
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/fec7b5eae787f405361ed677779cb254-1024x768.jpg)
+![](/images/wp/2023-10-fec7b5eae787f405361ed677779cb254-1024x768.jpg)
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/47674d6afa7c2d7f008c88cd7a1579f8-1-834x1024.jpg)
+![](/images/wp/2023-10-47674d6afa7c2d7f008c88cd7a1579f8-1-834x1024.jpg)
 
  
 
 9時30分頃には徳島駅に到着！既に日差しがしっかり照り出していました。
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/7a3c3be4059f18645b3f57777638eba1-1024x768.jpg)
+![](/images/wp/2023-10-7a3c3be4059f18645b3f57777638eba1-1024x768.jpg)
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/307bca1fba5034f1078f505e0cb21948-1024x768.jpg)
+![](/images/wp/2023-10-307bca1fba5034f1078f505e0cb21948-1024x768.jpg)
 
  
 
@@ -78,7 +78,7 @@ wp_url: "https://cycle-z.com/blog/2023/10/27/tokushima-trip-2023-10-27/"
 
 徳島に降り立ち、いざ走り出そうと思ったのですが、既に2人ともお腹が空いていたので何かお店がないかと探し回っていたところ、徳島ラーメンのお店を発見！
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/2fc93eece91e2bb0f5e9ed0e003d5a85-1024x768.jpg)
+![](/images/wp/2023-10-2fc93eece91e2bb0f5e9ed0e003d5a85-1024x768.jpg)
 
 早速徳島らしいものを見つけてテンションが上がりました。
 
@@ -86,9 +86,9 @@ wp_url: "https://cycle-z.com/blog/2023/10/27/tokushima-trip-2023-10-27/"
 
 こちらのお店の徳島ラーメンは、生卵と豚バラ肉のトッピングが定番なようで、更にご飯も頼めるようになっていました。
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/460972d076982cefd5ee8cd784f88f5c-768x1024.jpg)
+![](/images/wp/2023-10-460972d076982cefd5ee8cd784f88f5c-768x1024.jpg)
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/ac1b086d5959b7945b201212f7b3dee9-768x1024.jpg)
+![](/images/wp/2023-10-ac1b086d5959b7945b201212f7b3dee9-768x1024.jpg)
 
 ご飯はラーメンを食べた後に、卵が絡んだ醤油ベースのスープに投入して、卵かけご飯の替え飯ができます。
 
@@ -112,23 +112,23 @@ wp_url: "https://cycle-z.com/blog/2023/10/27/tokushima-trip-2023-10-27/"
 
 眉山の麓を通ってみて驚いたことは、神社仏閣の多さ。
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/1a8303ff3bb769b9ee6e0f02386fb8b6-576x1024.jpg)
+![](/images/wp/2023-10-1a8303ff3bb769b9ee6e0f02386fb8b6-576x1024.jpg)
 
 四国八十八ヶ所霊場もこの辺りに多く点在しているのだろうと思いを馳せながら、寺町を散策しました。
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/13804d5b8bc7365b7e47c5bef30fe621-1024x768.jpg)
+![](/images/wp/2023-10-13804d5b8bc7365b7e47c5bef30fe621-1024x768.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2023/10/e8adcb4cd42d9904afde4d0aaf70a347-1024x576.jpg)
+ ![](/images/wp/2023-10-e8adcb4cd42d9904afde4d0aaf70a347-1024x576.jpg)
 
 参拝するところは、多くが麓から少し登った場所にあるので、急こう配の坂道を上がっていくことも！
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/6953d728fc54cbd1c7979e146b9d6a04-768x1024.jpg)
+![](/images/wp/2023-10-6953d728fc54cbd1c7979e146b9d6a04-768x1024.jpg)
 
 更に、公園も併設されてるところが多く遊具ではしゃぐ一幕もありました。
 
- ![](https://cycle-z.com/wp-content/uploads/2023/10/cb5ab07e8fb0922618c1814adfb0c927-768x1024.jpg)
+ ![](/images/wp/2023-10-cb5ab07e8fb0922618c1814adfb0c927-768x1024.jpg)
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/952c29369830925bc0478ce58e7f6af3-576x1024.jpg)
+![](/images/wp/2023-10-952c29369830925bc0478ce58e7f6af3-576x1024.jpg)
 
  
 
@@ -138,17 +138,17 @@ wp_url: "https://cycle-z.com/blog/2023/10/27/tokushima-trip-2023-10-27/"
 
 眉山の寺町と住宅街を走り抜けていると、開放感のあるテラス席や遊具もある大きなパン屋さんを発見！
 
- ![](https://cycle-z.com/wp-content/uploads/2023/10/b7278e67616302bb72c3b288f0c6be53-1024x768.jpg)
+ ![](/images/wp/2023-10-b7278e67616302bb72c3b288f0c6be53-1024x768.jpg)
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/b3d76053b0595f22d5d0d5a63310e457-1-1024x768.jpg)
+![](/images/wp/2023-10-b3d76053b0595f22d5d0d5a63310e457-1-1024x768.jpg)
 
 つい30分前にラーメンを食べたばかりでしたが迷わず入店し、食べ切れる分だけ購入することにしました。
 
 種類が豊富だったので非常に悩みましたが、ちょうどフランスパンが焼きたてだったのでミルクフランスと、他にも厳選したパンをいただきました。
 
- ![](https://cycle-z.com/wp-content/uploads/2023/10/91b8ae0cc7b0338ef723661adec847e3-768x1024.jpg)
+ ![](/images/wp/2023-10-91b8ae0cc7b0338ef723661adec847e3-768x1024.jpg)
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/22e8397b1ed9b04c304748d35b5a4fcd-799x1024.jpg)
+![](/images/wp/2023-10-22e8397b1ed9b04c304748d35b5a4fcd-799x1024.jpg)
 
 次々とお客さんが来る人気店！次回はお腹が空いている時に来たいと思います！
 
@@ -174,15 +174,15 @@ wp_url: "https://cycle-z.com/blog/2023/10/27/tokushima-trip-2023-10-27/"
 
 その道中で月見ヶ丘海浜公園という浜辺を見つけ、気になって立ち寄りました。
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/99984e6dc75f609d430fd1b57c045eb1-1024x362.jpg)
+![](/images/wp/2023-10-99984e6dc75f609d430fd1b57c045eb1-1024x362.jpg)
 
 走って火照った脚を冷やすには最高の場所で、しばし時間を忘れて散歩がてらビーチグラスを探したり、サンライズ立ちで撮影会をしたりと、のんびり過ごしました。
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/9513d49842ad2309af4e89193c65e54b-671x1024.jpg)
+![](/images/wp/2023-10-9513d49842ad2309af4e89193c65e54b-671x1024.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2023/10/ce1455ab6fd564f19d884bf55d80c8ec-576x1024.jpg)
+ ![](/images/wp/2023-10-ce1455ab6fd564f19d884bf55d80c8ec-576x1024.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2023/10/53d04b2d94b3a5bc5687e54bc1ad1e18-576x1024.jpg)
+ ![](/images/wp/2023-10-53d04b2d94b3a5bc5687e54bc1ad1e18-576x1024.jpg)
 
  
 
@@ -200,17 +200,17 @@ wp_url: "https://cycle-z.com/blog/2023/10/27/tokushima-trip-2023-10-27/"
 
 再び走り出しましたが今度は大きな道の駅を見つけて、またしても立ち寄ることにしました。
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/e8f87fa3710dbd3ca6eed6b9dace278e-768x1024.jpg)
+![](/images/wp/2023-10-e8f87fa3710dbd3ca6eed6b9dace278e-768x1024.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2023/10/53c844cb0cf7bb52a82fa2f3653f90e5-1024x768.jpg)
+ ![](/images/wp/2023-10-53c844cb0cf7bb52a82fa2f3653f90e5-1024x768.jpg)
 
 鳴門といえば鳴門金時！最高に美味しい時期に金時芋スイーツをいただきました。
 
- ![](https://cycle-z.com/wp-content/uploads/2023/10/2eaf2ed836fcf8d3d0ff306ebfe2f403-768x1024.jpg)
+ ![](/images/wp/2023-10-2eaf2ed836fcf8d3d0ff306ebfe2f403-768x1024.jpg)
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/d3951abbc86ec0c94893e853318243ed-576x1024.jpg)
+![](/images/wp/2023-10-d3951abbc86ec0c94893e853318243ed-576x1024.jpg)
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/1f900d897ef1888b2ab44a157f4a638c-768x1024.jpg)
+![](/images/wp/2023-10-1f900d897ef1888b2ab44a157f4a638c-768x1024.jpg)
 
  
 
@@ -228,17 +228,17 @@ wp_url: "https://cycle-z.com/blog/2023/10/27/tokushima-trip-2023-10-27/"
 
 序盤でのんびりし過ぎてしまい、すっかり夕方になってしまいましたが、ようやく鳴門に到着。
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/7ec53e2764d9ca7f75a2a1e042655002-1024x768.jpg)
+![](/images/wp/2023-10-7ec53e2764d9ca7f75a2a1e042655002-1024x768.jpg)
 
 そして鳴門といえば、やはり渦潮！
 
 展望台まで登り渦潮を探したところ、巻いている様子は少し見える程度でしたが、眺めは絶景でした。
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/a86428728df125e4a1ecba4da444fecc-768x1024.jpg)
+![](/images/wp/2023-10-a86428728df125e4a1ecba4da444fecc-768x1024.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2023/10/c85a4abbb6fcdea56b569b74d2e3f6e5-768x1024.jpg)
+ ![](/images/wp/2023-10-c85a4abbb6fcdea56b569b74d2e3f6e5-768x1024.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2023/10/4952a7923339463968b233a48757a6d0-768x1024.jpg)
+ ![](/images/wp/2023-10-4952a7923339463968b233a48757a6d0-768x1024.jpg)
 
  
 
@@ -248,7 +248,7 @@ wp_url: "https://cycle-z.com/blog/2023/10/27/tokushima-trip-2023-10-27/"
 
 今回鳴門へ向かう際に小鳴門橋側を通ったのですが、車の交通量が多い坂道を登ることになるので、自転車で行くには少々危険な道でした。
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/05846a12f61ce4e15021b88dd3e656f7-768x1024.jpg)
+![](/images/wp/2023-10-05846a12f61ce4e15021b88dd3e656f7-768x1024.jpg)
 
 そこで帰りは小鳴門新橋側を通行したのですが、自転車で通るにはこちら側が走りやすいと感じました。
 
@@ -258,17 +258,17 @@ wp_url: "https://cycle-z.com/blog/2023/10/27/tokushima-trip-2023-10-27/"
 
 そして鳴門スカイラインを通っていた時、ちょうど夕日が沈む時間帯で最高の景色を見ることができました。
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/f36a43aee529a2931b3b53e42ee08a62-1024x768.jpg)
+![](/images/wp/2023-10-f36a43aee529a2931b3b53e42ee08a62-1024x768.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2023/10/e116186a0379c07af14b3649a9f56b88-1024x768.jpg)
+ ![](/images/wp/2023-10-e116186a0379c07af14b3649a9f56b88-1024x768.jpg)
 
- ![](https://cycle-z.com/wp-content/uploads/2023/10/8bb0bf0a606bec14a4d72fb2772b2af7-768x1024.jpg)
+ ![](/images/wp/2023-10-8bb0bf0a606bec14a4d72fb2772b2af7-768x1024.jpg)
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/2b09ba3349de88f6683f553b8ed970d6-768x1024.jpg)
+![](/images/wp/2023-10-2b09ba3349de88f6683f553b8ed970d6-768x1024.jpg)
 
 更にもう少し早い時間帯であれば立ち寄りたかった、おしゃれな洋菓子屋さんも発見！
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/f30592b87d022ce6d4addc2e6a5ade10-1024x768.jpg)
+![](/images/wp/2023-10-f30592b87d022ce6d4addc2e6a5ade10-1024x768.jpg)
 
 予定よりも時間が押してしまい、急いで温泉に向かう為今回は泣く泣く通過することになりました...
 
@@ -290,7 +290,7 @@ wp_url: "https://cycle-z.com/blog/2023/10/27/tokushima-trip-2023-10-27/"
 
 外もすっかり暗くなり、旅行の最終目的地であるスーパー銭湯「あらたえの湯」にようやく到着。
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/00cc0137ff85a3fbe0dece7fc83bff36-768x1024.jpg)
+![](/images/wp/2023-10-00cc0137ff85a3fbe0dece7fc83bff36-768x1024.jpg)
 
 広い施設の中には様々な種類のお風呂やサウナ等があり、今後徳島へ来た時は毎回お世話になりそうな予感です。
 
@@ -314,13 +314,13 @@ wp_url: "https://cycle-z.com/blog/2023/10/27/tokushima-trip-2023-10-27/"
 
 徳島を心ゆくまで満喫した結果、終電で帰ることになりました。温泉で疲れを癒し、満足感が滲み出ている私服の私です。
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/d0d4aeecb0aafb01d7e48d37e7906fc9-576x1024.jpg)
+![](/images/wp/2023-10-d0d4aeecb0aafb01d7e48d37e7906fc9-576x1024.jpg)
 
 ちなみに帰りに履いていた靴は、小さく折り畳める足袋型のもの。
 
 洗濯もでき、最低限の荷物で出掛けたい時に大変便利です！（但し、周りからは靴下で出歩いてると勘違いされる可能性がございますが...）
 
-![](https://cycle-z.com/wp-content/uploads/2023/10/d44d28d4fba35f6002413c5518dca74e-768x1024.jpg)
+![](/images/wp/2023-10-d44d28d4fba35f6002413c5518dca74e-768x1024.jpg)
 
 今回の帰りは自転車を置くスペースが確保でき、寝ながら電車に揺られ帰途につきました。
 
@@ -344,6 +344,6 @@ wp_url: "https://cycle-z.com/blog/2023/10/27/tokushima-trip-2023-10-27/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

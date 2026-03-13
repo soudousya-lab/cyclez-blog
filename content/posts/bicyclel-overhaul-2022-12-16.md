@@ -56,14 +56,14 @@ wp_url: "https://cycle-z.com/blog/2022/12/16/bicyclel-overhaul-2022-12-16/"
 		
 		
 			
-				![チェーンの摩耗チェック](https://cycle-z.com/wp-content/uploads/2022/12/0ff0ef9a647afbe4450ceab4c97ffe1d-768x1024.jpg)
+				![チェーンの摩耗チェック](/images/wp/2022-12-0ff0ef9a647afbe4450ceab4c97ffe1d-768x1024.jpg)
 
 			
 				
 				チェーンの摩耗チェック
 				
 			
-				![チェーンの摩耗チェックの器具](https://cycle-z.com/wp-content/uploads/2022/12/62e029a11fa8c1255651baee09075630-768x1024.jpg)
+				![チェーンの摩耗チェックの器具](/images/wp/2022-12-62e029a11fa8c1255651baee09075630-768x1024.jpg)
 
 			
 				
@@ -79,7 +79,7 @@ wp_url: "https://cycle-z.com/blog/2022/12/16/bicyclel-overhaul-2022-12-16/"
 
 ホイールのリムを挟んで止めるタイプの自転車はシューと呼ばれる部分がすり減っていくので、どこまで使えるか知らずに放置していると、いつの間にかホイールを破壊するまでになっているかもしれません。
 
-![](https://cycle-z.com/wp-content/uploads/2022/12/32026f46277511032ba729cb137da9ea-1-768x1024.jpg)
+![](/images/wp/2022-12-32026f46277511032ba729cb137da9ea-1-768x1024.jpg)
 
 基準としては溝が無くなるまでには交換しないと危ないです。
 
@@ -107,20 +107,20 @@ wp_url: "https://cycle-z.com/blog/2022/12/16/bicyclel-overhaul-2022-12-16/"
 		
 		
 			
-				![ディスクブレーキパッド2](https://cycle-z.com/wp-content/uploads/2022/12/5f050c886293c3297f1a9eb553c1d1a7-768x1024.jpg)
+				![ディスクブレーキパッド2](/images/wp/2022-12-5f050c886293c3297f1a9eb553c1d1a7-768x1024.jpg)
 
 			
 			
-				![ディスクブレーキパッド3](https://cycle-z.com/wp-content/uploads/2022/12/e8183b80527310ad078921510b45fb5b-768x1024.jpg)
+				![ディスクブレーキパッド3](/images/wp/2022-12-e8183b80527310ad078921510b45fb5b-768x1024.jpg)
 
 			
 		
 こちらにも土台とディスクローターを止める部分が存在して、気づいた時には土台部分のみでブレーキしていたなんてこともあります。
 
-![ディスクブレーキローター](https://cycle-z.com/wp-content/uploads/2022/12/dc95113981b34a495ab0acf3f06c2249-768x1024.jpg)
+![ディスクブレーキローター](/images/wp/2022-12-dc95113981b34a495ab0acf3f06c2249-768x1024.jpg)
 
 この隙間に入っていてこの部分が削れます。
-![ディスクブレーキパッドの土台部分](https://cycle-z.com/wp-content/uploads/2022/12/320ab0150391166647e4bc5abf9bb02a-768x1024.jpg)
+![ディスクブレーキパッドの土台部分](/images/wp/2022-12-320ab0150391166647e4bc5abf9bb02a-768x1024.jpg)
 
  
 
@@ -150,21 +150,21 @@ wp_url: "https://cycle-z.com/blog/2022/12/16/bicyclel-overhaul-2022-12-16/"
 		
 		
 			
-				![ブレーキレバーの効き2](https://cycle-z.com/wp-content/uploads/2022/12/a57ab1ec4f6ac3c7bc44ca1e7c3a53a1-768x1024.jpg)
+				![ブレーキレバーの効き2](/images/wp/2022-12-a57ab1ec4f6ac3c7bc44ca1e7c3a53a1-768x1024.jpg)
 
 			
 				
 				正常
 				
 			
-				![ブレーキレバーの効き](https://cycle-z.com/wp-content/uploads/2022/12/aca80f643db3b4e021a36a357905facc-768x1024.jpg)
+				![ブレーキレバーの効き](/images/wp/2022-12-aca80f643db3b4e021a36a357905facc-768x1024.jpg)
 
 			
 				
 				そろそろ危ない
 				
 			
-				![ブレーキレバーの効き3](https://cycle-z.com/wp-content/uploads/2022/12/5ecaf681eba32adc285e7409487d5e4f-1024x768.jpg)
+				![ブレーキレバーの効き3](/images/wp/2022-12-5ecaf681eba32adc285e7409487d5e4f-1024x768.jpg)
 
 			
 				
@@ -191,6 +191,6 @@ wp_url: "https://cycle-z.com/blog/2022/12/16/bicyclel-overhaul-2022-12-16/"
 
  
 
-[![](https://cycle-z.com/wp-content/uploads/2019/09/beginner-sp-300x156.jpg)
+[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
 
 ](https://cycle-z.com/first/)

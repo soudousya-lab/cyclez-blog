@@ -14,7 +14,7 @@ wp_url: "https://cycle-z.com/blog/2021/01/06/info-100/"
 
 ■　8:45にサイクルZ集合
 
-![](https://cycle-z.com/wp-content/uploads/2021/01/9555.jpg)
+![](/images/wp/2021-01-9555.jpg)
 
 （注）
 

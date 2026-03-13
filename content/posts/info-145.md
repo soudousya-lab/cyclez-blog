@@ -33,7 +33,7 @@ wp_url: "https://cycle-z.com/blog/2022/12/30/info-145/"
 
 cycleZ集合
 
-![初詣ライド 沖田神社](https://cycle-z.com/wp-content/uploads/2022/12/20230108-event.jpg)
+![初詣ライド 沖田神社](/images/wp/2022-12-20230108-event.jpg)
 
 初心者講習会
 
