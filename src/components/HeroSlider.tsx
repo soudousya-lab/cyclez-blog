@@ -6,7 +6,8 @@ import { useState, useEffect } from "react";
 const slides = [
   { image: "/beginner.jpg", alt: "初心者の方へ", width: 2400, height: 1000 },
   { image: "/woman.jpg", alt: "女性のお客様へ", width: 2400, height: 1000 },
-  { image: "/contact.jpg", alt: "お気軽にご相談ください", width: 1920, height: 584 },
+  { image: "/rinko.jpg", alt: "輪行で広がるサイクリング", width: 2400, height: 1000 },
+  { image: "/cafe.jpg", alt: "カフェライドを楽しむ", width: 2400, height: 1000 },
 ];
 
 export default function HeroSlider() {
