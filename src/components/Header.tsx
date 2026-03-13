@@ -127,32 +127,37 @@ export default function Header() {
         <div className="max-w-6xl mx-auto px-4">
           <ul className="flex justify-center gap-0">
             <li>
-              <Link href="/" className="block px-6 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
-                ブログ
+              <Link href="/category/news" className="block px-5 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
+                お知らせ
               </Link>
             </li>
             <li>
-              <Link href="/first" className="block px-6 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
+              <Link href="/first" className="block px-5 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
                 初めての方へ
               </Link>
             </li>
             <li>
-              <Link href="/maintenance" className="block px-6 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
+              <Link href="/maintenance" className="block px-5 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
                 メンテナンス
               </Link>
             </li>
             <li>
-              <Link href="/fitting" className="block px-6 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
+              <Link href="/fitting" className="block px-5 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
                 フィッティング
               </Link>
             </li>
             <li>
-              <Link href="/about" className="block px-6 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
+              <Link href="/about" className="block px-5 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
                 CycleZとは？
               </Link>
             </li>
             <li>
-              <Link href="/faq" className="block px-6 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
+              <Link href="/lineup" className="block px-5 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
+                ラインナップ
+              </Link>
+            </li>
+            <li>
+              <Link href="/faq" className="block px-5 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
                 よくある質問
               </Link>
             </li>
@@ -164,11 +169,12 @@ export default function Header() {
       {isMenuOpen && (
         <nav className="md:hidden py-4 border-t bg-white">
           <div className="flex flex-col">
-            <Link href="/" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">ブログ</Link>
+            <Link href="/category/news" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">お知らせ</Link>
             <Link href="/first" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">初めての方へ</Link>
             <Link href="/maintenance" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">メンテナンス</Link>
             <Link href="/fitting" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">フィッティング</Link>
             <Link href="/about" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">CycleZとは？</Link>
+            <Link href="/lineup" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">ラインナップ</Link>
             <Link href="/faq" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">よくある質問</Link>
             <div className="px-6 py-4 border-t mt-2">
               <Link

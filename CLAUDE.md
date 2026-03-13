@@ -104,10 +104,17 @@ narifuri, rapha, TOKYO WHEELS
 - CTAセクション背景:
   - `public/contact.jpg` (1920x584, 284KB) — ショップ相談 / BASSO・GIOS（背景展示）※HeroSliderには含まない
 
-#### 2. Cloudflareへのドメイン移管
-- 山本さん（RESTA/バリューページ）にAuthCode発行を依頼 → まだ未送信
-- cycle-z.comをお名前.com → Cloudflareに移管
-- Cloudflare Email Routing でinfo@cycle-z.comの転送を維持（無料）
+#### 2. Cloudflareへのドメイン移管（準備完了・AuthCode待ち）
+- ✅ Cloudflareアカウント作成済み（Cyclez2015@gmail.com）
+- ✅ cycle-z.comをCloudflareに追加済み（Freeプラン）
+- ✅ DNSレコードインポート済み（2A, 1CNAME, 1MX, 1TXT）
+- Cloudflare割り当てネームサーバー:
+  - `anton.ns.cloudflare.com`
+  - `harlee.ns.cloudflare.com`
+- 現在のネームサーバー（お名前.com）: `01.dnsv.jp` ~ `04.dnsv.jp`
+- 山本さんにAuthCode発行を依頼 → メール送信待ち
+- AuthCode取得後: Cloudflare「ドメインの登録」→「ドメインの移管」でAuthCode入力
+- 移管後: Cloudflare Email Routing でinfo@cycle-z.comの転送設定
 - 転送先: cyclez2015@gmail.com, shumei826@gmail.com
 
 #### 3. 山本さんへの返信（未送信）

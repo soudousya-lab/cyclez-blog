@@ -74,3 +74,24 @@ export function getAllCategories(): string[] {
 export function getPostsByCategory(category: string): PostData[] {
   return getAllPosts().filter((post) => post.category === category);
 }
+
+// イベント記事の取得（eventカテゴリ、最新N件）
+export function getEventPosts(limit: number): PostData[] {
+  return getAllPosts()
+    .filter((post) => post.category === "event")
+    .slice(0, limit);
+}
+
+// イベントレポート記事の取得（event-reportカテゴリ、最新N件）
+export function getEventReportPosts(limit: number): PostData[] {
+  return getAllPosts()
+    .filter((post) => post.category === "event-report")
+    .slice(0, limit);
+}
+
+// ニュース・イベント記事の取得（news + event、最新N件）
+export function getLatestNewsPosts(limit: number): PostData[] {
+  return getAllPosts()
+    .filter((post) => post.category === "news" || post.category === "event")
+    .slice(0, limit);
+}
