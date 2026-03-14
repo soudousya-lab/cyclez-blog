@@ -4,10 +4,10 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 
 const slides = [
-  { image: "/beginner.jpg", alt: "初心者の方へ", width: 2400, height: 1000 },
-  { image: "/woman.jpg", alt: "女性のお客様へ", width: 2400, height: 1000 },
-  { image: "/rinko.jpg", alt: "輪行で広がるサイクリング", width: 2400, height: 1000 },
-  { image: "/cafe.jpg", alt: "カフェライドを楽しむ", width: 2400, height: 1000 },
+  { image: "/images/slider/beginner.jpg", alt: "初心者の方へ", width: 2400, height: 1000 },
+  { image: "/images/slider/woman.jpg", alt: "女性のお客様へ", width: 2400, height: 1000 },
+  { image: "/images/slider/rinko.jpg", alt: "輪行で広がるサイクリング", width: 2400, height: 1000 },
+  { image: "/images/slider/cafe.jpg", alt: "カフェライドを楽しむ", width: 2400, height: 1000 },
 ];
 
 export default function HeroSlider() {
@@ -34,7 +34,7 @@ export default function HeroSlider() {
       />
 
       {/* Slide indicators */}
-      <div className="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5 sm:gap-2 z-10">
+      <div className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 flex gap-1.5 sm:gap-2 z-10">
         {slides.map((_, index) => (
           <button
             key={index}

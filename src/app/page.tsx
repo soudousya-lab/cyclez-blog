@@ -171,7 +171,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-stretch mb-0">
             <div className="md:w-1/2 relative aspect-[4/3] md:aspect-auto">
               <Image
-                src="/images/reason-beginner.jpg"
+                src="/images/reason/reason-beginner.jpg"
                 alt="始めての方大歓迎"
                 fill
                 className="object-cover"
@@ -191,7 +191,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row-reverse items-stretch mb-0">
             <div className="md:w-1/2 relative aspect-[4/3] md:aspect-auto">
               <Image
-                src="/images/reason-apparel.jpg"
+                src="/images/reason/reason-apparel.jpg"
                 alt="おしゃれなウエアが豊富です"
                 fill
                 className="object-cover"
@@ -211,7 +211,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-stretch">
             <div className="md:w-1/2 relative aspect-[4/3] md:aspect-auto">
               <Image
-                src="/images/reason-maintenance.jpg"
+                src="/images/reason/reason-maintenance.jpg"
                 alt="アフターフォローもおまかせください"
                 fill
                 className="object-cover"
@@ -239,7 +239,7 @@ export default function Home() {
             <Link href="/first" className="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="relative aspect-[4/3]">
                 <Image
-                  src="/images/reason-beginner.jpg"
+                  src="/images/reason/reason-beginner.jpg"
                   alt="初心者の方へ"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -265,7 +265,7 @@ export default function Home() {
             <Link href="/maintenance" className="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="relative aspect-[4/3]">
                 <Image
-                  src="/images/reason-maintenance.jpg"
+                  src="/images/reason/reason-maintenance.jpg"
                   alt="メンテナンス"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -291,7 +291,7 @@ export default function Home() {
             <Link href="/about/greeting" className="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="relative aspect-[4/3]">
                 <Image
-                  src="/images/reason-apparel.jpg"
+                  src="/images/reason/reason-apparel.jpg"
                   alt="代表挨拶"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
