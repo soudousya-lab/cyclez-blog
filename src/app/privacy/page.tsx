@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import Link from "next/link";
+import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
   title: "個人情報保護方針",
@@ -9,18 +9,11 @@ export const metadata: Metadata = {
 export default function PrivacyPage() {
   return (
     <div className="bg-gray-50 min-h-screen">
-      {/* ヘッダー */}
-      <div className="bg-gradient-to-r from-[#c41e3a] to-[#e85a70] text-white py-12">
-        <div className="max-w-4xl mx-auto px-4">
-          <nav className="flex items-center gap-2 text-sm text-white/80 mb-6">
-            <Link href="/" className="hover:text-white">ホーム</Link>
-            <span>/</span>
-            <span className="text-white">個人情報保護方針</span>
-          </nav>
-          <p className="text-white/80 text-sm mb-2">PRIVACY POLICY</p>
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">プライバシーポリシー</h1>
-        </div>
-      </div>
+      <PageBanner
+        title="プライバシーポリシー"
+        subtitle="PRIVACY POLICY"
+        breadcrumbs={[{ label: "個人情報保護方針" }]}
+      />
 
       <div className="max-w-4xl mx-auto px-4 py-10">
         <div className="bg-white rounded-2xl shadow-sm p-6 md:p-10">

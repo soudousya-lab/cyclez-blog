@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
   title: "CycleZとは？",
@@ -9,18 +10,11 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="bg-gray-50 min-h-screen">
-      {/* ヘッダー */}
-      <div className="bg-gradient-to-r from-[#c41e3a] to-[#e85a70] text-white py-12">
-        <div className="max-w-4xl mx-auto px-4">
-          <nav className="flex items-center gap-2 text-sm text-white/80 mb-6">
-            <Link href="/" className="hover:text-white">ホーム</Link>
-            <span>/</span>
-            <span className="text-white">CycleZとは？</span>
-          </nav>
-          <p className="text-white/80 text-sm mb-2">ABOUT CycleZ</p>
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">CycleZとは？</h1>
-        </div>
-      </div>
+      <PageBanner
+        title="CycleZとは？"
+        subtitle="ABOUT CycleZ"
+        breadcrumbs={[{ label: "CycleZとは？" }]}
+      />
 
       <div className="max-w-4xl mx-auto px-4 py-10">
         {/* イントロ */}
@@ -79,13 +73,13 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* 代表挨拶リンク */}
+        {/* スタッフ挨拶リンク */}
         <div className="mt-10 text-center">
           <Link
             href="/about/greeting"
             className="inline-flex items-center gap-2 bg-[#c41e3a] text-white px-8 py-3 rounded-full hover:bg-[#a01830] transition-colors font-medium"
           >
-            代表挨拶を見る
+            スタッフ挨拶を見る
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>

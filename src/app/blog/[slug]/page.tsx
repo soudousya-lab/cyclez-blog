@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
 import React, { ReactElement } from "react";
+import PageBanner from "@/components/PageBanner";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -447,30 +448,13 @@ export default async function PostPage({ params }: Props) {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      {/* Header with gradient background */}
-      <div className="bg-gradient-to-r from-[#c41e3a] to-[#e85a70] text-white py-12">
-        <div className="max-w-4xl mx-auto px-4">
-          {/* Breadcrumb */}
-          <nav className="flex items-center gap-2 text-sm text-white/80 mb-6">
-            <Link href="/" className="hover:text-white">
-              ホーム
-            </Link>
-            <span>/</span>
-            <Link href="/" className="hover:text-white">
-              ブログ
-            </Link>
-            <span>/</span>
-            <span className="text-white truncate max-w-[200px]">{post.title}</span>
-          </nav>
-
-          <span className="inline-block bg-white text-[#c41e3a] text-xs font-bold px-3 py-1 rounded-full mb-4">
-            {post.category}
-          </span>
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight">
-            {post.title}
-          </h1>
-        </div>
-      </div>
+      <PageBanner
+        title={post.title}
+        breadcrumbs={[
+          { label: "ブログ", href: "/" },
+          { label: post.title },
+        ]}
+      />
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="grid lg:grid-cols-[1fr_280px] gap-8">

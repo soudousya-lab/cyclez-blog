@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getAllPosts, getAllCategories } from "@/lib/posts";
 import { getCategoryLabel } from "@/lib/categories";
 import PostCard from "@/components/PostCard";
+import PageBanner from "@/components/PageBanner";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -32,20 +33,11 @@ export default async function CategoryPage({ params }: Props) {
 
   return (
     <main className="min-h-screen bg-gray-50">
-      {/* ヘッダー */}
-      <div className="bg-gradient-to-r from-[#c41e3a] to-[#e85a70] text-white py-12">
-        <div className="max-w-6xl mx-auto px-4">
-          <nav className="text-sm mb-4 text-white/80">
-            <Link href="/" className="hover:text-white">
-              ホーム
-            </Link>
-            <span className="mx-2">/</span>
-            <span>{label}</span>
-          </nav>
-          <h1 className="text-3xl md:text-4xl font-bold">{label}</h1>
-          <p className="mt-2 text-white/90 text-sm">{posts.length}件の記事</p>
-        </div>
-      </div>
+      <PageBanner
+        title={label}
+        subtitle={`${posts.length}件の記事`}
+        breadcrumbs={[{ label }]}
+      />
 
       <div className="max-w-6xl mx-auto px-4 py-10">
         {/* カテゴリナビ */}

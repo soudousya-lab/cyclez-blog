@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import Link from "next/link";
+import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
   title: "お支払方法",
@@ -49,20 +49,11 @@ export default function PaymentPage() {
 
   return (
     <main className="min-h-screen bg-gray-50">
-      {/* ヘッダー */}
-      <div className="bg-gradient-to-r from-[#c41e3a] to-[#e85a70] text-white py-12">
-        <div className="max-w-4xl mx-auto px-4">
-          <nav className="text-sm mb-4 text-white/80">
-            <Link href="/" className="hover:text-white">
-              ホーム
-            </Link>
-            <span className="mx-2">/</span>
-            <span>お支払方法</span>
-          </nav>
-          <h1 className="text-3xl md:text-4xl font-bold">お支払方法</h1>
-          <p className="mt-2 text-white/90 text-sm">PAYMENT</p>
-        </div>
-      </div>
+      <PageBanner
+        title="お支払方法"
+        subtitle="PAYMENT"
+        breadcrumbs={[{ label: "お支払方法" }]}
+      />
 
       <div className="max-w-4xl mx-auto px-4 py-10">
         {/* イントロ */}

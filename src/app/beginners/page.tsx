@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
   title: "初心者向けメンテナンス方法",
@@ -28,22 +29,11 @@ export default function BeginnersMaintenancePage() {
 
   return (
     <main className="min-h-screen bg-gray-50">
-      {/* ヘッダー */}
-      <div className="bg-gradient-to-r from-[#c41e3a] to-[#e85a70] text-white py-12">
-        <div className="max-w-4xl mx-auto px-4">
-          <nav className="text-sm mb-4 text-white/80">
-            <Link href="/" className="hover:text-white">
-              ホーム
-            </Link>
-            <span className="mx-2">/</span>
-            <span>初心者向けメンテナンス</span>
-          </nav>
-          <h1 className="text-3xl md:text-4xl font-bold">
-            初心者向けメンテナンス方法
-          </h1>
-          <p className="mt-2 text-white/90 text-sm">BEGINNERS MAINTENANCE</p>
-        </div>
-      </div>
+      <PageBanner
+        title="初心者向けメンテナンス方法"
+        subtitle="BEGINNERS MAINTENANCE"
+        breadcrumbs={[{ label: "初心者向けメンテナンス" }]}
+      />
 
       <div className="max-w-4xl mx-auto px-4 py-10">
         {/* イントロ */}

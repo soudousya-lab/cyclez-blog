@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
   title: "初めての方へ",
@@ -32,18 +33,11 @@ export default function FirstPage() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
-      {/* ヘッダー */}
-      <div className="bg-gradient-to-r from-[#c41e3a] to-[#e85a70] text-white py-12">
-        <div className="max-w-4xl mx-auto px-4">
-          <nav className="flex items-center gap-2 text-sm text-white/80 mb-6">
-            <Link href="/" className="hover:text-white">ホーム</Link>
-            <span>/</span>
-            <span className="text-white">初めての方へ</span>
-          </nav>
-          <p className="text-white/80 text-sm mb-2">MESSAGE FOR BEGINNERS</p>
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">初めての方へ</h1>
-        </div>
-      </div>
+      <PageBanner
+        title="初めての方へ"
+        subtitle="MESSAGE FOR BEGINNERS"
+        breadcrumbs={[{ label: "初めての方へ" }]}
+      />
 
       <div className="max-w-4xl mx-auto px-4 py-10">
         {/* イントロ */}

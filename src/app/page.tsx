@@ -287,22 +287,22 @@ export default function Home() {
               </div>
             </Link>
 
-            {/* 代表挨拶 */}
+            {/* スタッフ挨拶 */}
             <Link href="/about/greeting" className="group block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
               <div className="relative aspect-[4/3]">
                 <Image
-                  src="/images/reason/reason-apparel.jpg"
-                  alt="代表挨拶"
+                  src="/images/staff/staff-main.jpg"
+                  alt="スタッフ挨拶"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
               <div className="p-5 text-left">
-                <h3 className="text-lg font-bold text-gray-900 mb-1">代表挨拶</h3>
-                <p className="text-[#c41e3a] text-xs font-medium mb-3">MESSAGE FROM THE OWNER</p>
+                <h3 className="text-lg font-bold text-gray-900 mb-1">スタッフ挨拶</h3>
+                <p className="text-[#c41e3a] text-xs font-medium mb-3">STAFF MESSAGE</p>
                 <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">
-                  サイクルゼットについて興味がある方は、ぜひご視聴してみてください。
+                  cycleZスタッフからのメッセージ。自転車文化の普及を目指しています。
                 </p>
                 <span className="inline-flex items-center gap-1 text-[#c41e3a] text-sm font-medium mt-3">
                   もっと見る
