@@ -5,29 +5,30 @@
 const STORE_INFO = {
   name: "cycleZ（サイクルゼット）",
   url: "https://cycle-z.com",
-  phone: "086-206-2346",
+  phone: "086-252-7744",
   email: "info@cycle-z.com",
   address: {
-    streetAddress: "北区田中624-1",
+    streetAddress: "北区島田本町1丁目1-47",
     addressLocality: "岡山市",
     addressRegion: "岡山県",
-    postalCode: "700-0951",
+    postalCode: "700-0033",
     addressCountry: "JP",
   },
   geo: {
-    latitude: 34.6655,
-    longitude: 133.9197,
+    // GBPのPlace ID: 0x355407ad0b74fcf1:0x96a4963e8be58f87
+    latitude: 34.6628275,
+    longitude: 133.9137373,
   },
   openingHours: [
-    "Tu-Sa 11:00-19:00",
-    "Su 11:00-18:00",
+    "Mo-Tu 11:00-19:00",
+    "Th-Su 11:00-19:00",
   ],
-  closedDays: "月曜日（祝日の場合は翌火曜日）",
+  closedDays: "水曜日",
   priceRange: "¥¥-¥¥¥",
   image: "https://cycle-z.com/images/common/og-image.jpg",
   logo: "https://cycle-z.com/images/logo/logo.png",
   socialLinks: [
-    "https://www.instagram.com/cyclez_okayama/",
+    "https://www.instagram.com/cyclez2015/",
     "https://www.facebook.com/cyclez2015/",
     "https://www.youtube.com/@cyclez",
   ],
@@ -57,15 +58,9 @@ export function SiteJsonLd() {
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        dayOfWeek: ["Monday", "Tuesday", "Thursday", "Friday", "Saturday", "Sunday"],
         opens: "11:00",
         closes: "19:00",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Sunday"],
-        opens: "11:00",
-        closes: "18:00",
       },
     ],
     priceRange: STORE_INFO.priceRange,
