@@ -12,16 +12,206 @@ Next.js 16.1 (App Router) / TypeScript / Tailwind CSS / gray-matter / date-fns /
 - `npm run build` — ビルド確認
 
 ## デプロイ
-- Vercel（blog.cycle-z.com）
+- Vercel（cycle-z.com）
 - GitHub: soudousya-lab/cyclez-blog
 - `git push origin main` で自動デプロイ
+
+## アナリティクス・計測基盤
+
+### 現在の実装状況
+| ツール | 状態 | ID/設定 | 管理ファイル |
+|--------|------|---------|-------------|
+| GA4 | 稼働中 | `G-PHS6DKPECV` | `src/components/Analytics.tsx` |
+| Clarity | 稼働中 | `vy736hbd97` | `src/components/Analytics.tsx` |
+| Meta Pixel | **未設定**（環境変数設定で即有効化） | — | `src/components/Analytics.tsx` |
+| GSC | 稼働中 | HTML認証ファイル | `public/google7579b03d953bf849.html` |
+| JSON-LD | 稼働中 | LocalBusiness + WebSite + Article | `src/components/JsonLd.tsx` |
+
+### 環境変数（`.env.local` / Vercel）
+```
+NEXT_PUBLIC_GA_ID=G-PHS6DKPECV
+NEXT_PUBLIC_CLARITY_ID=vy736hbd97
+NEXT_PUBLIC_META_PIXEL_ID=          # Meta広告配信開始時に設定
+NEXT_PUBLIC_META_DOMAIN_VERIFICATION=  # Meta domain認証トークン
+```
+
+### GA4 カスタムイベント一覧
+| イベント名 | カテゴリ | 発火タイミング |
+|-----------|---------|--------------|
+| `scroll_depth` | engagement | 25%, 50%, 75%, 90% スクロール |
+| `cta_click` | conversion | 電話/メール/Instagram/Facebook/YouTube/お問い合わせリンク |
+| `navigation_click` | navigation | 内部ページ遷移 |
+| `section_view` | engagement | `<section id="...">` が30%以上表示 |
+| `share_click` | engagement | Twitter/LINEシェアボタン |
+| `reading_time` | engagement | ブログ記事30秒/60秒/3分経過 |
+| `reading_time_total` | engagement | ブログ記事離脱時（合計滞在時間） |
+
+### User Properties（GA4ユーザースコープ）
+- `first_touch_source` / `first_touch_medium` / `first_touch_campaign` — 初回接触チャネル
+- `user_type` — new / returning
+- `session_count` — セッション数
+
+### Clarity カスタムタグ
+- `page_name` — 日本語ページ名（セッション録画フィルタ用）
+- CTAイベント（`cta_phone`, `cta_email`, `cta_instagram` 等）
+
+### JSON-LD 構造化データ
+- **全ページ共通**: `SiteJsonLd`（LocalBusiness[BikeStore] + WebSite）→ `layout.tsx` の `<head>` 内
+- **ブログ記事**: `ArticleJsonLd`（Article + BreadcrumbList）→ `blog/[slug]/page.tsx`
+- **サブページ用**: `BreadcrumbJsonLd`（パンくずリスト）→ 必要に応じて各ページに追加可能
+
+### コンポーネント構成
+| ファイル | 役割 |
+|---------|------|
+| `src/components/Analytics.tsx` | GA4 + Clarity + Meta Pixel + 自動トラッキング（"use client"） |
+| `src/components/JsonLd.tsx` | 構造化データ（サーバーコンポーネント） |
+
+---
+
+## ランブック（運用手順書）
+
+### Meta広告配信開始時の手順
+
+1. **Meta Business Suite でPixel作成**
+   - https://business.facebook.com → イベントマネージャ → 「データソースをリンク」→「ウェブ」
+   - Pixel名: `cycleZ` で作成
+   - Pixel IDをコピー（数字のみ、例: `660826600264337`）
+
+2. **Meta domain認証**
+   - Meta Business Suite → ビジネス設定 → ブランドセーフティ → ドメイン
+   - `cycle-z.com` を追加
+   - 「DNSで認証」または「HTMLメタタグで認証」を選択
+   - HTMLメタタグの場合: `content` 属性の値をコピー
+
+3. **Vercel環境変数に追加**
+   ```bash
+   # Pixel ID
+   printf '<PIXEL_ID>' | npx vercel env add NEXT_PUBLIC_META_PIXEL_ID production
+   # Domain認証トークン（HTMLメタタグ方式の場合）
+   printf '<VERIFICATION_TOKEN>' | npx vercel env add NEXT_PUBLIC_META_DOMAIN_VERIFICATION production
+   ```
+
+4. **再デプロイ**
+   ```bash
+   npx vercel --prod --force
+   ```
+
+5. **動作確認**
+   - Meta Pixel Helper（Chrome拡張）でPageViewイベント発火を確認
+   - Meta イベントマネージャでイベント受信を確認
+   - 電話/メールリンクのクリックで`Contact`イベントが飛ぶことを確認
+
+### Clarity 管理画面での確認手順
+
+1. https://clarity.microsoft.com → cycleZプロジェクト選択
+2. ダッシュボード: セッション数、スクロール深度、デッドクリック確認
+3. レコーディング: ユーザーの操作を動画で確認
+4. ヒートマップ: クリック/スクロールの可視化
+5. カスタムタグでフィルタ: `page_name` = 「トップページ」等
+
+### GA4 で確認すべき指標
+
+| 確認項目 | GA4での場所 | 頻度 |
+|---------|-----------|------|
+| PV数/ユーザー数 | レポート → エンゲージメント → ページとスクリーン | 週次 |
+| スクロール深度 | 探索 → カスタムイベント `scroll_depth` | 月次 |
+| CTA効果 | 探索 → `cta_click` をcta_typeでブレイクダウン | 週次 |
+| ブログ読了率 | 探索 → `reading_time_total` で平均滞在時間 | 月次 |
+| 流入チャネル | レポート → 集客 → ユーザー獲得 | 週次 |
+| シェア数 | 探索 → `share_click` をplatformでブレイクダウン | 月次 |
+
+### GSC で確認すべき指標
+
+| 確認項目 | 操作 | 頻度 |
+|---------|------|------|
+| 検索パフォーマンス | GSC → 検索パフォーマンス → クエリ/ページ別 | 週次 |
+| インデックス状況 | GSC → ページ → インデックス登録済み数 | 週次 |
+| サイトマップ | GSC → サイトマップ → 送信済みの確認 | 月次 |
+| コアウェブバイタル | GSC → ウェブに関する主な指標 | 月次 |
+| 構造化データ | GSC → 拡張 → 記事/パンくずリスト/ローカルビジネス | 月次 |
+
+### 新しい計測ツールを追加する場合
+
+1. `.env.local` と `.env.example` に環境変数を追加
+2. `src/components/Analytics.tsx` にスクリプトと条件分岐を追加
+3. `npm run build` でビルド確認
+4. Vercel環境変数に追加: `printf '<VALUE>' | npx vercel env add <KEY> production`
+5. `npx vercel --prod --force` で再デプロイ
+
+---
 
 ## コンテンツ構造
 - `content/posts/` — 公開記事（Markdown、421件）
 - `content/primary-sources/` — エピソードバンク（一次情報）
 - `content/article-plans/` — 記事企画
 - `public/images/wp/` — WPから移行した画像（842枚）
-- `public/images/` — 手動追加のカスタム画像
+- `public/images/` — HP用画像（以下の画像管理セクション参照）
+
+## 画像管理（差し替えガイド）
+
+全てのHP用画像は `public/images/` 配下に用途別フォルダで管理。
+画像を差し替える場合は同じファイル名・同じサイズで上書きするだけでOK。
+
+### フォルダ構成
+```
+public/images/
+├── logo/                  # ロゴ関連
+│   ├── logo.png           → Header・Footer（180x60 / 150x50）
+│   └── cyclezmainlogo.png → 記事著者アバター（48x48 丸抜き）
+│
+├── slider/                # トップ HeroSlider（全て 2400x1000）
+│   ├── beginner.jpg       → スライド1「初心者講習会」
+│   ├── woman.jpg          → スライド2「女性のお客様へ」
+│   ├── rinko.jpg          → スライド3「輪行で広がるサイクリング」
+│   └── cafe.jpg           → スライド4「カフェライドを楽しむ」
+│
+├── reason/                # トップ「選ばれる理由」セクション
+│   ├── reason-beginner.jpg    → 理由01 + 推奨カード「初心者の方へ」
+│   ├── reason-apparel.jpg     → 理由02「ウエア豊富」
+│   └── reason-maintenance.jpg → 理由03 + 推奨カード「メンテナンス」
+│
+├── staff/                 # スタッフ関連
+│   └── staff-main.jpg    → 代表挨拶ページ + 推奨カード（16:9）
+│
+├── youtube/               # YouTube動画サムネイル（16:9）
+│   ├── youtube-thumb01.jpg
+│   ├── youtube-thumb02.jpg
+│   └── youtube-thumb03.jpg
+│
+├── cta/                   # CTAセクション
+│   └── contact.jpg        → トップ最下部CTA背景（1920x584）
+│
+├── common/                # 共通素材
+│   ├── page-banner.jpg    → サブページ共通バナー背景（フルワイド）
+│   └── og-image.jpg       → OGP画像（1200x630）
+│
+├── wp/                    # WordPress移行記事画像（842枚・触らない）
+│
+└── _unused/               # 未使用画像の退避先
+```
+
+### 差し替え時のサイズ一覧
+| フォルダ | ファイル | 推奨サイズ | 備考 |
+|---------|---------|-----------|------|
+| slider/ | *.jpg | 2400x1000 | 左下に赤ボタン配置あり |
+| reason/ | *.jpg | 自由（fill表示） | object-cover で切り抜かれる |
+| staff/ | staff-main.jpg | 16:9推奨 | 人物が中央に来るように |
+| youtube/ | *.jpg | 16:9（1280x720等） | aspect-video で表示 |
+| cta/ | contact.jpg | 1920x584 | 赤オーバーレイがかかる |
+| common/ | page-banner.jpg | フルワイド | 暗いオーバーレイがかかる |
+| common/ | og-image.jpg | 1200x630 | SNSシェア時に表示 |
+| logo/ | logo.png | 180x60程度 | 透過PNG |
+
+### 参照元コンポーネント
+| 画像フォルダ | 参照元ファイル |
+|-------------|--------------|
+| logo/ | `src/components/Header.tsx`, `Footer.tsx`, `src/app/blog/[slug]/page.tsx` |
+| slider/ | `src/components/HeroSlider.tsx` |
+| reason/ | `src/app/page.tsx`（理由セクション + 推奨カード） |
+| staff/ | `src/app/page.tsx`, `src/app/about/greeting/page.tsx` |
+| youtube/ | `src/app/page.tsx` |
+| cta/ | `src/app/page.tsx` |
+| common/ | `src/components/PageBanner.tsx`, `src/app/layout.tsx` |
 
 ## ルート構造
 - `/` — トップページ（HeroSlider + 記事一覧）
@@ -89,6 +279,9 @@ narifuri, rapha, TOKYO WHEELS
 - [x] next.config.tsからremotePatterns（cycle-z.com依存）を削除
 - [x] サイトマップに全ページ追加（454ページ）
 - [x] ビルド成功・Vercelデプロイ済み
+- [x] アナリティクス基盤刷新（GA4カスタムイベント + Clarity + Meta Pixel準備 + JSON-LD）
+- [x] Clarity プロジェクト作成（ID: vy736hbd97）・本番稼働中
+- [x] 画像整理（public/ルート直下の重複画像をimages/配下に統一、未使用SVG削除）
 
 ### 残タスク
 
@@ -97,39 +290,50 @@ narifuri, rapha, TOKYO WHEELS
 - 不要画像（recommend01.jpg, recommend06.jpg, *_backup.jpg）削除済み
 - HeroSliderを3枚→4枚に拡張済み（HeroSlider.tsx更新済み、ビルド確認済み）
 - HeroSlider対象ファイル:
-  - `public/beginner.jpg` (2400x1000, 396KB) — 田舎道ライド / BASSO Astra / STEM DESIGN
-  - `public/woman.jpg` (2400x1000, 418KB) — 女性ライダー春アパレル / GIOS / STEM DESIGN + rin project
-  - `public/rinko.jpg` (2400x1000, 404KB) — 輪行シーン / SCOTT Addict RC / rin project
-  - `public/cafe.jpg` (2400x1000, 573KB) — カフェシーン / Wilier Filante / STEM DESIGN
+  - `public/images/slider/beginner.jpg` (2400x1000) — 田舎道ライド / BASSO Astra / STEM DESIGN
+  - `public/images/slider/woman.jpg` (2400x1000) — 女性ライダー春アパレル / GIOS / STEM DESIGN + rin project
+  - `public/images/slider/rinko.jpg` (2400x1000) — 輪行シーン / SCOTT Addict RC / rin project
+  - `public/images/slider/cafe.jpg` (2400x1000) — カフェシーン / Wilier Filante / STEM DESIGN
 - CTAセクション背景:
-  - `public/contact.jpg` (1920x584, 284KB) — ショップ相談 / BASSO・GIOS（背景展示）※HeroSliderには含まない
+  - `public/images/cta/contact.jpg` (1920x584) — ショップ相談 / BASSO・GIOS（背景展示）
 
-#### 2. Cloudflareへのドメイン移管（準備完了・AuthCode待ち）
+#### 2. Cloudflareへのドメイン移管（移管申請済み・完了待ち）
 - ✅ Cloudflareアカウント作成済み（Cyclez2015@gmail.com）
 - ✅ cycle-z.comをCloudflareに追加済み（Freeプラン）
 - ✅ DNSレコードインポート済み（2A, 1CNAME, 1MX, 1TXT）
-- Cloudflare割り当てネームサーバー:
+- ✅ ネームサーバー変更完了・Cloudflareで Active
   - `anton.ns.cloudflare.com`
   - `harlee.ns.cloudflare.com`
-- 現在のネームサーバー（お名前.com）: `01.dnsv.jp` ~ `04.dnsv.jp`
-- 山本さんにAuthCode発行を依頼 → メール送信待ち
-- AuthCode取得後: Cloudflare「ドメインの登録」→「ドメインの移管」でAuthCode入力
-- 移管後: Cloudflare Email Routing でinfo@cycle-z.comの転送設定
-- 転送先: cyclez2015@gmail.com, shumei826@gmail.com
+- ✅ 旧DNSレコード削除済み（さくらのMX: cyclez.sakura.ne.jp / SPF: v=spf1 +ip4:182.48.49.219）
+- ✅ Cloudflare Email Routing 有効化済み
+  - info@cycle-z.com → cyclez2015@gmail.com（Active）
+- ✅ AuthCode入力・支払い完了・移管申請済み（2026/03/17）
+- ⬜ **移管完了待ち（最大7日。お名前.com側で承認すると早まる）**
+- 移管状況確認: `https://dash.cloudflare.com/0b94db668c39142fef0a9188ed8e4b92/registrar/transfer`
+- Cloudflare Account ID: `0b94db668c39142fef0a9188ed8e4b92`
 
-#### 3. 山本さんへの返信（未送信）
-- ドメイン移管のAuthCode発行依頼
-- さくらサーバーのcycle-z.com分の解除依頼
-- メール転送の現状確認（さくらのメール機能？）
-- AdobeStock画像は新サイトで不使用と伝える
+#### 3. 移管後の残タスク
+- ⬜ 移管完了の確認（最大7日、お名前.com側で承認すれば早まる）
+- ⬜ shumei826@gmail.com への転送ルール追加（現在 cyclez2015@gmail.com のみ設定済み）
+- ⬜ Gmailの「別のアドレスから送信」設定（@cycle-z.comで送信したい場合）
+- ⬜ さくらのレンタルサーバー解約の検討・山本さんへ連絡
+  - さくらを解約してもメールはCloudflare Email Routingで受信可能になった
+  - Webサーバーも必要なければ解約可能
 
-### RESTA山本さんからの情報まとめ
+#### 4. 山本さんへの連絡
+- ネームサーバー変更のお礼: 送信済み
+- お名前.com側で移管承認してもらうと早く完了する → 確認依頼を検討
+- AdobeStock画像は新サイトで不使用と伝える（未送信）
+
+### バリューページ山本さんからの情報まとめ
 - ドメイン: お名前.com、山本名義（okada soumei）、期限2026/09/17
 - サーバー: さくらレンタルサーバー（他顧客と共用）、期限2027/03/31
 - 費用: さくら6,600円 + ドメイン1,800円 + バックアップ2,500円 + 郵送100円 = 年11,000円
 - 保守契約: 特になし、実作業都度請求
 - 写真素材: 自前写真OK、AdobeStock画像（トップの女性・海外男性）はNG
 - メール: info@cycle-z.com → cyclez2015@gmail.com, shumei826@gmail.com に転送中
+- ネームサーバー変更: 2026/03/16完了（Cloudflareへ）
+- さくら解約注意: Webサーバー・メールサーバー両方利用中。メールはCloudflare Email Routingで代替済み
 
 ---
 
@@ -214,3 +418,153 @@ narifuri, rapha, TOKYO WHEELS
 - **アパレルブランドの承認・禁止リストを厳守**（上記「ブランドガイドライン」参照）
 - **自転車のフレーム形状・ロゴを正確に描写** — ユーザーから「全然違う」とフィードバックあり、詳細な特徴をプロンプトに入れること
 - AI Studioのダウンロードボタンが効かない場合はJavaScriptの`a.download`方式で取得可能
+
+---
+
+## 戦略基盤データ（2026-03-19 Deep Research統合）
+
+2本のDeep Research + FIREFITNESS版ローカルSEOリサーチを統合。
+ブログ記事企画・SEO・GBP・コミュニティ施策の判断根拠として参照すること。
+
+### リサーチドキュメント
+| テーマ | ファイル |
+|--------|---------|
+| 岡山スポーツバイク市場の構造分析 | `../../research/compass_artifact_wf-8f3574cd...md` |
+| 自転車ショップの口コミ・紹介マーケティング | `../../research/compass_artifact_wf-628e494d...md` |
+| ローカルSEO・GBP最適化 | FIREFITNESS版を転用（CLAUDE.md「GBP運用の最適設計」セクション参照） |
+
+### 岡山市場の全体像
+
+| 指標 | 数値 |
+|------|------|
+| スポーツバイク保有台数（岡山県推定） | 約47,000台（ロードバイク約22,000台） |
+| アクティブサイクリスト | 2-3万人 |
+| コアターゲット（30-59歳） | 15,000-25,000人 |
+| 晴れの日 | 276.8日/年（全国1位。全国平均+29日） |
+| しまなみ海道年間サイクリスト | 34万人以上 |
+| 岡山→尾道（しまなみ入口） | JR1.5時間（¥1,520） |
+| 日本スポーツバイク市場規模 | 約2,680億円 |
+| グラベルバイク世界CAGR | 5.7%（2025-2032） |
+| e-bike国内CAGR | 5.35%（2024-2032） |
+
+### 検索キーワードと季節性
+
+| キーワード | 月間ボリューム | CVR | 優先度 |
+|-----------|-------------|-----|:---:|
+| 自転車 修理 岡山 | 300-1,000 | **10-20%** | **最高** |
+| ロードバイク 岡山 | 200-800 | 中 | 高 |
+| サイクリング 岡山 | 500-1,500 | 高 | 高 |
+| グラベルバイク | 5,000-12,000 | 低（全国KW） | SEO記事向け |
+| ロードバイク メンテナンス 岡山 | 10-50 | **20%** | ロングテール |
+
+**季節パターン:** 4-5月（年間ピーク）→ 9-10月（第2ピーク）→ 12-2月（-40-60%）
+**岡山は冬の落ち込みが全国平均より小さい**（温暖な気候のため）
+**緊急検索（パンク・ブレーキ故障）の76%が当日-24時間以内に来店転換**
+
+### 競合ポジショニング
+
+| 店舗 | 差別化 | Google口コミ |
+|------|--------|------------|
+| Giant Store 岡山 | GIANT/Liv専門、女性特化 | **★4.9（47件）**、Stravaクラブ226名 |
+| WAVE BIKES | TREK専門、体系的トレーニング | 3店舗展開 |
+| Freedom/Specialized | Specialized専門、大型店 | 3拠点 |
+| Cycle Center 岡山 | 50ブランド200台超（最大在庫） | イタリアンブランド |
+| cicli pioniere | レッスン特化、JSPO指導者 | 累計2万人以上 |
+| **cycleZ** | **SCOTT正規、ライフスタイル提案、初心者歓迎、駅近** | Instagram 1,866フォロワー |
+
+### 市場の空白地帯（cycleZが狙うべき）
+
+1. **グラベルバイク・e-bike専門** — 岡山に専門店ゼロ。CAGR 5-6%の成長カテゴリ
+2. **スポーツバイクレンタル** — しまなみ34万人/年の需要を岡山起点で取れていない
+3. **サイクルカフェ併設** — ライド後の集いの場。cycleZのライフスタイル提案と相性◎
+4. **高精度フィッティング** — Retül導入ショップが岡山にほぼない
+5. **デジタル予約（メンテナンス）** — 事前予約のデジタル化が未整備
+
+### 顧客LTV（5年間）
+
+| セグメント | 5年LTV | 構成比 |
+|-----------|--------|--------|
+| ライトユーザー | ¥50-60万 | 50-60% |
+| ミドルユーザー | ¥120-150万 | 25-35% |
+| ヘビーユーザー | ¥280-420万 | 10-15% |
+
+**1,000人のロイヤルカスタマー（市場の5%）× 平均¥80万 = 5年間で8億円のポテンシャル**
+
+### 口コミ・紹介マーケティングの設計原則
+
+**日本のNPSは世界最低（-52）。** 欧米型の紹介プログラムはそのまま使えない。
+
+#### やってはいけないこと
+- 金銭インセンティブによる紹介依頼（クラウディングアウト効果で不可逆的に壊れる）
+- 趣味コミュニティでは社会的規範 >> 市場的規範
+- 「レビュー書いたらドリンク無料」はGoogle TOS違反
+
+#### 口コミが自然発生する4つのトリガー
+1. **新車納車の瞬間** — 感情のピーク。セレモニー化（写真撮影、おめでとう）
+2. **メンテナンス完了後** — 他店で見逃した問題を発見→修理 = サービスリカバリーパラドックス
+3. **グループライド直後** — 共有体験→社会的結合→会話の延長線で紹介
+4. **大きな修理・カスタム完了後** — 安心感+感謝=互恵性トリガー
+
+**依頼のウィンドウ: 感情ピークから24-48時間以内**
+
+#### 特典設計（趣味コミュニティ向け）
+| タイプ | 効果 | 社会的コスト | cycleZ向け推奨 |
+|--------|------|------------|-------------|
+| 金銭/割引 | 12-18% | **高（傭兵的に見える）** | 非推奨 |
+| メンテナンス無料 | 8-12% | 低-中 | ○ |
+| パーツ/アクセサリー割引 | 8-12% | 低-中 | ○ |
+| **体験型（VIPライド、新モデル先行試乗）** | **8-14%** | **最小** | **最推奨** |
+| **ステータス（アンバサダー）** | 5-8% | なし | **最推奨** |
+
+#### Say-Doギャップの克服（日本特有）
+1. **長文レビューを求めない** — 写真共有、Instagramタグで十分
+2. **店内にフォトスポット設置** — 自然にSNS投稿→間接的口コミ
+3. **コミュニティイベントが「連れてくる」口実** — 「紹介して」ではなく「一緒に来ない？」
+4. **ライディングクラブ→友人の友人に拡散** — 店→客ではなく客→客のループ
+
+#### Google口コミ強化
+- **目標**: Giant Store ★4.9/47件に対抗 → 量で勝つ（100件以上が業界アドバンテージ）
+- QRコード設置（カウンター、受取ポイント）
+- **NFC タップカード**（$25/枚、再利用可。42%のレビュー増加実績）
+- メンテナンス受取時に「正直な感想をいただけると嬉しいです」
+- **全口コミに24-48時間以内に返信**（地域キーワードを含めて）
+
+### GBP運用（FIREFITNESS版を転用）
+
+| 要素 | 設計 |
+|------|------|
+| 投稿頻度 | 週1回以上必須（18日ルール対策） |
+| 写真 | 1080×1080正方形、実写のみ |
+| 投稿タイプ | 週1「最新情報」+ 月1-2「特典/イベント」 |
+| 口コミ返信 | 全件必須、24-48時間以内 |
+| NAP統一 | 住所表記を全プラットフォームで統一 |
+| 属性 | 駐車場、バリアフリー、予約制/不要、修理対応 |
+
+### ブログ記事の戦略的追加計画
+
+| テーマ | 狙うKW | 目的 |
+|--------|--------|------|
+| 「岡山 サイクリングコース おすすめ」 | サイクリング 岡山（500-1,500） | ローカルSEO |
+| 「グラベルバイク 初心者 おすすめ」 | グラベルバイク（5,000-12,000） | 成長カテゴリ先取り |
+| 「しまなみ海道 岡山から」 | しまなみ 岡山（ロングテール） | しまなみゲートウェイ訴求 |
+| 「ロードバイク メンテナンス 自分で」 | メンテナンス系（情報探索45-55%） | 来店導線 |
+| 「e-bike おすすめ 2026」 | e-bike おすすめ（3,000-8,000） | 成長カテゴリ |
+
+### 実行ロードマップ
+
+**今すぐ（今週）:**
+- [ ] GBPの口コミ件数と最新口コミ日を確認
+- [ ] GBP属性（駐車場、修理対応等）の入力漏れ確認
+- [ ] 店内にQRコード設置（Google口コミ直接遷移）
+
+**短期（1ヶ月以内）:**
+- [ ] GBP週1投稿の運用開始
+- [ ] グラベルバイク記事1本追加（成長カテゴリ先取り）
+- [ ] 「サイクリング 岡山」記事1本追加（ローカルSEO）
+- [ ] Stravaクラブの作成（Giant Store 226名に対抗）
+
+**中期（3ヶ月以内）:**
+- [ ] フォトスポット設置（納車セレモニー+SNS投稿促進）
+- [ ] e-bike記事シリーズ開始
+- [ ] しまなみ海道ガイド記事
+- [ ] レンタル事業の検討開始
