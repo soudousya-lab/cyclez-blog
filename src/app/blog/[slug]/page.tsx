@@ -7,6 +7,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 import React, { ReactElement } from "react";
 import PageBanner from "@/components/PageBanner";
+import { ArticleJsonLd } from "@/components/JsonLd";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -446,8 +447,20 @@ export default async function PostPage({ params }: Props) {
     .filter((p) => p.slug !== post.slug)
     .slice(0, 3);
 
+  // 記事の文字数を概算（HTML除去）
+  const wordCount = post.content.replace(/<[^>]*>/g, "").replace(/\s+/g, "").length;
+
   return (
     <div className="bg-gray-50 min-h-screen">
+      <ArticleJsonLd
+        title={post.title}
+        description={post.description || post.title}
+        slug={post.slug}
+        date={post.date}
+        image={post.image}
+        category={post.category}
+        wordCount={wordCount}
+      />
       <PageBanner
         title={post.title}
         breadcrumbs={[
@@ -465,7 +478,7 @@ export default async function PostPage({ params }: Props) {
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden">
                   <Image
-                    src="/cyclezmainlogo.png"
+                    src="/images/logo/cyclezmainlogo.png"
                     alt="cycleZ"
                     width={48}
                     height={48}
@@ -513,7 +526,7 @@ export default async function PostPage({ params }: Props) {
               <p className="text-sm font-medium text-gray-500 mb-3">この記事をシェアする</p>
               <div className="flex items-center gap-3">
                 <a
-                  href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(`https://blog.cycle-z.com/blog/${post.slug}`)}`}
+                  href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(`https://cycle-z.com/blog/${post.slug}`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2 bg-black text-white text-sm rounded-full hover:bg-gray-800 transition-colors"
@@ -524,7 +537,7 @@ export default async function PostPage({ params }: Props) {
                   ポスト
                 </a>
                 <a
-                  href={`https://line.me/R/msg/text/?${encodeURIComponent(post.title + " " + `https://blog.cycle-z.com/blog/${post.slug}`)}`}
+                  href={`https://line.me/R/msg/text/?${encodeURIComponent(post.title + " " + `https://cycle-z.com/blog/${post.slug}`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-4 py-2 bg-[#00b900] text-white text-sm rounded-full hover:bg-[#00a000] transition-colors"

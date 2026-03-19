@@ -3,7 +3,8 @@ import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import GoogleAnalytics from "@/components/GoogleAnalytics";
+import Analytics from "@/components/Analytics";
+import { SiteJsonLd } from "@/components/JsonLd";
 
 const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
@@ -29,17 +30,21 @@ export const metadata: Metadata = {
     "ロードバイク 選び方",
   ],
   authors: [{ name: "cycleZ" }],
+  // Meta domain認証（今後の広告配信用）
+  other: {
+    "facebook-domain-verification": process.env.NEXT_PUBLIC_META_DOMAIN_VERIFICATION || "",
+  },
   openGraph: {
     type: "website",
     locale: "ja_JP",
-    url: "https://blog.cycle-z.com",
+    url: "https://cycle-z.com",
     siteName: "cycleZ ブログ",
     title: "cycleZ ブログ | 岡山のロードバイク・自転車情報",
     description:
       "岡山市のロードバイク専門店cycleZのブログ。初心者向けガイド、メンテナンス情報、サイクリングコース紹介など。",
     images: [
       {
-        url: "https://blog.cycle-z.com/og-image.jpg",
+        url: "https://cycle-z.com/images/common/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "cycleZ ブログ",
@@ -48,11 +53,23 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    images: ["https://blog.cycle-z.com/og-image.jpg"],
+    images: ["https://cycle-z.com/images/common/og-image.jpg"],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  formatDetection: {
+    telephone: true,
+    email: true,
+    address: true,
   },
 };
 
@@ -63,8 +80,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      <head>
+        <SiteJsonLd />
+      </head>
       <body className={`${notoSansJP.variable} font-sans antialiased`}>
-        <GoogleAnalytics />
+        <Analytics />
         <div className="min-h-screen flex flex-col">
           <Header />
           <main className="flex-grow">{children}</main>
