@@ -6,6 +6,8 @@ import { useEffect, useCallback, Suspense } from "react";
 
 // GA4 測定ID
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || "";
+// Google Ads タグID（コンバージョン計測用）
+const GOOGLE_ADS_TAG_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_TAG_ID || "";
 // Microsoft Clarity トラッキングID
 const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID || "";
 // Meta Pixel ID（今後配信開始時に設定）
@@ -538,6 +540,7 @@ export default function Analytics() {
                   page_path: window.location.pathname,
                   send_page_view: true
                 });
+                ${GOOGLE_ADS_TAG_ID ? `gtag('config', '${GOOGLE_ADS_TAG_ID}');` : ''}
               `,
             }}
           />

@@ -30,6 +30,7 @@ Next.js 16.1 (App Router) / TypeScript / Tailwind CSS / gray-matter / date-fns /
 ### 環境変数（`.env.local` / Vercel）
 ```
 NEXT_PUBLIC_GA_ID=G-PHS6DKPECV
+NEXT_PUBLIC_GOOGLE_ADS_TAG_ID=AW-854808130
 NEXT_PUBLIC_CLARITY_ID=vy736hbd97
 NEXT_PUBLIC_META_PIXEL_ID=          # Meta広告配信開始時に設定
 NEXT_PUBLIC_META_DOMAIN_VERIFICATION=  # Meta domain認証トークン
@@ -230,9 +231,24 @@ Email: info@cycle-z.com
 | コンバージョン数 | 9,909 |
 | 費用 | ¥265万 |
 
-#### Google推奨事項
-- P-MAXのアセットグループを改善（充実度が「非常に高い」に満たない）→ +3.4%改善見込み
-- サイト側のAds Tag / コンバージョントラッキングのサイト実装は未確認（GBP経由のCV定義の可能性）
+#### Ads Tag サイト実装
+- **AW-854808130** を `Analytics.tsx` に追加済み（`NEXT_PUBLIC_GOOGLE_ADS_TAG_ID`）
+- GA4の `gtag.js` と共有ロードし、`gtag('config', 'AW-854808130')` で初期化
+- コンバージョンはGBP経由（Googleマップアクション）で計測中
+
+#### Google推奨事項・最適化案（最適化スコア: 81%）
+| カテゴリ | 改善幅 | 具体内容 | 対応 |
+|---------|--------|---------|------|
+| AI活用の基本 | +12% | 要確認 | 手動対応 |
+| 広告とアセット | +6% | **サイトリンクアセットが6個未満のキャンペーンあり** | 手動対応 |
+| 自動化キャンペーン | +6% | 要確認 | 手動対応 |
+| 入札と予算 | +4% | 要確認 | 手動対応 |
+| KWとターゲティング | +3% | 要確認 | 手動対応 |
+
+#### 電話専用広告の移行
+- **2026年2月**: 新規の電話専用広告の作成オプション削除済み
+- **2027年2月**: 既存の電話専用広告が全て削除される
+- **現在の影響**: 稼働中P-MAXキャンペーンには影響なし（P-MAXは電話番号アセットを自動使用）。停止中のLocal-1に含まれる可能性あるが実害なし
 
 #### 岡山自転車市場のAds競合状況（2026-03-19調査）
 **全主要キーワードで広告出稿ゼロ = ブルーオーシャン**
