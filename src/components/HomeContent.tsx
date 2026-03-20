@@ -7,6 +7,7 @@ import { ja } from "date-fns/locale";
 import ScrollReveal from "./ScrollReveal";
 import SectionHeader from "./SectionHeader";
 import type { PostData } from "@/lib/posts";
+import { getCategoryLabel, getCategoryColor } from "@/lib/categories";
 
 // 回転するホイールSVG（CTA装飾用）
 function SpinningWheel({ className = "" }: { className?: string }) {
@@ -31,39 +32,95 @@ function SpinningWheel({ className = "" }: { className?: string }) {
 interface HomeContentProps {
   latestNews: PostData[];
   eventPosts: PostData[];
+  latestPosts: PostData[];
 }
 
-export default function HomeContent({ latestNews, eventPosts }: HomeContentProps) {
+export default function HomeContent({ latestNews, eventPosts, latestPosts }: HomeContentProps) {
   return (
     <>
       {/* ニュースティッカー */}
       {latestNews.length > 0 && (
         <div className="bg-white border-b border-gray-100 shadow-sm">
-          <div className="max-w-6xl mx-auto px-4 py-3 flex items-center gap-3">
-            <span className="text-gray-400 text-sm flex-shrink-0 font-mono">
-              {format(new Date(latestNews[0].date), "yyyy.MM.dd", { locale: ja })}
+          <div className="max-w-6xl mx-auto px-3 sm:px-4 py-2.5 sm:py-3 flex items-center gap-2 sm:gap-3">
+            <span className="text-gray-400 text-[10px] sm:text-xs flex-shrink-0 font-mono">
+              {format(new Date(latestNews[0].date), "MM/dd", { locale: ja })}
             </span>
-            <span className="bg-[#c41e3a] text-white text-[10px] px-3 py-0.5 rounded-full flex-shrink-0 font-bold tracking-wider uppercase">
-              news
-            </span>
-            <span className="text-gray-800 text-sm truncate flex-1 font-medium">
-              {latestNews[0].title}
-            </span>
+            {(() => {
+              const color = getCategoryColor(latestNews[0].category);
+              return (
+                <span className={`${color.bg} ${color.text} text-[10px] px-2 py-0.5 rounded flex-shrink-0 font-bold`}>
+                  {getCategoryLabel(latestNews[0].category)}
+                </span>
+              );
+            })()}
             <Link
               href={`/blog/${latestNews[0].slug}`}
-              className="flex-shrink-0 group bg-[#c41e3a] text-white text-xs px-5 py-2 rounded-full hover:bg-[#a01830] transition-all hover:shadow-md flex items-center gap-1.5"
+              className="text-gray-800 text-xs sm:text-sm truncate flex-1 font-medium hover:text-[#c41e3a] transition-colors"
             >
-              もっと見る
-              <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
+              {latestNews[0].title}
             </Link>
           </div>
         </div>
       )}
 
+      {/* お知らせ一覧 NEWS */}
+      <section className="py-10 sm:py-14 md:py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-3 sm:px-4">
+          <SectionHeader
+            title="お知らせ"
+            subtitle="NEWS"
+          />
+          <div className="divide-y divide-gray-100">
+            {latestPosts.map((post, index) => {
+              const color = getCategoryColor(post.category);
+              return (
+                <ScrollReveal key={post.slug} delay={index * 50}>
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className="group flex items-start sm:items-center gap-2 sm:gap-3 py-3 sm:py-3.5 hover:bg-gray-50/80 transition-all px-2 sm:px-3 -mx-2 sm:-mx-3 rounded-lg"
+                  >
+                    {/* 日付（小さめ） */}
+                    <span className="text-gray-400 text-[10px] sm:text-xs flex-shrink-0 font-mono pt-0.5 sm:pt-0 w-10 sm:w-12">
+                      {format(new Date(post.date), "MM/dd", { locale: ja })}
+                    </span>
+                    {/* カテゴリタグ（色分け） */}
+                    <span className={`${color.bg} ${color.text} text-[10px] px-2 py-0.5 rounded flex-shrink-0 font-bold whitespace-nowrap`}>
+                      {getCategoryLabel(post.category)}
+                    </span>
+                    {/* タイトル */}
+                    <span className="text-gray-800 text-sm leading-snug flex-1 group-hover:text-[#c41e3a] transition-colors line-clamp-2 sm:truncate">
+                      {post.title}
+                    </span>
+                    {/* 矢印（PC） */}
+                    <svg className="w-3.5 h-3.5 text-gray-300 group-hover:text-[#c41e3a] group-hover:translate-x-0.5 transition-all flex-shrink-0 hidden sm:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </ScrollReveal>
+              );
+            })}
+          </div>
+          <ScrollReveal delay={300}>
+            <div className="text-center mt-8">
+              <Link
+                href="/category/news"
+                className="group inline-flex items-center gap-2 text-[#c41e3a] text-sm font-medium hover:underline underline-offset-4"
+              >
+                お知らせ一覧を見る
+                <svg className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </Link>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* チェーン区切り線 */}
+      <div className="chain-divider" />
+
       {/* 店舗紹介動画 MOVIE */}
-      <section className="py-20 md:py-28 bg-white relative overflow-hidden">
+      <section className="py-10 sm:py-14 md:py-20 bg-white relative overflow-hidden">
         {/* 背景装飾 */}
         <div className="absolute top-10 right-0 w-32 h-32 opacity-[0.03]">
           <SpinningWheel className="w-full h-full text-gray-900" />
@@ -92,41 +149,44 @@ export default function HomeContent({ latestNews, eventPosts }: HomeContentProps
       <div className="chain-divider" />
 
       {/* イベント開催情報 EVENT */}
-      <section className="py-20 md:py-28 bg-gray-50/80">
-        <div className="max-w-4xl mx-auto px-4">
+      <section className="py-10 sm:py-14 md:py-20 bg-gray-50/80">
+        <div className="max-w-4xl mx-auto px-3 sm:px-4">
           <SectionHeader
             title="イベント開催情報"
             subtitle="EVENT"
             description="サイクルゼットでは、自転車をもっともっと楽しんでいただけるよう、定期的にイベントを開催しています。気になるイベントがあれば、ぜひお気軽にご参加ください。"
           />
-          <div className="space-y-0 text-left">
-            {eventPosts.map((post, index) => (
-              <ScrollReveal key={post.slug} delay={index * 80}>
-                <Link
-                  href={`/blog/${post.slug}`}
-                  className="group flex items-center gap-3 md:gap-4 py-4 border-b border-gray-200 hover:bg-white hover:shadow-sm transition-all px-4 -mx-4 rounded-lg"
-                >
-                  <span className="text-gray-400 text-sm flex-shrink-0 w-24 font-mono">
-                    {format(new Date(post.date), "yyyy.MM.dd", { locale: ja })}
-                  </span>
-                  <span className="bg-[#c41e3a] text-white text-[10px] px-3 py-0.5 rounded-full flex-shrink-0 font-bold tracking-wider">
-                    EVENT
-                  </span>
-                  <span className="text-gray-800 text-sm md:text-base truncate group-hover:text-[#c41e3a] transition-colors">
-                    {post.title}
-                  </span>
-                  <svg className="w-4 h-4 text-gray-300 group-hover:text-[#c41e3a] group-hover:translate-x-1 transition-all flex-shrink-0 ml-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </Link>
-              </ScrollReveal>
-            ))}
+          <div className="divide-y divide-gray-200">
+            {eventPosts.map((post, index) => {
+              const color = getCategoryColor(post.category);
+              return (
+                <ScrollReveal key={post.slug} delay={index * 80}>
+                  <Link
+                    href={`/blog/${post.slug}`}
+                    className="group flex items-start sm:items-center gap-2 sm:gap-3 py-3 sm:py-3.5 hover:bg-white hover:shadow-sm transition-all px-2 sm:px-3 -mx-2 sm:-mx-3 rounded-lg"
+                  >
+                    <span className="text-gray-400 text-[10px] sm:text-xs flex-shrink-0 font-mono pt-0.5 sm:pt-0 w-10 sm:w-12">
+                      {format(new Date(post.date), "MM/dd", { locale: ja })}
+                    </span>
+                    <span className={`${color.bg} ${color.text} text-[10px] px-2 py-0.5 rounded flex-shrink-0 font-bold whitespace-nowrap`}>
+                      {getCategoryLabel(post.category)}
+                    </span>
+                    <span className="text-gray-800 text-sm leading-snug flex-1 group-hover:text-[#c41e3a] transition-colors line-clamp-2 sm:truncate">
+                      {post.title}
+                    </span>
+                    <svg className="w-3.5 h-3.5 text-gray-300 group-hover:text-[#c41e3a] group-hover:translate-x-0.5 transition-all flex-shrink-0 hidden sm:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                </ScrollReveal>
+              );
+            })}
           </div>
           <ScrollReveal delay={400}>
-            <div className="text-center mt-10">
+            <div className="text-center mt-8">
               <Link
                 href="/category/event"
-                className="group inline-flex items-center gap-2 bg-[#c41e3a] text-white px-8 py-3.5 rounded-full hover:bg-[#a01830] transition-all hover:shadow-lg font-medium"
+                className="group inline-flex items-center gap-2 bg-[#c41e3a] text-white px-7 py-3 rounded-full hover:bg-[#a01830] transition-all hover:shadow-lg font-medium text-sm"
               >
                 一覧を見る
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -142,7 +202,7 @@ export default function HomeContent({ latestNews, eventPosts }: HomeContentProps
       <div className="chain-divider" />
 
       {/* サイクルZが選ばれる理由 REASON */}
-      <section className="py-20 md:py-28 bg-white">
+      <section className="py-10 sm:py-14 md:py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4">
           <SectionHeader
             title="サイクルZが選ばれる理由"
@@ -222,7 +282,7 @@ export default function HomeContent({ latestNews, eventPosts }: HomeContentProps
       <div className="chain-divider" />
 
       {/* おススメコンテンツ RECOMMENDED CONTENTS */}
-      <section className="py-20 md:py-28 bg-gray-50/80">
+      <section className="py-10 sm:py-14 md:py-20 bg-gray-50/80">
         <div className="max-w-5xl mx-auto px-4">
           <SectionHeader
             title="おススメコンテンツ"
@@ -270,7 +330,7 @@ export default function HomeContent({ latestNews, eventPosts }: HomeContentProps
       <div className="chain-divider" />
 
       {/* 動画紹介 */}
-      <section className="py-20 md:py-28 bg-white">
+      <section className="py-10 sm:py-14 md:py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4">
           <SectionHeader
             title="動画紹介"

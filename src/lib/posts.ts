@@ -95,3 +95,8 @@ export function getLatestNewsPosts(limit: number): PostData[] {
     .filter((post) => post.category === "news" || post.category === "event")
     .slice(0, limit);
 }
+
+// 全カテゴリの最新記事を取得（トップページお知らせ用）
+export function getLatestPosts(limit: number): PostData[] {
+  return getAllPosts().slice(0, limit);
+}
