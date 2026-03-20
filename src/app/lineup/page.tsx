@@ -5,7 +5,7 @@ import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
   title: "ラインナップ",
-  description: "cycleZ（サイクルゼット）の取り扱いブランド一覧。GIOS、BASSO、SCOTT、Wilierなどのロードバイクから、STEM DESIGN、rin projectなどのサイクルアパレルまで。",
+  description: "cycleZ（サイクルゼット）の取り扱いブランド一覧。GIOS、BASSO、SCOTT、Wilier、macchi cyclesなどのロードバイクから、STEM DESIGN、rin projectなどのサイクルアパレルまで。",
 };
 
 const bikebrands = [
@@ -83,6 +83,11 @@ const bikebrands = [
     name: "Tyrell",
     country: "日本",
     description: "讃岐発の折りたたみ自転車・ミニベロブランド。走行性能と携帯性を高次元で両立した美しい小径車。",
+  },
+  {
+    name: "macchi cycles",
+    country: "日本",
+    description: "滋賀県信楽に工房を構えるビルダー植田真貴氏によるハンドメイドクロモリブランド。レースでも戦える「よく走るクロモリ」を追求したラグドフレームが特徴。体格や用途に合わせたフルオーダーに対応。",
   },
 ];
 
