@@ -7,7 +7,6 @@ import { ja } from "date-fns/locale";
 import { useEffect, useRef, useState } from "react";
 import ScrollReveal from "./ScrollReveal";
 import SectionHeader from "./SectionHeader";
-import CountUp from "./CountUp";
 import ProgressRing from "./ProgressRing";
 import type { PostData } from "@/lib/posts";
 import { getCategoryLabel, getCategoryColor } from "@/lib/categories";
@@ -443,23 +442,6 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
             </div>
           </ScrollReveal>
 
-          {/* カウントアップ実績 */}
-          <ScrollReveal delay={200}>
-            <div className="mt-12 grid grid-cols-3 gap-4 sm:gap-8 text-center">
-              <div className="bg-gray-50 rounded-xl p-4 sm:p-6">
-                <CountUp end={421} className="text-2xl sm:text-4xl font-black text-[#c41e3a]" />
-                <p className="text-gray-500 text-[10px] sm:text-xs mt-1">ブログ記事数</p>
-              </div>
-              <div className="bg-gray-50 rounded-xl p-4 sm:p-6">
-                <CountUp end={16} className="text-2xl sm:text-4xl font-black text-[#c41e3a]" />
-                <p className="text-gray-500 text-[10px] sm:text-xs mt-1">取扱ブランド</p>
-              </div>
-              <div className="bg-gray-50 rounded-xl p-4 sm:p-6">
-                <CountUp end={72} className="text-2xl sm:text-4xl font-black text-[#c41e3a]" />
-                <p className="text-gray-500 text-[10px] sm:text-xs mt-1">Google口コミ</p>
-              </div>
-            </div>
-          </ScrollReveal>
         </div>
       </section>
 
