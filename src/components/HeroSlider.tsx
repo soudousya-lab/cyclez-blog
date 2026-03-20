@@ -1,13 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect, useCallback } from "react";
 
 const slides = [
-  { image: "/images/slider/beginner.jpg", alt: "初心者の方へ", width: 2400, height: 1000 },
-  { image: "/images/slider/woman.jpg", alt: "女性のお客様へ", width: 2400, height: 1000 },
-  { image: "/images/slider/rinko.jpg", alt: "輪行で広がるサイクリング", width: 2400, height: 1000 },
-  { image: "/images/slider/cafe.jpg", alt: "カフェライドを楽しむ", width: 2400, height: 1000 },
+  { image: "/images/slider/beginner.jpg", alt: "初心者の方へ", href: "/first/beginner" },
+  { image: "/images/slider/woman.jpg", alt: "女性のお客様へ", href: "/first/women" },
+  { image: "/images/slider/rinko.jpg", alt: "輪行で広がるサイクリング", href: "/first/rinko" },
+  { image: "/images/slider/cafe.jpg", alt: "カフェライドを楽しむ", href: "/first/cafe-ride" },
 ];
 
 export default function HeroSlider() {
@@ -33,13 +34,15 @@ export default function HeroSlider() {
       {/* 全スライドを重ねて配置、opacityでフェード切り替え */}
       <div className="relative w-full" style={{ aspectRatio: "2400/1000" }}>
         {slides.map((slide, index) => (
-          <div
+          <Link
             key={index}
+            href={slide.href}
             className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
               index === currentSlide
                 ? "opacity-100 scale-100"
-                : "opacity-0 scale-105"
+                : "opacity-0 scale-105 pointer-events-none"
             }`}
+            aria-label={slide.alt}
           >
             <Image
               src={slide.image}
@@ -49,7 +52,7 @@ export default function HeroSlider() {
               sizes="100vw"
               priority={index === 0}
             />
-          </div>
+          </Link>
         ))}
 
         {/* 下部グラデーションオーバーレイ */}
