@@ -1,4 +1,4 @@
-import { getEventPosts, getEventReportPosts, getLatestNewsPosts } from "@/lib/posts";
+import { getEventPosts, getLatestNewsPosts } from "@/lib/posts";
 import HeroSlider from "@/components/HeroSlider";
 import Link from "next/link";
 import Image from "next/image";
@@ -8,7 +8,6 @@ import { ja } from "date-fns/locale";
 export default function Home() {
   const latestNews = getLatestNewsPosts(1);
   const eventPosts = getEventPosts(6);
-  const eventReports = getEventReportPosts(4);
 
   return (
     <div className="bg-white min-h-screen">
@@ -104,57 +103,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* イベントレポート EVENT REPORT */}
-      {eventReports.length > 0 && (
-        <section className="py-16 md:py-20 bg-white">
-          <div className="max-w-5xl mx-auto px-4 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">イベントレポート</h2>
-            <p className="text-[#c41e3a] text-sm font-medium mb-10">EVENT REPORT</p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              {eventReports.map((report) => (
-                <Link
-                  key={report.slug}
-                  href={`/blog/${report.slug}`}
-                  className="group relative aspect-[4/3] overflow-hidden rounded-lg shadow-md"
-                >
-                  {report.image ? (
-                    <Image
-                      src={report.image}
-                      alt={report.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
-                      sizes="(max-width: 768px) 50vw, 25vw"
-                    />
-                  ) : (
-                    <div className="absolute inset-0 bg-gradient-to-br from-gray-300 to-gray-500" />
-                  )}
-                  <div className="absolute inset-0 bg-black/30 group-hover:bg-black/40 transition-colors" />
-                  <div className="absolute top-2 right-2">
-                    <span className="text-white text-xs font-medium bg-[#c41e3a] px-2 py-0.5 rounded">REPORT</span>
-                  </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-3">
-                    <p className="text-white text-xs mb-1">
-                      {format(new Date(report.date), "yyyy年MM月dd日", { locale: ja })}
-                    </p>
-                    <h3 className="text-white text-sm font-bold line-clamp-2 leading-tight">
-                      {report.title}
-                    </h3>
-                  </div>
-                </Link>
-              ))}
-            </div>
-            <Link
-              href="/category/event-report"
-              className="inline-flex items-center gap-2 bg-[#c41e3a] text-white px-8 py-3 rounded-full hover:bg-[#a01830] transition-colors font-medium mt-8"
-            >
-              一覧を見る
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </Link>
-          </div>
-        </section>
-      )}
+      {/* イベントレポートはメニュー（/category/event-report）からのみアクセス可能 */}
 
       {/* サイクルZが選ばれる理由 REASON */}
       <section className="py-16 md:py-20 bg-gray-50">
