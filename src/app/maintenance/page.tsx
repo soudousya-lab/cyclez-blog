@@ -8,21 +8,36 @@ export const metadata: Metadata = {
 };
 
 export default function MaintenancePage() {
-  const sections = [
+  const items = [
     {
       num: "01",
-      title: "メンテナンスで、長く快適に走れます",
-      text: "安心してロードバイクに乗るにはこまめなメンテナンスが大切。とはいえ初心者の方や、女性の中にはメンテナンスに苦手意識を持つ方は多いかもしれません。ロードバイクに親しむ方を増やしたいサイクルゼットでは、そういった方には特にていねいにメンテナンス手順など説明しています。",
+      title: "スポーツバイクに乗る際に大切な事4選",
+      text: "乗車前に知っておきたい4つの基本ポイント。安全・快適に走るための必須知識をまとめています。",
+      videoId: "v3wJXLkxkv8",
     },
     {
       num: "02",
-      title: "慣れてしまえば、案外カンタン",
-      text: "ボルトのしめ直しや変速調整、チェーン調整、車輪の振れ…メンテナンスでチェックしたい項目は、書き出してみるとたくさんあるように感じますが、慣れると案外ささっと終わります。ロードバイクに乗る前の習慣にして、ずっと快適に走っていただけるとうれしいです。",
+      title: "空気の入れ方",
+      text: "スポーツバイク用の空気入れ（フロアポンプ）の使い方を解説。仏式バルブの操作方法や適正空気圧の確認方法がわかります。",
+      videoId: "WH34uv4pmz8",
     },
     {
       num: "03",
-      title: "手入れするごとに、愛着のわく一台に",
-      text: "日常的に気軽に乗れる自転車、そしてロードバイクは、時には事故の危険と隣り合わせの乗り物だということは忘れないでください。ペダルをこぐと変にガタガタするなど、何か気になることがあれば、できるだけすぐ確認、必要なら早めにサイクルゼットまでお持ちください。",
+      title: "車体の掃除",
+      text: "フレームやホイールの汚れ落としの手順を紹介。定期的な掃除でパーツの寿命が大きく変わります。",
+      videoId: "x0wjWOjEiFg",
+    },
+    {
+      num: "04",
+      title: "チェーン洗浄",
+      text: "チェーンクリーナーと注油の手順を解説。駆動系のメンテナンスは走りの軽さに直結します。",
+      videoId: "m7OpKWD9pOc",
+    },
+    {
+      num: "05",
+      title: "パンク修理（チューブ交換）",
+      text: "ライド中のパンクに備えて覚えておきたいチューブ交換の手順。タイヤの外し方からチューブの入れ方まで、一連の流れを説明しています。",
+      videoId: "nm2UgQIevew",
     },
   ];
 
@@ -42,77 +57,35 @@ export default function MaintenancePage() {
         </div>
 
         <div className="space-y-6">
-          {sections.map((section) => (
-            <div key={section.num} className="bg-white rounded-2xl shadow-sm p-6 md:p-10">
-              <div className="flex items-start gap-4">
-                <span className="flex-shrink-0 w-12 h-12 bg-[#c41e3a] text-white rounded-full flex items-center justify-center text-lg font-bold">
-                  {section.num}
-                </span>
-                <div>
-                  <h2 className="text-lg md:text-xl font-bold text-gray-900 mb-3">{section.title}</h2>
-                  <p className="text-gray-700 leading-relaxed">{section.text}</p>
+          {items.map((item) => (
+            <div key={item.num} className="bg-white rounded-2xl shadow-sm overflow-hidden">
+              {/* 動画 */}
+              <div className="p-5 md:p-6 pb-0">
+                <div className="aspect-video w-full rounded-xl overflow-hidden ring-1 ring-black/5">
+                  <iframe
+                    className="w-full h-full"
+                    src={`https://www.youtube.com/embed/${item.videoId}`}
+                    title={item.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+              {/* 説明 */}
+              <div className="p-5 md:p-6 pt-4">
+                <div className="flex items-start gap-3">
+                  <span className="flex-shrink-0 w-10 h-10 bg-[#c41e3a] text-white rounded-full flex items-center justify-center text-sm font-bold">
+                    {item.num}
+                  </span>
+                  <div>
+                    <h2 className="text-base md:text-lg font-bold text-gray-900 mb-1">{item.title}</h2>
+                    <p className="text-gray-500 text-sm leading-relaxed">{item.text}</p>
+                  </div>
                 </div>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* メンテナンス動画 */}
-        <div className="mt-12">
-          <div className="text-center mb-8">
-            <p className="text-[#c41e3a] text-xs font-bold tracking-[0.2em] uppercase mb-1">MOVIE</p>
-            <h2 className="text-xl md:text-2xl font-bold text-gray-900">メンテナンス動画</h2>
-            <p className="text-gray-500 text-sm mt-2">自宅でできるメンテナンスの手順を動画でわかりやすく解説しています。</p>
-          </div>
-
-          <div className="space-y-6">
-            {[
-              {
-                id: "v3wJXLkxkv8",
-                title: "スポーツバイクに乗る際に大切な事4選",
-                desc: "乗車前に知っておきたい4つの基本ポイント。安全・快適に走るための必須知識をまとめています。",
-              },
-              {
-                id: "WH34uv4pmz8",
-                title: "空気の入れ方",
-                desc: "スポーツバイク用の空気入れ（フロアポンプ）の使い方を解説。仏式バルブの操作方法や適正空気圧の確認方法がわかります。",
-              },
-              {
-                id: "x0wjWOjEiFg",
-                title: "車体の掃除",
-                desc: "フレームやホイールの汚れ落としの手順を紹介。定期的な掃除でパーツの寿命が大きく変わります。",
-              },
-              {
-                id: "m7OpKWD9pOc",
-                title: "チェーン洗浄",
-                desc: "チェーンクリーナーと注油の手順を解説。駆動系のメンテナンスは走りの軽さに直結します。",
-              },
-              {
-                id: "nm2UgQIevew",
-                title: "パンク修理（チューブ交換）",
-                desc: "ライド中のパンクに備えて覚えておきたいチューブ交換の手順。タイヤの外し方からチューブの入れ方まで、一連の流れを説明しています。",
-              },
-            ].map((video) => (
-              <div key={video.id} className="bg-white rounded-2xl shadow-sm overflow-hidden">
-                <div className="p-5 md:p-6 pb-3 md:pb-4">
-                  <h3 className="text-base md:text-lg font-bold text-gray-900 mb-1">{video.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{video.desc}</p>
-                </div>
-                <div className="px-5 md:px-6 pb-5 md:pb-6">
-                  <div className="aspect-video w-full rounded-xl overflow-hidden ring-1 ring-black/5">
-                    <iframe
-                      className="w-full h-full"
-                      src={`https://www.youtube.com/embed/${video.id}`}
-                      title={video.title}
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerPolicy="strict-origin-when-cross-origin"
-                      allowFullScreen
-                    />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
 
         <div className="mt-10 text-center">
