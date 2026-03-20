@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 const slides = [
   { image: "/images/slider/beginner.jpg", alt: "初心者の方へ", width: 2400, height: 1000 },
@@ -13,8 +13,6 @@ const slides = [
 export default function HeroSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
-  const [scrollY, setScrollY] = useState(0);
-  const containerRef = useRef<HTMLDivElement>(null);
 
   const goToSlide = useCallback((index: number) => {
     if (isTransitioning) return;
@@ -30,27 +28,8 @@ export default function HeroSlider() {
     return () => clearInterval(timer);
   }, [currentSlide, goToSlide]);
 
-  // パララックス：スクロール量を監視
-  useEffect(() => {
-    const handleScroll = () => {
-      if (containerRef.current) {
-        const rect = containerRef.current.getBoundingClientRect();
-        // ヒーローが画面内にある場合のみ更新
-        if (rect.bottom > 0) {
-          setScrollY(window.scrollY);
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  // パララックスの移動量（背景はスクロール速度の40%でゆっくり動く）
-  const parallaxOffset = scrollY * 0.4;
-
   return (
-    <div ref={containerRef} className="relative w-full bg-gray-900 overflow-hidden">
+    <div className="relative w-full bg-gray-900 overflow-hidden">
       {/* 全スライドを重ねて配置、opacityでフェード切り替え */}
       <div className="relative w-full" style={{ aspectRatio: "2400/1000" }}>
         {slides.map((slide, index) => (
@@ -61,9 +40,6 @@ export default function HeroSlider() {
                 ? "opacity-100 scale-100"
                 : "opacity-0 scale-105"
             }`}
-            style={{
-              transform: `translateY(${parallaxOffset}px) ${index === currentSlide ? "scale(1)" : "scale(1.05)"}`,
-            }}
           >
             <Image
               src={slide.image}
@@ -72,11 +48,6 @@ export default function HeroSlider() {
               className="object-cover"
               sizes="100vw"
               priority={index === 0}
-              style={{
-                // 画像をパララックス分だけ大きくして余白が出ないようにする
-                height: `calc(100% + ${parallaxOffset * 2}px)`,
-                top: `-${parallaxOffset}px`,
-              }}
             />
           </div>
         ))}
