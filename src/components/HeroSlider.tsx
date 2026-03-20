@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 const slides = [
   { image: "/images/slider/beginner.jpg", alt: "初心者の方へ", width: 2400, height: 1000 },
@@ -12,42 +12,78 @@ const slides = [
 
 export default function HeroSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+
+  const goToSlide = useCallback((index: number) => {
+    if (isTransitioning) return;
+    setIsTransitioning(true);
+    setCurrentSlide(index);
+    setTimeout(() => setIsTransitioning(false), 1000);
+  }, [isTransitioning]);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
+      goToSlide((currentSlide + 1) % slides.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, [currentSlide, goToSlide]);
 
   return (
-    <div className="relative w-full bg-white">
-      {/* Current slide image - full width, auto height */}
-      <Image
-        src={slides[currentSlide].image}
-        alt={slides[currentSlide].alt}
-        width={slides[currentSlide].width}
-        height={slides[currentSlide].height}
-        className="w-full h-auto"
-        sizes="100vw"
-        priority
-      />
+    <div className="relative w-full bg-gray-900 overflow-hidden">
+      {/* 全スライドを重ねて配置、opacityでフェード切り替え */}
+      <div className="relative w-full" style={{ aspectRatio: "2400/1000" }}>
+        {slides.map((slide, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-all duration-1000 ease-in-out ${
+              index === currentSlide
+                ? "opacity-100 scale-100"
+                : "opacity-0 scale-105"
+            }`}
+          >
+            <Image
+              src={slide.image}
+              alt={slide.alt}
+              fill
+              className="object-cover"
+              sizes="100vw"
+              priority={index === 0}
+            />
+          </div>
+        ))}
 
-      {/* Slide indicators */}
-      <div className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 flex gap-1.5 sm:gap-2 z-10">
+        {/* 下部グラデーションオーバーレイ */}
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/30 to-transparent z-10" />
+      </div>
+
+      {/* プログレスバー付きインジケータ */}
+      <div className="absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 flex gap-2 sm:gap-3 z-20">
         {slides.map((_, index) => (
           <button
             key={index}
-            onClick={() => setCurrentSlide(index)}
-            className={`h-1.5 sm:h-2 rounded-full transition-all ${
-              index === currentSlide
-                ? "bg-white w-6 sm:w-8 shadow-md"
-                : "bg-white/50 hover:bg-white/70 w-1.5 sm:w-2 shadow-md"
-            }`}
+            onClick={() => goToSlide(index)}
+            className="relative h-1 rounded-full overflow-hidden bg-white/30 hover:bg-white/50 transition-colors"
+            style={{ width: index === currentSlide ? "2rem" : "0.75rem" }}
             aria-label={`スライド${index + 1}へ`}
-          />
+          >
+            {index === currentSlide && (
+              <span
+                className="absolute inset-0 bg-white rounded-full origin-left"
+                style={{
+                  animation: "progress-bar 5s linear forwards",
+                }}
+              />
+            )}
+          </button>
         ))}
       </div>
+
+      <style jsx>{`
+        @keyframes progress-bar {
+          from { transform: scaleX(0); }
+          to { transform: scaleX(1); }
+        }
+      `}</style>
     </div>
   );
 }

@@ -14,6 +14,66 @@
   --color-cyclez-red: var(--cyclez-red);
   --color-cyclez-red-dark: var(--cyclez-red-dark);
   --font-sans: var(--font-noto-sans-jp);
+  --animate-spin-slow: spin-slow 8s linear infinite;
+  --animate-wheel-spin: wheel-spin 3s linear infinite;
+  --animate-chain-scroll: chain-scroll 4s linear infinite;
+  --animate-fade-in-up: fade-in-up 0.6s ease-out forwards;
+}
+
+/* ギア回転アニメーション */
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ホイール回転 */
+@keyframes wheel-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* チェーンスクロール */
+@keyframes chain-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-48px); }
+}
+
+/* フェードインアップ */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* HeroSliderフェードトランジション */
+.hero-slide-enter {
+  opacity: 0;
+  transform: scale(1.05);
+}
+.hero-slide-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out, transform 6s ease-out;
+}
+
+/* セクション区切りのチェーン装飾 */
+.chain-divider {
+  background-image: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 8px,
+    var(--cyclez-red) 8px,
+    var(--cyclez-red) 12px,
+    transparent 12px,
+    transparent 16px
+  );
+  height: 2px;
+  opacity: 0.15;
 }
 
 body {
