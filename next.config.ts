@@ -3,6 +3,18 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   async redirects() {
     return [
+      // .vercel.app へのアクセスを cycle-z.com にリダイレクト
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "(.+\\.)?vercel\\.app",
+          },
+        ],
+        destination: "https://cycle-z.com/:path*",
+        permanent: true,
+      },
       // WP旧URL: /blog/YYYY/MM/DD/slug/ → 新URL: /blog/slug
       {
         source: "/blog/:year(\\d{4})/:month(\\d{2})/:day(\\d{2})/:slug",
