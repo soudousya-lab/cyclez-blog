@@ -57,6 +57,64 @@ export default function MaintenancePage() {
           ))}
         </div>
 
+        {/* メンテナンス動画 */}
+        <div className="mt-12">
+          <div className="text-center mb-8">
+            <p className="text-[#c41e3a] text-xs font-bold tracking-[0.2em] uppercase mb-1">MOVIE</p>
+            <h2 className="text-xl md:text-2xl font-bold text-gray-900">メンテナンス動画</h2>
+            <p className="text-gray-500 text-sm mt-2">自宅でできるメンテナンスの手順を動画でわかりやすく解説しています。</p>
+          </div>
+
+          <div className="space-y-6">
+            {[
+              {
+                id: "v3wJXLkxkv8",
+                title: "スポーツバイクに乗る際に大切な事4選",
+                desc: "乗車前に知っておきたい4つの基本ポイント。安全・快適に走るための必須知識をまとめています。",
+              },
+              {
+                id: "WH34uv4pmz8",
+                title: "空気の入れ方",
+                desc: "スポーツバイク用の空気入れ（フロアポンプ）の使い方を解説。仏式バルブの操作方法や適正空気圧の確認方法がわかります。",
+              },
+              {
+                id: "x0wjWOjEiFg",
+                title: "車体の掃除",
+                desc: "フレームやホイールの汚れ落としの手順を紹介。定期的な掃除でパーツの寿命が大きく変わります。",
+              },
+              {
+                id: "m7OpKWD9pOc",
+                title: "チェーン洗浄",
+                desc: "チェーンクリーナーと注油の手順を解説。駆動系のメンテナンスは走りの軽さに直結します。",
+              },
+              {
+                id: "nm2UgQIevew",
+                title: "パンク修理（チューブ交換）",
+                desc: "ライド中のパンクに備えて覚えておきたいチューブ交換の手順。タイヤの外し方からチューブの入れ方まで、一連の流れを説明しています。",
+              },
+            ].map((video) => (
+              <div key={video.id} className="bg-white rounded-2xl shadow-sm overflow-hidden">
+                <div className="p-5 md:p-6 pb-3 md:pb-4">
+                  <h3 className="text-base md:text-lg font-bold text-gray-900 mb-1">{video.title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{video.desc}</p>
+                </div>
+                <div className="px-5 md:px-6 pb-5 md:pb-6">
+                  <div className="aspect-video w-full rounded-xl overflow-hidden ring-1 ring-black/5">
+                    <iframe
+                      className="w-full h-full"
+                      src={`https://www.youtube.com/embed/${video.id}`}
+                      title={video.title}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                    />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="mt-10 text-center">
           <Link
             href="/contact"
