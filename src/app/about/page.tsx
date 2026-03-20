@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
   title: "CycleZとは？",
@@ -10,11 +9,17 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="bg-gray-50 min-h-screen">
-      <PageBanner
-        title="CycleZとは？"
-        subtitle="ABOUT CycleZ"
-        breadcrumbs={[{ label: "CycleZとは？" }]}
-      />
+      <div className="bg-white border-b border-gray-200">
+        <div className="max-w-4xl mx-auto px-4 py-8 md:py-10">
+          <nav className="flex items-center gap-2 text-sm text-gray-400 mb-3">
+            <Link href="/" className="hover:text-gray-600 transition-colors">ホーム</Link>
+            <span>/</span>
+            <span className="text-gray-600">CycleZとは？</span>
+          </nav>
+          <p className="text-[#c41e3a] text-xs font-bold tracking-[0.2em] uppercase mb-1">ABOUT CycleZ</p>
+          <h1 className="text-2xl md:text-3xl font-bold text-gray-900">CycleZとは？</h1>
+        </div>
+      </div>
 
       <div className="max-w-4xl mx-auto px-4 py-10">
         {/* イントロ */}
