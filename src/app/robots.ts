@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://blog.cycle-z.com/sitemap.xml',
+    sitemap: 'https://cycle-z.com/sitemap.xml',
   };
 }

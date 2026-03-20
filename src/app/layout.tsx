@@ -14,11 +14,11 @@ const notoSansJP = Noto_Sans_JP({
 
 export const metadata: Metadata = {
   title: {
-    default: "cycleZ ブログ | 岡山のロードバイク・自転車情報",
-    template: "%s | cycleZ ブログ",
+    default: "cycleZ | 岡山のロードバイク・自転車情報",
+    template: "%s | cycleZ",
   },
   description:
-    "岡山市のロードバイク専門店cycleZのブログ。初心者向けの選び方ガイド、メンテナンス情報、岡山のサイクリングコース紹介など、自転車ライフを楽しむための情報を発信しています。",
+    "岡山市のロードバイク専門店cycleZ。初心者向けの選び方ガイド、メンテナンス情報、岡山のサイクリングコース紹介など、自転車ライフを楽しむための情報を発信しています。",
   keywords: [
     "岡山",
     "ロードバイク",
@@ -38,16 +38,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "ja_JP",
     url: "https://cycle-z.com",
-    siteName: "cycleZ ブログ",
-    title: "cycleZ ブログ | 岡山のロードバイク・自転車情報",
+    siteName: "cycleZ",
+    title: "cycleZ | 岡山のロードバイク・自転車情報",
     description:
-      "岡山市のロードバイク専門店cycleZのブログ。初心者向けガイド、メンテナンス情報、サイクリングコース紹介など。",
+      "岡山市のロードバイク専門店cycleZ。初心者向けガイド、メンテナンス情報、サイクリングコース紹介など。",
     images: [
       {
         url: "https://cycle-z.com/images/common/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "cycleZ ブログ",
+        alt: "cycleZ",
       },
     ],
   },

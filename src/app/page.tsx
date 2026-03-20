@@ -334,7 +334,7 @@ export default function Home() {
               className="group block relative aspect-video rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow"
             >
               <Image
-                src="/images/youtube-thumb01.jpg"
+                src="/images/youtube/youtube-thumb01.jpg"
                 alt="動画1"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -353,7 +353,7 @@ export default function Home() {
               className="group block relative aspect-video rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow"
             >
               <Image
-                src="/images/youtube-thumb02.jpg"
+                src="/images/youtube/youtube-thumb02.jpg"
                 alt="動画2"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -372,7 +372,7 @@ export default function Home() {
               className="group block relative aspect-video rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow"
             >
               <Image
-                src="/images/youtube-thumb03.jpg"
+                src="/images/youtube/youtube-thumb03.jpg"
                 alt="動画3"
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -403,7 +403,7 @@ export default function Home() {
       <section className="relative py-12 sm:py-16 md:py-20 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/contact.jpg"
+            src="/images/cta/contact.jpg"
             alt="お問い合わせ"
             fill
             className="object-cover"

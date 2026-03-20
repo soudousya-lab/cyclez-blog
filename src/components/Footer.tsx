@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="mb-4">
               <Image
-                src="/logo.png"
+                src="/images/logo/logo.png"
                 alt="cycleZ - サイクルゼット"
                 width={150}
                 height={50}
