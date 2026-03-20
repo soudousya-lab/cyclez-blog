@@ -25,19 +25,9 @@ export default function PostCard({ post }: PostCardProps) {
       {/* Thumbnail */}
       <Link href={`/blog/${post.slug}`}>
         <div className="relative h-36 sm:h-40 md:h-48 bg-gradient-to-br from-[#c41e3a] to-[#e85a70] overflow-hidden">
-          {post.image ? (
-            <div className="w-full h-full flex items-center justify-center bg-white p-2 sm:p-3 md:p-4 group-hover:scale-105 transition-transform duration-300">
-              <img
-                src={post.image}
-                alt={post.title}
-                className="max-w-full max-h-full object-contain"
-              />
-            </div>
-          ) : (
-            <div className="absolute inset-0 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <FaBicycle className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 text-white/20" />
-            </div>
-          )}
+          <div className="absolute inset-0 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <FaBicycle className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 text-white/20" />
+          </div>
           {/* Category badge */}
           <span className="absolute top-2 left-2 sm:top-3 sm:left-3 bg-white text-[#c41e3a] text-[10px] sm:text-xs font-medium px-2 py-0.5 sm:px-3 sm:py-1 rounded-full shadow-sm">
             {post.category}
