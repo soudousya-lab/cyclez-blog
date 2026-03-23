@@ -127,6 +127,12 @@ export default function Footer() {
                 <svg className="w-3 h-3 text-[#c41e3a]" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M9 5l7 7-7 7" />
                 </svg>
+                <Link href="/about/staff" className="text-gray-600 hover:text-[#c41e3a]">スタッフ紹介</Link>
+              </li>
+              <li className="flex items-center gap-2">
+                <svg className="w-3 h-3 text-[#c41e3a]" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M9 5l7 7-7 7" />
+                </svg>
                 <Link href="/about" className="text-gray-600 hover:text-[#c41e3a]">CycleZとは？</Link>
               </li>
             </ul>

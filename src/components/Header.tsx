@@ -152,6 +152,11 @@ export default function Header() {
               </Link>
             </li>
             <li>
+              <Link href="/about/staff" className="block px-5 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
+                スタッフ紹介
+              </Link>
+            </li>
+            <li>
               <Link href="/lineup" className="block px-5 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
                 ラインナップ
               </Link>
@@ -174,6 +179,7 @@ export default function Header() {
             <Link href="/maintenance" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">メンテナンス</Link>
             <Link href="/fitting" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">フィッティング</Link>
             <Link href="/about" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">CycleZとは？</Link>
+            <Link href="/about/staff" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">スタッフ紹介</Link>
             <Link href="/lineup" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">ラインナップ</Link>
             <Link href="/faq" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">よくある質問</Link>
             <div className="px-6 py-4 border-t mt-2">
