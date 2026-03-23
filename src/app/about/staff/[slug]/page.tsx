@@ -9,12 +9,13 @@ export function generateStaticParams() {
   return staffMembers.map((s) => ({ slug: s.slug }));
 }
 
-export function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}): Metadata {
-  const staff = getStaffBySlug(params.slug);
+type Props = {
+  params: Promise<{ slug: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const staff = getStaffBySlug(slug);
   if (!staff) return {};
   return {
     title: `${staff.name}（${staff.role}）`,
@@ -22,15 +23,12 @@ export function generateMetadata({
   };
 }
 
-export default function StaffDetailPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
-  const staff = getStaffBySlug(params.slug);
+export default async function StaffDetailPage({ params }: Props) {
+  const { slug } = await params;
+  const staff = getStaffBySlug(slug);
   if (!staff) notFound();
 
-  const otherStaff = getOtherStaff(params.slug);
+  const otherStaff = getOtherStaff(slug);
 
   return (
     <div className="bg-gray-50 min-h-screen">
