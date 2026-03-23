@@ -30,7 +30,7 @@ const STORE_INFO = {
   socialLinks: [
     "https://www.instagram.com/cyclez2015/",
     "https://www.facebook.com/cyclez2015/",
-    "https://www.youtube.com/@cyclez",
+    "https://www.youtube.com/@cyclez1504",
   ],
 };
 

@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Analytics from "@/components/Analytics";
 import { SiteJsonLd } from "@/components/JsonLd";
+import FloatingSns from "@/components/FloatingSns";
 
 const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
@@ -90,6 +91,7 @@ export default function RootLayout({
           <main className="flex-grow">{children}</main>
           <Footer />
         </div>
+        <FloatingSns />
       </body>
     </html>
   );

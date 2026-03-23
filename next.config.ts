@@ -27,6 +27,39 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       // /first/beginner/ はそのまま対応済み
+      // WP旧固定ページ: /10th/ → トップページ
+      {
+        source: "/10th",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/10th/",
+        destination: "/",
+        permanent: true,
+      },
+      // WP旧カテゴリURL: /blog/category/slug → 新URL: /category/slug
+      {
+        source: "/blog/category/:slug",
+        destination: "/category/:slug",
+        permanent: true,
+      },
+      {
+        source: "/blog/category/:slug/",
+        destination: "/category/:slug",
+        permanent: true,
+      },
+      // WP旧固定ページ: /event_all → カテゴリページ
+      {
+        source: "/event_all",
+        destination: "/category/event",
+        permanent: true,
+      },
+      {
+        source: "/event_all/",
+        destination: "/category/event",
+        permanent: true,
+      },
     ];
   },
 };

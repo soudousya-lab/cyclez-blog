@@ -29,7 +29,16 @@ export default function AccessPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-2">
               <dt className="font-bold text-gray-900 sm:w-32 flex-shrink-0">住所</dt>
-              <dd className="text-gray-700">〒700-0033 岡山県岡山市北区島田本町1-1-47</dd>
+              <dd className="text-gray-700">
+                <a
+                  href="https://www.google.com/maps/place/cycleZ+%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB%E3%82%BC%E3%83%83%E3%83%88/@34.6628275,133.9137373,17z/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#c41e3a] hover:underline"
+                >
+                  〒700-0033 岡山県岡山市北区島田本町1-1-47
+                </a>
+              </dd>
             </div>
             <div className="flex flex-col sm:flex-row gap-2">
               <dt className="font-bold text-gray-900 sm:w-32 flex-shrink-0">電話番号</dt>

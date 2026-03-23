@@ -274,7 +274,7 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
           <ScrollReveal delay={300}>
             <div className="text-center mt-8 sm:mt-10">
               <a
-                href="https://www.youtube.com/@cyclez"
+                href="https://www.youtube.com/@cyclez1504"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-3.5 rounded-full hover:bg-gray-800 transition-all hover:shadow-lg font-medium text-sm"
@@ -295,9 +295,22 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
       {/* チェーン区切り線 */}
       <div className="chain-divider" />
 
-      {/* イベント開催情報 EVENT */}
-      <section className="py-10 sm:py-14 md:py-20 bg-gray-50/80">
-        <div className="max-w-4xl mx-auto px-3 sm:px-4">
+      {/* イベント開催情報 EVENT（背景動画 + 透過オーバーレイ） */}
+      <section className="relative py-10 sm:py-14 md:py-20 overflow-hidden">
+        {/* 背景動画 */}
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 pointer-events-none" style={{ transform: "scale(1.5)" }}>
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/oslYFlo1O4Q?autoplay=1&mute=1&loop=1&playlist=oslYFlo1O4Q&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1"
+              title="背景動画"
+              allow="autoplay; encrypted-media"
+              style={{ border: "none" }}
+            />
+          </div>
+          <div className="absolute inset-0 bg-white/90" />
+        </div>
+        <div className="relative max-w-4xl mx-auto px-3 sm:px-4">
           <SectionHeader
             title="イベント開催情報"
             subtitle="EVENT"
@@ -445,8 +458,39 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
         </div>
       </section>
 
-      {/* チェーン区切り線 */}
-      <div className="chain-divider" />
+      {/* 中間バナー（背景動画 + 透過オーバーレイ） */}
+      <section className="relative py-12 sm:py-16 md:py-20 overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 pointer-events-none" style={{ transform: "scale(1.5)" }}>
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/tPrJscpKSsc?autoplay=1&mute=1&loop=1&playlist=tPrJscpKSsc&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1"
+              title="背景動画"
+              allow="autoplay; encrypted-media"
+              style={{ border: "none" }}
+            />
+          </div>
+          <Image
+            src="/images/cta/contact.jpg"
+            alt=""
+            fill
+            className="object-cover -z-10"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-gray-900/80 to-gray-900/60" />
+        </div>
+        <ScrollReveal>
+          <div className="relative max-w-3xl mx-auto px-4 text-center text-white">
+            <p className="text-[#c41e3a] text-xs font-bold tracking-[0.2em] uppercase mb-3">YOUR CYCLING LIFE</p>
+            <h2 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 leading-relaxed">
+              あなたの自転車ライフを<br className="sm:hidden" />トータルサポート
+            </h2>
+            <p className="text-white/70 text-sm max-w-lg mx-auto">
+              バイク選びからウエア、メンテナンス、ライドイベントまで。cycleZは岡山で自転車ライフを楽しむすべてをお手伝いします。
+            </p>
+          </div>
+        </ScrollReveal>
+      </section>
 
       {/* おススメコンテンツ RECOMMENDED CONTENTS */}
       <section className="py-10 sm:py-14 md:py-20 bg-gray-50/80">
@@ -493,17 +537,85 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* チェーン区切り線 */}
+      <div className="chain-divider" />
+
+      {/* HOW TO タグクラウド（背景動画 + 透過オーバーレイ） */}
+      <section className="relative py-10 sm:py-14 md:py-20 overflow-hidden">
+        {/* 背景動画 */}
+        <div className="absolute inset-0">
+          <div className="absolute inset-0 pointer-events-none" style={{ transform: "scale(1.5)" }}>
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/v3wJXLkxkv8?autoplay=1&mute=1&loop=1&playlist=v3wJXLkxkv8&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1"
+              title="背景動画"
+              allow="autoplay; encrypted-media"
+              style={{ border: "none" }}
+            />
+          </div>
+          <div className="absolute inset-0 bg-gray-50/92" />
+        </div>
+        <div className="relative max-w-4xl mx-auto px-4">
+          <SectionHeader
+            title="お役立ち情報"
+            subtitle="HOW TO"
+            description="自転車ライフに役立つ情報を、動画や記事でわかりやすくまとめています。"
+          />
+          <ScrollReveal>
+            <div className="flex flex-wrap gap-2 sm:gap-3 justify-center">
+              {[
+                { label: "空気の入れ方", href: "/maintenance" },
+                { label: "チェーン洗浄", href: "/maintenance" },
+                { label: "パンク修理", href: "/maintenance" },
+                { label: "輪行のやり方", href: "/first/rinko" },
+                { label: "初心者講習会", href: "/first/beginner" },
+                { label: "フィッティング", href: "/fitting" },
+                { label: "メンテナンス予約", href: "/maintenance/reserve" },
+                { label: "おすすめコース", href: "/routes" },
+                { label: "バイク診断", href: "/diagnosis" },
+                { label: "取扱ブランド", href: "/lineup" },
+                { label: "女性のお客様へ", href: "/first/women" },
+                { label: "カフェライド", href: "/first/cafe-ride" },
+              ].map((tag) => (
+                <Link
+                  key={tag.label}
+                  href={tag.href}
+                  className="group inline-flex items-center gap-1.5 bg-gray-100 hover:bg-[#c41e3a] text-gray-700 hover:text-white px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:shadow-md"
+                >
+                  <svg className="w-3.5 h-3.5 text-gray-400 group-hover:text-white/80 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14" />
+                  </svg>
+                  {tag.label}
+                </Link>
+              ))}
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      {/* CTA Section（背景動画 + 透過オーバーレイ） */}
       <section className="relative py-16 sm:py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0">
+          {/* 背景動画（YouTube iframe、ミュート自動再生） */}
+          <div className="absolute inset-0 pointer-events-none" style={{ transform: "scale(1.5)" }}>
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/_lI89tCg5OQ?autoplay=1&mute=1&loop=1&playlist=_lI89tCg5OQ&controls=0&showinfo=0&modestbranding=1&rel=0&playsinline=1"
+              title="背景動画"
+              allow="autoplay; encrypted-media"
+              style={{ border: "none" }}
+            />
+          </div>
+          {/* フォールバック画像（動画読み込み前） */}
           <Image
             src="/images/cta/contact.jpg"
-            alt="お問い合わせ"
+            alt=""
             fill
-            className="object-cover"
+            className="object-cover -z-10"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#c41e3a]/95 to-[#8b1428]/95" />
+          {/* 透過オーバーレイ（赤系、少し透けて動画が見える） */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#c41e3a]/85 to-[#8b1428]/85" />
         </div>
         {/* 装飾ホイール */}
         <div className="absolute -left-16 top-1/2 -translate-y-1/2 w-64 h-64 opacity-100">
