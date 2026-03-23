@@ -3,9 +3,9 @@
   "configurations": [
     {
       "name": "cyclez-dev",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
-      "port": 3000
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "rsync -a --delete --exclude='node_modules' --exclude='.next' --exclude='.git' /Users/soudousya/開発プロジェクト/cycleZ/cyclez-blog/ /tmp/cyclez-dev/ && cd /tmp/cyclez-dev && npm run dev -- --port 3001"],
+      "port": 3001
     }
   ]
 }
