@@ -1,7 +1,7 @@
 ---
-title: "高級バイク『DE ROSA』取り扱い開始！"
+title: "DE ROSA（デローザ）岡山で買える正規取扱店"
 date: "2023-09-09"
-description: ""
+description: "岡山でDE ROSA（デローザ）を購入できる正規取扱店cycleZ。イタリアの名門ブランドの歴史やモデルラインナップを紹介。試乗可能・プロによるフィッティング対応。岡山駅徒歩5分。"
 category: "maintenance-blog"
 tags: ["maintenance-blog"]
 wp_id: 5340
