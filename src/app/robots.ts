@@ -5,6 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
+      disallow: '/review',
     },
     sitemap: 'https://cycle-z.com/sitemap.xml',
   };
