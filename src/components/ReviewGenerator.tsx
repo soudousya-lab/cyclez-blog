@@ -23,11 +23,19 @@ import {
 } from "react-icons/fa";
 import { IoSparkles } from "react-icons/io5";
 import {
+  FaSearchLocation,
+  FaGlobeAsia,
+  FaUserFriends,
+  FaHeart,
+} from "react-icons/fa";
+import {
+  triggerOptions,
   purposeOptions,
   detailOptions,
   impressionOptions,
   experienceOptions,
   generateReview,
+  type TriggerKey,
   type PurposeKey,
   type ImpressionKey,
   type ExperienceKey,
@@ -35,6 +43,13 @@ import {
 } from "@/lib/reviewTemplates";
 
 // アイコンマッピング
+const triggerIcons: Record<Exclude<TriggerKey, "skip">, React.ReactNode> = {
+  nearby: <FaSearchLocation className="text-2xl text-[#c41e3a]" />,
+  reputation: <FaGlobeAsia className="text-2xl text-[#c41e3a]" />,
+  referral: <FaUserFriends className="text-2xl text-[#c41e3a]" />,
+  interested: <FaHeart className="text-2xl text-[#c41e3a]" />,
+};
+
 const purposeIcons: Record<PurposeKey, React.ReactNode> = {
   purchase: <MdDirectionsBike className="text-2xl text-[#c41e3a]" />,
   maintenance: <MdBuild className="text-2xl text-[#c41e3a]" />,
@@ -59,12 +74,13 @@ const impressionIcons: Record<ImpressionKey, React.ReactNode> = {
 const GOOGLE_REVIEW_URL =
   "https://search.google.com/local/writereview?placeid=ChIJ8fx0C61UVDURh4_liz6WpJY";
 
-type Step = "purpose" | "detail" | "impression" | "experience" | "freetext" | "preview";
+type Step = "trigger" | "purpose" | "detail" | "impression" | "experience" | "freetext" | "preview";
 
-const STEP_ORDER: Step[] = ["purpose", "detail", "impression", "experience", "freetext", "preview"];
-const TOTAL_STEPS = 5; // プレビューは含まない
+const STEP_ORDER: Step[] = ["trigger", "purpose", "detail", "impression", "experience", "freetext", "preview"];
+const TOTAL_STEPS = 6; // プレビューは含まない
 
 const stepTitles: Record<Step, string> = {
+  trigger: "ご来店のきっかけは？",
   purpose: "今日はどんなご用件でしたか？",
   detail: "具体的に教えてください",
   impression: "一番良かった点は？",
@@ -74,11 +90,12 @@ const stepTitles: Record<Step, string> = {
 };
 
 export default function ReviewGenerator() {
-  const [step, setStep] = useState<Step>("purpose");
+  const [step, setStep] = useState<Step>("trigger");
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [copied, setCopied] = useState(false);
 
   // 選択データ
+  const [trigger, setTrigger] = useState<TriggerKey>("skip");
   const [purpose, setPurpose] = useState<PurposeKey | null>(null);
   const [detail, setDetail] = useState<string | null>(null);
   const [impression, setImpression] = useState<ImpressionKey | null>(null);
@@ -109,6 +126,7 @@ export default function ReviewGenerator() {
   const doGenerate = useCallback(() => {
     if (!purpose || !detail || !impression) return;
     const selections: ReviewSelections = {
+      trigger,
       purpose,
       detail,
       impression,
@@ -143,6 +161,7 @@ export default function ReviewGenerator() {
 
   // 最初からやり直し
   const handleReset = useCallback(() => {
+    setTrigger("skip");
     setPurpose(null);
     setDetail(null);
     setImpression(null);
@@ -150,7 +169,7 @@ export default function ReviewGenerator() {
     setFreetext("");
     setReviewText("");
     setCopied(false);
-    goToStep("purpose");
+    goToStep("trigger");
   }, [goToStep]);
 
   // プログレスバー
@@ -190,6 +209,34 @@ export default function ReviewGenerator() {
       <div
         className={`transition-opacity duration-200 ${isTransitioning ? "opacity-0" : "opacity-100"}`}
       >
+        {/* Step 0: 来店のきっかけ */}
+        {step === "trigger" && (
+          <div className="space-y-3">
+            {triggerOptions.map((opt) => (
+              <button
+                key={opt.key}
+                onClick={() => {
+                  setTrigger(opt.key);
+                  goToStep("purpose");
+                }}
+                className="w-full flex items-center gap-3 p-4 bg-white border border-gray-200 rounded-xl text-left hover:border-[#c41e3a] hover:bg-red-50 transition-colors active:bg-red-100"
+              >
+                {triggerIcons[opt.key as keyof typeof triggerIcons]}
+                <span className="text-base font-medium text-gray-700">{opt.label}</span>
+              </button>
+            ))}
+            <button
+              onClick={() => {
+                setTrigger("skip");
+                goToStep("purpose");
+              }}
+              className="w-full text-center text-sm text-gray-400 py-2 hover:text-gray-600"
+            >
+              スキップ →
+            </button>
+          </div>
+        )}
+
         {/* Step 1: 来店目的 */}
         {step === "purpose" && (
           <div className="space-y-3">
@@ -375,6 +422,20 @@ export default function ReviewGenerator() {
               上のボタンでレビューをコピーしてから、
               <br />
               Googleマップのレビュー欄に貼り付けてください
+            </p>
+
+            {/* 写真の促し */}
+            <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
+              <p className="text-sm text-amber-800 text-center leading-relaxed">
+                愛車やお店の写真を1枚添えていただけると、
+                <br />
+                他のお客様の参考になります
+              </p>
+            </div>
+
+            {/* Wi-Fi注意 */}
+            <p className="text-xs text-gray-300 text-center">
+              ※ 店内Wi-Fiではなくモバイル回線でご投稿ください
             </p>
 
             {/* やり直し */}

@@ -1,5 +1,6 @@
 // ─── 口コミ生成テンプレート ──────────────────────────────────
 
+export type TriggerKey = "nearby" | "reputation" | "referral" | "interested" | "skip";
 export type PurposeKey = "purchase" | "maintenance" | "consultation" | "testride" | "parts" | "apparel";
 export type ImpressionKey = "service" | "knowledge" | "skill" | "selection" | "atmosphere" | "price" | "speed";
 export type ExperienceKey = "beginner" | "returning" | "experienced" | "skip";
@@ -10,12 +11,22 @@ export type DetailOption = {
 };
 
 export type ReviewSelections = {
+  trigger: TriggerKey;
   purpose: PurposeKey;
   detail: string;
   impression: ImpressionKey;
   experience: ExperienceKey;
   freetext: string;
 };
+
+// ─── Step0: 来店のきっかけ ──────────────────────────────────
+
+export const triggerOptions: { key: TriggerKey; label: string }[] = [
+  { key: "nearby", label: "近所・通りがかり" },
+  { key: "reputation", label: "ネットの評判・口コミを見て" },
+  { key: "referral", label: "知人・友人の紹介" },
+  { key: "interested", label: "以前から気になっていた" },
+];
 
 // ─── Step1: 来店目的 ────────────────────────────────────────
 
@@ -97,35 +108,55 @@ export const experienceOptions: { key: ExperienceKey; label: string }[] = [
 
 const pick = <T>(arr: T[]): T => arr[Math.floor(Math.random() * arr.length)];
 
+// 来店きっかけ別の導入フレーズ
+const triggerPhrases: Record<Exclude<TriggerKey, "skip">, string[]> = {
+  nearby: [
+    "近所で自転車屋さんを探していて、",
+    "岡山駅の近くで見つけて、",
+  ],
+  reputation: [
+    "Googleの口コミ評価が高かったので、",
+    "ネットで評判が良かったので、",
+  ],
+  referral: [
+    "友人に紹介してもらって、",
+    "知人のすすめで、",
+  ],
+  interested: [
+    "前から気になっていたので、",
+    "以前から通りかかるたびに気になっていて、",
+  ],
+};
+
 // 来店目的別の導入文
 const openings: Record<PurposeKey, string[]> = {
   purchase: [
-    "自転車の購入でお世話になりました。",
-    "新しい自転車を探していて、cycleZさんに伺いました。",
+    "自転車の購入でcycleZさんにお世話になりました。",
+    "新しい自転車を探していて、岡山のcycleZさんに伺いました。",
     "自転車を買いにcycleZさんへ。",
   ],
   maintenance: [
-    "メンテナンスでお世話になりました。",
-    "愛車のメンテナンスをお願いしました。",
+    "メンテナンスでcycleZさんにお世話になりました。",
+    "愛車のメンテナンスをcycleZさんにお願いしました。",
     "自転車の調子が悪くなり、cycleZさんに持ち込みました。",
   ],
   consultation: [
-    "自転車の相談で伺いました。",
+    "自転車の相談でcycleZさんに伺いました。",
     "まだ購入は決めていない段階でしたが、相談に乗っていただきました。",
-    "自転車選びの相談で訪問しました。",
+    "自転車選びの相談で岡山のcycleZさんを訪問しました。",
   ],
   testride: [
     "試乗させていただきました。",
-    "気になっていた自転車の試乗で伺いました。",
+    "気になっていた自転車の試乗でcycleZさんに伺いました。",
     "購入前に試乗したくて、cycleZさんへ。",
   ],
   parts: [
-    "パーツの購入でお世話になりました。",
+    "パーツの購入でcycleZさんにお世話になりました。",
     "パーツ選びの相談で伺いました。",
     "アクセサリーを探しにcycleZさんへ。",
   ],
   apparel: [
-    "サイクルウェアを買いに伺いました。",
+    "サイクルウェアを買いにcycleZさんに伺いました。",
     "ウェア選びでお世話になりました。",
     "サイクルアパレルを探しにcycleZさんへ。",
   ],
@@ -318,12 +349,13 @@ const experienceModifiers: Record<Exclude<ExperienceKey, "skip">, string[]> = {
 // 締めの文
 const closings: string[] = [
   "また利用させていただきます。",
-  "おすすめのお店です。",
+  "岡山で自転車を探している方におすすめのお店です。",
   "友人にも紹介したいと思います。",
-  "次もお世話になります。",
+  "次もcycleZさんにお世話になります。",
   "ありがとうございました！",
-  "これからもお世話になります。",
+  "これからもかかりつけのお店にしたいです。",
   "自転車のことならここで間違いないです。",
+  "岡山でスポーツバイクを買うならここだと思います。",
 ];
 
 // ─── 生成関数 ────────────────────────────────────────────
@@ -338,7 +370,10 @@ export function generateReview(selections: ReviewSelections): string {
     }
   }
 
-  // 2. 導入文
+  // 2. 来店きっかけ + 導入文
+  if (selections.trigger !== "skip") {
+    parts.push(pick(triggerPhrases[selections.trigger]));
+  }
   parts.push(pick(openings[selections.purpose]));
 
   // 3. 具体的な内容
