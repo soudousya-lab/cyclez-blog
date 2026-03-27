@@ -4,6 +4,12 @@ import matter from 'gray-matter';
 
 const postsDirectory = path.join(process.cwd(), 'content/posts');
 
+// FAQ項目の型定義
+export interface FaqItem {
+  question: string;
+  answer: string;
+}
+
 export interface PostData {
   slug: string;
   title: string;
@@ -12,6 +18,7 @@ export interface PostData {
   category: string;
   tags: string[];
   image?: string;
+  faq?: FaqItem[];
   content: string;
 }
 
@@ -37,6 +44,7 @@ export function getAllPosts(): PostData[] {
         category: data.category || '未分類',
         tags: data.tags || [],
         image: data.image,
+        faq: data.faq,
         content,
       };
     });
@@ -58,6 +66,7 @@ export function getPostBySlug(slug: string): PostData | null {
       category: data.category || '未分類',
       tags: data.tags || [],
       image: data.image,
+      faq: data.faq,
       content,
     };
   } catch {

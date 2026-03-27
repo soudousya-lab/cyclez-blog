@@ -222,6 +222,33 @@ export function ArticleJsonLd({
   );
 }
 
+// FAQ構造化データ（FAQPage JSON-LD）
+export function FaqJsonLd({
+  faq,
+}: {
+  faq: { question: string; answer: string }[];
+}) {
+  const faqPage = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPage) }}
+    />
+  );
+}
+
 // パンくずリスト JSON-LD（サブページ用）
 export function BreadcrumbJsonLd({
   items,

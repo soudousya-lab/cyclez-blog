@@ -7,7 +7,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 import React, { ReactElement } from "react";
 import PageBanner from "@/components/PageBanner";
-import { ArticleJsonLd } from "@/components/JsonLd";
+import { ArticleJsonLd, FaqJsonLd } from "@/components/JsonLd";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -461,6 +461,10 @@ export default async function PostPage({ params }: Props) {
         category={post.category}
         wordCount={wordCount}
       />
+      {/* FAQ構造化データ（frontmatterにfaqがある場合のみ出力） */}
+      {post.faq && post.faq.length > 0 && (
+        <FaqJsonLd faq={post.faq} />
+      )}
       <PageBanner
         title={post.title}
         breadcrumbs={[
