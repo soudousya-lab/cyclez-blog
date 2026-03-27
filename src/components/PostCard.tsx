@@ -16,16 +16,32 @@ export default function PostCard({ post }: PostCardProps) {
     ? format(new Date(post.date), "yyyy年MM月dd日", { locale: ja })
     : "";
 
+  // カバー画像があるかどうか（/logo.png はデフォルトなので除外）
+  const hasCoverImage = post.image && post.image !== "/logo.png";
+
   return (
     <article className="group relative bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-500 hover:-translate-y-1">
       {/* サムネイル */}
       <Link href={`/blog/${post.slug}`}>
-        <div className="relative h-36 sm:h-40 md:h-48 bg-gradient-to-br from-[#c41e3a] to-[#e85a70] overflow-hidden">
-          <div className="absolute inset-0 flex items-center justify-center group-hover:scale-110 transition-transform duration-700">
-            <FaBicycle className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 text-white/15" />
-          </div>
+        <div className="relative h-36 sm:h-40 md:h-48 overflow-hidden">
+          {hasCoverImage ? (
+            <>
+              <img
+                src={post.image}
+                alt={post.title}
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                loading="lazy"
+              />
+            </>
+          ) : (
+            <div className="absolute inset-0 bg-gradient-to-br from-[#c41e3a] to-[#e85a70]">
+              <div className="absolute inset-0 flex items-center justify-center group-hover:scale-110 transition-transform duration-700">
+                <FaBicycle className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 text-white/15" />
+              </div>
+            </div>
+          )}
           {/* カテゴリバッジ */}
-          <span className="absolute top-3 left-3 bg-white/95 text-[#c41e3a] text-[10px] font-bold px-3 py-1 rounded-full shadow-sm backdrop-blur-sm tracking-wider">
+          <span className="absolute top-3 left-3 bg-white/95 text-[#c41e3a] text-[10px] font-bold px-3 py-1 rounded-full shadow-sm backdrop-blur-sm tracking-wider z-10">
             {getCategoryLabel(post.category)}
           </span>
         </div>

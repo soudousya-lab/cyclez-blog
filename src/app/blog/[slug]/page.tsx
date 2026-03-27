@@ -473,6 +473,18 @@ export default async function PostPage({ params }: Props) {
         <div className="grid lg:grid-cols-[1fr_280px] gap-8">
           {/* Main content */}
           <article className="bg-white rounded-2xl shadow-sm p-6 md:p-10">
+            {/* カバー画像 */}
+            {post.image && post.image !== "/logo.png" && (
+              <div className="mb-8 -mx-6 -mt-6 md:-mx-10 md:-mt-10">
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="w-full h-auto rounded-t-2xl"
+                  loading="eager"
+                />
+              </div>
+            )}
+
             {/* Author & Date info */}
             <div className="flex items-center justify-between pb-6 border-b border-gray-100 mb-8">
               <div className="flex items-center gap-4">
