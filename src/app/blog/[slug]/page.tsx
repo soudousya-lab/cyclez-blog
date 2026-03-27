@@ -7,6 +7,7 @@ import Image from "next/image";
 import { Metadata } from "next";
 import React, { ReactElement } from "react";
 import PageBanner from "@/components/PageBanner";
+import ImageLightbox from "@/components/ImageLightbox";
 import { ArticleJsonLd, FaqJsonLd } from "@/components/JsonLd";
 
 interface Props {
@@ -387,11 +388,10 @@ function formatContent(content: string): ReactElement[] {
       const src = imageMatch[2];
       elements.push(
         <figure key={`img-${keyIndex++}`} className="my-8">
-          <img
+          <ImageLightbox
             src={src}
             alt={alt}
             className="w-full max-w-2xl mx-auto rounded-lg shadow-sm"
-            loading="lazy"
           />
           {alt && (
             <figcaption className="text-center text-sm text-gray-500 mt-2">

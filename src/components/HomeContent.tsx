@@ -392,7 +392,7 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
           {/* 理由01 */}
           <ScrollReveal direction="left">
             <div className="flex flex-col md:flex-row items-stretch mb-1 rounded-2xl overflow-hidden shadow-lg">
-              <div className="md:w-1/2 relative aspect-[4/3] md:aspect-auto md:min-h-[320px] group">
+              <Link href="/first" className="md:w-1/2 relative aspect-[4/3] md:aspect-auto md:min-h-[320px] group block">
                 <Image
                   src="/images/reason/reason-beginner.jpg"
                   alt="始めての方大歓迎"
@@ -400,7 +400,7 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
-              </div>
+              </Link>
               <div className="md:w-1/2 bg-white p-8 md:p-12 flex flex-col justify-center text-left">
                 <ProgressRing number="01" size={80} className="mb-3" />
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">始めての方大歓迎</h3>
@@ -414,7 +414,7 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
           {/* 理由02 */}
           <ScrollReveal direction="right">
             <div className="flex flex-col md:flex-row-reverse items-stretch mb-1 rounded-2xl overflow-hidden shadow-lg">
-              <div className="md:w-1/2 relative aspect-[4/3] md:aspect-auto md:min-h-[320px] group">
+              <Link href="/lineup" className="md:w-1/2 relative aspect-[4/3] md:aspect-auto md:min-h-[320px] group block">
                 <Image
                   src="/images/reason/reason-apparel.jpg"
                   alt="おしゃれなウエアが豊富です"
@@ -422,7 +422,7 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
-              </div>
+              </Link>
               <div className="md:w-1/2 bg-white p-8 md:p-12 flex flex-col justify-center text-left">
                 <ProgressRing number="02" size={80} className="mb-3" />
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">おしゃれなウエアが豊富です</h3>
@@ -436,7 +436,7 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
           {/* 理由03 */}
           <ScrollReveal direction="left">
             <div className="flex flex-col md:flex-row items-stretch rounded-2xl overflow-hidden shadow-lg">
-              <div className="md:w-1/2 relative aspect-[4/3] md:aspect-auto md:min-h-[320px] group">
+              <Link href="/maintenance" className="md:w-1/2 relative aspect-[4/3] md:aspect-auto md:min-h-[320px] group block">
                 <Image
                   src="/images/reason/reason-maintenance.jpg"
                   alt="アフターフォローもおまかせください"
@@ -444,7 +444,7 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
                   className="object-cover group-hover:scale-105 transition-transform duration-700"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
-              </div>
+              </Link>
               <div className="md:w-1/2 bg-white p-8 md:p-12 flex flex-col justify-center text-left">
                 <ProgressRing number="03" size={80} className="mb-3" />
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">アフターフォローもおまかせください</h3>
