@@ -94,40 +94,36 @@ interface HomeContentProps {
 export default function HomeContent({ latestNews, eventPosts, latestPosts }: HomeContentProps) {
   return (
     <>
-      {/* ニュースティッカー */}
+      {/* ニュースティッカー（緊急時は赤ライン付き） */}
       {latestNews.length > 0 && (
         <div className={`border-b shadow-sm ${
           isUrgentPost(latestNews[0].title)
-            ? "bg-yellow-400 border-yellow-500 animate-pulse-urgent"
+            ? "bg-white border-[#c41e3a]"
             : "bg-white border-gray-100"
         }`}>
           <div className="max-w-6xl mx-auto px-3 sm:px-4 py-2.5 sm:py-3 flex items-center gap-2 sm:gap-3">
-            <span className={`text-[10px] sm:text-xs flex-shrink-0 font-mono ${
-              isUrgentPost(latestNews[0].title) ? "text-gray-900/60" : "text-gray-400"
-            }`}>
+            <span className="text-[10px] sm:text-xs flex-shrink-0 font-mono text-gray-400">
               {format(new Date(latestNews[0].date), "MM/dd", { locale: ja })}
             </span>
-            {(() => {
-              const urgent = isUrgentPost(latestNews[0].title);
-              if (urgent) {
+            {isUrgentPost(latestNews[0].title) ? (
+              <span className="bg-[#c41e3a] text-white text-[10px] px-2 py-0.5 rounded flex-shrink-0 font-bold">
+                緊急
+              </span>
+            ) : (
+              (() => {
+                const color = getCategoryColor(latestNews[0].category);
                 return (
-                  <span className="bg-gray-900 text-yellow-400 text-[10px] px-2 py-0.5 rounded flex-shrink-0 font-bold">
-                    緊急
+                  <span className={`${color.bg} ${color.text} text-[10px] px-2 py-0.5 rounded flex-shrink-0 font-bold`}>
+                    {getCategoryLabel(latestNews[0].category)}
                   </span>
                 );
-              }
-              const color = getCategoryColor(latestNews[0].category);
-              return (
-                <span className={`${color.bg} ${color.text} text-[10px] px-2 py-0.5 rounded flex-shrink-0 font-bold`}>
-                  {getCategoryLabel(latestNews[0].category)}
-                </span>
-              );
-            })()}
+              })()
+            )}
             <Link
               href={`/blog/${latestNews[0].slug}`}
               className={`text-xs sm:text-sm truncate flex-1 font-medium transition-colors ${
                 isUrgentPost(latestNews[0].title)
-                  ? "text-gray-900 font-bold hover:text-gray-700"
+                  ? "text-gray-900 font-bold hover:text-[#c41e3a]"
                   : "text-gray-800 hover:text-[#c41e3a]"
               }`}
             >
@@ -137,8 +133,29 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
         </div>
       )}
 
+      {/* ファーストビュー — 店舗の信念を3秒で伝える */}
+      <section className="py-8 sm:py-12 bg-white">
+        <div className="max-w-3xl mx-auto px-4 text-center">
+          <p className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 leading-relaxed">
+            「何から始めればいいかわからない」
+            <br className="hidden sm:block" />
+            その気持ち、私たちも同じでした。
+          </p>
+          <p className="mt-3 text-sm sm:text-base text-gray-600 leading-relaxed">
+            cycleZは、自転車選びからウェア・旅の楽しみ方まで、
+            <br className="hidden md:block" />
+            あなたのサイクルライフをトータルで提案するショップです。
+          </p>
+          <div className="mt-5 flex flex-wrap justify-center gap-3 text-xs sm:text-sm">
+            <span className="bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full">試乗車多数</span>
+            <span className="bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full">初心者講習会あり</span>
+            <span className="bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full">購入後もサポート</span>
+          </div>
+        </div>
+      </section>
+
       {/* お知らせ一覧 NEWS */}
-      <section className="py-10 sm:py-14 md:py-20 bg-white">
+      <section className="py-10 sm:py-14 md:py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-3 sm:px-4">
           <SectionHeader
             title="お知らせ"

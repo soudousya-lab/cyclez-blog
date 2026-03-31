@@ -27,6 +27,9 @@ export function getAllPosts(): PostData[] {
     return [];
   }
 
+  // 今日の日付（YYYY-MM-DD）。未来日付の記事はスケジュール公開として非表示にする
+  const today = new Date().toISOString().split('T')[0];
+
   const fileNames = fs.readdirSync(postsDirectory);
   const allPosts = fileNames
     .filter((fileName) => fileName.endsWith('.md'))
@@ -47,7 +50,8 @@ export function getAllPosts(): PostData[] {
         faq: data.faq,
         content,
       };
-    });
+    })
+    .filter((post) => post.date <= today);
 
   return allPosts.sort((a, b) => (a.date < b.date ? 1 : -1));
 }
