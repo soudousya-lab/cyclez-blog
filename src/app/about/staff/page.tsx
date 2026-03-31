@@ -62,7 +62,10 @@ export default function StaffListPage() {
                   <h2 className="text-xl font-bold text-gray-900 mb-1">
                     {staff.name}
                   </h2>
-                  <p className="text-sm text-gray-500 mb-3">{staff.nameEn}</p>
+                  <p className="text-sm text-gray-500 mb-2">{staff.nameEn}</p>
+                  <p className="text-[#c41e3a] font-bold text-sm mb-3">
+                    {staff.catchphrase}
+                  </p>
                   <p className="text-gray-600 text-sm leading-relaxed line-clamp-3">
                     {staff.introduction}
                   </p>
