@@ -10,6 +10,7 @@ import SectionHeader from "./SectionHeader";
 import ProgressRing from "./ProgressRing";
 import type { PostData } from "@/lib/posts";
 import { getCategoryLabel, getCategoryColor } from "@/lib/categories";
+import DiagnosisQuiz from "./DiagnosisQuiz";
 
 // 回転するホイールSVG（CTA装飾用）
 function SpinningWheel({ className = "" }: { className?: string }) {
@@ -475,6 +476,23 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
         </div>
       </section>
 
+      {/* チェーン区切り線 */}
+      <div className="chain-divider" />
+
+      {/* バイク診断 BIKE DIAGNOSIS（埋め込み） */}
+      <section className="py-10 sm:py-14 md:py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <SectionHeader
+            title="あなたにぴったりの一台は？"
+            subtitle="BIKE DIAGNOSIS"
+            description="5つの質問に答えるだけで、使い方・予算・好みに合ったスポーツバイクが見つかります。"
+          />
+          <ScrollReveal>
+            <DiagnosisQuiz />
+          </ScrollReveal>
+        </div>
+      </section>
+
       {/* 中間バナー（背景動画 + 透過オーバーレイ） */}
       <section className="relative py-12 sm:py-16 md:py-20 overflow-hidden">
         <div className="absolute inset-0">
@@ -516,11 +534,13 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
             title="おススメコンテンツ"
             subtitle="RECOMMENDED CONTENTS"
           />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {[
               { href: "/first", image: "/images/reason/reason-beginner.jpg", title: "初心者の方へ", sub: "MESSAGE FOR BEGINNERS", desc: "ロードバイクに乗ると言っても、流線型のいかついヘルメットやピタピタの黒いサイクルパンツを履く必要はありません。気軽にロードバイクに乗りたい方、大歓迎。" },
+
               { href: "/maintenance", image: "/images/reason/reason-maintenance.jpg", title: "メンテナンス", sub: "MAINTENANCE", desc: "ロードバイクに長く快適に乗るためには、なんといってもメンテナンスが大切です。何かわからないことがあったら何でも説明いたします。" },
-              { href: "/about/greeting", image: "/images/staff/staff-main.jpg", title: "スタッフ挨拶", sub: "STAFF MESSAGE", desc: "cycleZスタッフからのメッセージ。自転車文化の普及を目指しています。" },
+              { href: "/about/greeting", image: "/images/staff/staff-main.jpg", title: "スタッフ挨拶", sub: "STAFF MESSAGE", desc: "cycleZスタッフからのメッセージ。自転車の楽しさを伝えたい、その一心でお店をやっています。" },
+              { href: "/about/staff", image: "/images/staff_page/31227_0.jpg", title: "スタッフ紹介", sub: "OUR STAFF", desc: "cycleZのスタッフをご紹介します。自転車のこと、ウエアのこと、何でもお気軽にご相談ください。" },
             ].map((item, index) => (
               <ScrollReveal key={item.href} delay={index * 150}>
                 <Link href={item.href} className="group block bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-500 hover:-translate-y-2">

@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #1a1a1a;
+    font-size: 10pt;
+    line-height: 1.6;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .page {
+    width: 210mm;
+    height: 297mm;
+    padding: 12mm 14mm;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+  }
+
+  .page:last-child {
+    page-break-after: auto;
+  }
+
+  /* ===== 共通 ===== */
+  .header-band {
+    background: #c41e3a;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  .header-band h1 {
+    font-size: 17pt;
+    font-weight: 900;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+  }
+
+  .header-band .subtitle {
+    font-size: 9pt;
+    font-weight: 500;
+    opacity: 0.9;
+    margin-top: 2px;
+  }
+
+  .lead-text {
+    font-size: 10pt;
+    line-height: 1.7;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    background: #fef7f7;
+    border-left: 3px solid #c41e3a;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .section-title {
+    font-size: 11pt;
+    font-weight: 700;
+    color: #c41e3a;
+    border-bottom: 2px solid #c41e3a;
+    padding-bottom: 3px;
+    margin: 12px 0 6px;
+  }
+
+  .section-title .num {
+    display: inline-block;
+    background: #c41e3a;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    font-size: 10pt;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+
+  /* 岡山の特徴 */
+  .okayama-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6px;
+    margin: 6px 0 10px;
+  }
+
+  .okayama-card {
+    background: #f0f9ff;
+    border: 1px solid #bae6fd;
+    border-radius: 6px;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .okayama-card .card-icon {
+    font-size: 10pt;
+    font-weight: 900;
+    color: #0369a1;
+    margin-bottom: 2px;
+  }
+
+  .okayama-card .card-stat {
+    font-size: 14pt;
+    font-weight: 900;
+    color: #0c4a6e;
+    line-height: 1.2;
+  }
+
+  .okayama-card .card-label {
+    font-size: 7.5pt;
+    color: #555;
+    margin-top: 2px;
+  }
+
+  /* 1日の使い方 */
+  .timeline {
+    margin: 6px 0 10px;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .timeline li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 3px;
+    font-size: 8.5pt;
+    line-height: 1.4;
+  }
+
+  .timeline .time {
+    flex-shrink: 0;
+    width: 32px;
+    font-weight: 700;
+    color: #c41e3a;
+    font-size: 8pt;
+  }
+
+  .timeline .arrow {
+    flex-shrink: 0;
+    width: 16px;
+    text-align: center;
+    color: #c41e3a;
+    font-weight: 700;
+  }
+
+  .timeline .desc {
+    flex: 1;
+  }
+
+  .ride-count {
+    text-align: center;
+    font-size: 10pt;
+    font-weight: 700;
+    color: #c41e3a;
+    padding: 6px;
+    margin: 4px 0 8px;
+    background: #fff0f0;
+    border-radius: 6px;
+  }
+
+  .ride-count .big {
+    font-size: 18pt;
+    font-weight: 900;
+  }
+
+  /* テーブル共通 */
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 4px 0 8px;
+    font-size: 8.5pt;
+  }
+
+  .compare-table th {
+    background: #333;
+    color: white;
+    padding: 4px 6px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 8pt;
+  }
+
+  .compare-table th:first-child {
+    text-align: left;
+  }
+
+  .compare-table td {
+    padding: 4px 6px;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .compare-table td:first-child {
+    text-align: left;
+    font-weight: 500;
+  }
+
+  .compare-table .bad { color: #c41e3a; }
+  .compare-table .good { color: #2563eb; font-weight: 700; }
+
+  .compare-table tr.highlight td {
+    background: #fff0f0;
+    font-weight: 700;
+  }
+
+  .compare-table .price { text-align: right; white-space: nowrap; }
+
+  /* コストバッジ */
+  .monthly-badge {
+    display: inline-block;
+    background: #c41e3a;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 10pt;
+    font-weight: 700;
+    margin: 4px 0;
+  }
+
+  /* 罰則ボックス */
+  .law-box {
+    background: #f0f4ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 6px;
+    padding: 6px 10px;
+    margin: 4px 0 6px;
+  }
+
+  .law-box .law-title {
+    font-weight: 700;
+    color: #1e40af;
+    font-size: 9pt;
+    margin-bottom: 3px;
+  }
+
+  .law-box ul {
+    padding-left: 16px;
+    font-size: 8.5pt;
+  }
+
+  .law-box li { margin-bottom: 1px; }
+
+  .safe-message {
+    background: #f0fdf4;
+    border: 1px solid #86efac;
+    border-radius: 6px;
+    padding: 6px 10px;
+    font-size: 9pt;
+    font-weight: 700;
+    color: #166534;
+    text-align: center;
+    margin: 4px 0;
+  }
+
+  /* キーメッセージ */
+  .key-message {
+    text-align: center;
+    font-size: 10.5pt;
+    font-weight: 700;
+    color: #c41e3a;
+    padding: 8px;
+    margin: 8px 0;
+    border: 2px solid #c41e3a;
+    border-radius: 6px;
+  }
+
+  /* ===== 裏面 ===== */
+  .support-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6px;
+    margin: 6px 0 10px;
+  }
+
+  .support-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .support-card .card-icon-text {
+    font-size: 10pt;
+    font-weight: 900;
+    color: #c41e3a;
+    margin-bottom: 3px;
+  }
+
+  .support-card .card-title {
+    font-size: 9pt;
+    font-weight: 700;
+    color: #c41e3a;
+    margin-bottom: 2px;
+  }
+
+  .support-card .card-desc {
+    font-size: 7.5pt;
+    color: #555;
+    line-height: 1.4;
+  }
+
+  /* Q&A */
+  .qa-item { margin-bottom: 7px; }
+
+  .qa-q {
+    font-weight: 700;
+    font-size: 9pt;
+    color: #c41e3a;
+    padding: 3px 0;
+  }
+
+  .qa-q::before { content: "Q. "; font-weight: 900; }
+
+  .qa-a {
+    font-size: 8.5pt;
+    padding-left: 20px;
+    line-height: 1.5;
+    color: #333;
+  }
+
+  .qa-a::before {
+    content: "A. ";
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-left: -20px;
+  }
+
+  /* 盗難 */
+  .theft-box {
+    background: #fefce8;
+    border: 1px solid #fde047;
+    border-radius: 6px;
+    padding: 6px 10px;
+    margin: 4px 0 8px;
+  }
+
+  .theft-box .theft-title {
+    font-weight: 700;
+    color: #854d0e;
+    font-size: 9pt;
+    margin-bottom: 3px;
+  }
+
+  .theft-box p {
+    font-size: 8pt;
+    line-height: 1.5;
+    color: #713f12;
+  }
+
+  /* セット */
+  .set-box {
+    background: linear-gradient(135deg, #fff0f0 0%, #fff5f0 100%);
+    border: 2px solid #c41e3a;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 8px 0;
+  }
+
+  .set-box .set-title {
+    font-size: 11pt;
+    font-weight: 900;
+    color: #c41e3a;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .set-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    text-align: center;
+    font-size: 8pt;
+    margin-bottom: 4px;
+  }
+
+  .set-items .item {
+    background: white;
+    border-radius: 4px;
+    padding: 5px 3px;
+    border: 1px solid #fecaca;
+  }
+
+  .set-items .item-label {
+    font-size: 9pt;
+    font-weight: 900;
+    color: #c41e3a;
+    margin-bottom: 1px;
+  }
+
+  .set-items .item-name {
+    font-weight: 700;
+    font-size: 7.5pt;
+  }
+
+  .set-note {
+    text-align: center;
+    font-size: 8pt;
+    color: #666;
+  }
+
+  /* チェックリスト */
+  .checklist {
+    padding-left: 0;
+    list-style: none;
+    margin: 4px 0;
+  }
+
+  .checklist li {
+    padding: 2px 0 2px 20px;
+    position: relative;
+    font-size: 8.5pt;
+  }
+
+  .checklist li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #c41e3a;
+    font-weight: 900;
+    font-size: 10pt;
+  }
+
+  /* フッター */
+  .shop-footer {
+    background: #1a1a1a;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin-top: 8px;
+  }
+
+  .shop-footer .shop-name {
+    font-size: 13pt;
+    font-weight: 900;
+    margin-bottom: 3px;
+  }
+
+  .shop-footer .shop-info {
+    font-size: 8pt;
+    line-height: 1.6;
+    opacity: 0.9;
+  }
+
+  .shop-footer .phone {
+    font-size: 13pt;
+    font-weight: 900;
+    color: #f87171;
+    margin-top: 3px;
+  }
+
+  .shop-footer-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 14px;
+    align-items: center;
+  }
+
+  .qr-placeholder {
+    width: 55px;
+    height: 55px;
+    border: 2px solid white;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6.5pt;
+    text-align: center;
+    opacity: 0.7;
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== 表面（1ページ目） ===== -->
+<div class="page">
+
+  <div class="header-band">
+    <h1>岡山の大学生活、<br>自転車1台でここまで動ける。</h1>
+    <div class="subtitle">保護者の方へ ── 岡山×大学生にスポーツバイクが最適な理由をお伝えします</div>
+  </div>
+
+  <div class="lead-text">
+    地元が車社会の方からすると「自転車だけで大丈夫？」と不安かもしれません。<br>
+    でも<strong>岡山は自転車が車の代わりになるくらい便利</strong>。大学生活の移動がほぼ1台で完結します。
+  </div>
+
+  <!-- セクション1: 岡山が自転車に向いている理由 -->
+  <div class="section-title"><span class="num">1</span> 岡山は「自転車の街」です</div>
+
+  <div class="okayama-grid">
+    <div class="okayama-card">
+      <div class="card-icon">[ 地形 ]</div>
+      <div class="card-stat">平坦</div>
+      <div class="card-label">市街地にほとんど坂がない<br>ペダルを漕ぐのがラク</div>
+    </div>
+    <div class="okayama-card">
+      <div class="card-icon">[ 天気 ]</div>
+      <div class="card-stat">276.8日</div>
+      <div class="card-label">年間晴れ日数 全国1位<br>雨で乗れない日が少ない</div>
+    </div>
+    <div class="okayama-card">
+      <div class="card-icon">[ 距離 ]</div>
+      <div class="card-stat">15分圏内</div>
+      <div class="card-label">大学・商業施設・バイト先<br>すべて自転車で到着</div>
+    </div>
+  </div>
+
+  <!-- セクション2: 通学だけではない -->
+  <div class="section-title"><span class="num">2</span> 通学の往復だけではありません</div>
+
+  <ul class="timeline">
+    <li><span class="time">朝</span><span class="arrow">→</span><span class="desc">自宅から大学へ（通学）</span></li>
+    <li><span class="time">午前</span><span class="arrow">→</span><span class="desc">学内の別棟・別キャンパスへ移動（岡大は敷地が広い）</span></li>
+    <li><span class="time">昼</span><span class="arrow">→</span><span class="desc">大学周辺の飲食店へ昼食</span></li>
+    <li><span class="time">午後</span><span class="arrow">→</span><span class="desc">空きコマで一旦帰宅、またはカフェ・図書館へ</span></li>
+    <li><span class="time">夕方</span><span class="arrow">→</span><span class="desc">アルバイト先へ（飲食店・塾・コンビニなど市内各所）</span></li>
+    <li><span class="time">夜</span><span class="arrow">→</span><span class="desc">バイト先から帰宅、または友人と合流</span></li>
+  </ul>
+
+  <div class="ride-count">
+    1日に <span class="big">3〜5回</span> 自転車に乗る ／ 4年間で <span class="big">5,000回</span> 以上
+  </div>
+
+  <!-- セクション3: 比較 -->
+  <div class="section-title"><span class="num">3</span> 毎日5回乗る道具。何を選びますか？</div>
+
+  <table class="compare-table">
+    <tr>
+      <th>比較項目</th>
+      <th>ママチャリ（1〜2万円）</th>
+      <th>スポーツバイク（7万円〜）</th>
+    </tr>
+    <tr>
+      <td>重さ</td>
+      <td class="bad">18〜22kg（重くて疲れる）</td>
+      <td class="good">9〜12kg（軽くて軽快）</td>
+    </tr>
+    <tr>
+      <td>ブレーキ</td>
+      <td class="bad">雨で効きにくい</td>
+      <td class="good">雨でもしっかり止まる</td>
+    </tr>
+    <tr>
+      <td>片道20分の道</td>
+      <td class="bad">20分かかる</td>
+      <td class="good">12〜15分で着く</td>
+    </tr>
+    <tr>
+      <td>バイト後の帰宅</td>
+      <td class="bad">疲れた体に重い自転車</td>
+      <td class="good">軽くてスッと帰れる</td>
+    </tr>
+    <tr>
+      <td>耐久性</td>
+      <td class="bad">2年で買い替え</td>
+      <td class="good">4年間使える</td>
+    </tr>
+  </table>
+
+  <div style="text-align: center;">
+    <span class="monthly-badge">月換算 約1,500円 ＝ サブスク1つ分で4年間の「足」</span>
+  </div>
+
+  <!-- ママチャリの落とし穴 -->
+  <div style="background: #fefce8; border: 1px solid #fde047; border-radius: 6px; padding: 6px 10px; margin: 6px 0;">
+    <div style="font-weight: 700; color: #854d0e; font-size: 9pt; margin-bottom: 3px;">[ 注意 ] 安いママチャリの「よくあるパターン」</div>
+    <div style="font-size: 8pt; line-height: 1.5; color: #713f12;">
+      1〜2万円のママチャリ購入 → 半年〜1年で故障 → 大手チェーン店に修理持ち込み →<br>
+      <strong>タイヤ交換 5,000〜7,000円、ブレーキ交換 3,000〜5,000円</strong> → 修理代が車体価格を超える →<br>
+      2年で買い替え → <strong>4年間で結局5〜6万円</strong>。スポーツバイクとの差はわずか3万円程度です。
+    </div>
+  </div>
+
+  <!-- セクション4: 道路交通法 -->
+  <div class="section-title"><span class="num">4</span> 「罰金が始まるんでしょ？」への回答</div>
+
+  <div class="law-box">
+    <div class="law-title">2024年11月〜 罰則対象になった行為</div>
+    <ul>
+      <li><strong>ながらスマホ</strong> ／ <strong>酒気帯び運転</strong> ／ <strong>信号無視</strong>・逆走</li>
+    </ul>
+  </div>
+
+  <div class="safe-message">
+    普通に乗っていれば罰則とは無縁。だからこそ、ブレーキもライトも「ちゃんとした自転車」を。
+  </div>
+
+</div>
+
+<!-- ===== 裏面（2ページ目） ===== -->
+<div class="page">
+
+  <div class="header-band" style="padding: 8px 16px;">
+    <h1 style="font-size: 13pt;">「行動範囲が広がる」── スポーツバイクの一番の価値</h1>
+  </div>
+
+  <div class="lead-text" style="margin-bottom: 8px;">
+    ママチャリだと「近いところ」しか行かなくなります。重いから。<br>
+    クロスバイクなら、後楽園、吉備津神社、総社のカフェ、倉敷まで。<br>
+    <strong>大学4年間の行動範囲が、選ぶ自転車で変わります。</strong>
+  </div>
+
+  <!-- 購入後サポート -->
+  <div class="section-title">cycleZで購入いただくと</div>
+
+  <div class="support-grid">
+    <div class="support-card">
+      <div class="card-icon-text">[ 点検 ]</div>
+      <div class="card-title">年2回 無料点検</div>
+      <div class="card-desc">ブレーキ・チェーン・タイヤの<br>状態をプロが確認</div>
+    </div>
+    <div class="support-card">
+      <div class="card-icon-text">[ 修理 ]</div>
+      <div class="card-title">パンク修理レクチャー</div>
+      <div class="card-desc">自分で直せるように<br>実践指導付き</div>
+    </div>
+    <div class="support-card">
+      <div class="card-icon-text">[ 調整 ]</div>
+      <div class="card-title">初期調整 無料</div>
+      <div class="card-desc">購入後1ヶ月の<br>ブレーキ・変速の伸び調整</div>
+    </div>
+  </div>
+
+  <!-- よくある質問 -->
+  <div class="section-title">よくあるご質問</div>
+
+  <div class="qa-item">
+    <div class="qa-q">ネットで買ったほうが安いのでは？</div>
+    <div class="qa-a">ネット購入の自転車はご自身での組み立て・調整が必要です。プロの組み立てと初期調整で乗り心地と安全性が大きく変わります。当店では全車種を組み上げ、試走してからお渡しします。</div>
+  </div>
+
+  <div class="qa-item">
+    <div class="qa-q">通学だけなのにスポーツバイクは大げさでは？</div>
+    <div class="qa-a">岡山の大学生は通学だけでなく、バイト・買い物・友人宅と1日3〜5回乗ります。22kgのママチャリと10kgのクロスバイクでは、毎日の疲労感がまったく違います。</div>
+  </div>
+
+  <div class="qa-item">
+    <div class="qa-q">正直、7万円は家計的にキツいです</div>
+    <div class="qa-a">月に直すと約1,500円です。安いママチャリでも修理・買い替えで4年間5〜6万円かかるため、差額は月600円程度。入学準備で出費が重なる時期だからこそ、「4年間買い替え不要」の安心感は大きいです。</div>
+  </div>
+
+  <!-- 盗難対策 -->
+  <div class="theft-box">
+    <div class="theft-title">[ 鍵 ] 盗難が心配な方へ</div>
+    <p>大学の駐輪場に適したU字ロック（2,000〜4,000円）を一緒にご提案。ワイヤーロック併用で盗難リスクを大幅に軽減。防犯登録も店頭で完了します。</p>
+  </div>
+
+  <!-- 新生活セット -->
+  <div class="set-box">
+    <div class="set-title">新生活スタートセット</div>
+    <div class="set-items">
+      <div class="item">
+        <div class="item-label">車体</div>
+        <div class="item-name">クロスバイク</div>
+      </div>
+      <div class="item">
+        <div class="item-label">ライト</div>
+        <div class="item-name">高輝度LED</div>
+      </div>
+      <div class="item">
+        <div class="item-label">鍵</div>
+        <div class="item-name">U字ロック</div>
+      </div>
+      <div class="item">
+        <div class="item-label">ベル</div>
+        <div class="item-name">法令対応</div>
+      </div>
+    </div>
+    <div class="set-note">必要なものをまとめてご提案。「あとから何を買えばいい？」の心配なし。</div>
+  </div>
+
+  <!-- 保護者チェックリスト -->
+  <div class="section-title">保護者の方の確認ポイント</div>
+  <ul class="checklist">
+    <li>岡山市は平坦で晴天日数全国1位。自転車に最適な環境です</li>
+    <li>大学生は1日3〜5回自転車に乗ります。通学だけではありません</li>
+    <li>4年間のコストは月換算約1,500円。ママチャリとの差額は月600円</li>
+    <li>道路交通法の罰則は「危険行為」が対象。普通に乗れば無関係です</li>
+    <li>購入後の無料点検・調整あり。メンテナンスの心配は不要です</li>
+  </ul>
+
+  <!-- 試乗案内 -->
+  <div class="key-message">
+    まずは試乗してみてください。<br>
+    ママチャリとの違いを、体で感じていただけます。<br>
+    <span style="font-size: 8.5pt; font-weight: 500;">試乗車を常時ご用意。予約不要です。保護者の方もぜひ。</span>
+  </div>
+
+  <!-- 店舗フッター -->
+  <div class="shop-footer">
+    <div class="shop-footer-grid">
+      <div>
+        <div class="shop-name">cycleZ（サイクルゼット）</div>
+        <div class="shop-info">
+          〒700-0033 岡山県岡山市北区島田本町1丁目1-47<br>
+          営業時間: 11:00〜19:00（定休日: 水曜日）/ 駐車場あり
+        </div>
+        <div class="phone">TEL: 086-252-7744</div>
+      </div>
+      <div class="qr-placeholder">
+        ブログ記事<br>QRコード
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
