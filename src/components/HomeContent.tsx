@@ -539,7 +539,6 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
               { href: "/first", image: "/images/reason/reason-beginner.jpg", title: "初心者の方へ", sub: "MESSAGE FOR BEGINNERS", desc: "ロードバイクに乗ると言っても、流線型のいかついヘルメットやピタピタの黒いサイクルパンツを履く必要はありません。気軽にロードバイクに乗りたい方、大歓迎。" },
 
               { href: "/maintenance", image: "/images/reason/reason-maintenance.jpg", title: "メンテナンス", sub: "MAINTENANCE", desc: "ロードバイクに長く快適に乗るためには、なんといってもメンテナンスが大切です。何かわからないことがあったら何でも説明いたします。" },
-              { href: "/about/greeting", image: "/images/staff/staff-main.jpg", title: "スタッフ挨拶", sub: "STAFF MESSAGE", desc: "cycleZスタッフからのメッセージ。自転車の楽しさを伝えたい、その一心でお店をやっています。" },
               { href: "/about/staff", image: "/images/staff_page/31227_0.jpg", title: "スタッフ紹介", sub: "OUR STAFF", desc: "cycleZのスタッフをご紹介します。自転車のこと、ウエアのこと、何でもお気軽にご相談ください。" },
             ].map((item, index) => (
               <ScrollReveal key={item.href} delay={index * 150}>
