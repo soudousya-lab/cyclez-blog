@@ -20,6 +20,11 @@ export interface PostData {
   image?: string;
   faq?: FaqItem[];
   content: string;
+  // イベント申込・決済用フィールド
+  price?: number;
+  capacity?: number;
+  registration_open?: boolean;
+  event_date?: string;
 }
 
 export function getAllPosts(): PostData[] {
@@ -49,6 +54,10 @@ export function getAllPosts(): PostData[] {
         image: data.image,
         faq: data.faq,
         content,
+        price: data.price,
+        capacity: data.capacity,
+        registration_open: data.registration_open,
+        event_date: data.event_date,
       };
     })
     .filter((post) => post.date <= today);
@@ -72,6 +81,10 @@ export function getPostBySlug(slug: string): PostData | null {
       image: data.image,
       faq: data.faq,
       content,
+      price: data.price,
+      capacity: data.capacity,
+      registration_open: data.registration_open,
+      event_date: data.event_date,
     };
   } catch {
     return null;

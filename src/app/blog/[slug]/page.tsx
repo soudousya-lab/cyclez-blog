@@ -9,6 +9,8 @@ import React, { ReactElement } from "react";
 import PageBanner from "@/components/PageBanner";
 import ImageLightbox from "@/components/ImageLightbox";
 import { ArticleJsonLd, FaqJsonLd } from "@/components/JsonLd";
+import EventRegistrationForm from "@/components/EventRegistrationForm";
+import { FaMapMarkerAlt, FaBus, FaUtensils, FaBicycle, FaCheckCircle, FaTimesCircle, FaExclamationTriangle } from "react-icons/fa";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -275,16 +277,32 @@ function formatContent(content: string): ReactElement[] {
       continue;
     }
 
-    // H3 heading (subsection with dot)
+    // H3 heading (subsection with dot or emoji icon)
     if (line.startsWith("### ")) {
       const headingText = line.replace("### ", "");
+      // 絵文字→react-iconsマッピング
+      const emojiIconMap: Record<string, ReactElement> = {
+        "📍": <FaMapMarkerAlt className="text-[#c41e3a] flex-shrink-0" size={20} />,
+        "🚌": <FaBus className="text-[#c41e3a] flex-shrink-0" size={20} />,
+        "🍜": <FaUtensils className="text-[#c41e3a] flex-shrink-0" size={20} />,
+        "🚴": <FaBicycle className="text-[#c41e3a] flex-shrink-0" size={20} />,
+      };
+      let icon: ReactElement | null = null;
+      let cleanText = headingText;
+      for (const [emoji, iconEl] of Object.entries(emojiIconMap)) {
+        if (headingText.startsWith(emoji)) {
+          icon = iconEl;
+          cleanText = headingText.replace(emoji, "").trim();
+          break;
+        }
+      }
       elements.push(
         <h3
           key={`h3-${keyIndex++}`}
           className="flex items-center gap-2 text-lg md:text-xl font-bold text-gray-900 mt-8 mb-4"
         >
-          <span className="w-2.5 h-2.5 bg-[#c41e3a] rounded-full flex-shrink-0" />
-          {headingText}
+          {icon || <span className="w-2.5 h-2.5 bg-[#c41e3a] rounded-full flex-shrink-0" />}
+          {cleanText}
         </h3>
       );
       continue;
@@ -416,6 +434,27 @@ function formatContent(content: string): ReactElement[] {
       continue;
     }
 
+    // チェックリスト行（✅/❌/⚠️で始まる行）
+    if (line.trim().startsWith("✅") || line.trim().startsWith("❌") || line.trim().startsWith("⚠️")) {
+      const isCheck = line.trim().startsWith("✅");
+      const isCross = line.trim().startsWith("❌");
+      const icon = isCheck
+        ? <FaCheckCircle className="text-green-600 flex-shrink-0 mt-0.5" size={18} />
+        : isCross
+          ? <FaTimesCircle className="text-red-500 flex-shrink-0 mt-0.5" size={18} />
+          : <FaExclamationTriangle className="text-amber-500 flex-shrink-0 mt-0.5" size={18} />;
+      const text = line.trim().replace(/^[✅❌⚠️]\s*/, "");
+      elements.push(
+        <div key={`checklist-${keyIndex++}`} className="flex items-start gap-3 mb-3">
+          {icon}
+          <p className="text-gray-700 leading-relaxed">
+            {parseInline(text)}
+          </p>
+        </div>
+      );
+      continue;
+    }
+
     // Regular paragraph
     if (line.trim()) {
       elements.push(
@@ -519,6 +558,19 @@ export default async function PostPage({ params }: Props) {
             <div className="prose-cyclez">
               {formatContent(post.content)}
             </div>
+
+            {/* イベント申込フォーム */}
+            {post.registration_open && post.price && (
+              <div id="register" className="mt-10 pt-8 border-t-2 border-[#c41e3a]">
+                <EventRegistrationForm
+                  eventSlug={post.slug}
+                  eventTitle={post.title}
+                  price={post.price}
+                  capacity={post.capacity || 0}
+                  eventDate={post.event_date || ''}
+                />
+              </div>
+            )}
 
             {/* Tags */}
             {post.tags && post.tags.length > 0 && (
