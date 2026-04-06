@@ -33,6 +33,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
+  // ブログ記事はcycleZロゴ+白背景の固定OGP画像
+  const ogImage = "https://cycle-z.com/images/common/og-blog.jpg";
+
   return {
     title: post.title,
     description: post.description,
@@ -42,6 +45,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       publishedTime: post.date,
       authors: ["cycleZ"],
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: "cycleZ",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      images: [ogImage],
     },
   };
 }

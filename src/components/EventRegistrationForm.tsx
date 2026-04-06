@@ -28,6 +28,7 @@ export default function EventRegistrationForm({
   const [brakeType, setBrakeType] = useState<BrakeType | "">("");
   const [bikeModel, setBikeModel] = useState("");
   const [paymentMethod, setPaymentMethod] = useState<PaymentMethod | "">("");
+  const [agreed, setAgreed] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
   const [submitted, setSubmitted] = useState(false);
@@ -43,6 +44,11 @@ export default function EventRegistrationForm({
 
     if (!name.trim() || !phone.trim() || !bikeType || !brakeType || !paymentMethod) {
       setError("必須項目をすべて入力してください");
+      return;
+    }
+
+    if (!agreed) {
+      setError("免責事項に同意のうえ、チェックを入れてください");
       return;
     }
 
@@ -310,6 +316,26 @@ export default function EventRegistrationForm({
               </p>
             </div>
           )}
+        </div>
+
+        {/* 免責事項・同意チェックボックス */}
+        <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
+          <p className="text-sm font-bold text-gray-800 mb-2">免責事項</p>
+          <p className="text-xs text-gray-700 leading-relaxed mb-3">
+            本イベントは参加者ご自身の責任のもとでご参加いただきます。サイクリング中の事故・怪我・盗難・その他のトラブルについて、主催者（cycleZ・稲荷交通）は一切の責任を負いかねます。安全運転と交通法規の遵守をお願いいたします。また、天候やその他やむを得ない事情によるコース変更・中止についても、主催者は責任を負いません。
+          </p>
+          <label className="flex items-start gap-3 cursor-pointer group">
+            <input
+              type="checkbox"
+              checked={agreed}
+              onChange={(e) => setAgreed(e.target.checked)}
+              className="mt-0.5 w-5 h-5 rounded border-gray-300 text-[#c41e3a] focus:ring-[#c41e3a]/30 cursor-pointer flex-shrink-0"
+            />
+            <span className="text-sm font-medium text-gray-800 group-hover:text-[#c41e3a] transition-colors">
+              上記の免責事項に同意します
+              <span className="text-[#c41e3a] ml-1">*</span>
+            </span>
+          </label>
         </div>
 
         {/* エラー表示 */}
