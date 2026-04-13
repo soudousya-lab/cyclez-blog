@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { trackCTAClick } from "./Analytics";
 
 /**
  * モバイル固定CTA
@@ -9,6 +11,7 @@ import { useEffect, useState } from "react";
  */
 export default function FloatingCta() {
   const [isVisible, setIsVisible] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     // スクロール後に表示（ファーストビューでは非表示）
@@ -33,6 +36,7 @@ export default function FloatingCta() {
           {/* 電話ボタン */}
           <a
             href="tel:086-252-7744"
+            onClick={() => trackCTAClick("phone", pathname, "floating_cta", "電話する")}
             className="flex-1 flex items-center justify-center gap-2 py-3.5 bg-[#c41e3a] text-white font-bold text-sm active:bg-[#a01830] transition-colors"
             aria-label="電話する"
           >

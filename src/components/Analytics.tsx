@@ -135,6 +135,23 @@ export const trackCTAClick = (
   }
   clarityEvent(`cta_${ctaType}`);
 
+  // Google Ads コンバージョンイベント（電話・お問い合わせ）
+  if (typeof window !== "undefined" && window.gtag && GOOGLE_ADS_TAG_ID) {
+    if (ctaType === "phone") {
+      window.gtag("event", "conversion", {
+        send_to: `${GOOGLE_ADS_TAG_ID}/phone_call`,
+        event_category: "conversion",
+        value: 1,
+      });
+    } else if (ctaType === "contact_form") {
+      window.gtag("event", "conversion", {
+        send_to: `${GOOGLE_ADS_TAG_ID}/contact_form`,
+        event_category: "conversion",
+        value: 1,
+      });
+    }
+  }
+
   // Meta Pixel: Contact イベント（電話・メール）
   if (ctaType === "phone" || ctaType === "email" || ctaType === "contact_form") {
     trackMetaEvent("Contact", {
