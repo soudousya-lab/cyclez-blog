@@ -3,8 +3,9 @@ import Link from "next/link";
 import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
-  title: "初めての方へ",
-  description: "ロードバイク初心者の方へ。cycleZでは初めての方を応援しています。気軽にロードバイクを楽しみましょう。",
+  title: "初めての方へ | 初心者歓迎の岡山自転車屋",
+  description: "岡山でロードバイク・クロスバイクを始めたい初心者の方へ。cycleZは試乗車を多数ご用意し、初心者講習会も定期開催。自転車選びからウェア、メンテナンスまで丁寧にサポートします。",
+  keywords: ["初心者", "ロードバイク 初心者", "自転車 初心者 岡山", "クロスバイク 初心者", "試乗", "初心者講習会"],
 };
 
 export default function FirstPage() {

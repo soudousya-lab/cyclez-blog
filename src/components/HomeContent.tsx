@@ -11,6 +11,7 @@ import ProgressRing from "./ProgressRing";
 import type { PostData } from "@/lib/posts";
 import { getCategoryLabel, getCategoryColor } from "@/lib/categories";
 import DiagnosisQuiz from "./DiagnosisQuiz";
+import { MdPedalBike } from "react-icons/md";
 
 // 回転するホイールSVG（CTA装飾用）
 function SpinningWheel({ className = "" }: { className?: string }) {
@@ -148,11 +149,38 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
             あなたのサイクルライフをトータルで提案するショップです。
           </p>
           <div className="mt-5 flex flex-wrap justify-center gap-3 text-xs sm:text-sm">
-            <span className="bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full">試乗車多数</span>
-            <span className="bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full">初心者講習会あり</span>
-            <span className="bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full">購入後もサポート</span>
+            <Link href="/lineup" className="bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full hover:bg-[#c41e3a] hover:text-white transition-colors">試乗車多数</Link>
+            <Link href="/first/beginner" className="bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full hover:bg-[#c41e3a] hover:text-white transition-colors">初心者講習会あり</Link>
+            <Link href="/maintenance" className="bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full hover:bg-[#c41e3a] hover:text-white transition-colors">購入後もサポート</Link>
           </div>
         </div>
+      </section>
+
+      {/* バイク診断バナーCTA */}
+      <section className="bg-gradient-to-r from-[#1a1a2e] via-[#16213e] to-[#0f3460]">
+        <Link
+          href="#bike-diagnosis"
+          className="block max-w-6xl mx-auto px-4 py-5 sm:py-6"
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById("bike-diagnosis")?.scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          <div className="flex items-center justify-between gap-4">
+            <div className="flex items-center gap-3 sm:gap-4">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#c41e3a] flex items-center justify-center flex-shrink-0 animate-pulse">
+                <MdPedalBike className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
+              </div>
+              <div>
+                <p className="text-white font-bold text-sm sm:text-base">どのバイクが合う？ 5問でわかるバイク診断</p>
+                <p className="text-gray-300 text-xs mt-0.5 hidden sm:block">所要時間30秒 — あなたの使い方・予算に合った1台をご提案</p>
+              </div>
+            </div>
+            <div className="flex-shrink-0 bg-[#c41e3a] text-white text-xs sm:text-sm font-bold px-4 py-2 rounded-full hover:bg-[#a01830] transition-colors">
+              診断する →
+            </div>
+          </div>
+        </Link>
       </section>
 
       {/* お知らせ一覧 NEWS */}
@@ -425,6 +453,12 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
                 <p className="text-gray-600 text-sm leading-relaxed">
                   「ロードバイクって楽しそう！でも何から揃えればよいのかわからない...」そんな方もご心配なく！まずは自転車を見に来るだけのつもりで、お店に遊びに来てみてください。無理におすすめするようなことはいたしませんので、ロードバイクについて知りたいことがあれば何でも気軽にお声をかけてくださいね。
                 </p>
+                <Link href="/first" className="inline-flex items-center gap-1.5 text-[#c41e3a] text-sm font-medium mt-4 hover:gap-3 transition-all">
+                  もっと見る
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
               </div>
             </div>
           </ScrollReveal>
@@ -447,6 +481,12 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
                 <p className="text-gray-600 text-sm leading-relaxed">
                   「どうせならオシャレにライドしたい！」「小物にもこだわりたい！」サイクルゼットのオーナーはアパレル出身。店内には自転車だけでなくちょっと他にはないデザインのウエアや小物もたくさん揃っています。バイクのカラーに合わせたり、あなたらしさ溢れるコーディネートのご提案も得意です。
                 </p>
+                <Link href="/lineup" className="inline-flex items-center gap-1.5 text-[#c41e3a] text-sm font-medium mt-4 hover:gap-3 transition-all">
+                  もっと見る
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
               </div>
             </div>
           </ScrollReveal>
@@ -469,6 +509,12 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
                 <p className="text-gray-600 text-sm leading-relaxed">
                   自転車を長く快適に乗り続けるには、やはり定期的なメンテナンスが欠かせません。近くまでお越しの際は是非サイクルゼットにもお寄りください。タイヤの空気入れや各ボルトの締め直し、車輪の揺れのチェックなどちょっとしたメンテナンスにも対応しています。おうちでできる点検の手順などもご指導いたします。
                 </p>
+                <Link href="/maintenance" className="inline-flex items-center gap-1.5 text-[#c41e3a] text-sm font-medium mt-4 hover:gap-3 transition-all">
+                  もっと見る
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </Link>
               </div>
             </div>
           </ScrollReveal>
@@ -480,13 +526,28 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
       <div className="chain-divider" />
 
       {/* バイク診断 BIKE DIAGNOSIS（埋め込み） */}
-      <section className="py-10 sm:py-14 md:py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4">
-          <SectionHeader
-            title="あなたにぴったりの一台は？"
-            subtitle="BIKE DIAGNOSIS"
-            description="5つの質問に答えるだけで、使い方・予算・好みに合ったスポーツバイクが見つかります。"
-          />
+      <section id="bike-diagnosis" className="py-10 sm:py-14 md:py-20 bg-gradient-to-b from-[#1a1a2e] to-[#0f3460] relative overflow-hidden">
+        {/* 背景装飾 */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-10 left-10 w-40 h-40 border border-white rounded-full" />
+          <div className="absolute bottom-10 right-10 w-60 h-60 border border-white rounded-full" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 border border-white rounded-full" />
+        </div>
+        <div className="max-w-4xl mx-auto px-4 relative z-10">
+          <div className="text-center mb-8">
+            <span className="inline-block bg-[#c41e3a] text-white text-xs font-bold px-4 py-1.5 rounded-full mb-4 tracking-wider">
+              無料・30秒で完了
+            </span>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white leading-tight">
+              あなたにぴったりの一台は？
+            </h2>
+            <p className="text-xs sm:text-sm tracking-[0.3em] text-gray-400 mt-2 font-light">
+              BIKE DIAGNOSIS
+            </p>
+            <p className="text-sm sm:text-base text-gray-300 mt-4 leading-relaxed">
+              5つの質問に答えるだけで、使い方・予算・好みに合った<br className="hidden sm:block" />スポーツバイクが見つかります。
+            </p>
+          </div>
           <ScrollReveal>
             <DiagnosisQuiz />
           </ScrollReveal>

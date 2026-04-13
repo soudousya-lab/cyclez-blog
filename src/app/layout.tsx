@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import Analytics from "@/components/Analytics";
 import { SiteJsonLd } from "@/components/JsonLd";
 import FloatingSns from "@/components/FloatingSns";
+import FloatingCta from "@/components/FloatingCta";
 
 const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
@@ -25,10 +26,16 @@ export const metadata: Metadata = {
     "ロードバイク",
     "初心者",
     "自転車",
+    "自転車屋",
+    "岡山 自転車屋",
     "サイクリング",
+    "スポーツバイク",
+    "クロスバイク",
+    "初心者 自転車",
     "cycleZ",
     "女性",
     "ロードバイク 選び方",
+    "自転車 メンテナンス 岡山",
   ],
   authors: [{ name: "cycleZ" }],
   // Meta domain認証（今後の広告配信用）
@@ -92,6 +99,7 @@ export default function RootLayout({
           <Footer />
         </div>
         <FloatingSns />
+        <FloatingCta />
       </body>
     </html>
   );

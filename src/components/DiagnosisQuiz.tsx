@@ -1,8 +1,10 @@
 "use client";
 
-import { useState, useCallback, useMemo } from "react";
+import { useState, useCallback, useMemo, type ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { MdPedalBike, MdDirectionsBike } from "react-icons/md";
+import { FaBicycle, FaRoad, FaMountain, FaFlagCheckered, FaCity } from "react-icons/fa";
 
 // ─── バイク画像・リンクマッピング ────────────────────────────
 const bikeData: Record<string, { image: string; url: string }> = {
@@ -98,7 +100,7 @@ type Result = {
   tagline: string;
   description: string;
   budgetBikes: BudgetBikes;
-  icon: string;
+  icon: ReactNode;
 };
 
 // ─── 定数データ ─────────────────────────────────────────
@@ -177,7 +179,7 @@ const results: Record<ResultType, Result> = {
       under50: ["SURLY Midnight Special"],
       over50: [],
     },
-    icon: "🏙️",
+    icon: <FaCity className="w-14 h-14 text-white" />,
   },
   cross: {
     type: "cross",
@@ -191,7 +193,7 @@ const results: Record<ResultType, Result> = {
       under50: [],
       over50: [],
     },
-    icon: "🚲",
+    icon: <FaBicycle className="w-14 h-14 text-white" />,
   },
   entry: {
     type: "entry",
@@ -205,7 +207,7 @@ const results: Record<ResultType, Result> = {
       under50: [],
       over50: [],
     },
-    icon: "🛣️",
+    icon: <MdDirectionsBike className="w-14 h-14 text-white" />,
   },
   endurance: {
     type: "endurance",
@@ -219,7 +221,7 @@ const results: Record<ResultType, Result> = {
       under50: ["Wilier GARDA", "SCOTT Addict", "BOMA"],
       over50: ["SCOTT Addict"],
     },
-    icon: "🛤️",
+    icon: <FaRoad className="w-14 h-14 text-white" />,
   },
   racing: {
     type: "racing",
@@ -233,7 +235,7 @@ const results: Record<ResultType, Result> = {
       under50: ["GIOS AEROLITE", "SCOTT Addict", "BOMA"],
       over50: ["SCOTT Addict RC", "ORBEA ORCA"],
     },
-    icon: "🏁",
+    icon: <FaFlagCheckered className="w-14 h-14 text-white" />,
   },
   gravel: {
     type: "gravel",
@@ -247,7 +249,7 @@ const results: Record<ResultType, Result> = {
       under50: [],
       over50: [],
     },
-    icon: "⛰️",
+    icon: <FaMountain className="w-14 h-14 text-white" />,
   },
 };
 
@@ -375,14 +377,14 @@ export default function DiagnosisQuiz() {
         <div className={`transition-opacity duration-300 ${isTransitioning ? "opacity-0" : "opacity-100"}`}>
           {/* 結果ヘッダー */}
           <div className="text-center mb-8">
-            <p className="text-sm text-gray-500 mb-2">あなたにおすすめのバイクタイプ</p>
-            <div className="text-6xl mb-4" aria-hidden="true">{result.icon}</div>
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">{result.name}</h2>
+            <p className="text-sm text-gray-300 mb-2">あなたにおすすめのバイクタイプ</p>
+            <div className="mb-4 flex justify-center" aria-hidden="true">{result.icon}</div>
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">{result.name}</h2>
             <p className="text-[#c41e3a] font-medium text-lg">{result.tagline}</p>
           </div>
 
           {/* 説明 */}
-          <p className="text-gray-700 leading-relaxed mb-8 text-center">{result.description}</p>
+          <p className="text-gray-300 leading-relaxed mb-8 text-center">{result.description}</p>
 
           {/* おすすめ車種 */}
           {bikes.length > 0 && (
@@ -484,14 +486,14 @@ export default function DiagnosisQuiz() {
       {/* プログレスバー */}
       <div className="mb-8">
         <div className="flex items-center justify-between mb-2">
-          <span className="text-sm font-medium text-gray-500">
+          <span className="text-sm font-medium text-gray-300">
             質問 {stepNumber} / {totalSteps}
           </span>
           <span className="text-sm text-gray-400">
             {Math.round((stepNumber / totalSteps) * 100)}%
           </span>
         </div>
-        <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+        <div className="w-full h-2 bg-white/20 rounded-full overflow-hidden">
           <div
             className="h-full bg-[#c41e3a] rounded-full transition-all duration-500 ease-out"
             style={{ width: `${(stepNumber / totalSteps) * 100}%` }}
@@ -501,7 +503,7 @@ export default function DiagnosisQuiz() {
 
       {/* 質問と選択肢 */}
       <div className={`transition-opacity duration-300 ${isTransitioning ? "opacity-0" : "opacity-100"}`}>
-        <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 text-center">
+        <h2 className="text-xl md:text-2xl font-bold text-white mb-6 text-center">
           {questionText}
         </h2>
 
