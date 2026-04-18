@@ -668,7 +668,6 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
                 { label: "初心者講習会", href: "/first/beginner" },
                 { label: "フィッティング", href: "/fitting" },
                 { label: "メンテナンス予約", href: "/maintenance/reserve" },
-                { label: "おすすめコース", href: "/routes" },
                 { label: "バイク診断", href: "/diagnosis" },
                 { label: "取扱ブランド", href: "/lineup" },
                 { label: "女性のお客様へ", href: "/first/women" },

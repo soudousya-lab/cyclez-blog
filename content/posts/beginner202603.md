@@ -1,7 +1,7 @@
 ---
 title: "【3月の初心者講習会のお知らせ】"
 date: "2026-02-28"
-description: ""
+description: "岡山・cycleZの3月ロードバイク初心者講習会は3/8（日）・3/22（日）9:00〜11:30に開催。乗車姿勢・変速・基本メンテナンスを丁寧に指導します。参加費無料、初心者歓迎。"
 category: "news"
 tags: ["news", "beginner-training"]
 wp_id: 6478

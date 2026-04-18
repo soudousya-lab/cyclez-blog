@@ -666,7 +666,7 @@ export default async function PostPage({ params }: Props) {
                 ロードバイクの乗り方から基本を学べます。お気軽にご参加ください。
               </p>
               <a
-                href="/first"
+                href="/first/beginner"
                 className="block w-full bg-white text-[#c41e3a] font-bold text-center py-2.5 rounded-lg text-sm hover:bg-gray-100 transition-colors"
               >
                 詳しく見る

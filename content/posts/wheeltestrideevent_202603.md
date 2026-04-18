@@ -1,7 +1,7 @@
 ---
 title: "【緊急告知】3月8日(日)  ホイール試乗会急遽開催決定！！"
 date: "2026-03-02"
-description: ""
+description: "3月8日（日）11:00〜18:00、岡山・cycleZでT-Formula・BOMA・DT Swissのホイール試乗会を開催。ご自身のバイクに装着して乗り味の違いを体感できます。予約不要でご参加いただけます。"
 category: "event"
 tags: ["event", "news"]
 wp_id: 6491

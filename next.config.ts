@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  turbopack: {
+    // 日本語パスのワークスペースルート誤検知バグを回避
+    root: __dirname,
+  },
   async redirects() {
     return [
       // WP旧URL: /blog/YYYY/MM/DD/slug/ → 新URL: /blog/slug

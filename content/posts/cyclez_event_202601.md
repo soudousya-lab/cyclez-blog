@@ -1,7 +1,7 @@
 ---
 title: "【1月イベント】初詣ライド開催！"
 date: "2025-12-17"
-description: ""
+description: "1月18日（日）、cycleZの初詣ライドを赤磐市・田倉牛神社へ開催。参加費無料・初心者ペースで走ります。AM8:45山陽ふれあい公園メイン駐車場集合。ゴール後はキッチンカーランチあり。"
 category: "event"
 tags: ["event", "news"]
 wp_id: 6451

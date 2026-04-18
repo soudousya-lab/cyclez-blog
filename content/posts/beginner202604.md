@@ -1,7 +1,7 @@
 ---
 title: "【4月の初心者講習会のお知らせ】"
 date: "2026-04-01"
-description: ""
+description: "岡山・cycleZの4月ロードバイク初心者講習会は4/12（日）・4/26（日）9:00〜11:30に開催。乗車姿勢からメンテナンスのコツまで丁寧に指導します。ロードバイクデビューをお考えの方もお気軽にどうぞ。"
 category: "news"
 tags: ["news", "beginner-training"]
 image: "/logo.png"

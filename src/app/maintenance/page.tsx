@@ -88,10 +88,19 @@ export default function MaintenancePage() {
           ))}
         </div>
 
-        <div className="mt-10 text-center">
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
+          <Link
+            href="/maintenance/reserve"
+            className="inline-flex items-center gap-2 bg-[#c41e3a] text-white px-8 py-3 rounded-full hover:bg-[#a01830] transition-colors font-medium w-full sm:w-auto justify-center"
+          >
+            メンテナンスを予約する
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </Link>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 bg-[#c41e3a] text-white px-8 py-3 rounded-full hover:bg-[#a01830] transition-colors font-medium"
+            className="inline-flex items-center gap-2 bg-white text-[#c41e3a] border-2 border-[#c41e3a] px-8 py-3 rounded-full hover:bg-[#c41e3a] hover:text-white transition-colors font-medium w-full sm:w-auto justify-center"
           >
             メンテナンスの相談をする
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

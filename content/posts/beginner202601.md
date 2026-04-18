@@ -1,7 +1,7 @@
 ---
 title: "【1月の初心者講習会のお知らせ】"
 date: "2025-12-26"
-description: ""
+description: "岡山・cycleZで1月11日（日）9:00よりロードバイク初心者講習会を開催。乗り方・変速・メンテナンスの基本を丁寧に指導します。参加費無料、初心者大歓迎。お気軽にご参加ください。"
 category: "news"
 tags: ["news", "beginner-training"]
 wp_id: 6457
