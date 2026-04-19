@@ -4,7 +4,7 @@ date: "2026-02-28"
 description: "自転車を電車に乗せて移動する「輪行」の始め方を解説。必要な道具、JR・新幹線の持ち込みルール、実際の手順、よくある不安への回答まで。cycleZの店頭で実演した経験をもとにまとめました。"
 category: "初心者向け"
 tags: ["輪行", "初心者", "ロードバイク", "サイクリング", "新幹線"]
-image: "/images/shimanami-kaido-bridge.jpg"
+image: "/images/slider/rinko.jpg"
 ---
 
 # 輪行を知っていれば、あの親子は最初から笑顔だった
