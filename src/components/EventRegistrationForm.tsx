@@ -1,32 +1,48 @@
 "use client";
 
 import { useState } from "react";
-import { FaTicketAlt, FaBicycle, FaCheckCircle } from "react-icons/fa";
+import { FaTicketAlt, FaBicycle, FaCheckCircle, FaUserFriends, FaUser } from "react-icons/fa";
 
 interface Props {
   eventSlug: string;
   eventTitle: string;
   price: number;
+  pairPrice?: number;
   capacity: number;
   eventDate: string;
+  paymentDueLabel?: string;
 }
 
 type BikeType = "crossbike" | "roadbike";
 type BrakeType = "rim" | "disc";
 type PaymentMethod = "store_payment" | "bank_transfer";
+type RegistrationType = "single" | "pair";
 
 export default function EventRegistrationForm({
   eventSlug,
   eventTitle,
   price,
-  capacity,
+  pairPrice,
+  capacity: _capacity,
   eventDate,
+  paymentDueLabel,
 }: Props) {
+  void _capacity;
+  const pairEnabled = !!pairPrice && pairPrice > 0;
+
+  const [registrationType, setRegistrationType] = useState<RegistrationType>("single");
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [bikeType, setBikeType] = useState<BikeType | "">("");
   const [brakeType, setBrakeType] = useState<BrakeType | "">("");
   const [bikeModel, setBikeModel] = useState("");
+
+  const [companionName, setCompanionName] = useState("");
+  const [companionPhone, setCompanionPhone] = useState("");
+  const [companionBikeType, setCompanionBikeType] = useState<BikeType | "">("");
+  const [companionBrakeType, setCompanionBrakeType] = useState<BrakeType | "">("");
+  const [companionBikeModel, setCompanionBikeModel] = useState("");
+
   const [paymentMethod, setPaymentMethod] = useState<PaymentMethod | "">("");
   const [agreed, setAgreed] = useState(false);
   const [submitting, setSubmitting] = useState(false);
@@ -38,6 +54,11 @@ export default function EventRegistrationForm({
     ? new Date(eventDate) < new Date(new Date().toDateString())
     : false;
 
+  const currentPrice = registrationType === "pair" && pairPrice ? pairPrice : price;
+  const formattedPrice = currentPrice.toLocaleString("ja-JP");
+  const singlePriceLabel = price.toLocaleString("ja-JP");
+  const pairPriceLabel = pairPrice ? pairPrice.toLocaleString("ja-JP") : "";
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
@@ -45,6 +66,13 @@ export default function EventRegistrationForm({
     if (!name.trim() || !phone.trim() || !bikeType || !brakeType || !paymentMethod) {
       setError("必須項目をすべて入力してください");
       return;
+    }
+
+    if (registrationType === "pair") {
+      if (!companionName.trim() || !companionPhone.trim() || !companionBikeType || !companionBrakeType) {
+        setError("ペア申込はもう一人の情報もすべて入力してください");
+        return;
+      }
     }
 
     if (!agreed) {
@@ -66,6 +94,13 @@ export default function EventRegistrationForm({
           bike_model: bikeModel.trim() || null,
           payment_method: paymentMethod,
           event_slug: eventSlug,
+          registration_type: registrationType,
+          companion_name: registrationType === "pair" ? companionName.trim() : null,
+          companion_phone: registrationType === "pair" ? companionPhone.trim() : null,
+          companion_bike_type: registrationType === "pair" ? companionBikeType : null,
+          companion_bike_brake_type: registrationType === "pair" ? companionBrakeType : null,
+          companion_bike_model:
+            registrationType === "pair" ? companionBikeModel.trim() || null : null,
         }),
       });
 
@@ -125,15 +160,13 @@ export default function EventRegistrationForm({
         {paymentMethod === "store_payment" && (
           <div className="bg-white rounded-lg p-4 text-left border border-green-200">
             <p className="text-sm text-gray-700">
-              前日（5月16日）までにcycleZ店頭にてお支払いください。
+              {paymentDueLabel || "前日までにcycleZ店頭にてお支払いください。"}
             </p>
           </div>
         )}
       </div>
     );
   }
-
-  const formattedPrice = price.toLocaleString("ja-JP");
 
   return (
     <div className="bg-white rounded-xl border-2 border-[#c41e3a] p-6 md:p-8">
@@ -146,12 +179,72 @@ export default function EventRegistrationForm({
         <p className="text-sm text-gray-600">{eventTitle}</p>
       </div>
 
+      {/* 申込タイプ切替（ペア対応イベントのみ） */}
+      {pairEnabled && (
+        <div className="mb-6">
+          <label className="block text-sm font-bold text-gray-700 mb-2">
+            お申し込みタイプ
+            <span className="text-[#c41e3a] ml-1">*</span>
+          </label>
+          <div className="grid grid-cols-2 gap-3">
+            <button
+              type="button"
+              onClick={() => setRegistrationType("single")}
+              className={`
+                border-2 rounded-lg px-4 py-4 text-sm font-medium transition-all flex flex-col items-center gap-1
+                ${
+                  registrationType === "single"
+                    ? "border-[#c41e3a] bg-[#c41e3a] text-white"
+                    : "border-gray-300 bg-white text-gray-700 hover:border-gray-400"
+                }
+              `}
+            >
+              <FaUser size={20} />
+              <span className="font-bold">個人申込</span>
+              <span className="text-xs">¥{singlePriceLabel} / 1名</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => setRegistrationType("pair")}
+              className={`
+                border-2 rounded-lg px-4 py-4 text-sm font-medium transition-all flex flex-col items-center gap-1 relative
+                ${
+                  registrationType === "pair"
+                    ? "border-[#c41e3a] bg-[#c41e3a] text-white"
+                    : "border-gray-300 bg-white text-gray-700 hover:border-gray-400"
+                }
+              `}
+            >
+              <span className="absolute -top-2 -right-2 bg-amber-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
+                お得
+              </span>
+              <FaUserFriends size={20} />
+              <span className="font-bold">ペア申込</span>
+              <span className="text-xs">¥{pairPriceLabel} / 2名</span>
+            </button>
+          </div>
+          {registrationType === "pair" && (
+            <p className="text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-md px-3 py-2 mt-2">
+              ペア申込で
+              <span className="font-bold">
+                {" "}
+                ¥{(price * 2 - (pairPrice || 0)).toLocaleString("ja-JP")}{" "}
+              </span>
+              お得（通常¥{(price * 2).toLocaleString("ja-JP")}/2名 → ¥{pairPriceLabel}/2名）
+            </p>
+          )}
+        </div>
+      )}
+
       {/* サマリーカード */}
       <div className="bg-gray-50 rounded-lg p-4 mb-6 flex items-center gap-4">
         <div>
           <p className="text-xs text-gray-500">参加費</p>
           <p className="text-xl font-bold text-[#c41e3a]">
             ¥{formattedPrice}
+          </p>
+          <p className="text-[10px] text-gray-500 mt-0.5">
+            {registrationType === "pair" ? "2名分" : "1名分"}
           </p>
         </div>
         <div className="w-px h-10 bg-gray-300" />
@@ -163,6 +256,12 @@ export default function EventRegistrationForm({
 
       {/* フォーム */}
       <form onSubmit={handleSubmit} className="space-y-5">
+        {pairEnabled && registrationType === "pair" && (
+          <p className="text-sm font-bold text-gray-700 -mb-2">
+            👤 ご本人さまの情報
+          </p>
+        )}
+
         {/* お名前 */}
         <div>
           <label className="block text-sm font-bold text-gray-700 mb-1.5">
@@ -273,8 +372,117 @@ export default function EventRegistrationForm({
           />
         </div>
 
+        {/* ペア申込：お連れさま情報 */}
+        {pairEnabled && registrationType === "pair" && (
+          <div className="border-t-2 border-dashed border-gray-200 pt-5 space-y-5">
+            <p className="text-sm font-bold text-gray-700">
+              👥 お連れさまの情報
+            </p>
+
+            <div>
+              <label className="block text-sm font-bold text-gray-700 mb-1.5">
+                お名前
+                <span className="text-[#c41e3a] ml-1">*</span>
+              </label>
+              <input
+                type="text"
+                value={companionName}
+                onChange={(e) => setCompanionName(e.target.value)}
+                placeholder="例: 山田 花子"
+                className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#c41e3a]/30 focus:border-[#c41e3a] transition-colors"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-bold text-gray-700 mb-1.5">
+                電話番号
+                <span className="text-[#c41e3a] ml-1">*</span>
+              </label>
+              <input
+                type="tel"
+                value={companionPhone}
+                onChange={(e) => setCompanionPhone(e.target.value)}
+                placeholder="例: 09098765432"
+                className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#c41e3a]/30 focus:border-[#c41e3a] transition-colors"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-bold text-gray-700 mb-2">
+                持ち込み自転車の種類
+                <span className="text-[#c41e3a] ml-1">*</span>
+              </label>
+              <div className="grid grid-cols-2 gap-3">
+                {[
+                  { value: "crossbike" as BikeType, label: "クロスバイク" },
+                  { value: "roadbike" as BikeType, label: "ロードバイク" },
+                ].map((option) => (
+                  <button
+                    key={option.value}
+                    type="button"
+                    onClick={() => setCompanionBikeType(option.value)}
+                    className={`
+                      border-2 rounded-lg px-4 py-3 text-sm font-medium transition-all
+                      ${
+                        companionBikeType === option.value
+                          ? "border-[#c41e3a] bg-[#c41e3a] text-white"
+                          : "border-gray-300 bg-white text-gray-700 hover:border-gray-400"
+                      }
+                    `}
+                  >
+                    {option.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-sm font-bold text-gray-700 mb-2">
+                ブレーキ種類
+                <span className="text-[#c41e3a] ml-1">*</span>
+              </label>
+              <div className="grid grid-cols-2 gap-3">
+                {[
+                  { value: "rim" as BrakeType, label: "リムブレーキ" },
+                  { value: "disc" as BrakeType, label: "ディスクブレーキ" },
+                ].map((option) => (
+                  <button
+                    key={option.value}
+                    type="button"
+                    onClick={() => setCompanionBrakeType(option.value)}
+                    className={`
+                      border-2 rounded-lg px-4 py-3 text-sm font-medium transition-all
+                      ${
+                        companionBrakeType === option.value
+                          ? "border-[#c41e3a] bg-[#c41e3a] text-white"
+                          : "border-gray-300 bg-white text-gray-700 hover:border-gray-400"
+                      }
+                    `}
+                  >
+                    {option.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-sm font-bold text-gray-700 mb-1.5">
+                車種名
+                <span className="text-gray-400 text-xs ml-1">（任意）</span>
+              </label>
+              <input
+                type="text"
+                value={companionBikeModel}
+                onChange={(e) => setCompanionBikeModel(e.target.value)}
+                placeholder="例: GIOS AIRONE"
+                className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#c41e3a]/30 focus:border-[#c41e3a] transition-colors"
+              />
+            </div>
+          </div>
+        )}
+
         {/* お支払い方法 */}
-        <div>
+        <div className={pairEnabled && registrationType === "pair" ? "border-t-2 border-dashed border-gray-200 pt-5" : ""}>
           <label className="block text-sm font-bold text-gray-700 mb-2">
             お支払い方法
             <span className="text-[#c41e3a] ml-1">*</span>
