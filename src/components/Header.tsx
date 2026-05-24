@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { MdPedalBike } from "react-icons/md";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -137,8 +138,9 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href="/diagnosis" className="block px-5 py-4 text-sm font-bold text-[#c41e3a] hover:bg-red-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
-                🚲 バイク診断
+              <Link href="/diagnosis" className="inline-flex items-center gap-1.5 px-5 py-4 text-sm font-bold text-[#c41e3a] hover:bg-red-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
+                <MdPedalBike className="text-[#c41e3a]" size={18} />
+                <span>バイク診断</span>
               </Link>
             </li>
             <li>
@@ -181,7 +183,7 @@ export default function Header() {
           <div className="flex flex-col">
             <Link href="/category/news" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">お知らせ</Link>
             <Link href="/first" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">初めての方へ</Link>
-            <Link href="/diagnosis" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 font-bold text-[#c41e3a] hover:bg-red-50">🚲 バイク診断</Link>
+            <Link href="/diagnosis" onClick={() => setIsMenuOpen(false)} className="inline-flex items-center gap-1.5 px-6 py-3 font-bold text-[#c41e3a] hover:bg-red-50"><MdPedalBike className="text-[#c41e3a]" size={18} /><span>バイク診断</span></Link>
             <Link href="/maintenance" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">メンテナンス</Link>
             <Link href="/fitting" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">フィッティング</Link>
             <Link href="/about" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">CycleZとは？</Link>

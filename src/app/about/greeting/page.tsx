@@ -48,8 +48,29 @@ export default function GreetingPage() {
             <span className="w-1.5 h-8 bg-[#c41e3a] rounded-full flex-shrink-0" />
             自転車には、人の価値観を変えてしまうほどの力が
           </h2>
-          <p className="text-gray-700 leading-relaxed mb-8">
+          <p className="text-gray-700 leading-relaxed mb-10">
             「自転車」はひとりでも楽しめる趣味ですが、仲間がたくさんいればもっと楽しくなります。日々のモチベーションもアップしますし、休日に集まってサイクリングに出かけたり、いつでも情報交換ができます。そんな自転車仲間が増え、自分の属するコミュニティの輪が広がっていくにつれ、自転車がもっともっと楽しくなります。cycleZ（サイクルゼット）が目指すのは、「岡山で自転車を楽しみたい！」と思っている方がいつでも気軽に立ち寄れる場所。お客様に最適な自転車選びのお手伝いはもちろん、自転車を使った楽しい遊び方まで、ニーズに合わせ、親切ていねいにご案内させていただきます。いつでも気軽に、ご来店ください。
+          </p>
+
+          <h2 className="flex items-center gap-3 text-xl md:text-2xl font-bold text-gray-900 mb-5 pb-3 border-b-2 border-[#c41e3a]">
+            <span className="w-1.5 h-8 bg-[#c41e3a] rounded-full flex-shrink-0" />
+            「自転車を続ける」を、一生のものに
+          </h2>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            ロードバイクは、始めることよりも続けることのほうがずっと難しいスポーツです。仕事が忙しくなる、家族が増える、体力が落ちる、興味の方向が変わる——人生のどの段階でも「自転車から離れる理由」はいくらでも出てきます。
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            それでも、私たちが店をやっていて一番嬉しい瞬間は、何年も前にcycleZで自転車を買ってくださったお客様が、今もペダルを回し続けてくれていることを知ったときです。
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            サイクリングを「速く・長く・厳しく」という競技の物差しだけで測ると、年齢を重ねるごとに自分の居場所が無くなっていきます。だからcycleZは、サイクリングを「<strong className="font-bold text-gray-900">景色・食・文化・仲間と過ごす一日体験</strong>」として、もう一度位置づけ直すお店でありたいと思っています。
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            ペースがゆっくりになっても、家族の同行があっても、体力に自信がなくなっても、それでも自転車と関わり続けられる——初心者講習会、グループライド、貸切バスを使ったツアー、メンテナンス、フィッティング。そういう「続けるための仕組み」を用意し続けるのが、私たちcycleZが大切にしている役割です。
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-8 font-bold">
+            「自転車を続ける」を、一生のものに。<br />
+            これが、岡山という街でロードバイクのお店を続けている、私たちの一番の理由です。
           </p>
 
           <div className="text-right text-gray-700 font-medium">

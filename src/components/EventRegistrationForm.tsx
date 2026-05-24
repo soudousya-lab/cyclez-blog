@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { FaTicketAlt, FaBicycle, FaCheckCircle, FaUserFriends, FaUser } from "react-icons/fa";
+import { useEffect, useState } from "react";
+import { FaTicketAlt, FaBicycle, FaCheckCircle, FaUserFriends, FaUser, FaPhoneAlt, FaBus, FaUsers } from "react-icons/fa";
 
 interface Props {
   eventSlug: string;
@@ -11,6 +11,14 @@ interface Props {
   capacity: number;
   eventDate: string;
   paymentDueLabel?: string;
+}
+
+function formatDiff(targetMs: number, nowMs: number): { days: number; hours: number; passed: boolean } {
+  const diff = targetMs - nowMs;
+  if (diff <= 0) return { days: 0, hours: 0, passed: true };
+  const days = Math.floor(diff / 86_400_000);
+  const hours = Math.floor((diff % 86_400_000) / 3_600_000);
+  return { days, hours, passed: false };
 }
 
 type BikeType = "crossbike" | "roadbike";
@@ -23,12 +31,47 @@ export default function EventRegistrationForm({
   eventTitle,
   price,
   pairPrice,
-  capacity: _capacity,
+  capacity,
   eventDate,
   paymentDueLabel,
 }: Props) {
-  void _capacity;
   const pairEnabled = !!pairPrice && pairPrice > 0;
+
+  const [capacityInfo, setCapacityInfo] = useState<{ remaining: number; total: number } | null>(null);
+  const [now, setNow] = useState<number>(() => Date.now());
+
+  useEffect(() => {
+    let cancelled = false;
+    const load = () => {
+      fetch(`/api/events/${eventSlug}/capacity`, { cache: "no-store" })
+        .then((r) => r.json())
+        .then((data) => {
+          if (!cancelled && typeof data?.remaining === "number") {
+            setCapacityInfo({ remaining: data.remaining, total: data.total ?? capacity });
+          }
+        })
+        .catch(() => {});
+    };
+    load();
+    const id = setInterval(load, 60_000);
+    return () => {
+      cancelled = true;
+      clearInterval(id);
+    };
+  }, [eventSlug, capacity]);
+
+  useEffect(() => {
+    const id = setInterval(() => setNow(Date.now()), 60_000);
+    return () => clearInterval(id);
+  }, []);
+
+  // 締切計算: 開催7日前 23:59:59（JST）まで全額返金キャンセル可
+  const eventTimeMs = eventDate ? new Date(`${eventDate}T08:00:00+09:00`).getTime() : 0;
+  const cancelDeadlineMs = eventDate
+    ? new Date(`${eventDate}T23:59:59+09:00`).getTime() - 7 * 86_400_000
+    : 0;
+  const eventCountdown = eventTimeMs ? formatDiff(eventTimeMs, now) : null;
+  const cancelCountdown = cancelDeadlineMs ? formatDiff(cancelDeadlineMs, now) : null;
 
   const [registrationType, setRegistrationType] = useState<RegistrationType>("single");
   const [name, setName] = useState("");
@@ -168,8 +211,64 @@ export default function EventRegistrationForm({
     );
   }
 
+  const remainingSeats = capacityInfo?.remaining ?? null;
+  const isLowSeats = remainingSeats !== null && remainingSeats <= 10 && remainingSeats > 0;
+  const isSoldOut = remainingSeats === 0;
+
   return (
     <div className="bg-white rounded-xl border-2 border-[#c41e3a] p-6 md:p-8">
+      {/* 残席・カウントダウンバナー */}
+      {(remainingSeats !== null || cancelCountdown || eventCountdown) && (
+        <div className="-mx-6 -mt-6 md:-mx-8 md:-mt-8 mb-6 rounded-t-xl overflow-hidden">
+          <div className="bg-gradient-to-r from-[#c41e3a] to-[#a01830] text-white px-5 py-3 flex flex-wrap items-center justify-between gap-2">
+            <div className="flex items-center gap-2 text-sm font-bold">
+              {remainingSeats !== null ? (
+                <>
+                  <span className="inline-flex items-center justify-center w-8 h-8 bg-white/20 rounded-full">
+                    <FaTicketAlt size={14} />
+                  </span>
+                  {isSoldOut ? (
+                    <span>満席になりました</span>
+                  ) : (
+                    <span>
+                      残り <span className="text-2xl mx-1">{remainingSeats}</span> 席 / 全{capacityInfo?.total ?? capacity}席
+                    </span>
+                  )}
+                </>
+              ) : (
+                <span>申込状況を確認中…</span>
+              )}
+            </div>
+            {isLowSeats && (
+              <span className="text-xs font-bold bg-amber-300 text-amber-900 px-2 py-1 rounded-full animate-pulse">
+                まもなく締切
+              </span>
+            )}
+          </div>
+          {(cancelCountdown && !cancelCountdown.passed) || (eventCountdown && !eventCountdown.passed) ? (
+            <div className="bg-amber-50 border-t border-amber-200 px-5 py-2.5 text-xs text-amber-900 flex flex-wrap gap-x-4 gap-y-1">
+              {cancelCountdown && !cancelCountdown.passed && (
+                <span>
+                  ⏱ <strong>全額返金キャンセル期限</strong> まであと{" "}
+                  <strong className="text-[#c41e3a]">
+                    {cancelCountdown.days}日{cancelCountdown.hours}時間
+                  </strong>
+                </span>
+              )}
+              {eventCountdown && !eventCountdown.passed && (
+                <span className="inline-flex items-center gap-1.5">
+                  <FaBus className="text-[#c41e3a]" size={14} />
+                  <strong>開催</strong> まであと{" "}
+                  <strong className="text-[#c41e3a]">
+                    {eventCountdown.days}日{eventCountdown.hours}時間
+                  </strong>
+                </span>
+              )}
+            </div>
+          ) : null}
+        </div>
+      )}
+
       {/* ヘッダー */}
       <div className="text-center mb-6">
         <h3 className="flex items-center justify-center gap-2 text-xl font-bold text-gray-900 mb-2">
@@ -236,6 +335,20 @@ export default function EventRegistrationForm({
         </div>
       )}
 
+      {/* 同伴・問合せ案内 */}
+      <div className="mb-5 bg-blue-50 border border-blue-200 rounded-lg px-4 py-3 text-sm text-blue-900">
+        <p className="font-bold mb-1">ご家族・配偶者で「乗らずに同乗のみ」も可能です</p>
+        <p className="text-xs leading-relaxed">
+          バス・拝観・昼食つき <strong>¥8,000</strong>（自転車不要）。お席に余裕があるためお電話で承ります。
+        </p>
+        <a
+          href="tel:086-252-7744"
+          className="mt-2 inline-flex items-center gap-2 bg-white border border-blue-300 text-blue-800 font-bold text-sm px-3 py-1.5 rounded-md hover:bg-blue-100 transition-colors"
+        >
+          <FaPhoneAlt size={12} /> 086-252-7744
+        </a>
+      </div>
+
       {/* サマリーカード */}
       <div className="bg-gray-50 rounded-lg p-4 mb-6 flex items-center gap-4">
         <div>
@@ -257,8 +370,9 @@ export default function EventRegistrationForm({
       {/* フォーム */}
       <form onSubmit={handleSubmit} className="space-y-5">
         {pairEnabled && registrationType === "pair" && (
-          <p className="text-sm font-bold text-gray-700 -mb-2">
-            👤 ご本人さまの情報
+          <p className="inline-flex items-center gap-1.5 text-sm font-bold text-gray-700 -mb-2">
+            <FaUser className="text-[#c41e3a]" size={14} />
+            <span>ご本人さまの情報</span>
           </p>
         )}
 
@@ -375,8 +489,9 @@ export default function EventRegistrationForm({
         {/* ペア申込：お連れさま情報 */}
         {pairEnabled && registrationType === "pair" && (
           <div className="border-t-2 border-dashed border-gray-200 pt-5 space-y-5">
-            <p className="text-sm font-bold text-gray-700">
-              👥 お連れさまの情報
+            <p className="inline-flex items-center gap-1.5 text-sm font-bold text-gray-700">
+              <FaUsers className="text-[#c41e3a]" size={14} />
+              <span>お連れさまの情報</span>
             </p>
 
             <div>

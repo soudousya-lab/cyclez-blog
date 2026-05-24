@@ -27,6 +27,8 @@ export interface PostData {
   registration_open?: boolean;
   event_date?: string;
   payment_due_label?: string;
+  // 申込フォームを別記事のイベントに紐付けたい場合に指定（再告知記事など）
+  registration_event_slug?: string;
 }
 
 export function getAllPosts(): PostData[] {
@@ -62,6 +64,7 @@ export function getAllPosts(): PostData[] {
         registration_open: data.registration_open,
         event_date: data.event_date,
         payment_due_label: data.payment_due_label,
+        registration_event_slug: data.registration_event_slug,
       };
     })
     .filter((post) => post.date <= today);
@@ -91,6 +94,7 @@ export function getPostBySlug(slug: string): PostData | null {
       registration_open: data.registration_open,
       event_date: data.event_date,
       payment_due_label: data.payment_due_label,
+      registration_event_slug: data.registration_event_slug,
     };
   } catch {
     return null;

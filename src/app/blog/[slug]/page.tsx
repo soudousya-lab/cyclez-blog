@@ -10,7 +10,35 @@ import PageBanner from "@/components/PageBanner";
 import ImageLightbox from "@/components/ImageLightbox";
 import { ArticleJsonLd, FaqJsonLd } from "@/components/JsonLd";
 import EventRegistrationForm from "@/components/EventRegistrationForm";
-import { FaMapMarkerAlt, FaBus, FaUtensils, FaBicycle, FaCheckCircle, FaTimesCircle, FaExclamationTriangle } from "react-icons/fa";
+import { FaMapMarkerAlt, FaBus, FaUtensils, FaBicycle, FaCheckCircle, FaTimesCircle, FaExclamationTriangle, FaMountain, FaWrench, FaPenAlt, FaLightbulb, FaUser, FaUsers, FaCamera } from "react-icons/fa";
+import { MdPedalBike } from "react-icons/md";
+
+// インライン絵文字 → react-iconsマッピング（段落・引用・リスト・テーブル等で使用）
+const INLINE_EMOJI_ICONS: Record<string, ReactElement> = {
+  "📍": <FaMapMarkerAlt className="inline-block align-[-2px] text-[#c41e3a] mx-0.5" />,
+  "🚌": <FaBus className="inline-block align-[-2px] text-[#c41e3a] mx-0.5" />,
+  "🍜": <FaUtensils className="inline-block align-[-2px] text-[#c41e3a] mx-0.5" />,
+  "🚴": <FaBicycle className="inline-block align-[-2px] text-[#c41e3a] mx-0.5" />,
+  "🚲": <MdPedalBike className="inline-block align-[-2px] text-[#c41e3a] mx-0.5" />,
+  "⛰️": <FaMountain className="inline-block align-[-2px] text-[#c41e3a] mx-0.5" />,
+  "⛰": <FaMountain className="inline-block align-[-2px] text-[#c41e3a] mx-0.5" />,
+  "🍱": <FaUtensils className="inline-block align-[-2px] text-[#c41e3a] mx-0.5" />,
+  "🔧": <FaWrench className="inline-block align-[-2px] text-[#c41e3a] mx-0.5" />,
+  "📝": <FaPenAlt className="inline-block align-[-2px] text-[#c41e3a] mx-0.5" />,
+  "💡": <FaLightbulb className="inline-block align-[-2px] text-amber-500 mx-0.5" />,
+  "👤": <FaUser className="inline-block align-[-2px] text-[#c41e3a] mx-0.5" />,
+  "👥": <FaUsers className="inline-block align-[-2px] text-[#c41e3a] mx-0.5" />,
+  "📷": <FaCamera className="inline-block align-[-2px] text-[#c41e3a] mx-0.5" />,
+  "✅": <FaCheckCircle className="inline-block align-[-2px] text-green-600 mx-0.5" />,
+  "❌": <FaTimesCircle className="inline-block align-[-2px] text-red-500 mx-0.5" />,
+  "⚠️": <FaExclamationTriangle className="inline-block align-[-2px] text-amber-500 mx-0.5" />,
+  "⚠": <FaExclamationTriangle className="inline-block align-[-2px] text-amber-500 mx-0.5" />,
+};
+
+const INLINE_EMOJI_RE = new RegExp(
+  "(" + Object.keys(INLINE_EMOJI_ICONS).map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|") + ")",
+  "g",
+);
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -124,7 +152,27 @@ function formatContent(content: string): ReactElement[] {
       remaining = remaining.substring(matchIndex + matchToUse[0].length);
     }
 
-    return parts.length > 0 ? parts : [text];
+    // 絵文字を react-icons に置換（文字列パートのみ）
+    const finalParts: (string | ReactElement)[] = [];
+    let emojiKey = 0;
+    for (const part of parts.length > 0 ? parts : [text]) {
+      if (typeof part !== "string") {
+        finalParts.push(part);
+        continue;
+      }
+      const segments = part.split(INLINE_EMOJI_RE);
+      for (const seg of segments) {
+        if (!seg) continue;
+        if (INLINE_EMOJI_ICONS[seg]) {
+          finalParts.push(
+            React.cloneElement(INLINE_EMOJI_ICONS[seg], { key: `emoji-${inlineKey}-${emojiKey++}` }),
+          );
+        } else {
+          finalParts.push(seg);
+        }
+      }
+    }
+    return finalParts;
   };
 
   for (let i = 0; i < lines.length; i++) {
@@ -295,12 +343,20 @@ function formatContent(content: string): ReactElement[] {
     // H3 heading (subsection with dot or emoji icon)
     if (line.startsWith("### ")) {
       const headingText = line.replace("### ", "");
-      // 絵文字→react-iconsマッピング
+      // H3先頭の絵文字→react-iconsマッピング（大きめサイズ）
       const emojiIconMap: Record<string, ReactElement> = {
         "📍": <FaMapMarkerAlt className="text-[#c41e3a] flex-shrink-0" size={20} />,
         "🚌": <FaBus className="text-[#c41e3a] flex-shrink-0" size={20} />,
         "🍜": <FaUtensils className="text-[#c41e3a] flex-shrink-0" size={20} />,
         "🚴": <FaBicycle className="text-[#c41e3a] flex-shrink-0" size={20} />,
+        "🚲": <MdPedalBike className="text-[#c41e3a] flex-shrink-0" size={22} />,
+        "⛰️": <FaMountain className="text-[#c41e3a] flex-shrink-0" size={20} />,
+        "⛰": <FaMountain className="text-[#c41e3a] flex-shrink-0" size={20} />,
+        "🍱": <FaUtensils className="text-[#c41e3a] flex-shrink-0" size={20} />,
+        "🔧": <FaWrench className="text-[#c41e3a] flex-shrink-0" size={20} />,
+        "📝": <FaPenAlt className="text-[#c41e3a] flex-shrink-0" size={20} />,
+        "💡": <FaLightbulb className="text-amber-500 flex-shrink-0" size={20} />,
+        "📷": <FaCamera className="text-[#c41e3a] flex-shrink-0" size={20} />,
       };
       let icon: ReactElement | null = null;
       let cleanText = headingText;
@@ -414,11 +470,33 @@ function formatContent(content: string): ReactElement[] {
       continue;
     }
 
-    // Image ![alt](url)
+    // Image ![alt](url) または Video（mp4/webm/mov）
     const imageMatch = line.match(/^!\[([^\]]*)\]\(([^)]+)\)/);
     if (imageMatch) {
       const alt = imageMatch[1];
       const src = imageMatch[2];
+      const isVideo = /\.(mp4|webm|mov)$/i.test(src);
+      if (isVideo) {
+        elements.push(
+          <figure key={`vid-${keyIndex++}`} className="my-8 max-w-sm mx-auto">
+            <video
+              src={src}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              className="w-full rounded-lg shadow-sm"
+            />
+            {alt && (
+              <figcaption className="text-center text-xs text-gray-500 mt-2">
+                {alt}
+              </figcaption>
+            )}
+          </figure>
+        );
+        continue;
+      }
       elements.push(
         <figure key={`img-${keyIndex++}`} className="my-8">
           <ImageLightbox
@@ -578,7 +656,7 @@ export default async function PostPage({ params }: Props) {
             {post.registration_open && post.price && (
               <div id="register" className="mt-10 pt-8 border-t-2 border-[#c41e3a]">
                 <EventRegistrationForm
-                  eventSlug={post.slug}
+                  eventSlug={post.registration_event_slug || post.slug}
                   eventTitle={post.title}
                   price={post.price}
                   pairPrice={post.pair_price}

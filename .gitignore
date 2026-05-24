@@ -34,6 +34,9 @@ yarn-error.log*
 .env*
 !.env.example
 
+# credentials (service account keys)
+/credentials
+
 # vercel
 .vercel
 
