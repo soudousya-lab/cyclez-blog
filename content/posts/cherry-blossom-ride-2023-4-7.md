@@ -21,7 +21,6 @@ image: "/logo.png"
 
 ![松岡さん考案のサイクリングコース](/images/wp/2023-04-a5427ea152c79c64b8d826954c24ab8d-731x1024.jpg)
 
- 
 
 ### 総勢31名のお花見ライドスタート
 
@@ -35,34 +34,12 @@ image: "/logo.png"
 
 スタート地点からの出発はいつも壮大な行列になります。
 
-		
-			#gallery-10 {
-				margin: auto;
-			}
-			#gallery-10 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-10 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-10 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![朝集合からのスタート2](/images/wp/2023-04-29932dcd38a1b9628bd0dffe4a872bdb-768x1024.jpg)
+![朝集合からのスタート2](/images/wp/2023-04-29932dcd38a1b9628bd0dffe4a872bdb-768x1024.jpg)
 
-			
-			
-				![朝集合からのスタート](/images/wp/2023-04-3aa45278c717193870f3c270c3c4ab4c-768x1024.jpg)
 
-			
-		
+![朝集合からのスタート](/images/wp/2023-04-3aa45278c717193870f3c270c3c4ab4c-768x1024.jpg)
+
+
 スタートから早速綺麗なお花見スポットがあるのを発見。
 
 ■大供第1公園
@@ -74,7 +51,6 @@ image: "/logo.png"
 
 皆さん引き続き楽しんできてください...！
 
- 
 
 ### 岡南空港でお昼ご飯からのグルメ巡り
 
@@ -88,7 +64,6 @@ image: "/logo.png"
 
 今回立ち寄った飲食店もご紹介します。
 
- 
 
 #### ＜干し肉 KINGO-＞
 
@@ -101,7 +76,6 @@ image: "/logo.png"
 
 干し肉で厚さがあり歯応えもあるのに、柔らかくて美味しいです。
 
- 
 
 #### ＜手作りお弁当専門店 おばんざい弁当＞
 
@@ -118,65 +92,19 @@ image: "/logo.png"
 
 そのあとは岡南空港で離着陸を見たりのんびりして過ごしました。
 
-		
-			#gallery-11 {
-				margin: auto;
-			}
-			#gallery-11 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-11 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-11 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![岡南空港2](/images/wp/2023-04-ff0a3a6ab8d316c8df9f1d1ddc1aab6e-1024x768.jpg)
+![岡南空港2](/images/wp/2023-04-ff0a3a6ab8d316c8df9f1d1ddc1aab6e-1024x768.jpg)
 
-			
-			
-				![岡南空港](/images/wp/2023-04-7dfbddbd88f58a70a1deabc1af7b7d5f-1024x768.jpg)
 
-			
-		
+![岡南空港](/images/wp/2023-04-7dfbddbd88f58a70a1deabc1af7b7d5f-1024x768.jpg)
+
+
 サイクルZポーズで記念撮影！
 
-		
-			#gallery-12 {
-				margin: auto;
-			}
-			#gallery-12 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-12 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-12 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![お昼ご飯集合](/images/wp/2023-04-cd799a2d0bd6f767979683ea56627226-1024x768.jpg)
+![お昼ご飯集合](/images/wp/2023-04-cd799a2d0bd6f767979683ea56627226-1024x768.jpg)
 
-			
-			
-				![サイクルZポーズ](/images/wp/2023-04-8c67b7343c3ea2b63e1602eabeadc806-1024x768.jpg)
 
-			
-		
- 
+![サイクルZポーズ](/images/wp/2023-04-8c67b7343c3ea2b63e1602eabeadc806-1024x768.jpg)
+
 
 #### ＜ドンレミー アウトレット岡山店＞
 
@@ -203,7 +131,6 @@ image: "/logo.png"
 
 ![笹ヶ瀬川](/images/wp/2023-04-36dcde8b805b94a0cd9775172ebb0957-768x1024.jpg)
 
- 
 
 #### ＜おかやま工房 リエゾン＞
 
@@ -220,7 +147,6 @@ image: "/logo.png"
 
 この後サイクルZに戻り、今回のライドイベントは終了です。
 
- 
 
 ### 新生活でも楽しい自転車ライフを
 
@@ -232,7 +158,6 @@ image: "/logo.png"
 
 また次回のイベントのご参加もお待ちしております！
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -242,8 +167,4 @@ image: "/logo.png"
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

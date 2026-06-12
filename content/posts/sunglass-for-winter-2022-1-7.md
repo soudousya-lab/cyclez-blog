@@ -19,7 +19,6 @@ UVに反応してスモークがかったりミラーの度合いが強くなる
 
 UVのない時にはクリアレンズになるので、夜まで差し掛かってのサイクリングにも大活躍だゼーーーット！！
 
- 
 
 ### アルバオプティクスのサングラス
 
@@ -33,48 +32,23 @@ UVのない時にはクリアレンズになるので、夜まで差し掛かっ
 
 ゆったり街乗りや普段使いも出来るアニマというモデルもありますが、今回は主要モデルであるストラトスとデルタの紹介をしていきます！！
 
-		
-			#gallery-98 {
-				margin: auto;
-			}
-			#gallery-98 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 33%;
-			}
-			#gallery-98 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-98 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![ストラトス_ミラーインレンズ3](/images/wp/2022-01-f285a650976fbdfa2c231992932660b2-225x300.jpg)
+![ストラトス_ミラーインレンズ3](/images/wp/2022-01-f285a650976fbdfa2c231992932660b2-225x300.jpg)
 
-			
-				
-				ストラトス
-				
-			
-				![デルタ_ミラー調光1](/images/wp/2022-01-58f34b919650baa478ee7c00b599134f-225x300.jpg)
 
-			
-				
-				デルタ
-				
-			
-				![アニマ_サングラス](/images/wp/2022-01-6bfbcdbfe07fa447b95fc312ab404c5b-225x300.jpg)
+ストラトス
 
-			
-				
-				アニマ
-				
-		
- 
+
+![デルタ_ミラー調光1](/images/wp/2022-01-58f34b919650baa478ee7c00b599134f-225x300.jpg)
+
+
+デルタ
+
+
+![アニマ_サングラス](/images/wp/2022-01-6bfbcdbfe07fa447b95fc312ab404c5b-225x300.jpg)
+
+
+アニマ
+
 
 ### レーシングモデルのストラトスとデルタ
 
@@ -88,141 +62,50 @@ UVのない時にはクリアレンズになるので、夜まで差し掛かっ
 
 完全にフレームレスでありながらアンダーの部分が少し垂れ下がったようなレンズのデザインは、レトロとモダンが上手く融合したものになっています。
 
-		
-			#gallery-99 {
-				margin: auto;
-			}
-			#gallery-99 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-99 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-99 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![ストラトス_ミラーインレンズ3](/images/wp/2022-01-f285a650976fbdfa2c231992932660b2-225x300.jpg)
+![ストラトス_ミラーインレンズ3](/images/wp/2022-01-f285a650976fbdfa2c231992932660b2-225x300.jpg)
 
-			
-				
-				ストラトス
-				
-			
-				![ストラトス_ミラーインレンズ2](/images/wp/2022-01-577fe7785565aee67baf46dd997263e9-225x300.jpg)
 
-			
-		
+ストラトス
+
+
+![ストラトス_ミラーインレンズ2](/images/wp/2022-01-577fe7785565aee67baf46dd997263e9-225x300.jpg)
+
+
 耳掛けの部分は長さの調整が出来るようになっており、フレームレスでありながら高いフィット感が得られるようになっています。
 
-		
-			#gallery-100 {
-				margin: auto;
-			}
-			#gallery-100 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-100 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-100 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![ストラトス_ミラーインレンズ4](/images/wp/2022-01-35797b57f0076f28207460ad96a75c19-300x225.jpg)
+![ストラトス_ミラーインレンズ4](/images/wp/2022-01-35797b57f0076f28207460ad96a75c19-300x225.jpg)
 
-			
-			
-				![ストラトス_ミラーインレンズ1](/images/wp/2022-01-06213a93444c0523000daa8cd78d7f25-300x225.jpg)
 
-			
-		
- 
+![ストラトス_ミラーインレンズ1](/images/wp/2022-01-06213a93444c0523000daa8cd78d7f25-300x225.jpg)
+
 
 #### ＜前衛的なデザインのデルタ＞
 
 角張ったレンズデザインから耳掛けの部分にかけて、調節機能の代わりにフィット感が高まるように特徴的なカーブを描いています。
 
-		
-			#gallery-101 {
-				margin: auto;
-			}
-			#gallery-101 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-101 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-101 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![デルタ_ミラー調光1](/images/wp/2022-01-58f34b919650baa478ee7c00b599134f-225x300.jpg)
+![デルタ_ミラー調光1](/images/wp/2022-01-58f34b919650baa478ee7c00b599134f-225x300.jpg)
 
-			
-				
-				デルタ
-				
-			
-				![デルタ_ミラー調光2](/images/wp/2022-01-b080e258ec65a0fd8f7eb5576103ecce-300x225.jpg)
 
-			
-		
+デルタ
+
+
+![デルタ_ミラー調光2](/images/wp/2022-01-b080e258ec65a0fd8f7eb5576103ecce-300x225.jpg)
+
+
 この特徴的なデザインがフィット感のために作られていることが分かると、とてもカッコよく感じられます！
 
-		
-			#gallery-102 {
-				margin: auto;
-			}
-			#gallery-102 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-102 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-102 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![デルタ_スモーク1](/images/wp/2022-01-1539c842cc4a8035fb0aa52dd5acbe38-300x225.jpg)
+![デルタ_スモーク1](/images/wp/2022-01-1539c842cc4a8035fb0aa52dd5acbe38-300x225.jpg)
 
-			
-			
-				![デルタ_スモーク2](/images/wp/2022-01-264cede5a43de814ee00c6a162ea4f0d-300x225.jpg)
 
-			
-		
+![デルタ_スモーク2](/images/wp/2022-01-264cede5a43de814ee00c6a162ea4f0d-300x225.jpg)
+
+
 レンズ部分はトップにだけフレームが通っており、ホールド力が更に高くなっています。
 
 着用した状態でいくら頭を振り回しても一切ズレることはないです。
 
 ブランドとしても、デルタをより高機能なレーシングモデルとして売り出しています。
 
- 
 
 ### レンズの種類も豊富なアルバオプティクス
 
@@ -240,7 +123,6 @@ UVのない時にはクリアレンズになるので、夜まで差し掛かっ
 
 自転車の速度域では通常のメガネだと保護できない部分があったり、巻き込み風で普段より目が乾いたりするので、しっかりサングラスでカバーしてあげた方が良いです！！
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -250,8 +132,4 @@ UVのない時にはクリアレンズになるので、夜まで差し掛かっ
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

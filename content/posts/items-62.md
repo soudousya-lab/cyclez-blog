@@ -9,11 +9,8 @@ wp_url: "https://cycle-z.com/blog/2020/09/03/items-62/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/31557918/widget/large)
 
-  
 
-  
   ■ロードレース界のスーパースター、ペーター・サガンがいち早く愛用しはじめたことで知名度を一気に上げた、輪界においては最注目のブランド。
 
   ■Hydroilo Lens Coatingにより、オイルと水をはじき、ライド中の手入れ頻度を減少
@@ -24,7 +21,6 @@ image: "/logo.png"
 
   ※スペアレンズ（クリア）と、ノーズパッドが付属します。
 
-  
 
   【原産国】イタリア
 

@@ -9,9 +9,7 @@ wp_url: "https://cycle-z.com/blog/2020/06/12/items-56/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/30027278/widget/large)
 
-  
 
   ■ しなやかで微細な穴のあいたCool Skin™ 製の手のひら。
 

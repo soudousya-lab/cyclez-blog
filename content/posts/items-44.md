@@ -9,10 +9,7 @@ wp_url: "https://cycle-z.com/blog/2020/05/19/items-44/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/29113259/widget/large)
 
-  
-    
 
   ■　明るい配色の中にもリーフのアクセントがあり、落ち着いた雰囲気。
 

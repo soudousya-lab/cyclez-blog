@@ -13,7 +13,6 @@ image: "/logo.png"
 
 スチールバイク愛好者のために、「DE ROSAとはどんなブランドなのか？」「どんなモデルがあるのか？」詳しく紹介していくゼーーーット！！
 
- 
 
 ### デローザ：イタリアの伝説ビルダーが生み出したブランド
 
@@ -25,7 +24,6 @@ image: "/logo.png"
 
 また、エディ・メルクスといった伝説的な選手のためにもフレームを製造しており、サイクルZはエディ・メルクスのフレームも取り扱っていたことから、デローザとのシンパシーを感じています。
 
- 
 
 ### 伝統を守り続けるデローザ家
 
@@ -37,7 +35,6 @@ image: "/logo.png"
 
 ![DE ROSA2](/images/wp/2023-09-de53c995321f53c828d7f3ec9abf9493-1024x768.jpg)
 
- 
 
 ### イタリアの匠が手がけるハンドメイドバイク
 
@@ -47,7 +44,6 @@ image: "/logo.png"
 
 ![DE ROSA1](/images/wp/2023-09-b3d53a2d5cbd0fa140b19d8aafe73c3b-768x1024.jpg)
 
- 
 
 ### スタッフ仙田のお気に入りモデル
 
@@ -65,68 +61,22 @@ image: "/logo.png"
 
 これらのディテールが所有欲を掻き立てます。
 
-		
-			#gallery-1 {
-				margin: auto;
-			}
-			#gallery-1 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-1 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-1 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![NEO クラシコ1](/images/wp/2023-09-ff37b9cf741273b1f7c63944a333f50a-768x1024.jpg)
+![NEO クラシコ1](/images/wp/2023-09-ff37b9cf741273b1f7c63944a333f50a-768x1024.jpg)
 
-			
-			
-				![NEOクラシコ3](/images/wp/2023-09-4f44445db50b3998debeb1127941976c-768x1024.jpg)
 
-			
-		
- 
+![NEOクラシコ3](/images/wp/2023-09-4f44445db50b3998debeb1127941976c-768x1024.jpg)
+
 
 #### ＜❷ ANIMA：チタンの魅力＞
 
 デローザの中でも特に憧れのモデルとなるのがチタンフレームの「ANIMA」です。
 
-		
-			#gallery-2 {
-				margin: auto;
-			}
-			#gallery-2 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-2 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-2 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![ANIMA4](/images/wp/2023-09-ANIMA4-768x1024.jpg)
+![ANIMA4](/images/wp/2023-09-ANIMA4-768x1024.jpg)
 
-			
-			
-				![ANIMA5](/images/wp/2023-09-ANIMA5-768x1024.jpg)
 
-			
-		
+![ANIMA5](/images/wp/2023-09-ANIMA5-768x1024.jpg)
+
+
 チタンは錆びにくく、高い強度を持つ素材で、一生モノのバイクとして評価されています。
 
 フレームの主流はカーボンになってしまいましたが、チタンという素材は未だに人々の興味を惹き続けています。
@@ -139,7 +89,6 @@ image: "/logo.png"
 
 ![ANIMA2エンド部](/images/wp/2023-09-0164567d13199a4d0090115ccdbbe743-768x1024.jpg)
 
- 
 
 #### ＜❸ SOLO：伝統と現代の融合＞
 
@@ -147,132 +96,38 @@ image: "/logo.png"
 
 チタンに2モデルあり、どちらを選ぶか悩ましい決断ですが、どちらも見た目は格別です。
 
-		
-			#gallery-3 {
-				margin: auto;
-			}
-			#gallery-3 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-3 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-3 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![SOLO6](/images/wp/2023-09-SOLO6-768x1024.jpg)
+![SOLO6](/images/wp/2023-09-SOLO6-768x1024.jpg)
 
-			
-			
-				![SOLO7](/images/wp/2023-09-SOLO7-1024x768.jpg)
 
-			
-		
+![SOLO7](/images/wp/2023-09-SOLO7-1024x768.jpg)
 
-		
-			#gallery-4 {
-				margin: auto;
-			}
-			#gallery-4 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-4 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-4 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![SOLO1](/images/wp/2023-09-SOLO1-768x1024.jpg)
+![SOLO1](/images/wp/2023-09-SOLO1-768x1024.jpg)
 
-			
-			
-				![SOLO2](/images/wp/2023-09-SOLO2-768x1024.jpg)
 
-			
-		
- 
+![SOLO2](/images/wp/2023-09-SOLO2-768x1024.jpg)
+
 
 #### ＜❹ settanta：70周年記念モデル＞
 
 デローザは50周年や60周年の記念モデルを発表してきましたが、2023年には70周年記念として「settanta」を発表しました。
 
-		
-			#gallery-5 {
-				margin: auto;
-			}
-			#gallery-5 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-5 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-5 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![settanta1](/images/wp/2023-09-settanta1-768x1024.jpg)
+![settanta1](/images/wp/2023-09-settanta1-768x1024.jpg)
 
-			
-			
-				![settanta2](/images/wp/2023-09-settanta2-768x1024.jpg)
 
-			
-		
+![settanta2](/images/wp/2023-09-settanta2-768x1024.jpg)
+
+
 デローザの創設者のUgo氏が関わった最後のバイクとして、非常に貴重なモデルです。
 
 7つのカラーラインナップも用意されており、実車を見れただけでも感激です。
 
 手に入れたい方はぜひサイクルZにご相談ください！
 
-		
-			#gallery-6 {
-				margin: auto;
-			}
-			#gallery-6 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-6 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-6 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![settanta3](/images/wp/2023-09-settanta3-768x1024.jpg)
+![settanta3](/images/wp/2023-09-settanta3-768x1024.jpg)
 
-			
-			
-				![settanta5](/images/wp/2023-09-settanta5-1024x768.jpg)
 
-			
-		
- 
+![settanta5](/images/wp/2023-09-settanta5-1024x768.jpg)
+
 
 #### ＜❺ 838：手の届きやすい価格と爽快な乗り心地＞
 
@@ -280,37 +135,14 @@ image: "/logo.png"
 
 乗ってみると、どんな方にもオススメできる快適な乗り心地と爽快感が感じられます。
 
-		
-			#gallery-7 {
-				margin: auto;
-			}
-			#gallery-7 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-7 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-7 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![838 3](/images/wp/2023-09-838-3-1024x768.jpg)
+![838 3](/images/wp/2023-09-838-3-1024x768.jpg)
 
-			
-			
-				![838 2](/images/wp/2023-09-838-2-1024x768.jpg)
 
-			
-		
+![838 2](/images/wp/2023-09-838-2-1024x768.jpg)
+
+
 このバイクでサイクリング生活を始められたならより楽しくなっていたかもしれないと思わせてくれます。
 
- 
 
 ### 試乗車をご用意して皆さまをお待ちしております
 
@@ -320,37 +152,14 @@ image: "/logo.png"
 
 ![SK3](/images/wp/2023-09-SK3-1024x768.jpg)
 
-		
-			#gallery-8 {
-				margin: auto;
-			}
-			#gallery-8 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-8 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-8 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![SK2](/images/wp/2023-09-SK2-768x1024.jpg)
+![SK2](/images/wp/2023-09-SK2-768x1024.jpg)
 
-			
-			
-				![SK1](/images/wp/2023-09-SK1-768x1024.jpg)
 
-			
-		
+![SK1](/images/wp/2023-09-SK1-768x1024.jpg)
+
+
 サイクルZに足を運んで、ぜひデローザの魅力を実際に体感してみてください。
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -360,8 +169,4 @@ image: "/logo.png"
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

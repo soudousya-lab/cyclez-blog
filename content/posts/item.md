@@ -9,9 +9,7 @@ wp_url: "https://cycle-z.com/blog/2020/08/24/item/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/30970666/widget/large)
 
-  
 
   ■ 前面に3つに分かれたポケット付き。
 
@@ -21,7 +19,6 @@ image: "/logo.png"
 
   ■ メイン収納は、ノートパソコン用（15インチまで）とメインルームの2つ。
 
-  
 
   【サイズ】：約28×46×15cm
 

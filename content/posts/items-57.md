@@ -9,9 +9,7 @@ wp_url: "https://cycle-z.com/blog/2020/06/12/items-57/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/30027400/widget/large)
 
-  
 
   ■ 距離をたくさん走るライダーのためにデザインされたMonacoの3ピース Pittards® 穴あきレザー。
 

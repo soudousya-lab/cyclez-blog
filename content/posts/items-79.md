@@ -9,9 +9,7 @@ wp_url: "https://cycle-z.com/blog/2020/11/30/items-79/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/34842649/widget/large)
 
-  
 
   『気温によってスタイルを変えられる冬用ジャージ』
 

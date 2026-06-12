@@ -45,34 +45,11 @@ image: "/logo.png"
 
 さらに回し方の意識の仕方へも指導が入ります。
 
-		
-			#gallery-108 {
-				margin: auto;
-			}
-			#gallery-108 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-108 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-108 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![辻善光氏にフィッティングをしてもらう西井](/images/wp/2021-11-84800fcee5fca8746b95bfb50d5c9f53-300x183.jpg)
+![辻善光氏にフィッティングをしてもらう西井](/images/wp/2021-11-84800fcee5fca8746b95bfb50d5c9f53-300x183.jpg)
 
-			
-			
-				![辻善光氏にフィッティングをしてもらう西井](/images/wp/2021-11-db04c5ecca8a11fd35f75f26085819ef-300x184.jpg)
 
-			
-		
+![辻善光氏にフィッティングをしてもらう西井](/images/wp/2021-11-db04c5ecca8a11fd35f75f26085819ef-300x184.jpg)
+
 
 #### フィッティングから1週間後の感想
 
@@ -109,7 +86,6 @@ image: "/logo.png"
 
 こちらは参加費無料なので、次回開催の時には是非ともお立ち寄りください！
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -119,8 +95,4 @@ image: "/logo.png"
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

@@ -17,7 +17,6 @@ image: "/logo.png"
 
 そこで今回は、皆さんに知っていただきたいフレームの特徴と違いについて紹介していくゼーーーット！！
 
- 
 
 ### ❶クロモリ
 
@@ -29,7 +28,6 @@ image: "/logo.png"
 
 クロモリの素材は鉄に添加物を混ぜることで、さまざまな特性を持ったスチールバイクが生み出されます。
 
- 
 
 ### ❷アルミ
 
@@ -41,35 +39,11 @@ image: "/logo.png"
 
 また、アルミには添加物を混ぜることで硬度や耐食性などの特性を変化させたものがあり、それぞれに適した用途があります。
 
-		
-			#gallery-7 {
-				margin: auto;
-			}
-			#gallery-7 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-7 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-7 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![アルミの自由な造型](/images/wp/2023-05-a6df8bfb539081ad47036edc5bd06b9c-768x1024.jpg)
+![アルミの自由な造型](/images/wp/2023-05-a6df8bfb539081ad47036edc5bd06b9c-768x1024.jpg)
 
-			
-			
-				![アルミの溶接部分](/images/wp/2023-05-53c10096ecfa71fe550fd2070d888c16-768x1024.jpg)
 
-			
-		
- 
+![アルミの溶接部分](/images/wp/2023-05-53c10096ecfa71fe550fd2070d888c16-768x1024.jpg)
+
 
 ### ❸カーボン
 
@@ -79,67 +53,21 @@ image: "/logo.png"
 
 カーボンは軽さや剛性に優れる素材で、最新のプロレースでは主流となっています。
 
-		
-			#gallery-8 {
-				margin: auto;
-			}
-			#gallery-8 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-8 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-8 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![カーボンの横から見たら太いところ](/images/wp/2023-05-ca1f8512769a8f2a5d2e5b575256f47a-768x1024.jpg)
+![カーボンの横から見たら太いところ](/images/wp/2023-05-ca1f8512769a8f2a5d2e5b575256f47a-768x1024.jpg)
 
-			
-			
-				![カーボンによる薄いところ](/images/wp/2023-05-c4fbebc23efe802eaf2cb2186e9895e5-1024x768.jpg)
 
-			
-		
+![カーボンによる薄いところ](/images/wp/2023-05-c4fbebc23efe802eaf2cb2186e9895e5-1024x768.jpg)
+
+
 そのため、ロードバイクやトライアスロンバイクなどの競技用バイクに広く採用されています。
 
 また、カーボンにも様々な種類があり、耐久性や剛性、振動吸収性などの特性を変化させたものがあります。
 
-		
-			#gallery-9 {
-				margin: auto;
-			}
-			#gallery-9 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-9 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-9 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![カーボンの自由な造型2](/images/wp/2023-05-eafecbf550548dde92da5228e272dd43-768x1024.jpg)
+![カーボンの自由な造型2](/images/wp/2023-05-eafecbf550548dde92da5228e272dd43-768x1024.jpg)
 
-			
-			
-				![カーボンの自由な造型](/images/wp/2023-05-b85d77d52b43c0eb4846ee2293bfa744-768x1024.jpg)
 
-			
-		
- 
+![カーボンの自由な造型](/images/wp/2023-05-b85d77d52b43c0eb4846ee2293bfa744-768x1024.jpg)
+
 
 ### フレーム素材の違いについて
 
@@ -153,7 +81,6 @@ image: "/logo.png"
 
 形状も細く角ばらせたものが多く、軽さだけでなくエアロ効果も狙っています。
 
- 
 
 ### スチールバイクがおすすめ！でも素材だけでは判断できない？
 
@@ -173,7 +100,6 @@ image: "/logo.png"
 
 ぜひ、この機会にクロモリに興味を持っていただければと思います！
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -183,8 +109,4 @@ image: "/logo.png"
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

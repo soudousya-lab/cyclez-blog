@@ -17,7 +17,6 @@ image: "/logo.png"
 
 今回はどんな場所でもたった2分で出来る乗車前ストレッチを紹介するゼーーーット！！
 
- 
 
 ### 脚だけではなく全身のストレッチを
 
@@ -25,7 +24,6 @@ image: "/logo.png"
 
 乗車前ストレッチは、マットを使い座ったまま行うものも多いのですが、今回は屋外でも気軽に行える方法を紹介していきます！
 
- 
 
 ### 【動画付き】2分で出来るストレッチ
 
@@ -33,9 +31,7 @@ image: "/logo.png"
 
 筋肉のどの部分に効かせているかの図解も載せているので、キチンとその部位に効いているか意識しながら行って下さい！
 
-[埋め込みコンテンツ](https://www.youtube.com/embed/q3nbs8fdqU8?feature=oembed)
 
- 
 
 #### 初めに上半身のストレッチから
 
@@ -49,42 +45,17 @@ image: "/logo.png"
 
 ![腹斜筋のストレッチ](/images/wp/2022-03-742813c2145e6ec92f8b92650455e65b.png)
 
-   
 
 僧帽筋そうぼうきんや肩甲骨周りも、しっかりほぐしておきましょう！
 
-		
-			#gallery-91 {
-				margin: auto;
-			}
-			#gallery-91 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-91 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-91 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![僧帽筋、肩甲骨周りのストレッチ](/images/wp/2022-03-8487edea12e778d639643b4e71a7ec01-300x169.png)
+![僧帽筋、肩甲骨周りのストレッチ](/images/wp/2022-03-8487edea12e778d639643b4e71a7ec01-300x169.png)
 
-			
-			
-				![僧帽筋、肩甲骨周りのストレッチ２](/images/wp/2022-03-7fe26be0e840433c1526e73b5bf2ef2f-300x169.png)
 
-			
-		
+![僧帽筋、肩甲骨周りのストレッチ２](/images/wp/2022-03-7fe26be0e840433c1526e73b5bf2ef2f-300x169.png)
+
 
 上半身も漕ぐ動作に導入させることで、楽に漕げるようになります！！
 
- 
 
 #### 最後は下半身の可動域を広げるストレッチ
 
@@ -104,7 +75,6 @@ image: "/logo.png"
 
 動画のように前にかかとが出せるようになるとベストです！
 
- 
 
 ### 休憩後もストレッチを
 
@@ -114,7 +84,6 @@ image: "/logo.png"
 
 これらのストレッチを正しく行なって、より安全で快適なサイクリングを目指しましょう！！
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -124,8 +93,4 @@ image: "/logo.png"
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

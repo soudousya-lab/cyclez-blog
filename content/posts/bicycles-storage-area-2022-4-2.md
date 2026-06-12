@@ -17,7 +17,6 @@ image: "/logo.png"
 
 そこで今回は、置き場所についてや、省スペースに収納可能なオススメのスタンドやラックを紹介していくゼーーーット！！
 
- 
 
 ### 室内保管を前提に考える
 
@@ -27,7 +26,6 @@ image: "/logo.png"
 
 高価なものですので、盗難に遭うリスクはとても高いです。まずは室内に置くことで盗難のリスクを最小限にしましょう！
 
- 
 
 #### ＜❶壁への立て掛け収納＞
 
@@ -37,7 +35,6 @@ image: "/logo.png"
 
 ロードバイクやクロスバイクは車体自体が軽いため、立て掛けでもそれなりに安定します。
 
- 
 
 #### ＜❷ディスプレイスタンド＞
 
@@ -51,48 +48,23 @@ image: "/logo.png"
 
 変速機のある側から車体が倒れると大変なので、スタンドを用意しておけばそのリスクは軽減できます！
 
-		
-			#gallery-87 {
-				margin: auto;
-			}
-			#gallery-87 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 33%;
-			}
-			#gallery-87 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-87 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![リムブレーキ用スタンド](/images/wp/2022-03-fa06de9e6e54ebaa8ba685b68e650d71-225x300.jpg)
+![リムブレーキ用スタンド](/images/wp/2022-03-fa06de9e6e54ebaa8ba685b68e650d71-225x300.jpg)
 
-			
-				
-				リムブレーキ用スタンド単体
-				
-			
-				![リムブレーキ用スタンド2](/images/wp/2022-03-de003c770d7413cf7253c94be2e8f7d4-225x300.jpg)
 
-			
-				
-				リムブレーキ用スタンド
-				
-			
-				![ディスクブレーキ用スタンド](/images/wp/2022-03-a024fcd500bf1e5ac28cd94afb94a312-225x300.jpg)
+リムブレーキ用スタンド単体
 
-			
-				
-				ディスクブレーキ用スタンド
-				
-		
- 
+
+![リムブレーキ用スタンド2](/images/wp/2022-03-de003c770d7413cf7253c94be2e8f7d4-225x300.jpg)
+
+
+リムブレーキ用スタンド
+
+
+![ディスクブレーキ用スタンド](/images/wp/2022-03-a024fcd500bf1e5ac28cd94afb94a312-225x300.jpg)
+
+
+ディスクブレーキ用スタンド
+
 
 #### ＜❸ミノウラの突っ張り棒＞
 
@@ -104,48 +76,23 @@ image: "/logo.png"
 
 天上に突っ張りが使えないのであれば、スタンドタイプのものもありますので、こちらもぜひ参考にしてみて下さい！
 
-		
-			#gallery-88 {
-				margin: auto;
-			}
-			#gallery-88 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 33%;
-			}
-			#gallery-88 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-88 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![突っ張り棒タイプスタンド](/images/wp/2022-03-9b92100a49915517fc8efce5fe84bca2-225x300.jpg)
+![突っ張り棒タイプスタンド](/images/wp/2022-03-9b92100a49915517fc8efce5fe84bca2-225x300.jpg)
 
-			
-				
-				突っ張り棒タイプスタンド
-				
-			
-				![突っ張り棒タイプスタンドアップ](/images/wp/2022-03-7c9622321ab234ef9d6d54af377a210b-225x300.jpg)
 
-			
-				
-				突っ張り棒タイプスタンドアップ
-				
-			
-				![地面置きの壁掛けスタンド](/images/wp/2022-03-84eb5da4ad4e86db793cf2d1c9520216-225x300.jpg)
+突っ張り棒タイプスタンド
 
-			
-				
-				地面置きのスタンド
-				
-		
- 
+
+![突っ張り棒タイプスタンドアップ](/images/wp/2022-03-7c9622321ab234ef9d6d54af377a210b-225x300.jpg)
+
+
+突っ張り棒タイプスタンドアップ
+
+
+![地面置きの壁掛けスタンド](/images/wp/2022-03-84eb5da4ad4e86db793cf2d1c9520216-225x300.jpg)
+
+
+地面置きのスタンド
+
 
 #### ＜❹縦置きスタンド＞
 
@@ -155,41 +102,17 @@ image: "/logo.png"
 
 人間1人分ほどのスペースに置くことが出来るので、これまで紹介した中で1番省スペースに収納出来ます。
 
-		
-			#gallery-89 {
-				margin: auto;
-			}
-			#gallery-89 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-89 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-89 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![縦置き型スタンド2](/images/wp/2022-03-56618102d47d1396c8eab75563bf5f49-225x300.jpg)
+![縦置き型スタンド2](/images/wp/2022-03-56618102d47d1396c8eab75563bf5f49-225x300.jpg)
 
-			
-				
-				縦置き型スタンド単体
-				
-			
-				![縦置き型スタンド](/images/wp/2022-03-cd107fac90003fced2b76fa049f04fc4-225x300.jpg)
 
-			
-				
-				縦置き型スタンド
-				
-		
- 
+縦置き型スタンド単体
+
+
+![縦置き型スタンド](/images/wp/2022-03-cd107fac90003fced2b76fa049f04fc4-225x300.jpg)
+
+
+縦置き型スタンド
+
 
 #### ＜❺ベランダ＞
 
@@ -202,7 +125,6 @@ image: "/logo.png"
 5つ紹介してきましたが、いずれにせよ、家に持って入る前に車体や車輪に付いた土埃を落とすこともお忘れなく。
 玄関口に着なくなった服の切れ端でも置いておくと、サッと使えて便利ですよ！
 
- 
 
 ### 自転車の置き場に悩んだらサイクルZにご相談を！
 
@@ -216,7 +138,6 @@ image: "/logo.png"
 
 置き場所を上手に確保して、より良いサイクルライフを送りましょう(^^)
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -226,8 +147,4 @@ image: "/logo.png"
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

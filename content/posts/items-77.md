@@ -9,9 +9,7 @@ wp_url: "https://cycle-z.com/blog/2020/11/30/items-77/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/34840495/widget/large)
 
-  
 
   ■保温性のあるコットンフランネル生地
 

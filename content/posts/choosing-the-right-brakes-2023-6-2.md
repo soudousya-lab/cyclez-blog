@@ -15,7 +15,6 @@ image: "/logo.png"
 
 そこで今回は、どのような観点からブレーキの仕様を選ぶべきなのか、具体的に見ていくゼーーーット！！
 
- 
 
 ### リムブレーキとディスクブレーキの特徴
 
@@ -23,67 +22,22 @@ image: "/logo.png"
 
 リムブレーキは、ホイールの外周部であるリムにブレーキシューと呼ばれるゴムを直接当てて減速させる方式です。
 
-		
-			#gallery-5 {
-				margin: auto;
-			}
-			#gallery-5 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-5 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-5 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![リムブレーキ](/images/wp/2023-05-6cd0e88160976a69546fddb64280ad27-768x1024.jpg)
+![リムブレーキ](/images/wp/2023-05-6cd0e88160976a69546fddb64280ad27-768x1024.jpg)
 
-			
-			
-				![リブブレーキ2](/images/wp/2023-05-b079dc454d1261545eb9497fac46254b-768x1024.jpg)
 
-			
-		
+![リブブレーキ2](/images/wp/2023-05-b079dc454d1261545eb9497fac46254b-768x1024.jpg)
+
+
 一方、ディスクブレーキはハブ部分に金属板のローターがついており、これをパッドで挟むことによって減速します。
 
-		
-			#gallery-6 {
-				margin: auto;
-			}
-			#gallery-6 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-6 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-6 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![ディスクブレーキ](/images/wp/2023-05-6343357f4f9ea8107de77db65cb4844d-768x1024.jpg)
+![ディスクブレーキ](/images/wp/2023-05-6343357f4f9ea8107de77db65cb4844d-768x1024.jpg)
 
-			
-			
-				![ディスクブレーキ2](/images/wp/2023-05-2261cc1dde091e68dcb9d7698ae3240e-768x1024.jpg)
 
-			
-		
+![ディスクブレーキ2](/images/wp/2023-05-2261cc1dde091e68dcb9d7698ae3240e-768x1024.jpg)
+
+
 高性能なスポーツバイクには、これら2つの方式のいずれかが、ほぼ採用されています。
 
- 
 
 ### リムブレーキとディスクブレーキそれぞれのメリット
 
@@ -107,7 +61,6 @@ image: "/logo.png"
 
 - 力のロスが少ない: リムブレーキのワイヤーを引っ張る構造と比べて摩擦するところがないため、ロスが少なく軽い操作感があります。
 
- 
 
 ### ブレーキ方式選びのポイント：ホイールの回転の止めやすさが重要
 
@@ -123,7 +76,6 @@ image: "/logo.png"
 
 ぜひ一度サイクルZでご相談ください。
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -133,8 +85,4 @@ image: "/logo.png"
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

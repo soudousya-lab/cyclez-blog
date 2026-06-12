@@ -21,7 +21,6 @@ image: "/logo.png"
 
 時々でいいので、是非確認してみて欲しいゼーーーット！！
 
- 
 
 #### ＜乗車前点検の手順＞
 
@@ -29,129 +28,41 @@ image: "/logo.png"
 - 全体のガタつきの確認
 ハンドルとサドルを持ち10cm程度の高さから車体を落下させ、ガタつきや金属音が響かないか確認
 
-		
-			#gallery-110 {
-				margin: auto;
-			}
-			#gallery-110 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-110 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-110 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![ロードバイク全体にガタが来ていないか確認](/images/wp/2021-09-251c24b0ababbc6c96934ea4d60755d2-225x300.jpg)
+![ロードバイク全体にガタが来ていないか確認](/images/wp/2021-09-251c24b0ababbc6c96934ea4d60755d2-225x300.jpg)
 
-			
-			
-				![ロードバイク全体にガタが来ていないか確認](/images/wp/2021-09-b14c1599376b9425b635780c4e125306-225x300.jpg)
 
-			
-		
+![ロードバイク全体にガタが来ていないか確認](/images/wp/2021-09-b14c1599376b9425b635780c4e125306-225x300.jpg)
+
+
 手順②
 - ハンドル、ステムが固定されているか確認
 ハンドルを持ち、下に向かって体重をかけ、そのまま両脚で車体を挟んで固定しながら左右に振る
 
-		
-			#gallery-111 {
-				margin: auto;
-			}
-			#gallery-111 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-111 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-111 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![ハンドル、ステムの固定されているか確認](/images/wp/2021-09-26935ca62139f2e40c5e807d868befbc-225x300.jpg)
+![ハンドル、ステムの固定されているか確認](/images/wp/2021-09-26935ca62139f2e40c5e807d868befbc-225x300.jpg)
 
-			
-			
-				![ハンドル、ステムの固定されているか確認](/images/wp/2021-09-bcddb148b982f0767e67522d138c6d45-225x300.jpg)
 
-			
-		
+![ハンドル、ステムの固定されているか確認](/images/wp/2021-09-bcddb148b982f0767e67522d138c6d45-225x300.jpg)
+
+
 手順③
 - ホイールのガタつきの確認
 タイヤを持ち、前後左右に動かしてみる
 
-		
-			#gallery-112 {
-				margin: auto;
-			}
-			#gallery-112 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 100%;
-			}
-			#gallery-112 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-112 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![ホイールにガタが来ていないかの確認](/images/wp/2021-09-52527d6765748a6f56567b817a677a6d-225x300.jpg)
+![ホイールにガタが来ていないかの確認](/images/wp/2021-09-52527d6765748a6f56567b817a677a6d-225x300.jpg)
 
-			
-		
+
 手順④
 - ホイールのフレ(振れ)の確認
 ホイールを回転させブレーキパッドに当たっていないかフレを確認する
 
-		
-			#gallery-113 {
-				margin: auto;
-			}
-			#gallery-113 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 100%;
-			}
-			#gallery-113 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-113 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![ホイールを回転させブレーキパッドに当たっていないかフレを確認](/images/wp/2021-09-a49c688f6fb3c609ecf0ad2eb17eafdb-225x300.jpg)
+![ホイールを回転させブレーキパッドに当たっていないかフレを確認](/images/wp/2021-09-a49c688f6fb3c609ecf0ad2eb17eafdb-225x300.jpg)
 
-			
-		
+
 手順⑤
 - タイヤの空気圧の確認
 空気の入れ方はYouTubeを確認！
 
-[埋め込みコンテンツ](https://www.youtube.com/embed/WH34uv4pmz8?feature=oembed)
 
- 
 
 ### 小さな異音も放置せず、店頭でも点検を！
 
@@ -161,7 +72,6 @@ image: "/logo.png"
 
 常日頃から点検が出来ればいいのですが、せめて異常に気づいてあげた時にはお店に持ってきて、解決方法を探りに来てください。
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -171,8 +81,4 @@ image: "/logo.png"
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

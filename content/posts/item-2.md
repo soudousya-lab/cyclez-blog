@@ -9,11 +9,8 @@ wp_url: "https://cycle-z.com/blog/2020/08/24/item-2/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/30970919/widget/large)
 
-  
 
-  
   ■軽さと収納力が必要なライダーやトレイルランナーに人気のモデル
 
   ■ソフトで超軽量なポリエステル素材を採用
@@ -24,7 +21,6 @@ image: "/logo.png"
 
   ■雨天時にはレインカバーも装備されていますので安心
 
-  
 
   【容量】約22L
 

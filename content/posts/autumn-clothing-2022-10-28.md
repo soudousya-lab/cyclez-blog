@@ -21,7 +21,6 @@ image: "/logo.png"
 
 天気予報の最高気温と最低気温の見方も交えながら服装選びを考えていくゼーーーット！！
 
- 
 
 ### まずは近年の秋の平均気温を知ろう
 
@@ -41,7 +40,6 @@ image: "/logo.png"
 
 上着も厚手のものとなれば荷物となり、持ち歩くために別途バックパックなどを用意したりととても面倒くさいです。
 
- 
 
 ### 秋のサイクリング服は重ね着を前提に
 
@@ -53,34 +51,11 @@ image: "/logo.png"
 
 スタッフ仙田であればこんな風に、夏用のジャージやビブをベースに秋用の装備を増やしていきます。
 
-		
-			#gallery-44 {
-				margin: auto;
-			}
-			#gallery-44 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-44 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-44 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![](/images/wp/2022-10-7e66864662d5cdb1c28062c002a7dbfb-768x1024.jpg)
+![](/images/wp/2022-10-7e66864662d5cdb1c28062c002a7dbfb-768x1024.jpg)
 
-			
-			
-				![](/images/wp/2022-10-7156dff9835a74c644e2ea93f4d510d8-768x1024.jpg)
 
-			
-		
+![](/images/wp/2022-10-7156dff9835a74c644e2ea93f4d510d8-768x1024.jpg)
+
 
 #### <❶まずインナーから>
 
@@ -94,7 +69,6 @@ image: "/logo.png"
 
 ![秋用インナー半袖ジャージ](/images/wp/2022-10-1ecf3657cac7c763e9099934e4a0c465-768x1024.jpg)
 
- 
 
 #### <❷上着は薄手のものを>
 
@@ -112,37 +86,14 @@ image: "/logo.png"
 
 サイクルZ取扱いの中ではステムデザインのウィンドブレーカーとアソスのウィンドブレーカーがおすすめです。
 
-		
-			#gallery-45 {
-				margin: auto;
-			}
-			#gallery-45 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-45 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-45 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![ステムデザインウィンドブレーカー後ろ](/images/wp/2022-10-ce023275e89021b902f7ece84b250c49-768x1024.jpg)
+![ステムデザインウィンドブレーカー後ろ](/images/wp/2022-10-ce023275e89021b902f7ece84b250c49-768x1024.jpg)
 
-			
-			
-				![アソスのウィンドブレーカー](/images/wp/2022-10-ef112e5f004cf7fa07c45bf207e31d53-768x1024.jpg)
 
-			
-		
+![アソスのウィンドブレーカー](/images/wp/2022-10-ef112e5f004cf7fa07c45bf207e31d53-768x1024.jpg)
+
+
 上着も起毛のものではなく、薄手のものの方が真冬に入った時にも重ね着の１つとして使えるため重宝します。
 
- 
 
 #### <❸着脱が簡単なアームカバーとレッグカバー>
 
@@ -158,38 +109,14 @@ image: "/logo.png"
 
 秋用のグローブもあります！
 
-		
-			#gallery-46 {
-				margin: auto;
-			}
-			#gallery-46 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-46 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-46 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![秋用グローブ](/images/wp/2022-10-9d8e7c969d33a511771f67a417b7a9ab-768x1024.jpg)
+![秋用グローブ](/images/wp/2022-10-9d8e7c969d33a511771f67a417b7a9ab-768x1024.jpg)
 
-			
-			
-				![秋用グローブ2](/images/wp/2022-10-4447f43117aab6a1eb268096e782a683-768x1024.jpg)
 
-			
-		
+![秋用グローブ2](/images/wp/2022-10-4447f43117aab6a1eb268096e782a683-768x1024.jpg)
+
 
 服装での温度調整が難しい秋ですが、他の季節でも使えるアイテムを揃えることで快適にサイクリングを楽しみましょう！
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -199,8 +126,4 @@ image: "/logo.png"
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

@@ -19,7 +19,6 @@ image: "/logo.png"
 
 どの島も交通量が少なく、1日かけて散策するのに適度な広さです。
 
- 
 
 ### ゆめしま海道サイクリングツアー
 
@@ -31,34 +30,12 @@ image: "/logo.png"
 
 イベント前から既にイベントモードな私、仙田は新幹線での輪行に同行させて頂きました。
 
-		
-			#gallery-77 {
-				margin: auto;
-			}
-			#gallery-77 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-77 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-77 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![新幹線輪行準備](/images/wp/2022-05-aaf68cadb3eb5ab215ffe8b9609aeedf-300x225.jpg)
+![新幹線輪行準備](/images/wp/2022-05-aaf68cadb3eb5ab215ffe8b9609aeedf-300x225.jpg)
 
-			
-			
-				![新幹線輪行準備2](/images/wp/2022-05-862f4e004575eaf0ea047876e1b57a90-300x225.jpg)
 
-			
-		
+![新幹線輪行準備2](/images/wp/2022-05-862f4e004575eaf0ea047876e1b57a90-300x225.jpg)
+
+
 広島まで40分もあれば着いてしまうなんて近いですね。
 
 三原駅を降りてそのまま高速船に乗り換え、因島まで向かいます。
@@ -75,7 +52,6 @@ image: "/logo.png"
 
 この日は日曜日なこともあり、すれ違う人が多くいました。
 
- 
 
 #### 『たい屋』の鯛めしで腹ごしらえ
 
@@ -87,41 +63,17 @@ image: "/logo.png"
 
 この日の参加者60人近くのために、食べる場所も用意してくださり本当にありがとうございました。
 
-		
-			#gallery-78 {
-				margin: auto;
-			}
-			#gallery-78 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 33%;
-			}
-			#gallery-78 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-78 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![たい屋](/images/wp/2022-05-7539f094dec2621bd70aa0bf566e0e0c-300x225.jpg)
+![たい屋](/images/wp/2022-05-7539f094dec2621bd70aa0bf566e0e0c-300x225.jpg)
 
-			
-			
-				![たい屋6](/images/wp/2022-05-5040c18a22ef380a581ad0a6a1c99694-300x225.jpg)
 
-			
-			
-				![たい屋8](/images/wp/2022-05-47d9ea9790230e9f932be4f7eb5849ce-300x225.jpg)
+![たい屋6](/images/wp/2022-05-5040c18a22ef380a581ad0a6a1c99694-300x225.jpg)
 
-			
-		
+
+![たい屋8](/images/wp/2022-05-47d9ea9790230e9f932be4f7eb5849ce-300x225.jpg)
+
+
 鯛をふんだんに使ったお弁当は量も多くかなり食べ応えがあるので、ゆめしま海道に来られた際には、ぜひ立ち寄ってみて下さい！
 
- 
 
 ### 岩城島の探索へ
 
@@ -129,67 +81,22 @@ image: "/logo.png"
 
 私はヒルクライムルートに参戦し、山からの絶景を見に行きました。
 
-		
-			#gallery-79 {
-				margin: auto;
-			}
-			#gallery-79 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-79 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-79 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![積善山3](/images/wp/2022-05-f7517e7e07711a1ff5592acd1fc2dfb8-300x225.jpg)
+![積善山3](/images/wp/2022-05-f7517e7e07711a1ff5592acd1fc2dfb8-300x225.jpg)
 
-			
-			
-				![積善山2](/images/wp/2022-05-987626098e413e0d85f02c6147daaf5c-300x225.jpg)
 
-			
-		
+![積善山2](/images/wp/2022-05-987626098e413e0d85f02c6147daaf5c-300x225.jpg)
+
 
 積善山は標高350mほどのところにあるためかなりキツい山でしたが、登り切った先には360度見渡すことの出来る展望台があり、ここからの景色を見ずして岩城島を終えるのはもったいないと思えるほどでした。
 
 この日は少し天気が悪かったので参加してくださった方には申し訳なく思いましたが、桜の咲いてた天気の良い日を撮影したものがこちら！
 
-		
-			#gallery-80 {
-				margin: auto;
-			}
-			#gallery-80 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-80 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-80 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![桜越しの積善山からの景色](/images/wp/2022-05-cce3b5f18118455cdf7da50e4f9c1efc-225x300.jpg)
+![桜越しの積善山からの景色](/images/wp/2022-05-cce3b5f18118455cdf7da50e4f9c1efc-225x300.jpg)
 
-			
-			
-				![積善山からの景色](/images/wp/2022-05-157c0e255418e2d0ac2cfb5326027bb3-300x225.jpg)
 
-			
-		
+![積善山からの景色](/images/wp/2022-05-157c0e255418e2d0ac2cfb5326027bb3-300x225.jpg)
+
+
 桜の名所でもあるのでまた行く機会がありましたら、桜シーズンもオススメです！
 
 下った後に本来であれば立ち寄る予定だったレモネード屋さんもありました。
@@ -198,45 +105,21 @@ image: "/logo.png"
 
 [https://www.kamijima.info/eat/わらしべ%E3%80%82岩城島base/](https://www.kamijima.info/eat/わらしべ%E3%80%82岩城島base/)
 
- 
 
 #### 今回のメインである岩城橋
 
 岩城橋は直線の橋で少し傾斜がありました！
 
-		
-			#gallery-81 {
-				margin: auto;
-			}
-			#gallery-81 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-81 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-81 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![岩城橋](/images/wp/2022-05-9a45069e7925eb4d30f395e9cf45e08e-300x225.jpg)
+![岩城橋](/images/wp/2022-05-9a45069e7925eb4d30f395e9cf45e08e-300x225.jpg)
 
-			
-			
-				![岩城橋2](/images/wp/2022-05-c3b10fb4737b3d517939060daf105178-300x225.jpg)
 
-			
-		
+![岩城橋2](/images/wp/2022-05-c3b10fb4737b3d517939060daf105178-300x225.jpg)
+
+
 真正面から見ると壮観ですね。
 
 自転車用のレーンは作られていませんが、見通しが良いので安全に渡れると思います！
 
- 
 
 #### 弓削島の絶品お好み焼き
 
@@ -249,7 +132,6 @@ image: "/logo.png"
 ラーメン党和田
 [https://goo.gl/maps/eY5ZSrjcVxUubFQm7](https://goo.gl/maps/eY5ZSrjcVxUubFQm7)
 
- 
 
 ### 帰路も楽しみながらサイクリング
 
@@ -274,7 +156,6 @@ image: "/logo.png"
 住田製パン所
 [https://goo.gl/maps/FThajG9aeBWPrp4H7](https://goo.gl/maps/FThajG9aeBWPrp4H7)
 
- 
 
 ### ご参加ありがとうございました
 
@@ -286,7 +167,6 @@ image: "/logo.png"
 
 ご参加頂いた皆さん、ありがとうございました＆お疲れ様でした^^
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -296,8 +176,4 @@ image: "/logo.png"
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

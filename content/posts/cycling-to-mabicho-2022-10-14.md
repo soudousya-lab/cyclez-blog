@@ -19,7 +19,6 @@ image: "/logo.png"
 
 この日のルートは[こちら](https://ridewithgps.com/routes/39549939)からご覧いただけますので、ぜひみなさんも松岡さんの考えたルートを体験してみてください。
 
- 
 
 ### 『もてなしの館』に向けスタート
 
@@ -43,72 +42,22 @@ image: "/logo.png"
 
 パンク修理が終わるまで参加者の方達を新総社大橋までお連れして、景色と共に写真を撮りました(^^)
 
-		
-			#gallery-47 {
-				margin: auto;
-			}
-			#gallery-47 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 33%;
-			}
-			#gallery-47 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-47 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![](/images/wp/2022-10-9f5797332efbc70658736af40ae3f625-1024x768.jpg)
+![](/images/wp/2022-10-9f5797332efbc70658736af40ae3f625-1024x768.jpg)
 
-			
-			
-				![](/images/wp/2022-10-b5657a0f74d04879466aaad195632c00-1024x768.jpg)
 
-			
-			
-				![](/images/wp/2022-10-ec0e6cbe585206892734bc95eaa83ba0-1024x768.jpg)
+![](/images/wp/2022-10-b5657a0f74d04879466aaad195632c00-1024x768.jpg)
 
-			
-		
 
-		
-			#gallery-48 {
-				margin: auto;
-			}
-			#gallery-48 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 33%;
-			}
-			#gallery-48 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-48 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![](/images/wp/2022-10-b302ed961513b9bf032bcccd7e68994a-1024x768.jpg)
+![](/images/wp/2022-10-ec0e6cbe585206892734bc95eaa83ba0-1024x768.jpg)
 
-			
-			
-				![](/images/wp/2022-10-1c3e658e3a6a6636b57d1f8cce7370dd-1024x768.jpg)
+![](/images/wp/2022-10-b302ed961513b9bf032bcccd7e68994a-1024x768.jpg)
 
-			
-			
-				![](/images/wp/2022-10-ac211a46f0bc92a40ada81209b3f25ab-1024x768.jpg)
 
-			
-		
- 
+![](/images/wp/2022-10-1c3e658e3a6a6636b57d1f8cce7370dd-1024x768.jpg)
+
+
+![](/images/wp/2022-10-ac211a46f0bc92a40ada81209b3f25ab-1024x768.jpg)
+
 
 #### ＜最初の目的地アルミ工場爆発跡地＞
 
@@ -126,44 +75,20 @@ image: "/logo.png"
 
 ![下原公会堂に設置された浸水標識](/images/wp/2022-10-b3ed8163e860d421ec9bc4c51be9a54e-768x1024.jpg)
 
- 
 
 #### ＜マビ昭和館でノスタルジーを味わう＞
 
 マビ昭和館という毎月第1日曜日にだけ開く私設博物館にも行きました。
 
-		
-			#gallery-49 {
-				margin: auto;
-			}
-			#gallery-49 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 33%;
-			}
-			#gallery-49 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-49 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![マビ昭和館](/images/wp/2022-10-a388b176e8c17d6934257cd535e181b7-768x1024.jpg)
+![マビ昭和館](/images/wp/2022-10-a388b176e8c17d6934257cd535e181b7-768x1024.jpg)
 
-			
-			
-				![マビ昭和館2](/images/wp/2022-10-06be15db43a7aff5b91f5095bbb9ac14-768x1024.jpg)
 
-			
-			
-				![マビ昭和館3](/images/wp/2022-10-d8930137bf961633eb0d2dd8f7841590-1024x768.jpg)
+![マビ昭和館2](/images/wp/2022-10-06be15db43a7aff5b91f5095bbb9ac14-768x1024.jpg)
 
-			
-		
+
+![マビ昭和館3](/images/wp/2022-10-d8930137bf961633eb0d2dd8f7841590-1024x768.jpg)
+
+
 驚きの展示量！！ここは一見の価値アリです！
 
 昭和を生きてない仙田でもノスタルジーを感じました。
@@ -184,40 +109,17 @@ image: "/logo.png"
 
 ケルビム......
 
-		
-			#gallery-50 {
-				margin: auto;
-			}
-			#gallery-50 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-50 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-50 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![ケルビム自転車2](/images/wp/2022-10-102959f3054ea44ef64471b62bef5c09-1024x768.jpg)
+![ケルビム自転車2](/images/wp/2022-10-102959f3054ea44ef64471b62bef5c09-1024x768.jpg)
 
-			
-			
-				![ケルビム自転車1](/images/wp/2022-10-27c2d82f6f8f281d10cadd960ecdbf8c-1024x768.jpg)
 
-			
-		
+![ケルビム自転車1](/images/wp/2022-10-27c2d82f6f8f281d10cadd960ecdbf8c-1024x768.jpg)
+
+
 いいね......
 
 ■マビ昭和館
 [https://www.kurashiki-tabi.jp/see/30094/](https://www.kurashiki-tabi.jp/see/30094/)
 
- 
 
 ### 復興の兆しを感じるまび記念病院付近で昼食
 
@@ -225,34 +127,11 @@ image: "/logo.png"
 
 新しい飲食店が多く立ち並び、復興の兆しを感じます。
 
-		
-			#gallery-51 {
-				margin: auto;
-			}
-			#gallery-51 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-51 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-51 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![中華そば 真タタ備](/images/wp/2022-10-017417838e4b2229ad6c3d5f56d524bd-1024x768.jpg)
+![中華そば 真タタ備](/images/wp/2022-10-017417838e4b2229ad6c3d5f56d524bd-1024x768.jpg)
 
-			
-			
-				![](/images/wp/2022-10-18fc974fc62120091f0224698a632ef5-1024x768.jpg)
 
-			
-		
+![](/images/wp/2022-10-18fc974fc62120091f0224698a632ef5-1024x768.jpg)
+
 
 仙田は新しくオープンしたばかりの中華そば真タタ備またたびさんでラーメンを食べることにしました。
 
@@ -280,39 +159,14 @@ image: "/logo.png"
 
 直ぐにでも行きたいくらいです。
 
-		
-			#gallery-52 {
-				margin: auto;
-			}
-			#gallery-52 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 33%;
-			}
-			#gallery-52 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-52 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![サイクルZイベント参加者4](/images/wp/2022-10-691dc555fa52a41171d80d9b129cee5c-1024x768.jpg)
+![サイクルZイベント参加者4](/images/wp/2022-10-691dc555fa52a41171d80d9b129cee5c-1024x768.jpg)
 
-			
-			
-				![サイクルZイベント参加者3](/images/wp/2022-10-e2ea28cf19e4261565c3c6b7ac8cf520-1024x768.jpg)
 
-			
-			
-				![サイクルZイベント参加者2](/images/wp/2022-10-79d6675fa95045d4fbeb0ac09218921c-1024x768.jpg)
+![サイクルZイベント参加者3](/images/wp/2022-10-e2ea28cf19e4261565c3c6b7ac8cf520-1024x768.jpg)
 
-			
-		
- 
+
+![サイクルZイベント参加者2](/images/wp/2022-10-79d6675fa95045d4fbeb0ac09218921c-1024x768.jpg)
+
 
 #### ＜マービーふれあいセンターへ＞
 
@@ -336,7 +190,6 @@ image: "/logo.png"
 
 ![](/images/wp/2022-10-3061cfcfd7879ed864d289758b71dd0a-1024x768.jpg)
 
- 
 
 ### 吉備路もてなしの館に到着
 
@@ -346,42 +199,18 @@ image: "/logo.png"
 
 もてなしの館では自家製のジンジャーエールが館長からのオススメとして紹介されたので、皆さん長蛇の列を作って飲んでおりました。
 
-		
-			#gallery-53 {
-				margin: auto;
-			}
-			#gallery-53 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 25%;
-			}
-			#gallery-53 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-53 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![](/images/wp/2022-10-836cb19275f342b1d98ed83c55d88891-768x1024.jpg)
+![](/images/wp/2022-10-836cb19275f342b1d98ed83c55d88891-768x1024.jpg)
 
-			
-			
-				![](/images/wp/2022-10-36085551fe87df0ede18056d9fde9a1f-768x1024.jpg)
 
-			
-			
-				![](/images/wp/2022-10-b50c4913ca3f37e82852101ea3cca94e-768x1024.jpg)
+![](/images/wp/2022-10-36085551fe87df0ede18056d9fde9a1f-768x1024.jpg)
 
-			
-			
-				![](/images/wp/2022-10-b2631ac7abf6c6f8d726fc7b6f27dc97-768x1024.jpg)
 
-			
-		
+![](/images/wp/2022-10-b50c4913ca3f37e82852101ea3cca94e-768x1024.jpg)
+
+
+![](/images/wp/2022-10-b2631ac7abf6c6f8d726fc7b6f27dc97-768x1024.jpg)
+
+
 生姜がしっかり効いていて、これは確かに最高です！！
 
 ![自家製のジンジャーエール](/images/wp/2022-10-5af79a667fd3609bafce226ffcd2b2ce-1024x768.jpg)
@@ -401,7 +230,6 @@ image: "/logo.png"
 
 次回のライドも参加お待ちしてます！！
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -411,8 +239,4 @@ image: "/logo.png"
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

@@ -9,11 +9,8 @@ wp_url: "https://cycle-z.com/blog/2020/09/23/items-75/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/30403836/widget/large)
 
-  
 
-  
     ■裾の後から前に向かってラウンドアップ。
 
     ■バイクに乗って前傾になった時に前身頃がお腹のあたりでタマリが出なくてスッキリ。

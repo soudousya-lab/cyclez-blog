@@ -16,8 +16,8 @@ image: "/logo.png"
 気になるイベントが盛りだくさんなので楽しむためにも日付確認をしっかりお願いします!
 
   目次
-    
-    
+
+
 - [試乗会](#toc1)
 - [wilier（ウィリエール）](#toc2)
 - [毘沙（ビシャ）](#toc3)
@@ -35,8 +35,6 @@ image: "/logo.png"
 - [9周年大抽選会](#toc15)
 - [■　20％OFFクーポンプレゼント](#toc16)
 
-    
-  
 
 ## 試乗会
 
@@ -142,7 +140,7 @@ image: "/logo.png"
 
 参加方法詳細、概要はこちら
 
-[https://cycle-z.com/blog/2024/09/27/info-147/](https://cycle-z.com/blog/2024/09/27/info-147/)
+[https://cycle-z.com/blog/2024/09/27/info-147/](/blog/info-147)
 
 友達も誘って周年祭をみんなで楽しみましょう！
 

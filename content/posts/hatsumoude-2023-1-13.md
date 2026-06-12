@@ -15,7 +15,6 @@ image: "/logo.png"
 
 ということで、早速初詣ライドに行ってきましたので、写真盛りだくさんでレポしていくゼーーーット！！
 
- 
 
 ### 総勢23名によるのんびり32kmライドスタート！
 
@@ -31,35 +30,11 @@ image: "/logo.png"
 
 スタート直後の川沿いも春になると桜が咲き誇るので、次回の花見ライドが楽しみです。
 
-		
-			#gallery-26 {
-				margin: auto;
-			}
-			#gallery-26 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-26 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-26 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![サイクリングを楽しむ参加者3](/images/wp/2023-01-19d28ca842d71b3fad927d8a7e56714b-768x1024.jpg)
+![サイクリングを楽しむ参加者3](/images/wp/2023-01-19d28ca842d71b3fad927d8a7e56714b-768x1024.jpg)
 
-			
-			
-				![サイクリングを楽しむ参加者2](/images/wp/2023-01-c577fbc925f57e63b1173a88277ee89d-768x1024.jpg)
 
-			
-		
- 
+![サイクリングを楽しむ参加者2](/images/wp/2023-01-c577fbc925f57e63b1173a88277ee89d-768x1024.jpg)
+
 
 #### ＜沖田神社で参拝＞
 
@@ -75,34 +50,11 @@ image: "/logo.png"
 
 ストレス解消も一緒に出来る開運厄石があり、皆さん投げつけておりました。
 
-		
-			#gallery-27 {
-				margin: auto;
-			}
-			#gallery-27 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-27 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-27 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![開運厄石](/images/wp/2023-01-482abe1b713b36742090d9a8540b79c2-768x1024.jpg)
+![開運厄石](/images/wp/2023-01-482abe1b713b36742090d9a8540b79c2-768x1024.jpg)
 
-			
-			
-				![開運厄石に向かって石を投げる参加者](/images/wp/2023-01-992e80135e188c65f5efc4617fff75fd-768x1024.jpg)
 
-			
-		
+![開運厄石に向かって石を投げる参加者](/images/wp/2023-01-992e80135e188c65f5efc4617fff75fd-768x1024.jpg)
+
 
 こういうところの屋台で食べるたい焼きも妙に買いたくなってしまいますよね。
 
@@ -114,37 +66,14 @@ image: "/logo.png"
 
 大吉に思わず大喜びされている姿も載せておきます。
 
-		
-			#gallery-28 {
-				margin: auto;
-			}
-			#gallery-28 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-28 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-28 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![大吉に歓喜する参加者1](/images/wp/2023-01-2a73314446c5c957bb22c4a8f2481142-768x1024.jpg)
+![大吉に歓喜する参加者1](/images/wp/2023-01-2a73314446c5c957bb22c4a8f2481142-768x1024.jpg)
 
-			
-			
-				![大吉に歓喜する参加者2](/images/wp/2023-01-70c6f8e46fee25a5588e757b8199c270-768x1024.jpg)
 
-			
-		
+![大吉に歓喜する参加者2](/images/wp/2023-01-70c6f8e46fee25a5588e757b8199c270-768x1024.jpg)
+
+
 スタッフの仙田と西井はお店を開けるためここで離脱して、ここからはお客さんから楽しい様子をレポしてもらいます！
 
- 
 
 #### ＜ランチタイム＆自由行動＞
 
@@ -154,38 +83,15 @@ image: "/logo.png"
 
 ランチで食べられるパニーニが美味だったそうです。
 
-		
-			#gallery-29 {
-				margin: auto;
-			}
-			#gallery-29 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-29 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-29 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![パーラーウララ神武橋](/images/wp/2023-01-86f5eb4f54a34bec46229877ee34f0de-768x1024.jpg)
+![パーラーウララ神武橋](/images/wp/2023-01-86f5eb4f54a34bec46229877ee34f0de-768x1024.jpg)
 
-			
-			
-				![パーラーウララのパニーニ](/images/wp/2023-01-d9c2463cfa31d1cb4193e7f16ea8e46e-768x1024.jpg)
 
-			
-		
+![パーラーウララのパニーニ](/images/wp/2023-01-d9c2463cfa31d1cb4193e7f16ea8e46e-768x1024.jpg)
+
+
 ♦パーラーウララ神武橋
 [https://maps.app.goo.gl/qezT8NcDWerA1kTL9?g_st=ic](https://maps.app.goo.gl/qezT8NcDWerA1kTL9?g_st=ic)
 
- 
 
 #### ＜裸祭りで有名な西大寺観音院＞
 
@@ -203,71 +109,26 @@ image: "/logo.png"
 
 さらに樹齢150年の楠もあり、抱きつくことで生命力を全身に浴びられます。
 
-		
-			#gallery-30 {
-				margin: auto;
-			}
-			#gallery-30 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-30 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-30 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![西大寺観音院楠](/images/wp/2023-01-a5d83becbace1a742aed4a2f85dfd997-768x1024.jpg)
+![西大寺観音院楠](/images/wp/2023-01-a5d83becbace1a742aed4a2f85dfd997-768x1024.jpg)
 
-			
-			
-				![西大寺観音院楠2](/images/wp/2023-01-e86c84fcd3ebe0f0e522215e97892633-768x1024.jpg)
 
-			
-		
+![西大寺観音院楠2](/images/wp/2023-01-e86c84fcd3ebe0f0e522215e97892633-768x1024.jpg)
+
+
 ご利益ありそーーー！！！
 
 年始限定で公開されてる仏像もあり、店長のテンションは爆上がりだったのですが、ここで店長もお店に帰還となりました。
 
-		
-			#gallery-31 {
-				margin: auto;
-			}
-			#gallery-31 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-31 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-31 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![西大寺観音院限定公開像](/images/wp/2023-01-206c397dcdd074fe0670b6c2c49e4d04-1024x768.jpg)
+![西大寺観音院限定公開像](/images/wp/2023-01-206c397dcdd074fe0670b6c2c49e4d04-1024x768.jpg)
 
-			
-			
-				![西大寺観音院限定公開像2](/images/wp/2023-01-bf2d6861393fc7c8f166881f5fcf802e-768x1024.jpg)
 
-			
-		
+![西大寺観音院限定公開像2](/images/wp/2023-01-bf2d6861393fc7c8f166881f5fcf802e-768x1024.jpg)
+
+
 その前にZポーズで記念撮影！
 
 ![Zポーズ集合写真](/images/wp/2023-01-111c1446763bf5c8efe87bcf598d64e9-1024x576.jpg)
 
- 
 
 #### ＜帰り道はチーズ専門店に＞
 
@@ -286,7 +147,6 @@ image: "/logo.png"
 ♦フロマジュリー ピノ
 [https://maps.app.goo.gl/mjdQFTwTkpycXNZWA?g_st=ic](https://maps.app.goo.gl/mjdQFTwTkpycXNZWA?g_st=ic)
 
- 
 
 ### 2023年もサイクルZをよろしくお願いいたします
 
@@ -300,7 +160,6 @@ image: "/logo.png"
 
 次回は花見ライドでお会いしましょう！
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -310,8 +169,4 @@ image: "/logo.png"
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+# cycleZ ブログ記事リンター — pre-commit hook
+# content/posts/*.md がステージされていたら lint:articles:staged を実行
+# 違反があればコミットを止める
+
+# ステージ済みの記事mdがあるかチェック
+staged_articles=$(git diff --cached --name-only --diff-filter=AM | grep -E '^content/posts/.*\.md$' || true)
+
+if [ -z "$staged_articles" ]; then
+  exit 0
+fi
+
+echo "📝 ブログ記事のリンターを実行中..."
+echo "$staged_articles" | sed 's/^/  - /'
+echo ""
+
+if ! npm run -s lint:articles:staged; then
+  echo ""
+  echo "❌ リンターでエラーが検出されました。"
+  echo "   修正してから再度コミットしてください。"
+  echo "   手動でルールをスキップするには: git commit --no-verify"
+  exit 1
+fi
+
+echo "✅ リンターをパスしました。"
+exit 0

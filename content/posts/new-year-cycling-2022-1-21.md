@@ -1,5 +1,5 @@
 ---
-title: "2022年初詣ポタリング&#038;ハイキング"
+title: "2022年初詣ポタリング&ハイキング"
 date: "2022-01-21"
 description: ""
 category: "event-report"
@@ -17,7 +17,6 @@ image: "/logo.png"
 
 ![初詣ライドルート](/images/wp/2022-01-0d02ff6945386adfe77a969fbb9b7263-737x1024.jpg)
 
- 
 
 ### 吉備津神社に向けて出発！
 
@@ -34,73 +33,26 @@ image: "/logo.png"
 彼のルートは相変わらず信号のほとんどない快速コースで、気温もこの時期にしては暖かく走りやすかったです。
 
 document.createElement('video');
-[/images/wp/2022-01-outputcompress-video-online.com-6.mp4](/images/wp/2022-01-outputcompress-video-online.com-6.mp4) 
+[/images/wp/2022-01-outputcompress-video-online.com-6.mp4](/images/wp/2022-01-outputcompress-video-online.com-6.mp4)
 
-		
-			#gallery-94 {
-				margin: auto;
-			}
-			#gallery-94 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-94 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-94 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![サイクルZから吉備津へ1](/images/wp/2022-01-f6092eb1df58b12b14be54d8e1338b3a-225x300.jpg)
+![サイクルZから吉備津へ1](/images/wp/2022-01-f6092eb1df58b12b14be54d8e1338b3a-225x300.jpg)
 
-			
-			
-				![サイクルZから吉備津へ2](/images/wp/2022-01-670e18fe40130edf6db0efc61a965b81-225x300.jpg)
 
-			
-		
+![サイクルZから吉備津へ2](/images/wp/2022-01-670e18fe40130edf6db0efc61a965b81-225x300.jpg)
+
 
 おみくじは行列が出来ていたので諦めました。
 
 ![吉備津神社のおみくじの行列](/images/wp/2022-01-91f1639841580a3648e3b01629e16056-768x1024.jpg)
 
- 
 
 成人の日を含む三連休だったこともあり、昨年と比べてだいぶ人が戻ってきていました。
 
-		
-			#gallery-95 {
-				margin: auto;
-			}
-			#gallery-95 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-95 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-95 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![吉備津神社1](/images/wp/2022-01-8de2cd1983495e0b0aa3ea1d5093c655-225x300.jpg)
+![吉備津神社1](/images/wp/2022-01-8de2cd1983495e0b0aa3ea1d5093c655-225x300.jpg)
 
-			
-			
-				![吉備津神社](/images/wp/2022-01-125cc2a493590202b2ca8f67e596d2c5-225x300.jpg)
 
-			
-		
+![吉備津神社](/images/wp/2022-01-125cc2a493590202b2ca8f67e596d2c5-225x300.jpg)
+
 
 吉備津神社は長い回廊も有名ですが、意外に斜度がありました！
 
@@ -108,7 +60,6 @@ document.createElement('video');
 
 参拝を終えたら次は吉備津彦神社へ向けて出発。
 
- 
 
 ### ハイキングをしながら吉備津彦神社へ
 
@@ -120,41 +71,16 @@ document.createElement('video');
 
 20分ほど休憩してから裏山を自転車を押して登りました。
 
-[/images/wp/2022-01-outputcompress-video-online.com-7.mp4](/images/wp/2022-01-outputcompress-video-online.com-7.mp4) 
+[/images/wp/2022-01-outputcompress-video-online.com-7.mp4](/images/wp/2022-01-outputcompress-video-online.com-7.mp4)
 
-		
-			#gallery-96 {
-				margin: auto;
-			}
-			#gallery-96 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 33%;
-			}
-			#gallery-96 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-96 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![吉備の中山](/images/wp/2022-01-8a5dde027b0c09e240181cbda178ae2d-225x300.jpg)
+![吉備の中山](/images/wp/2022-01-8a5dde027b0c09e240181cbda178ae2d-225x300.jpg)
 
-			
-			
-				![吉備の中山1](/images/wp/2022-01-1a1e2801c178539454b7fc1bfc334a39-225x300.jpg)
 
-			
-			
-				![吉備の中山2](/images/wp/2022-01-b3bccc756e1f230fb9539ed4df0b3d54-225x300.jpg)
+![吉備の中山1](/images/wp/2022-01-1a1e2801c178539454b7fc1bfc334a39-225x300.jpg)
 
-			
-		
- 
+
+![吉備の中山2](/images/wp/2022-01-b3bccc756e1f230fb9539ed4df0b3d54-225x300.jpg)
+
 
 #### 歴史も学べる松岡ルート
 
@@ -162,45 +88,22 @@ document.createElement('video');
 
 だいだらぼっちの足跡だったり、昔の国境の鏡石があったり、歴史的な価値などを教えてもらうと、どんどん地理が面白くなります！！
 
-		
-			#gallery-97 {
-				margin: auto;
-			}
-			#gallery-97 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-97 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-97 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![鏡石](/images/wp/2022-01-0c82d36ffc7f1799ef68173504f0aa38-225x300.jpg)
+![鏡石](/images/wp/2022-01-0c82d36ffc7f1799ef68173504f0aa38-225x300.jpg)
 
-			
-				
-				鏡石
-				
-			
-				![比翼入母屋造](/images/wp/2022-01-0494b92a74fc97fe7c075260f7e2a4e1-225x300.jpg)
 
-			
-				
-				比翼入母屋造
-				
-		
+鏡石
+
+
+![比翼入母屋造](/images/wp/2022-01-0494b92a74fc97fe7c075260f7e2a4e1-225x300.jpg)
+
+
+比翼入母屋造
+
+
 トレーニングランで走りに行くこともある場所ですが、普段何となく通り過ぎているだけで、まだ発見していない場所がこうして存在していることに気づきました。
 
 松岡さんのルートどりは歴史探検ツアーでもあるので、ぜひ歴史に興味がある方のご参加もお待ちしております！
 
- 
 
 ### ハイキングを終えた後は
 
@@ -212,7 +115,6 @@ document.createElement('video');
 
 皆様ご参加いただきありがとうございました＆お疲れ様でした！！
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -222,8 +124,4 @@ document.createElement('video');
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

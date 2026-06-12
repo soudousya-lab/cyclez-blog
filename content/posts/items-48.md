@@ -9,9 +9,7 @@ wp_url: "https://cycle-z.com/blog/2020/06/12/items-48/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/30054055/widget/large)
 
-  
 
   ■ 手のひらと甲にストレッチメッシュを使用した、通気性の高いショートフィンガーグローブ。
 

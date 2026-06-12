@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "lint:article": "node scripts/lint-article.mjs",
+    "lint:articles:new": "node scripts/lint-article.mjs --new",
+    "lint:articles:staged": "node scripts/lint-article.mjs --staged"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.101.1",

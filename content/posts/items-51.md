@@ -9,9 +9,7 @@ wp_url: "https://cycle-z.com/blog/2020/06/12/items-51/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/30053368/widget/large)
 
-  
 
   ■ AX SUEDE耐久性素材のパーム。
 

@@ -19,7 +19,6 @@ image: "/logo.png"
 
 今回はそんな自転車用ソックスの重要性について紹介していきたいと思います。
 
- 
 
 ### ❶特徴的な生地の厚み
 
@@ -33,7 +32,6 @@ image: "/logo.png"
 
 厚手のソックスを履くと収まりが悪くなったり、痛みが出たりすることがありますが、薄手の自転車用ソックスならこの問題を解消できます。
 
- 
 
 ### ➋甲部分はさらに通気性抜群
 
@@ -45,7 +43,6 @@ image: "/logo.png"
 
 踵や爪先など、動きによって擦れやすい部分は頑丈に作られています。
 
- 
 
 ### ❸縫い目がほとんどなく快適
 
@@ -55,7 +52,6 @@ image: "/logo.png"
 
 フィット感を高めるには、けっこう重要なポイントです。
 
- 
 
 ### ❹ずり落ちる心配ゼロ！疲労軽減効果も！
 
@@ -69,7 +65,6 @@ image: "/logo.png"
 
 自転車用ソックスは、空気抵抗を減少させるだけでなく、筋疲労を軽減するためにも重要な役割を果たしているのです。
 
- 
 
 ### サイクルZ一押しのソックスブランド
 
@@ -83,41 +78,17 @@ image: "/logo.png"
 
 ![](/images/wp/2023-08-defeet3-768x1024.jpg)
 
- 
 
 耐久性に自信があり、個性的なデザインも魅力です。
 
-		
-			#gallery-14 {
-				margin: auto;
-			}
-			#gallery-14 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-14 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-14 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![defeet1](/images/wp/2023-08-defeet1-768x1024.jpg)
+![defeet1](/images/wp/2023-08-defeet1-768x1024.jpg)
 
-			
-			
-				![defeet2](/images/wp/2023-08-defeet2-768x1024.jpg)
 
-			
-		
+![defeet2](/images/wp/2023-08-defeet2-768x1024.jpg)
+
+
 スタッフ仙田もお気に入りのアイテムです！
 
- 
 
 #### ＜サイコロジー＞
 
@@ -129,7 +100,6 @@ image: "/logo.png"
 
 サイズ選びに悩む必要なしのワンサイズ展開となっています。好きな柄で派手にキメちゃいましょう！
 
- 
 
 #### ＜アソス＞
 
@@ -139,7 +109,6 @@ image: "/logo.png"
 
 追求された機能美がカッコいい、唯一無二のブランドです。
 
- 
 
 ### 実際に店頭で手に取ってみてください
 
@@ -151,7 +120,6 @@ image: "/logo.png"
 
 皆さんのご来店を心よりお待ちしています！
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -161,8 +129,4 @@ image: "/logo.png"
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

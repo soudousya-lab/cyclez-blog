@@ -9,10 +9,7 @@ wp_url: "https://cycle-z.com/blog/2020/05/12/items-34/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/28477954/widget/large)
 
-  
-    
 
   ■　日常からサイクリストマインドを感じていたい人へ
 

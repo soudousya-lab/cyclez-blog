@@ -9,10 +9,7 @@ wp_url: "https://cycle-z.com/blog/2019/09/24/items-12/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/20645274/widget/large)
 
-  
-    
 
   ■　裾裏側のグリップゴムにSTEM DESIGNのロゴをあしらったシリコン系プリントゴムを採用。
 

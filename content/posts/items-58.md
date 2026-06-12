@@ -9,9 +9,7 @@ wp_url: "https://cycle-z.com/blog/2020/06/12/items-58/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/30027793/widget/large)
 
-  
 
   ■ 脱ぎ付けも容易なストラップモデル。
 
@@ -19,7 +17,6 @@ image: "/logo.png"
 
   ■ 汗をかいてもグローブが脱ぎやすいPULL-OFFシステム。
 
-  
 
   ■ユニセックス
 

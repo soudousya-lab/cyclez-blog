@@ -17,7 +17,6 @@ image: "/logo.png"
 
 では早速、坂口君によるレポスタートだゼーーーット！！
 
- 
 
 ### 総勢21名による100kmライドがスタート！
 
@@ -33,7 +32,6 @@ image: "/logo.png"
 
 今回のことが教訓となり、服装選びの重要さをより分かっていただけたのではないでしょうか！
 
- 
 
 #### ＜旧閑谷学校を目指して＞
 
@@ -45,73 +43,28 @@ image: "/logo.png"
 
 まずは賞田廃寺跡で記念撮影。松岡さんのライドではよく紹介される寺院の跡地です。
 
-		
-			#gallery-35 {
-				margin: auto;
-			}
-			#gallery-35 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-35 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-35 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![賞田廃寺跡での記念撮影4](/images/wp/2022-11-ff70e7dd23081500f8c512f815c5b45c-1024x576.jpg)
+![賞田廃寺跡での記念撮影4](/images/wp/2022-11-ff70e7dd23081500f8c512f815c5b45c-1024x576.jpg)
 
-			
-			
-				![賞田廃寺跡での記念撮影](/images/wp/2022-11-aee7737c99e2352286f53a35ee484b2f-1024x768.jpg)
 
-			
-		
+![賞田廃寺跡での記念撮影](/images/wp/2022-11-aee7737c99e2352286f53a35ee484b2f-1024x768.jpg)
+
+
 岡山で有名な寺院がこんな身近にあることも意外と知られていないので、松岡さんのライドは歴史を知れて良いですね～！
 
 途中鷹取醤油さんの醤油ソフトを食べながら小休憩。
 
-		
-			#gallery-36 {
-				margin: auto;
-			}
-			#gallery-36 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-36 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-36 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![鷹取醤油](/images/wp/2022-11-96563c1eab84f63e3834da6bba04998a-768x1024.jpg)
+![鷹取醤油](/images/wp/2022-11-96563c1eab84f63e3834da6bba04998a-768x1024.jpg)
 
-			
-			
-				![鷹取醤油ソフト](/images/wp/2022-11-62097b2aadfd852ebc9a03233294a286-576x1024.jpg)
 
-			
-		
+![鷹取醤油ソフト](/images/wp/2022-11-62097b2aadfd852ebc9a03233294a286-576x1024.jpg)
+
+
 「うめえ」の一言に尽きます。
 
 久々に長い距離を走ったり、自分のペースで走っていても疲れが出てきたり、自転車のポジションが上手く定まっていなくてしんどくなったり、小さいトラブルが出始めてきたタイミングでもありました。
 
 これを機にもっと楽に乗れるよう準備していきましょう！
 
- 
 
 #### ＜旧閑谷学校に無事到着＞
 
@@ -121,96 +74,26 @@ image: "/logo.png"
 
 良い景色はいつでも上の方にありますからねぇ！
 
-		
-			#gallery-37 {
-				margin: auto;
-			}
-			#gallery-37 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-37 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-37 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![](/images/wp/2022-11-01a369dba98939603109d549406d4caa-1024x576.jpg)
+![](/images/wp/2022-11-01a369dba98939603109d549406d4caa-1024x576.jpg)
 
-			
-			
-				![](/images/wp/2022-11-392b02cbb9c7628e0e824828f74f08c9-1024x576.jpg)
 
-			
-		
+![](/images/wp/2022-11-392b02cbb9c7628e0e824828f74f08c9-1024x576.jpg)
 
-		
-			#gallery-38 {
-				margin: auto;
-			}
-			#gallery-38 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-38 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-38 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![サイクルZポーズで写真に写る二人の女性](/images/wp/2022-11-0bb71a42b6f73cf2679144edf3590ead-1024x768.jpg)
+![サイクルZポーズで写真に写る二人の女性](/images/wp/2022-11-0bb71a42b6f73cf2679144edf3590ead-1024x768.jpg)
 
-			
-			
-				![](/images/wp/2022-11-3840b044cb39a1225815101a07472da8-1024x768.jpg)
 
-			
-		
+![](/images/wp/2022-11-3840b044cb39a1225815101a07472da8-1024x768.jpg)
+
 
 今年は11月の後半になっても日中が暖かく、寒暖差の激しい秋らしい気候が続いていました。
 
 そのおかげか紅葉も健在で良いサイクリング日和となりました。
 
-		
-			#gallery-39 {
-				margin: auto;
-			}
-			#gallery-39 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-39 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-39 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![](/images/wp/2022-11-ffae6ff18c58d9f010bb1a9f5ca9d1b2-576x1024.jpg)
+![](/images/wp/2022-11-ffae6ff18c58d9f010bb1a9f5ca9d1b2-576x1024.jpg)
 
-			
-			
-				![閑谷学校の紅葉した木々の脇道を歩く参加者たち](/images/wp/2022-11-8025860b39c5b168ffed8fc9147dc059-576x1024.jpg)
 
-			
-		
+![閑谷学校の紅葉した木々の脇道を歩く参加者たち](/images/wp/2022-11-8025860b39c5b168ffed8fc9147dc059-576x1024.jpg)
+
 
 閑谷学校でのお弁当はローストビーフ丼。
 
@@ -218,39 +101,14 @@ image: "/logo.png"
 
 お弁当としてはかなりのボリュームでこれには大満足！！
 
-		
-			#gallery-40 {
-				margin: auto;
-			}
-			#gallery-40 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 33%;
-			}
-			#gallery-40 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-40 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![](/images/wp/2022-11-77dcf1a349e38f0de4e592edae69cfcc-1024x576.jpg)
+![](/images/wp/2022-11-77dcf1a349e38f0de4e592edae69cfcc-1024x576.jpg)
 
-			
-			
-				![](/images/wp/2022-11-9c9110dcbee70eb3646c45e3310b135a-1024x576.jpg)
 
-			
-			
-				![](/images/wp/2022-11-7ca24114b1bcb1d80162da3f057d472a-1024x576.jpg)
+![](/images/wp/2022-11-9c9110dcbee70eb3646c45e3310b135a-1024x576.jpg)
 
-			
-		
- 
+
+![](/images/wp/2022-11-7ca24114b1bcb1d80162da3f057d472a-1024x576.jpg)
+
 
 #### ＜輪行組と別れて帰路につきました＞
 
@@ -268,35 +126,11 @@ image: "/logo.png"
 
 これからもライドイベントを開催していきますので、次回は初詣ライドでお会いしましょう。
 
-		
-			#gallery-41 {
-				margin: auto;
-			}
-			#gallery-41 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-41 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-41 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![](/images/wp/2022-11-31371ec92ec6c8107c15f216de93c4d4-1024x768.jpg)
+![](/images/wp/2022-11-31371ec92ec6c8107c15f216de93c4d4-1024x768.jpg)
 
-			
-			
-				![](/images/wp/2022-11-aade0bf2863b0d7d5fceddae03a77b49-1024x768.jpg)
 
-			
-		
- 
+![](/images/wp/2022-11-aade0bf2863b0d7d5fceddae03a77b49-1024x768.jpg)
+
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -306,8 +140,4 @@ image: "/logo.png"
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

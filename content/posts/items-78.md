@@ -9,9 +9,7 @@ wp_url: "https://cycle-z.com/blog/2020/11/30/items-78/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/34841251/widget/large)
 
-  
 
   ■アメカジの定番トレーナー（スウェットシャツ）
 

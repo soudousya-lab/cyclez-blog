@@ -15,11 +15,7 @@ image: "/logo.png"
 
 ヘルメットの被り方についてはこちらに書いていますので、よく読んで安全に着用してくださいゼーーーット！！
 
-[ヘルメットを正しく被ろう！](https://cycle-z.com/blog/2022/02/22/wear-a-helmet-2022-2-22/)
-[埋め込みコンテンツ](https://cycle-z.com/blog/2022/02/22/wear-a-helmet-2022-2-22/embed/#?secret=5l0wHypcXI)
-
- 
-
+[ヘルメットを正しく被ろう！](/blog/wear-a-helmet-2022-2-22)
 ### ヘルメットの価格帯
 
 まずはヘルメットの違いを価格別にザッとあげていこうと思います。
@@ -30,11 +26,9 @@ image: "/logo.png"
 
 サイクルZとしてオススメしたいのは、やはりミドルの価格帯です。
 
- 
 
 ### ヘルメットの価格が違う理由
 
- 
 
 #### ＜サイズ展開の多さの違い＞
 
@@ -58,7 +52,6 @@ image: "/logo.png"
 
 3サイズ展開であれば、ピッタリのものを見つけやすくなります。
 
- 
 
 #### ＜アジアン向けサイズでさらに快適に＞
 
@@ -68,43 +61,20 @@ image: "/logo.png"
 
 海外メーカーは基本楕円型に細長く出来ていて、真円を出しているメーカーはほとんどないです。
 
-		
-			#gallery-14 {
-				margin: auto;
-			}
-			#gallery-14 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-14 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-14 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![海外向け楕円](/images/wp/2023-02-66134e62849df4dc98770492d4e35c36-768x1024.jpg)
+![海外向け楕円](/images/wp/2023-02-66134e62849df4dc98770492d4e35c36-768x1024.jpg)
 
-			
-				
-				海外向け楕円
-				
-			
-				![アジアン向け真円](/images/wp/2023-02-c0d1217f3037a04a45e903690ba63757-768x1024.jpg)
 
-			
-				
-				アジアン向け真円
-				
-		
+海外向け楕円
+
+
+![アジアン向け真円](/images/wp/2023-02-c0d1217f3037a04a45e903690ba63757-768x1024.jpg)
+
+
+アジアン向け真円
+
+
 頭の形の違いを把握して、実際に展開しているメーカーはさすがとしか言いようがありません。
 
- 
 
 ### 安全のためにもヘルメットはサイズ感が重要
 
@@ -116,72 +86,26 @@ image: "/logo.png"
 
 - フィットしていない
 
-		
-			#gallery-15 {
-				margin: auto;
-			}
-			#gallery-15 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-15 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-15 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![あっていない1](/images/wp/2023-02-3e9ff32ed072623d4a44aed8f6a04e11-768x1024.jpg)
+![あっていない1](/images/wp/2023-02-3e9ff32ed072623d4a44aed8f6a04e11-768x1024.jpg)
 
-			
-			
-				![あっていない2](/images/wp/2023-02-1f02beb2a063eea499702ca12b798296-768x1024.jpg)
 
-			
-		
+![あっていない2](/images/wp/2023-02-1f02beb2a063eea499702ca12b798296-768x1024.jpg)
+
 
 - フィットしている
 
-		
-			#gallery-16 {
-				margin: auto;
-			}
-			#gallery-16 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-16 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-16 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![あっている1](/images/wp/2023-02-14b72f734470b8a85ce76942ed600ad2-768x1024.jpg)
+![あっている1](/images/wp/2023-02-14b72f734470b8a85ce76942ed600ad2-768x1024.jpg)
 
-			
-			
-				![あっている2](/images/wp/2023-02-776682b34c74e145c1efbaa6286cf37a-768x1024.jpg)
 
-			
-		
+![あっている2](/images/wp/2023-02-776682b34c74e145c1efbaa6286cf37a-768x1024.jpg)
+
+
 今回の努力義務の施行によって、ヘルメットがより身近なものになりますが、どうせ被るならキチンとしたものを着用をしてください。
 
 良いものにすれば被るのも苦ではなくなります。
 
 むしろ被った方が快適と思えるような商品もありますので、ぜひ購入時の参考にしてみてください！
 
- 
 
 ### 【値段別】サイクルＺおすすめヘルメット
 
@@ -203,7 +127,6 @@ image: "/logo.png"
 
 艶の質感などは値段相当といった感じはあります。
 
- 
 
 #### ＜価格帯2万円前後＞
 
@@ -215,7 +138,6 @@ image: "/logo.png"
 
 軽量で通気性もかなり良いです。
 
- 
 
 - **ABUS VIANTOR**
 
@@ -227,7 +149,6 @@ image: "/logo.png"
 
 カラー展開が豊富なのも嬉しいです。
 
- 
 
 #### ＜価格帯3万円超え＞
 
@@ -245,7 +166,6 @@ image: "/logo.png"
 
 そして着用努力義務に伴い、山陽新聞デジタルにも弊社が取り上げられましたので、[こちらの記事](https://www.sanyonews.jp/sp/kikaku/news_detail/1363352)もぜひチェックしてみてください。
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -255,8 +175,4 @@ image: "/logo.png"
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

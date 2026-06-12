@@ -9,10 +9,7 @@ wp_url: "https://cycle-z.com/blog/2020/05/12/items-38/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/28651006/widget/large)
 
-  
-    
 
   ■　羊毛の中でも高品種のメリノウールを100％使用したベースレイヤー。
 

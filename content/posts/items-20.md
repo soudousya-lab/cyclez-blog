@@ -9,10 +9,7 @@ wp_url: "https://cycle-z.com/blog/2019/09/24/items-20/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/9393013/widget/large)
 
-  
-    
 
   ■　Republic™R ニットは、全く新しいスタイルを提供するXnetic™ニットアッパーを採用。
 

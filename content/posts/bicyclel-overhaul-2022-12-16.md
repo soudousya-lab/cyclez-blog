@@ -17,15 +17,13 @@ image: "/logo.png"
 
 秋のサイクリングを楽しみすぎてかなりの距離を走ったりすると、そろそろパーツを変えてあげないと動きが悪くなっていたりすることも。
 
-前回、[ワイヤー交換のブログ](https://cycle-z.com/blog/2022/08/12/wire-replacement-2022-8-12/#:~:text=%E3%82%92%E4%B8%80%E6%96%B0%E3%81%99%E3%82%8B-,%E3%82%AA%E3%83%BC%E3%83%90%E3%83%BC%E3%83%9B%E3%83%BC%E3%83%AB,-%E3%81%BE%E3%81%A7%E8%A1%8C%E3%81%86%E3%81%8B)でオーバーホールのお話しを少しさせてもらいましたが、全体点検としてチェックしなければいけないところはワイヤーやタイヤ以外にもあります。
+前回、[ワイヤー交換のブログ](/blog/wire-replacement-2022-8-12)でオーバーホールのお話しを少しさせてもらいましたが、全体点検としてチェックしなければいけないところはワイヤーやタイヤ以外にもあります。
 
 今回はそちらをご紹介したいと思います。
 
- 
 
 ### オーバーホールで点検する箇所
 
- 
 
 #### ＜❶まずはチェーン＞
 
@@ -37,42 +35,17 @@ image: "/logo.png"
 
 ワイヤーが切れて動かなくなったり、タイヤがパンクして使えなくなったりすることと違い、目に見える変化が少なく劣化に気づきにくいのでチェーンもしっかりチェックしてもらいましょう。
 
-		
-			#gallery-32 {
-				margin: auto;
-			}
-			#gallery-32 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-32 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-32 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![チェーンの摩耗チェック](/images/wp/2022-12-0ff0ef9a647afbe4450ceab4c97ffe1d-768x1024.jpg)
+![チェーンの摩耗チェック](/images/wp/2022-12-0ff0ef9a647afbe4450ceab4c97ffe1d-768x1024.jpg)
 
-			
-				
-				チェーンの摩耗チェック
-				
-			
-				![チェーンの摩耗チェックの器具](/images/wp/2022-12-62e029a11fa8c1255651baee09075630-768x1024.jpg)
 
-			
-				
-				摩耗チェックの器具
+チェーンの摩耗チェック
 
-				
-		
- 
+
+![チェーンの摩耗チェックの器具](/images/wp/2022-12-62e029a11fa8c1255651baee09075630-768x1024.jpg)
+
+
+摩耗チェックの器具
+
 
 #### ＜❷ブレーキパッド＞
 
@@ -88,34 +61,12 @@ image: "/logo.png"
 
 ディスクブレーキの方はよ～く見ないと気付きにくいので大変です。
 
-		
-			#gallery-33 {
-				margin: auto;
-			}
-			#gallery-33 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-33 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-33 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![ディスクブレーキパッド2](/images/wp/2022-12-5f050c886293c3297f1a9eb553c1d1a7-768x1024.jpg)
+![ディスクブレーキパッド2](/images/wp/2022-12-5f050c886293c3297f1a9eb553c1d1a7-768x1024.jpg)
 
-			
-			
-				![ディスクブレーキパッド3](/images/wp/2022-12-e8183b80527310ad078921510b45fb5b-768x1024.jpg)
 
-			
-		
+![ディスクブレーキパッド3](/images/wp/2022-12-e8183b80527310ad078921510b45fb5b-768x1024.jpg)
+
+
 こちらにも土台とディスクローターを止める部分が存在して、気づいた時には土台部分のみでブレーキしていたなんてこともあります。
 
 ![ディスクブレーキローター](/images/wp/2022-12-dc95113981b34a495ab0acf3f06c2249-768x1024.jpg)
@@ -123,7 +74,6 @@ image: "/logo.png"
 この隙間に入っていてこの部分が削れます。
 ![ディスクブレーキパッドの土台部分](/images/wp/2022-12-320ab0150391166647e4bc5abf9bb02a-768x1024.jpg)
 
- 
 
 #### ＜❸ディスクブレーキ＞
 
@@ -131,47 +81,24 @@ image: "/logo.png"
 
 ハンドル側にレバーが接地するようになっていればもうだいぶ危ないです。
 
-		
-			#gallery-34 {
-				margin: auto;
-			}
-			#gallery-34 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 33%;
-			}
-			#gallery-34 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-34 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![ブレーキレバーの効き2](/images/wp/2022-12-a57ab1ec4f6ac3c7bc44ca1e7c3a53a1-768x1024.jpg)
+![ブレーキレバーの効き2](/images/wp/2022-12-a57ab1ec4f6ac3c7bc44ca1e7c3a53a1-768x1024.jpg)
 
-			
-				
-				正常
-				
-			
-				![ブレーキレバーの効き](/images/wp/2022-12-aca80f643db3b4e021a36a357905facc-768x1024.jpg)
 
-			
-				
-				そろそろ危ない
-				
-			
-				![ブレーキレバーの効き3](/images/wp/2022-12-5ecaf681eba32adc285e7409487d5e4f-1024x768.jpg)
+正常
 
-			
-				
-				早急にメンテナンスが必要です
-				
-		
+
+![ブレーキレバーの効き](/images/wp/2022-12-aca80f643db3b4e021a36a357905facc-768x1024.jpg)
+
+
+そろそろ危ない
+
+
+![ブレーキレバーの効き3](/images/wp/2022-12-5ecaf681eba32adc285e7409487d5e4f-1024x768.jpg)
+
+
+早急にメンテナンスが必要です
+
+
 当店でもオイルの入れ替え、補充をさせていただきます。
 
 そして各種ネジの緩みや全体的な点検もさせて頂きますので、気持ち新たに乗ることができますよ！
@@ -180,7 +107,6 @@ image: "/logo.png"
 
 冬の間、サイクリングをお休みされる方は来春に向けて気持ちよく乗れるよう、今のうちのメンテナンスがおすすめです！
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -190,8 +116,4 @@ image: "/logo.png"
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

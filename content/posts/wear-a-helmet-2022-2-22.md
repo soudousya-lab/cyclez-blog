@@ -15,7 +15,6 @@ image: "/logo.png"
 
 今回はそんなヘルメットの被り方についてキチンと説明していきます！
 
- 
 
 ### まずは間違ったヘルメットの被り方
 
@@ -23,13 +22,11 @@ image: "/logo.png"
 
 ![悪い例おでこ出過ぎ](/images/wp/2022-02-dfdbf43bad55ebca13d617482dd2f67d-768x1024.jpg)
 
- 
 
 顎紐の合わせ、耳たぶの下の合わせの位置が下過ぎる・顎紐がピッタリと顎に沿ってしまっている
 
 ![悪い例耳たぶ下](/images/wp/2022-02-a05e2c5a3a08c8c15be23637f83bfe55-768x1024.jpg)
 
- 
 
 この状態は良くないです。
 
@@ -39,11 +36,9 @@ image: "/logo.png"
 
 要点を抑えてキチンと被っていきましょう！！
 
- 
 
 ### ヘルメットの正しい被り方
 
- 
 
 #### ❶おでこのどの位置にヘルメットのつばを合わせるか
 
@@ -55,68 +50,22 @@ image: "/logo.png"
 
 このため、つばの先端は眉上の凹みより少し上の出っ張ったところ合わせましょう！
 
-		
-			#gallery-92 {
-				margin: auto;
-			}
-			#gallery-92 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-92 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-92 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![良い例おでこの出っ張りの位置](/images/wp/2022-02-e17c1389895372c6c883e6a27c4f5194-225x300.jpg)
+![良い例おでこの出っ張りの位置](/images/wp/2022-02-e17c1389895372c6c883e6a27c4f5194-225x300.jpg)
 
-			
-			
-				![良い例おでこの出っ張り位置](/images/wp/2022-02-134f9ae7d8efa12ca14ee455defe684d-225x300.jpg)
 
-			
-		
- 
+![良い例おでこの出っ張り位置](/images/wp/2022-02-134f9ae7d8efa12ca14ee455defe684d-225x300.jpg)
+
 
 #### ❷後ろのダイヤル部分の位置
 
 こちらで頭への締め付け具合の調整も出来ます。
 
-		
-			#gallery-93 {
-				margin: auto;
-			}
-			#gallery-93 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-93 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-93 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![調整ねじ](/images/wp/2022-02-382fec84d52312e76306883aff1b741f-300x225.jpg)
+![調整ねじ](/images/wp/2022-02-382fec84d52312e76306883aff1b741f-300x225.jpg)
 
-			
-			
-				![調整ねじ上下位置](/images/wp/2022-02-563538f4bd62fe6604a33b0106b5182c-300x225.jpg)
 
-			
-		
+![調整ねじ上下位置](/images/wp/2022-02-563538f4bd62fe6604a33b0106b5182c-300x225.jpg)
+
+
 この部分は首の後ろ、頭骨と首の骨の継ぎ目部分に合わせて締め上げる位置がくるよう上下の調整もしてあげて下さい。
 
 ![良い例頭骨と首の骨の位置](/images/wp/2022-02-349ca2028f9f2e83e7737073535dfc8c-768x1024.jpg)
@@ -131,7 +80,6 @@ image: "/logo.png"
 
 汗止めにもなります！
 
- 
 
 #### ❸最後に顎紐
 
@@ -139,7 +87,6 @@ image: "/logo.png"
 
 ![良い例耳たぶの真下](/images/wp/2022-02-ae7a6ac391edeffaf8b9a7a0001f8771-768x1024.jpg)
 
- 
 
 次に、顎紐の長さ調整を行います。
 
@@ -153,7 +100,6 @@ image: "/logo.png"
 
 これで運動中に息が上がってきても、息苦しさや圧迫感を与えず安全に被ることが出来ます！
 
- 
 
 ### 正しく被って安全なサイクリングを
 
@@ -165,7 +111,6 @@ image: "/logo.png"
 
 せっかく買った物ですので正しく被り、本来の性能・カッコよさを引き出していきましょう(^^)
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -175,8 +120,4 @@ image: "/logo.png"
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

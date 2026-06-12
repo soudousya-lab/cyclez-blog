@@ -9,10 +9,7 @@ wp_url: "https://cycle-z.com/blog/2020/05/11/items-32/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/28476459/widget/large)
 
-  
-    
 
   ■　毒々しくも目を惹き付けて離さない、
 

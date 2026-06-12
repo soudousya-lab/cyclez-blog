@@ -17,7 +17,6 @@ image: "/logo.png"
 
 今回はそんな方に向けて、ビンディングシューズについて簡潔に説明していくゼーーーット！！
 
- 
 
 ### ビンディングとは？
 
@@ -27,40 +26,18 @@ image: "/logo.png"
 
 固定させることでペダルがより回しやすくなり、楽に自転車を走らせることが出来ます。
 
-		
-			#gallery-17 {
-				margin: auto;
-			}
-			#gallery-17 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-17 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-17 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![3つ穴用ペダル](/images/wp/2023-02-8248bd8311e4090a863f3910f23a6936-768x1024.jpg)
+![3つ穴用ペダル](/images/wp/2023-02-8248bd8311e4090a863f3910f23a6936-768x1024.jpg)
 
-			
-				
-				3つ穴用ペダル
-				
-			
-				![4つ穴用ペダル](/images/wp/2023-02-e38b185c6888eaa2708de670fb078378-768x1024.jpg)
 
-			
-				
-				4つ穴用ペダル
-				
-		
+3つ穴用ペダル
+
+
+![4つ穴用ペダル](/images/wp/2023-02-e38b185c6888eaa2708de670fb078378-768x1024.jpg)
+
+
+4つ穴用ペダル
+
+
 導入してすぐにこのメリットを得られることもありますが、やはりロードバイクは機材スポーツなので少し練習が必要です。
 
 逆にデメリットとなるのはペダルから上手く靴を離すことが出来ず、そのまま自転車と一緒に倒れてしまうことです。 (通称:立ちゴケ) 
@@ -69,7 +46,6 @@ image: "/logo.png"
 
 しかし、ロードバイクに乗ることに慣れてきた方にとって、導入することで得られる効果はデメリットを補って余りあるものです。
 
- 
 
 ### ビンディングの種類
 
@@ -81,47 +57,24 @@ image: "/logo.png"
 
 ロードバイク用
 
-		
-			#gallery-18 {
-				margin: auto;
-			}
-			#gallery-18 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-18 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-18 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![4つ穴の靴](/images/wp/2023-02-08fb2a2ec49028fecd3aac160240c5f1-1024x768.jpg)
+![4つ穴の靴](/images/wp/2023-02-08fb2a2ec49028fecd3aac160240c5f1-1024x768.jpg)
 
-			
-				
-				マウンテンバイク用
-				
-			
-				![ダイヤル4つ穴](/images/wp/2023-02-ac4ee99b179dd2960963c8d70b84f353-1024x768.jpg)
 
-			
-				
-				マウンテンバイク用ダイヤル式
-				
-		
+マウンテンバイク用
+
+
+![ダイヤル4つ穴](/images/wp/2023-02-ac4ee99b179dd2960963c8d70b84f353-1024x768.jpg)
+
+
+マウンテンバイク用ダイヤル式
+
+
 この2種類だけであれば、ロードバイクに乗っている人はロードバイク用、マウンテンバイクに乗っている人はマウンテンバイク用にすれば良いのでは？と思うのではないでしょうか。
 
 このように元々は専用品として誕生したビンディングですが、時代は流れ今では少し選び方が変わってきています。
 
 ロードバイクが浸透した今は、自転車の乗り方や使用状況に合わせた選び方が重要なので、名前にあまり捉われず選んでいく必要があります。
 
- 
 
 ### ロードバイク用とマウンテンバイク用の比較
 
@@ -137,47 +90,21 @@ image: "/logo.png"
 
 ![3つ穴はクリートが出っ張る](/images/wp/2023-02-67ee478a26ffbb0aac4e109e557f98fa-768x1024.jpg)
 
- 
 
 #### ＜マウンテンバイク用＞
 
 マウンテンバイク用は靴裏に2つか4つの穴が空いてます。
 
-		
-			#gallery-19 {
-				margin: auto;
-			}
-			#gallery-19 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-19 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-19 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![4つ穴](/images/wp/2023-02-99675c1c8659bc0fa2da49174ac24f06-768x1024.jpg)
+![4つ穴](/images/wp/2023-02-99675c1c8659bc0fa2da49174ac24f06-768x1024.jpg)
 
-			
-			
-				![レース系4つ穴](/images/wp/2023-02-f2e95cfff560d63f516a79317fe6dff8-768x1024.jpg)
 
-			
-		
+![レース系4つ穴](/images/wp/2023-02-f2e95cfff560d63f516a79317fe6dff8-768x1024.jpg)
+
+
 穴の周りはソールが盛り上がっていて金具が出っ張らない状態でセットできます。
 
 ![4つ穴はクリートが収まる](/images/wp/2023-02-efe65dc41482e17c71580bf7b62f583e-768x1024.jpg)
 
- 
-
- 
 
 ### サイクリングの目的に合わせてビンディングを選んでみる
 
@@ -191,7 +118,6 @@ image: "/logo.png"
 
 詳しいビンディングの効果などについては今回は割愛しますが、ビンディングを導入することでかなりのメリットを得られるので、使用用途に合わせて選んでみてはいかがでしょうか。
 
- 
 
 ### サイクルZおすすめのビンディングシューズ
 
@@ -199,34 +125,12 @@ image: "/logo.png"
 
 それは[Giroのrumble(ランブル)](https://www.e-girotokyo.com/?pid=142995715)です！
 
-		
-			#gallery-20 {
-				margin: auto;
-			}
-			#gallery-20 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-20 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-20 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![rumble1](/images/wp/2023-02-rumble1-1024x768.jpg)
+![rumble1](/images/wp/2023-02-rumble1-1024x768.jpg)
 
-			
-			
-				![rumble2](/images/wp/2023-02-rumble2-1024x768.jpg)
 
-			
-		
+![rumble2](/images/wp/2023-02-rumble2-1024x768.jpg)
+
+
 普段使いできるビンディングシューズの決定版です！
 
 もちろん靴紐収納もついています。
@@ -235,7 +139,6 @@ image: "/logo.png"
 
 サイクルZいちおしの普段着スタイルにもピッタリなので、ぜひフィッティングしてみて下さい。
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -245,8 +148,4 @@ image: "/logo.png"
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

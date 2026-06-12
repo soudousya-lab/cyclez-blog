@@ -13,11 +13,9 @@ image: "/logo.png"
 
 今回は、2泊3日の美味しいものあり（ハプニングもあり）の旅の道中を紹介するゼーーーット！！
 
- 
 
 ### 九州旅1日目
 
- 
 
 #### ＜まずは岡山から八幡浜へ向け出発＞
 
@@ -61,7 +59,6 @@ image: "/logo.png"
 電話：0894-22-2492
 [https://goo.gl/maps/6ZcqtRaa81F8iBmS8](https://goo.gl/maps/6ZcqtRaa81F8iBmS8)
 
- 
 
 ### フェリーで大分県に向かいます
 
@@ -83,40 +80,17 @@ image: "/logo.png"
 
 ここでもサッと輪行袋を装着し、15:30のフェリーに間に合わせることに成功！
 
- 
 
 ### 別府のホテルまでサイクリング
 
 あとは別府のホテルまで頑張るだけです。
 
-		
-			#gallery-66 {
-				margin: auto;
-			}
-			#gallery-66 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-66 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-66 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![大分県に到着1](/images/wp/2022-08-b8553a964f25f1ade5cef7625e318963-225x300.jpg)
+![大分県に到着1](/images/wp/2022-08-b8553a964f25f1ade5cef7625e318963-225x300.jpg)
 
-			
-			
-				![大分県に到着2](/images/wp/2022-08-4b63d7355c7ac6986e87c4afd4be4a88-225x300.jpg)
 
-			
-		
+![大分県に到着2](/images/wp/2022-08-4b63d7355c7ac6986e87c4afd4be4a88-225x300.jpg)
+
+
 別府に着いてからのホテルの場所までが、遠いというより高かったです！
 
 山の麓にある思っていたホテルが中腹ぐらいの高さにあり、意図せずとも鶴見岳の一端を初日から味わえました。
@@ -129,7 +103,6 @@ image: "/logo.png"
 
 次の日の天気がまだ不穏でしたが、どうにかサイクリング出来ますようにと祈りながら1日目終了です。
 
- 
 
 ### 九州旅2日目の朝
 
@@ -143,15 +116,14 @@ image: "/logo.png"
 
 店長はレンタカーを借りて石仏を見に。西井は山に登るため九重連山の方面に。仙田も途中まで同行し、由布岳周辺を回ってきました！
 
-長くなるので、この続きは次回の[後編](https://cycle-z.com/blog/2022/09/02/kyushu-trip-part2-2022-9-2/)でお届けします！
+長くなるので、この続きは次回の[後編](/blog/kyushu-trip-part2-2022-9-2)でお届けします！
 
 まだまだ見どころがあるのでぜひご覧ください。
 
 [![九州輪行旅の後編への遷移をイメージした画像](/images/wp/2022-08-87d57a85715cc43453db75a065382e41-1024x361.jpg)
 
-](https://cycle-z.com/blog/2022/09/02/kyushu-trip-part2-2022-9-2/)
+](/blog/kyushu-trip-part2-2022-9-2)
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -161,8 +133,4 @@ image: "/logo.png"
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

@@ -13,7 +13,6 @@ image: "/logo.png"
 
 岡山県北と鳥取のグルメももちろん楽しんできたので、ぜひ輪行旅の参考にしてみてください。
 
- 
 
 ### まずは県北を目指して出発
 
@@ -27,38 +26,14 @@ image: "/logo.png"
 
 輪行袋は背面のポケットに収納するか、ボトルケージに突っ込んだりすることも可能なサイズになっています。
 
-		
-			#gallery-18 {
-				margin: auto;
-			}
-			#gallery-18 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 33%;
-			}
-			#gallery-18 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-18 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![輪行袋](/images/wp/2023-07-3b344661fadeec978a7f5eeb13165b32-768x1024.jpg)
+![輪行袋](/images/wp/2023-07-3b344661fadeec978a7f5eeb13165b32-768x1024.jpg)
 
-			
-			
-				![輪行袋収納服](/images/wp/2023-07-58d040bbfd581ca38ea139f947296ad3-768x1024.jpg)
 
-			
-			
-				![輪行袋収納](/images/wp/2023-07-0ecab2b51859ed6bfc20bc703c539ce1-768x1024.jpg)
+![輪行袋収納服](/images/wp/2023-07-58d040bbfd581ca38ea139f947296ad3-768x1024.jpg)
 
-			
-		
+
+![輪行袋収納](/images/wp/2023-07-0ecab2b51859ed6bfc20bc703c539ce1-768x1024.jpg)
+
 
 サイクルZからのスタートは松岡さんがいつも初心者講習会で使うコースを行くことにしました。
 
@@ -68,7 +43,6 @@ image: "/logo.png"
 
 川から川へ土手沿いを繋いで行くと、走りやすくて気持ちいいです！
 
- 
 
 ### ファミリーレストランつぼやに到着
 
@@ -87,7 +61,6 @@ image: "/logo.png"
 ■ファミリーレストランつぼや
 [https://maps.app.goo.gl/NT8M2aKySsV3bxja9?g_st=ic](https://maps.app.goo.gl/NT8M2aKySsV3bxja9?g_st=ic)
 
- 
 
 ### 奈義町でオシャレなカフェを発見
 
@@ -126,7 +99,6 @@ image: "/logo.png"
 
 もちろん自転車も走りやすいです！
 
- 
 
 ### 鳥取ではお寿司を堪能
 
@@ -151,40 +123,17 @@ image: "/logo.png"
 ■北海道寿司
 [https://maps.app.goo.gl/c1pPwLcHXVQmpDbQA?g_st=ic](https://maps.app.goo.gl/c1pPwLcHXVQmpDbQA?g_st=ic)
 
- 
 
 ### 鳥取から岡山への帰路は輪行で
 
 鳥取からの帰りはJRの特急スーパーいなばで帰ることにしました。
 
-		
-			#gallery-19 {
-				margin: auto;
-			}
-			#gallery-19 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-19 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-19 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![鳥取から帰るぞ2](/images/wp/2023-07-9df3715d57f87cc7736eb8b4215f6f81-1024x768.jpg)
+![鳥取から帰るぞ2](/images/wp/2023-07-9df3715d57f87cc7736eb8b4215f6f81-1024x768.jpg)
 
-			
-			
-				![鳥取から帰るぞ](/images/wp/2023-07-d66259888555d4260545bf70fe8f71c1-1024x768.jpg)
 
-			
-		
+![鳥取から帰るぞ](/images/wp/2023-07-d66259888555d4260545bf70fe8f71c1-1024x768.jpg)
+
+
 乗換なしで移動が出来るのは最高ですよね〜。しかも乗車時間は2時間弱と意外と速いです。
 
 兵庫に一度頭から突っ込んでから岡山へ逆走するのも面白いです。
@@ -195,7 +144,6 @@ image: "/logo.png"
 
 ![終点岡山駅解散2](/images/wp/2023-07-6346584745642887159f0e0906299871-768x1024.jpg)
 
- 
 
 ### 鳥取日帰り旅行を輪行で実現！
 
@@ -205,35 +153,11 @@ image: "/logo.png"
 
 ぜひ皆さんも輪行を上手く使って、気ままにゆったりサイクリングを楽しんでみてください！
 
-		
-			#gallery-20 {
-				margin: auto;
-			}
-			#gallery-20 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-20 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-20 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![つぼやの後のエモい駅](/images/wp/2023-07-5b126c8ad3d99b67458e06bfb2def859-1024x768.jpg)
+![つぼやの後のエモい駅](/images/wp/2023-07-5b126c8ad3d99b67458e06bfb2def859-1024x768.jpg)
 
-			
-			
-				![鳥取市近くに下ったところにあった休憩所](/images/wp/2023-07-0dc56e555feb432bc1597a359b4915ff-1024x768.jpg)
 
-			
-		
- 
+![鳥取市近くに下ったところにあった休憩所](/images/wp/2023-07-0dc56e555feb432bc1597a359b4915ff-1024x768.jpg)
+
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -243,8 +167,4 @@ image: "/logo.png"
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

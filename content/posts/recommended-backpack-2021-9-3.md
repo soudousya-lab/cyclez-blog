@@ -28,39 +28,14 @@ RawLow Mountain Works.（通称：ロウロウ）さんの『Bike'n Hike Post Ba
 - サドルバッグからバックパックに変形させて持ち運びがしやすくなっている
 ※バックパックとしてもサドルバッグとしてもマルチで使えます！
 
-		
-			#gallery-114 {
-				margin: auto;
-			}
-			#gallery-114 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 33%;
-			}
-			#gallery-114 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-114 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![バックパック](/images/wp/2021-09-dec79493391c8fd5a7c639e3e5a64c67-scaled-e1630473770207-225x300.jpg)
+![バックパック](/images/wp/2021-09-dec79493391c8fd5a7c639e3e5a64c67-scaled-e1630473770207-225x300.jpg)
 
-			
-			
-				![バイク取付時のサドルバッグ](/images/wp/2021-09-7a99ad681f86f922e37be384249c6f21-225x300.jpg)
 
-			
-			
-				![手提げ紐](/images/wp/2021-09-5fc904f4826163e30741cd541434c221-225x300.jpg)
+![バイク取付時のサドルバッグ](/images/wp/2021-09-7a99ad681f86f922e37be384249c6f21-225x300.jpg)
 
-			
-		
- 
+
+![手提げ紐](/images/wp/2021-09-5fc904f4826163e30741cd541434c221-225x300.jpg)
+
 
 - バックパック状態にした時の背負い心地にも拘って作られている
 ※ここに拘って作られているものはかなり少ないと思います。
@@ -74,72 +49,25 @@ RawLow Mountain Works.（通称：ロウロウ）さんの『Bike'n Hike Post Ba
 
 - リアライトの取付部分、パッキングした状態でアクセス可能なジップポケットの中は鍵や小物をつけるストラップ付！
 
-		
-			#gallery-115 {
-				margin: auto;
-			}
-			#gallery-115 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 33%;
-			}
-			#gallery-115 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-115 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![リアライト取付時](/images/wp/2021-09-936014042a8206442a62e11f2597d42f-300x225.jpg)
+![リアライト取付時](/images/wp/2021-09-936014042a8206442a62e11f2597d42f-300x225.jpg)
 
-			
-			
-				![バックパックのジップポケット内ストラップ](/images/wp/2021-09-fc5978c2cc24b6d8bcbde7113bd8ab10-300x225.jpg)
 
-			
-			
-				![バイク取付時にもアクセス可能なジップポケット](/images/wp/2021-09-b3f44167b3a8fb7a167fba6621b3852b-300x225.jpg)
+![バックパックのジップポケット内ストラップ](/images/wp/2021-09-fc5978c2cc24b6d8bcbde7113bd8ab10-300x225.jpg)
 
-			
-		
- 
+
+![バイク取付時にもアクセス可能なジップポケット](/images/wp/2021-09-b3f44167b3a8fb7a167fba6621b3852b-300x225.jpg)
+
 
 ### 収納力も十分！
 
 更にはシートポストに添わすようにバッグが取り付けられるので、後輪に垂れ下がって擦ってしまう心配が少ないです。
 
-		
-			#gallery-116 {
-				margin: auto;
-			}
-			#gallery-116 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-116 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-116 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![バイク取付時のサドルバッグ](/images/wp/2021-09-7a99ad681f86f922e37be384249c6f21-225x300.jpg)
+![バイク取付時のサドルバッグ](/images/wp/2021-09-7a99ad681f86f922e37be384249c6f21-225x300.jpg)
 
-			
-			
-				![バイク取付時のサドルバッグ](/images/wp/2021-09-e7921fdd33f446acbd97d23507fbcf15-225x300.jpg)
 
-			
-		
+![バイク取付時のサドルバッグ](/images/wp/2021-09-e7921fdd33f446acbd97d23507fbcf15-225x300.jpg)
+
+
 取り付け付近の根元もそこそこの硬さがないと、垂れ下がったり、立ち漕ぎをした際に左右に大きく振られてしまい快適性を失うので、こういう基本の部分も作りがしっかりしています。
 
 温泉にこちらのバックパックを持っていった日は、夏物の着替え一式(シャツ、短パン、下着)、タオルセットを入れていき容量の8割を使い、補給食などを詰め込む余裕はまだまだありました。
@@ -152,7 +80,6 @@ RawLow Mountain Works.（通称：ロウロウ）さんの『Bike'n Hike Post Ba
 
 容量は最大で10Lまでいけます。
 
- 
 
 ### 気になる方は是非店頭へ！
 
@@ -164,7 +91,6 @@ RawLow Mountain Works.（通称：ロウロウ）さんの『Bike'n Hike Post Ba
 
 ハンドメイドのため、なかなか手に入れる機会が少なく、今回お店にきた商品達も1年待って到着しました。
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -174,8 +100,4 @@ RawLow Mountain Works.（通称：ロウロウ）さんの『Bike'n Hike Post Ba
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

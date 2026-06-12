@@ -18,7 +18,6 @@ image: "/logo.png"
 
 ワイヤーを新しく交換する際、そのまま同じグレードのワイヤーを使うのも良いのですが、せっかくなのでグレードを上げてみるのはいかがでしょうか！？
 
- 
 
 ### ワイヤーのランクは3段階
 
@@ -42,7 +41,6 @@ image: "/logo.png"
 
 変速機はワイヤーで引っ張り上げて動いているものなので、ワイヤー表面に施してあるコーティングによっても摩擦が極限まで減り、スムーズになるのです。
 
- 
 
 ### アウターワイヤーで遊び心を取り入れて
 
@@ -60,77 +58,32 @@ image: "/logo.png"
 
 せっかくであれば、ここもただ黒色に統一するのではなく、ご自身の好きな色にしてみてはいかがでしょうか。
 
-		
-			#gallery-67 {
-				margin: auto;
-			}
-			#gallery-67 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-67 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-67 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![アウターワイヤー色変2](/images/wp/2022-08-fa6bb43e1907174bdf113e72aff35368-300x225.jpg)
+![アウターワイヤー色変2](/images/wp/2022-08-fa6bb43e1907174bdf113e72aff35368-300x225.jpg)
 
-			
-			
-				![アウターワイヤー色変4](/images/wp/2022-08-ed465afd6e34343499f0aaf2642514be-300x225.jpg)
 
-			
-		
+![アウターワイヤー色変4](/images/wp/2022-08-ed465afd6e34343499f0aaf2642514be-300x225.jpg)
+
+
 純正品としてシマノのアウターで色を変えるのも良いですが、NISSENというメーカーから出ているアウターワイヤーの色もオススメです。
 
-		
-			#gallery-68 {
-				margin: auto;
-			}
-			#gallery-68 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-68 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-68 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![nissenアウターワイヤー](/images/wp/2022-08-f8f4b13ffcb78d589b7b7b3fadf1cfe2-225x300.jpg)
+![nissenアウターワイヤー](/images/wp/2022-08-f8f4b13ffcb78d589b7b7b3fadf1cfe2-225x300.jpg)
 
-			
-				
-				NISSENアウターワイヤー
-				
-			
-				![nissenアウターワイヤー2](/images/wp/2022-08-7a0ebb8a799af04be16d7bdd6b2b4cee-225x300.jpg)
 
-			
-				
-				NISSENアウターワイヤー
-				
-		
+NISSENアウターワイヤー
+
+
+![nissenアウターワイヤー2](/images/wp/2022-08-7a0ebb8a799af04be16d7bdd6b2b4cee-225x300.jpg)
+
+
+NISSENアウターワイヤー
+
+
 クリアーカラーからメタリックなものまであり、高級感がある発色をしているのが特徴です。
 
 実用性もあり見栄えも変わるワイヤーの変更。
 
 ぜひ楽しみながら選んでみてください！
 
- 
 
 ### バーテープの交換も忘れずに！
 
@@ -138,13 +91,12 @@ image: "/logo.png"
 
 同時に一新出来ますので、ぜひ一緒にお願いすることをオススメします。
 
-バーテープについての[前回記事](https://cycle-z.com/blog/2022/07/29/bar-tape-2022-7-29/)もご覧いただき、併せて検討頂けると幸いです。
+バーテープについての[前回記事](/blog/bar-tape-2022-7-29)もご覧いただき、併せて検討頂けると幸いです。
 
 これに加えて、その他の消耗品を交換することで全てを一新するオーバーホールまで行うか否かも選択肢に入ってきますね。
 
 いずれにしても細かいメンテナンスを行い、快適で安全な自転車ライフを送りましょう！！
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -154,8 +106,4 @@ image: "/logo.png"
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

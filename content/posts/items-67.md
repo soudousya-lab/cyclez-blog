@@ -9,11 +9,8 @@ wp_url: "https://cycle-z.com/blog/2020/09/23/items-67/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/29769152/widget/large)
 
-  
 
-  
     ■ GIRO新基準のスタンダードヘルメット。
 
     ■ 日本人に合ったフィットと高い安全性を両立。

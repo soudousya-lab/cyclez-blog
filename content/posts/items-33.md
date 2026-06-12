@@ -9,10 +9,7 @@ wp_url: "https://cycle-z.com/blog/2020/05/12/items-33/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/28477184/widget/large)
 
-  
-    
 
   ■　シンプルかつ大胆なデザイン。
 

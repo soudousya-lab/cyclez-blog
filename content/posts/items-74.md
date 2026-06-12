@@ -9,11 +9,8 @@ wp_url: "https://cycle-z.com/blog/2020/09/23/items-74/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/34009667/widget/large)
 
-  
 
-  
     ■ アップライドな姿勢や巡航時、スプリント時とあらゆる乗車時でエアロ効果を発揮する"マルチポジションデザイン"を採用。
 
     ■ そのエアロ効果はヘルメット本体のみならず、ストラップ部分にも。

@@ -13,7 +13,6 @@ image: "/logo.png"
 
 この日の和気あいあいとしたイベントの様子を、スタッフ仙田の視点からお届けするゼーーーット！！
 
- 
 
 ### サイクルZ集合組と現地集合組に分かれて出発！
 
@@ -34,7 +33,6 @@ image: "/logo.png"
 ■LEGARE COFFEE STAND(レガーレコーヒースタンド)
 [https://maps.app.goo.gl/fZFmwUEHttRhafJg7?g_st=ic](https://maps.app.goo.gl/fZFmwUEHttRhafJg7?g_st=ic)
 
- 
 
 ### 美味しいカフェと韓国料理屋を紹介！
 
@@ -48,7 +46,6 @@ image: "/logo.png"
 
 ![古宮道](/images/wp/2023-10-IMG_2778-768x1024.jpg)
 
- 
 
 さらに近くにもう1つ、喫茶店『茶蘭呉（ちゃらんこ）』もオススメです。
 
@@ -61,7 +58,6 @@ image: "/logo.png"
 ■茶蘭呉(ちゃらんこ)
 [https://maps.app.goo.gl/jGzBG6B7CHhaNqZKA?g_st=ic](https://maps.app.goo.gl/jGzBG6B7CHhaNqZKA?g_st=ic)
 
- 
 
 ### 『もてなしの館』でようやく合流！
 
@@ -77,7 +73,6 @@ image: "/logo.png"
 
 ![五重の塔前で合流](/images/wp/2023-10-IMG_2792-1024x768.jpg)
 
- 
 
 ### 古墳巡りの前に腹ごしらえ
 
@@ -87,64 +82,20 @@ image: "/logo.png"
 
 海鮮DON 丼丸の海鮮丼をテイクアウトさせて頂きました。
 
-		
-			#gallery-1 {
-				margin: auto;
-			}
-			#gallery-1 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-1 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-1 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![海鮮DON 丼丸の丼](/images/wp/2023-10-IMG_2809-768x1024.jpg)
+![海鮮DON 丼丸の丼](/images/wp/2023-10-IMG_2809-768x1024.jpg)
 
-			
-			
-				![海鮮DON 丼丸総社店外観](/images/wp/2023-10-IMG_2797-768x1024.jpg)
 
-			
-		
+![海鮮DON 丼丸総社店外観](/images/wp/2023-10-IMG_2797-768x1024.jpg)
+
+
 具材たっぷりでご飯もたっぷり入っており、大盛りのボリュームに皆さん大満足だったようです。
 
-		
-			#gallery-2 {
-				margin: auto;
-			}
-			#gallery-2 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-2 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-2 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![海鮮DON 丼丸の海鮮丼を味わう参加者達](/images/wp/2023-10-IMG_2804-1024x768.jpg)
+![海鮮DON 丼丸の海鮮丼を味わう参加者達](/images/wp/2023-10-IMG_2804-1024x768.jpg)
 
-			
-			
-				![海鮮DON 丼丸の海鮮丼を持って笑顔で写真に写る男女](/images/wp/2023-10-IMG_2800-1024x768.jpg)
 
-			
-		
+![海鮮DON 丼丸の海鮮丼を持って笑顔で写真に写る男女](/images/wp/2023-10-IMG_2800-1024x768.jpg)
+
+
 ■海鮮DON 丼丸
 [https://maps.app.goo.gl/7nirFDUncx4Wa6iL8?g_st=ic](https://maps.app.goo.gl/7nirFDUncx4Wa6iL8?g_st=ic)
 
@@ -154,40 +105,17 @@ image: "/logo.png"
 
 マンゴースムージーが美味しかったです！
 
-		
-			#gallery-3 {
-				margin: auto;
-			}
-			#gallery-3 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-3 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-3 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![ナンバベーカリーの前で写真に写る男性2](/images/wp/2023-10-IMG_2827-768x1024.jpg)
+![ナンバベーカリーの前で写真に写る男性2](/images/wp/2023-10-IMG_2827-768x1024.jpg)
 
-			
-			
-				![ナンバベーカリーの前で写真に写る男性1](/images/wp/2023-10-IMG_2826-768x1024.jpg)
 
-			
-		
+![ナンバベーカリーの前で写真に写る男性1](/images/wp/2023-10-IMG_2826-768x1024.jpg)
+
+
 さすがに皆さんパンまではお腹に入りませんでした😆
 
 ■ナンバベーカリー
 [https://maps.app.goo.gl/AFBJ3YxQZxR3Qe5YA?g_st=ic](https://maps.app.goo.gl/AFBJ3YxQZxR3Qe5YA?g_st=ic)
 
- 
 
 ### ようやく本題の古墳巡りがスタート
 
@@ -213,7 +141,6 @@ document.createElement('video');
 
 ![江崎古墳1](/images/wp/2023-10-IMG_2844-1024x768.jpg)
 
- 
 
 #### ＜❸鳶尾塚古墳も巡りました＞
 
@@ -233,7 +160,6 @@ document.createElement('video');
 
 ここでもさまざまな資料を見ることができます。
 
- 
 
 #### ＜❹最後に千足古墳＞
 
@@ -251,7 +177,6 @@ document.createElement('video');
 
 ![千足古墳の前で記念撮影](/images/wp/2023-10-20231001_140952-1-1024x461.jpg)
 
- 
 
 ### 楽しい一日の締めくくり！
 
@@ -269,7 +194,6 @@ document.createElement('video');
 
 ご参加いただいた皆さん、ありがとうございました！
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -279,8 +203,4 @@ document.createElement('video');
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

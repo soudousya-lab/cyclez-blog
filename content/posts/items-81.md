@@ -9,9 +9,7 @@ wp_url: "https://cycle-z.com/blog/2020/11/30/items-81/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/34843106/widget/large)
 
-  
 
   ■ベースレイヤーの組合せ、ベストとの組み合わせで3シーズン着られる長袖クラシックジャージ
 

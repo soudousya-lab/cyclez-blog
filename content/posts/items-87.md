@@ -9,7 +9,6 @@ wp_url: "https://cycle-z.com/blog/2023/06/24/items-87/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/75897443/widget/large)
 
 ■汗をかいても目立たない汗染み軽減加工ディスノーティス素材
 
@@ -35,9 +34,9 @@ image: "/logo.png"
 
 　袖幅：18cm
 
-	
+
 【Lサイズ】
-				
+
 　着丈：77cm
 
 　身幅：56cm

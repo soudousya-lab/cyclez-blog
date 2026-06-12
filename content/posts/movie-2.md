@@ -9,4 +9,3 @@ wp_url: "https://cycle-z.com/blog/2024/01/09/movie-2/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://www.youtube.com/embed/PYNH5bUr_HY?si=k1K4tVJ7sDym3Mbs)

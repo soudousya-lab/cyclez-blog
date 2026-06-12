@@ -9,10 +9,7 @@ wp_url: "https://cycle-z.com/blog/2020/05/12/items-39/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/28818324/widget/large)
 
-  
-    
 
   ■　通気性に優れた超通気性3Dメッシュ。
 

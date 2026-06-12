@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>cycleZ 集客分析レポート 2026年4月</title>
+<style>
+  @page { size: A4; margin: 20mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif; color: #1a1a1a; line-height: 1.7; font-size: 13px; }
+  .cover { page-break-after: always; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; text-align: center; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: white; }
+  .cover h1 { font-size: 36px; margin-bottom: 16px; letter-spacing: 2px; }
+  .cover .subtitle { font-size: 18px; color: #a0c4ff; margin-bottom: 40px; }
+  .cover .date { font-size: 14px; color: #ccc; }
+  .cover .brand { font-size: 14px; color: #888; margin-top: 60px; }
+  .section { page-break-inside: avoid; margin-bottom: 32px; }
+  h2 { font-size: 20px; color: #0f3460; border-bottom: 3px solid #0f3460; padding-bottom: 6px; margin: 36px 0 16px; }
+  h3 { font-size: 16px; color: #1a1a2e; margin: 20px 0 10px; padding-left: 12px; border-left: 4px solid #e94560; }
+  h4 { font-size: 14px; color: #333; margin: 14px 0 8px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 12px; }
+  th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; }
+  th { background: #0f3460; color: white; font-weight: 600; }
+  tr:nth-child(even) { background: #f8f9fa; }
+  .highlight { background: #fff3cd; padding: 2px 6px; border-radius: 3px; font-weight: bold; }
+  .danger { color: #dc3545; font-weight: bold; }
+  .success { color: #28a745; font-weight: bold; }
+  .warning { color: #ffc107; font-weight: bold; }
+  .metric-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 16px 0; }
+  .metric-card { background: #f8f9fa; border: 1px solid #e0e0e0; border-radius: 8px; padding: 16px; text-align: center; }
+  .metric-card .value { font-size: 28px; font-weight: bold; color: #0f3460; }
+  .metric-card .label { font-size: 11px; color: #666; margin-top: 4px; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; }
+  .badge-red { background: #fce4ec; color: #c62828; }
+  .badge-green { background: #e8f5e9; color: #2e7d32; }
+  .badge-blue { background: #e3f2fd; color: #1565c0; }
+  .badge-yellow { background: #fff8e1; color: #f57f17; }
+  .summary-box { background: #e8f4fd; border-left: 4px solid #0f3460; padding: 16px; margin: 16px 0; border-radius: 0 8px 8px 0; }
+  .action-box { background: #fff3e0; border-left: 4px solid #e94560; padding: 16px; margin: 16px 0; border-radius: 0 8px 8px 0; }
+  .toc { margin: 20px 0; }
+  .toc li { margin: 6px 0; font-size: 14px; }
+  .page-break { page-break-before: always; }
+  ul, ol { margin: 8px 0 8px 24px; }
+  li { margin: 4px 0; }
+  p { margin: 8px 0; }
+  .footer { text-align: center; color: #999; font-size: 10px; margin-top: 40px; padding-top: 16px; border-top: 1px solid #eee; }
+  .chart-placeholder { background: #f0f0f0; border: 1px dashed #ccc; padding: 20px; text-align: center; color: #888; margin: 12px 0; border-radius: 8px; }
+</style>
+</head>
+<body>
+
+<!-- 表紙 -->
+<div class="cover">
+  <h1>cycleZ 集客総合分析レポート</h1>
+  <div class="subtitle">SEO・Google Ads・GBP・コンテンツ・競合の全方位分析</div>
+  <div class="date">2026年4月20日</div>
+  <div class="brand">cycleZ（サイクルゼット）| 岡山市北区島田本町</div>
+</div>
+
+<!-- 目次 -->
+<h2>目次</h2>
+<ol class="toc">
+  <li>エグゼクティブサマリー</li>
+  <li>データソースと取得状況</li>
+  <li>SEO分析（検索順位・競合比較）</li>
+  <li>Google Ads パフォーマンス</li>
+  <li>GBP（Googleビジネスプロフィール）分析</li>
+  <li>コンテンツ分析（432記事の棚卸し）</li>
+  <li>競合比較（Web・GBP・SNS）</li>
+  <li>SNS分析</li>
+  <li>技術SEO評価</li>
+  <li>SWOT分析</li>
+  <li>改善アクションプラン（優先度順）</li>
+</ol>
+
+<div class="page-break"></div>
+
+<!-- 1. エグゼクティブサマリー -->
+<h2>1. エグゼクティブサマリー</h2>
+
+<div class="summary-box">
+  <strong>結論:</strong> cycleZは技術基盤（Next.js + JSON-LD）とコンテンツ量（432記事）で岡山の自転車店トップクラスだが、<strong>GA4・GSCのAPI連携未整備</strong>によりデータドリブンな改善サイクルが回っていない。Google Adsは低CPAで効率的に稼働中。最大の課題は「自転車 修理 岡山」での圏外と、GBP口コミ数での競合劣後。
+</div>
+
+<div class="metric-grid">
+  <div class="metric-card">
+    <div class="value">432</div>
+    <div class="label">総記事数</div>
+  </div>
+  <div class="metric-card">
+    <div class="value">4位</div>
+    <div class="label">「岡山 ロードバイク ショップ」</div>
+  </div>
+  <div class="metric-card">
+    <div class="value">¥128</div>
+    <div class="label">Google Ads CPA</div>
+  </div>
+  <div class="metric-card">
+    <div class="value">★4.6</div>
+    <div class="label">GBP評価</div>
+  </div>
+  <div class="metric-card">
+    <div class="value">72件</div>
+    <div class="label">GBP口コミ数</div>
+  </div>
+  <div class="metric-card">
+    <div class="value">1,866</div>
+    <div class="label">IGフォロワー</div>
+  </div>
+</div>
+
+<h3>最重要アクション TOP3</h3>
+<div class="action-box">
+  <ol>
+    <li><strong>GA4プロパティをAPI連携可能にする</strong> — 現在データ取得不可。月次レポートの自動化が不可能な状態</li>
+    <li><strong>「自転車 修理 岡山」でのSEO記事を追加</strong> — 月間300-1,000検索、CVR 10-20%の最高優先キーワード</li>
+    <li><strong>GBP口コミ100件突破を目指す</strong> — 現72件、WAVE BIKES 177件に大差。QRコード設置で月+5-10件</li>
+  </ol>
+</div>
+
+<div class="page-break"></div>
+
+<!-- 2. データソースと取得状況 -->
+<h2>2. データソースと取得状況</h2>
+
+<table>
+  <tr><th>データソース</th><th>状態</th><th>備考</th></tr>
+  <tr><td>Google Search Console（cycle-z.com）</td><td><span class="badge badge-red">権限なし</span></td><td>siteUnverifiedUser。firefitness@gmail.comにオーナー権限追加が必要</td></tr>
+  <tr><td>Google Search Console（vercel.app）</td><td><span class="badge badge-green">取得済</span></td><td>本番ドメインではないため参考値のみ（1件のみ）</td></tr>
+  <tr><td>GA4（cycleZ）</td><td><span class="badge badge-red">未連携</span></td><td>GA4プロパティがAPI連携アカウントに紐づいていない</td></tr>
+  <tr><td>Google Ads（995-624-3791）</td><td><span class="badge badge-red">権限なし</span></td><td>MCCアカウント経由の連携が必要</td></tr>
+  <tr><td>SEOライブ検索</td><td><span class="badge badge-green">取得済</span></td><td>3キーワードで上位5サイトを分析</td></tr>
+  <tr><td>コンテンツ（ローカル）</td><td><span class="badge badge-green">取得済</span></td><td>432記事の全frontmatter分析完了</td></tr>
+  <tr><td>CLAUDE.md蓄積データ</td><td><span class="badge badge-green">参照済</span></td><td>2026-03-19調査のAds・GBP・競合データ</td></tr>
+</table>
+
+<div class="action-box">
+  <strong>要対応:</strong> GA4・GSC・Google AdsのAPI権限を <code>firefitness.yuma@gmail.com</code> のサービスアカウントに付与すれば、今後は自動でデータ取得・月次レポート生成が可能になります。
+</div>
+
+<div class="page-break"></div>
+
+<!-- 3. SEO分析 -->
+<h2>3. SEO分析</h2>
+
+<h3>3-1. 主要キーワード検索順位（2026年4月20日時点）</h3>
+<table>
+  <tr><th>キーワード</th><th>月間検索Vol</th><th>cycleZ順位</th><th>1位サイト</th><th>評価</th></tr>
+  <tr><td>岡山 ロードバイク ショップ</td><td>200-800</td><td><strong>4位</strong></td><td>Freedom (livfre.jp)</td><td><span class="badge badge-blue">良好</span></td></tr>
+  <tr><td>岡山 クロスバイク おすすめ</td><td>100-300</td><td>外部記事で言及（3位・5位）</td><td>cyma記事</td><td><span class="badge badge-yellow">改善余地</span></td></tr>
+  <tr><td>岡山 自転車 修理</td><td>300-1,000</td><td><span class="danger">圏外</span></td><td>ママチャリ修理店</td><td><span class="badge badge-red">要対策</span></td></tr>
+  <tr><td>ロードバイク 初心者 岡山</td><td>50-200</td><td><strong>1位</strong>（3月調査）</td><td>cycleZ</td><td><span class="badge badge-green">最適</span></td></tr>
+  <tr><td>岡山 クロスバイク</td><td>100-300</td><td><strong>1位</strong>（3月調査）</td><td>cycleZ</td><td><span class="badge badge-green">最適</span></td></tr>
+</table>
+
+<h3>3-2. 検索結果での競合ポジション変化</h3>
+<p>「岡山 ロードバイク ショップ」で<strong>Freedom（livfre.jp）が2位に上昇</strong>。注目すべきは、Freedomが<strong>2026年3月15日からスポーツバイクレンタルサービス（RINCLE）を開始</strong>した点。レンタル需要の取り込みで検索露出が拡大している可能性。</p>
+
+<h3>3-3. キーワード戦略マトリクス</h3>
+<table>
+  <tr><th>優先度</th><th>キーワード</th><th>月間Vol</th><th>CVR予測</th><th>現状</th><th>必要アクション</th></tr>
+  <tr><td><span class="badge badge-red">最高</span></td><td>自転車 修理 岡山</td><td>300-1,000</td><td>10-20%</td><td>圏外</td><td>メンテナンス特化記事3本追加</td></tr>
+  <tr><td><span class="badge badge-red">最高</span></td><td>サイクリング 岡山</td><td>500-1,500</td><td>中</td><td>中位</td><td>コース紹介記事の充実</td></tr>
+  <tr><td><span class="badge badge-yellow">高</span></td><td>グラベルバイク 初心者</td><td>5,000-12,000</td><td>低</td><td>未着手</td><td>成長カテゴリ先取り記事</td></tr>
+  <tr><td><span class="badge badge-yellow">高</span></td><td>しまなみ海道 岡山から</td><td>ロングテール</td><td>高</td><td>未着手</td><td>しまなみゲートウェイ記事</td></tr>
+  <tr><td><span class="badge badge-blue">中</span></td><td>e-bike おすすめ 2026</td><td>3,000-8,000</td><td>低</td><td>未着手</td><td>e-bikeシリーズ記事</td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<!-- 4. Google Ads -->
+<h2>4. Google Ads パフォーマンス</h2>
+<p>※ 2026年3月19日調査時点のデータ（APIアクセス権限なし、管理画面から取得済み）</p>
+
+<h3>4-1. アカウント概要</h3>
+<table>
+  <tr><th>項目</th><th>値</th></tr>
+  <tr><td>アカウントID</td><td>995-624-3791</td></tr>
+  <tr><td>日予算合計</td><td>¥2,300/日（月約¥69,000）</td></tr>
+  <tr><td>最適化スコア</td><td>81%</td></tr>
+</table>
+
+<h3>4-2. 直近30日パフォーマンス（2026/2/17〜3/18）</h3>
+<div class="metric-grid">
+  <div class="metric-card">
+    <div class="value">1,694</div>
+    <div class="label">クリック数</div>
+  </div>
+  <div class="metric-card">
+    <div class="value">5.9万</div>
+    <div class="label">表示回数</div>
+  </div>
+  <div class="metric-card">
+    <div class="value">2.87%</div>
+    <div class="label">CTR</div>
+  </div>
+  <div class="metric-card">
+    <div class="value">260</div>
+    <div class="label">コンバージョン</div>
+  </div>
+  <div class="metric-card">
+    <div class="value">¥33,300</div>
+    <div class="label">月間費用</div>
+  </div>
+  <div class="metric-card">
+    <div class="value">¥128</div>
+    <div class="label">CPA</div>
+  </div>
+</div>
+
+<h3>4-3. キャンペーン構成</h3>
+<table>
+  <tr><th>キャンペーン名</th><th>タイプ</th><th>ステータス</th></tr>
+  <tr><td>P-Max</td><td>P-MAX</td><td><span class="badge badge-green">有効</span></td></tr>
+  <tr><td>ロードバイクの購入後に学ぶこと</td><td>P-MAX</td><td><span class="badge badge-green">有効</span></td></tr>
+  <tr><td>ロードバイクはじめてみませんか</td><td>P-MAX</td><td><span class="badge badge-green">有効</span></td></tr>
+  <tr><td>新生活にぴったりのロードバイク</td><td>P-MAX</td><td><span class="badge badge-green">有効</span></td></tr>
+  <tr><td>Local store visits and promotions</td><td>ローカル</td><td><span class="badge badge-red">停止</span></td></tr>
+</table>
+
+<h3>4-4. 全期間パフォーマンス（2017/4〜2026/3）</h3>
+<table>
+  <tr><th>指標</th><th>累計値</th></tr>
+  <tr><td>クリック数</td><td>92,900</td></tr>
+  <tr><td>表示回数</td><td>13,550,000</td></tr>
+  <tr><td>コンバージョン数</td><td>9,909</td></tr>
+  <tr><td>総費用</td><td>¥2,650,000</td></tr>
+  <tr><td>平均CPA</td><td>¥267</td></tr>
+</table>
+
+<h3>4-5. 改善アクション（Google推奨・最適化スコア81%→93%）</h3>
+<table>
+  <tr><th>カテゴリ</th><th>改善幅</th><th>具体内容</th><th>難易度</th></tr>
+  <tr><td>広告とアセット</td><td>+6%</td><td>サイトリンク6個追加（現在0個）+ 広告見出し2個追加</td><td>簡単</td></tr>
+  <tr><td>AI活用の基本</td><td>+12%</td><td>要確認（管理画面で詳細確認）</td><td>中</td></tr>
+  <tr><td>自動化キャンペーン</td><td>+6%</td><td>要確認</td><td>中</td></tr>
+  <tr><td>入札と予算</td><td>+4%</td><td>要確認</td><td>中</td></tr>
+</table>
+
+<div class="action-box">
+  <strong>即実行すべき:</strong> P-MAXアセットグループにサイトリンク6個を追加（初めての方へ、メンテナンス、フィッティング、アクセス、お問い合わせ、取扱ブランド）。これだけで最適化スコア+6%、CV向上が見込める。
+</div>
+
+<h3>4-6. 岡山自転車市場の広告競合状況</h3>
+<div class="summary-box">
+  <strong>ブルーオーシャン確認済み:</strong> 主要キーワード（岡山 ロードバイク、岡山 クロスバイク、ロードバイク 初心者 岡山、岡山 自転車 修理）で<strong>広告出稿ゼロ</strong>。CPC 50〜100円と予想され、極めて費用対効果が高い。
+</div>
+
+<div class="page-break"></div>
+
+<!-- 5. GBP分析 -->
+<h2>5. GBP（Googleビジネスプロフィール）分析</h2>
+
+<h3>5-1. cycleZ GBPステータス</h3>
+<table>
+  <tr><th>項目</th><th>値</th><th>評価</th></tr>
+  <tr><td>評価</td><td>★4.6（72件）</td><td><span class="badge badge-blue">良好</span></td></tr>
+  <tr><td>カテゴリ</td><td>自転車屋</td><td>適切</td></tr>
+  <tr><td>営業時間</td><td>11:00-19:00（水曜定休）</td><td>正確</td></tr>
+  <tr><td>最終投稿</td><td>4日前（3月調査時）</td><td><span class="badge badge-green">活発</span></td></tr>
+  <tr><td>オーナー返信</td><td>実施中</td><td><span class="badge badge-green">良好</span></td></tr>
+  <tr><td>NAP統一</td><td>サイト内は統一済み</td><td>外部サイトに不整合あり</td></tr>
+</table>
+
+<h3>5-2. 口コミ競合比較</h3>
+<table>
+  <tr><th>店舗</th><th>評価</th><th>口コミ数</th><th>差</th></tr>
+  <tr><td>WAVE BIKES 岡山</td><td>★4.5</td><td><strong>177件</strong></td><td>cycleZの2.5倍</td></tr>
+  <tr><td>なかやま</td><td>★4.6</td><td>89件</td><td>+17件</td></tr>
+  <tr><td><strong>cycleZ</strong></td><td><strong>★4.6</strong></td><td><strong>72件</strong></td><td>—</td></tr>
+  <tr><td>Giant Store 岡山</td><td>★4.9</td><td>47件</td><td>評価で劣後</td></tr>
+  <tr><td>岸本自転車店</td><td>★5.0</td><td>41件</td><td>少数精鋭</td></tr>
+</table>
+
+<h3>5-3. 外部サイテーション NAP整合性</h3>
+<table>
+  <tr><th>サイト</th><th>名前</th><th>住所</th><th>電話</th><th>対応</th></tr>
+  <tr><td>サイクルスタート</td><td class="danger">NG（"Cycle Z"表記）</td><td>OK</td><td>OK</td><td>修正依頼</td></tr>
+  <tr><td>5LINKS</td><td class="danger">NG（"サイクルZ"表記）</td><td>OK</td><td>OK</td><td>修正依頼</td></tr>
+  <tr><td>たびりん</td><td>OK</td><td>OK</td><td>OK</td><td>問題なし</td></tr>
+  <tr><td>Daytona Mobility</td><td>OK</td><td>OK</td><td>OK</td><td>問題なし</td></tr>
+  <tr><td>Facebook</td><td>要確認</td><td>要確認</td><td>要確認</td><td>手動確認</td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<!-- 6. コンテンツ分析 -->
+<h2>6. コンテンツ分析（432記事の棚卸し）</h2>
+
+<h3>6-1. カテゴリ別記事分布</h3>
+<table>
+  <tr><th>カテゴリ</th><th>記事数</th><th>割合</th><th>SEO貢献度</th></tr>
+  <tr><td>event</td><td>183</td><td>42.4%</td><td><span class="badge badge-yellow">低（時限的）</span></td></tr>
+  <tr><td>news</td><td>98</td><td>22.7%</td><td><span class="badge badge-yellow">低（速報型）</span></td></tr>
+  <tr><td>lineup</td><td>73</td><td>16.9%</td><td><span class="badge badge-blue">中（商品情報）</span></td></tr>
+  <tr><td>maintenance-blog</td><td>31</td><td>7.2%</td><td><span class="badge badge-green">高（検索意図合致）</span></td></tr>
+  <tr><td>event-report</td><td>18</td><td>4.2%</td><td><span class="badge badge-blue">中（一次情報）</span></td></tr>
+  <tr><td>初心者向け</td><td>11</td><td>2.5%</td><td><span class="badge badge-green">高（ファネル上位）</span></td></tr>
+  <tr><td>voice</td><td>5</td><td>1.2%</td><td><span class="badge badge-green">高（E-E-A-T）</span></td></tr>
+  <tr><td>アパレル</td><td>3</td><td>0.7%</td><td><span class="badge badge-blue">中</span></td></tr>
+  <tr><td>ロードバイク/コース/ミニベロ等</td><td>9</td><td>2.0%</td><td><span class="badge badge-green">高</span></td></tr>
+</table>
+
+<div class="summary-box">
+  <strong>課題:</strong> 記事の65%がevent/newsカテゴリ（時限的コンテンツ）。SEO資産として長期的に検索流入を生む「初心者向け」「メンテナンス」「コース紹介」カテゴリが圧倒的に不足。<strong>エバーグリーンコンテンツの割合を現在の10%→30%に引き上げる</strong>必要がある。
+</div>
+
+<h3>6-2. 投稿頻度の推移</h3>
+<table>
+  <tr><th>年</th><th>記事数</th><th>月平均</th><th>傾向</th></tr>
+  <tr><td>2020</td><td>85</td><td>7.1</td><td>ピーク</td></tr>
+  <tr><td>2021</td><td>39</td><td>3.3</td><td>減少</td></tr>
+  <tr><td>2022</td><td>43</td><td>3.6</td><td>横ばい</td></tr>
+  <tr><td>2023</td><td>55</td><td>4.6</td><td>回復</td></tr>
+  <tr><td>2024</td><td>39</td><td>3.3</td><td>減少</td></tr>
+  <tr><td>2025</td><td>31</td><td>2.6</td><td>減少</td></tr>
+  <tr><td>2026（4月まで）</td><td>32</td><td>8.0</td><td><span class="success">急増</span></td></tr>
+</table>
+
+<h3>6-3. 最新記事（2026年4月）</h3>
+<table>
+  <tr><th>日付</th><th>タイトル</th><th>カテゴリ</th></tr>
+  <tr><td>04/18</td><td>輪行袋ひとつで、自転車旅の選択肢が広がった話</td><td>ライド・お出かけ</td></tr>
+  <tr><td>04/17</td><td>ビンディングペダルを始める前に</td><td>初心者向け</td></tr>
+  <tr><td>04/16</td><td>春の自転車事故が急増する理由</td><td>ロードバイク</td></tr>
+  <tr><td>04/16</td><td>エントリーロードバイクはなぜ高くなったのか</td><td>ロードバイク</td></tr>
+  <tr><td>04/16</td><td>春は自転車事故が急増する</td><td>メンテナンス</td></tr>
+  <tr><td>04/04</td><td>バス＆サイクリング播磨国2026</td><td>event</td></tr>
+  <tr><td>04/01</td><td>岡山の大学生活、自転車だけでここまで動ける</td><td>初心者向け</td></tr>
+  <tr><td>04/01</td><td>4月の初心者講習会のお知らせ</td><td>news</td></tr>
+</table>
+<p><span class="success">良い傾向:</span> 2026年4月はSEO狙いのエバーグリーン記事が増えている（初心者向け、ロードバイク関連）。一次情報（お客様の相談事例）を含む記事も出始めている。</p>
+
+<div class="page-break"></div>
+
+<!-- 7. 競合比較 -->
+<h2>7. 競合比較</h2>
+
+<h3>7-1. Webサイト技術比較</h3>
+<table>
+  <tr><th>店舗</th><th>技術</th><th>ブログ</th><th>JSON-LD</th><th>GA4</th><th>Ads</th></tr>
+  <tr><td><strong>cycleZ</strong></td><td><strong>Next.js 16</strong></td><td><strong>432記事</strong></td><td><span class="success">あり</span></td><td>あり</td><td>あり</td></tr>
+  <tr><td>WAVE BIKES</td><td>カスタム+Nuxt.js</td><td>あり</td><td>なし</td><td>GTMのみ</td><td>なし</td></tr>
+  <tr><td>Freedom</td><td>カスタムCMS</td><td>活発</td><td>なし</td><td>不明</td><td>なし</td></tr>
+  <tr><td>なかやま</td><td>WordPress</td><td>毎日更新</td><td>なし</td><td>あり</td><td><span class="danger">あり</span></td></tr>
+  <tr><td>サイクルセンター</td><td>静的HTML</td><td>なし</td><td>なし</td><td>なし</td><td>なし</td></tr>
+</table>
+
+<h3>7-2. 競合の新しい動き（要注意）</h3>
+<div class="action-box">
+  <ul>
+    <li><strong>Freedom: スポーツバイクレンタルサービス「RINCLE」開始（2026/3/15）</strong> — 岡山初。「まずは体験。納得して選ぶ。」のコンセプト。検索露出増加の可能性大</li>
+    <li><strong>WAVE BIKES: TREK SPRING SALE実施中（2026/4）</strong> — 全店規模のキャンペーン。新人スタッフ紹介の投稿も活発化</li>
+    <li><strong>Freedomの「SPECIALIZED」ブランドページが充実</strong> — SPECIALIZED倉敷店を含め3拠点体制に拡大</li>
+  </ul>
+</div>
+
+<h3>7-3. GBP・SNS総合比較</h3>
+<table>
+  <tr><th>店舗</th><th>GBP評価</th><th>口コミ数</th><th>IGフォロワー</th><th>IG投稿/月</th><th>Strava</th></tr>
+  <tr><td><strong>cycleZ</strong></td><td><strong>★4.6</strong></td><td>72</td><td><strong>1,866</strong></td><td>~4</td><td><span class="danger">なし</span></td></tr>
+  <tr><td>WAVE BIKES</td><td>★4.5</td><td><strong>177</strong></td><td>852</td><td>~8</td><td>なし</td></tr>
+  <tr><td>Giant Store</td><td><strong>★4.9</strong></td><td>47</td><td>1,180</td><td>~17</td><td><strong>226名</strong></td></tr>
+  <tr><td>なかやま</td><td>★4.6</td><td>89</td><td>不明</td><td>不明</td><td>チームあり</td></tr>
+  <tr><td>Cicli Pioniere</td><td>—</td><td>少</td><td>1,721</td><td>不明</td><td>なし</td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<!-- 8. SNS分析 -->
+<h2>8. SNS分析</h2>
+
+<h3>8-1. Instagram</h3>
+<table>
+  <tr><th>指標</th><th>cycleZ</th><th>岡山1位との差</th></tr>
+  <tr><td>フォロワー数</td><td>1,866</td><td><span class="success">岡山自転車店で最多</span></td></tr>
+  <tr><td>投稿数</td><td>444</td><td>—</td></tr>
+  <tr><td>投稿頻度</td><td>月4回</td><td><span class="danger">Giant Store月17回の1/4</span></td></tr>
+</table>
+<p><strong>課題:</strong> フォロワー数は岡山トップだが、投稿頻度が最低クラス。月8回（週2回）を最低ラインとすべき。</p>
+
+<h3>8-2. Strava（コミュニティ基盤）</h3>
+<div class="action-box">
+  <strong>致命的ギャップ:</strong> cycleZにStravaクラブがない。Giant Store岡山は226名のStravaコミュニティを保有。Stravaクラブの作成はコスト0で、ライドイベント参加者を中心にコミュニティ基盤を即座に構築できる。
+</div>
+
+<div class="page-break"></div>
+
+<!-- 9. 技術SEO -->
+<h2>9. 技術SEO評価</h2>
+
+<table>
+  <tr><th>項目</th><th>状態</th><th>詳細</th></tr>
+  <tr><td>JSON-LD構造化データ</td><td><span class="badge badge-green">実装済</span></td><td>LocalBusiness[BikeStore] + WebSite + Article + BreadcrumbList</td></tr>
+  <tr><td>サイトマップ</td><td><span class="badge badge-green">実装済</span></td><td>454ページ登録</td></tr>
+  <tr><td>canonical URL</td><td><span class="badge badge-green">設定済</span></td><td>—</td></tr>
+  <tr><td>301リダイレクト</td><td><span class="badge badge-green">設定済</span></td><td>WordPress旧URL→新URL</td></tr>
+  <tr><td>OGP画像</td><td><span class="badge badge-green">自動生成</span></td><td>Puppeteerで記事ごと生成</td></tr>
+  <tr><td>GA4カスタムイベント</td><td><span class="badge badge-green">実装済</span></td><td>scroll_depth, cta_click, reading_time等</td></tr>
+  <tr><td>Clarity</td><td><span class="badge badge-green">稼働中</span></td><td>ID: vy736hbd97</td></tr>
+  <tr><td>Google Ads Tag</td><td><span class="badge badge-green">実装済</span></td><td>AW-854808130</td></tr>
+  <tr><td>Meta Pixel</td><td><span class="badge badge-yellow">コード準備済</span></td><td>環境変数未設定（広告配信時に有効化可能）</td></tr>
+  <tr><td>robots.txt</td><td><span class="badge badge-green">OK</span></td><td>—</td></tr>
+</table>
+
+<div class="summary-box">
+  <strong>技術SEOは岡山の自転車店で唯一のフル実装。</strong>JSON-LD、GA4カスタムイベント、Clarity、OGP自動生成まで揃っているのはcycleZだけ。この技術優位性をコンテンツ戦略で活かしきれていないのが現状の最大のもったいなさ。
+</div>
+
+<div class="page-break"></div>
+
+<!-- 10. SWOT分析 -->
+<h2>10. SWOT分析</h2>
+
+<table>
+  <tr>
+    <th style="width:50%; background:#2e7d32; color:white;">強み (Strengths)</th>
+    <th style="width:50%; background:#c62828; color:white;">弱み (Weaknesses)</th>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+        <li>技術スタック最先端（Next.js + JSON-LD）</li>
+        <li>432記事の豊富なコンテンツ資産</li>
+        <li>Google Ads CPA ¥128の高効率</li>
+        <li>IGフォロワー岡山最多（1,866）</li>
+        <li>GBP★4.6の高評価</li>
+        <li>SCOTT正規ディーラー</li>
+        <li>初心者歓迎の明確なポジション</li>
+        <li>アパレル充実（元アパレル店主）</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>GA4・GSCのAPI未連携（データ取得不可）</li>
+        <li>記事の65%が時限的コンテンツ</li>
+        <li>「自転車 修理 岡山」で圏外</li>
+        <li>口コミ72件（WAVE BIKES 177件に大差）</li>
+        <li>IG投稿頻度が月4回（最低ライン以下）</li>
+        <li>Stravaクラブなし</li>
+        <li>Ads サイトリンク0個</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <th style="background:#1565c0; color:white;">機会 (Opportunities)</th>
+    <th style="background:#f57f17; color:white;">脅威 (Threats)</th>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+        <li>Ads競合ゼロのブルーオーシャン</li>
+        <li>グラベルバイク・e-bike成長市場（CAGR 5-6%）</li>
+        <li>しまなみ海道34万人/年のゲートウェイ需要</li>
+        <li>岡山の晴れ日数全国1位（276.8日）</li>
+        <li>レンタル事業の未開拓市場</li>
+        <li>春（4-5月）の年間ピーク需要期</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li><strong>Freedom: レンタルサービス開始</strong>（先行）</li>
+        <li>WAVE BIKES: 3店舗体制 + TREK独占</li>
+        <li>なかやま: 唯一のGoogle Ads運用 + 毎日更新</li>
+        <li>Giant Store: ★4.9 + Stravaコミュニティ226名</li>
+        <li>Googleコアアプデリスク（FIREFITNESS経験済み）</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<div class="page-break"></div>
+
+<!-- 11. 改善アクションプラン -->
+<h2>11. 改善アクションプラン（優先度順）</h2>
+
+<h3>即実行（今週）</h3>
+<table>
+  <tr><th>#</th><th>アクション</th><th>効果</th><th>工数</th></tr>
+  <tr><td>1</td><td><strong>GA4プロパティにサービスアカウントを追加</strong>（firefitness.yuma@gmail.comに閲覧権限付与）</td><td>月次レポート自動化</td><td>10分</td></tr>
+  <tr><td>2</td><td><strong>GSC cycle-z.comにオーナー権限追加</strong></td><td>検索データAPI取得</td><td>10分</td></tr>
+  <tr><td>3</td><td><strong>Google Ads P-MAXにサイトリンク6個追加</strong></td><td>CV +6%見込み</td><td>30分</td></tr>
+  <tr><td>4</td><td><strong>Google Ads 広告見出し2個追加</strong>（「岡山駅すぐのcycleZ」「試乗車多数ご用意」）</td><td>最適化スコア向上</td><td>15分</td></tr>
+</table>
+
+<h3>短期（1ヶ月以内）</h3>
+<table>
+  <tr><th>#</th><th>アクション</th><th>狙うKW</th><th>期待効果</th></tr>
+  <tr><td>5</td><td><strong>「自転車 修理 岡山」向け記事3本</strong>（パンク修理、チェーン交換、ブレーキ調整）</td><td>自転車 修理 岡山</td><td>月間300-1,000検索の獲得</td></tr>
+  <tr><td>6</td><td><strong>GBP口コミ促進</strong>（カウンターにQRコード設置、納車時依頼）</td><td>—</td><td>月+5-10件、100件突破</td></tr>
+  <tr><td>7</td><td><strong>Stravaクラブ作成</strong></td><td>—</td><td>コミュニティ基盤構築（コスト0）</td></tr>
+  <tr><td>8</td><td><strong>IG投稿頻度を週2回（月8回）に引き上げ</strong></td><td>—</td><td>リーチ拡大</td></tr>
+  <tr><td>9</td><td><strong>しまなみ海道ガイド記事</strong></td><td>しまなみ海道 岡山</td><td>ロングテール流入</td></tr>
+</table>
+
+<h3>中期（3ヶ月以内）</h3>
+<table>
+  <tr><th>#</th><th>アクション</th><th>期待効果</th></tr>
+  <tr><td>10</td><td><strong>グラベルバイク・e-bike記事シリーズ開始</strong>（成長カテゴリ先取り）</td><td>全国KWでの流入獲得</td></tr>
+  <tr><td>11</td><td><strong>エバーグリーンコンテンツ比率を30%に引き上げ</strong>（初心者、メンテ、コース）</td><td>SEO資産の蓄積</td></tr>
+  <tr><td>12</td><td><strong>Google Ads MCCアカウント連携</strong>（API経由の自動レポート）</td><td>運用効率化</td></tr>
+  <tr><td>13</td><td><strong>NAP不整合の修正依頼</strong>（サイクルスタート、5LINKS）</td><td>ローカルSEO改善</td></tr>
+  <tr><td>14</td><td><strong>レンタルサービス検討</strong>（Freedom RINCLE対抗）</td><td>新規顧客獲得チャネル</td></tr>
+</table>
+
+<h3>ROI予測</h3>
+<table>
+  <tr><th>施策</th><th>投資</th><th>期待リターン（6ヶ月）</th><th>ROI</th></tr>
+  <tr><td>Adsサイトリンク追加</td><td>0円（既存予算内）</td><td>CV +6% ≒ 月+15件来店</td><td>∞</td></tr>
+  <tr><td>修理系記事3本</td><td>制作コストのみ</td><td>月30-100クリック × CVR15% ≒ 月5-15件来店</td><td>極めて高い</td></tr>
+  <tr><td>口コミQRコード</td><td>印刷費のみ（~¥1,000）</td><td>口コミ100件突破 → GBP表示順位UP</td><td>極めて高い</td></tr>
+  <tr><td>Stravaクラブ</td><td>0円</td><td>コミュニティ形成 → 紹介来店</td><td>∞</td></tr>
+</table>
+
+<div class="page-break"></div>
+
+<h2>付録: 検索季節性カレンダー</h2>
+<table>
+  <tr><th>時期</th><th>需要</th><th>推奨アクション</th></tr>
+  <tr><td>1-2月</td><td>低（-40-60%）</td><td>メンテナンス訴求、春準備記事</td></tr>
+  <tr><td>3月</td><td>回復開始</td><td>新生活・大学生向け、春セール</td></tr>
+  <tr><td><strong>4-5月</strong></td><td><strong>年間ピーク</strong></td><td><strong>← 今ここ。全力投入すべき時期</strong></td></tr>
+  <tr><td>6-8月</td><td>中（夏バテで微減）</td><td>夏用アパレル、室内トレーニング</td></tr>
+  <tr><td><strong>9-10月</strong></td><td><strong>第2ピーク</strong></td><td>秋のサイクリング、しまなみ</td></tr>
+  <tr><td>11-12月</td><td>減少</td><td>年末セール、冬メンテ</td></tr>
+</table>
+
+<div class="summary-box">
+  <strong>今（4月）は年間最大の需要期。</strong>修理系記事の追加、Ads最適化、口コミ促進を今週中に着手することで、ピーク需要を最大限取り込める。
+</div>
+
+<div class="footer">
+  cycleZ 集客総合分析レポート | 2026年4月20日作成 | データ基準日: 2026-03-19〜2026-04-20<br>
+  生成: Claude Code | cycleZ（サイクルゼット）岡山市北区島田本町1-1-47
+</div>
+
+</body>
+</html>

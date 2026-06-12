@@ -9,10 +9,7 @@ wp_url: "https://cycle-z.com/blog/2019/09/24/items-6/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/20647281/widget/large)
 
-  
-    
 
   ■　色落ちが楽しめるインディゴ染料染め
 
@@ -28,7 +25,7 @@ image: "/logo.png"
 
     ■　ヒザ裏のステッチによりペダリングしやすいシルエット
 
-    
+
     素　材　：　コットン95%　ポリウレタン5%
 
     サイズ　：　Sサイズ

@@ -1,5 +1,5 @@
 ---
-title: "SUPACAZ (スパカズ) FLY CAGE ano Limited Platinum &#038; Black One Size CG-108"
+title: "SUPACAZ (スパカズ) FLY CAGE ano Limited Platinum & Black One Size CG-108"
 date: "2020-11-30"
 description: ""
 category: "lineup"
@@ -9,9 +9,7 @@ wp_url: "https://cycle-z.com/blog/2020/11/30/items-76/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/34600595/widget/large)
 
-  
 
   size: 3inches*6.5inches*3.25inches
 

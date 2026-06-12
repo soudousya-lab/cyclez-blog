@@ -9,10 +9,7 @@ wp_url: "https://cycle-z.com/blog/2019/09/24/items-17/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/20643605/widget/large)
 
-  
-    
 
   ■　普段着としても使える自転車仕様のアロハシャツ
 

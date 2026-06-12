@@ -9,10 +9,7 @@ wp_url: "https://cycle-z.com/blog/2020/05/19/items-46/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/29147234/widget/large)
 
-  
-    
 
   ■ 自転車乗りのためのクルーネック（丸首）Tシャツ。
 

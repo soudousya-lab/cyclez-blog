@@ -9,7 +9,6 @@ wp_url: "https://cycle-z.com/blog/2023/06/24/items-86/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/74163541/widget/large)
 
 ■チェック柄がとってもキュートな半袖サイクルジャージ
 

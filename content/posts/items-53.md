@@ -9,9 +9,7 @@ wp_url: "https://cycle-z.com/blog/2020/06/12/items-53/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/30029396/widget/large)
 
-  
 
   ■ 平均的な日本人の手に合わせたタイトなフィット感。
 
@@ -19,7 +17,6 @@ image: "/logo.png"
 
   ■ 甲側・カフ・見返しの全ての縫い目をシームレスにしてベストなフィット性能
 
-  
 
   甲：ポリエステル80％、ポリウレタン20％
 

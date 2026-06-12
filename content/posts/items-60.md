@@ -9,9 +9,7 @@ wp_url: "https://cycle-z.com/blog/2020/06/12/items-60/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/30028826/widget/large)
 
-  
 
   ■ 通気性の良いコットンの夏向けグローブ。
 
@@ -21,11 +19,9 @@ image: "/logo.png"
 
   ■ 手首はベルクロ止め。
 
-  
 
   【素材】　手のひら：羊革、衝撃吸収材　／　手の甲：綿
 
-  
 
   【カラー】WHITE　ホワイト、BLACK　ブラック
 

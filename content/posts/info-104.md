@@ -1,5 +1,5 @@
 ---
-title: "4月25日(日)BASSO&#038;macchi cycles 試乗会&#038;オーダーフェアを開催します！！"
+title: "4月25日(日)BASSO&macchi cycles 試乗会&オーダーフェアを開催します！！"
 date: "2021-03-09"
 description: ""
 category: "event"

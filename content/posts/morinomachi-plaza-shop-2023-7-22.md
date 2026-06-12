@@ -15,60 +15,28 @@ image: "/logo.png"
 
 サイクルZ本店とはまた違う形で商品展開しておりますので、まだお越しになっていない方もぜひお立ち寄りください！
 
- 
 
 ### 杜の街店の商品ラインナップはこちら
 
-杜の街店のラインナップですが、新たにTOKYO wheelsさんの商品を取り扱っています！
+杜の街店では、普段の生活でも便利でおしゃれに使えて、自転車に乗るときにも活躍するアイテムを厳選してラインナップしています！
 
-![tokyo wheels](/images/wp/2023-07-tokyo-wheels-768x1024.jpg)
 
-自転車用の服は、乗っている時以外には着用できないものも多いですよね。
-
-しかし、こちらの店舗では普段の生活でも便利でおしゃれに使えて、自転車に乗るときにも活躍するアイテムを厳選してラインナップしています！
-
- 
-
-### TOKYO wheelsの中でも特に人気の商品
+### 特に人気の商品
 
 そんな中でも特に人気のある商品を1つご紹介します！
 
 それが、こちらのハニコポロ。
 
-		
-			#gallery-15 {
-				margin: auto;
-			}
-			#gallery-15 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-15 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-15 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![ハニコポロ1](/images/wp/2023-07-ad276e99a7f365abadfbe8f985aa1562-768x1024.jpg)
+![ハニコポロ1](/images/wp/2023-07-ad276e99a7f365abadfbe8f985aa1562-768x1024.jpg)
 
-			
-			
-				![ハニコポロ2](/images/wp/2023-07-fb1c67be6ba62f2923a22796a8a55fc9-768x1024.jpg)
 
-			
-		
+![ハニコポロ2](/images/wp/2023-07-fb1c67be6ba62f2923a22796a8a55fc9-768x1024.jpg)
+
+
 汗をかいてもベタつきにくい素材を採用するなど、自転車乗りにとって嬉しい服になっている上、普段着としてもめちゃくちゃ着回ししやすいオススメのポロシャツです！
-[https://www.tokyolife.co.jp/shop/twstore/030-0183-2203-0361](https://www.tokyolife.co.jp/shop/twstore/030-0183-2203-0361)
 
-この他にも、TOKYO wheelsの長く使いたくなるような商品を多数展示していますので、ぜひチェックしてみてください！！
+長く使いたくなるような商品を多数展示していますので、ぜひチェックしてみてください！！
 
- 
 
 ### isadoreやサイコロジーの商品も目白押し
 
@@ -83,67 +51,21 @@ image: "/logo.png"
 
 さらに、[サイコロジー](https://www.cycology.jp)のカラフルなバーテープやフロントバックからメインのジャージまで多数取り揃えています。
 
-		
-			#gallery-16 {
-				margin: auto;
-			}
-			#gallery-16 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-16 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-16 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![サイコロジー](/images/wp/2023-07-7ddec9937163f79f9096f2d12a0eb02e-768x1024.jpg)
+![サイコロジー](/images/wp/2023-07-7ddec9937163f79f9096f2d12a0eb02e-768x1024.jpg)
 
-			
-			
-				![アパレル展示](/images/wp/2023-07-318f2e4c117b9cd1f23de6df6c920700-768x1024.jpg)
 
-			
-		
+![アパレル展示](/images/wp/2023-07-318f2e4c117b9cd1f23de6df6c920700-768x1024.jpg)
+
+
 これらの商品を一度に手に取って見れられる機会はなかなかないと思います！
 
 そして、今後はステムデザインやリンプロジェクトの商品も追加していく予定ですので、ぜひ[インスタ](https://www.instagram.com/cyclez2015/?hl=ja)などで最新情報をチェックしてみてください。
 
-		
-			#gallery-17 {
-				margin: auto;
-			}
-			#gallery-17 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-17 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-17 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![LOG SAUCE](/images/wp/2023-07-2fb22d0f5217d080cc05b914e778680e-768x1024.jpg)
+![LOG SAUCE](/images/wp/2023-07-2fb22d0f5217d080cc05b914e778680e-768x1024.jpg)
 
-			
-			
-				![macchiのオーダー](/images/wp/2023-07-a69293c74867414f144ddbc3668d7a62-768x1024.jpg)
 
-			
-		
- 
+![macchiのオーダー](/images/wp/2023-07-a69293c74867414f144ddbc3668d7a62-768x1024.jpg)
+
 
 ### サイクルZ杜の街店の詳細情報
 
@@ -166,7 +88,6 @@ image: "/logo.png"
 ※自転車・バイクは入庫後、3時間以内は無料
 ※駐車場サービスは1,000円以上お買い上げで3時間無料
 
- 
 
 ### さらにビッグなアパレルイベントも企画
 
@@ -178,7 +99,6 @@ image: "/logo.png"
 
 ![BASSO展示](/images/wp/2023-07-371616175af211064e5f91476a829b0d-1024x768.jpg)
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -188,8 +108,4 @@ image: "/logo.png"
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

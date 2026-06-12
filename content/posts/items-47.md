@@ -1,5 +1,5 @@
 ---
-title: "【メンズ、レディース】STEMDESIGN(ステムデザイン) ■ ロングスリーブTシャツ　グラベル&#038;MTBジャージ"
+title: "【メンズ、レディース】STEMDESIGN(ステムデザイン) ■ ロングスリーブTシャツ　グラベル&MTBジャージ"
 date: "2020-05-19"
 description: ""
 category: "lineup"
@@ -9,10 +9,7 @@ wp_url: "https://cycle-z.com/blog/2020/05/19/items-47/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/29338871/widget/large)
 
-  
-    
 
   ■　吸湿速乾素材で幅広いシーンで使えるアイテム。
 

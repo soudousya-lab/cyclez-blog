@@ -1,5 +1,5 @@
 ---
-title: "5/1（土）2（日）BOMA&#038;YONEX試乗会を開催！"
+title: "5/1（土）2（日）BOMA&YONEX試乗会を開催！"
 date: "2021-04-22"
 description: ""
 category: "event"

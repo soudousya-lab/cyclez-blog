@@ -19,11 +19,9 @@ image: "/logo.png"
 
 今回はベストの利便性、使ってみてほしい場面の紹介をしていくゼーーーット！！
 
- 
 
 ### ベストの利便性
 
- 
 
 #### ＜❶ポケットに忍ばせられるコンパクトさ＞
 
@@ -49,34 +47,12 @@ image: "/logo.png"
 
 走行中に前面の風は出来るだけ防いで、背面は熱が篭りやすいので出来るだけ抜けを良くしています。
 
-		
-			#gallery-54 {
-				margin: auto;
-			}
-			#gallery-54 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-54 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-54 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![assos背面](/images/wp/2022-09-423eaf91e2b21836de26dd2480cfa871-768x1024.jpg)
+![assos背面](/images/wp/2022-09-423eaf91e2b21836de26dd2480cfa871-768x1024.jpg)
 
-			
-			
-				![assos背面メッシュ](/images/wp/2022-09-8dbedb1d293e46fc8037ca17ade31456-768x1024.jpg)
 
-			
-		
+![assos背面メッシュ](/images/wp/2022-09-8dbedb1d293e46fc8037ca17ade31456-768x1024.jpg)
+
+
 袖口の部分から風が入ると背中がパラシュートみたいになってしまうので、メッシュがあると更に抜けが良いですね。
 
 暖かさを担保しながらも、サイクリングは自らがかなり熱を出すので、風の通りを作り逃げ道を作ってあげることが大事なんです。
@@ -91,7 +67,6 @@ image: "/logo.png"
 
 サイクリングのコースは平坦だけじゃなくて常にアップダウンがあるので、この良さを知って欲しいです！
 
- 
 
 ### 意外と山道でも使えます
 
@@ -107,11 +82,9 @@ image: "/logo.png"
 
 山を登るのが更に快適になること間違いなしです。
 
- 
 
 ### サイクルZおすすめベスト紹介！
 
- 
 
 #### ＜①ASSOSの防風タイプ＞
 
@@ -119,34 +92,12 @@ image: "/logo.png"
 
 本当に風だけを防ぐ[MILLE GT WIND VEST](https://www.e-apst.com/products/mille-gt-wind-vest-black)！
 
-		
-			#gallery-55 {
-				margin: auto;
-			}
-			#gallery-55 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-55 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-55 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![assos防風ベスト背面](/images/wp/2022-09-fb11029345393096ea51a0716dd2d1cc.png)
+![assos防風ベスト背面](/images/wp/2022-09-fb11029345393096ea51a0716dd2d1cc.png)
 
-			
-			
-				![](/images/wp/2022-09-a2d5a5bdb917ec4aa2caa00b90374ba0.png)
 
-			
-		
+![](/images/wp/2022-09-a2d5a5bdb917ec4aa2caa00b90374ba0.png)
+
+
 画像引用元：[ASSOS PROSHOP TOKYO](https://www.e-apst.com/)
 
 防水機能を備えながらも蒸れはないように外に逃す。
@@ -159,40 +110,17 @@ image: "/logo.png"
 
 ベスト自体にポケットを設けていないため、本当に携帯性を重視した作りになっています。
 
- 
 
 #### ＜②ASSOSの背面メッシュタイプ＞
 
 こちらが完全に背中がメッシュ素材となったモデル、[MILLE GTS SPRING FALL VEST C2](https://www.e-apst.com/products/assos-mille-gts-spring-fall-vest-c2-black)！
 
-		
-			#gallery-56 {
-				margin: auto;
-			}
-			#gallery-56 .gallery-item {
-				float: left;
-				margin-top: 10px;
-				text-align: center;
-				width: 50%;
-			}
-			#gallery-56 img {
-				border: 2px solid #cfcfcf;
-			}
-			#gallery-56 .gallery-caption {
-				margin-left: 0;
-			}
-			/* see gallery_shortcode() in wp-includes/media.php */
-		
-		
-			
-				![assosのベスト背面](/images/wp/2022-09-d095f457a19ecf587831c30722134d93-768x1024.jpg)
+![assosのベスト背面](/images/wp/2022-09-d095f457a19ecf587831c30722134d93-768x1024.jpg)
 
-			
-			
-				![assos背面メッシュ](/images/wp/2022-09-8dbedb1d293e46fc8037ca17ade31456-768x1024.jpg)
 
-			
-		
+![assos背面メッシュ](/images/wp/2022-09-8dbedb1d293e46fc8037ca17ade31456-768x1024.jpg)
+
+
 実物で体感して欲しいのが正面の素材ですね。
 
 ![](/images/wp/2022-09-911405f94640e3d540e2add7cfbeeeed-768x1024.jpg)
@@ -203,7 +131,6 @@ image: "/logo.png"
 
 ジャージに近いような、それでいて撥水性もある不思議な触り心地です。
 
- 
 
 #### ＜③夜道も安心のsigr＞
 
@@ -219,7 +146,6 @@ image: "/logo.png"
 
 値段もASSOSよりお手頃です！
 
- 
 
 ### 秋のサイクリングシーズンをより快適に
 
@@ -227,7 +153,6 @@ image: "/logo.png"
 
 サイクリングに最高の季節はもう目の前ですよ！
 
- 
 
 ### 気軽に参加できる様々なイベントを企画してます！
 
@@ -237,8 +162,4 @@ image: "/logo.png"
 
 ぜひ、岡山駅すぐの初心者に優しいサイクルショップ、cycleZ（サイクルZ）へお気軽にお立ち寄りください(^^)/
 
- 
 
-[![](/images/wp/2019-09-beginner-sp-300x156.jpg)
-
-](https://cycle-z.com/first/)

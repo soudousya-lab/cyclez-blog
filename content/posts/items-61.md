@@ -9,11 +9,8 @@ wp_url: "https://cycle-z.com/blog/2020/09/03/items-61/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/30664732/widget/large)
 
-  
 
-  
   ■最新技術＋レトロスタイル。
 
   ■スワンクは、レトロなスタイルに現代のテクノロジーを組み合わせたモデル。

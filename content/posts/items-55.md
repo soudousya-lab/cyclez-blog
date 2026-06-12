@@ -9,9 +9,7 @@ wp_url: "https://cycle-z.com/blog/2020/06/12/items-55/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/30027016/widget/large)
 
-  
 
   ■ 超軽量かつエアロ効果抜群の新世代サマーグローブ。
 
@@ -19,11 +17,9 @@ image: "/logo.png"
 
   ■ 手のひら中央部には通気の為にパンチング加工が施され、夏場の暑い時期でも快適さを損なわない工夫を。
 
-  
 
   カラー：ブラックのみ
 
-  
 
   材質 : 50% PL, 40% PU, 10% PA
 

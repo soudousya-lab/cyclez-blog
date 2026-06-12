@@ -9,9 +9,8 @@ wp_url: "https://cycle-z.com/blog/2020/06/12/items-50/"
 image: "/logo.png"
 ---
 
-[埋め込みコンテンツ](https://webshop.cycle-z.com/items/30053559/widget/large)
 
-  
+
 ﻿
 
   ■ 耐久性と耐久性のある合成手のひらが通気性を向上。
