@@ -11,7 +11,7 @@ https://cyclez-blog-h7wev3r7o-soudousyas-projects.vercel.app/blog/surly-clubride
 Instagramカルーセル 5枚（1080x1350）:
 
 1. `public/images/social/surly-clubride-2026-06/slide1.png` — 表紙 / 世界観「日常とガチの間を走る朝」（朝の集合写真）
-2. `public/images/social/surly-clubride-2026-06/slide2.png` — 企画「あぐりガーデン・富岡珈琲へ」（カフェ写真）
+2. `public/images/social/surly-clubride-2026-06/slide2.png` — 企画「あぐりガーデン内の富岡珈琲でモーニング」（富岡珈琲モーニング写真）
 3. `public/images/social/surly-clubride-2026-06/slide3.png` — SURLYの価値「暮らしに馴染む」（Midnight Special）
 4. `public/images/social/surly-clubride-2026-06/slide4.png` — CLUB RIDE「走れる私服」（私服ライド写真）
 5. `public/images/social/surly-clubride-2026-06/slide5.png` — 開催概要 + フォローCTA（試乗車ラインナップ）
@@ -32,7 +32,7 @@ SURLY & CLUB RIDE WEEKEND at cycleZ
 サーリーの試乗車が11台、cycleZにやってきます。
 
 6/28(日)の朝は、そのSURLYに乗って朝活ライド。
-cycleZを7:30に出発して、あぐりガーデン・富岡珈琲方面へ。
+cycleZを7:30に出発して、あぐりガーデン内の富岡珈琲へ。朝のモーニングで一息ついて戻ってきます。
 距離は全体で約15km、11:00頃にはcycleZへ戻ってくる予定です。
 
 さらに今回は、カジュアルサイクルウェア「CLUB RIDE」も同時展開。
@@ -48,7 +48,7 @@ https://youtu.be/PNIjXJb3tko?si=t-89xvIbyWFc3lMN
 ■ SURLY朝活ライド
 6/28(日)
 7:30 cycleZ集合
-8:30〜9:00 あぐりガーデン・富岡珈琲方面到着予定
+8:30〜9:00 あぐりガーデン内の富岡珈琲に到着予定
 11:00 cycleZ帰着予定
 距離：約15km
 定員：15名前後
@@ -71,7 +71,7 @@ https://youtu.be/PNIjXJb3tko?si=t-89xvIbyWFc3lMN
 6/27(土)・28(日)に「SURLY & CLUB RIDE WEEKEND」を開催します。
 
 SURLYの試乗車が11台、cycleZにやってきます。
-6/28(日)朝は、試乗車に乗ってあぐりガーデン・富岡珈琲方面へ朝活ライドを行います。
+6/28(日)朝は、試乗車に乗ってあぐりガーデン内の富岡珈琲へ朝活ライドを行います。
 
 7:30 cycleZ集合
 11:00頃 帰着予定
