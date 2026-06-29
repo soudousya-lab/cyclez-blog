@@ -11,7 +11,7 @@
  * 終了コード: 0=OK / 1=エラーあり
  *
  * 検査項目:
- *   A. 事実性    （手動チェック項目を案内）
+ *   A. 事実性    2026-06-29以降の高リスク事実は fact_checked 必須
  *   B. 禁止表現  「特別な」「アドレナリン」「新たな発見」「もはや」など
  *   C. 禁止ブランド（SPECIALIZED, COLNAGO, TREK, CANNONDALE, BIANCHI, GIANT 等）
  *   D. CTA回数  電話/お問い合わせ/「ご来店」等を集計、2回以上で警告
@@ -78,6 +78,34 @@ const WP_REMNANTS = {
 
 const TARGET_MIN_CHARS = 2000;
 const TARGET_MAX_CHARS = 3000;
+const FACT_POLICY_EFFECTIVE_DATE = '2026-06-29';
+
+const HIGH_RISK_FACT_PATTERNS = [
+  {
+    label: '地名・アクセス・ルート',
+    re: /(コース|ルート|サイクリング|アクセス|行き方|道順|道路|県道|国道|橋|駅|河川敷|ダム|記念館|神社|寺|公園|駐車場|住所|所在地|徒歩|車で|自走|往復|片道|km|㎞|分|時間)/,
+  },
+  {
+    label: '日程・営業情報',
+    re: /(開催|開催日|日時|営業|営業時間|定休日|休業|予約|申込|受付|締切|雨天|延期|中止|午前|午後|\d{1,2}\/\d{1,2}|\d{1,2}月\d{1,2}日)/,
+  },
+  {
+    label: '価格・在庫・キャンペーン',
+    re: /(価格|料金|参加費|税込|税別|無料|割引|セール|キャンペーン|在庫|残り|限定|先着|台限り|円|万円|%|％)/,
+  },
+  {
+    label: '法律・安全・制度',
+    re: /(法律|道路交通法|青切符|違反|罰則|義務|努力義務|保険|ヘルメット|車道|歩道|一時停止|二段階右折|並走|右側通行)/,
+  },
+  {
+    label: '商品仕様・メーカー情報',
+    re: /(重量|サイズ|ジオメトリ|素材|カーボン|アルミ|クロモリ|コンポ|105|Tiagra|Sora|Claris|メーカー|公式|モデル|年式|型番)/,
+  },
+];
+
+const ROUTE_FACT_RE = /(コース|ルート|サイクリング|アクセス|行き方|道順|県道|国道|橋|駅|河川敷|ダム|記念館|神社|寺|公園|駐車場|往復|片道|km|㎞)/;
+const FIELD_SOURCE_RE = /(実走|現地|店長確認|スタッフ確認|Googleマップ|Google Maps|地図|ストリートビュー|Map)/i;
+const OFFICIAL_SOURCE_RE = /(公式|自治体|市|県|国交省|観光|メーカー公式|店舗公式|主催者|一次情報|店長確認|スタッフ確認)/;
 
 // ──────────── ヘルパー ────────────
 
@@ -93,6 +121,44 @@ function countOccurrences(text, pattern) {
     ? new RegExp(pattern.source, pattern.flags.includes('g') ? pattern.flags : pattern.flags + 'g')
     : new RegExp(pattern.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'g');
   return (text.match(re) || []);
+}
+
+function getFrontmatterValue(frontmatter, key) {
+  const re = new RegExp(`^${key}:\\s*["']?([^"'\\n]+)["']?\\s*$`, 'm');
+  return frontmatter.match(re)?.[1]?.trim() || '';
+}
+
+function getFrontmatterBoolean(frontmatter, key) {
+  return /^true$/i.test(getFrontmatterValue(frontmatter, key));
+}
+
+function parseFactSources(frontmatter) {
+  const lines = frontmatter.split('\n');
+  const idx = lines.findIndex(line => /^fact_sources:\s*/.test(line));
+  if (idx === -1) return [];
+
+  const inline = lines[idx].replace(/^fact_sources:\s*/, '').trim();
+  if (inline && inline !== '[]') {
+    return inline
+      .replace(/^\[/, '')
+      .replace(/\]$/, '')
+      .split(',')
+      .map(s => s.replace(/^["']|["']$/g, '').trim())
+      .filter(Boolean);
+  }
+
+  const sources = [];
+  for (let i = idx + 1; i < lines.length; i += 1) {
+    const m = lines[i].match(/^\s*-\s+(.+?)\s*$/);
+    if (!m) break;
+    sources.push(m[1].trim());
+  }
+  return sources;
+}
+
+function isPolicyTarget(frontmatter) {
+  const date = getFrontmatterValue(frontmatter, 'date');
+  return /^\d{4}-\d{2}-\d{2}$/.test(date) && date >= FACT_POLICY_EFFECTIVE_DATE;
 }
 
 function color(code, s) {
@@ -112,6 +178,43 @@ function lintArticle(filePath) {
   const errors = [];
   const warnings = [];
   const info = [];
+
+  // A. 高リスク事実の公開前チェック
+  const factSearchText = `${frontmatter}\n${body}`;
+  const factRiskLabels = HIGH_RISK_FACT_PATTERNS
+    .filter(({ re }) => re.test(factSearchText))
+    .map(({ label }) => label);
+
+  if (isPolicyTarget(frontmatter) && factRiskLabels.length > 0) {
+    const factSources = parseFactSources(frontmatter);
+    const hasRouteFacts = ROUTE_FACT_RE.test(factSearchText);
+
+    if (!getFrontmatterBoolean(frontmatter, 'fact_checked')) {
+      errors.push(`A: 高リスク事実（${factRiskLabels.join(' / ')}）があるため fact_checked: true が必須`);
+    }
+    if (!getFrontmatterValue(frontmatter, 'fact_checked_by')) {
+      errors.push('A: fact_checked_by が未記入');
+    }
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(getFrontmatterValue(frontmatter, 'fact_checked_at'))) {
+      errors.push('A: fact_checked_at は YYYY-MM-DD で記入');
+    }
+    if (factSources.length === 0) {
+      errors.push('A: fact_sources に公式情報・一次情報・実走確認などの根拠を1件以上記入');
+    }
+    if (hasRouteFacts && factSources.length < 2) {
+      errors.push('A: ルート/アクセス系の記事は fact_sources が2件以上必要（公式情報 + 地図/実走/現地確認）');
+    }
+    if (hasRouteFacts && !factSources.some(source => FIELD_SOURCE_RE.test(source))) {
+      errors.push('A: ルート/アクセス系の記事は実走・現地・地図確認の根拠が必要');
+    }
+    if (factSources.length > 0 && !factSources.some(source => OFFICIAL_SOURCE_RE.test(source))) {
+      errors.push('A: 公式情報・自治体・メーカー公式・一次情報・スタッフ確認のいずれかを fact_sources に含める');
+    }
+
+    if (errors.length === 0) {
+      info.push(`A: ファクトチェック済み (${factRiskLabels.join(' / ')}) ✓`);
+    }
+  }
 
   // B. 禁止表現
   for (const phrase of FORBIDDEN_PHRASES) {
