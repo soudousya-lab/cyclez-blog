@@ -56,6 +56,24 @@ export default function MaintenancePage() {
           </p>
         </div>
 
+        {/* 料金の目安 */}
+        <div className="bg-white rounded-2xl shadow-sm p-6 md:p-10 mb-8">
+          <h2 className="text-lg font-bold text-gray-900 mb-4">料金の目安</h2>
+          <ul className="space-y-2 text-gray-700">
+            <li className="flex items-baseline justify-between border-b border-gray-100 pb-2">
+              <span>タイヤ交換（工賃・1本）</span>
+              <span className="font-bold text-[#c41e3a]">1,650円〜</span>
+            </li>
+            <li className="flex items-baseline justify-between border-b border-gray-100 pb-2">
+              <span>パンク修理・変速やブレーキの調整</span>
+              <span className="text-gray-500 text-sm">店頭でお見積り</span>
+            </li>
+          </ul>
+          <p className="text-gray-500 text-sm mt-4">
+            料金は車種・状態により異なります。詳しくは店頭またはお電話でお気軽にお問い合わせください。他店でご購入の自転車も承ります。
+          </p>
+        </div>
+
         <div className="space-y-6">
           {items.map((item) => (
             <div key={item.num} className="bg-white rounded-2xl shadow-sm overflow-hidden">
