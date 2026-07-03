@@ -19,6 +19,12 @@ const nextConfig: NextConfig = {
         destination: "/blog/:slug",
         permanent: true,
       },
+      // 禁止ブランド(narifuri)を含む期限切れイベント記事を削除しアパレルカテゴリへ集約（2026-07-04）
+      {
+        source: "/blog/narifuri_assos_popupstore",
+        destination: "/category/アパレル",
+        permanent: true,
+      },
       // WP固定ページの旧URLリダイレクト
       {
         source: "/about-us",
