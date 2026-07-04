@@ -4,12 +4,35 @@
 cycleZ（岡山のスポーツバイクショップ）の公式ブログ。
 WordPressから完全移行済み。Markdownベースの記事管理、ブランドガイドライン厳守。
 
+## 公開面の最優先原則
+
+LP / SNS / ブログ / GBPは、分析資料ではなく「お客様に見せる接客面」。
+
+作成・改修前に必ず以下を固定する。
+- 誰に見せるか: 初心者、修理相談客、イベント参加検討者、車体・ウェア選びで迷う人
+- その人の不安: 費用、他店購入車の相談可否、予約の必要性、初心者でも浮かないか、店頭で何を聞けばよいか
+- 次に進ませる行動: 来店、メンテナンス予約、電話相談、問い合わせ、イベント参加
+
+内部の集客分析・広告/計測KPIは公開面の主題にしない。お客様の判断材料に変換できないものは、記事企画メモや内部レポートに留める。
+
 ## 技術スタック
 Next.js 16.1 (App Router) / TypeScript / Tailwind CSS / gray-matter / date-fns / Puppeteer（OG画像生成）
 
 ## コマンド
 - `npm run dev` — 開発サーバー
 - `npm run build` — ビルド確認
+
+## 公開コンテンツの禁止ジャンル
+
+分析・広告・計測の数字は、記事企画や内部改善には使ってよいが、公開記事・GBP・SNS本文には出さない。
+
+禁止例:
+- CVR / CTR / LTV / KPI / CPA / ROAS
+- GA4 / GSC / Search Console / Clarity / Google Ads
+- 広告費 / 表示回数 / クリック数 / コンバージョン / 問い合わせ数
+- 来店動線 / 決定率 / 契約率 / 入会率 / 成約率 / 顧客動線別の継続率分析 / 回遊率 / 滞在時間 / スクロール率
+
+公開記事は「お客様が知りたい自転車選び・修理・イベント・使い方」に限定する。分析背景は `content/article-plans/` や内部レポートに留め、`content/posts/` へ移す前に必ず削る。
 
 ## デプロイ
 - Vercel（cycle-z.com）
@@ -46,6 +69,7 @@ NEXT_PUBLIC_META_DOMAIN_VERIFICATION=  # Meta domain認証トークン
 | `share_click` | engagement | Twitter/LINEシェアボタン |
 | `reading_time` | engagement | ブログ記事30秒/60秒/3分経過 |
 | `reading_time_total` | engagement | ブログ記事離脱時（合計滞在時間） |
+| `social_landing` | acquisition | UTM付きSNSリンクまたはSNSリファラーでLP到達 |
 
 ### User Properties（GA4ユーザースコープ）
 - `first_touch_source` / `first_touch_medium` / `first_touch_campaign` — 初回接触チャネル
@@ -120,6 +144,19 @@ NEXT_PUBLIC_META_DOMAIN_VERIFICATION=  # Meta domain認証トークン
 | ブログ読了率 | 探索 → `reading_time_total` で平均滞在時間 | 月次 |
 | 流入チャネル | レポート → 集客 → ユーザー獲得 | 週次 |
 | シェア数 | 探索 → `share_click` をplatformでブレイクダウン | 月次 |
+
+### SNS流入リンク運用
+
+Instagramプロフィールやハイライトには直リンクではなく、計測用リンクを使う。
+
+```text
+https://cycle-z.com/sns/instagram?content=bio
+https://cycle-z.com/sns/instagram?content=highlight_beginner
+https://cycle-z.com/sns/instagram?content=highlight_test_ride
+https://cycle-z.com/sns/instagram?content=story_YYYYMMDD
+```
+
+`/sns/[source]` はトップページへUTM付きで302リダイレクトする。GA4では `social_landing`、Clarityでは `social_platform` / `traffic_content` タグで確認。
 
 ### GSC で確認すべき指標
 
@@ -526,6 +563,8 @@ narifuri, rapha, TOKYO WHEELS
 - [ ] 顧客・スタッフの行動を勝手に詳細化していないか？（「2台ずつ」と言われたら「ロード用と街乗り用」など創作しない）
 - [ ] イベントの開催頻度・納期・所要時間など、当店未確認の数字を書いていないか？
 - [ ] 公式サイトに明記されていない仕様を「想定で」書いていないか？
+- [ ] **写真を描写するなら、その写真を実際に開いて見てから書いたか？**（写っている事実だけ。例: イス＋テーブルでコーヒーを飲んでいるのに「草の上に腰を下ろして」と創作しない＝2026-06-29の実ミス）
+- [ ] **顧客の声を引用（`>`）で出すとき、本人が言った範囲に忠実か？**（終助詞・口調を足して“言っていない言い回し”を逐語引用に偽装しない。伝聞の感想は地の文の要約か原意のままに。店の解釈と顧客の発言は主語で分ける）
 
 ### B. 禁止表現
 - [ ] 「特別な」「アドレナリン」「新たな発見」を使っていないか？
@@ -563,6 +602,7 @@ narifuri, rapha, TOKYO WHEELS
 
 ### H. 公開前の最終チェック
 - [ ] **`npm run lint:article <slug>` を実行してパスしているか？**（このスクリプトが上記の機械チェック可能な項目を全て検査する）
+- [ ] **字数は書き上げた直後に lint で確認し、2000-3000字に一度で収めたか？**（公開間際に何度もトリムする往復をしない＝2026-06-29に5回トリムした反省）
 - [ ] `npm run build` でビルドが通るか？
 
 **ルール違反のまま公開してユーザーから指摘されるのは、書き直しコストが2倍になる。書く前に思い出し、書き終わったら必ず監査する。**

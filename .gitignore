@@ -44,3 +44,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .claude/worktrees/
+
+# ORBEA展示会 生写真（embargo: 新型オルカエアロ等を含むため公開・コミットしない。7/4解禁後に整理）
+/public/images/blog/ORBEA/
+
+# 内部分析データ（GSCインポート・PDCA指標。公開コンテンツに出さない/リポジトリに置かない）
+/data/

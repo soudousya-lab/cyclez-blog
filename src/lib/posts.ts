@@ -20,6 +20,8 @@ export interface PostData {
   image?: string;
   faq?: FaqItem[];
   content: string;
+  // 著者（staff.tsのslugを指定。未指定時はcycleZ公式扱い）
+  author?: string;
   // イベント申込・決済用フィールド
   price?: number;
   pair_price?: number;
@@ -58,6 +60,7 @@ export function getAllPosts(): PostData[] {
         image: data.image,
         faq: data.faq,
         content,
+        author: data.author,
         price: data.price,
         pair_price: data.pair_price,
         capacity: data.capacity,
@@ -88,6 +91,7 @@ export function getPostBySlug(slug: string): PostData | null {
       image: data.image,
       faq: data.faq,
       content,
+      author: data.author,
       price: data.price,
       pair_price: data.pair_price,
       capacity: data.capacity,
@@ -122,6 +126,13 @@ export function getEventPosts(limit: number): PostData[] {
 export function getEventReportPosts(limit: number): PostData[] {
   return getAllPosts()
     .filter((post) => post.category === "event-report")
+    .slice(0, limit);
+}
+
+// ホームの「イベント開催情報」枠用：告知(event)＋開催レポート(event-report)を合算（最新N件・日付降順）
+export function getEventSectionPosts(limit: number): PostData[] {
+  return getAllPosts()
+    .filter((post) => post.category === "event" || post.category === "event-report")
     .slice(0, limit);
 }
 

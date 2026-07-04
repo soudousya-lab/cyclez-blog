@@ -12,6 +12,7 @@ import type { PostData } from "@/lib/posts";
 import { getCategoryLabel, getCategoryColor } from "@/lib/categories";
 import DiagnosisQuiz from "./DiagnosisQuiz";
 import { MdPedalBike } from "react-icons/md";
+import SearchIntentAnswer from "./SearchIntentAnswer";
 
 // 回転するホイールSVG（CTA装飾用）
 function SpinningWheel({ className = "" }: { className?: string }) {
@@ -155,6 +156,20 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
           </div>
         </div>
       </section>
+
+      <SearchIntentAnswer
+        eyebrow="岡山でロードバイク・クロスバイクを始めたい方へ"
+        title="cycleZは、購入前の相談からメンテナンス、イベント参加まで一店で相談できる岡山駅近くのスポーツ自転車店です。"
+        answer="初めての一台を選ぶ人、久しぶりに自転車を再開したい人、買った後の整備が不安な人に向けて、車体・ウェア・フィッティング・メンテナンス・ライドイベントまでまとめて提案します。押し売りではなく、使い方や予算を聞きながら一緒に選ぶ接客を大切にしています。"
+        facts={[
+          "岡山市北区島田本町、岡山駅から徒歩圏内",
+          "ロードバイク・クロスバイク・サイクルウェアを相談可能",
+          "初心者講習会やイベントで購入後の継続もサポート",
+          "メンテナンスや修理相談は電話・予約フォームから受付",
+        ]}
+        primaryLink={{ href: "/first", label: "初めての方向けを見る" }}
+        secondaryLink={{ href: "/maintenance", label: "メンテナンスを見る" }}
+      />
 
       {/* バイク診断バナーCTA */}
       <section className="bg-gradient-to-r from-[#1a1a2e] via-[#16213e] to-[#0f3460]">

@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import PageBanner from "@/components/PageBanner";
+import SearchIntentAnswer from "@/components/SearchIntentAnswer";
 
 export const metadata: Metadata = {
   title: "初めての方へ | 初心者歓迎の岡山自転車屋",
@@ -63,6 +64,20 @@ export default function FirstPage() {
             </p>
           </div>
         </div>
+
+        <SearchIntentAnswer
+          eyebrow="岡山でロードバイク初心者の相談先を探している方へ"
+          title="最初の一台は、速さよりも「続けられるか」を基準に選ぶのがおすすめです。"
+          answer="cycleZでは、予算・体格・走りたい場所・服装の好みを聞いたうえで、ロードバイク、クロスバイク、ミニベロ、ウェア、メンテナンスまでまとめて提案します。買って終わりではなく、初心者講習会やイベントで乗り続けるきっかけも作っています。"
+          facts={[
+            "10万〜25万円前後の初めての一台も相談可能",
+            "試乗や店頭相談でサイズ感・乗り味を確認",
+            "ウェアやヘルメットまでトータルで提案",
+            "購入後のメンテナンス・イベント参加もサポート",
+          ]}
+          primaryLink={{ href: "/lineup", label: "取扱ブランドを見る" }}
+          secondaryLink={{ href: "/contact", label: "初心者相談をする" }}
+        />
 
         {/* おすすめポイント */}
         <h2 className="flex items-center gap-3 text-xl md:text-2xl font-bold text-gray-900 mb-6">

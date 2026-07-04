@@ -7,6 +7,7 @@ import Analytics from "@/components/Analytics";
 import { SiteJsonLd } from "@/components/JsonLd";
 import FloatingSns from "@/components/FloatingSns";
 import FloatingCta from "@/components/FloatingCta";
+import PostHogProvider from "@/components/PostHogProvider";
 
 const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
@@ -93,6 +94,7 @@ export default function RootLayout({
       </head>
       <body className={`${notoSansJP.variable} font-sans antialiased`}>
         <Analytics />
+        <PostHogProvider />
         <div className="min-h-screen flex flex-col">
           <Header />
           <main className="flex-grow">{children}</main>

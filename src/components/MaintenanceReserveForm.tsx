@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { trackFormSubmit } from "./Analytics";
 
 // メンテナンスメニューの型定義
 type MenuItem = {
@@ -212,6 +213,13 @@ export default function MaintenanceReserveForm() {
   // 送信ハンドラー（フロントエンドのみ）
   const handleSubmit = () => {
     setIsSubmitted(true);
+    // GA4 + PostHog: form_submit イベント送信
+    const submittedMenu = MENU_ITEMS.find((item) => item.id === selectedMenu);
+    trackFormSubmit("maintenance_reserve", "/maintenance/reserve", {
+      menu_id: submittedMenu?.id,
+      menu_title: submittedMenu?.title,
+      selected_date: selectedDate,
+    });
   };
 
   // 送信完了画面

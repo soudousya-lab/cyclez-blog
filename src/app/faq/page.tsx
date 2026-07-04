@@ -1,14 +1,23 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import PageBanner from "@/components/PageBanner";
+import { FaqJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "よくある質問",
-  description: "ロードバイク初心者の方からよくいただく質問をご紹介。価格、メーカー選び、パーツ、ヘルメットなどについて。",
+  title: "よくある質問 | 岡山のロードバイク初心者相談",
+  description: "岡山でロードバイク・クロスバイクを始めたい方からよくいただく質問。予算、メーカー選び、メンテナンス、ヘルメット、他店購入車の相談について。",
 };
 
 export default function FaqPage() {
   const faqs = [
+    {
+      q: "岡山でロードバイク初心者が相談しやすい自転車屋を探すなら、cycleZは向いていますか？",
+      a: "はい。cycleZは岡山駅近くのスポーツ自転車店で、初めての一台選び、ウェア、ヘルメット、購入後のメンテナンス、初心者講習会までまとめて相談できます。競技志向だけでなく、街乗り・週末ライド・運動不足解消から始めたい方も歓迎しています。",
+    },
+    {
+      q: "岡山でロードバイクやクロスバイクのメンテナンスだけ相談できますか？",
+      a: "相談できます。タイヤ交換、パンク、変速やブレーキの調整などは、車体の状態を確認して店頭で見積もります。他店購入や通販購入のスポーツバイクも、規格や状態を見ながら対応可否をご案内します。",
+    },
     {
       q: "ロードバイクって高そう",
       a: "確かにプロ選手が乗るような機材は100万円を超えるものがほとんどです。でも、初めてのロードバイクにそこまでの予算は必要ありません。今のご時世、10万〜25万円くらいのご予算で探されるのがおススメです。このくらいの価格帯からどのメーカーもラインナップが豊富になり、フレーム素材や部品の選択肢が一気に広がります。まずは気軽にご相談ください。",
@@ -37,6 +46,7 @@ export default function FaqPage() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
+      <FaqJsonLd faq={faqs.map((faq) => ({ question: faq.q, answer: faq.a }))} />
       <PageBanner
         title="よくある質問"
         subtitle="FAQ"

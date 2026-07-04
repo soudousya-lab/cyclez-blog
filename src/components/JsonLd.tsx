@@ -127,6 +127,52 @@ export function SiteJsonLd() {
   );
 }
 
+// スタッフ著者情報（Person構造化データ用）
+// staff.ts の slug をキーに、JSON-LD で使う著者情報を定義
+const AUTHOR_PROFILES: Record<string, {
+  name: string;
+  nameEn: string;
+  role: string;
+  description: string;
+  image: string;
+  certifications: string[];
+  sameAs?: string[];
+}> = {
+  okada: {
+    name: "岡田 宗明",
+    nameEn: "Muneaki Okada",
+    role: "代表 / オーナー",
+    description:
+      "cycleZ代表。40代でロードバイクをはじめ、初心者が安心して相談できるお店を目指して開業。ウェア・アパレル選びと輪行での自転車旅が得意。",
+    image: "/images/staff/okada.jpg",
+    certifications: ["自転車技士"],
+  },
+  nishii: {
+    name: "西井 翔太郎",
+    nameEn: "Shotaro Nishii",
+    role: "スタッフ / メカニック",
+    description:
+      "cycleZスタッフ。2017年末にロードバイクと出会い自転車業界へ。当店No.1のメカニック技術を持ち、レース経験も豊富なストイックサイクリスト。",
+    image: "/images/staff/nishii.jpg",
+    certifications: ["自転車技士", "自転車安全運転整備士"],
+  },
+  senda: {
+    name: "仙田 佑樹",
+    nameEn: "Yuki Senda",
+    role: "スタッフ",
+    description:
+      "cycleZスタッフ。自転車の造形や機能美に惚れてカスタムに没頭。バイクもウェアもトータルコーディネートで提案する穏やかな接客が持ち味。",
+    image: "/images/staff/senda.jpg",
+    certifications: ["自転車技士"],
+  },
+};
+
+// 著者のslugからPerson構造化データを取得
+export function getAuthorProfile(authorSlug?: string) {
+  if (!authorSlug || !AUTHOR_PROFILES[authorSlug]) return null;
+  return AUTHOR_PROFILES[authorSlug];
+}
+
 // ブログ記事用 Article JSON-LD
 export function ArticleJsonLd({
   title,
@@ -137,6 +183,7 @@ export function ArticleJsonLd({
   image,
   category,
   wordCount,
+  authorSlug,
 }: {
   title: string;
   description: string;
@@ -146,11 +193,44 @@ export function ArticleJsonLd({
   image?: string;
   category?: string;
   wordCount?: number;
+  authorSlug?: string;
 }) {
   const articleUrl = `${STORE_INFO.url}/blog/${slug}`;
   const articleImage = image
     ? (image.startsWith("http") ? image : `${STORE_INFO.url}${image}`)
     : STORE_INFO.image;
+
+  // 著者がfrontmatterで指定されていればPerson、なければOrganization
+  const authorProfile = authorSlug ? AUTHOR_PROFILES[authorSlug] : null;
+  const authorData = authorProfile
+    ? {
+        "@type": "Person",
+        "@id": `${STORE_INFO.url}/about/staff#${authorSlug}`,
+        name: authorProfile.name,
+        jobTitle: authorProfile.role,
+        description: authorProfile.description,
+        image: authorProfile.image.startsWith("http")
+          ? authorProfile.image
+          : `${STORE_INFO.url}${authorProfile.image}`,
+        worksFor: {
+          "@type": "BikeStore",
+          "@id": `${STORE_INFO.url}/#localbusiness`,
+          name: STORE_INFO.name,
+        },
+        ...(authorProfile.certifications.length > 0 && {
+          hasCredential: authorProfile.certifications.map((cert) => ({
+            "@type": "EducationalOccupationalCredential",
+            credentialCategory: "certification",
+            name: cert,
+          })),
+        }),
+        ...(authorProfile.sameAs && { sameAs: authorProfile.sameAs }),
+      }
+    : {
+        "@type": "Organization",
+        name: "cycleZ",
+        url: STORE_INFO.url,
+      };
 
   const article = {
     "@context": "https://schema.org",
@@ -161,11 +241,7 @@ export function ArticleJsonLd({
     image: articleImage,
     datePublished: date,
     dateModified: modifiedDate || date,
-    author: {
-      "@type": "Organization",
-      name: "cycleZ",
-      url: STORE_INFO.url,
-    },
+    author: authorData,
     publisher: {
       "@type": "Organization",
       name: "cycleZ",

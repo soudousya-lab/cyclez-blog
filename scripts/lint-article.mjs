@@ -18,6 +18,7 @@
  *   E. 文字数   2000-3000字レンジ
  *   F. WP残骸   gallery_shortcode / &#038; / 行頭タブ / 自己ドメイン絶対URL
  *   G. ブランド  禁止アパレルの混入
+ *   H. 公開禁止  運営者向けKPI/広告/計測分析語の混入
  */
 
 import { readFileSync, readdirSync, existsSync } from 'fs';
@@ -53,6 +54,14 @@ const BRAND_EXCEPTIONS = [
 ];
 
 const FORBIDDEN_APPAREL = ['narifuri', 'rapha', 'Rapha', 'TOKYO WHEELS', 'Tokyo Wheels', 'tokyo wheels'];
+
+const OPERATOR_CONTENT_TERMS = [
+  'CVR', 'CTR', 'LTV', 'KPI', 'CPA', 'ROAS',
+  '広告費', '表示回数', 'クリック数', 'コンバージョン',
+  'Google Ads', 'Search Console', 'GSC', 'GA4', 'Microsoft Clarity', 'Clarity',
+  '問い合わせ数', '来店動線', '決定率', '契約率', '入会率', '成約率',
+  '回遊率', '滞在時間', 'スクロール率',
+];
 
 // CTA判定パターン（記事内で1回のみ）
 const CTA_PATTERNS = [
@@ -179,6 +188,32 @@ function lintArticle(filePath) {
   const warnings = [];
   const info = [];
 
+  // 画像の実在チェック（欠落画像を参照する記事を承認・公開前にブロックする＝プレビューで画像が写らない事故の恒久防止）
+  {
+    const repoRoot = resolve(dirname(filePath), '..', '..'); // content/posts/x.md → リポジトリルート
+    const publicDir = join(repoRoot, 'public');
+    const checkImage = (src, where) => {
+      if (!src) return;
+      if (/^https?:\/\//i.test(src)) {
+        errors.push(`画像: ${where} が外部URL（${src}）。public/images に置いたローカルパスを使うこと（外部AI画像URL等は禁止）`);
+        return;
+      }
+      if (src.startsWith('/') && src !== '/logo.png') {
+        if (!existsSync(join(publicDir, src))) {
+          errors.push(`画像: ${where} が参照する public${src} が存在しない（画像を用意するか参照を削除。カバー無しは /logo.png）`);
+        }
+      }
+    };
+    checkImage(getFrontmatterValue(frontmatter, 'image'), 'frontmatter image');
+    const bodyImgRe = /!\[[^\]]*\]\(([^)]+)\)/g;
+    let mImg;
+    while ((mImg = bodyImgRe.exec(body)) !== null) {
+      const src = mImg[1].trim();
+      if (/\.(mp4|webm|mov)$/i.test(src)) continue; // 動画は対象外
+      checkImage(src, `本文画像 ![](${src})`);
+    }
+  }
+
   // A. 高リスク事実の公開前チェック
   const factSearchText = `${frontmatter}\n${body}`;
   const factRiskLabels = HIGH_RISK_FACT_PATTERNS
@@ -235,6 +270,13 @@ function lintArticle(filePath) {
   // G. 禁止アパレル
   for (const ap of FORBIDDEN_APPAREL) {
     if (body.includes(ap)) errors.push(`G: 禁止アパレル「${ap}」が混入`);
+  }
+
+  // H. 公開禁止ジャンル（運営者向けKPI/広告/計測分析）
+  const operatorSearchText = `${frontmatter}\n${body}`;
+  const operatorHits = OPERATOR_CONTENT_TERMS.filter(term => operatorSearchText.includes(term));
+  if (operatorHits.length > 0) {
+    errors.push(`H: 公開禁止ジャンル（運営者向けKPI/広告/計測分析語）が混入: ${operatorHits.join(', ')}`);
   }
 
   // D. CTA数 — パターンごとにマッチを集約。位置の近い（200文字以内）マッチは1グループとみなす

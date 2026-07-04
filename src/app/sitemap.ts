@@ -6,6 +6,7 @@ const BASE_URL = 'https://cycle-z.com';
 export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getAllPosts();
   const categories = getAllCategories();
+  const updatedAt = new Date('2026-06-30');
 
   const postEntries: MetadataRoute.Sitemap = posts.map((post) => ({
     url: `${BASE_URL}/blog/${post.slug}`,
@@ -17,31 +18,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // カテゴリページ
   const categoryEntries: MetadataRoute.Sitemap = categories.map((cat) => ({
     url: `${BASE_URL}/category/${encodeURIComponent(cat)}`,
-    lastModified: new Date(),
+    lastModified: updatedAt,
     changeFrequency: 'weekly' as const,
     priority: 0.6,
   }));
 
   // 固定ページ
-  const now = new Date();
   const staticPages: MetadataRoute.Sitemap = [
-    { url: `${BASE_URL}/about`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.7 },
-    { url: `${BASE_URL}/about/greeting`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.5 },
-    { url: `${BASE_URL}/first`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.7 },
-    { url: `${BASE_URL}/first/beginner`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.5 },
-    { url: `${BASE_URL}/maintenance`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.6 },
-    { url: `${BASE_URL}/fitting`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.6 },
-    { url: `${BASE_URL}/faq`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.6 },
-    { url: `${BASE_URL}/access`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.6 },
-    { url: `${BASE_URL}/contact`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.6 },
-    { url: `${BASE_URL}/lineup`, lastModified: now, changeFrequency: 'monthly' as const, priority: 0.7 },
-    { url: `${BASE_URL}/privacy`, lastModified: now, changeFrequency: 'yearly' as const, priority: 0.3 },
+    { url: `${BASE_URL}/about`, lastModified: updatedAt, changeFrequency: 'monthly' as const, priority: 0.7 },
+    { url: `${BASE_URL}/about/greeting`, lastModified: updatedAt, changeFrequency: 'monthly' as const, priority: 0.5 },
+    { url: `${BASE_URL}/first`, lastModified: updatedAt, changeFrequency: 'monthly' as const, priority: 0.7 },
+    { url: `${BASE_URL}/first/beginner`, lastModified: updatedAt, changeFrequency: 'monthly' as const, priority: 0.5 },
+    { url: `${BASE_URL}/maintenance`, lastModified: updatedAt, changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${BASE_URL}/fitting`, lastModified: updatedAt, changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${BASE_URL}/faq`, lastModified: updatedAt, changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${BASE_URL}/access`, lastModified: updatedAt, changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${BASE_URL}/contact`, lastModified: updatedAt, changeFrequency: 'monthly' as const, priority: 0.6 },
+    { url: `${BASE_URL}/lineup`, lastModified: updatedAt, changeFrequency: 'monthly' as const, priority: 0.7 },
+    { url: `${BASE_URL}/privacy`, lastModified: updatedAt, changeFrequency: 'yearly' as const, priority: 0.3 },
   ];
 
   return [
     {
       url: BASE_URL,
-      lastModified: new Date(),
+      lastModified: updatedAt,
       changeFrequency: 'weekly',
       priority: 1.0,
     },

@@ -9,7 +9,7 @@ image: "/logo.png"
 
 ## ORBEA試乗会開催決定！
 
-スペイン・バスク地方発祥、120年以上の歴史を誇るバイクブランド**ORBEA（オルベア）**の試乗会をcycleZにて開催します。
+スペイン・バスク地方発祥、180年以上の歴史を誇るバイクブランド**ORBEA（オルベア）**の試乗会をcycleZにて開催します。
 
 > **ORBEAのe-Road「GAIN」って何？という方はこちら**
 > 👉 [ORBEA GAINで分かる「電動×ロードバイク」のメリット｜e-Roadはここまで進化した](/blog/orbea-gain-e-road-bike-merit)

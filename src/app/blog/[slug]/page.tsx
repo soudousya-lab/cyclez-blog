@@ -9,9 +9,24 @@ import React, { ReactElement } from "react";
 import PageBanner from "@/components/PageBanner";
 import ImageLightbox from "@/components/ImageLightbox";
 import { ArticleJsonLd, FaqJsonLd } from "@/components/JsonLd";
+import { AuthorProfile } from "@/components/AuthorProfile";
+import { getStaffBySlug } from "@/lib/staff";
 import EventRegistrationForm from "@/components/EventRegistrationForm";
 import { FaMapMarkerAlt, FaBus, FaUtensils, FaBicycle, FaCheckCircle, FaTimesCircle, FaExclamationTriangle, FaMountain, FaWrench, FaPenAlt, FaLightbulb, FaUser, FaUsers, FaCamera } from "react-icons/fa";
 import { MdPedalBike } from "react-icons/md";
+import fs from "fs";
+import path from "path";
+
+// ビルド時に public 配下の実在を確認し、欠落しているローカル画像は描画しない（壊れ画像アイコンを絶対に出さない最終防衛線）。
+// 外部URL(http...)はそのまま通す（存在検証は lint 側でブロックする）。
+function localImageExists(src: string): boolean {
+  if (!src || !src.startsWith("/")) return true;
+  try {
+    return fs.existsSync(path.join(process.cwd(), "public", src));
+  } catch {
+    return true;
+  }
+}
 
 // インライン絵文字 → react-iconsマッピング（段落・引用・リスト・テーブル等で使用）
 const INLINE_EMOJI_ICONS: Record<string, ReactElement> = {
@@ -63,6 +78,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   // ブログ記事はcycleZロゴ+白背景の固定OGP画像
   const ogImage = "https://cycle-z.com/images/common/og-blog.jpg";
+  // 著者名（frontmatterにauthorがあればスタッフ名を使用）
+  const metaAuthorStaff = post.author ? getStaffBySlug(post.author) : null;
+  const authorName = metaAuthorStaff ? metaAuthorStaff.name : "cycleZ";
 
   return {
     title: post.title,
@@ -72,7 +90,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: post.description,
       type: "article",
       publishedTime: post.date,
-      authors: ["cycleZ"],
+      authors: [authorName],
       images: [
         {
           url: ogImage,
@@ -173,6 +191,27 @@ function formatContent(content: string): ReactElement[] {
       }
     }
     return finalParts;
+  };
+
+  const getYouTubeVideoId = (rawUrl: string): string | null => {
+    try {
+      const url = new URL(rawUrl);
+      const host = url.hostname.replace(/^www\./, "");
+      if (host === "youtu.be") {
+        return url.pathname.split("/").filter(Boolean)[0] || null;
+      }
+      if (host === "youtube.com" || host === "m.youtube.com") {
+        if (url.pathname.startsWith("/embed/")) {
+          return url.pathname.split("/").filter(Boolean)[1] || null;
+        }
+        if (url.pathname === "/watch") {
+          return url.searchParams.get("v");
+        }
+      }
+    } catch {
+      return null;
+    }
+    return null;
   };
 
   for (let i = 0; i < lines.length; i++) {
@@ -308,6 +347,26 @@ function formatContent(content: string): ReactElement[] {
       inTable = true;
       const cells = line.split("|").filter(cell => cell.trim() !== "");
       tableRows.push(cells);
+      continue;
+    }
+
+    // YouTube URL on its own line
+    const youtubeVideoId = getYouTubeVideoId(line.trim());
+    if (youtubeVideoId) {
+      elements.push(
+        <figure key={`youtube-${keyIndex++}`} className="my-8">
+          <div className="relative aspect-video w-full overflow-hidden rounded-lg bg-black shadow-sm">
+            <iframe
+              src={`https://www.youtube.com/embed/${youtubeVideoId}`}
+              title="YouTube video"
+              className="absolute inset-0 h-full w-full"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+        </figure>
+      );
       continue;
     }
 
@@ -476,6 +535,10 @@ function formatContent(content: string): ReactElement[] {
       const alt = imageMatch[1];
       const src = imageMatch[2];
       const isVideo = /\.(mp4|webm|mov)$/i.test(src);
+      // 欠落しているローカル画像は描画しない（壊れ画像を出さない）
+      if (!isVideo && !localImageExists(src)) {
+        continue;
+      }
       if (isVideo) {
         elements.push(
           <figure key={`vid-${keyIndex++}`} className="my-8 max-w-sm mx-auto">
@@ -549,10 +612,17 @@ function formatContent(content: string): ReactElement[] {
     }
 
     // Regular paragraph
+    // <br>を含む行は段落内改行（1文ごとに改行しつつ、段落間の余白は増やさない）
     if (line.trim()) {
+      const segments = line.split(/<br\s*\/?>/i);
       elements.push(
         <p key={`p-${keyIndex++}`} className="text-gray-700 leading-relaxed mb-5">
-          {parseInline(line)}
+          {segments.map((seg, i) => (
+            <span key={`seg-${i}`}>
+              {i > 0 && <br />}
+              {parseInline(seg)}
+            </span>
+          ))}
         </p>
       );
     }
@@ -582,6 +652,9 @@ export default async function PostPage({ params }: Props) {
   // 記事の文字数を概算（HTML除去）
   const wordCount = post.content.replace(/<[^>]*>/g, "").replace(/\s+/g, "").length;
 
+  // 著者情報の取得（frontmatterにauthorがあればスタッフ情報を参照）
+  const authorStaff = post.author ? getStaffBySlug(post.author) : null;
+
   return (
     <div className="bg-gray-50 min-h-screen">
       <ArticleJsonLd
@@ -592,6 +665,7 @@ export default async function PostPage({ params }: Props) {
         image={post.image}
         category={post.category}
         wordCount={wordCount}
+        authorSlug={post.author}
       />
       {/* FAQ構造化データ（frontmatterにfaqがある場合のみ出力） */}
       {post.faq && post.faq.length > 0 && (
@@ -610,7 +684,7 @@ export default async function PostPage({ params }: Props) {
           {/* Main content */}
           <article className="bg-white rounded-2xl shadow-sm p-6 md:p-10">
             {/* カバー画像 */}
-            {post.image && post.image !== "/logo.png" && (
+            {post.image && post.image !== "/logo.png" && localImageExists(post.image) && (
               <div className="mb-8 -mx-6 -mt-6 md:-mx-10 md:-mt-10">
                 <img
                   src={post.image}
@@ -626,16 +700,21 @@ export default async function PostPage({ params }: Props) {
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden">
                   <Image
-                    src="/images/logo/cyclezmainlogo.png"
-                    alt="cycleZ"
+                    src={authorStaff ? authorStaff.image : "/images/logo/cyclezmainlogo.png"}
+                    alt={authorStaff ? authorStaff.name : "cycleZ"}
                     width={48}
                     height={48}
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div>
-                  <p className="font-medium text-gray-900">cycleZ</p>
+                  <p className="font-medium text-gray-900">
+                    {authorStaff ? authorStaff.name : "cycleZ"}
+                  </p>
                   <div className="flex items-center gap-3 text-xs text-gray-500">
+                    {authorStaff && (
+                      <span className="text-[#c41e3a]">{authorStaff.role}</span>
+                    )}
                     <span className="flex items-center gap-1">
                       <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
@@ -666,6 +745,9 @@ export default async function PostPage({ params }: Props) {
                 />
               </div>
             )}
+
+            {/* 著者プロフィール（E-E-A-T強化） */}
+            <AuthorProfile authorSlug={post.author} />
 
             {/* Tags */}
             {post.tags && post.tags.length > 0 && (

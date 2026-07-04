@@ -3,6 +3,7 @@
 import Script from "next/script";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useEffect, useCallback, Suspense } from "react";
+import { captureCtaClick as posthogCtaClick, captureFormSubmit as posthogFormSubmit } from "./PostHogProvider";
 
 // GA4 測定ID
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || "";
@@ -49,8 +50,12 @@ function getPageName(pathname: string): string {
 
 export const pageview = (url: string) => {
   if (typeof window !== "undefined" && window.gtag) {
+    const pageLocation = url.startsWith("http")
+      ? url
+      : `${window.location.origin}${url}`;
     window.gtag("config", GA_MEASUREMENT_ID, {
       page_path: url,
+      page_location: pageLocation,
     });
   }
 };
@@ -89,6 +94,131 @@ function clarityEvent(eventName: string) {
   if (typeof window !== "undefined" && window.clarity) {
     window.clarity("event", eventName);
   }
+}
+
+// =========================================
+// SNS流入トラッキング
+// =========================================
+
+const SOCIAL_SOURCES = [
+  "instagram",
+  "facebook",
+  "threads",
+  "line",
+  "youtube",
+  "x",
+  "twitter",
+] as const;
+
+const SOCIAL_REFERRERS: Array<{ platform: string; host: string }> = [
+  { platform: "instagram", host: "instagram.com" },
+  { platform: "instagram", host: "l.instagram.com" },
+  { platform: "facebook", host: "facebook.com" },
+  { platform: "facebook", host: "l.facebook.com" },
+  { platform: "facebook", host: "m.facebook.com" },
+  { platform: "threads", host: "threads.net" },
+  { platform: "line", host: "line.me" },
+  { platform: "youtube", host: "youtube.com" },
+  { platform: "youtube", host: "youtu.be" },
+  { platform: "x", host: "x.com" },
+  { platform: "twitter", host: "t.co" },
+  { platform: "twitter", host: "twitter.com" },
+];
+
+type SocialLandingInfo = {
+  platform: string;
+  source: string;
+  medium: string;
+  campaign: string;
+  content: string;
+  term: string;
+  referrer: string;
+};
+
+function normalizeSocialSource(source: string | null): string {
+  const normalized = (source || "").toLowerCase().trim();
+  if (SOCIAL_SOURCES.includes(normalized as typeof SOCIAL_SOURCES[number])) {
+    return normalized;
+  }
+  return "";
+}
+
+function getReferrerPlatform(referrer: string): string {
+  if (!referrer) return "";
+
+  try {
+    const host = new URL(referrer).hostname.replace(/^www\./, "");
+    const match = SOCIAL_REFERRERS.find((item) => host === item.host || host.endsWith(`.${item.host}`));
+    return match?.platform || "";
+  } catch {
+    return "";
+  }
+}
+
+function getSocialLandingInfo(): SocialLandingInfo | null {
+  if (typeof window === "undefined") return null;
+
+  const params = new URLSearchParams(window.location.search);
+  const utmSource = normalizeSocialSource(params.get("utm_source"));
+  const utmMedium = (params.get("utm_medium") || "").toLowerCase();
+  const referrerPlatform = getReferrerPlatform(document.referrer);
+  const isSocialMedium = ["social", "paid_social", "organic_social"].includes(utmMedium);
+  const platform = utmSource || referrerPlatform;
+
+  if (!platform && !isSocialMedium) return null;
+
+  return {
+    platform: platform || "social",
+    source: params.get("utm_source") || platform || "unknown",
+    medium: params.get("utm_medium") || (referrerPlatform ? "social_referral" : "social"),
+    campaign: params.get("utm_campaign") || "none",
+    content: params.get("utm_content") || "none",
+    term: params.get("utm_term") || "none",
+    referrer: document.referrer || "direct",
+  };
+}
+
+function trackSocialLanding(info: SocialLandingInfo, pagePath: string, pageUrl: string) {
+  const eventKey = [
+    "cz_social_landing_sent",
+    pagePath,
+    info.source,
+    info.medium,
+    info.campaign,
+    info.content,
+  ].join(":");
+
+  if (sessionStorage.getItem(eventKey)) return;
+  sessionStorage.setItem(eventKey, "1");
+  sessionStorage.setItem("cz_last_social_touch", JSON.stringify({
+    ...info,
+    page_path: pagePath,
+    page_location: pageUrl,
+    timestamp: Date.now(),
+  }));
+
+  if (typeof window !== "undefined" && window.gtag) {
+    window.gtag("event", "social_landing", {
+      event_category: "acquisition",
+      event_label: `${info.platform}_${info.campaign}_${info.content}`,
+      social_platform: info.platform,
+      traffic_source: info.source,
+      traffic_medium: info.medium,
+      traffic_campaign: info.campaign,
+      traffic_content: info.content,
+      traffic_term: info.term,
+      page_path: pagePath,
+      page_location: pageUrl,
+      referrer: info.referrer,
+    });
+  }
+
+  clarityTag("traffic_source", info.source);
+  clarityTag("traffic_medium", info.medium);
+  clarityTag("traffic_campaign", info.campaign);
+  clarityTag("traffic_content", info.content);
+  clarityTag("social_platform", info.platform);
+  clarityEvent("social_landing");
 }
 
 // =========================================
@@ -156,6 +286,48 @@ export const trackCTAClick = (
       content_category: getPageName(pagePath),
     });
   }
+
+  // PostHog: cta_click イベント
+  posthogCtaClick(ctaType, pagePath, buttonLocation, buttonText);
+};
+
+// フォーム送信トラッキング（GA4 + PostHog統合）
+export const trackFormSubmit = (
+  formType: "contact" | "event_registration" | "maintenance_reserve" | "diagnosis",
+  pagePath: string,
+  formData?: Record<string, unknown>,
+) => {
+  // GA4
+  if (typeof window !== "undefined" && window.gtag) {
+    window.gtag("event", "form_submit", {
+      event_category: "conversion",
+      event_label: `${formType}_${getPageName(pagePath)}`,
+      form_type: formType,
+      page_path: pagePath,
+      page_name: getPageName(pagePath),
+    });
+  }
+  clarityEvent(`form_submit_${formType}`);
+
+  // Google Ads コンバージョン（お問い合わせフォーム）
+  if (typeof window !== "undefined" && window.gtag && GOOGLE_ADS_TAG_ID && formType === "contact") {
+    window.gtag("event", "conversion", {
+      send_to: `${GOOGLE_ADS_TAG_ID}/contact_form`,
+      event_category: "conversion",
+      value: 1,
+    });
+  }
+
+  // Meta Pixel
+  if (formType === "contact") {
+    trackMetaEvent("Lead", {
+      content_name: "contact_form_submit",
+      content_category: getPageName(pagePath),
+    });
+  }
+
+  // PostHog: form_submit イベント
+  posthogFormSubmit(formType, pagePath, formData);
 };
 
 // スクロール深度トラッキング
@@ -289,6 +461,11 @@ function PageViewTracker() {
 
     // Clarity: ページ情報をタグ付け
     clarityTag("page_name", getPageName(pathname));
+
+    const socialLandingInfo = getSocialLandingInfo();
+    if (socialLandingInfo) {
+      trackSocialLanding(socialLandingInfo, url, window.location.href);
+    }
 
     // Meta Pixel PageView（SPA遷移時のみ）
     if (!isInitialRender()) {
@@ -520,7 +697,7 @@ function MetaPixelScript() {
           s.parentNode.insertBefore(t,s)}(window, document,'script',
           'https://connect.facebook.net/en_US/fbevents.js');
           fbq('init', '${META_PIXEL_ID}');
-          var _initEventId = '${Date.now()}-' + Math.random().toString(36).substring(2, 11);
+          var _initEventId = Date.now() + '-' + Math.random().toString(36).substring(2, 11);
           fbq('track', 'PageView', {}, {eventID: _initEventId});
         `,
       }}
@@ -551,7 +728,8 @@ export default function Analytics() {
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
                 gtag('config', '${GA_MEASUREMENT_ID}', {
-                  page_path: window.location.pathname,
+                  page_path: window.location.pathname + window.location.search,
+                  page_location: window.location.href,
                   send_page_view: true
                 });
                 ${GOOGLE_ADS_TAG_ID ? `gtag('config', '${GOOGLE_ADS_TAG_ID}');` : ''}

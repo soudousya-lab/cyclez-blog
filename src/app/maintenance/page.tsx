@@ -1,11 +1,36 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import PageBanner from "@/components/PageBanner";
+import { FaqJsonLd } from "@/components/JsonLd";
+import SearchIntentAnswer from "@/components/SearchIntentAnswer";
 
 export const metadata: Metadata = {
-  title: "メンテナンス",
-  description: "ロードバイクに長く快適に乗るためのメンテナンス情報。cycleZでは初心者の方にもていねいに説明しています。",
+  title: "メンテナンス・自転車修理相談 | 岡山のロードバイク店",
+  description: "岡山でロードバイク・クロスバイクのメンテナンスや修理相談ならcycleZへ。タイヤ交換、パンク、変速・ブレーキ調整など、初心者にもわかりやすく案内します。",
 };
+
+const maintenanceFaqs = [
+  {
+    question: "岡山でロードバイクやクロスバイクの修理を相談できますか？",
+    answer:
+      "cycleZではロードバイク・クロスバイクのメンテナンス相談を受け付けています。タイヤ交換、パンク、変速やブレーキの調整など、車種や状態を確認したうえで店頭で見積もります。",
+  },
+  {
+    question: "他店や通販で購入した自転車も相談できますか？",
+    answer:
+      "他店で購入した自転車も承ります。部品規格や車体の状態によっては部品手配や預かりになる場合があるため、急ぎの場合は事前に電話で状況をお知らせください。",
+  },
+  {
+    question: "タイヤ交換の費用はいくらですか？",
+    answer:
+      "タイヤ交換の工賃は1本1,650円からです。タイヤ本体・チューブ・リムテープなどの部品代は別途必要で、サイズや状態によって総額は変わります。",
+  },
+  {
+    question: "予約なしでもメンテナンスできますか？",
+    answer:
+      "作業内容や混雑状況によって対応時間が変わるため、事前に予約フォームまたは電話で相談いただくとスムーズです。急なトラブルの場合はまずお電話ください。",
+  },
+];
 
 export default function MaintenancePage() {
   const items = [
@@ -43,10 +68,25 @@ export default function MaintenancePage() {
 
   return (
     <div className="bg-gray-50 min-h-screen">
+      <FaqJsonLd faq={maintenanceFaqs} />
       <PageBanner
         title="メンテナンス"
         subtitle="MAINTENANCE"
         breadcrumbs={[{ label: "メンテナンス" }]}
+      />
+
+      <SearchIntentAnswer
+        eyebrow="岡山で自転車修理・メンテナンスを探している方へ"
+        title="ロードバイクやクロスバイクの不調は、症状を見ながら必要な作業だけを一緒に確認します。"
+        answer="パンクやタイヤ交換、変速・ブレーキの違和感、乗る前の点検などは、状態によって原因も費用も変わります。cycleZでは初心者にもわかる言葉で説明し、店頭見積りのうえで作業内容を決めます。"
+        facts={[
+          "タイヤ交換工賃は1本1,650円から",
+          "他店購入・通販購入のスポーツバイクも相談可能",
+          "ブレーキ・変速・パンクは車体確認後に見積り",
+          "急ぎの相談は086-252-7744へ電話が確実",
+        ]}
+        primaryLink={{ href: "/maintenance/reserve", label: "メンテナンスを予約する" }}
+        secondaryLink={{ href: "/contact", label: "電話・問い合わせ先を見る" }}
       />
 
       <div className="max-w-4xl mx-auto px-4 py-10">
@@ -72,6 +112,18 @@ export default function MaintenancePage() {
           <p className="text-gray-500 text-sm mt-4">
             料金は車種・状態により異なります。詳しくは店頭またはお電話でお気軽にお問い合わせください。他店でご購入の自転車も承ります。
           </p>
+        </div>
+
+        <div className="bg-white rounded-2xl shadow-sm p-6 md:p-10 mb-8">
+          <h2 className="text-lg font-bold text-gray-900 mb-5">メンテナンス前によくある質問</h2>
+          <div className="space-y-5">
+            {maintenanceFaqs.map((faq) => (
+              <div key={faq.question} className="border-b border-gray-100 pb-5 last:border-0 last:pb-0">
+                <h3 className="font-bold text-gray-900 mb-2">Q. {faq.question}</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">A. {faq.answer}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="space-y-6">

@@ -1,0 +1,5 @@
+# ORBEA展示会の生写真（90枚）はデプロイしない。
+# エンバーゴは2026-07-02に解禁済みだが、生写真にはスタッフ・人物の写り込みがあるため
+# 引き続き直URL公開しない。記事で使う写真は選別のうえ public/images/posts/ 配下にコピーする。
+# 使用中: public/images/posts/orbea-brand/ / public/images/posts/orbea-orca-aero/
+public/images/blog/ORBEA

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { FaTicketAlt, FaBicycle, FaCheckCircle, FaUserFriends, FaUser, FaPhoneAlt, FaBus, FaUsers } from "react-icons/fa";
+import { trackFormSubmit } from "./Analytics";
 
 interface Props {
   eventSlug: string;
@@ -156,6 +157,13 @@ export default function EventRegistrationForm({
       }
 
       setSubmitted(true);
+      // GA4 + PostHog: form_submit イベント送信
+      trackFormSubmit("event_registration", `/blog/${eventSlug}`, {
+        event_slug: eventSlug,
+        event_title: eventTitle,
+        registration_type: registrationType,
+        price: currentPrice,
+      });
     } catch {
       setError("通信エラーが発生しました。もう一度お試しください");
       setSubmitting(false);

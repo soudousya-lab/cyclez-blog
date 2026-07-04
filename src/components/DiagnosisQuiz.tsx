@@ -5,6 +5,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { MdPedalBike, MdDirectionsBike } from "react-icons/md";
 import { FaBicycle, FaRoad, FaMountain, FaFlagCheckered, FaCity } from "react-icons/fa";
+import { capturePostHogEvent } from "./PostHogProvider";
+
+// ─── 計測ヘルパー（GA4 + PostHog 並行送信。PIIは送らない＝回答カテゴリのみ）──
+function trackDiagnosis(event: string, params: Record<string, unknown>) {
+  if (typeof window !== "undefined" && typeof window.gtag === "function") {
+    window.gtag("event", event, { event_category: "diagnosis", ...params });
+  }
+  capturePostHogEvent(event, params);
+}
 
 // ─── バイク画像・リンクマッピング ────────────────────────────
 const bikeData: Record<string, { image: string; url: string }> = {
@@ -324,6 +333,10 @@ export default function DiagnosisQuiz() {
   const handleUsage = useCallback((key: UsageKey) => {
     if (isTransitioning) return;
     setUsageKey(key);
+    trackDiagnosis("diagnosis_start", {
+      usage_key: key,
+      usage_label: usageOptions.find((u) => u.key === key)?.label,
+    });
     goNext("distance");
   }, [isTransitioning, goNext]);
 
@@ -345,8 +358,23 @@ export default function DiagnosisQuiz() {
   const handleDesign = useCallback((index: number) => {
     if (isTransitioning) return;
     setDesignIndex(index);
+    // 全回答が揃う＝診断完了。結果・予算・回答カテゴリを計測
+    if (usageKey !== null && distanceIndex !== null && budgetIndex !== null) {
+      const rt = calculateResult(usageKey, distanceIndex, budgetIndex, index);
+      const res = results[rt];
+      trackDiagnosis("diagnosis_complete", {
+        result_type: rt,
+        result_name: res.name,
+        usage_key: usageKey,
+        usage_label: usageOptions.find((u) => u.key === usageKey)?.label,
+        distance_label: distanceByUsage[usageKey][distanceIndex].label,
+        budget_label: budgetOptions[budgetIndex].label,
+        design_label: designOptions[index].label,
+        recommended_bikes: getBikesForBudget(res, budgetIndex).join(", "),
+      });
+    }
     goNext("result");
-  }, [isTransitioning, goNext]);
+  }, [isTransitioning, goNext, usageKey, distanceIndex, budgetIndex]);
 
   /** もう一度診断 */
   const handleRestart = useCallback(() => {
@@ -404,6 +432,14 @@ export default function DiagnosisQuiz() {
                       href={data?.url || "/lineup"}
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={() =>
+                        trackDiagnosis("diagnosis_bike_click", {
+                          bike,
+                          result_type: resultType,
+                          result_name: result.name,
+                          budget_label: budgetOptions[budgetIndex!].label,
+                        })
+                      }
                       className="group flex flex-col items-center bg-white rounded-xl border-2 border-gray-200 hover:border-[#c41e3a] hover:shadow-lg transition-all overflow-hidden"
                     >
                       {data?.image && (
@@ -440,6 +476,14 @@ export default function DiagnosisQuiz() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
               href="/contact"
+              onClick={() =>
+                trackDiagnosis("diagnosis_cta_click", {
+                  cta_type: "trial",
+                  result_type: resultType,
+                  result_name: result.name,
+                  recommended_bikes: bikes.join(", "),
+                })
+              }
               className="flex-1 inline-flex items-center justify-center gap-2 bg-[#c41e3a] text-white font-bold py-4 px-6 rounded-lg hover:bg-[#a31830] transition-colors text-center"
             >
               店舗で試乗する
