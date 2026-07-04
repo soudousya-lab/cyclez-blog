@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/lint-article.mjs --new",
+    "prebuild": "node scripts/check-public-funnel.mjs && node scripts/lint-article.mjs --new",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
@@ -15,10 +15,12 @@
   "dependencies": {
     "@supabase/supabase-js": "^2.101.1",
     "@types/leaflet": "^1.9.21",
+    "budoux": "^0.8.4",
     "date-fns": "^4.1.0",
     "gray-matter": "^4.0.3",
     "leaflet": "^1.9.4",
     "next": "16.1.6",
+    "posthog-js": "^1.391.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-icons": "^5.5.0",
@@ -34,6 +36,6 @@
     "eslint-config-next": "16.1.6",
     "puppeteer": "^24.40.0",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "5.9.3"
   }
 }
