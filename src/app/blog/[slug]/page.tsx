@@ -14,19 +14,6 @@ import { getStaffBySlug } from "@/lib/staff";
 import EventRegistrationForm from "@/components/EventRegistrationForm";
 import { FaMapMarkerAlt, FaBus, FaUtensils, FaBicycle, FaCheckCircle, FaTimesCircle, FaExclamationTriangle, FaMountain, FaWrench, FaPenAlt, FaLightbulb, FaUser, FaUsers, FaCamera } from "react-icons/fa";
 import { MdPedalBike } from "react-icons/md";
-import fs from "fs";
-import path from "path";
-
-// ビルド時に public 配下の実在を確認し、欠落しているローカル画像は描画しない（壊れ画像アイコンを絶対に出さない最終防衛線）。
-// 外部URL(http...)はそのまま通す（存在検証は lint 側でブロックする）。
-function localImageExists(src: string): boolean {
-  if (!src || !src.startsWith("/")) return true;
-  try {
-    return fs.existsSync(path.join(process.cwd(), "public", src));
-  } catch {
-    return true;
-  }
-}
 
 // インライン絵文字 → react-iconsマッピング（段落・引用・リスト・テーブル等で使用）
 const INLINE_EMOJI_ICONS: Record<string, ReactElement> = {
@@ -535,10 +522,6 @@ function formatContent(content: string): ReactElement[] {
       const alt = imageMatch[1];
       const src = imageMatch[2];
       const isVideo = /\.(mp4|webm|mov)$/i.test(src);
-      // 欠落しているローカル画像は描画しない（壊れ画像を出さない）
-      if (!isVideo && !localImageExists(src)) {
-        continue;
-      }
       if (isVideo) {
         elements.push(
           <figure key={`vid-${keyIndex++}`} className="my-8 max-w-sm mx-auto">
@@ -684,7 +667,7 @@ export default async function PostPage({ params }: Props) {
           {/* Main content */}
           <article className="bg-white rounded-2xl shadow-sm p-6 md:p-10">
             {/* カバー画像 */}
-            {post.image && post.image !== "/logo.png" && localImageExists(post.image) && (
+            {post.image && post.image !== "/logo.png" && (
               <div className="mb-8 -mx-6 -mt-6 md:-mx-10 md:-mt-10">
                 <img
                   src={post.image}
