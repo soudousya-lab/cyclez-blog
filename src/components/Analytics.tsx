@@ -259,6 +259,18 @@ export const trackCTAClick = (
       button_location: buttonLocation,
       button_text: (buttonText || "").slice(0, 100),
     });
+    // 電話タップは専用のクリーンなキーイベントも発火させる。
+    // cta_clickはInstagram/外部リンク等も含む混在イベントのため、
+    // 「実来店リード＝電話」だけを分離してGA4キーイベント化→Adsにインポートできるようにする。
+    if (ctaType === "phone") {
+      window.gtag("event", "phone_call", {
+        event_category: "conversion",
+        event_label: `phone_${getPageName(pagePath)}_${buttonLocation}`,
+        page_path: pagePath,
+        page_name: getPageName(pagePath),
+        button_location: buttonLocation,
+      });
+    }
   }
   clarityEvent(`cta_${ctaType}`);
 
