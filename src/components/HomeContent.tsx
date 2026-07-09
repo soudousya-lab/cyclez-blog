@@ -184,6 +184,46 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
         </div>
       </section>
 
+      {/* 取扱ブランド showcase — 人と被らない本物のブランドを前面に */}
+      <section className="py-10 sm:py-14 bg-white border-b border-gray-100">
+        <div className="max-w-5xl mx-auto px-4 text-center">
+          <p className="text-[#c41e3a] font-bold text-xs sm:text-sm tracking-[0.2em]">BRANDS</p>
+          <h2 className="mt-2 text-xl sm:text-2xl md:text-3xl font-bold text-gray-900">
+            人と被らない、本物のブランドが揃う
+          </h2>
+          <p className="mt-3 text-sm sm:text-base text-gray-600 leading-relaxed">
+            イタリアの名門から国産ハンドメイド、タフなスチールまで。
+            <br className="hidden sm:block" />
+            有名すぎない、けれど本物。あなたに似合う一台が、きっと見つかります。
+          </p>
+          <div className="mt-6 flex flex-wrap justify-center gap-2 sm:gap-3">
+            {[
+              "GIOS", "BASSO", "De Rosa", "Wilier", "SCOTT", "CERVELO", "CINELLI",
+              "LAPIERRE", "FELT", "BOMA", "BISYA", "SURLY", "JAMIS", "CYCLEHEART",
+              "Tyrell", "macchi cycles",
+            ].map((b) => (
+              <span
+                key={b}
+                className="bg-gray-50 border border-gray-200 text-gray-800 text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full"
+              >
+                {b}
+              </span>
+            ))}
+          </div>
+          <div className="mt-7">
+            <Link
+              href="/lineup"
+              className="inline-flex items-center gap-2 bg-white border border-[#c41e3a] text-[#c41e3a] font-bold text-sm px-6 py-2.5 rounded-full hover:bg-[#c41e3a] hover:text-white transition-colors"
+            >
+              取扱ブランドを見る
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <SearchIntentAnswer
         eyebrow="岡山でロードバイク・クロスバイクを始めたい方へ"
         title="cycleZは、購入前の相談からメンテナンス、イベント参加まで一店で相談できる岡山駅近くのスポーツ自転車店です。"
