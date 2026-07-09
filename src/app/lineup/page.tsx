@@ -275,21 +275,29 @@ export default function LineupPage() {
           </div>
         )}
 
-        {/* CTA */}
+        {/* 次の一歩 CTA — 迷ったら診断、決まってたら来店相談 */}
         <div className="mt-8 bg-gradient-to-r from-[#c41e3a]/10 to-[#c41e3a]/5 border-l-4 border-[#c41e3a] rounded-r-xl p-6">
-          <p className="font-bold text-gray-900 mb-2">気になるブランドがあればお気軽にご相談ください</p>
+          <p className="font-bold text-gray-900 mb-2">どれを選べばいいか迷ったら</p>
           <p className="text-gray-600 text-sm mb-4">
-            在庫状況やお取り寄せについても対応しています。まずはお店に遊びに来てみてください。
+            使い方と予算を5問答えるだけで、あなたに合う1台のタイプがわかります。気になるブランドの在庫・お取り寄せ・試乗も、お気軽にご相談ください。
           </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center gap-2 bg-[#c41e3a] text-white px-6 py-2.5 rounded-full hover:bg-[#a01830] transition-colors text-sm font-medium"
-          >
-            お問い合わせ
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </Link>
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href="/diagnosis"
+              className="inline-flex items-center gap-2 bg-[#c41e3a] text-white px-6 py-2.5 rounded-full hover:bg-[#a01830] transition-colors text-sm font-medium"
+            >
+              3分でバイク診断
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 bg-white border border-[#c41e3a] text-[#c41e3a] px-6 py-2.5 rounded-full hover:bg-[#c41e3a] hover:text-white transition-colors text-sm font-medium"
+            >
+              来店・お問い合わせ
+            </Link>
+          </div>
         </div>
       </div>
     </div>

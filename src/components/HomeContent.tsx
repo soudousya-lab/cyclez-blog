@@ -157,6 +157,33 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
         </div>
       </section>
 
+      {/* はじめての1台 診断CTA（最優先導線・ファーストビュー直後） */}
+      <section className="bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f3460] py-10 sm:py-14">
+        <div className="max-w-3xl mx-auto px-4 text-center">
+          <p className="text-[#ff5a6e] font-bold text-xs sm:text-sm tracking-wider mb-3">はじめての1台、迷いますよね</p>
+          <h2 className="text-white text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
+            あなたに合う最初の1台が、
+            <br className="sm:hidden" />
+            3分でわかる
+          </h2>
+          <p className="mt-4 text-gray-300 text-sm sm:text-base leading-relaxed">
+            使い方と予算を5問答えるだけ。cycleZスタッフが厳選した、
+            <br className="hidden sm:block" />
+            人と被らないおすすめの1台をご提案します。
+          </p>
+          <button
+            onClick={() =>
+              document.getElementById("bike-diagnosis")?.scrollIntoView({ behavior: "smooth" })
+            }
+            className="mt-7 inline-flex items-center gap-2 bg-[#c41e3a] hover:bg-[#a01830] text-white font-bold text-base sm:text-lg px-8 py-4 rounded-full transition-colors shadow-lg"
+          >
+            <MdPedalBike className="w-5 h-5" />
+            無料でバイク診断をはじめる →
+          </button>
+          <p className="mt-3 text-gray-400 text-xs">所要時間30秒 / 登録不要</p>
+        </div>
+      </section>
+
       <SearchIntentAnswer
         eyebrow="岡山でロードバイク・クロスバイクを始めたい方へ"
         title="cycleZは、購入前の相談からメンテナンス、イベント参加まで一店で相談できる岡山駅近くのスポーツ自転車店です。"
@@ -170,33 +197,6 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
         primaryLink={{ href: "/first", label: "初めての方向けを見る" }}
         secondaryLink={{ href: "/maintenance", label: "メンテナンスを見る" }}
       />
-
-      {/* バイク診断バナーCTA */}
-      <section className="bg-gradient-to-r from-[#1a1a2e] via-[#16213e] to-[#0f3460]">
-        <Link
-          href="#bike-diagnosis"
-          className="block max-w-6xl mx-auto px-4 py-5 sm:py-6"
-          onClick={(e) => {
-            e.preventDefault();
-            document.getElementById("bike-diagnosis")?.scrollIntoView({ behavior: "smooth" });
-          }}
-        >
-          <div className="flex items-center justify-between gap-4">
-            <div className="flex items-center gap-3 sm:gap-4">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#c41e3a] flex items-center justify-center flex-shrink-0 animate-pulse">
-                <MdPedalBike className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-              </div>
-              <div>
-                <p className="text-white font-bold text-sm sm:text-base">どのバイクが合う？ 5問でわかるバイク診断</p>
-                <p className="text-gray-300 text-xs mt-0.5 hidden sm:block">所要時間30秒 — あなたの使い方・予算に合った1台をご提案</p>
-              </div>
-            </div>
-            <div className="flex-shrink-0 bg-[#c41e3a] text-white text-xs sm:text-sm font-bold px-4 py-2 rounded-full hover:bg-[#a01830] transition-colors">
-              診断する →
-            </div>
-          </div>
-        </Link>
-      </section>
 
       {/* お知らせ一覧 NEWS */}
       <section className="py-10 sm:py-14 md:py-20 bg-gray-50">
