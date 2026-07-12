@@ -11,6 +11,7 @@ import ProgressRing from "./ProgressRing";
 import type { PostData } from "@/lib/posts";
 import { getCategoryLabel, getCategoryColor } from "@/lib/categories";
 import DiagnosisQuiz from "./DiagnosisQuiz";
+import SummerCampaignSection from "./SummerCampaignSection";
 import { MdPedalBike } from "react-icons/md";
 import SearchIntentAnswer from "./SearchIntentAnswer";
 
@@ -608,6 +609,9 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
           </ScrollReveal>
         </div>
       </section>
+
+      {/* サマーキャンペーン SUMMER CAMPAIGN（診断の直後・特価実車） */}
+      <SummerCampaignSection />
 
       {/* 中間バナー（背景動画 + 透過オーバーレイ） */}
       <section className="relative py-12 sm:py-16 md:py-20 overflow-hidden">
