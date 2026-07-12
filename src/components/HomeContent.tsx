@@ -239,6 +239,9 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
         secondaryLink={{ href: "/maintenance", label: "メンテナンスを見る" }}
       />
 
+      {/* サマーキャンペーン SUMMER CAMPAIGN（お知らせの上・特価実車） */}
+      <SummerCampaignSection />
+
       {/* お知らせ一覧 NEWS */}
       <section className="py-10 sm:py-14 md:py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-3 sm:px-4">
@@ -609,9 +612,6 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
           </ScrollReveal>
         </div>
       </section>
-
-      {/* サマーキャンペーン SUMMER CAMPAIGN（診断の直後・特価実車） */}
-      <SummerCampaignSection />
 
       {/* 中間バナー（背景動画 + 透過オーバーレイ） */}
       <section className="relative py-12 sm:py-16 md:py-20 overflow-hidden">
