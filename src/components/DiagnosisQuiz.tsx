@@ -6,6 +6,7 @@ import Link from "next/link";
 import { MdPedalBike, MdDirectionsBike } from "react-icons/md";
 import { FaBicycle, FaRoad, FaMountain, FaFlagCheckered, FaCity } from "react-icons/fa";
 import { capturePostHogEvent } from "./PostHogProvider";
+import { summerCampaign } from "@/data/summerCampaign";
 
 // ─── 計測ヘルパー（GA4 + PostHog 並行送信。PIIは送らない＝回答カテゴリのみ）──
 function trackDiagnosis(event: string, params: Record<string, unknown>) {
@@ -16,7 +17,7 @@ function trackDiagnosis(event: string, params: Record<string, unknown>) {
 }
 
 // ─── バイク画像・リンクマッピング ────────────────────────────
-const bikeData: Record<string, { image: string; url: string }> = {
+const bikeData: Record<string, { image?: string; url: string }> = {
   "GIOS MISTRAL": {
     image: "/images/bikes/gios-mistral.png",
     url: "https://www.job-cycles.com/gios/collection/detail3.php?MISTRAL-SHIMANO-11",
@@ -77,6 +78,34 @@ const bikeData: Record<string, { image: string; url: string }> = {
     image: "/images/bikes/jamis-renegade.jpg",
     url: "https://www.jamisbikes.com/store/Renegade-S3-p510793714",
   },
+  // ─ 取扱ブランドの定番モデル（2026-07追加・実在/価格帯を検証済み。画像=公式/正規代理店。CINELLI/BISYAは自社紹介ページ）─
+  "BASSO MONZA": { image: "/images/bikes/basso-monza.jpg", url: "https://www.job-cycles.com/basso/collection/index.php" },
+  "BASSO VENTA R": { image: "/images/bikes/basso-venta-r.png", url: "https://www.job-cycles.com/basso/collection/detail1.php?VENTA-R-2" },
+  "BASSO PALTA": { image: "/images/bikes/basso-palta.png", url: "https://www.job-cycles.com/basso/collection/detail1.php?PALTA-1" },
+  "BASSO DIAMANTE SV": { image: "/images/bikes/basso-diamante-sv.png", url: "https://www.job-cycles.com/basso/collection/detail1.php?SV-6" },
+  "De Rosa IDOL": { image: "/images/bikes/derosa-idol.jpg", url: "https://www.derosa.jp/products/new-idol-complete" },
+  "De Rosa MERAK": { image: "/images/bikes/derosa-merak.jpg", url: "https://www.derosa.jp/products/merak-2" },
+  "De Rosa TITANIO-X": { image: "/images/bikes/derosa-titanio-x.jpg", url: "https://www.derosa.jp/products/new-titanio-x" },
+  "De Rosa METAMORPHOSIS": { image: "/images/bikes/derosa-metamorphosis.jpg", url: "https://www.derosa.jp/products/metamorphosis" },
+  "De Rosa 838": { image: "/images/bikes/derosa-838.jpg", url: "https://www.derosa.jp/products/new-%E3%80%80838-shimano-105-di2-%E5%AE%8C%E6%88%90%E8%BB%8A" },
+  "FELT Verza Speed 50": { image: "/images/bikes/felt-verza-speed-50.jpg", url: "https://www.riteway-jp.com/bicycle/felt/product/verza-speed-50/" },
+  "FELT VR 4.0": { image: "/images/bikes/felt-vr-4.jpg", url: "https://www.riteway-jp.com/bicycle/felt/product/vr-4-0-advanced-105/" },
+  "FELT FR 4.0": { image: "/images/bikes/felt-fr-4.jpg", url: "https://www.riteway-jp.com/bicycle/felt/product/fr-4-0-advanced-105/" },
+  "Cervélo Áspero": { image: "/images/bikes/cervelo-aspero.jpg", url: "https://azuma-1911.jp/cervelo/products/aspero-grx-rx6002024/" },
+  "Cervélo Caledonia": { image: "/images/bikes/cervelo-caledonia.jpg", url: "https://azuma-1911.jp/cervelo/products/caledonia-r7120-105-%E5%AE%8C%E6%88%90%E8%BB%8A%EF%BC%882025%EF%BC%89-3%E8%89%B2%E5%B1%95%E9%96%8B/" },
+  "Cervélo Soloist": { image: "/images/bikes/cervelo-soloist.jpg", url: "https://azuma-1911.jp/cervelo/products/soloist-force-etap-axs-%E5%AE%8C%E6%88%90%E8%BB%8A%EF%BC%882023%EF%BD%9E2024%EF%BC%89-2%E8%89%B2%E5%B1%95%E9%96%8B/" },
+  "Cervélo R5": { image: "/images/bikes/cervelo-r5.jpg", url: "https://azuma-1911.jp/cervelo/products/r5-disc-r8170-ultegra-di2-%E5%AE%8C%E6%88%90%E8%BB%8A%EF%BC%882025%EF%BC%89-2%E8%89%B2%E5%B1%95%E9%96%8B/" },
+  "CINELLI Pressure II": { image: "/images/bikes/cinelli-pressure-ii.jpg", url: "/lineup/cinelli" },
+  "CINELLI Pressure ADR": { image: "/images/bikes/cinelli-pressure-adr.jpg", url: "/lineup/cinelli" },
+  "CINELLI King Zydeco II": { image: "/images/bikes/cinelli-king-zydeco-ii.jpg", url: "/lineup/cinelli" },
+  "CINELLI Gazzetta": { image: "/images/bikes/cinelli-gazzetta.jpg", url: "/lineup/cinelli" },
+  "LAPIERRE XELIUS SL": { image: "/images/bikes/lapierre-xelius-sl.jpg", url: "https://azuma-1911.jp/lapierre/products/xelius-sl-5-0/" },
+  "LAPIERRE SENSIUM": { image: "/images/bikes/lapierre-sensium.jpg", url: "https://azuma-1911.jp/lapierre/products/sensium-2-0/" },
+  "LAPIERRE CROSSHILL": { image: "/images/bikes/lapierre-crosshill.jpg", url: "https://azuma-1911.jp/lapierre/products/crosshill-3-0/" },
+  "LAPIERRE SHAPER": { image: "/images/bikes/lapierre-shaper.jpg", url: "https://azuma-1911.jp/lapierre/products/shaper-3-0-disc/" },
+  "BISYA TAMON": { image: "/images/bikes/bisya-tamon.jpg", url: "/lineup/bisya" },
+  "BISYA 四号機": { image: "/images/bikes/bisya-bis004.jpg", url: "/lineup/bisya" },
+  "BISYA 八号機": { image: "/images/bikes/bisya-bis008.jpg", url: "/lineup/bisya" },
 };
 
 // ─── 型定義 ─────────────────────────────────────────────
@@ -183,10 +212,10 @@ const results: Record<ResultType, Result> = {
     description:
       "通勤・買い物・ちょっとしたお出かけに最適。実用性と耐久性を兼ね備え、毎日の移動が楽しくなります。泥除けやキャリアも装着できるので、天候や荷物を気にせず使えます。",
     budgetBikes: {
-      under10: ["GIOS MISTRAL"],
-      under25: ["Tyrell IVE"],
+      under10: ["GIOS MISTRAL", "FELT Verza Speed 50"],
+      under25: ["Tyrell IVE", "CINELLI Gazzetta", "LAPIERRE SHAPER"],
       under50: ["SURLY Midnight Special"],
-      over50: [],
+      over50: ["De Rosa METAMORPHOSIS"],
     },
     icon: <FaCity className="w-14 h-14 text-white" />,
   },
@@ -211,8 +240,8 @@ const results: Record<ResultType, Result> = {
     description:
       "ドロップハンドルで風を切る爽快感。安定したジオメトリで、初めてのロードバイクでも安心して乗れます。週末ライドの世界が一気に広がる一台です。",
     budgetBikes: {
-      under10: ["GIOS SIERA"],
-      under25: ["Wilier GTR", "SCOTT Speedster"],
+      under10: ["GIOS SIERA", "BISYA TAMON"],
+      under25: ["Wilier GTR", "SCOTT Speedster", "BASSO MONZA", "LAPIERRE SENSIUM"],
       under50: [],
       over50: [],
     },
@@ -226,9 +255,9 @@ const results: Record<ResultType, Result> = {
       "振動吸収性に優れたフレーム設計で、100km超のライドでも身体への負担が少なく、週末のロングライドを存分に楽しめます。しまなみ海道や吉備路など、岡山発のロングライドにも最適です。",
     budgetBikes: {
       under10: [],
-      under25: ["SCOTT Speedster"],
-      under50: ["Wilier GARDA", "SCOTT Addict", "BOMA"],
-      over50: ["SCOTT Addict"],
+      under25: ["SCOTT Speedster", "BISYA 四号機", "BISYA 八号機"],
+      under50: ["Wilier GARDA", "SCOTT Addict", "BOMA", "De Rosa 838", "FELT VR 4.0", "Cervélo Caledonia"],
+      over50: ["SCOTT Addict", "BASSO VENTA R", "De Rosa IDOL", "CINELLI Pressure ADR"],
     },
     icon: <FaRoad className="w-14 h-14 text-white" />,
   },
@@ -241,8 +270,8 @@ const results: Record<ResultType, Result> = {
     budgetBikes: {
       under10: [],
       under25: [],
-      under50: ["GIOS AEROLITE", "SCOTT Addict", "BOMA"],
-      over50: ["SCOTT Addict RC", "ORBEA ORCA"],
+      under50: ["GIOS AEROLITE", "SCOTT Addict", "BOMA", "FELT FR 4.0"],
+      over50: ["SCOTT Addict RC", "ORBEA ORCA", "BASSO DIAMANTE SV", "De Rosa MERAK", "Cervélo Soloist", "Cervélo R5", "CINELLI Pressure II", "LAPIERRE XELIUS SL"],
     },
     icon: <FaFlagCheckered className="w-14 h-14 text-white" />,
   },
@@ -255,8 +284,8 @@ const results: Record<ResultType, Result> = {
     budgetBikes: {
       under10: [],
       under25: ["GIOS MITO", "JAMIS RENEGADE"],
-      under50: [],
-      over50: [],
+      under50: ["LAPIERRE CROSSHILL"],
+      over50: ["BASSO PALTA", "De Rosa TITANIO-X", "Cervélo Áspero", "CINELLI King Zydeco II"],
     },
     icon: <FaMountain className="w-14 h-14 text-white" />,
   },
@@ -303,6 +332,36 @@ function getBikesForBudget(result: Result, budgetIndex: number): string[] {
     }
   }
   return [];
+}
+
+// ─── サマーキャンペーン特価車の連携（在庫連動） ──────────────
+// 各特価車モデルが当てはまる診断タイプ（在庫データはsummerCampaign側で管理）
+const campaignTypeMap: Record<string, ResultType[]> = {
+  "IMOLA": ["entry"],
+  "PANTO 105": ["entry", "city"],
+  "NATURE CARBON": ["endurance", "entry"],
+  "ALLUMER disc": ["endurance"],
+  "D-OLA Ⅱ": ["gravel"],
+  "RASOR Ⅱ": ["racing"],
+};
+
+/** 特価（税込）から予算帯インデックス(0:〜10 1:〜25 2:〜50 3:50万〜)を返す */
+function priceTierIndex(price: number): number {
+  if (price < 100000) return 0;
+  if (price < 250000) return 1;
+  if (price < 500000) return 2;
+  return 3;
+}
+
+/** 結果タイプ・予算に合う「在庫あり特価車」を返す（売切れ・キャンペーン終了で自動的に空になる） */
+function getCampaignDeals(resultType: ResultType, budgetIndex: number) {
+  if (!summerCampaign.active) return [];
+  return summerCampaign.bikes.filter((b) => {
+    if (b.soldOut) return false;
+    const types = campaignTypeMap[b.model] ?? [];
+    if (!types.includes(resultType)) return false;
+    return priceTierIndex(b.salePrice) <= budgetIndex; // 予算内に収まる特価車のみ
+  });
 }
 
 // ─── コンポーネント ─────────────────────────────────────
@@ -399,6 +458,7 @@ export default function DiagnosisQuiz() {
   if (step === "result" && resultType) {
     const result = results[resultType];
     const bikes = getBikesForBudget(result, budgetIndex!);
+    const deals = getCampaignDeals(resultType, budgetIndex!);
 
     return (
       <section className="max-w-2xl mx-auto px-4 py-12 md:py-16">
@@ -414,6 +474,67 @@ export default function DiagnosisQuiz() {
           {/* 説明 */}
           <p className="text-gray-300 leading-relaxed mb-8 text-center">{result.description}</p>
 
+          {/* 在庫あり特価車（サマーキャンペーン連動・売切れ/終了で自動非表示） */}
+          {deals.length > 0 && (
+            <div className="bg-white rounded-xl p-5 mb-6 border-2 border-[#c41e3a]/40">
+              <div className="flex items-center justify-center gap-2 mb-1">
+                <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full rounded-full bg-[#c41e3a] opacity-75 animate-ping" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-[#c41e3a]" />
+                </span>
+                <h3 className="text-sm font-bold text-[#c41e3a] tracking-wide">今なら特価・在庫あり</h3>
+              </div>
+              <p className="text-xs text-gray-400 text-center mb-4">
+                あなたのタイプと予算に合う特価車が店頭にあります
+              </p>
+              <div className="grid gap-3 grid-cols-1">
+                {deals.map((bike) => {
+                  const off = bike.listPrice - bike.salePrice;
+                  const pct = Math.round((off / bike.listPrice) * 100);
+                  return (
+                    <Link
+                      key={bike.model}
+                      href={`/blog/${summerCampaign.articleSlug}`}
+                      onClick={() =>
+                        trackDiagnosis("diagnosis_campaign_click", {
+                          bike: `${bike.brand} ${bike.model}`,
+                          result_type: resultType,
+                          budget_label: budgetOptions[budgetIndex!].label,
+                        })
+                      }
+                      className="group flex items-center gap-3 bg-gray-50 rounded-xl border-2 border-gray-200 hover:border-[#c41e3a] hover:shadow-md transition-all overflow-hidden p-2.5"
+                    >
+                      <div className="relative w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden bg-white">
+                        <Image src={bike.image} alt={bike.alt} fill className="object-cover" sizes="96px" />
+                        <span className="absolute top-0 left-0 bg-[#c41e3a] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-br-lg">
+                          {pct}%OFF
+                        </span>
+                      </div>
+                      <div className="flex-1 min-w-0">
+                        <div className="text-[11px] text-gray-500 font-bold">
+                          {bike.brand}・サイズ{bike.size}
+                        </div>
+                        <div className="font-bold text-gray-900 text-sm truncate">{bike.model}</div>
+                        <div className="mt-1 flex items-baseline gap-1.5 flex-wrap">
+                          <span className="text-xs text-gray-400 line-through">
+                            ¥{bike.listPrice.toLocaleString("ja-JP")}
+                          </span>
+                          <span className="text-lg font-extrabold text-[#c41e3a]">
+                            ¥{bike.salePrice.toLocaleString("ja-JP")}
+                          </span>
+                        </div>
+                      </div>
+                      <svg className="w-4 h-4 text-[#c41e3a] flex-shrink-0 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </Link>
+                  );
+                })}
+              </div>
+              <p className="text-xs text-gray-400 text-center mt-3">タップで特価車の詳細へ（各1台限り・なくなり次第終了）</p>
+            </div>
+          )}
+
           {/* おすすめ車種 */}
           {bikes.length > 0 && (
             <div className="bg-gray-50 rounded-xl p-6 mb-8">
@@ -424,14 +545,15 @@ export default function DiagnosisQuiz() {
                 ご予算「{budgetOptions[budgetIndex!].label}」に合わせたおすすめ
               </p>
               <div className="grid gap-4 grid-cols-1">
-                {bikes.map((bike) => {
+                {bikes.slice(0, 6).map((bike) => {
                   const data = bikeData[bike];
+                  const isInternal = !!data?.url?.startsWith("/");
                   return (
                     <a
                       key={bike}
                       href={data?.url || "/lineup"}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      target={isInternal ? undefined : "_blank"}
+                      rel={isInternal ? undefined : "noopener noreferrer"}
                       onClick={() =>
                         trackDiagnosis("diagnosis_bike_click", {
                           bike,
@@ -456,9 +578,13 @@ export default function DiagnosisQuiz() {
                       <div className="w-full px-4 py-3 bg-gray-50 border-t border-gray-100 flex items-center justify-between">
                         <span className="font-bold text-gray-900">{bike}</span>
                         <span className="text-xs text-[#c41e3a] font-medium group-hover:translate-x-0.5 transition-transform flex items-center gap-1">
-                          メーカーサイトで見る
+                          {isInternal ? "詳しく見る" : "メーカーサイトで見る"}
                           <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            {isInternal ? (
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                            ) : (
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            )}
                           </svg>
                         </span>
                       </div>
@@ -467,8 +593,17 @@ export default function DiagnosisQuiz() {
                 })}
               </div>
               <p className="text-xs text-gray-400 text-center mt-3">
-                タップで取扱ブランド一覧へ
+                {bikes.length > 6
+                  ? `ほかにも${bikes.length - 6}台のおすすめがあります`
+                  : "タップでメーカーサイトへ"}
               </p>
+              {bikes.length > 6 && (
+                <div className="text-center mt-2">
+                  <Link href="/lineup" className="text-xs text-[#c41e3a] font-medium hover:underline">
+                    取扱ブランド一覧を見る →
+                  </Link>
+                </div>
+              )}
             </div>
           )}
 

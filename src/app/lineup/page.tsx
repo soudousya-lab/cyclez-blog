@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: "cycleZ（サイクルゼット）の取り扱いブランド一覧。GIOS、BASSO、SCOTT、Wilier、macchi cyclesなどのロードバイクから、STEM DESIGN、rin projectなどのサイクルアパレルまで。",
 };
 
-const bikebrands = [
+const bikebrands: { name: string; country: string; url: string; description: string; internalHref?: string }[] = [
   {
     name: "GIOS",
     country: "イタリア",
@@ -37,6 +37,7 @@ const bikebrands = [
     name: "BISYA",
     country: "日本",
     url: "https://bisya.jp/",
+    internalHref: "/lineup/bisya",
     description: "新潟・上越の老舗繊維問屋が手がけるフルカーボンロードバイクブランド「毘沙」。有名ブランドのOEM工場で生産された高品質カーボンフレームを、手の届きやすい価格で提供。",
   },
   {
@@ -61,6 +62,7 @@ const bikebrands = [
     name: "CINELLI",
     country: "イタリア",
     url: "https://cinelli-milano.com/",
+    internalHref: "/lineup/cinelli",
     description: "ミラノ発の老舗。アートとサイクリングを融合させた個性的なデザインが特徴。ピストからロードまで展開。",
   },
   {
@@ -187,9 +189,9 @@ export default function LineupPage() {
             {bikebrands.map((brand) => (
               <a
                 key={brand.name}
-                href={brand.url}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={brand.internalHref || brand.url}
+                target={brand.internalHref ? undefined : "_blank"}
+                rel={brand.internalHref ? undefined : "noopener noreferrer"}
                 className="block border border-gray-200 rounded-xl p-5 hover:border-[#c41e3a]/30 hover:shadow-sm transition-all group"
               >
                 <div className="flex items-baseline gap-2 mb-2">
