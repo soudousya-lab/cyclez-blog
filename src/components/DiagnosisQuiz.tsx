@@ -64,7 +64,7 @@ const bikeData: Record<string, { image?: string; url: string }> = {
   },
   "ORBEA ORCA": {
     image: "/images/bikes/orbea-orca.jpg",
-    url: "https://www.orbea.com/jp-ja/bicycles/road/orca/cat/orca-m30",
+    url: "https://www.orbea.com/ja-jp/m/orca",
   },
   "SURLY Midnight Special": {
     image: "/images/bikes/surly-midnight-special.jpg",
