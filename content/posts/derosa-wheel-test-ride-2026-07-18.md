@@ -1,7 +1,7 @@
 ---
 title: "【告知】7/18(土)〜20(月・祝) De Rosa ＆ ホイールブランド大試乗会｜IDOLに乗れて、ホイールは自分の車体で試せます"
 date: "2026-07-10"
-description: "2026年7月18日(土)〜20日(月・祝)の3日間、岡山のcycleZでDe Rosa ＆ ホイールブランド大試乗会を開催します。De Rosa IDOLの試乗に加え、DT Swissの最新エアロARC 1100 DICUT 65、GIOSのホイールbideal、手組みのT-Formulaを、ご自分の自転車に取り付けて試せます。ORBEA ORCA M30、SCOTT Addict、第5世代のGIOS AERO LITE GEN5も試乗可。"
+description: "2026年7月18日(土)〜20日(月・祝)の3日間、岡山のcycleZでDe Rosa ＆ ホイールブランド大試乗会を開催します。De Rosa IDOLの試乗に加え、DT Swissの最新エアロARC 1100 DICUT 65、GIOS代理店のオリジナルホイールbideal、手組みのT-Formulaを、ご自分の自転車に取り付けて試せます。ORBEA ORCA M30、SCOTT Addict、第5世代のGIOS AERO LITE GEN5も試乗可。"
 category: "event"
 tags: ["event", "news", "test-ride", "derosa", "wheel", "dtswiss", "gios"]
 image: "/images/posts/derosa-wheel-2026-07/idol-white.jpg"
@@ -13,7 +13,7 @@ fact_sources:
   - "De Rosa公式 derosa.jp ／ CYCLE SPORTS: IDOLは2007年初代から続くDe Rosaを代表するカーボンロード。現行はクセのない走りのオールラウンダーで、タイヤクリアランス最大34C・UDH採用。完成車はフレームサイズ/カラー/コンポに加えハンドル幅・ステム長まで選択可能。カラーはWHITEとSTEALTH"
   - "DT Swiss公式 dtswiss.com ／ BikeRadar: ARC 1100 DICUTは空力専門のSwiss Sideと共同開発。AERO+リムプロファイルで空気抵抗とステアリングモーメント（横風でハンドルを取られる力）の双方を低減。55/65/85mm展開、180 DICUTハブ・Ratchet EXP採用"
   - "Continental公式プレスリリース（2024-07-03）／Swiss Side公式: AERO 111はContinental・DT Swiss・Swiss Sideの3社共同開発による前輪専用タイヤ。約6年の開発期間、トレッドの48個のくぼみ（ボルテックスジェネレーター）が気流の剥離を遅らせる。DT Swissのエアロホイールと組み合わせる前提のホイール・タイヤシステム設計"
-  - "GIOS取扱元 JOB International job-cycles.com: bideal（GIOSのホイールブランド／45mmハイトのカーボン等）、AERO LITE GEN5（第5世代・高剛性カーボンモノコック）、AIRONE DISC（クロモリ＋カーボンフォークのディスクロード）／T-Formula公式 tformula.shop-pro.jp（2024-09-30開始の日本の手組みホイール。代表=小池智仁〈こいけ ともひと〉＝サイト著作権表記『©️2024 Formula Bicycle Tomohito Koike』で確認。理念=「サイクリストそれぞれが自分らしい楽しみ方をしており、それぞれのサイクリストに適したホイールがあるべき」）"
+  - "GIOS取扱元 JOB International job-cycles.com: bideal（**GIOSの代理店が扱うオリジナルホイール**／45mmハイトのカーボン等）※店主指示で表現を訂正: 「GIOSのプライベートブランド／GIOSから出ているホイール」とは書かない、AERO LITE GEN5（第5世代・高剛性カーボンモノコック）、AIRONE DISC（クロモリ＋カーボンフォークのディスクロード）／T-Formula公式 tformula.shop-pro.jp（2024-09-30開始の日本の手組みホイール。代表=小池氏＝サイト著作権表記『©️2024 Formula Bicycle Tomohito Koike』で確認。※店主指示により記事表示は名字のみ（フルネーム・読みは出さない）。理念=「サイクリストそれぞれが自分らしい楽しみ方をしており、それぞれのサイクリストに適したホイールがあるべき」）"
   - "内部リンク: content/posts/hand-assembled-wheels-2025-2-21.md（2025-02にcycleZで実施したT-Formula試乗会の既存記事。手組みホイールの解説あり・同記事も語尾『ゼーーーット！！』を使用）"
   - "掲載写真の目視確認: カバー=De Rosa公式流通の New IDOL『Halo - White』製品画像を白背景に合成しリサイズ（public/images/posts/derosa-wheel-2026-07/idol-white.jpg）／本文=public/images/wp/2026-03-wheeltestrideevent.jpg（以前のホイール試乗会で店頭に並んだ実写。T-Formula・DT Swissのリムが写っていることを確認）"
 ---
@@ -60,13 +60,13 @@ IDOLは2007年の初代から続く、De Rosaを代表するカーボンロー�
 
 手組みのもうひとつの強みが、**買ったあとです**。完組ホイールと違い、手組みは**振れ取りやテンションの調整、スポーク単位の交換まで対応できます**。乗り込んで手が入るほど、長く付き合えるホイールです（詳しくは[手組ホイールの奥深さに触れる](/blog/hand-assembled-wheels-2025-2-21)）。
 
-そして今回、**T-Formula代表の小池智仁（こいけ ともひと）氏が来場予定です**。どんな組み方が自分に合うのか、作っている本人に直接相談できます。
+そして今回、**T-Formula代表の小池氏が来場予定です**。どんな組み方が自分に合うのか、作っている本人に直接相談できます。
 
 正直なところ、**当店でT-Formulaを買われた方で、満足されなかった方はいません**。
 
 ### bideal（バイディール）
 
-**bideal** は、実は**GIOSから出ているホイール**です。クロモリの名門というイメージが強いGIOSですが、45mmハイトのカーボンなどを持っています。
+**bideal** は、**GIOSの代理店が扱うオリジナルホイール**です。45mmハイトのカーボンなどがあり、GIOSに乗っている方はもちろん、他社の車体にも合わせられます。
 
 なお、**リムブレーキ／ディスク、エンド幅、フリーボディの規格**によっては取り付けできないホイールもあります。気になる方は事前に店頭スタッフまで。
 
