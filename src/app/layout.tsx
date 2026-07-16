@@ -16,6 +16,9 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
+  // canonical と og:url を絶対URLに解決させるための基点。
+  // canonical 自体はここに書かない（全ページが同じ値を継承してしまうため、各ページで指定する）
+  metadataBase: new URL("https://cycle-z.com"),
   title: {
     default: "cycleZ | 岡山のロードバイク・自転車情報",
     template: "%s | cycleZ",

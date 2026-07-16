@@ -3,6 +3,7 @@ import Link from "next/link";
 import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/first/rinko" },
   title: "輪行で広がるサイクリング",
   description: "輪行袋を使えば電車やバスで自転車を運べます。輪行の基本やおすすめルートをご紹介します。",
 };

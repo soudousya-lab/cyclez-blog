@@ -20,6 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${label}の記事一覧`,
     description: `cycleZブログの${label}カテゴリの記事一覧です。`,
+    alternates: { canonical: `/category/${encodeURIComponent(decodeURIComponent(slug))}` },
   };
 }
 

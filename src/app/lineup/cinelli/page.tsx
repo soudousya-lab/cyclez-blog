@@ -4,6 +4,7 @@ import Link from "next/link";
 import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/lineup/cinelli" },
   title: "CINELLI（チネリ）取扱いモデル",
   description:
     "cycleZ（サイクルゼット・岡山）が取り扱うイタリア・ミラノの名門CINELLI（チネリ）の紹介。エアロレースのPressure、ロングライド向けPressure ADR、グラベルのKing Zydeco、街乗りクロモリのGazzettaまで。試乗・在庫のご相談は店頭で。",

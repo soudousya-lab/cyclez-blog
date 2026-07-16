@@ -20,6 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${staff.name}（${staff.role}） | スタッフ紹介`,
     description: staff.introduction,
+    alternates: { canonical: `/about/staff/${slug}` },
   };
 }
 

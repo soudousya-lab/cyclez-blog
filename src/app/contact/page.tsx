@@ -3,6 +3,7 @@ import Link from "next/link";
 import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/contact" },
   title: "お問い合わせ",
   description: "cycleZ（サイクルゼット）へのお問い合わせ。お電話（086-252-7744）またはフォームでお気軽にどうぞ。",
 };

@@ -3,6 +3,7 @@ import Link from "next/link";
 import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/maintenance/reserve" },
   title: "メンテナンス予約",
   description:
     "cycleZ（サイクルゼット）のメンテナンス予約はお電話で承ります。点検・調整、チェーン洗浄、ブレーキ調整、タイヤ交換、オーバーホールなど、車体を拝見したうえでお見積りします。",

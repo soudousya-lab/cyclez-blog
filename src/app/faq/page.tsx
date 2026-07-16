@@ -4,6 +4,7 @@ import PageBanner from "@/components/PageBanner";
 import { FaqJsonLd } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/faq" },
   title: "よくある質問 | 岡山のロードバイク初心者相談",
   description: "岡山でロードバイク・クロスバイクを始めたい方からよくいただく質問。予算、メーカー選び、メンテナンス、ヘルメット、他店購入車の相談について。",
 };

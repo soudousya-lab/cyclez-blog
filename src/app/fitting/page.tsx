@@ -3,6 +3,7 @@ import Link from "next/link";
 import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/fitting" },
   title: "フィッティング",
   description: "ロードバイクのフィッティング（ポジション調整）について。自分の身体と乗り方にピッタリくるフィッティングで走りが変わります。",
 };

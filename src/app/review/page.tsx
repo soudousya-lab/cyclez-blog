@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import ReviewGenerator from "@/components/ReviewGenerator";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/review" },
   title: "口コミを投稿する | cycleZ",
   description: "cycleZのGoogle口コミ投稿をお手伝いします。",
   robots: { index: false, follow: false },

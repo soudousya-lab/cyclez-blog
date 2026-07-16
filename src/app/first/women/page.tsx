@@ -3,6 +3,7 @@ import Link from "next/link";
 import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/first/women" },
   title: "女性のお客様へ",
   description: "女性でも気軽にロードバイクを楽しめる環境がcycleZにはあります。ウエア選びからフィッティングまで、女性目線でサポートします。",
 };

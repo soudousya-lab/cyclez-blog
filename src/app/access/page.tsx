@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/access" },
   title: "アクセス",
   description: "cycleZ（サイクルゼット）へのアクセス方法。JR岡山駅より徒歩約5分。岡山県岡山市北区島田本町1-1-47。",
 };

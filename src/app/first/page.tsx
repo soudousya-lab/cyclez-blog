@@ -4,6 +4,7 @@ import PageBanner from "@/components/PageBanner";
 import SearchIntentAnswer from "@/components/SearchIntentAnswer";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/first" },
   title: "初めての方へ | 初心者歓迎の岡山自転車屋",
   description: "岡山でロードバイク・クロスバイクを始めたい初心者の方へ。cycleZは試乗車を多数ご用意し、初心者講習会も定期開催。自転車選びからウェア、メンテナンスまで丁寧にサポートします。",
   keywords: ["初心者", "ロードバイク 初心者", "自転車 初心者 岡山", "クロスバイク 初心者", "試乗", "初心者講習会"],

@@ -4,6 +4,32 @@ import matter from 'gray-matter';
 
 const postsDirectory = path.join(process.cwd(), 'content/posts');
 
+// WP移行時の記事31本はファイル名がURLエンコード済み（例: %e3%80%903%e6%9c%88… = 【3月の…】）。
+// これをそのままslugにするとURL上の % が二重解釈され、どの形式でも404になる。
+// slugは復号形（日本語）を正とし、ファイル解決だけを別に持つ。
+// ASCIIのみのファイル名はdecodeしても変わらないため、既存記事のURLには影響しない。
+function fileNameToSlug(fileName: string): string {
+  const base = fileName.replace(/\.md$/, '');
+  try {
+    return decodeURIComponent(base);
+  } catch {
+    // 不正なパーセントシーケンスはそのまま使う
+    return base;
+  }
+}
+
+// slug（復号形）から実ファイルパスを引く。直接一致を先に試し、無ければ復号名で走査する。
+function resolvePostPath(slug: string): string | null {
+  const direct = path.join(postsDirectory, `${slug}.md`);
+  if (fs.existsSync(direct)) return direct;
+
+  if (!fs.existsSync(postsDirectory)) return null;
+  const hit = fs
+    .readdirSync(postsDirectory)
+    .find((f) => f.endsWith('.md') && fileNameToSlug(f) === slug);
+  return hit ? path.join(postsDirectory, hit) : null;
+}
+
 // FAQ項目の型定義
 export interface FaqItem {
   question: string;
@@ -45,7 +71,7 @@ export function getAllPosts(): PostData[] {
   const allPosts = fileNames
     .filter((fileName) => fileName.endsWith('.md'))
     .map((fileName) => {
-      const slug = fileName.replace(/\.md$/, '');
+      const slug = fileNameToSlug(fileName);
       const fullPath = path.join(postsDirectory, fileName);
       const fileContents = fs.readFileSync(fullPath, 'utf8');
       const { data, content } = matter(fileContents);
@@ -77,7 +103,8 @@ export function getAllPosts(): PostData[] {
 
 export function getPostBySlug(slug: string): PostData | null {
   try {
-    const fullPath = path.join(postsDirectory, `${slug}.md`);
+    const fullPath = resolvePostPath(slug);
+    if (!fullPath) return null;
     const fileContents = fs.readFileSync(fullPath, 'utf8');
     const { data, content } = matter(fileContents);
 

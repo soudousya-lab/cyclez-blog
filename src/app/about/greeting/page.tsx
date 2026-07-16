@@ -3,6 +3,7 @@ import Image from "next/image";
 import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about/greeting" },
   title: "スタッフ挨拶",
   description: "cycleZスタッフからのメッセージ。自転車文化の普及を目指し、最大限の情熱を持って対応させていただいています。",
 };

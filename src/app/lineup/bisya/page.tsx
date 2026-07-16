@@ -4,6 +4,7 @@ import Link from "next/link";
 import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/lineup/bisya" },
   title: "BISYA（毘沙）取扱いモデル",
   description:
     "cycleZ（サイクルゼット・岡山）が取り扱う国産カーボンブランドBISYA（毘沙）の紹介。新潟・上越の老舗繊維問屋が手がける、高品質フルカーボンを手の届く価格で。入門アルミのTAMON、カーボンの四号機・八号機まで。試乗・在庫のご相談は店頭で。",

@@ -3,6 +3,7 @@ import Link from "next/link";
 import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about" },
   title: "CycleZとは？",
   description: "岡山市のロードバイク専門店cycleZについて。入りやすくて何でも聞けるサイクルショップを目指しています。",
 };

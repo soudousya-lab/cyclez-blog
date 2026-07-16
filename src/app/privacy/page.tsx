@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/privacy" },
   title: "個人情報保護方針",
   description: "cycleZ（サイクルゼット）のプライバシーポリシー。個人情報保護法及び電気通信事業法を遵守しています。",
 };

@@ -72,6 +72,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: post.title,
     description: post.description,
+    alternates: { canonical: `/blog/${slug}` },
     openGraph: {
       title: post.title,
       description: post.description,
@@ -666,14 +667,16 @@ export default async function PostPage({ params }: Props) {
         <div className="grid lg:grid-cols-[1fr_280px] gap-8">
           {/* Main content */}
           <article className="bg-white rounded-2xl shadow-sm p-6 md:p-10">
-            {/* カバー画像 */}
+            {/* カバー画像。next/image を通さないと元画像が原寸のまま配信されLCPを直撃する */}
             {post.image && post.image !== "/logo.png" && (
-              <div className="mb-8 -mx-6 -mt-6 md:-mx-10 md:-mt-10">
-                <img
+              <div className="mb-8 -mx-6 -mt-6 md:-mx-10 md:-mt-10 relative aspect-[16/9]">
+                <Image
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-auto rounded-t-2xl"
-                  loading="eager"
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 100vw, 768px"
+                  className="object-cover rounded-t-2xl"
                 />
               </div>
             )}

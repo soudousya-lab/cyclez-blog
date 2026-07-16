@@ -4,6 +4,7 @@ import { getPostsByCategory } from "@/lib/posts";
 import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/lineup" },
   title: "ラインナップ",
   description: "cycleZ（サイクルゼット）の取り扱いブランド一覧。GIOS、BASSO、SCOTT、Wilier、macchi cyclesなどのロードバイクから、STEM DESIGN、rin projectなどのサイクルアパレルまで。",
 };

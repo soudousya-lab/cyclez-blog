@@ -3,6 +3,7 @@ import Link from "next/link";
 import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/first/cafe-ride" },
   title: "カフェライドを楽しむ",
   description: "自転車×カフェの楽しみ方。岡山周辺のおすすめカフェライドスポットやルートをご紹介します。",
 };

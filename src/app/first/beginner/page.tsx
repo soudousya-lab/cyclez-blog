@@ -3,6 +3,7 @@ import Link from "next/link";
 import PageBanner from "@/components/PageBanner";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/first/beginner" },
   title: "初心者講習会について",
   description:
     "cycleZの無料初心者講習会。ロードバイクの乗り方の基本から公道のマナーまで、スタッフがイチからレクチャーします。",

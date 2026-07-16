@@ -5,6 +5,7 @@ import PageBanner from "@/components/PageBanner";
 import { staffMembers } from "@/lib/staff";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about/staff" },
   title: "スタッフ紹介",
   description:
     "cycleZ（サイクルゼット）のスタッフをご紹介します。代表の岡田をはじめ、経験豊富なスタッフがお客様のサイクルライフをサポートします。",

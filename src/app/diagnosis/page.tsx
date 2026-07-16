@@ -3,6 +3,7 @@ import PageBanner from "@/components/PageBanner";
 import DiagnosisQuiz from "@/components/DiagnosisQuiz";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/diagnosis" },
   title: "あなたにぴったりの一台は？",
   description:
     "5つの質問に答えるだけで、あなたにぴったりのスポーツバイクのタイプがわかります。cycleZスタッフが厳選したおすすめブランドもご紹介。",

@@ -5,6 +5,7 @@ import { FaqJsonLd } from "@/components/JsonLd";
 import SearchIntentAnswer from "@/components/SearchIntentAnswer";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/maintenance" },
   title: "メンテナンス・自転車修理相談 | 岡山のロードバイク店",
   description: "岡山でロードバイク・クロスバイクのメンテナンスや修理相談ならcycleZへ。タイヤ交換、パンク、変速・ブレーキ調整など、初心者にもわかりやすく案内します。",
 };
