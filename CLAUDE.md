@@ -44,7 +44,7 @@ Next.js 16.1 (App Router) / TypeScript / Tailwind CSS / gray-matter / date-fns /
 ### 現在の実装状況
 | ツール | 状態 | ID/設定 | 管理ファイル |
 |--------|------|---------|-------------|
-| GA4 | 稼働中 | `G-PHS6DKPECV` | `src/components/Analytics.tsx` |
+| GA4 | 稼働中 | `G-E3JB19MQGR`（プロパティ 534868396） | `src/components/Analytics.tsx` |
 | Clarity | 稼働中 | `vy736hbd97` | `src/components/Analytics.tsx` |
 | Meta Pixel | **未設定**（環境変数設定で即有効化） | — | `src/components/Analytics.tsx` |
 | GSC | 稼働中 | HTML認証ファイル | `public/google7579b03d953bf849.html` |
@@ -52,7 +52,7 @@ Next.js 16.1 (App Router) / TypeScript / Tailwind CSS / gray-matter / date-fns /
 
 ### 環境変数（`.env.local` / Vercel）
 ```
-NEXT_PUBLIC_GA_ID=G-PHS6DKPECV
+NEXT_PUBLIC_GA_ID=G-E3JB19MQGR
 NEXT_PUBLIC_GOOGLE_ADS_TAG_ID=AW-854808130
 NEXT_PUBLIC_CLARITY_ID=vy736hbd97
 NEXT_PUBLIC_META_PIXEL_ID=          # Meta広告配信開始時に設定
@@ -63,7 +63,9 @@ NEXT_PUBLIC_META_DOMAIN_VERIFICATION=  # Meta domain認証トークン
 | イベント名 | カテゴリ | 発火タイミング |
 |-----------|---------|--------------|
 | `scroll_depth` | engagement | 25%, 50%, 75%, 90% スクロール |
-| `cta_click` | conversion | 電話/メール/Instagram/Facebook/YouTube/お問い合わせリンク |
+| `cta_click` | conversion | 電話/メール/お問い合わせリンク（**来店リードのみ**。SNS離脱は含まない） |
+| `social_click` | engagement | Instagram/Facebook/YouTubeへの外部遷移（2026-07-16に`cta_click`から分離） |
+| `phone_call` | conversion | `tel:`リンクのタップ（`cta_click`のうち電話のみを再発火） |
 | `navigation_click` | navigation | 内部ページ遷移 |
 | `section_view` | engagement | `<section id="...">` が30%以上表示 |
 | `share_click` | engagement | Twitter/LINEシェアボタン |

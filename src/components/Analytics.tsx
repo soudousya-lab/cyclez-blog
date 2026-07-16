@@ -243,15 +243,23 @@ export const trackMetaCustomEvent = (eventName: string, params?: Record<string, 
 // CTAクリック統一トラッキング
 // =========================================
 
+// SNSへの外部遷移は来店リードではないため cta_click に混ぜない。
+// これらは social_click として別イベントで計測する。
+const SOCIAL_CTA_TYPES: readonly string[] = ["instagram", "facebook", "youtube"];
+
 export const trackCTAClick = (
   ctaType: "phone" | "email" | "instagram" | "facebook" | "youtube" | "contact_form",
   pagePath: string,
   buttonLocation: string,
   buttonText?: string,
 ) => {
+  const isSocial = SOCIAL_CTA_TYPES.includes(ctaType);
+
   if (typeof window !== "undefined" && window.gtag) {
-    window.gtag("event", "cta_click", {
-      event_category: "conversion",
+    // cta_click は電話・メール・お問い合わせのみ＝来店リードだけを表す。
+    // SNS離脱を混ぜるとキーイベントとして意味を成さなくなるため social_click に振り分ける。
+    window.gtag("event", isSocial ? "social_click" : "cta_click", {
+      event_category: isSocial ? "engagement" : "conversion",
       event_label: `${ctaType}_${getPageName(pagePath)}_${buttonLocation}`,
       cta_type: ctaType,
       page_path: pagePath,
@@ -260,7 +268,6 @@ export const trackCTAClick = (
       button_text: (buttonText || "").slice(0, 100),
     });
     // 電話タップは専用のクリーンなキーイベントも発火させる。
-    // cta_clickはInstagram/外部リンク等も含む混在イベントのため、
     // 「実来店リード＝電話」だけを分離してGA4キーイベント化→Adsにインポートできるようにする。
     if (ctaType === "phone") {
       window.gtag("event", "phone_call", {
@@ -498,6 +505,9 @@ function LinkClickTracker() {
   const handleClick = useCallback((e: MouseEvent) => {
     const anchor = (e.target as HTMLElement).closest("a");
     if (!anchor) return;
+
+    // onClickで明示的にトラッキング済みの要素は、ここで拾うと二重計上になる
+    if (anchor.dataset.ctaTracked) return;
 
     const href = anchor.getAttribute("href") || "";
     const text = (anchor.textContent || "").trim();
