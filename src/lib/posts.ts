@@ -18,16 +18,25 @@ function fileNameToSlug(fileName: string): string {
   }
 }
 
-// slug（復号形）から実ファイルパスを引く。直接一致を先に試し、無ければ復号名で走査する。
+// slug（復号形）から実ファイルパスを引く。
+// ここで readdirSync を使うと、getPostBySlug を呼ぶAPIルートのファイルトレースが
+// cwd全体（public/images 366MB）を取り込み、Vercelの関数サイズ上限250MBを超える。
+// 走査せず、ファイル名を決定的に再構成して existsSync だけで解決する。
 function resolvePostPath(slug: string): string | null {
-  const direct = path.join(postsDirectory, `${slug}.md`);
-  if (fs.existsSync(direct)) return direct;
+  const candidates = [
+    slug,
+    // WP移行記事31本はファイル名が小文字パーセントエンコード（%e3%80%90…）。
+    // encodeURIComponent は大文字（%E3）を返すのでエスケープ部だけ小文字化して元の形に戻す。
+    encodeURIComponent(slug).replace(/%[0-9A-F]{2}/g, (m) => m.toLowerCase()),
+  ];
 
-  if (!fs.existsSync(postsDirectory)) return null;
-  const hit = fs
-    .readdirSync(postsDirectory)
-    .find((f) => f.endsWith('.md') && fileNameToSlug(f) === slug);
-  return hit ? path.join(postsDirectory, hit) : null;
+  for (const name of candidates) {
+    const full = path.join(postsDirectory, `${name}.md`);
+    // slugはURL由来。postsDirectory の外に出る指定を弾く
+    if (!full.startsWith(postsDirectory + path.sep)) continue;
+    if (fs.existsSync(full)) return full;
+  }
+  return null;
 }
 
 // FAQ項目の型定義
