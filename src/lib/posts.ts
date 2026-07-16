@@ -18,6 +18,18 @@ function fileNameToSlug(fileName: string): string {
   }
 }
 
+// WP移行記事のうち31本はファイル名がURLエンコード済み（%e3%80%90… = 【…】）。
+// slugを復号形にすると /blog/【3月の…】 になるが、Vercelの静的ルーティングが
+// マルチバイトのパスを解決できず本番で404になる（ローカルの next start では200になるため
+// ローカル検証だけでは検出できない）。
+// 中身は2017〜2023年の「臨時休業のお知らせ」「4月の初心者講習会」等の期限切れ告知のみで、
+// 今日の読者価値がゼロ。ASCIIへリネームして復活させると薄いコンテンツが31本増え、
+// CLAUDE.mdのSEO安全ルール（薄いコンテンツ警告）に反する。
+// よって一覧・カテゴリ・sitemapから外す。ファイルは記録として残す（削除しない）。
+function isRetiredPost(fileName: string): boolean {
+  return fileName.includes('%');
+}
+
 // slug（復号形）から実ファイルパスを引く。
 // ここで readdirSync を使うと、getPostBySlug を呼ぶAPIルートのファイルトレースが
 // cwd全体（public/images 366MB）を取り込み、Vercelの関数サイズ上限250MBを超える。
@@ -31,6 +43,7 @@ function resolvePostPath(slug: string): string | null {
   ];
 
   for (const name of candidates) {
+    if (isRetiredPost(`${name}.md`)) continue;
     const full = path.join(postsDirectory, `${name}.md`);
     // slugはURL由来。postsDirectory の外に出る指定を弾く
     if (!full.startsWith(postsDirectory + path.sep)) continue;
@@ -79,6 +92,7 @@ export function getAllPosts(): PostData[] {
   const fileNames = fs.readdirSync(postsDirectory);
   const allPosts = fileNames
     .filter((fileName) => fileName.endsWith('.md'))
+    .filter((fileName) => !isRetiredPost(fileName))
     .map((fileName) => {
       const slug = fileNameToSlug(fileName);
       const fullPath = path.join(postsDirectory, fileName);
