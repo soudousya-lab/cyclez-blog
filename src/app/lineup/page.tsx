@@ -124,12 +124,6 @@ const apparelBrands = [
     description: "インディゴ染めのサイクリングキャップやウールセーターなど、レトロ＆ナチュラルなスタイルが魅力。",
   },
   {
-    name: "ccp",
-    category: "カジュアル",
-    url: "https://ccp.fm/",
-    description: "カジュアルなサイクルウェアブランド。気軽に着られるデザインで、日常使いにも最適。",
-  },
-  {
     name: "Isadore",
     category: "プレミアム",
     url: "https://isadore.com/",

@@ -545,10 +545,17 @@ SPECIALIZED, COLNAGO, TREK, CANNONDALE, BIANCHI, GIANT
 
 ### アパレル承認
 Isadore, Assos, ALBA OPTICS, beruf baggage, GIRO（プレミアム系）
-STEMDESIGN, rin project, ccp（カジュアル系）
+STEMDESIGN, rin project（カジュアル系）
+
+**CLUB RIDE（期間限定・2026年7月〜8月いっぱいの委託販売）**
+恒久の「取扱ブランド」として書かない。記事に出す時は必ず委託販売の期間を明記する。
+9月以降も継続するかは未定＝**9/1以降は記載を見直すこと**（放置すると既存記事が虚偽になる）。
 
 ### アパレル禁止
 narifuri, rapha, TOKYO WHEELS
+**ccp** — 2026-07-16にオーナー判断で取扱終了。新規記事・ブランドリストに載せない。
+（過去記事 items-83 / tips-for-winter-bicycling-2021-12-18 / yakagecho-cycling-course-2022-2-4 は
+当時の事実の記録なので残す＝遡って書き換えない）
 
 ### 価格帯の方針
 - 5万円以下: 推奨しない（安全性の懸念）

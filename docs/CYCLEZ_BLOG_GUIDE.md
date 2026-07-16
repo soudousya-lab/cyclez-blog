@@ -178,12 +178,14 @@ GIOS, BASSO, SCOTT, BOMA, BISYA, DELOSA, FELT, CERVELO, CINELLI, LAPIERRE, Wilie
 
 ### アパレルブランド
 
-**カジュアルライン**: STEMDESIGN, rin project, ccp, cycleZオリジナル
+**カジュアルライン**: STEMDESIGN, rin project, cycleZオリジナル
 **プレミアムライン**: Isadore, Assos, ALBA OPTICS, beruf baggage, GIRO
+**期間限定**: CLUB RIDE（2026年7〜8月いっぱいの委託販売。恒久の取扱として書かず必ず期間を明記。9/1以降は要見直し）
 
 **禁止ブランド（記事に載せない）**:
 - narifuri
 - rapha
+- ccp（2026-07-16 取扱終了。過去記事は当時の記録として残す）
 - TOKYO WHEELS
 
 ### おすすめモデル例
