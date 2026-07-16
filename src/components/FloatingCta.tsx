@@ -1,34 +1,21 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { trackCTAClick } from "./Analytics";
 
 /**
  * モバイル固定CTA
- * スマホ画面下部に「電話する」「アクセス」ボタンを固定表示
- * PCでは非表示（md以上で隠す）
+ * スマホ画面下部に「電話する」「アクセス」ボタンを常時固定表示
+ * PCでは非表示（md以上で隠す。PCはHeaderに連絡先がある）
  */
 export default function FloatingCta() {
-  const [isVisible, setIsVisible] = useState(false);
   const pathname = usePathname();
 
-  useEffect(() => {
-    // スクロール後に表示（ファーストビューでは非表示）
-    const handleScroll = () => {
-      setIsVisible(window.scrollY > 300);
-    };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll();
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+  // 常時表示。以前は scrollY > 300 まで隠していたが、モバイルのファーストビューに
+  // 電話・アクセスの導線が1つも無い状態になっていた（Headerの連絡先は hidden lg:flex）。
+  // 有料流入の93.78%がトップに着地し平均滞在57秒なので、押すものが最初から見えている必要がある。
   return (
-    <div
-      className={`fixed bottom-0 left-0 right-0 z-50 md:hidden transition-transform duration-300 ${
-        isVisible ? "translate-y-0" : "translate-y-full"
-      }`}
-    >
+    <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden">
       {/* 上部のグラデーション影 */}
       <div className="h-3 bg-gradient-to-t from-black/10 to-transparent pointer-events-none" />
       <div className="bg-white border-t border-gray-200 shadow-[0_-4px_12px_rgba(0,0,0,0.1)]">

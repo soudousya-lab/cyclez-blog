@@ -98,7 +98,8 @@ export default function RootLayout({
       <body className={`${notoSansJP.variable} font-sans antialiased`}>
         <Analytics />
         <PostHogProvider />
-        <div className="min-h-screen flex flex-col">
+        {/* pb-16 md:pb-0 = モバイルで常時表示のFloatingCtaにフッター最下部が隠れるのを防ぐ */}
+        <div className="min-h-screen flex flex-col pb-16 md:pb-0">
           <Header />
           <main className="flex-grow">{children}</main>
           <Footer />
