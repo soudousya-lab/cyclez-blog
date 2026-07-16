@@ -9,6 +9,11 @@ import { captureCtaClick as posthogCtaClick, captureFormSubmit as posthogFormSub
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || "";
 // Google Ads タグID（コンバージョン計測用）
 const GOOGLE_ADS_TAG_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_TAG_ID || "";
+// Google Ads コンバージョンラベル。Ads管理画面が自動生成する不透明な文字列で、
+// 任意の名前（旧実装の "phone_call" 等）を書いても存在しないラベル扱いで黙って捨てられる。
+// 2026-07-16に管理画面で CVアクション「Click-to-Call」を新規作成して発行された実値。
+// 秘密情報ではなく送信先の識別子なので env 化しない（env漏れで再びサイレント失敗させないため）。
+const ADS_CONVERSION_LABEL_PHONE = "D1z0CLvEr9EcEMKszZcD";
 // Microsoft Clarity トラッキングID
 const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID || "";
 // Meta Pixel ID（今後配信開始時に設定）
@@ -281,19 +286,15 @@ export const trackCTAClick = (
   }
   clarityEvent(`cta_${ctaType}`);
 
-  // Google Ads コンバージョンイベント（電話・お問い合わせ）
+  // Google Ads コンバージョンイベント（電話タップ = 実来店リード）
+  // contact_form 側は、対応するCVアクションがAds側に存在せず /contact にフォームも無いため送らない。
+  // 必要になったらAds管理画面でCVアクションを作り、発行されたラベルを定数に足すこと。
   if (typeof window !== "undefined" && window.gtag && GOOGLE_ADS_TAG_ID) {
     if (ctaType === "phone") {
       window.gtag("event", "conversion", {
-        send_to: `${GOOGLE_ADS_TAG_ID}/phone_call`,
-        event_category: "conversion",
+        send_to: `${GOOGLE_ADS_TAG_ID}/${ADS_CONVERSION_LABEL_PHONE}`,
         value: 1,
-      });
-    } else if (ctaType === "contact_form") {
-      window.gtag("event", "conversion", {
-        send_to: `${GOOGLE_ADS_TAG_ID}/contact_form`,
-        event_category: "conversion",
-        value: 1,
+        currency: "JPY",
       });
     }
   }
@@ -327,15 +328,6 @@ export const trackFormSubmit = (
     });
   }
   clarityEvent(`form_submit_${formType}`);
-
-  // Google Ads コンバージョン（お問い合わせフォーム）
-  if (typeof window !== "undefined" && window.gtag && GOOGLE_ADS_TAG_ID && formType === "contact") {
-    window.gtag("event", "conversion", {
-      send_to: `${GOOGLE_ADS_TAG_ID}/contact_form`,
-      event_category: "conversion",
-      value: 1,
-    });
-  }
 
   // Meta Pixel
   if (formType === "contact") {
