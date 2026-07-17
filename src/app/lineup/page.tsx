@@ -39,7 +39,7 @@ const bikebrands: { name: string; country: string; url: string; description: str
     country: "日本",
     url: "https://bisya.jp/",
     internalHref: "/lineup/bisya",
-    description: "新潟・上越の老舗繊維問屋が手がけるフルカーボンロードバイクブランド「毘沙」。有名ブランドのOEM工場で生産された高品質カーボンフレームを、手の届きやすい価格で提供。",
+    description: "新潟・上越から、カーボンロードへの憧れをもっと身近にする「毘沙」。誰かと競うだけでなく、昨日の自分より少し先へ進む人のためのブランド。",
   },
   {
     name: "De Rosa",
@@ -71,7 +71,7 @@ const bikebrands: { name: string; country: string; url: string; description: str
     country: "フランス",
     url: "https://www.lapierrebikes.com/",
     internalHref: "/lineup/lapierre",
-    description: "フランス・ディジョンを拠点とする総合自転車メーカー。MTBからロードまで幅広く展開し、独自の技術でレースシーンでも活躍。",
+    description: "フランス・ディジョンで受け継がれる設計と、レースで磨かれた走り。速さと美しいフレーム造形を一台に重ねるフレンチブランド。",
   },
   {
     name: "Wilier",
@@ -108,7 +108,7 @@ const bikebrands: { name: string; country: string; url: string; description: str
     country: "日本",
     url: "http://www.macchicycles.com/",
     internalHref: "/lineup/macchi",
-    description: "滋賀県信楽に工房を構えるビルダー植田真貴氏によるハンドメイドクロモリブランド。レースでも戦える「よく走るクロモリ」を追求したラグドフレームが特徴。体格や用途に合わせたフルオーダーに対応。",
+    description: "滋賀・信楽の工房で、乗り手との対話から一本ずつ生まれるクロモリ。体のための寸法と、心に残る色や佇まいを重ねるオーダーフレーム。",
   },
 ];
 

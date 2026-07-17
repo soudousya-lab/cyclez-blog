@@ -8,13 +8,13 @@ export const metadata: Metadata = {
   alternates: { canonical: "/lineup/macchi" },
   title: "macchi cyclesを岡山で相談・オーダーするなら",
   description:
-    "2017年からmacchi cyclesを扱い、スタッフも実際に乗る岡山のcycleZ。クロモリオーダーの考え方、実車、相談から納車までの流れを紹介します。",
+    "滋賀・信楽の工房で、乗り手とビルダーの対話から生まれるmacchi cycles。クロモリのしなり、オーダーフレームの魅力、cycleZスタッフが乗る実車を紹介します。",
   openGraph: {
     type: "website",
     url: "/lineup/macchi",
     title: "macchi cyclesを岡山で相談・オーダーするなら｜cycleZ",
     description:
-      "スタッフの実車を見ながら、体格・用途・色まで相談。2017年から付き合うcycleZが、オーダー前の疑問に答えます。",
+      "乗り手の体と走り方を映す、信楽生まれのクロモリ。スタッフの実車を見ながら、まだ形のない一台について話せます。",
     images: [
       {
         url: "/images/blog/macchi-2026-06/staff-macchi-ride.jpg",
@@ -46,24 +46,24 @@ const staffBikes = [
 
 const orderSteps = [
   {
-    number: "01",
-    title: "乗り方を言葉にする",
-    text: "速さを狙うのか、長距離を楽に走るのか、グラベルも含めるのか。今の自転車で気になる点も伺います。",
+    eyebrow: "TALK",
+    title: "まだ名前のない一台から",
+    text: "好きな道、いつか走りたい場所、今の自転車で感じていること。完成形を決める前に、乗り手の物語を聞かせてください。",
   },
   {
-    number: "02",
-    title: "体格とポジションを確認",
-    text: "身長だけで決めず、手足の長さ、柔軟性、今のポジションを確認。必要な寸法を一緒に詰めます。",
+    eyebrow: "FIT",
+    title: "体の声を、寸法にする",
+    text: "手足の長さや柔軟性、長く乗ったときの疲れ方まで確かめます。数字を合わせるためではなく、自然に走れる姿を探すための採寸です。",
   },
   {
-    number: "03",
-    title: "フレームと仕様を決める",
-    text: "モデル、パイプ、コンポーネント、カラーを予算に合わせて整理。見た目と使い方の両方から決めます。",
+    eyebrow: "SHAPE",
+    title: "鉄と色に、意思を宿す",
+    text: "しなやかさ、反応、佇まい。パイプや色、組み合わせる部品を選びながら、その人らしい輪郭へ近づけていきます。",
   },
   {
-    number: "04",
-    title: "組み上げて、乗りながら合わせる",
-    text: "完成後はcycleZで組み立てと納車説明。乗り始めてからのポジションやメンテナンスも継続して相談できます。",
+    eyebrow: "RIDE",
+    title: "完成してから、関係が始まる",
+    text: "cycleZで組み上げ、最初の一走りへ。距離を重ねるほど体になじみ、傷や艶まで自分だけの一台になっていきます。",
   },
 ];
 
@@ -135,23 +135,8 @@ export default function MacchiPage() {
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-gray-600 sm:text-base sm:leading-8">
             macchi cyclesは、滋賀・信楽の工房で一本ずつつくられるクロモリフレームです。
-            cycleZは2017年から試乗会やオーダー会を重ね、スタッフ自身も乗り続けています。
+            乗り手の体と、走りたい道と、つくり手の感覚。そのすべてが重なって、誰かのための一台になります。
           </p>
-        </div>
-      </section>
-
-      <section aria-label="cycleZとmacchiの実績" className="border-b border-gray-100">
-        <div className="mx-auto grid max-w-5xl grid-cols-3 divide-x divide-gray-100 px-4 sm:px-6">
-          {[
-            { value: "2017", label: "取扱いの始まり" },
-            { value: "3台", label: "スタッフ実車" },
-            { value: "2件＋2件", label: "2026年の成約・相談" },
-          ].map((item) => (
-            <div key={item.label} className="px-2 py-6 text-center sm:py-8">
-              <p className="text-xl font-bold text-gray-900 sm:text-2xl">{item.value}</p>
-              <p className="mt-1 text-[11px] leading-5 text-gray-500 sm:text-xs">{item.label}</p>
-            </div>
-          ))}
         </div>
       </section>
 
@@ -167,16 +152,15 @@ export default function MacchiPage() {
             />
           </div>
           <div>
-            <p className="text-xs font-bold tracking-[0.18em] text-[#c41e3a]">SINCE 2017</p>
+            <p className="text-xs font-bold tracking-[0.18em] text-[#c41e3a]">SYMPATHY</p>
             <h2 className="jp-phrase-wrap mt-3 text-2xl font-bold leading-snug text-gray-900 sm:text-3xl">
-              カタログの説明より、乗ってきた人の話を。
+              乗り手と、同じ目線でつくられる。
             </h2>
             <p className="mt-5 text-sm leading-8 text-gray-600 sm:text-base">
-              同じmacchiでも、用途、寸法、色、パーツで見た目も乗り味も変わります。
-              cycleZにはスタッフの完成車があるので、写真だけでは分からないパイプの細さや塗装、組み方を実物で確かめられます。
+              macchiが大切にする言葉は「sympathy」。ビルダー自身が乗り手であり、メカニックでもあるから、速さや用途だけでなく、どんな気持ちで自転車と付き合いたいかまで共有してつくります。
             </p>
             <p className="mt-4 text-sm leading-8 text-gray-600 sm:text-base">
-              「クロモリが欲しい」と決めていなくても構いません。今のカーボンロードと何が違うか、既製サイズで感じている違和感をどう解決できるか。そこから話を始めます。
+              細いパイプが描く飽きのこない姿、壊れにくい安心感、体へやさしく返ってくる鉄のしなり。新しさを競うのではなく、長く乗るほど好きになれることがmacchiの魅力です。
             </p>
           </div>
         </div>
@@ -185,17 +169,17 @@ export default function MacchiPage() {
       <section className="py-14 sm:py-16 md:py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
           <SectionHeader
-            title="相談から納車まで"
-            subtitle="ORDER FLOW"
-            description="オーダーは、最初から正解を知っている人のためのものではありません。会話を重ねて決めていく買い方です。"
+            title="一台が生まれるまで"
+            subtitle="FROM TALK TO RIDE"
+            description="オーダーは、完成車を選ぶ買い方とは少し違います。まだ形のない一台を、会話から少しずつ見つけていく時間です。"
           />
           <ol className="border-y border-gray-200 md:grid md:grid-cols-2">
             {orderSteps.map((step, index) => (
               <li
-                key={step.number}
+                key={step.eyebrow}
                 className={`px-3 py-7 sm:px-7 ${index < 3 ? "border-b border-gray-200" : ""} ${index >= 2 ? "md:border-b-0" : ""} ${index % 2 === 0 ? "md:border-r md:border-gray-200" : ""}`}
               >
-                <p className="text-xs font-bold tracking-[0.18em] text-[#c41e3a]">{step.number}</p>
+                <p className="text-xs font-bold tracking-[0.18em] text-[#c41e3a]">{step.eyebrow}</p>
                 <h3 className="mt-2 text-lg font-bold text-gray-900">{step.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-gray-600">{step.text}</p>
               </li>
@@ -207,12 +191,12 @@ export default function MacchiPage() {
       <section className="bg-gray-950 py-14 text-white sm:py-16 md:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="max-w-2xl">
-            <p className="text-xs font-bold tracking-[0.18em] text-[#e96a7f]">THREE REAL BIKES</p>
+            <p className="text-xs font-bold tracking-[0.18em] text-[#e96a7f]">RIDDEN, NOT DISPLAYED</p>
             <h2 className="jp-phrase-wrap mt-3 text-2xl font-bold leading-snug sm:text-3xl">
-              三人三様。同じブランドでも、同じ一台にはならない。
+              飾るためではなく、走るためにつくられた。
             </h2>
             <p className="mt-4 text-sm leading-7 text-white/70">
-              スタッフの車体は色も仕様も別々です。遠方から実車確認に来られる場合は、希望の車体が店頭にあるか事前にご確認ください。
+              スタッフのmacchiは、色も仕様も走ってきた道もそれぞれです。完成直後の美しさだけでなく、乗り込んだクロモリがまとっていく表情まで見ていただけます。
             </p>
           </div>
           <div className="mt-9 grid gap-4 md:grid-cols-3">
@@ -231,20 +215,16 @@ export default function MacchiPage() {
       <section className="py-14 sm:py-16 md:py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6">
           <div className="border-l-4 border-[#c41e3a] pl-5 sm:pl-8">
-            <p className="text-xs font-bold tracking-[0.18em] text-[#c41e3a]">FROM THE SHOP FLOOR</p>
+            <p className="text-xs font-bold tracking-[0.18em] text-[#c41e3a]">THE CHARM OF STEEL</p>
             <h2 className="jp-phrase-wrap mt-3 text-2xl font-bold leading-snug text-gray-900 sm:text-3xl">
-              広島・福山からも来店。2026年のオーダー会で見えたこと。
+              新しいのに、どこか懐かしい。乗るほど、景色になじんでいく。
             </h2>
             <p className="mt-5 text-sm leading-8 text-gray-600 sm:text-base">
-              2026年6月の試乗・オーダー会では、県外からの来店もあり、当日にオーダー2件、継続相談2件につながりました。
-              決め手はスペック表ではなく、ビルダーやスタッフに自分の乗り方を話し、その場で疑問を解けたことでした。
+              クロモリの細い線は、山の緑にも、古い町並みにも、不思議となじみます。塗装の色を選び、部品を組み、いつもの道へ連れ出すたびに、工房で生まれたフレームが自分の風景へ変わっていきます。
             </p>
-            <Link
-              href="/blog/macchi-cycles-event-report-2026-06-07"
-              className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-[#c41e3a] hover:underline"
-            >
-              開催レポートを読む <span aria-hidden="true">→</span>
-            </Link>
+            <p className="mt-4 text-sm leading-8 text-gray-600 sm:text-base">
+              速い自転車はたくさんあります。けれど、ふと振り返って眺めたくなる一台、次の休日も一緒に出かけたくなる一台は多くありません。macchiは、そんな関係をつくるための自転車です。
+            </p>
           </div>
         </div>
       </section>
@@ -268,8 +248,8 @@ export default function MacchiPage() {
 
       <BrandInquiryCta
         brand="macchi cycles"
-        heading="遠方からの来店前に、見たい実車をご確認ください。"
-        description="スタッフ車の在店状況、次回の試乗・オーダー相談、納期の目安をお伝えします。気になる用途や現在の自転車も添えてご相談ください。"
+        heading="まだ形のない一台の話を、始めませんか。"
+        description="モデルや仕様を決めていなくても大丈夫です。好きな道、今の自転車で感じていること、思い描く色からお聞かせください。スタッフの実車を見たい方は、来店前に在店状況をご確認いただけます。"
       />
 
       <div className="border-t border-gray-100 py-8 text-center">

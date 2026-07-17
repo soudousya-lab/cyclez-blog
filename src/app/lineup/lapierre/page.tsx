@@ -8,19 +8,19 @@ export const metadata: Metadata = {
   alternates: { canonical: "/lineup/lapierre" },
   title: "LAPIERREを岡山で見て相談するなら",
   description:
-    "LAPIERRE（ラピエール）を扱う岡山のcycleZ。スタッフ所有のXELIUS SLをはじめ、ロード・エンデュランス・グラベル・フラットバーの選び方と来店前の確認方法を紹介します。",
+    "フランス・ディジョンで磨かれてきたLAPIERRE（ラピエール）。レースから受け継ぐ走り、美しいフレーム造形、cycleZスタッフが乗る実車を紹介します。",
   openGraph: {
     type: "website",
     url: "/lineup/lapierre",
     title: "LAPIERREを岡山で見て相談するなら｜cycleZ",
     description:
-      "スタッフが実際に乗るLAPIERRE。用途別の違いを整理して、実車・在庫・取り寄せを相談できます。",
+      "フランスの美意識と、道の上で磨かれた性能。スタッフが実際に乗るLAPIERREを、実車の感触から紹介します。",
     images: [
       {
-        url: "/images/staff/nishii-bike-lapierre.jpg",
-        width: 1567,
-        height: 1044,
-        alt: "cycleZスタッフが所有するLAPIERRE XELIUS SL ULTIMATE",
+        url: "/images/brands/lapierre-engineering.jpg",
+        width: 1600,
+        height: 900,
+        alt: "光の中に浮かぶLAPIERREのレーシングフレーム",
       },
     ],
   },
@@ -31,28 +31,28 @@ const models = [
     name: "XELIUS SL",
     role: "RACE / CLIMB",
     image: "/images/bikes/lapierre-xelius-sl.jpg",
-    description: "登りと加速の反応を重視したロード。レース志向だけでなく、軽快な走りが好きな方の候補です。",
+    description: "登りで力を受け止め、下りで狙った線を描く。競技の緊張感を、いつもの峠やロングライドまで連れてくるロードです。",
     url: "https://azuma-1911.jp/lapierre/products/xelius-sl-5-0/",
   },
   {
     name: "SENSIUM",
     role: "ENDURANCE",
     image: "/images/bikes/lapierre-sensium.jpg",
-    description: "ロングライドや初めてのロードに。速さだけでなく、長い時間を無理なく楽しむ方向で考えたい一台です。",
+    description: "目的地を急ぐより、一日を長く味わいたい人へ。速さを失わず、遠くの景色まで心地よく連れていくロードです。",
     url: "https://azuma-1911.jp/lapierre/products/sensium-2-0/",
   },
   {
     name: "CROSSHILL",
     role: "GRAVEL",
     image: "/images/bikes/lapierre-crosshill.jpg",
-    description: "舗装路の先まで走りたい人へ。太めのタイヤと積載を生かし、旅や未舗装路まで用途を広げられます。",
+    description: "アスファルトが途切れた場所も、道の続きに変えてくれる。旅の荷物を載せ、知らない曲がり角へ進みたくなるグラベルです。",
     url: "https://azuma-1911.jp/lapierre/products/crosshill-3-0/",
   },
   {
     name: "SHAPER",
     role: "FITNESS / CITY",
     image: "/images/bikes/lapierre-shaper.jpg",
-    description: "フラットバーで扱いやすく、街乗りからフィットネスまで。ロードの速さを日常に取り入れたい方に。",
+    description: "フランスのスポーツバイクらしい軽やかさを、通勤や街の移動へ。日常の距離まで少し特別にしてくれます。",
     url: "https://azuma-1911.jp/lapierre/products/shaper-3-0-disc/",
   },
 ];
@@ -76,7 +76,7 @@ const faqItems = [
   {
     question: "県外から車で来店できますか？",
     answer:
-      "土・日曜日は軽自動車を合わせて3台駐車可能です。駐車状況と希望モデルの在店状況を、出発前に電話で確認していただくと確実です。",
+      "駐車スペースがあります。駐車状況と希望モデルの在店状況を、出発前に電話で確認していただくと確実です。",
   },
 ];
 
@@ -119,13 +119,13 @@ export default function LapierrePage() {
             <span className="mx-2">/</span>
             <span>LAPIERRE</span>
           </nav>
-          <p className="text-xs font-bold tracking-[0.2em] text-[#c41e3a]">DIJON, FRANCE</p>
+          <p className="text-xs font-bold tracking-[0.2em] text-[#c41e3a]">FRENCH ENGINEERING, DIJON</p>
           <h1 className="jp-phrase-wrap mt-3 text-3xl font-bold leading-tight text-gray-900 sm:text-4xl md:text-5xl">
-            LAPIERREを、実車から考える。
+            速さの先にある、フランスの美意識。
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-gray-600 sm:text-base sm:leading-8">
-            カタログの軽さやスペックだけでは、自分に合うかは決まりません。
-            cycleZでは、実際にLAPIERREへ乗るスタッフの経験も交え、用途と体格から一台を整理します。
+            ディジョンで受け継がれてきた設計と、レースの極限で磨かれた走り。
+            LAPIERREは、速さを数字だけで終わらせず、美しい輪郭と正確な感触に変えてきたブランドです。
           </p>
         </div>
       </section>
@@ -133,32 +133,44 @@ export default function LapierrePage() {
       <section className="py-14 sm:py-16 md:py-20">
         <div className="mx-auto grid max-w-6xl items-center gap-9 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
-            <p className="text-xs font-bold tracking-[0.18em] text-[#c41e3a]">STAFF OWNED</p>
+            <p className="text-xs font-bold tracking-[0.18em] text-[#c41e3a]">MADE FOR THE ROAD</p>
             <h2 className="jp-phrase-wrap mt-3 text-2xl font-bold leading-snug text-gray-900 sm:text-3xl">
-              「売っている」だけでなく、スタッフが乗ってきたブランドです。
+              見せるためではなく、走るための輪郭。
             </h2>
             <p className="mt-5 text-sm leading-8 text-gray-600 sm:text-base">
-              スタッフ西井の愛車はXELIUS SL ULTIMATE。写真の一台を通して、フレームの造形、サイズ感、組み合わせるパーツ、実際の使い方まで話せます。
+              LAPIERREの中心にあるのはフレームです。空気をほどく形、踏み込んだ力を受け止める剛性、下りで迷いなく向きを変える精度。ディジョンで積み重ねたものづくりと、プロレースから持ち帰った経験が一本の線に溶け込んでいます。
             </p>
             <p className="mt-4 text-sm leading-8 text-gray-600 sm:text-base">
-              現行モデルと年式や仕様が異なる部分はありますが、ブランドを長く所有する人の目線は、初めてLAPIERREを検討する方にも役立つはずです。
+              それでも、機械然としすぎないのがフランスらしさ。光の当たり方で表情を変える塗装や、立ち姿の美しさまで含めて、走る前から心を動かす自転車です。
             </p>
           </div>
-          <div className="border-l border-gray-200 pl-5 sm:pl-8">
-            <dl className="divide-y divide-gray-200 border-y border-gray-200">
-              <div className="grid grid-cols-[7rem_1fr] gap-4 py-4 text-sm">
-                <dt className="font-bold text-gray-900">所有モデル</dt>
-                <dd className="text-gray-600">XELIUS SL ULTIMATE</dd>
-              </div>
-              <div className="grid grid-cols-[7rem_1fr] gap-4 py-4 text-sm">
-                <dt className="font-bold text-gray-900">相談できること</dt>
-                <dd className="text-gray-600">用途・サイズ・仕様・取り寄せ</dd>
-              </div>
-              <div className="grid grid-cols-[7rem_1fr] gap-4 py-4 text-sm">
-                <dt className="font-bold text-gray-900">遠方の方へ</dt>
-                <dd className="text-gray-600">来店前に実車と在庫を電話確認</dd>
-              </div>
-            </dl>
+          <figure>
+            <div className="relative aspect-video overflow-hidden bg-gray-950">
+              <Image
+                src="/images/brands/lapierre-engineering.jpg"
+                alt="LAPIERREのフレームを手にするサイクリスト"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 55vw"
+              />
+            </div>
+            <figcaption className="mt-2 text-right text-[11px] text-gray-400">Photo: LAPIERRE</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section className="border-y border-gray-100 bg-gray-50 py-14 sm:py-16 md:py-20">
+        <div className="mx-auto grid max-w-5xl gap-8 px-4 sm:px-6 md:grid-cols-[0.8fr_1.2fr] md:items-center md:gap-14">
+          <div>
+            <p className="text-xs font-bold tracking-[0.18em] text-[#c41e3a]">AT CYCLEZ</p>
+            <h2 className="jp-phrase-wrap mt-3 text-2xl font-bold leading-snug text-gray-900 sm:text-3xl">
+              惹かれた人が、店にいる。
+            </h2>
+          </div>
+          <div className="border-l-2 border-[#c41e3a] pl-5 sm:pl-8">
+            <p className="text-sm leading-8 text-gray-600 sm:text-base">
+              スタッフ西井の愛車はXELIUS SL ULTIMATE。現行車とは仕様が違っても、長く所有してきたから話せる乗り味や、写真だけでは分からないフレームの存在感があります。LAPIERREに惹かれた理由から、じっくりお話しします。
+            </p>
           </div>
         </div>
       </section>
@@ -166,12 +178,12 @@ export default function LapierrePage() {
       <section className="bg-gray-950 py-14 text-white sm:py-16 md:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <div className="mx-auto max-w-3xl text-center">
-            <p className="text-xs font-bold tracking-[0.2em] text-[#e96a7f]">FOUR DIRECTIONS</p>
+            <p className="text-xs font-bold tracking-[0.2em] text-[#e96a7f]">ROADS AHEAD</p>
             <h2 className="jp-phrase-wrap mt-3 text-2xl font-bold leading-snug sm:text-3xl">
-              速さ、距離、未舗装路、日常。まず用途を決める。
+              走りたい景色が変われば、選ぶ一台も変わる。
             </h2>
             <p className="mt-4 text-sm leading-7 text-white/70">
-              取扱いや国内在庫は時期で変わります。ここでは、LAPIERREを検討するときの代表的な4方向を紹介します。
+              峠の頂上、遠い町、土の道、毎朝の通勤。LAPIERREの幅広さは、速さの形が一つではないことを教えてくれます。
             </p>
           </div>
           <div className="mt-10 grid gap-px overflow-hidden border border-white/15 bg-white/15 md:grid-cols-2">
@@ -195,18 +207,18 @@ export default function LapierrePage() {
       <section className="bg-gray-50 py-14 sm:py-16 md:py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
           <SectionHeader
-            title="遠方から来る前に確認すること"
-            subtitle="PLAN YOUR VISIT"
-            description="四国・山陰・福山・西播磨から車で来られる場合、目的のモデルが見られる状態かを先に合わせておくと無駄がありません。"
+            title="見た目に惹かれた、その先を確かめる"
+            subtitle="BEYOND THE SILHOUETTE"
+            description="自転車の美しさは、眺めるだけでは完結しません。自分の体と、走りたい道に重ねて初めて、一台の意味が見えてきます。"
           />
           <div className="grid border-y border-gray-200 md:grid-cols-3 md:divide-x md:divide-gray-200">
             {[
-              { number: "01", title: "モデルとサイズ", text: "候補が曖昧でも、身長と走り方が分かれば確認できます。" },
-              { number: "02", title: "実車・試乗の可否", text: "スタッフ車、展示車、試乗車は常設とは限りません。希望を事前にお知らせください。" },
-              { number: "03", title: "国内在庫と納期", text: "取り寄せになる場合は、カラーやサイズごとの状況を来店前に確認します。" },
+              { eyebrow: "SHAPE", title: "造形を近くで見る", text: "チューブの線、塗装の奥行き、細部の収まり。写真で惹かれた理由を、実車の前でもう一度確かめます。" },
+              { eyebrow: "POSITION", title: "自分の体に重ねる", text: "憧れのモデルを無理なく楽しめるよう、体格と姿勢からサイズや組み方を考えます。" },
+              { eyebrow: "ROAD", title: "走る場所を思い浮かべる", text: "速く走りたいのか、遠くへ行きたいのか。いつもの道を聞きながら、モデルの個性を選びます。" },
             ].map((item) => (
-              <div key={item.number} className="border-b border-gray-200 px-4 py-7 last:border-b-0 md:border-b-0 md:px-8">
-                <p className="text-xs font-bold tracking-[0.18em] text-[#c41e3a]">{item.number}</p>
+              <div key={item.eyebrow} className="border-b border-gray-200 px-4 py-7 last:border-b-0 md:border-b-0 md:px-8">
+                <p className="text-xs font-bold tracking-[0.18em] text-[#c41e3a]">{item.eyebrow}</p>
                 <h3 className="mt-2 text-lg font-bold text-gray-900">{item.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-gray-600">{item.text}</p>
               </div>
@@ -234,8 +246,8 @@ export default function LapierrePage() {
 
       <BrandInquiryCta
         brand="LAPIERRE"
-        heading="見たいモデルを決めきれなくても、ご相談ください。"
-        description="走る距離、路面、予算、身長を伺い、候補と確認すべき実車・在庫を整理します。遠方の方は出発前の電話確認がおすすめです。"
+        heading="写真で惹かれた一台を、実車の感触へ。"
+        description="モデルを決めきれていなくても大丈夫です。走りたい道や好きな佇まいから、候補を一緒に探します。遠方からお越しの方は、実車や在庫の状況を事前にご確認いただけます。"
       />
 
       <div className="border-t border-gray-100 py-8 text-center">
