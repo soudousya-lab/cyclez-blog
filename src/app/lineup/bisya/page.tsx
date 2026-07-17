@@ -1,129 +1,245 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import PageBanner from "@/components/PageBanner";
+import { BrandInquiryCta } from "@/components/BrandInquiryCta";
+import SectionHeader from "@/components/SectionHeader";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/lineup/bisya" },
-  title: "BISYA（毘沙）取扱いモデル",
+  title: "BISYA（毘沙）を岡山で試乗・相談するなら",
   description:
-    "cycleZ（サイクルゼット・岡山）が取り扱う国産カーボンブランドBISYA（毘沙）の紹介。新潟・上越の老舗繊維問屋が手がける、高品質フルカーボンを手の届く価格で。入門アルミのTAMON、カーボンの四号機・八号機まで。試乗・在庫のご相談は店頭で。",
+    "BISYA（毘沙）を扱い、2023年から試乗会を重ねてきた岡山のcycleZ。TAMON・四号機・八号機の違い、向いている人、実車・試乗の確認方法を紹介します。",
+  openGraph: {
+    type: "website",
+    url: "/lineup/bisya",
+    title: "BISYA（毘沙）を岡山で試乗・相談するなら｜cycleZ",
+    description:
+      "価格だけでは分からないBISYAの違いを、試乗会を重ねてきたcycleZが紹介。来店前に実車・試乗の確認もできます。",
+    images: [
+      {
+        url: "/images/bikes/bisya-bis004.jpg",
+        width: 1200,
+        height: 750,
+        alt: "BISYA 四号機のカーボンロードバイク",
+      },
+    ],
+  },
 };
 
 const models = [
   {
     name: "TAMON（多聞）",
-    category: "入門アルミロード",
-    band: "〜10万円",
+    role: "小柄な方・ジュニア・初めての一台",
     image: "/images/bikes/bisya-tamon.jpg",
     url: "https://bisya.jp/",
-    desc: "小柄な方や小中学生にも合わせやすい入門アルミロード。軽量で扱いやすく、初めての一台にちょうどいい価格帯です。",
+    description:
+      "小さいサイズの選択肢を探している方へ。値段だけで決めず、またがったときの姿勢、ブレーキ操作、足つきを確認したいモデルです。",
   },
   {
     name: "四号機 BIS004",
-    category: "入門カーボンロード",
-    band: "10〜25万円",
+    role: "初めてのカーボンロード",
     image: "/images/bikes/bisya-bis004.jpg",
     url: "https://bisya.jp/bis004",
-    desc: "OEM工場で生産された高品質フルカーボンを手の届く価格で。長距離も快適にこなす、はじめてのカーボンに。",
+    description:
+      "カーボンフレームを現実的な予算から検討したい方へ。完成車の仕様だけでなく、サイズと使い方を合わせて考えます。",
   },
   {
     name: "八号機 BIS008",
-    category: "カーボンロード",
-    band: "10〜25万円",
+    role: "走りを一段上げたい方",
     image: "/images/bikes/bisya-bis008.jpg",
     url: "https://bisya.jp/bis008",
-    desc: "毘沙のカーボンロード。コストパフォーマンスに優れ、走りの気持ちよさをしっかり味わえる一台です。",
+    description:
+      "軽快さや反応をもう一段求める方向のカーボンロード。四号機との違いは、実際の用途と予算を並べて整理します。",
+  },
+];
+
+const faqItems = [
+  {
+    question: "BISYAはいつでも試乗できますか？",
+    answer:
+      "常設とは限りません。cycleZでは試乗会を継続してきましたが、時期によって試乗できるモデルとサイズが変わります。来店前に電話でご確認ください。",
+  },
+  {
+    question: "TAMONは子どもや小柄な人なら誰でも合いますか？",
+    answer:
+      "身長だけでなく、股下、腕の長さ、ブレーキへ指が届くかまで確認が必要です。実車がある場合は、またがって操作姿勢を確かめます。",
+  },
+  {
+    question: "四号機と八号機の違いを相談できますか？",
+    answer:
+      "はい。乗る距離、速さの目標、現在の自転車、予算を伺い、フレームだけでなく完成車全体の仕様として比較します。",
+  },
+  {
+    question: "県外から試乗会へ行っても大丈夫ですか？",
+    answer:
+      "もちろんです。希望モデルとおおよその身長、来店予定時刻を事前にお知らせいただくと、当日の案内がスムーズです。",
   },
 ];
 
 export default function BisyaPage() {
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  };
+
   return (
-    <div className="bg-gray-50 min-h-screen">
-      <PageBanner
-        title="BISYA（毘沙）"
-        subtitle="BISYA"
-        breadcrumbs={[{ label: "ラインナップ", href: "/lineup" }, { label: "BISYA" }]}
+    <div className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
-      <div className="max-w-4xl mx-auto px-4 py-10">
-        {/* ブランド紹介 */}
-        <div className="bg-white rounded-2xl shadow-sm p-6 md:p-10 mb-8">
-          <p className="text-[#c41e3a] font-bold text-xs sm:text-sm tracking-[0.2em] mb-2">MADE IN JAPAN</p>
-          <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">手の届くフルカーボン、新潟発の国産ブランド</h2>
-          <p className="text-gray-700 leading-relaxed">
-            新潟・上越の老舗繊維問屋が手がけるフルカーボンロードバイクブランド「毘沙（BISYA）」。有名ブランドのOEM工場で生産された高品質なカーボンフレームを、手の届きやすい価格で提供しています。「カーボンは高い」というイメージを覆す一台を探している方に。cycleZでは在庫・お取り寄せ・試乗のご相談を承っています。
+      <div className="relative aspect-[3/2] w-full overflow-hidden bg-[#f5f5f3] sm:aspect-[16/7]">
+        <Image
+          src="/images/bikes/bisya-bis004.jpg"
+          alt="BISYA 四号機のカーボンロードバイク"
+          fill
+          priority
+          loading="eager"
+          className="object-contain p-3 sm:p-8"
+          sizes="100vw"
+        />
+      </div>
+
+      <section className="border-b border-gray-100 py-10 sm:py-14 md:py-16">
+        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
+          <nav aria-label="パンくず" className="mb-5 text-xs text-gray-500">
+            <Link href="/" className="hover:text-[#c41e3a]">ホーム</Link>
+            <span className="mx-2">/</span>
+            <Link href="/lineup" className="hover:text-[#c41e3a]">ラインナップ</Link>
+            <span className="mx-2">/</span>
+            <span>BISYA</span>
+          </nav>
+          <p className="text-xs font-bold tracking-[0.2em] text-[#c41e3a]">BISYA / 毘沙</p>
+          <h1 className="jp-phrase-wrap mt-3 text-3xl font-bold leading-tight text-gray-900 sm:text-4xl md:text-5xl">
+            手が届く。その先を、試して決める。
+          </h1>
+          <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-gray-600 sm:text-base sm:leading-8">
+            BISYAは、新潟・上越から生まれたロードバイクブランドです。
+            cycleZは2023年から試乗会を重ね、価格表だけでは分からないサイズ感と走りを確かめる機会をつくってきました。
           </p>
         </div>
+      </section>
 
-        {/* モデル一覧 */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-          {models.map((m) => (
-            <div key={m.name} className="bg-white rounded-2xl shadow-sm overflow-hidden flex flex-col">
-              <div className="relative w-full aspect-[3/2] bg-white flex items-center justify-center p-4">
-                {m.image ? (
-                  <Image
-                    src={m.image}
-                    alt={`BISYA ${m.name}`}
-                    fill
-                    className="object-contain p-4"
-                    sizes="(max-width: 640px) 100vw, 400px"
-                  />
-                ) : (
-                  <div className="flex flex-col items-center justify-center text-gray-300">
-                    <svg className="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <circle cx="6.5" cy="16.5" r="3.5" strokeWidth={1.5} />
-                      <circle cx="17.5" cy="16.5" r="3.5" strokeWidth={1.5} />
-                      <path strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" d="M6.5 16.5l4-8h5l2 8M10.5 8.5h3" />
-                    </svg>
-                    <span className="mt-1 text-[11px] text-gray-400">写真準備中</span>
-                  </div>
-                )}
-                <span className="absolute top-3 left-3 bg-[#c41e3a] text-white text-[11px] font-bold px-2.5 py-1 rounded-full">
-                  {m.band}
-                </span>
-              </div>
-              <div className="p-5 flex flex-col flex-1">
-                <span className="text-[11px] text-gray-500 font-bold">{m.category}</span>
-                <h3 className="mt-0.5 text-lg font-bold text-gray-900">{m.name}</h3>
-                <p className="mt-2 text-sm text-gray-600 leading-relaxed flex-1">{m.desc}</p>
-                <a
-                  href={m.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-4 inline-flex items-center gap-1 text-sm text-[#c41e3a] font-medium hover:underline"
-                >
-                  メーカー公式で詳細を見る
-                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                  </svg>
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* CTA */}
-        <div className="bg-gradient-to-r from-[#c41e3a]/10 to-[#c41e3a]/5 border-l-4 border-[#c41e3a] rounded-r-xl p-6">
-          <p className="font-bold text-gray-900 mb-2">気になるモデルは、店頭でご相談ください</p>
-          <p className="text-gray-600 text-sm mb-4">
-            サイズ選びや在庫・お取り寄せ、試乗のご相談を承っています。価格は仕様・時期により変わるため、最新は店頭または公式サイトでご確認ください。
-          </p>
-          <div className="flex flex-wrap gap-3">
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 bg-[#c41e3a] text-white px-6 py-2.5 rounded-full hover:bg-[#a01830] transition-colors text-sm font-medium"
-            >
-              来店・お問い合わせ
-            </Link>
-            <Link
-              href="/diagnosis"
-              className="inline-flex items-center gap-2 bg-white border border-[#c41e3a] text-[#c41e3a] px-6 py-2.5 rounded-full hover:bg-[#c41e3a] hover:text-white transition-colors text-sm font-medium"
-            >
-              自分に合う一台を診断する
-            </Link>
+      <section className="py-14 sm:py-16 md:py-20">
+        <div className="mx-auto grid max-w-6xl items-center gap-9 px-4 sm:px-6 lg:grid-cols-2 lg:gap-14">
+          <div className="relative aspect-[1024/481] overflow-hidden border border-gray-100 bg-white">
+            <Image
+              src="/images/wp/2023-12-BISYA-1024x481.png"
+              alt="BISYA Full Carbon Road Bike"
+              fill
+              className="object-contain"
+              sizes="(max-width: 1024px) 100vw, 50vw"
+            />
+          </div>
+          <div>
+            <p className="text-xs font-bold tracking-[0.18em] text-[#c41e3a]">WHY BISYA</p>
+            <h2 className="jp-phrase-wrap mt-3 text-2xl font-bold leading-snug text-gray-900 sm:text-3xl">
+              「カーボンだから」だけで選ばない。
+            </h2>
+            <p className="mt-5 text-sm leading-8 text-gray-600 sm:text-base">
+              BISYAの入口は、手の届きやすい価格であること。けれど、自転車はフレーム素材だけで良し悪しが決まるものではありません。
+            </p>
+            <p className="mt-4 text-sm leading-8 text-gray-600 sm:text-base">
+              体に合うサイズか、普段走る距離に合うか、ブレーキや変速を無理なく扱えるか。cycleZでは、実車や試乗機会があるときこそ、その基本を一つずつ確認します。
+            </p>
           </div>
         </div>
+      </section>
+
+      <section className="bg-gray-50 py-14 sm:py-16 md:py-20">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+          <SectionHeader
+            title="三つの入口から選ぶ"
+            subtitle="MODEL GUIDE"
+            description="価格や仕様は時期で変わります。まずは誰が、どんな走りに使うのかで候補を分けます。"
+          />
+          <div className="divide-y divide-gray-200 border-y border-gray-200">
+            {models.map((model, index) => (
+              <article key={model.name} className="grid items-center gap-6 py-8 md:grid-cols-[0.9fr_1.1fr] md:gap-12">
+                <div className={`relative aspect-[3/2] overflow-hidden bg-white ${index % 2 === 1 ? "md:order-2" : ""}`}>
+                  <Image src={model.image} alt={`BISYA ${model.name}`} fill className="object-contain p-3" sizes="(max-width: 768px) 100vw, 45vw" />
+                </div>
+                <div className={index % 2 === 1 ? "md:order-1" : ""}>
+                  <p className="text-xs font-bold tracking-[0.16em] text-[#c41e3a]">{model.role}</p>
+                  <h3 className="mt-2 text-2xl font-bold text-gray-900">{model.name}</h3>
+                  <p className="mt-4 text-sm leading-7 text-gray-600">{model.description}</p>
+                  <a href={model.url} target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex text-sm font-bold text-[#c41e3a] hover:underline">
+                    メーカー情報を見る <span className="ml-2" aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-gray-950 py-14 text-white sm:py-16 md:py-20">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6">
+          <div className="grid gap-10 lg:grid-cols-[0.75fr_1.25fr] lg:gap-16">
+            <div>
+              <p className="text-xs font-bold tracking-[0.18em] text-[#e96a7f]">TEST RIDE HISTORY</p>
+              <h2 className="jp-phrase-wrap mt-3 text-2xl font-bold leading-snug sm:text-3xl">
+                一度だけでなく、試せる機会を続けてきました。
+              </h2>
+              <p className="mt-4 text-sm leading-7 text-white/70">
+                展示だけでは分からないから、cycleZではBISYAの試乗会を継続して開催しています。
+              </p>
+            </div>
+            <ol className="border-l border-white/20 pl-6 sm:pl-8">
+              {[
+                { year: "2023", text: "4月、BISYA試乗会を開催", href: "" },
+                { year: "2024", text: "4月、BISYA試乗会を開催", href: "/blog/event202404_02" },
+                { year: "2025", text: "6月、TAMONを含む歴代モデル試乗会を開催", href: "/blog/cyclez_event_202505" },
+              ].map((event) => (
+                <li key={event.year} className="relative pb-7 last:pb-0">
+                  <span className="absolute -left-[1.9rem] top-1 h-2.5 w-2.5 rounded-full bg-[#e96a7f] sm:-left-[2.35rem]" />
+                  <p className="text-xs font-bold tracking-[0.16em] text-[#e96a7f]">{event.year}</p>
+                  <p className="mt-1 text-sm leading-7 text-white/80">{event.text}</p>
+                  {event.href && (
+                    <Link href={event.href} className="mt-2 inline-flex text-xs font-bold text-white hover:text-[#e96a7f]">
+                      告知記事を見る <span className="ml-2" aria-hidden="true">→</span>
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-14 sm:py-16 md:py-20">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6">
+          <SectionHeader title="よくある質問" subtitle="FAQ" />
+          <div className="divide-y divide-gray-200 border-y border-gray-200">
+            {faqItems.map((item) => (
+              <details key={item.question} className="group py-5">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-bold text-gray-900">
+                  <span>{item.question}</span>
+                  <span className="text-xl font-normal text-[#c41e3a] transition-transform group-open:rotate-45" aria-hidden="true">＋</span>
+                </summary>
+                <p className="pt-4 text-sm leading-7 text-gray-600">{item.answer}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <BrandInquiryCta
+        brand="BISYA（毘沙）"
+        heading="試したいモデルとサイズを、来店前に確認できます。"
+        description="試乗車・展示車は時期で変わります。希望モデル、身長、来店予定日をお知らせいただければ、その時点で確認できる選択肢をご案内します。"
+      />
+
+      <div className="border-t border-gray-100 py-8 text-center">
+        <a href="https://bisya.jp/" target="_blank" rel="noopener noreferrer" className="text-sm text-gray-500 hover:text-[#c41e3a]">
+          BISYA 公式サイトを見る <span aria-hidden="true">↗</span>
+        </a>
       </div>
     </div>
   );

@@ -70,6 +70,7 @@ const bikebrands: { name: string; country: string; url: string; description: str
     name: "LAPIERRE",
     country: "フランス",
     url: "https://www.lapierrebikes.com/",
+    internalHref: "/lineup/lapierre",
     description: "フランス・ディジョンを拠点とする総合自転車メーカー。MTBからロードまで幅広く展開し、独自の技術でレースシーンでも活躍。",
   },
   {
@@ -106,6 +107,7 @@ const bikebrands: { name: string; country: string; url: string; description: str
     name: "macchi cycles",
     country: "日本",
     url: "http://www.macchicycles.com/",
+    internalHref: "/lineup/macchi",
     description: "滋賀県信楽に工房を構えるビルダー植田真貴氏によるハンドメイドクロモリブランド。レースでも戦える「よく走るクロモリ」を追求したラグドフレームが特徴。体格や用途に合わせたフルオーダーに対応。",
   },
 ];
@@ -192,8 +194,16 @@ export default function LineupPage() {
                 <div className="flex items-baseline gap-2 mb-2">
                   <h3 className="text-lg font-bold text-gray-900 group-hover:text-[#c41e3a] transition-colors">{brand.name}</h3>
                   <span className="text-xs text-gray-500">/ {brand.country}</span>
-                  <svg className="w-3.5 h-3.5 text-gray-400 group-hover:text-[#c41e3a] transition-colors ml-auto flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  {brand.internalHref && (
+                    <span className="rounded-full bg-[#c41e3a]/10 px-2 py-0.5 text-[10px] font-bold text-[#c41e3a]">ガイド</span>
+                  )}
+                  <svg className="w-3.5 h-3.5 text-gray-400 group-hover:text-[#c41e3a] transition-colors ml-auto flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d={brand.internalHref ? "M9 5l7 7-7 7" : "M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"}
+                    />
                   </svg>
                 </div>
                 <p className="text-gray-600 text-sm leading-relaxed">{brand.description}</p>

@@ -6,18 +6,18 @@ import { useEffect, useCallback, Suspense } from "react";
 import { captureCtaClick as posthogCtaClick, captureFormSubmit as posthogFormSubmit } from "./PostHogProvider";
 
 // GA4 測定ID
-const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID || "";
+const GA_MEASUREMENT_ID = (process.env.NEXT_PUBLIC_GA_ID || "").trim();
 // Google Ads タグID（コンバージョン計測用）
-const GOOGLE_ADS_TAG_ID = process.env.NEXT_PUBLIC_GOOGLE_ADS_TAG_ID || "";
+const GOOGLE_ADS_TAG_ID = (process.env.NEXT_PUBLIC_GOOGLE_ADS_TAG_ID || "").trim();
 // Google Ads コンバージョンラベル。Ads管理画面が自動生成する不透明な文字列で、
 // 任意の名前（旧実装の "phone_call" 等）を書いても存在しないラベル扱いで黙って捨てられる。
 // 2026-07-16に管理画面で CVアクション「Click-to-Call」を新規作成して発行された実値。
 // 秘密情報ではなく送信先の識別子なので env 化しない（env漏れで再びサイレント失敗させないため）。
 const ADS_CONVERSION_LABEL_PHONE = "D1z0CLvEr9EcEMKszZcD";
 // Microsoft Clarity トラッキングID
-const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_ID || "";
+const CLARITY_ID = (process.env.NEXT_PUBLIC_CLARITY_ID || "").trim();
 // Meta Pixel ID（今後配信開始時に設定）
-const META_PIXEL_ID = process.env.NEXT_PUBLIC_META_PIXEL_ID || "";
+const META_PIXEL_ID = (process.env.NEXT_PUBLIC_META_PIXEL_ID || "").trim();
 
 // event_id生成（CAPI重複排除用）
 function generateEventId(): string {
@@ -38,6 +38,9 @@ const PAGE_NAME_MAP: Record<string, string> = {
   "/contact": "お問い合わせ",
   "/privacy": "個人情報保護方針",
   "/lineup": "ラインナップ",
+  "/lineup/bisya": "BISYAブランドガイド",
+  "/lineup/lapierre": "LAPIERREブランドガイド",
+  "/lineup/macchi": "macchi cyclesブランドガイド",
   "/cyclewear": "サイクルウェアLP",
   "/blog": "ブログ一覧",
 };
@@ -114,7 +117,18 @@ const SOCIAL_SOURCES = [
   "youtube",
   "x",
   "twitter",
+  "messenger",
+  "audience_network",
+  "meta",
 ] as const;
+
+const SOCIAL_SOURCE_ALIASES: Record<string, typeof SOCIAL_SOURCES[number]> = {
+  fb: "facebook",
+  ig: "instagram",
+  th: "threads",
+  msg: "messenger",
+  an: "audience_network",
+};
 
 const SOCIAL_REFERRERS: Array<{ platform: string; host: string }> = [
   { platform: "instagram", host: "instagram.com" },
@@ -122,6 +136,8 @@ const SOCIAL_REFERRERS: Array<{ platform: string; host: string }> = [
   { platform: "facebook", host: "facebook.com" },
   { platform: "facebook", host: "l.facebook.com" },
   { platform: "facebook", host: "m.facebook.com" },
+  { platform: "messenger", host: "messenger.com" },
+  { platform: "messenger", host: "m.me" },
   { platform: "threads", host: "threads.net" },
   { platform: "line", host: "line.me" },
   { platform: "youtube", host: "youtube.com" },
@@ -138,13 +154,15 @@ type SocialLandingInfo = {
   campaign: string;
   content: string;
   term: string;
+  placement: string;
   referrer: string;
 };
 
 function normalizeSocialSource(source: string | null): string {
   const normalized = (source || "").toLowerCase().trim();
-  if (SOCIAL_SOURCES.includes(normalized as typeof SOCIAL_SOURCES[number])) {
-    return normalized;
+  const aliased = SOCIAL_SOURCE_ALIASES[normalized] || normalized;
+  if (SOCIAL_SOURCES.includes(aliased as typeof SOCIAL_SOURCES[number])) {
+    return aliased;
   }
   return "";
 }
@@ -165,7 +183,8 @@ function getSocialLandingInfo(): SocialLandingInfo | null {
   if (typeof window === "undefined") return null;
 
   const params = new URLSearchParams(window.location.search);
-  const utmSource = normalizeSocialSource(params.get("utm_source"));
+  const rawUtmSource = params.get("utm_source");
+  const utmSource = normalizeSocialSource(rawUtmSource);
   const utmMedium = (params.get("utm_medium") || "").toLowerCase();
   const referrerPlatform = getReferrerPlatform(document.referrer);
   const isSocialMedium = ["social", "paid_social", "organic_social"].includes(utmMedium);
@@ -175,11 +194,12 @@ function getSocialLandingInfo(): SocialLandingInfo | null {
 
   return {
     platform: platform || "social",
-    source: params.get("utm_source") || platform || "unknown",
+    source: utmSource || rawUtmSource || platform || "unknown",
     medium: params.get("utm_medium") || (referrerPlatform ? "social_referral" : "social"),
     campaign: params.get("utm_campaign") || "none",
     content: params.get("utm_content") || "none",
     term: params.get("utm_term") || "none",
+    placement: params.get("placement") || "none",
     referrer: document.referrer || "direct",
   };
 }
@@ -192,6 +212,7 @@ function trackSocialLanding(info: SocialLandingInfo, pagePath: string, pageUrl: 
     info.medium,
     info.campaign,
     info.content,
+    info.placement,
   ].join(":");
 
   if (sessionStorage.getItem(eventKey)) return;
@@ -213,6 +234,7 @@ function trackSocialLanding(info: SocialLandingInfo, pagePath: string, pageUrl: 
       traffic_campaign: info.campaign,
       traffic_content: info.content,
       traffic_term: info.term,
+      traffic_placement: info.placement,
       page_path: pagePath,
       page_location: pageUrl,
       referrer: info.referrer,
@@ -223,6 +245,7 @@ function trackSocialLanding(info: SocialLandingInfo, pagePath: string, pageUrl: 
   clarityTag("traffic_medium", info.medium);
   clarityTag("traffic_campaign", info.campaign);
   clarityTag("traffic_content", info.content);
+  clarityTag("traffic_placement", info.placement);
   clarityTag("social_platform", info.platform);
   clarityEvent("social_landing");
 }
@@ -231,18 +254,47 @@ function trackSocialLanding(info: SocialLandingInfo, pagePath: string, pageUrl: 
 // Meta Pixel イベント送信
 // =========================================
 
-export const trackMetaEvent = (eventName: string, params?: Record<string, unknown>) => {
-  const eventId = generateEventId();
-  if (typeof window !== "undefined" && window.fbq) {
-    window.fbq("track", eventName, params, { eventID: eventId });
+type MetaEventCommand = "track" | "trackCustom";
+
+type PendingMetaEvent = {
+  command: MetaEventCommand;
+  eventName: string;
+  params?: Record<string, unknown>;
+  eventId: string;
+};
+
+const META_VIEW_CONTENT_MAP: Record<string, { name: string; id: string; category: string }> = {
+  "/cyclewear": { name: "中四国サイクルウェアLP", id: "cyclewear", category: "cyclewear" },
+  "/lineup/bisya": { name: "BISYAブランドガイド", id: "bisya", category: "road_bike_brand" },
+  "/lineup/lapierre": { name: "LAPIERREブランドガイド", id: "lapierre", category: "road_bike_brand" },
+  "/lineup/macchi": { name: "macchi cyclesブランドガイド", id: "macchi", category: "road_bike_brand" },
+};
+
+function dispatchMetaEvent(command: MetaEventCommand, eventName: string, params?: Record<string, unknown>) {
+  if (!META_PIXEL_ID || typeof window === "undefined") return;
+
+  const pendingEvent: PendingMetaEvent = {
+    command,
+    eventName,
+    params,
+    eventId: generateEventId(),
+  };
+
+  if (window.fbq) {
+    window.fbq(command, eventName, params, { eventID: pendingEvent.eventId });
+    return;
   }
+
+  window.__czMetaEventQueue = window.__czMetaEventQueue || [];
+  window.__czMetaEventQueue.push(pendingEvent);
+}
+
+export const trackMetaEvent = (eventName: string, params?: Record<string, unknown>) => {
+  dispatchMetaEvent("track", eventName, params);
 };
 
 export const trackMetaCustomEvent = (eventName: string, params?: Record<string, unknown>) => {
-  const eventId = generateEventId();
-  if (typeof window !== "undefined" && window.fbq) {
-    window.fbq("trackCustom", eventName, params, { eventID: eventId });
-  }
+  dispatchMetaEvent("trackCustom", eventName, params);
 };
 
 // =========================================
@@ -477,6 +529,16 @@ function PageViewTracker() {
     const socialLandingInfo = getSocialLandingInfo();
     if (socialLandingInfo) {
       trackSocialLanding(socialLandingInfo, url, window.location.href);
+    }
+
+    const metaContent = META_VIEW_CONTENT_MAP[pathname];
+    if (metaContent) {
+      trackMetaEvent("ViewContent", {
+        content_name: metaContent.name,
+        content_category: metaContent.category,
+        content_ids: [metaContent.id],
+        content_type: "product_group",
+      });
     }
 
     // Meta Pixel PageView（SPA遷移時のみ）
@@ -714,6 +776,11 @@ function MetaPixelScript() {
           fbq('init', '${META_PIXEL_ID}');
           var _initEventId = Date.now() + '-' + Math.random().toString(36).substring(2, 11);
           fbq('track', 'PageView', {}, {eventID: _initEventId});
+          var _pendingMetaEvents = window.__czMetaEventQueue || [];
+          _pendingMetaEvents.forEach(function(item) {
+            fbq(item.command, item.eventName, item.params || {}, {eventID: item.eventId});
+          });
+          window.__czMetaEventQueue = [];
         `,
       }}
     />
@@ -805,6 +872,7 @@ declare global {
       params?: Record<string, unknown>,
       options?: { eventID?: string }
     ) => void;
+    __czMetaEventQueue?: PendingMetaEvent[];
     clarity: (
       command: "set" | "event" | "identify",
       ...args: string[]
