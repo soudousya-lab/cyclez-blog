@@ -39,6 +39,7 @@ export const summerCampaign = {
       image: "/images/blog/summer-sale-2026/basso-imola.jpg",
       alt: "BASSO IMOLA。ホワイトのアルミロードフレーム",
       note: "フロントフォーク訳あり",
+      soldOut: true, // 2026-07-17 売約済み
     },
     {
       brand: "GIOS",
