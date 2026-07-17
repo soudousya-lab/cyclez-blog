@@ -38,6 +38,7 @@ const PAGE_NAME_MAP: Record<string, string> = {
   "/contact": "お問い合わせ",
   "/privacy": "個人情報保護方針",
   "/lineup": "ラインナップ",
+  "/cyclewear": "サイクルウェアLP",
   "/blog": "ブログ一覧",
 };
 

@@ -35,6 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/access`, lastModified: updatedAt, changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${BASE_URL}/contact`, lastModified: updatedAt, changeFrequency: 'monthly' as const, priority: 0.6 },
     { url: `${BASE_URL}/lineup`, lastModified: updatedAt, changeFrequency: 'monthly' as const, priority: 0.7 },
+    { url: `${BASE_URL}/cyclewear`, lastModified: new Date('2026-07-17'), changeFrequency: 'monthly' as const, priority: 0.8 },
     { url: `${BASE_URL}/lineup/cinelli`, lastModified: new Date('2026-07-13'), changeFrequency: 'monthly' as const, priority: 0.5 },
     { url: `${BASE_URL}/lineup/bisya`, lastModified: new Date('2026-07-13'), changeFrequency: 'monthly' as const, priority: 0.5 },
     { url: `${BASE_URL}/privacy`, lastModified: updatedAt, changeFrequency: 'yearly' as const, priority: 0.3 },
