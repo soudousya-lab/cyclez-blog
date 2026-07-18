@@ -117,20 +117,34 @@ function formatContent(content: string): ReactElement[] {
       const boldMatch = remaining.match(/\*\*([^*]+)\*\*/);
       // Link [text](url)
       const linkMatch = remaining.match(/\[([^\]]+)\]\(([^)]+)\)/);
+      // Strikethrough ~~text~~（例: 定価の取り消し線）
+      const strikeMatch = remaining.match(/~~([^~]+)~~/);
 
       // Find earliest match
       const boldIndex = boldMatch?.index ?? Infinity;
       const linkIndex = linkMatch?.index ?? Infinity;
+      const strikeIndex = strikeMatch?.index ?? Infinity;
 
-      if (boldIndex === Infinity && linkIndex === Infinity) {
+      const matchIndex = Math.min(boldIndex, linkIndex, strikeIndex);
+
+      if (matchIndex === Infinity) {
         parts.push(remaining);
         break;
       }
 
-      const isBoldFirst = boldIndex <= linkIndex;
-      const matchToUse = isBoldFirst ? boldMatch : linkMatch;
-      const matchType = isBoldFirst ? 'bold' : 'link';
-      const matchIndex = isBoldFirst ? boldIndex : linkIndex;
+      // 同じ位置で複数種が一致することはない（先頭文字が異なるため）
+      let matchToUse: RegExpMatchArray | null;
+      let matchType: 'bold' | 'link' | 'strike';
+      if (boldIndex === matchIndex) {
+        matchToUse = boldMatch;
+        matchType = 'bold';
+      } else if (strikeIndex === matchIndex) {
+        matchToUse = strikeMatch;
+        matchType = 'strike';
+      } else {
+        matchToUse = linkMatch;
+        matchType = 'link';
+      }
 
       if (!matchToUse) {
         parts.push(remaining);
@@ -146,6 +160,12 @@ function formatContent(content: string): ReactElement[] {
           <strong key={`bold-${inlineKey++}`} className="font-bold text-[#c41e3a]">
             {matchToUse[1]}
           </strong>
+        );
+      } else if (matchType === 'strike') {
+        parts.push(
+          <s key={`strike-${inlineKey++}`} className="text-gray-400 line-through">
+            {matchToUse[1]}
+          </s>
         );
       } else if (matchType === 'link') {
         parts.push(
