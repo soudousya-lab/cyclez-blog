@@ -2,27 +2,27 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 import styles from "./CyclewearLanding.module.css";
 
 const reasons = [
   {
     number: "01",
-    label: "MATE.BIKE",
-    title: "移動そのものを、楽しむ。",
-    text: "車体の存在感も、日々の使い方も。実物を前に相談できます。",
-  },
-  {
-    number: "02",
-    label: "EVERYDAY WEAR",
+    label: "EVERYDAY",
     title: "街へ、そのまま。",
     text: "いかにも自転車用に見えない服を、素材とシルエットから。",
   },
   {
-    number: "03",
+    number: "02",
     label: "PERFORMANCE",
     title: "走る日は、もっと快適に。",
-    text: "ジャージからヘルメットまで、身体に合うものを試して選べます。",
+    text: "身体に沿う一着を、前傾姿勢での着心地まで確かめて。",
+  },
+  {
+    number: "03",
+    label: "FIT & HELMET",
+    title: "合うものを、きちんと。",
+    text: "袖丈から頭の形まで、サイズ表だけでは決められないところを。",
   },
 ] as const;
 
@@ -47,59 +47,34 @@ const fittingPoints = [
 ] as const;
 
 export function CyclewearLanding() {
-  const pageRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const page = pageRef.current;
-    if (!page) return;
-
-    const targets = page.querySelectorAll<HTMLElement>("[data-wear-reveal]");
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-    if (reduceMotion || !("IntersectionObserver" in window)) {
-      targets.forEach((target) => target.classList.add(styles.visible));
-      return;
-    }
-
-    page.classList.add(styles.motionReady);
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add(styles.visible);
-          observer.unobserve(entry.target);
-        });
-      },
-      { rootMargin: "0px 0px -9%", threshold: 0.12 },
-    );
-
-    targets.forEach((target) => observer.observe(target));
-    return () => observer.disconnect();
-  }, []);
+  const pageRef = useScrollReveal<HTMLDivElement>(
+    "[data-wear-reveal]",
+    styles.motionReady,
+    styles.visible,
+  );
 
   return (
     <div ref={pageRef} className={styles.page}>
       <section className={styles.hero} aria-labelledby="cyclewear-title">
         <div className={styles.heroGrid} aria-hidden="true" />
-        <p className={styles.heroWord} aria-hidden="true">RIDE</p>
+        <p className={styles.heroWord} aria-hidden="true">WEAR</p>
 
         <div className={styles.heroInner}>
           <div className={styles.heroCopy}>
-            <p className={styles.eyebrow}>MATE.BIKE × CYCLING APPAREL</p>
+            <p className={styles.eyebrow}>CYCLING APPAREL</p>
             <h1 id="cyclewear-title" className={styles.heroTitle}>
-              <span>乗るものも、</span>
-              <span>着るものも。</span>
+              <span>着るものを、</span>
               <span className={styles.heroAccent}>自分らしく選ぶ。</span>
             </h1>
             <p className={styles.heroLead}>
-              MATE.BIKEから、街に馴染む服、走りを支える一着まで。
+              街に馴染む服から、走りを支える一着、ヘルメットまで。
               <br className="hidden sm:block" />
               画面では分からない質感を、cycleZで。
             </p>
 
             <div className={styles.badges} aria-label="店頭で選べるもの">
-              <span>MATE.BIKE</span>
-              <span>APPAREL</span>
+              <span>CASUAL</span>
+              <span>PERFORMANCE</span>
               <span>HELMET</span>
             </div>
 
@@ -107,6 +82,10 @@ export function CyclewearLanding() {
               セレクトを見る
               <span aria-hidden="true">↓</span>
             </a>
+            <Link href="/select" className={styles.gatewayLink}>
+              車体・ウェアの入口へ
+              <span aria-hidden="true">↗</span>
+            </Link>
           </div>
 
           <div className={styles.heroStage}>
@@ -129,7 +108,7 @@ export function CyclewearLanding() {
       <section id="selection" className={styles.reasonSection} aria-labelledby="selection-title">
         <div className={styles.sectionInner}>
           <div className={styles.sectionHeading} data-wear-reveal>
-            <p>ONE STORE, THREE STYLES</p>
+            <p>THREE WAYS TO WEAR</p>
             <h2 id="selection-title">ここで選べること。</h2>
           </div>
 
@@ -144,24 +123,6 @@ export function CyclewearLanding() {
                 <p>{reason.text}</p>
               </article>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className={styles.mateSection} aria-labelledby="mate-title">
-        <p className={styles.mateWord} aria-hidden="true">MATE</p>
-        <div className={styles.mateInner}>
-          <div className={styles.mateMark} data-wear-reveal aria-hidden="true">
-            <span>M</span>
-          </div>
-          <div className={styles.mateCopy} data-wear-reveal>
-            <p>MATE.BIKE</p>
-            <h2 id="mate-title">街の移動に、<br />存在感を。</h2>
-            <span>
-              デンマーク・コペンハーゲン生まれのe-BIKE。
-              眺めるだけでは分からないサイズ感や使い方を、実物を前に話せます。
-            </span>
-            <p className={styles.stockNote}>展示・在庫状況は来店前にご確認ください。</p>
           </div>
         </div>
       </section>

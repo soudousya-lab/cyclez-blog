@@ -143,6 +143,22 @@
   animation: cueBounce 1.6s ease-in-out infinite;
 }
 
+.gatewayLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 1.8rem;
+  margin-left: 1.2rem;
+  color: #777;
+  font-size: 0.72rem;
+  font-weight: 700;
+  transition: color 0.25s ease;
+}
+
+.gatewayLink:hover {
+  color: var(--wear-red);
+}
+
 .heroStage {
   position: relative;
   height: min(44vw, 590px);
@@ -657,12 +673,419 @@
   transform: translateY(-2px);
 }
 
-.motionReady [data-wear-reveal] {
+.containImage {
+  object-fit: contain;
+}
+
+.gatewayStage {
+  position: relative;
+  height: min(45vw, 610px);
+  min-height: 500px;
+  animation: imageEnter 1.05s 0.16s both cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.gatewayBikePhoto {
+  position: absolute;
+  inset: 4% 8% 22% 0;
+  overflow: hidden;
+  border: 1px solid #deded9;
+  background: #fff;
+  box-shadow: 0 26px 58px rgba(0, 0, 0, 0.1);
+}
+
+.gatewayBikeImage {
+  object-fit: contain;
+  padding: 4%;
+  filter: drop-shadow(0 18px 15px rgba(0, 0, 0, 0.12));
+}
+
+.gatewayWearPhoto {
+  position: absolute;
+  right: 0;
+  bottom: 3%;
+  width: 49%;
+  height: 43%;
+  overflow: hidden;
+  border: 9px solid #f6f6f3;
+  background: #ddd;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.16);
+}
+
+.gatewayCaption {
+  position: absolute;
+  right: -0.5rem;
+  top: 5%;
+  color: #777;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  writing-mode: vertical-rl;
+}
+
+.gatewayChoiceSection {
+  background: #fff;
+}
+
+.choiceGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.choiceCard {
+  border: 1px solid #d8d8d4;
+  background: #fff;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.choiceCard:hover {
+  border-color: var(--wear-red);
+  box-shadow: 0 24px 58px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
+}
+
+.choicePhoto {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #e8e8e5;
+}
+
+.choicePhotoContain {
+  background: #f7f7f4;
+}
+
+.choicePhotoContain img {
+  padding: 4%;
+}
+
+.choicePhoto > span {
+  position: absolute;
+  left: 1.1rem;
+  bottom: 1rem;
+  padding: 0.5rem 0.72rem;
+  color: #fff;
+  background: var(--wear-red);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.choiceContent {
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.choiceContent > p {
+  color: var(--wear-red);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.choiceContent h3 {
+  margin-top: 0.65rem;
+  font-size: clamp(1.45rem, 2.7vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.choiceContent > span {
+  display: block;
+  margin-top: 0.9rem;
+  color: var(--wear-muted);
+  font-size: 0.85rem;
+  line-height: 1.85;
+}
+
+.choiceContent small {
+  display: block;
+  min-height: 2.8rem;
+  margin-top: 1.25rem;
+  color: #999;
+  font-size: 0.62rem;
+  font-weight: 700;
+  line-height: 1.7;
+  letter-spacing: 0.06em;
+}
+
+.choiceContent > strong {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.35rem;
+  padding-top: 1rem;
+  border-top: 1px solid #d8d8d4;
+  font-size: 0.82rem;
+}
+
+.choiceContent > strong > span {
+  color: var(--wear-red);
+}
+
+.gatewayStatement {
+  color: #fff;
+  background: var(--wear-ink);
+}
+
+.gatewayStatement .sectionHeading > p {
+  color: var(--wear-red);
+}
+
+.gatewayReasonGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: clamp(2.5rem, 5vw, 4.5rem);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.gatewayReasonGrid > div {
+  min-height: 220px;
+  padding: 2rem clamp(1.2rem, 2.8vw, 2.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.gatewayReasonGrid > div:last-child {
+  border-right: 0;
+}
+
+.gatewayReasonGrid strong {
+  font-size: clamp(1.5rem, 3vw, 2.4rem);
+  letter-spacing: -0.04em;
+}
+
+.gatewayReasonGrid p {
+  margin-top: 0.8rem;
+  color: #aaa;
+  font-size: 0.82rem;
+  line-height: 1.8;
+}
+
+.bikeHeroStage {
+  position: relative;
+  height: min(50vw, 650px);
+  min-height: 460px;
+  animation: imageEnter 1.05s 0.16s both cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.bikeHeroHalo {
+  position: absolute;
+  width: min(35vw, 440px);
+  aspect-ratio: 1;
+  top: 48%;
+  left: 52%;
+  border: 1px solid rgba(196, 30, 58, 0.28);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bikeHeroHalo::before,
+.bikeHeroHalo::after {
+  content: "";
+  position: absolute;
+  inset: 10%;
+  border: 1px solid rgba(196, 30, 58, 0.14);
+  border-radius: 50%;
+}
+
+.bikeHeroHalo::after {
+  inset: 23%;
+  border-style: dashed;
+  animation: haloSpin 22s linear infinite;
+}
+
+.bikeHeroImage {
+  object-fit: contain;
+  filter: drop-shadow(0 24px 20px rgba(0, 0, 0, 0.13));
+}
+
+.brandFeatureSection {
+  padding: clamp(4.5rem, 9vw, 8rem) 1.25rem;
+  background: #f3f3f0;
+}
+
+.brandFeatureLayout {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  align-items: center;
+  gap: clamp(3rem, 8vw, 7rem);
+}
+
+.brandFeaturePhoto {
+  position: relative;
+  aspect-ratio: 16 / 11;
+  overflow: hidden;
+  border: 1px solid #deded9;
+  background: #fff;
+}
+
+.brandFeaturePhoto img {
+  padding: 4%;
+}
+
+.brandFeatureCopy > p {
+  color: var(--wear-red);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.brandFeatureCopy h2 {
+  margin-top: 0.7rem;
+  font-size: clamp(2rem, 4vw, 3.6rem);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.05em;
+}
+
+.brandFeatureCopy > span {
+  display: block;
+  margin-top: 1.2rem;
+  color: var(--wear-muted);
+  font-size: 0.9rem;
+  line-height: 1.95;
+}
+
+.bikeBrandSection {
+  background: #fff;
+}
+
+.bikeBrandGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: clamp(2.5rem, 5vw, 4.5rem);
+}
+
+.bikeBrandCard {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #d8d8d4;
+  background: #fff;
+}
+
+.bikeBrandPhoto {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #ddd;
+}
+
+.bikeBrandCopy {
+  position: relative;
+  z-index: 1;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.bikeBrandCopy > p {
+  color: var(--wear-red);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.bikeBrandCopy h3 {
+  margin-top: 0.35rem;
+  font-size: clamp(1.65rem, 3vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+}
+
+.bikeBrandCopy strong {
+  display: block;
+  margin-top: 1.35rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.bikeBrandCopy > span {
+  display: block;
+  margin-top: 0.75rem;
+  color: var(--wear-muted);
+  font-size: 0.82rem;
+  line-height: 1.9;
+}
+
+.bikeBrandCopy small {
+  display: block;
+  margin-top: 1rem;
+  color: #777;
+  font-size: 0.68rem;
+}
+
+.mateBrandCard {
+  position: relative;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  color: #fff;
+  background: var(--wear-ink);
+}
+
+.mateCardWord {
+  position: absolute;
+  right: -0.08em;
+  top: -0.16em;
+  color: transparent;
+  font-size: clamp(6rem, 14vw, 11rem);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.08em;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.12);
+}
+
+.mateCardMark {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  width: 150px;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  color: #fff;
+  background: var(--wear-red);
+  font-size: 4.2rem;
+  font-weight: 700;
+  transform: translateX(-50%);
+  box-shadow: 0 0 70px rgba(196, 30, 58, 0.3);
+}
+
+.mateBrandCard .bikeBrandCopy > span {
+  color: #aaa;
+}
+
+.bikeExperienceSection {
+  background: #f3f3f0;
+}
+
+.motionReady .brandFeaturePhoto:not(.visible) .photoWipe {
+  transform: translateX(0);
+}
+
+.brandFeaturePhoto.visible .photoWipe {
+  transition: transform 0.9s 0.15s cubic-bezier(0.77, 0, 0.18, 1);
+}
+
+.motionReady [data-wear-reveal],
+.motionReady [data-select-reveal],
+.motionReady [data-bike-reveal] {
   opacity: 0;
   transform: translateY(28px);
 }
 
-.motionReady [data-wear-reveal].visible {
+.motionReady [data-wear-reveal].visible,
+.motionReady [data-select-reveal].visible,
+.motionReady [data-bike-reveal].visible {
   opacity: 1;
   transform: translateY(0);
   transition: opacity 0.72s ease, transform 0.72s cubic-bezier(0.22, 1, 0.36, 1);
@@ -681,6 +1104,21 @@
 }
 
 .brandList [data-wear-reveal]:nth-child(4) {
+  transition-delay: 270ms;
+}
+
+.choiceGrid [data-select-reveal]:nth-child(2),
+.gatewayReasonGrid [data-select-reveal]:nth-child(2),
+.bikeBrandGrid [data-bike-reveal]:nth-child(2) {
+  transition-delay: 90ms;
+}
+
+.gatewayReasonGrid [data-select-reveal]:nth-child(3),
+.bikeBrandGrid [data-bike-reveal]:nth-child(3) {
+  transition-delay: 180ms;
+}
+
+.bikeBrandGrid [data-bike-reveal]:nth-child(4) {
   transition-delay: 270ms;
 }
 
@@ -731,10 +1169,27 @@
     margin-top: 1.2rem;
   }
 
+  .gatewayStage,
+  .bikeHeroStage {
+    height: min(74vw, 540px);
+    min-height: 390px;
+    margin-top: 1.2rem;
+  }
+
+  .bikeHeroHalo {
+    width: min(64vw, 400px);
+  }
+
   .reasonGrid,
   .splitLayout,
   .performanceLayout,
-  .mateInner {
+  .mateInner,
+  .brandFeatureLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .choiceGrid,
+  .bikeBrandGrid {
     grid-template-columns: 1fr;
   }
 
@@ -767,6 +1222,10 @@
   .performanceLayout .photoPanel {
     order: -1;
   }
+
+  .brandFeaturePhoto {
+    aspect-ratio: 16 / 10;
+  }
 }
 
 @media (max-width: 640px) {
@@ -788,6 +1247,13 @@
     line-height: 1.75;
   }
 
+  .gatewayLink {
+    display: flex;
+    width: fit-content;
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+
   .badges {
     gap: 0.4rem;
   }
@@ -801,6 +1267,38 @@
     height: 87vw;
     min-height: 320px;
     margin-right: -0.35rem;
+  }
+
+  .gatewayStage {
+    height: 94vw;
+    min-height: 350px;
+    margin-right: -0.3rem;
+  }
+
+  .gatewayBikePhoto {
+    inset: 3% 4% 25% 0;
+  }
+
+  .gatewayWearPhoto {
+    right: 0;
+    bottom: 2%;
+    width: 55%;
+    height: 43%;
+    border-width: 6px;
+  }
+
+  .gatewayCaption {
+    right: -0.25rem;
+  }
+
+  .bikeHeroStage {
+    height: 79vw;
+    min-height: 290px;
+    margin: 0 -0.8rem;
+  }
+
+  .bikeHeroHalo {
+    width: min(68vw, 300px);
   }
 
   .heroPhoto {
@@ -833,9 +1331,45 @@
 
   .everydaySection,
   .performanceSection,
-  .visitSection {
+  .visitSection,
+  .brandFeatureSection {
     padding-top: 4.3rem;
     padding-bottom: 4.3rem;
+  }
+
+  .choiceContent small {
+    min-height: 0;
+  }
+
+  .gatewayReasonGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .gatewayReasonGrid > div {
+    min-height: 150px;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  .gatewayReasonGrid > div:last-child {
+    border-bottom: 0;
+  }
+
+  .brandFeaturePhoto {
+    aspect-ratio: 4 / 3;
+  }
+
+  .bikeBrandPhoto {
+    aspect-ratio: 4 / 3;
+  }
+
+  .mateBrandCard {
+    min-height: 510px;
+  }
+
+  .mateCardMark {
+    width: 125px;
+    font-size: 3.5rem;
   }
 
   .photoPanel {
@@ -899,12 +1433,19 @@
   .jumpLink span,
   .heroStage,
   .heroFrame::after,
-  .mateMark::before {
+  .mateMark::before,
+  .gatewayStage,
+  .bikeHeroStage,
+  .bikeHeroHalo::after {
     animation: none !important;
   }
 
   .motionReady [data-wear-reveal],
-  .motionReady [data-wear-reveal].visible {
+  .motionReady [data-wear-reveal].visible,
+  .motionReady [data-select-reveal],
+  .motionReady [data-select-reveal].visible,
+  .motionReady [data-bike-reveal],
+  .motionReady [data-bike-reveal].visible {
     opacity: 1;
     transform: none;
     transition: none;

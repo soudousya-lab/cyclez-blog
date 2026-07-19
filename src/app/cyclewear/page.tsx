@@ -3,15 +3,15 @@ import { CyclewearLanding } from "@/components/CyclewearLanding";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/cyclewear" },
-  title: "MATE.BIKEとサイクルウェアを実物で選ぶ",
+  title: "サイクルウェアを実物で着比べて選ぶ",
   description:
-    "岡山のcycleZでMATE.BIKEとサイクルウェアを実物から選ぶ。STEM DESIGN、rin project、ASSOS、Isadore、PEdALED、GIRO、831ソーイングなどを店頭で相談できます。",
+    "岡山のcycleZでサイクルウェアを実物から選ぶ。STEM DESIGN、rin project、ASSOS、Isadore、PEdALED、GIRO、831ソーイングなどを店頭で試着・相談できます。",
   openGraph: {
     type: "website",
     url: "/cyclewear",
-    title: "乗るものも、着るものも。自分らしく選ぶ。｜cycleZ",
+    title: "着るものを、自分らしく選ぶ。｜cycleZ",
     description:
-      "MATE.BIKEから、街に馴染む服、走りを支える一着まで。画面では分からない質感を、cycleZで。",
+      "街に馴染む服から、走りを支える一着、ヘルメットまで。画面では分からない質感を、cycleZで。",
     images: [
       {
         url: "/images/cyclewear/cyclewear-hero.jpg",

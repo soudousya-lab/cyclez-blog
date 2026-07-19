@@ -40,6 +40,8 @@ const PAGE_NAME_MAP: Record<string, string> = {
   "/lineup": "ラインナップ",
   "/lineup/bisya": "BISYAブランドガイド",
   "/lineup/macchi": "macchi cyclesブランドガイド",
+  "/select": "車体・アパレル選択LP",
+  "/bikes": "車体セレクトLP",
   "/cyclewear": "サイクルウェアLP",
   "/blog": "ブログ一覧",
 };
@@ -263,7 +265,9 @@ type PendingMetaEvent = {
 };
 
 const META_VIEW_CONTENT_MAP: Record<string, { name: string; id: string; category: string }> = {
-  "/cyclewear": { name: "中四国サイクルウェアLP", id: "cyclewear", category: "cyclewear" },
+  "/select": { name: "車体・アパレル選択LP", id: "select", category: "store_selection" },
+  "/bikes": { name: "車体セレクトLP", id: "bikes", category: "road_bike_selection" },
+  "/cyclewear": { name: "サイクルウェアLP", id: "cyclewear", category: "cyclewear" },
   "/lineup/bisya": { name: "BISYAブランドガイド", id: "bisya", category: "road_bike_brand" },
   "/lineup/macchi": { name: "macchi cyclesブランドガイド", id: "macchi", category: "road_bike_brand" },
 };
