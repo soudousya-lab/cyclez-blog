@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { format } from "date-fns";
 import { ja } from "date-fns/locale";
-import { useEffect, useRef, useState } from "react";
 import ScrollReveal from "./ScrollReveal";
 import SectionHeader from "./SectionHeader";
 import ProgressRing from "./ProgressRing";
@@ -38,55 +37,6 @@ function SpinningWheel({ className = "" }: { className?: string }) {
 // 緊急判定：タイトルに「緊急」「至急」「重要」を含むか
 function isUrgentPost(title: string): boolean {
   return /緊急|至急|重要/.test(title);
-}
-
-// スクロールで自動再生する動画コンポーネント
-function AutoPlayVideo({ src, poster, alt }: { src: string; poster: string; alt: string }) {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [isInView, setIsInView] = useState(false);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsInView(entry.isIntersecting);
-        if (entry.isIntersecting) {
-          video.play().catch(() => {});
-        } else {
-          video.pause();
-        }
-      },
-      { threshold: 0.3 }
-    );
-
-    observer.observe(video);
-    return () => observer.disconnect();
-  }, []);
-
-  return (
-    <div className="relative aspect-video rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1 group">
-      <video
-        ref={videoRef}
-        src={src}
-        poster={poster}
-        muted
-        loop
-        playsInline
-        preload="metadata"
-        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-      />
-      {/* 再生中でないときはオーバーレイ */}
-      <div className={`absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all flex items-center justify-center ${isInView ? "opacity-0" : "opacity-100"}`}>
-        <div className="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
-          <svg className="w-6 h-6 text-[#c41e3a] ml-1" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M8 5v14l11-7z" />
-          </svg>
-        </div>
-      </div>
-    </div>
-  );
 }
 
 interface HomeContentProps {
@@ -200,7 +150,7 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
           <div className="mt-6 flex flex-wrap justify-center gap-2 sm:gap-3">
             {[
               "GIOS", "BASSO", "De Rosa", "Wilier", "SCOTT", "CERVELO", "CINELLI",
-              "LAPIERRE", "FELT", "BOMA", "BISYA", "SURLY", "JAMIS", "CYCLEHEART",
+              "FELT", "BOMA", "BISYA", "SURLY", "JAMIS", "CYCLEHEART",
               "Tyrell", "macchi cycles",
             ].map((b) => (
               <span

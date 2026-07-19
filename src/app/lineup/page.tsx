@@ -67,13 +67,6 @@ const bikebrands: { name: string; country: string; url: string; description: str
     description: "ミラノ発の老舗。アートとサイクリングを融合させた個性的なデザインが特徴。ピストからロードまで展開。",
   },
   {
-    name: "LAPIERRE",
-    country: "フランス",
-    url: "https://www.lapierrebikes.com/",
-    internalHref: "/lineup/lapierre",
-    description: "フランス・ディジョンで受け継がれる設計と、レースで磨かれた走り。速さと美しいフレーム造形を一台に重ねるフレンチブランド。",
-  },
-  {
     name: "Wilier",
     country: "イタリア",
     url: "https://wilier.jp/",

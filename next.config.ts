@@ -25,6 +25,17 @@ const nextConfig: NextConfig = {
         destination: "/category/アパレル",
         permanent: true,
       },
+      // 取扱終了ブランドの旧ガイドは現行ラインナップへ集約（2026-07-19）
+      {
+        source: "/lineup/lapierre",
+        destination: "/lineup",
+        permanent: true,
+      },
+      {
+        source: "/lineup/lapierre/",
+        destination: "/lineup",
+        permanent: true,
+      },
       // WP固定ページの旧URLリダイレクト
       {
         source: "/about-us",

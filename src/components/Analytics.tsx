@@ -39,7 +39,6 @@ const PAGE_NAME_MAP: Record<string, string> = {
   "/privacy": "個人情報保護方針",
   "/lineup": "ラインナップ",
   "/lineup/bisya": "BISYAブランドガイド",
-  "/lineup/lapierre": "LAPIERREブランドガイド",
   "/lineup/macchi": "macchi cyclesブランドガイド",
   "/cyclewear": "サイクルウェアLP",
   "/blog": "ブログ一覧",
@@ -266,7 +265,6 @@ type PendingMetaEvent = {
 const META_VIEW_CONTENT_MAP: Record<string, { name: string; id: string; category: string }> = {
   "/cyclewear": { name: "中四国サイクルウェアLP", id: "cyclewear", category: "cyclewear" },
   "/lineup/bisya": { name: "BISYAブランドガイド", id: "bisya", category: "road_bike_brand" },
-  "/lineup/lapierre": { name: "LAPIERREブランドガイド", id: "lapierre", category: "road_bike_brand" },
   "/lineup/macchi": { name: "macchi cyclesブランドガイド", id: "macchi", category: "road_bike_brand" },
 };
 

@@ -3,7 +3,7 @@
 import { useState, useCallback, useMemo, type ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { MdPedalBike, MdDirectionsBike } from "react-icons/md";
+import { MdDirectionsBike } from "react-icons/md";
 import { FaBicycle, FaRoad, FaMountain, FaFlagCheckered, FaCity } from "react-icons/fa";
 import { capturePostHogEvent } from "./PostHogProvider";
 import { summerCampaign } from "@/data/summerCampaign";
@@ -99,10 +99,6 @@ const bikeData: Record<string, { image?: string; url: string }> = {
   "CINELLI Pressure ADR": { image: "/images/bikes/cinelli-pressure-adr.jpg", url: "/lineup/cinelli" },
   "CINELLI King Zydeco II": { image: "/images/bikes/cinelli-king-zydeco-ii.jpg", url: "/lineup/cinelli" },
   "CINELLI Gazzetta": { image: "/images/bikes/cinelli-gazzetta.jpg", url: "/lineup/cinelli" },
-  "LAPIERRE XELIUS SL": { image: "/images/bikes/lapierre-xelius-sl.jpg", url: "/lineup/lapierre" },
-  "LAPIERRE SENSIUM": { image: "/images/bikes/lapierre-sensium.jpg", url: "/lineup/lapierre" },
-  "LAPIERRE CROSSHILL": { image: "/images/bikes/lapierre-crosshill.jpg", url: "/lineup/lapierre" },
-  "LAPIERRE SHAPER": { image: "/images/bikes/lapierre-shaper.jpg", url: "/lineup/lapierre" },
   "BISYA TAMON": { image: "/images/bikes/bisya-tamon.jpg", url: "/lineup/bisya" },
   "BISYA 四号機": { image: "/images/bikes/bisya-bis004.jpg", url: "/lineup/bisya" },
   "BISYA 八号機": { image: "/images/bikes/bisya-bis008.jpg", url: "/lineup/bisya" },
@@ -213,7 +209,7 @@ const results: Record<ResultType, Result> = {
       "通勤・買い物・ちょっとしたお出かけに最適。実用性と耐久性を兼ね備え、毎日の移動が楽しくなります。泥除けやキャリアも装着できるので、天候や荷物を気にせず使えます。",
     budgetBikes: {
       under10: ["GIOS MISTRAL", "FELT Verza Speed 50"],
-      under25: ["Tyrell IVE", "CINELLI Gazzetta", "LAPIERRE SHAPER"],
+      under25: ["Tyrell IVE", "CINELLI Gazzetta"],
       under50: ["SURLY Midnight Special"],
       over50: ["De Rosa METAMORPHOSIS"],
     },
@@ -241,7 +237,7 @@ const results: Record<ResultType, Result> = {
       "ドロップハンドルで風を切る爽快感。安定したジオメトリで、初めてのロードバイクでも安心して乗れます。週末ライドの世界が一気に広がる一台です。",
     budgetBikes: {
       under10: ["GIOS SIERA", "BISYA TAMON"],
-      under25: ["Wilier GTR", "SCOTT Speedster", "BASSO MONZA", "LAPIERRE SENSIUM"],
+      under25: ["Wilier GTR", "SCOTT Speedster", "BASSO MONZA"],
       under50: [],
       over50: [],
     },
@@ -271,7 +267,7 @@ const results: Record<ResultType, Result> = {
       under10: [],
       under25: [],
       under50: ["GIOS AEROLITE", "SCOTT Addict", "BOMA", "FELT FR 4.0"],
-      over50: ["SCOTT Addict RC", "ORBEA ORCA", "BASSO DIAMANTE SV", "De Rosa MERAK", "Cervélo Soloist", "Cervélo R5", "CINELLI Pressure II", "LAPIERRE XELIUS SL"],
+      over50: ["SCOTT Addict RC", "ORBEA ORCA", "BASSO DIAMANTE SV", "De Rosa MERAK", "Cervélo Soloist", "Cervélo R5", "CINELLI Pressure II"],
     },
     icon: <FaFlagCheckered className="w-14 h-14 text-white" />,
   },
@@ -284,7 +280,7 @@ const results: Record<ResultType, Result> = {
     budgetBikes: {
       under10: [],
       under25: ["GIOS MITO", "JAMIS RENEGADE"],
-      under50: ["LAPIERRE CROSSHILL"],
+      under50: [],
       over50: ["BASSO PALTA", "De Rosa TITANIO-X", "Cervélo Áspero", "CINELLI King Zydeco II"],
     },
     icon: <FaMountain className="w-14 h-14 text-white" />,

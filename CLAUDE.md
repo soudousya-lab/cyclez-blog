@@ -538,7 +538,10 @@ public/images/
 ## ブランドガイドライン（最重要）
 
 ### 取扱ブランド（承認済み）
-GIOS, BASSO, SCOTT, BOMA, BISYA, De Rosa, FELT, CERVELO, CINELLI, LAPIERRE, Wilier, CYCLEHEART, SURLY, JAMIS, Tyrell, macchi cycles
+GIOS, BASSO, SCOTT, BOMA, BISYA, De Rosa, FELT, CERVELO, CINELLI, Wilier, CYCLEHEART, SURLY, JAMIS, Tyrell, macchi cycles
+
+### 取扱終了ブランド
+**LAPIERRE** — 2026-07-19にオーナー確認で取扱終了。現行のブランド一覧・診断・新規記事には載せない。過去記事で当時扱っていた事実は書き換えない。
 
 ### 禁止ブランド（絶対に記事内で言及しない）
 SPECIALIZED, COLNAGO, TREK, CANNONDALE, BIANCHI, GIANT

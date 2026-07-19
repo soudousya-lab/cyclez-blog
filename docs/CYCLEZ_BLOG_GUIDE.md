@@ -161,7 +161,9 @@ cycleZは**初心者の方、女性のお客様を特に歓迎**している。
 ### 自転車ブランド
 
 **使用OK**:
-GIOS, BASSO, SCOTT, BOMA, BISYA, DELOSA, FELT, CERVELO, CINELLI, LAPIERRE, Wilier, CYCLEHEART, SURLY, JAMIS, Tyrell
+GIOS, BASSO, SCOTT, BOMA, BISYA, DELOSA, FELT, CERVELO, CINELLI, Wilier, CYCLEHEART, SURLY, JAMIS, Tyrell
+
+**取扱終了**: LAPIERRE（2026-07-19確認。現行のブランド一覧・診断・新規記事には載せない。過去記事は当時の記録として残す）
 
 **電動バイク**: デイトナ
 **電動キックボード**: VERACITY, デイトナ

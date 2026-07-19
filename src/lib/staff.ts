@@ -77,7 +77,6 @@ export const staffMembers: Staff[] = [
     ],
     bikes: [
       { name: "SCOTT ADDICT RC 10", image: "/images/staff/nishii-bike-scott.jpg" },
-      { name: "LAPIERRE XELIUS SL ULTIMATE", image: "/images/staff/nishii-bike-lapierre.jpg" },
       { name: "macchi オーダーバイク", image: "/images/staff/nishii-bike-macchi.jpg" },
     ],
     certifications: ["自転車技士", "自転車安全運転整備士"],
