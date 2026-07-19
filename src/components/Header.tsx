@@ -31,6 +31,7 @@ export default function Header() {
                 height={60}
                 className="h-8 sm:h-10 md:h-12 lg:h-14 w-auto"
                 priority
+                loading="eager"
               />
             </Link>
 

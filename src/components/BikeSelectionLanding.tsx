@@ -7,12 +7,22 @@ import styles from "./CyclewearLanding.module.css";
 
 const bikeBrands = [
   {
+    name: "macchi cycles",
+    origin: "SHIGA / JAPAN",
+    title: "乗る人から、一本のかたちが生まれる。",
+    text: "体の寸法、走りたい道、好きな色。信楽の工房で、対話から仕立てるオーダークロモリです。",
+    image: "/images/staff/nishii-bike-macchi.jpg",
+    alt: "cycleZスタッフが乗るmacchi cyclesのオーダーフレーム",
+    featured: true,
+  },
+  {
     name: "BISYA",
     origin: "JAPAN",
     title: "憧れを、走り出せる景色へ。",
     text: "カーボンロードを、まだ遠い存在のままにしない。乗り手の最初の一歩にまっすぐなブランドです。",
     image: "/images/brands/bisya-spirit.jpg",
     alt: "BISYAの名が刻まれたカーボンフレーム",
+    featured: false,
   },
   {
     name: "ORBEA",
@@ -21,6 +31,7 @@ const bikeBrands = [
     text: "速さだけで終わらない。色も、用途も、自分の感性へ引き寄せていく一台を。",
     image: "/images/posts/orbea-brand/hero.jpg",
     alt: "展示されたORBEAのロードバイク",
+    featured: false,
   },
   {
     name: "SURLY",
@@ -29,7 +40,22 @@ const bikeBrands = [
     text: "街から旅へ、舗装路からその先へ。使い込むほど、自分の暮らしに馴染んでいきます。",
     image: "/images/blog/surly-clubride-2026-06/loaded-touring.jpg",
     alt: "旅仕様に組まれたSURLYの自転車",
+    featured: false,
   },
+] as const;
+
+const otherBikeBrands = [
+  { name: "GIOS", origin: "ITALY" },
+  { name: "BASSO", origin: "ITALY" },
+  { name: "SCOTT", origin: "SWITZERLAND" },
+  { name: "BOMA", origin: "JAPAN" },
+  { name: "FELT", origin: "U.S.A." },
+  { name: "CERVELO", origin: "CANADA" },
+  { name: "CINELLI", origin: "ITALY" },
+  { name: "Wilier", origin: "ITALY" },
+  { name: "CYCLEHEART", origin: "JAPAN" },
+  { name: "JAMIS", origin: "U.S.A." },
+  { name: "Tyrell", origin: "JAPAN" },
 ] as const;
 
 const experiencePoints = [
@@ -59,7 +85,7 @@ export function BikeSelectionLanding() {
               <span className={styles.heroAccent}>画面の外で。</span>
             </h1>
             <p className={styles.heroLead}>
-              De Rosa、BISYA、ORBEA、SURLY、MATE.BIKE。
+              De Rosa、macchi cycles、BISYA、ORBEA、SURLY、MATE.BIKE。
               <br className="hidden sm:block" />
               名前ではなく、これからの走りから選ぶ。
             </p>
@@ -71,7 +97,7 @@ export function BikeSelectionLanding() {
             </div>
 
             <a href="#bike-brands" className={styles.jumpLink}>
-              5つの個性を見る
+              6つの個性を見る
               <span aria-hidden="true">↓</span>
             </a>
             <Link href="/select" className={styles.gatewayLink}>
@@ -87,6 +113,7 @@ export function BikeSelectionLanding() {
               alt="De Rosa IDOLのロードバイク"
               fill
               priority
+              loading="eager"
               sizes="(max-width: 900px) 100vw, 58vw"
               className={styles.bikeHeroImage}
             />
@@ -121,19 +148,23 @@ export function BikeSelectionLanding() {
       <section className={styles.bikeBrandSection} aria-labelledby="bike-brand-grid-title">
         <div className={styles.sectionInner}>
           <div className={styles.sectionHeading} data-bike-reveal>
-            <p>FOUR MORE WAYS TO RIDE</p>
+            <p>FIVE MORE WAYS TO RIDE</p>
             <h2 id="bike-brand-grid-title">同じ自転車でも、<br />見たい景色は違う。</h2>
           </div>
 
           <div className={styles.bikeBrandGrid}>
             {bikeBrands.map((brand) => (
-              <article key={brand.name} className={styles.bikeBrandCard} data-bike-reveal>
+              <article
+                key={brand.name}
+                className={`${styles.bikeBrandCard} ${brand.featured ? styles.macchiBrandCard : ""}`}
+                data-bike-reveal
+              >
                 <div className={styles.bikeBrandPhoto}>
                   <Image
                     src={brand.image}
                     alt={brand.alt}
                     fill
-                    sizes="(max-width: 760px) 100vw, 50vw"
+                    sizes={brand.featured ? "(max-width: 900px) 100vw, 60vw" : "(max-width: 760px) 100vw, 50vw"}
                     className={styles.coverImage}
                   />
                 </div>
@@ -179,6 +210,29 @@ export function BikeSelectionLanding() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className={styles.allBikeBrandsSection} aria-labelledby="all-bike-brands-title">
+        <div className={styles.sectionInner}>
+          <div className={`${styles.sectionHeading} ${styles.allBikeBrandsHeading}`} data-bike-reveal>
+            <p>OTHER BRANDS</p>
+            <h2 id="all-bike-brands-title">ほかの選択肢も、<br />ここから探せる。</h2>
+            <span>上で紹介した6ブランド以外にも、幅広い車体・フレームをご相談いただけます。</span>
+          </div>
+
+          <div className={styles.allBikeBrandsGrid}>
+            {otherBikeBrands.map((brand) => (
+              <article key={brand.name} className={styles.allBikeBrand} data-bike-reveal>
+                <span>{brand.origin}</span>
+                <h3>{brand.name}</h3>
+              </article>
+            ))}
+          </div>
+
+          <p className={styles.allBikeBrandsNote} data-bike-reveal>
+            車種・サイズ・展示状況は時期により変わります。気になるブランドは来店前にご確認ください。
+          </p>
         </div>
       </section>
 

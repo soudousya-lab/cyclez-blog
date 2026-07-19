@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "/bikes" },
   title: "気になるロードバイク・e-BIKEを実物から選ぶ",
   description:
-    "De Rosa、BISYA、ORBEA、SURLY、MATE.BIKE。ロード、グラベル、e-BIKEを、これからの走り方から選ぶcycleZの車体セレクト。",
+    "De Rosa、macchi cycles、BISYA、ORBEA、SURLY、MATE.BIKEを中心に、cycleZの全取扱ブランドをこれからの走り方から選ぶ車体セレクト。",
   openGraph: {
     type: "website",
     url: "/bikes",
     title: "気になる一台を、画面の外で。｜cycleZ",
-    description: "De Rosa、BISYA、ORBEA、SURLY、MATE.BIKE。名前ではなく、これからの走りから選ぶ。",
+    description: "De Rosa、macchi cycles、BISYA、ORBEA、SURLY、MATE.BIKEを中心に、全取扱ブランドを確認できます。",
     images: [
       {
         url: "/images/posts/derosa-wheel-2026-07/idol-white.jpg",

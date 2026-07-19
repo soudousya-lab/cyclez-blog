@@ -11,7 +11,7 @@ const choices = [
     label: "BIKES",
     title: "乗りたい一台を探す。",
     text: "ロード、グラベル、e-BIKE。ブランドの背景も、実物の佇まいも見比べる。",
-    brands: "MATE.BIKE / De Rosa / BISYA / ORBEA / SURLY",
+    brands: "De Rosa / macchi cycles / BISYA / ORBEA / SURLY / MATE.BIKE",
     image: "/images/posts/derosa-wheel-2026-07/idol-white.jpg",
     alt: "De Rosa IDOLのロードバイク",
     imageMode: "contain",
