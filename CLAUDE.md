@@ -538,7 +538,7 @@ public/images/
 ## ブランドガイドライン（最重要）
 
 ### 取扱ブランド（承認済み）
-GIOS, BASSO, SCOTT, BOMA, BISYA, De Rosa, FELT, CERVELO, CINELLI, Wilier, CYCLEHEART, SURLY, JAMIS, Tyrell, macchi cycles
+GIOS, BASSO, SCOTT, BOMA, BISYA, De Rosa, FELT, CERVELO, CINELLI, Wilier, CYCLEHEART, SURLY, JAMIS, Tyrell, macchi cycles, MATE.BIKE
 
 ### 取扱終了ブランド
 **LAPIERRE** — 2026-07-19にオーナー確認で取扱終了。現行のブランド一覧・診断・新規記事には載せない。過去記事で当時扱っていた事実は書き換えない。
@@ -547,8 +547,9 @@ GIOS, BASSO, SCOTT, BOMA, BISYA, De Rosa, FELT, CERVELO, CINELLI, Wilier, CYCLEH
 SPECIALIZED, COLNAGO, TREK, CANNONDALE, BIANCHI, GIANT
 
 ### アパレル承認
-Isadore, Assos, ALBA OPTICS, beruf baggage, GIRO（プレミアム系）
-STEMDESIGN, rin project（カジュアル系）
+Isadore, Assos, PEdALED, ALBA OPTICS, beruf baggage, GIRO（プレミアム系）
+STEM DESIGN, rin project（カジュアル系）
+**831ソーイング** — デニム縫製を得意とする職人が一点ずつ手作りする、cycleZオリジナルのデニムサイクルアパレル。
 
 **CLUB RIDE（期間限定・2026年7月〜8月いっぱいの委託販売）**
 恒久の「取扱ブランド」として書かない。記事に出す時は必ず委託販売の期間を明記する。
