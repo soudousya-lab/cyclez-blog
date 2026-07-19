@@ -12,6 +12,7 @@ import { ArticleJsonLd, FaqJsonLd } from "@/components/JsonLd";
 import { AuthorProfile } from "@/components/AuthorProfile";
 import { getStaffBySlug } from "@/lib/staff";
 import EventRegistrationForm from "@/components/EventRegistrationForm";
+import { DerosaEventLanding } from "@/components/DerosaEventLanding";
 import { FaMapMarkerAlt, FaBus, FaUtensils, FaBicycle, FaCheckCircle, FaTimesCircle, FaExclamationTriangle, FaMountain, FaWrench, FaPenAlt, FaLightbulb, FaUser, FaUsers, FaCamera } from "react-icons/fa";
 import { MdPedalBike } from "react-icons/md";
 
@@ -643,6 +644,28 @@ export default async function PostPage({ params }: Props) {
     notFound();
   }
 
+  // 記事の文字数を概算（HTML除去）
+  const wordCount = post.content.replace(/<[^>]*>/g, "").replace(/\s+/g, "").length;
+
+  // Meta広告の遷移先はURLを変えず、イベント情報を短時間で把握できる専用表示にする。
+  if (post.slug === "derosa-wheel-test-ride-2026-07-18") {
+    return (
+      <>
+        <ArticleJsonLd
+          title={post.title}
+          description={post.description || post.title}
+          slug={post.slug}
+          date={post.date}
+          image={post.image}
+          category={post.category}
+          wordCount={wordCount}
+          authorSlug={post.author}
+        />
+        <DerosaEventLanding />
+      </>
+    );
+  }
+
   const formattedDate = post.date
     ? format(new Date(post.date), "yyyy年MM月dd日", { locale: ja })
     : "";
@@ -652,9 +675,6 @@ export default async function PostPage({ params }: Props) {
   const relatedPosts = allPosts
     .filter((p) => p.slug !== post.slug)
     .slice(0, 3);
-
-  // 記事の文字数を概算（HTML除去）
-  const wordCount = post.content.replace(/<[^>]*>/g, "").replace(/\s+/g, "").length;
 
   // 著者情報の取得（frontmatterにauthorがあればスタッフ情報を参照）
   const authorStaff = post.author ? getStaffBySlug(post.author) : null;
