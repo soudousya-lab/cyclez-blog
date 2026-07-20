@@ -1562,3 +1562,75 @@
     display: none;
   }
 }
+
+/* ブランドカード（ロゴ＋名前＋公式リンク）— /select のブランドタイル用に追加 */
+.brandGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 14px;
+  margin-top: 40px;
+}
+
+.brandCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 24px 16px 18px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 20, 15, 0.08);
+  border-radius: 14px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.brandCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgba(17, 20, 15, 0.09);
+  border-color: rgba(17, 20, 15, 0.18);
+}
+
+.brandLogo {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 46px;
+}
+
+.brandLogoImg {
+  object-fit: contain;
+  object-position: center;
+}
+
+.brandName {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #17140f;
+  text-align: center;
+}
+
+.brandTag {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #9a988f;
+  text-align: center;
+}
+
+.brandMoreCard {
+  background: transparent;
+  border-style: dashed;
+  border-color: rgba(17, 20, 15, 0.2);
+}
+
+.brandMoreCard:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.brandMoreCard .brandName {
+  color: #9a988f;
+  font-weight: 500;
+}

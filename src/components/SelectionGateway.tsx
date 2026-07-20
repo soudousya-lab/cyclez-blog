@@ -5,20 +5,20 @@ import Link from "next/link";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 import styles from "./CyclewearLanding.module.css";
 
-// いま棚に並んでいるもの（承認ブランドのみ・全部は見せず末尾を未完で締める）
-// CLUB RIDE は期間限定・委託販売（2026年8月末まで）＝ラベルに期間を明記。9/1以降は要見直し。
-const rackItems = [
-  { label: "WEAR", name: "ASSOS" },
-  { label: "WEAR", name: "Isadore" },
-  { label: "WEAR", name: "PEdALED" },
-  { label: "EVERYDAY", name: "STEM DESIGN" },
-  { label: "EVERYDAY", name: "rin project" },
-  { label: "DENIM", name: "831ソーイング" },
-  { label: "HELMET", name: "GIRO" },
-  { label: "EYEWEAR", name: "ALBA OPTICS" },
-  { label: "BAG", name: "beruf baggage" },
-  { label: "委託 〜2026/8末", name: "CLUB RIDE" },
-  { label: "AND MORE", name: "…ほか、店内に。" },
+// いま棚に並んでいるもの（承認ブランドのみ・ロゴ＋公式リンク付き）。末尾は未完タイルで締める（Zeigarnik）。
+// ロゴは公式/正規代理店から取得しローカル保存（public/images/brands/・ホットリンクしない）。
+// CLUB RIDE は期間限定・委託販売（2026年8月末まで）＝tagに期間明記。9/1以降は要見直し。
+const apparelBrands = [
+  { name: "ASSOS", tag: "WEAR", logo: "/images/brands/assos.png", href: "https://www.cog.inc/assos", external: true },
+  { name: "Isadore", tag: "WEAR", logo: "/images/brands/isadore.png", href: "https://isadore.com/", external: true },
+  { name: "PEdALED", tag: "WEAR", logo: "/images/brands/pedaled.png", href: "https://cogtokyo.com/pages/pedaled", external: true },
+  { name: "STEM DESIGN", tag: "EVERYDAY", logo: "/images/brands/stem.png", href: "https://www.stem-design.net/", external: true },
+  { name: "rin project", tag: "EVERYDAY", logo: "/images/brands/rin.png", href: "https://www.rinproject.com/", external: true },
+  { name: "831ソーイング", tag: "cycleZ ORIGINAL", logo: "/images/logo/logo.png", href: "#denim", external: false },
+  { name: "GIRO", tag: "HELMET", logo: "/images/brands/giro.png", href: "https://www.cog.inc/giro/", external: true },
+  { name: "ALBA OPTICS", tag: "EYEWEAR", logo: "/images/brands/albaoptics.png", href: "https://www.tokyolife.co.jp/brand/albaoptics/", external: true },
+  { name: "beruf baggage", tag: "BAG", logo: "/images/brands/beruf.png", href: "https://berufbaggage.com/", external: true },
+  { name: "CLUB RIDE", tag: "委託 〜2026/8末", logo: "/images/brands/clubride.png", href: "https://ride2rock.jp/brands/club-ride/", external: true },
 ] as const;
 
 // 画面では分からないもの（実物性・自己投影）
@@ -35,18 +35,40 @@ const revisitPoints = [
   { title: "CLUB RIDEは8月末まで", text: "期間限定・委託販売。店頭に並ぶのは2026年8月末までの取り扱いです。" },
 ] as const;
 
-// 車体は最下部に控えめ（主役化しない・詳細は /bikes へ）
+// 車体は最下部に控えめ（主役化しない・詳細は /bikes へ）。ロゴ＋公式/正規代理店リンク付き。
 const bikeBrands = [
-  { name: "De Rosa", origin: "ITALY" },
-  { name: "macchi cycles", origin: "SHIGA / JAPAN" },
-  { name: "ORBEA", origin: "BASQUE COUNTRY" },
-  { name: "SURLY", origin: "U.S.A." },
-  { name: "GIOS", origin: "ITALY" },
-  { name: "BASSO", origin: "ITALY" },
-  { name: "SCOTT", origin: "SWITZERLAND" },
-  { name: "Wilier", origin: "ITALY" },
-  { name: "MATE.BIKE", origin: "COPENHAGEN" },
+  { name: "De Rosa", tag: "ITALY", logo: "/images/brands/derosa.png", href: "https://www.derosa.jp/", external: true },
+  { name: "macchi cycles", tag: "SHIGA / JAPAN", logo: "/images/brands/macchi.png", href: "/lineup/macchi", external: false },
+  { name: "ORBEA", tag: "BASQUE COUNTRY", logo: "/images/brands/orbea.png", href: "https://www.orbea.com/ja-jp/", external: true },
+  { name: "SURLY", tag: "U.S.A.", logo: "/images/brands/surly.png", href: "https://ride2rock.jp/newbrand/surly/", external: true },
+  { name: "GIOS", tag: "ITALY", logo: "/images/brands/gios.png", href: "https://www.job-cycles.com/gios/", external: true },
+  { name: "BASSO", tag: "ITALY", logo: "/images/brands/basso.png", href: "https://www.job-cycles.com/basso/", external: true },
+  { name: "SCOTT", tag: "SWITZERLAND", logo: "/images/brands/scott.png", href: "https://www.scott-japan.com/", external: true },
+  { name: "Wilier", tag: "ITALY", logo: "/images/brands/wilier.png", href: "https://wilier-jpn.com/", external: true },
+  { name: "MATE.BIKE", tag: "COPENHAGEN", logo: "/images/brands/mate.png", href: "https://mate-bike.jp/", external: true },
 ] as const;
+
+// ブランドカード（ロゴ＋名前＋公式リンク）。外部は別タブ、内部はNext Link。
+function BrandCard({ brand }: { brand: { name: string; tag: string; logo: string; href: string; external: boolean } }) {
+  const inner = (
+    <>
+      <span className={styles.brandLogo}>
+        <Image src={brand.logo} alt={brand.name} fill sizes="160px" className={styles.brandLogoImg} />
+      </span>
+      <span className={styles.brandName}>{brand.name}</span>
+      <span className={styles.brandTag}>{brand.tag}</span>
+    </>
+  );
+  return brand.external ? (
+    <a href={brand.href} target="_blank" rel="noopener noreferrer" className={styles.brandCard} data-select-reveal>
+      {inner}
+    </a>
+  ) : (
+    <Link href={brand.href} className={styles.brandCard} data-select-reveal>
+      {inner}
+    </Link>
+  );
+}
 
 export function SelectionGateway() {
   const pageRef = useScrollReveal<HTMLDivElement>(
@@ -114,13 +136,13 @@ export function SelectionGateway() {
             <span>ウェア、シューズ、ヘルメット、アイウェア、バッグ、そして831ソーイングのデニムまで。名前を挙げきれない分は、店内に。</span>
           </div>
 
-          <div className={styles.allBikeBrandsGrid}>
-            {rackItems.map((item) => (
-              <article key={item.name} className={styles.allBikeBrand} data-select-reveal>
-                <span>{item.label}</span>
-                <h3>{item.name}</h3>
-              </article>
+          <div className={styles.brandGrid}>
+            {apparelBrands.map((brand) => (
+              <BrandCard key={brand.name} brand={brand} />
             ))}
+            <div className={`${styles.brandCard} ${styles.brandMoreCard}`} data-select-reveal>
+              <span className={styles.brandName}>…ほか、店内に。</span>
+            </div>
           </div>
         </div>
       </section>
@@ -170,7 +192,7 @@ export function SelectionGateway() {
       </section>
 
       {/* 05 831デニム：cycleZオリジナル（ここでしか） */}
-      <section className={styles.denimSection} aria-labelledby="denim-title">
+      <section id="denim" className={styles.denimSection} aria-labelledby="denim-title">
         <p className={styles.denimWord} aria-hidden="true">831</p>
         <div className={styles.denimInner} data-select-reveal>
           <div className={styles.denimLabel}>
@@ -214,12 +236,9 @@ export function SelectionGateway() {
             <span>ロード、グラベル、e-BIKE。ウェアを見に来たついでに、実物の一台も。</span>
           </div>
 
-          <div className={styles.allBikeBrandsGrid}>
+          <div className={styles.brandGrid}>
             {bikeBrands.map((brand) => (
-              <article key={brand.name} className={styles.allBikeBrand} data-select-reveal>
-                <span>{brand.origin}</span>
-                <h3>{brand.name}</h3>
-              </article>
+              <BrandCard key={brand.name} brand={brand} />
             ))}
           </div>
 
