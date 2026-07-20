@@ -25,6 +25,17 @@ const nextConfig: NextConfig = {
         destination: "/category/アパレル",
         permanent: true,
       },
+      // /cyclewear を /select に統合（2026-07-20）。KWカニバリ/重複ページ解消。
+      {
+        source: "/cyclewear",
+        destination: "/select",
+        permanent: true,
+      },
+      {
+        source: "/cyclewear/",
+        destination: "/select",
+        permanent: true,
+      },
       // 取扱終了ブランドの旧ガイドは現行ラインナップへ集約（2026-07-19）
       {
         source: "/lineup/lapierre",

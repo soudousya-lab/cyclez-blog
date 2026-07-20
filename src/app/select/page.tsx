@@ -3,20 +3,20 @@ import { SelectionGateway } from "@/components/SelectionGateway";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/select" },
-  title: "車体とサイクルウェアを実物から選ぶ",
+  title: "サイクルウェア・ヘルメット・シューズ・小物を実物から選ぶ",
   description:
-    "ロードバイク、グラベル、e-BIKEとサイクルウェアを一つの店で。気になる車体と着たい一着から、cycleZのセレクトを見られます。",
+    "サイクルウェア、シューズ、ヘルメット、アイウェアや小物まで。STEM DESIGN、rin project、ASSOS、Isadore、PEdALED、GIRO、831ソーイングなどを岡山のcycleZで実物から選べます。車体もあわせてご覧いただけます。",
   openGraph: {
     type: "website",
     url: "/select",
-    title: "乗りたい。着てみたい。その気持ちから選ぶ。｜cycleZ",
-    description: "車体も、ウェアも、画面の中だけで決めない。気になる方からcycleZのセレクトへ。",
+    title: "この店の棚は、文字にしきれない。｜cycleZ",
+    description: "ウェア、シューズ、ヘルメット、アイウェア、バッグ、デニムまで。名前を並べても書ききれない品揃えを、岡山・島田本町のcycleZ店頭で。見るだけでもどうぞ。",
     images: [
       {
         url: "/images/cyclewear/cyclewear-hero.jpg",
         width: 2400,
         height: 1339,
-        alt: "cycleZ店内の車体とサイクルウェア",
+        alt: "cycleZ店内に並ぶサイクルウェアとヘルメット",
       },
     ],
   },

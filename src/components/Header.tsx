@@ -166,7 +166,7 @@ export default function Header() {
             </li>
             <li>
               <Link href="/select" className="block px-5 py-4 text-sm text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50 transition-colors border-b-2 border-transparent hover:border-[#c41e3a]">
-                車体・ウェア
+                ウェア・車体
               </Link>
             </li>
             <li>
@@ -189,7 +189,7 @@ export default function Header() {
             <Link href="/fitting" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">フィッティング</Link>
             <Link href="/about" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">CycleZとは？</Link>
             <Link href="/about/staff" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">スタッフ紹介</Link>
-            <Link href="/select" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">車体・ウェア</Link>
+            <Link href="/select" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">ウェア・車体</Link>
             <Link href="/faq" onClick={() => setIsMenuOpen(false)} className="px-6 py-3 text-gray-700 hover:text-[#c41e3a] hover:bg-gray-50">よくある質問</Link>
             <div className="px-6 py-4 border-t mt-2">
               <Link

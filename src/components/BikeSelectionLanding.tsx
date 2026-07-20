@@ -264,8 +264,8 @@ export function BikeSelectionLanding() {
               車体・試乗を電話で確認
               <span aria-hidden="true">↗</span>
             </a>
-            <Link href="/cyclewear" className={styles.secondaryAction}>
-              アパレルを見る
+            <Link href="/select" className={styles.secondaryAction}>
+              ウェア・小物を見る
               <span aria-hidden="true">→</span>
             </Link>
           </div>
