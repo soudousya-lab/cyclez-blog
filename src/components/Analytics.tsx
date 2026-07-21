@@ -63,9 +63,12 @@ export const pageview = (url: string) => {
     const pageLocation = url.startsWith("http")
       ? url
       : `${window.location.origin}${url}`;
-    window.gtag("config", GA_MEASUREMENT_ID, {
+    // SPA遷移でPVを飛ばすには gtag('event','page_view') を使う。
+    // gtag('config') はページ初回のみPVを出し、再呼び出しでは出さない（＝遷移が計測されないバグの原因）。
+    window.gtag("event", "page_view", {
       page_path: url,
       page_location: pageLocation,
+      page_title: document.title,
     });
   }
 };
@@ -814,7 +817,7 @@ export default function Analytics() {
                 gtag('config', '${GA_MEASUREMENT_ID}', {
                   page_path: window.location.pathname + window.location.search,
                   page_location: window.location.href,
-                  send_page_view: true
+                  send_page_view: false
                 });
                 ${GOOGLE_ADS_TAG_ID ? `gtag('config', '${GOOGLE_ADS_TAG_ID}');` : ''}
               `,
