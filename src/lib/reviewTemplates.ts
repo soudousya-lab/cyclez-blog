@@ -106,65 +106,66 @@ export const experienceOptions: { key: ExperienceKey; label: string }[] = [
 
 // ─── テンプレートデータ ─────────────────────────────────────
 
-const pick = <T>(arr: T[]): T => arr[Math.floor(Math.random() * arr.length)];
+const pickForVariant = <T>(arr: T[], variantIndex: number, offset = 0): T =>
+  arr[(variantIndex + offset) % arr.length];
 
 // 来店きっかけ別の導入フレーズ
 const triggerPhrases: Record<Exclude<TriggerKey, "skip">, string[]> = {
   nearby: [
-    "近所で自転車屋さんを探していて、",
-    "岡山駅の近くで見つけて、",
+    "近所で自転車屋さんを探していたときに、cycleZさんを見つけました。",
+    "岡山駅の近くで自転車店を探していて、cycleZさんを知りました。",
   ],
   reputation: [
-    "Googleの口コミ評価が高かったので、",
-    "ネットで評判が良かったので、",
+    "Googleの口コミ評価が高く、気になっていたcycleZさんへ行きました。",
+    "ネットで評判が良かったので、cycleZさんを訪ねました。",
   ],
   referral: [
-    "友人に紹介してもらって、",
-    "知人のすすめで、",
+    "友人に紹介してもらい、cycleZさんへ行きました。",
+    "知人にすすめてもらったことがきっかけで、cycleZさんを訪ねました。",
   ],
   interested: [
-    "前から気になっていたので、",
-    "以前から通りかかるたびに気になっていて、",
+    "以前から気になっていたcycleZさんへ、今回初めて伺いました。",
+    "通りかかるたびに気になっていたので、cycleZさんへ行ってみました。",
   ],
 };
 
 // 来店目的別の導入文
 const openings: Record<PurposeKey, string[]> = {
   purchase: [
-    "自転車の購入でcycleZさんにお世話になりました。",
-    "新しい自転車を探していて、岡山のcycleZさんに伺いました。",
-    "自転車を買いにcycleZさんへ。",
-    "ずっと欲しかった自転車を買いにcycleZさんに行ってきました！",
+    "今回は自転車の購入でお世話になりました。",
+    "新しい自転車を探していて、購入の相談をしました。",
+    "自転車を買うために伺いました。",
+    "欲しかった自転車を探しに伺いました。",
   ],
   maintenance: [
-    "メンテナンスでcycleZさんにお世話になりました。",
-    "愛車のメンテナンスをcycleZさんにお願いしました。",
-    "自転車の調子が悪くなり、cycleZさんに持ち込みました。",
-    "なんか変速の調子が悪くて…cycleZさんに駆け込みました。",
+    "今回はメンテナンスでお世話になりました。",
+    "愛車のメンテナンスをお願いしました。",
+    "自転車の調子が悪くなり、修理をお願いしました。",
+    "気になっていた不具合を見てもらいました。",
   ],
   consultation: [
-    "自転車の相談でcycleZさんに伺いました。",
+    "今回は自転車選びの相談で伺いました。",
     "まだ購入は決めていない段階でしたが、相談に乗っていただきました。",
-    "自転車選びの相談で岡山のcycleZさんを訪問しました。",
-    "買うかまだ迷ってたんですが、とりあえず話だけ聞きにcycleZさんへ。",
+    "自転車選びで迷っていたので、相談をお願いしました。",
+    "購入前に話を聞いてみたくて伺いました。",
   ],
   testride: [
     "試乗させていただきました。",
-    "気になっていた自転車の試乗でcycleZさんに伺いました。",
-    "購入前に試乗したくて、cycleZさんへ。",
-    "実際に乗ってみないとわからないので、試乗しにcycleZさんへ行きました。",
+    "気になっていた自転車を試乗しに伺いました。",
+    "購入前に乗り心地を確かめたくて、試乗をお願いしました。",
+    "実際に乗って比較したくて伺いました。",
   ],
   parts: [
-    "パーツの購入でcycleZさんにお世話になりました。",
+    "今回はパーツの購入でお世話になりました。",
     "パーツ選びの相談で伺いました。",
-    "アクセサリーを探しにcycleZさんへ。",
-    "そろそろパーツ替えたいなと思って、cycleZさんに相談しに行きました。",
+    "自転車に合うアクセサリーを探しに伺いました。",
+    "パーツを交換したくて相談しました。",
   ],
   apparel: [
-    "サイクルウェアを買いにcycleZさんに伺いました。",
+    "サイクルウェアを買いに伺いました。",
     "ウェア選びでお世話になりました。",
-    "サイクルアパレルを探しにcycleZさんへ。",
-    "おしゃれなサイクルウェアがあると聞いて、cycleZさんに行ってみました。",
+    "サイクルアパレルを探しに伺いました。",
+    "普段のライドで着るウェアを探しに行きました。",
   ],
 };
 
@@ -368,78 +369,185 @@ const impressionSentences: Record<ImpressionKey, string[]> = {
 // 経験レベルに応じた修飾フレーズ（文頭に追加）
 const experienceModifiers: Record<Exclude<ExperienceKey, "skip">, string[]> = {
   beginner: [
-    "スポーツバイクは初めてでしたが、",
-    "自転車は初心者ですが、",
-    "初めてのスポーツ自転車購入でしたが、",
-    "スポーツバイクのこと何も知らない状態で行ったんですが、",
+    "スポーツバイクは初めてで、わからないことも多い状態でした。",
+    "自転車は初心者なので、少し不安もありました。",
+    "初めてのスポーツ自転車選びで伺いました。",
+    "スポーツバイクの知識がほとんどない状態で相談しました。",
   ],
   returning: [
-    "久しぶりにスポーツバイクに復帰しましたが、",
-    "しばらく自転車から離れていましたが、",
-    "何年かぶりの自転車購入でしたが、",
-    "10年ぶりくらいにまた乗りたくなって、",
+    "久しぶりにスポーツバイクへ復帰するため、相談しました。",
+    "しばらく自転車から離れていたので、少し不安もありました。",
+    "何年かぶりの自転車選びで伺いました。",
+    "久しぶりにまた自転車へ乗りたくなり、相談しました。",
   ],
   experienced: [
-    "長年自転車に乗っていますが、",
-    "他店も利用したことがありますが、",
-    "経験者ですが、",
-    "いろんなショップを回ってきましたが、",
+    "長年自転車に乗っていますが、今回初めて相談しました。",
+    "これまで他店も利用してきましたが、丁寧な対応が印象的でした。",
+    "自転車には長く乗っていますが、新しい発見がありました。",
+    "いくつかのショップを利用してきた中でも、相談しやすいお店でした。",
   ],
 };
 
-// 締めの文
-const closings: string[] = [
-  "また利用させていただきます！",
-  "岡山で自転車を探している方におすすめのお店です。",
-  "友人にも紹介したいと思います。",
-  "次もcycleZさんにお世話になります。",
-  "ありがとうございました！",
-  "これからもかかりつけのお店にしたいです。",
-  "自転車のことならここで間違いないです。",
-  "岡山でスポーツバイクを買うならここだと思います。",
-  "もっと早く来ればよかった！また行きます。",
-  "自転車がもっと好きになりました。ありがとうございます！",
-  "次は友達も連れて行きます！",
+type ReviewVariant = {
+  experiencePlacement: "start" | "after-opening";
+  openingOffset: number;
+  detailOffset: number;
+  impressionOffset: number;
+  closing: string;
+};
+
+// 同じ選択内容から生成する10系統。語調は大きく変えず、構成と各文をずらす。
+const reviewVariants: ReviewVariant[] = [
+  {
+    experiencePlacement: "start",
+    openingOffset: 0,
+    detailOffset: 0,
+    impressionOffset: 0,
+    closing: "また利用したいと思います。",
+  },
+  {
+    experiencePlacement: "after-opening",
+    openingOffset: 0,
+    detailOffset: 0,
+    impressionOffset: 0,
+    closing: "次回もcycleZさんにお願いしたいです。",
+  },
+  {
+    experiencePlacement: "start",
+    openingOffset: 1,
+    detailOffset: 0,
+    impressionOffset: 0,
+    closing: "これからもお世話になりたいお店です。",
+  },
+  {
+    experiencePlacement: "after-opening",
+    openingOffset: 1,
+    detailOffset: 1,
+    impressionOffset: 0,
+    closing: "また自転車のことで相談したいと思います。",
+  },
+  {
+    experiencePlacement: "start",
+    openingOffset: 2,
+    detailOffset: 1,
+    impressionOffset: 1,
+    closing: "安心してお願いできるお店だと思います。",
+  },
+  {
+    experiencePlacement: "after-opening",
+    openingOffset: 2,
+    detailOffset: 1,
+    impressionOffset: 1,
+    closing: "岡山で自転車店を探している方にもおすすめしたいです。",
+  },
+  {
+    experiencePlacement: "start",
+    openingOffset: 3,
+    detailOffset: 2,
+    impressionOffset: 1,
+    closing: "今後も何かあれば相談したいです。",
+  },
+  {
+    experiencePlacement: "after-opening",
+    openingOffset: 3,
+    detailOffset: 2,
+    impressionOffset: 2,
+    closing: "また伺いたいと思います。",
+  },
+  {
+    experiencePlacement: "start",
+    openingOffset: 0,
+    detailOffset: 2,
+    impressionOffset: 2,
+    closing: "これからも長く付き合っていきたいお店です。",
+  },
+  {
+    experiencePlacement: "after-opening",
+    openingOffset: 1,
+    detailOffset: 3,
+    impressionOffset: 2,
+    closing: "自転車のことを相談できるお店が見つかって良かったです。",
+  },
 ];
+
+export const REVIEW_VARIANT_COUNT = reviewVariants.length;
 
 // ─── 生成関数 ────────────────────────────────────────────
 
-export function generateReview(selections: ReviewSelections): string {
+export function generateReview(
+  selections: ReviewSelections,
+  variantIndex = Math.floor(Math.random() * REVIEW_VARIANT_COUNT),
+): string {
+  const normalizedVariantIndex =
+    ((variantIndex % REVIEW_VARIANT_COUNT) + REVIEW_VARIANT_COUNT) % REVIEW_VARIANT_COUNT;
+  const variant = reviewVariants[normalizedVariantIndex];
   const parts: string[] = [];
+  const experienceText =
+    selections.experience === "skip"
+      ? null
+      : pickForVariant(
+          experienceModifiers[selections.experience],
+          normalizedVariantIndex,
+        );
 
-  // 1. 経験レベルの修飾（文頭）
-  if (selections.experience !== "skip") {
-    if (Math.random() > 0.3) {
-      parts.push(pick(experienceModifiers[selections.experience]));
-    }
+  if (experienceText && variant.experiencePlacement === "start") {
+    parts.push(experienceText);
   }
 
-  // 2. 来店きっかけ + 導入文
   if (selections.trigger !== "skip") {
-    parts.push(pick(triggerPhrases[selections.trigger]));
+    parts.push(
+      pickForVariant(
+        triggerPhrases[selections.trigger],
+        normalizedVariantIndex,
+      ),
+    );
   }
-  parts.push(pick(openings[selections.purpose]));
+  parts.push(
+    pickForVariant(
+      openings[selections.purpose],
+      normalizedVariantIndex,
+      variant.openingOffset,
+    ),
+  );
 
-  // 3. 具体的な内容
+  if (experienceText && variant.experiencePlacement === "after-opening") {
+    parts.push(experienceText);
+  }
+
   const detailTexts = detailSentences[selections.detail];
   if (detailTexts) {
-    parts.push(pick(detailTexts));
+    parts.push(
+      pickForVariant(
+        detailTexts,
+        normalizedVariantIndex,
+        variant.detailOffset,
+      ),
+    );
   }
 
-  // 4. 良かった点
-  parts.push(pick(impressionSentences[selections.impression]));
+  parts.push(
+    pickForVariant(
+      impressionSentences[selections.impression],
+      normalizedVariantIndex,
+      variant.impressionOffset,
+    ),
+  );
 
-  // 5. 自由記入
   if (selections.freetext.trim()) {
     let ft = selections.freetext.trim();
-    if (!ft.endsWith("。") && !ft.endsWith("！") && !ft.endsWith("!")) {
+    if (
+      !ft.endsWith("。") &&
+      !ft.endsWith("！") &&
+      !ft.endsWith("!") &&
+      !ft.endsWith("？") &&
+      !ft.endsWith("?")
+    ) {
       ft += "。";
     }
     parts.push(ft);
   }
 
-  // 6. 締め
-  parts.push(pick(closings));
+  parts.push(variant.closing);
 
   return parts.join("");
 }

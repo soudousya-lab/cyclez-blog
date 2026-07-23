@@ -35,6 +35,7 @@ import {
   impressionOptions,
   experienceOptions,
   generateReview,
+  REVIEW_VARIANT_COUNT,
   type TriggerKey,
   type PurposeKey,
   type ImpressionKey,
@@ -78,6 +79,22 @@ type Step = "trigger" | "purpose" | "detail" | "impression" | "experience" | "fr
 
 const STEP_ORDER: Step[] = ["trigger", "purpose", "detail", "impression", "experience", "freetext", "preview"];
 const TOTAL_STEPS = 6; // プレビューは含まない
+const VARIANT_INDEXES = Array.from({ length: REVIEW_VARIANT_COUNT }, (_, index) => index);
+
+const createVariantOrder = (previousVariant?: number): number[] => {
+  const order = [...VARIANT_INDEXES];
+
+  for (let index = order.length - 1; index > 0; index -= 1) {
+    const randomIndex = Math.floor(Math.random() * (index + 1));
+    [order[index], order[randomIndex]] = [order[randomIndex], order[index]];
+  }
+
+  if (previousVariant !== undefined && order[0] === previousVariant) {
+    [order[0], order[1]] = [order[1], order[0]];
+  }
+
+  return order;
+};
 
 const stepTitles: Record<Step, string> = {
   trigger: "ご来店のきっかけは？",
@@ -104,6 +121,8 @@ export default function ReviewGenerator() {
 
   // 生成されたレビュー
   const [reviewText, setReviewText] = useState("");
+  const [variantOrder, setVariantOrder] = useState<number[]>([]);
+  const [variantPosition, setVariantPosition] = useState(-1);
 
   const currentStepIndex = STEP_ORDER.indexOf(step);
 
@@ -123,7 +142,7 @@ export default function ReviewGenerator() {
   }, [step, goToStep]);
 
   // レビュー生成
-  const doGenerate = useCallback(() => {
+  const generateVariant = useCallback((variantIndex: number) => {
     if (!purpose || !detail || !impression) return;
     const selections: ReviewSelections = {
       trigger,
@@ -133,8 +152,15 @@ export default function ReviewGenerator() {
       experience,
       freetext,
     };
-    setReviewText(generateReview(selections));
-  }, [purpose, detail, impression, experience, freetext]);
+    setReviewText(generateReview(selections, variantIndex));
+  }, [trigger, purpose, detail, impression, experience, freetext]);
+
+  const handleCreate = useCallback(() => {
+    const nextOrder = createVariantOrder();
+    setVariantOrder(nextOrder);
+    setVariantPosition(0);
+    generateVariant(nextOrder[0]);
+  }, [generateVariant]);
 
   // コピー処理
   const handleCopy = useCallback(async () => {
@@ -156,8 +182,20 @@ export default function ReviewGenerator() {
 
   // 再生成
   const handleRegenerate = useCallback(() => {
-    doGenerate();
-  }, [doGenerate]);
+    const nextPosition = variantPosition + 1;
+
+    if (nextPosition < variantOrder.length) {
+      setVariantPosition(nextPosition);
+      generateVariant(variantOrder[nextPosition]);
+      return;
+    }
+
+    const previousVariant = variantOrder[variantPosition];
+    const nextOrder = createVariantOrder(previousVariant);
+    setVariantOrder(nextOrder);
+    setVariantPosition(0);
+    generateVariant(nextOrder[0]);
+  }, [generateVariant, variantOrder, variantPosition]);
 
   // 最初からやり直し
   const handleReset = useCallback(() => {
@@ -168,6 +206,8 @@ export default function ReviewGenerator() {
     setExperience("skip");
     setFreetext("");
     setReviewText("");
+    setVariantOrder([]);
+    setVariantPosition(-1);
     setCopied(false);
     goToStep("trigger");
   }, [goToStep]);
@@ -341,7 +381,7 @@ export default function ReviewGenerator() {
             <p className="text-xs text-gray-400 text-right">{freetext.length} / 50</p>
             <button
               onClick={() => {
-                doGenerate();
+                handleCreate();
                 goToStep("preview");
               }}
               className="w-full p-4 bg-[#c41e3a] text-white rounded-xl text-base font-bold hover:bg-[#a3182f] transition-colors active:bg-[#8a1428]"
@@ -350,7 +390,7 @@ export default function ReviewGenerator() {
             </button>
             <button
               onClick={() => {
-                doGenerate();
+                handleCreate();
                 goToStep("preview");
               }}
               className="w-full text-center text-sm text-gray-400 py-1 hover:text-gray-600"
