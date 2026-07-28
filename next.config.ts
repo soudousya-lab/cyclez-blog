@@ -94,6 +94,20 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+  async headers() {
+    return [
+      {
+        // Next.js/Vercelのビルド資産(JS/CSSチャンク)はデプロイ毎に内容ハッシュでURLが変わり、
+        // さらに ?dpl=デプロイID が付くため、Googleが「クロール済み-インデックス未登録」として
+        // 累積記録する（2026-07時点で約1,102件・デプロイの度に増加）。これらは検索結果に出す
+        // 対象ではないので X-Robots-Tag: noindex を明示し、薄いコンテンツ誤検知を止める。
+        // robots.txt の Disallow と違いクロール自体は許可されるので、Googleのレンダリング
+        // (WRS)には影響しない。/_next/image（画像最適化）は対象外なので画像検索は無傷。
+        source: "/_next/static/:path*",
+        headers: [{ key: "X-Robots-Tag", value: "noindex" }],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
