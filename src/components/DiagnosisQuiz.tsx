@@ -6,6 +6,7 @@ import Link from "next/link";
 import { MdDirectionsBike } from "react-icons/md";
 import { FaBicycle, FaRoad, FaMountain, FaFlagCheckered, FaCity } from "react-icons/fa";
 import { capturePostHogEvent } from "./PostHogProvider";
+import { trackCTAClick } from "./Analytics";
 import { summerCampaign } from "@/data/summerCampaign";
 
 // ─── 計測ヘルパー（GA4 + PostHog 並行送信。PIIは送らない＝回答カテゴリのみ）──
@@ -592,6 +593,7 @@ export default function DiagnosisQuiz() {
                 {bikes.length > 6
                   ? `ほかにも${bikes.length - 6}台のおすすめがあります`
                   : "タップでメーカーサイトへ"}
+                <span className="block mt-1">実車は店頭でご覧いただけます</span>
               </p>
               {bikes.length > 6 && (
                 <div className="text-center mt-2">
@@ -603,25 +605,78 @@ export default function DiagnosisQuiz() {
             </div>
           )}
 
-          {/* CTAボタン */}
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Link
-              href="/contact"
-              onClick={() =>
-                trackDiagnosis("diagnosis_cta_click", {
-                  cta_type: "trial",
-                  result_type: resultType,
-                  result_name: result.name,
-                  recommended_bikes: bikes.join(", "),
-                })
-              }
-              className="flex-1 inline-flex items-center justify-center gap-2 bg-[#c41e3a] text-white font-bold py-4 px-6 rounded-lg hover:bg-[#a31830] transition-colors text-center"
-            >
-              店舗で試乗する
-            </Link>
+          {/* 次の一歩＝来店・相談（診断結果を店頭へ持ち込む導線）
+              電話/問い合わせは trackCTAClick 経由で cta_click・phone_call も発火させ、
+              サイト全体の来店リード計測と同じ土俵に乗せる（診断由来CVを分離できる）。*/}
+          <div className="bg-white rounded-xl border-2 border-[#c41e3a] overflow-hidden">
+            <div className="bg-[#c41e3a] px-5 py-3">
+              <h3 className="text-white font-bold text-base">
+                この結果を持って、店頭でご相談ください
+              </h3>
+            </div>
+            <div className="px-5 py-5">
+              <p className="text-sm text-gray-600 leading-relaxed mb-4">
+                サイズや乗り心地は、実際にまたがってみるのが一番わかります。試乗車をご用意しているので、
+                診断結果の画面をそのまま見せていただければ、目的や予算に合わせてご提案します。
+                在庫・試乗車の状況はお電話でご確認いただけます。
+              </p>
+              <div className="grid gap-3 sm:grid-cols-3">
+                <a
+                  href="tel:086-252-7744"
+                  onClick={() => {
+                    trackDiagnosis("diagnosis_cta_click", {
+                      cta_type: "phone",
+                      result_type: resultType,
+                      result_name: result.name,
+                      recommended_bikes: bikes.join(", "),
+                    });
+                    trackCTAClick("phone", "/diagnosis", "diagnosis_result", "電話で相談する");
+                  }}
+                  className="inline-flex flex-col items-center justify-center gap-0.5 bg-[#c41e3a] text-white font-bold py-4 px-4 rounded-lg hover:bg-[#a31830] transition-colors text-center"
+                >
+                  <span>電話で相談する</span>
+                  <span className="text-xs font-normal opacity-90">086-252-7744</span>
+                </a>
+                <Link
+                  href="/access"
+                  onClick={() =>
+                    trackDiagnosis("diagnosis_cta_click", {
+                      cta_type: "access",
+                      result_type: resultType,
+                      result_name: result.name,
+                      recommended_bikes: bikes.join(", "),
+                    })
+                  }
+                  className="inline-flex flex-col items-center justify-center gap-0.5 bg-white text-gray-800 font-bold py-4 px-4 rounded-lg border-2 border-gray-300 hover:border-[#c41e3a] hover:text-[#c41e3a] transition-colors text-center"
+                >
+                  <span>店舗の場所を見る</span>
+                  <span className="text-xs font-normal text-gray-500">岡山市北区島田本町</span>
+                </Link>
+                <Link
+                  href="/contact"
+                  onClick={() => {
+                    trackDiagnosis("diagnosis_cta_click", {
+                      cta_type: "contact_form",
+                      result_type: resultType,
+                      result_name: result.name,
+                      recommended_bikes: bikes.join(", "),
+                    });
+                    trackCTAClick("contact_form", "/diagnosis", "diagnosis_result", "メールで相談する");
+                  }}
+                  className="inline-flex flex-col items-center justify-center gap-0.5 bg-white text-gray-800 font-bold py-4 px-4 rounded-lg border-2 border-gray-300 hover:border-[#c41e3a] hover:text-[#c41e3a] transition-colors text-center"
+                >
+                  <span>メールで相談する</span>
+                  <span className="text-xs font-normal text-gray-500">24時間受付</span>
+                </Link>
+              </div>
+              <p className="text-xs text-gray-400 mt-3 text-center">11:00〜19:00 ／ 水曜定休</p>
+            </div>
+          </div>
+
+          <div className="text-center mt-5">
             <button
               onClick={handleRestart}
-              className="flex-1 inline-flex items-center justify-center gap-2 bg-white text-gray-700 font-bold py-4 px-6 rounded-lg border-2 border-gray-300 hover:border-[#c41e3a] hover:text-[#c41e3a] transition-colors"
+              className="text-sm text-gray-300 underline underline-offset-4 hover:text-white transition-colors"
             >
               もう一度診断する
             </button>
