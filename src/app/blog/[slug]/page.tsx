@@ -15,6 +15,11 @@ import EventRegistrationForm from "@/components/EventRegistrationForm";
 import { DerosaEventLanding } from "@/components/DerosaEventLanding";
 import { FaMapMarkerAlt, FaBus, FaUtensils, FaBicycle, FaCheckCircle, FaTimesCircle, FaExclamationTriangle, FaMountain, FaWrench, FaPenAlt, FaLightbulb, FaUser, FaUsers, FaCamera } from "react-icons/fa";
 import { MdPedalBike } from "react-icons/md";
+// 本文画像の実寸法マニフェスト（プリビルドで生成）。サーバーコンポーネントでのみ import するため
+// 巨大JSONはクライアントに送られない。next/image に width/height を渡しレイアウトシフトを防ぐ。
+import imageDimensions from "@/data/blog-image-dimensions.json";
+
+const IMG_DIMS: Record<string, { w: number; h: number }> = imageDimensions;
 
 // インライン絵文字 → react-iconsマッピング（段落・引用・リスト・テーブル等で使用）
 const INLINE_EMOJI_ICONS: Record<string, ReactElement> = {
@@ -565,11 +570,14 @@ function formatContent(content: string): ReactElement[] {
         );
         continue;
       }
+      const dims = IMG_DIMS[src];
       elements.push(
         <figure key={`img-${keyIndex++}`} className="my-8">
           <ImageLightbox
             src={src}
             alt={alt}
+            width={dims?.w}
+            height={dims?.h}
             className="w-full max-w-2xl mx-auto rounded-lg shadow-sm"
           />
           {alt && (
@@ -709,7 +717,7 @@ export default async function PostPage({ params }: Props) {
           <article className="bg-white rounded-2xl shadow-sm p-6 md:p-10">
             {/* カバー画像。next/image を通さないと元画像が原寸のまま配信されLCPを直撃する */}
             {post.image && post.image !== "/logo.png" && (
-              <div className="mb-8 -mx-6 -mt-6 md:-mx-10 md:-mt-10 relative aspect-[16/9]">
+              <div className="mb-8 -mx-6 -mt-6 md:-mx-10 md:-mt-10 relative aspect-[16/9] bg-gray-100 rounded-t-2xl overflow-hidden">
                 <Image
                   src={post.image}
                   alt={post.title}

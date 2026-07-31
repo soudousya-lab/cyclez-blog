@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/lint-article.mjs --new",
+    "prebuild": "node scripts/gen-image-dimensions.mjs && node scripts/lint-article.mjs --new",
     "build": "next build",
+    "gen:image-dims": "node scripts/gen-image-dimensions.mjs",
     "start": "next start",
     "lint": "eslint",
     "lint:article": "node scripts/lint-article.mjs",
