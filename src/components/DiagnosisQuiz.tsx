@@ -623,6 +623,7 @@ export default function DiagnosisQuiz() {
               <div className="grid gap-3 sm:grid-cols-3">
                 <a
                   href="tel:086-252-7744"
+                  data-cta-tracked="1"
                   onClick={() => {
                     trackDiagnosis("diagnosis_cta_click", {
                       cta_type: "phone",
@@ -654,6 +655,7 @@ export default function DiagnosisQuiz() {
                 </Link>
                 <Link
                   href="/contact"
+                  data-cta-tracked="1"
                   onClick={() => {
                     trackDiagnosis("diagnosis_cta_click", {
                       cta_type: "contact_form",
