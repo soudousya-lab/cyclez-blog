@@ -25,6 +25,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // 固定ページ
   const staticPages: MetadataRoute.Sitemap = [
+    // ブログ記事一覧（1ページ目のみ。?page=2 以降は noindex なので載せない）
+    {
+      url: `${BASE_URL}/blog`,
+      lastModified: posts[0]?.date ? new Date(posts[0].date) : updatedAt,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
     { url: `${BASE_URL}/about`, lastModified: updatedAt, changeFrequency: 'monthly' as const, priority: 0.7 },
     { url: `${BASE_URL}/about/greeting`, lastModified: updatedAt, changeFrequency: 'monthly' as const, priority: 0.5 },
     { url: `${BASE_URL}/first`, lastModified: updatedAt, changeFrequency: 'monthly' as const, priority: 0.7 },
