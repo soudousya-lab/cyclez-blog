@@ -32,6 +32,10 @@ const POSTS_DIR = join(ROOT, 'content/posts');
 
 // ──────────── ルール定義 ────────────
 
+// 決め台詞（2026-08-22 岡田指示・全媒体共通）。この日付以降の記事だけ検査する
+const ZEEETO_CANONICAL = 'ゼーーーット！！';
+const ZEEETO_SINCE = '2026-08-22';
+
 const FORBIDDEN_PHRASES = [
   '特別な', 'アドレナリン', '新たな発見',
   'もはや', '圧倒的な', '最高の体験', '究極の', '革命的',
@@ -307,6 +311,28 @@ function lintArticle(filePath) {
     warnings.push(`E: 文字数 ${charCount}字 (目標 ${TARGET_MIN_CHARS}〜${TARGET_MAX_CHARS}字超過)`);
   } else {
     info.push(`E: 文字数 ${charCount}字 ✓`);
+  }
+
+  // A2. 決め台詞（2026-08-22 岡田指示・全媒体共通）
+  //     2026-08-22 以降の記事だけを対象にする。それ以前の既存記事（400本超）には適用しない。
+  //     店名「サイクルゼット」は伸ばし棒0なので /ゼー{2,}ット/ には当たらない。
+  const articleDate = getFrontmatterValue(frontmatter, 'date');
+  if (articleDate && articleDate >= ZEEETO_SINCE) {
+    const zHits = countOccurrences(body, /ゼー{2,}ット[！!]*/);
+    if (zHits.length === 0) {
+      warnings.push(`A2: 決め台詞「${ZEEETO_CANONICAL}」が無い（冒頭1文・締め1文に入れる）`);
+    } else if (zHits.length === 1) {
+      warnings.push(`A2: 決め台詞が1回だけ（冒頭1文・締め1文の計2文にする）`);
+    } else if (zHits.length > 2) {
+      warnings.push(`A2: 決め台詞が${zHits.length}回（冒頭と締めの計2文まで。乱発すると決め台詞が安くなる）`);
+    }
+    const wrong = zHits.filter(h => h !== ZEEETO_CANONICAL);
+    if (wrong.length) {
+      warnings.push(`A2: 決め台詞の表記ゆれ「${[...new Set(wrong)].join('」「')}」→「${ZEEETO_CANONICAL}」に統一（伸ばし棒3つ・全角！2つ）`);
+    }
+    if (zHits.length >= 1 && wrong.length === 0 && zHits.length <= 2) {
+      info.push(`A2: 決め台詞 ${zHits.length}箇所 ✓`);
+    }
   }
 
   // F. WP残骸

@@ -776,6 +776,8 @@ export default async function PostPage({ params }: Props) {
                   capacity={post.capacity || 0}
                   eventDate={post.event_date || ''}
                   paymentDueLabel={post.payment_due_label}
+                  organizers={post.organizers}
+                  companionNote={post.companion_note}
                 />
               </div>
             )}

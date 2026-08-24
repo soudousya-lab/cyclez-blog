@@ -11,6 +11,8 @@ capacity: 30
 registration_open: true
 event_date: "2026-05-17"
 payment_due_label: "前日（5月16日）までにcycleZ店頭にてお支払いください。"
+organizers: "cycleZ・稲荷交通"
+companion_note: "バス・拝観・昼食つき ¥8,000（自転車不要）。お席に余裕があるためお電話で承ります。"
 # 申込先は主告知記事と統合（同一イベント・1つの申込枠）
 registration_event_slug: "bus-and-cycling-harima-2026"
 ---

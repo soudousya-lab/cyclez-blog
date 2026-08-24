@@ -77,6 +77,11 @@ export interface PostData {
   registration_open?: boolean;
   event_date?: string;
   payment_due_label?: string;
+  // 免責事項に出す主催者名（未指定時は cycleZ 単独扱い）
+  organizers?: string;
+  // 「自転車に乗らず同乗のみ」枠の案内文。イベントごとに条件・金額が違うので
+  // 指定が無い記事ではフォームに枠自体を出さない（前回の金額が残ると誤案内になる）
+  companion_note?: string;
   // 申込フォームを別記事のイベントに紐付けたい場合に指定（再告知記事など）
   registration_event_slug?: string;
 }
@@ -116,6 +121,8 @@ export function getAllPosts(): PostData[] {
         registration_open: data.registration_open,
         event_date: data.event_date,
         payment_due_label: data.payment_due_label,
+        organizers: data.organizers,
+        companion_note: data.companion_note,
         registration_event_slug: data.registration_event_slug,
       };
     })
@@ -148,6 +155,8 @@ export function getPostBySlug(slug: string): PostData | null {
       registration_open: data.registration_open,
       event_date: data.event_date,
       payment_due_label: data.payment_due_label,
+      organizers: data.organizers,
+      companion_note: data.companion_note,
       registration_event_slug: data.registration_event_slug,
     };
   } catch {

@@ -12,6 +12,10 @@ interface Props {
   capacity: number;
   eventDate: string;
   paymentDueLabel?: string;
+  /** 免責事項に出す主催者名。未指定なら cycleZ 単独 */
+  organizers?: string;
+  /** 「乗らずに同乗のみ」枠の案内文。未指定ならこの枠を出さない（イベントごとに金額・条件が違う） */
+  companionNote?: string;
 }
 
 function formatDiff(targetMs: number, nowMs: number): { days: number; hours: number; passed: boolean } {
@@ -35,6 +39,8 @@ export default function EventRegistrationForm({
   capacity,
   eventDate,
   paymentDueLabel,
+  organizers,
+  companionNote,
 }: Props) {
   const pairEnabled = !!pairPrice && pairPrice > 0;
 
@@ -343,19 +349,19 @@ export default function EventRegistrationForm({
         </div>
       )}
 
-      {/* 同伴・問合せ案内 */}
-      <div className="mb-5 bg-blue-50 border border-blue-200 rounded-lg px-4 py-3 text-sm text-blue-900">
-        <p className="font-bold mb-1">ご家族・配偶者で「乗らずに同乗のみ」も可能です</p>
-        <p className="text-xs leading-relaxed">
-          バス・拝観・昼食つき <strong>¥8,000</strong>（自転車不要）。お席に余裕があるためお電話で承ります。
-        </p>
-        <a
-          href="tel:086-252-7744"
-          className="mt-2 inline-flex items-center gap-2 bg-white border border-blue-300 text-blue-800 font-bold text-sm px-3 py-1.5 rounded-md hover:bg-blue-100 transition-colors"
-        >
-          <FaPhoneAlt size={12} /> 086-252-7744
-        </a>
-      </div>
+      {/* 同伴・問合せ案内（イベント側で companion_note を指定した記事だけ表示） */}
+      {companionNote && (
+        <div className="mb-5 bg-blue-50 border border-blue-200 rounded-lg px-4 py-3 text-sm text-blue-900">
+          <p className="font-bold mb-1">ご家族・配偶者で「乗らずに同乗のみ」も可能です</p>
+          <p className="text-xs leading-relaxed">{companionNote}</p>
+          <a
+            href="tel:086-252-7744"
+            className="mt-2 inline-flex items-center gap-2 bg-white border border-blue-300 text-blue-800 font-bold text-sm px-3 py-1.5 rounded-md hover:bg-blue-100 transition-colors"
+          >
+            <FaPhoneAlt size={12} /> 086-252-7744
+          </a>
+        </div>
+      )}
 
       {/* サマリーカード */}
       <div className="bg-gray-50 rounded-lg p-4 mb-6 flex items-center gap-4">
@@ -653,7 +659,7 @@ export default function EventRegistrationForm({
         <div className="bg-amber-50 border border-amber-200 rounded-lg p-4">
           <p className="text-sm font-bold text-gray-800 mb-2">免責事項</p>
           <p className="text-xs text-gray-700 leading-relaxed mb-3">
-            本イベントは参加者ご自身の責任のもとでご参加いただきます。サイクリング中の事故・怪我・盗難・その他のトラブルについて、主催者（cycleZ・稲荷交通）は一切の責任を負いかねます。安全運転と交通法規の遵守をお願いいたします。また、天候やその他やむを得ない事情によるコース変更・中止についても、主催者は責任を負いません。
+            本イベントは参加者ご自身の責任のもとでご参加いただきます。サイクリング中の事故・怪我・盗難・その他のトラブルについて、主催者（{organizers || "cycleZ"}）は一切の責任を負いかねます。安全運転と交通法規の遵守をお願いいたします。また、天候やその他やむを得ない事情によるコース変更・中止についても、主催者は責任を負いません。
           </p>
           <label className="flex items-start gap-3 cursor-pointer group">
             <input
