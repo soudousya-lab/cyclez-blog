@@ -24,7 +24,7 @@ export const summerCampaign = {
   eyebrow: "SUMMER CAMPAIGN",
   badge: "開催中",
   title: "気になった一台、今ならお得に。",
-  lead: "診断で見えてきた一台を、この夏の特価で。対象車は定価から最大18万円超オフ＋お手持ちの自転車を最大3万円で下取りします。",
+  lead: "診断で見えてきた一台を、この夏の特価で。対象車は定価から最大14万円超オフ＋お手持ちの自転車を最大3万円で下取りします。",
   note: "各モデル1台限り・サイズ固定。なくなり次第終了です。価格はすべて税込。",
   tradeInMax: 30000,
   articleSlug: "summer-sale-2026",
@@ -49,6 +49,7 @@ export const summerCampaign = {
       salePrice: 128000,
       image: "/images/blog/summer-sale-2026/gios-panto.jpg",
       alt: "GIOS PANTO。鮮やかなジオスブルーの小径ロード",
+      soldOut: true, // 2026-08-31 売約済み
     },
     {
       brand: "SCOTT",
@@ -95,6 +96,7 @@ export const summerCampaign = {
       salePrice: 428000,
       image: "/images/blog/summer-sale-2026/boma-rasor2.jpg",
       alt: "BOMA RASOR Ⅱ。マットブラックのカーボンレーシングロード",
+      soldOut: true, // 2026-08-31 売約済み
     },
   ] as CampaignBike[],
 };
