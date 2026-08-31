@@ -1,0 +1,2 @@
+# 生成される中間HTML。デザイン確認用で、毎回 gen-review-card.mjs が上書きするのでコミットしない
+review-card.html
