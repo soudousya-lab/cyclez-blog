@@ -180,7 +180,7 @@ GIOS, BASSO, SCOTT, BOMA, BISYA, DELOSA, FELT, CERVELO, CINELLI, Wilier, CYCLEHE
 
 ### アパレルブランド
 
-**カジュアルライン**: STEMDESIGN, rin project, cycleZオリジナル
+**カジュアルライン**: STEMDESIGN, rin project, BELLO CYCLIST（サイクルキャップ。2026-09-01追加）, cycleZオリジナル
 **プレミアムライン**: Isadore, Assos, ALBA OPTICS, beruf baggage, GIRO
 **期間限定**: CLUB RIDE（2026年7〜8月いっぱいの委託販売。恒久の取扱として書かず必ず期間を明記。9/1以降は要見直し）
 
@@ -194,16 +194,18 @@ GIOS, BASSO, SCOTT, BOMA, BISYA, DELOSA, FELT, CERVELO, CINELLI, Wilier, CYCLEHE
 
 **10〜20万円帯（人気モデル）**:
 - GIOS SIERA（ジオス シエラ）
-- BASSO IMOLA（バッソ イモーラ）
 - FELT VR60（フェルト VR60）
+
+**取扱終了**: BASSO IMOLA（2026-09-01オーナー確認でエントリーの取扱終了。BASSOブランド自体は継続。新規記事・おすすめには載せない）
+**20万円台の選択肢**: SCOTT SPEEDSTER 20 ¥220,000（税込・Tiagra・油圧ディスク・XXS(47)〜L(56)）
 
 **クロスバイク・フラットバーロード（10万円以下）**:
 - GIOS AMPIO（ジオス アンピーオ）— 約65,000〜68,000円。クロモリ×フラットバー×1×8速。ドロップハンドル化も可能。若者・通学層に強い
 
 **小柄な方向け**:
 - GIOS SIERA / FENICE（XXSサイズあり）
-- BASSO IMOLA（450サイズ：157-162cm対応）
-- Wilier（日本限定XXSサイズ展開あり）
+- BISYA TAMON（XXSとMの2サイズ。車体¥76,900税込。小柄な方・ジュニア向けに作られたモデル）
+- Wilier（ブレンタ・GTRチームがXXS〜XLの6サイズ）
 
 ---
 

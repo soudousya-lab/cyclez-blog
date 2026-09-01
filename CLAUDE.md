@@ -548,7 +548,8 @@ SPECIALIZED, COLNAGO, TREK, CANNONDALE, BIANCHI, GIANT
 
 ### アパレル承認
 Isadore, Assos, PEdALED, ALBA OPTICS, beruf baggage, GIRO（プレミアム系）
-STEM DESIGN, rin project（カジュアル系）
+STEM DESIGN, rin project, BELLO CYCLIST（カジュアル系）
+**BELLO CYCLIST（ベロサイクリスト）** — 2026-09-01にオーナー確認で追加。現時点で確認できている取扱いは**サイクルキャップ**のみ（他アイテムは未確認なので書かない）。記事 `women-cycling-wear-guide-2026` の全身写真で初出。
 **831ソーイング** — デニム縫製を得意とする職人が一点ずつ手作りする、cycleZオリジナルのデニムサイクルアパレル。
 
 **CLUB RIDE（期間限定・2026年7月〜8月いっぱいの委託販売）**
