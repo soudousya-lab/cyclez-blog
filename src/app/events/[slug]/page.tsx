@@ -110,17 +110,17 @@ export default async function EventRegistrationPage({
           </h1>
           <p className="text-sm text-gray-700 leading-relaxed">{post.description}</p>
 
+          {/* 定員は表に出さない（2026-09-07 岡田指示）。frontmatter の capacity は
+              サーバー側の受付上限としてだけ使う。 */}
           <dl className="mt-6 grid grid-cols-2 gap-3 text-sm">
             <div className="bg-gray-50 rounded-lg px-4 py-3">
               <dt className="text-xs text-gray-500">参加費</dt>
               <dd className="font-bold text-gray-900">無料</dd>
             </div>
-            {post.capacity ? (
-              <div className="bg-gray-50 rounded-lg px-4 py-3">
-                <dt className="text-xs text-gray-500">定員</dt>
-                <dd className="font-bold text-gray-900">{post.capacity}名</dd>
-              </div>
-            ) : null}
+            <div className="bg-gray-50 rounded-lg px-4 py-3">
+              <dt className="text-xs text-gray-500">開催日</dt>
+              <dd className="font-bold text-gray-900">{formattedDate}</dd>
+            </div>
           </dl>
         </div>
 

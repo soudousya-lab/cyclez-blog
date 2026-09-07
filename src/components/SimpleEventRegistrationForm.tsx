@@ -169,37 +169,20 @@ export default function SimpleEventRegistrationForm({
     );
   }
 
-  const remainingSeats = capacityInfo?.remaining ?? null;
-  const isLowSeats = remainingSeats !== null && remainingSeats <= 5 && remainingSeats > 0;
-  const isSoldOut = remainingSeats === 0;
+  // 残席は「受付を締め切ったかどうか」の判定にだけ使う。数字は画面に出さない。
+  // 取得に失敗したとき（null）は締切扱いにしない＝申し込みを止めない。
+  const isSoldOut = capacityInfo?.remaining === 0;
 
   return (
     <div className="bg-white rounded-xl border-2 border-[#c41e3a] p-6 md:p-8">
-      {/* 残席バナー */}
-      <div className="-mx-6 -mt-6 md:-mx-8 md:-mt-8 mb-6 rounded-t-xl overflow-hidden">
-        <div className="bg-gradient-to-r from-[#c41e3a] to-[#a01830] text-white px-5 py-3 flex flex-wrap items-center justify-between gap-2">
-          <div className="flex items-center gap-2 text-sm font-bold">
-            <span className="inline-flex items-center justify-center w-8 h-8 bg-white/20 rounded-full">
-              <FaTicketAlt size={14} />
-            </span>
-            {remainingSeats === null ? (
-              <span>申込状況を確認中…</span>
-            ) : isSoldOut ? (
-              <span>定員に達しました</span>
-            ) : (
-              <span>
-                残り <span className="text-2xl mx-1">{remainingSeats}</span> 名 / 定員
-                {capacityInfo?.total ?? capacity}名
-              </span>
-            )}
+      {/* 受付を締め切ったときだけ帯を出す。定員・残席の数字は表に出さない（2026-09-07 岡田指示） */}
+      {isSoldOut && (
+        <div className="-mx-6 -mt-6 md:-mx-8 md:-mt-8 mb-6 rounded-t-xl overflow-hidden">
+          <div className="bg-gradient-to-r from-[#c41e3a] to-[#a01830] text-white px-5 py-3 text-sm font-bold">
+            現在は受付を締め切っています
           </div>
-          {isLowSeats && (
-            <span className="text-xs font-bold bg-amber-300 text-amber-900 px-2 py-1 rounded-full">
-              まもなく締切
-            </span>
-          )}
         </div>
-      </div>
+      )}
 
       <div className="text-center mb-6">
         <h3 className="flex items-center justify-center gap-2 text-xl font-bold text-gray-900 mb-2">
@@ -308,7 +291,7 @@ export default function SimpleEventRegistrationForm({
               処理中...
             </span>
           ) : isSoldOut ? (
-            "定員に達しました"
+            "受付を締め切りました"
           ) : (
             "申し込む"
           )}
