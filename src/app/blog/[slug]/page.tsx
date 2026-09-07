@@ -12,6 +12,7 @@ import { ArticleJsonLd, FaqJsonLd } from "@/components/JsonLd";
 import { AuthorProfile } from "@/components/AuthorProfile";
 import { getStaffBySlug } from "@/lib/staff";
 import EventRegistrationForm from "@/components/EventRegistrationForm";
+import SimpleEventRegistrationForm from "@/components/SimpleEventRegistrationForm";
 import { DerosaEventLanding } from "@/components/DerosaEventLanding";
 import { FaMapMarkerAlt, FaBus, FaUtensils, FaBicycle, FaCheckCircle, FaTimesCircle, FaExclamationTriangle, FaMountain, FaWrench, FaPenAlt, FaLightbulb, FaUser, FaUsers, FaCamera } from "react-icons/fa";
 import { MdPedalBike } from "react-icons/md";
@@ -765,8 +766,23 @@ export default async function PostPage({ params }: Props) {
               {formatContent(post.content)}
             </div>
 
-            {/* イベント申込フォーム */}
-            {post.registration_open && post.price && (
+            {/* イベント申込フォーム。
+                registration_mode: "simple" は氏名+電話のみ（参加費無料・自走集合のイベント）、
+                それ以外は price を持つ記事だけ従来のツアー用フォームを出す。 */}
+            {post.registration_open && post.registration_mode === "simple" && (
+              <div id="register" className="mt-10 pt-8 border-t-2 border-[#c41e3a]">
+                <SimpleEventRegistrationForm
+                  eventSlug={post.registration_event_slug || post.slug}
+                  eventTitle={post.title}
+                  capacity={post.capacity || 0}
+                  eventDate={post.event_date || ''}
+                  onSiteCostNote={post.onsite_cost_note}
+                  completionNote={post.completion_note}
+                  organizers={post.organizers}
+                />
+              </div>
+            )}
+            {post.registration_open && post.registration_mode !== "simple" && post.price && (
               <div id="register" className="mt-10 pt-8 border-t-2 border-[#c41e3a]">
                 <EventRegistrationForm
                   eventSlug={post.registration_event_slug || post.slug}

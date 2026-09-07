@@ -84,6 +84,18 @@ export interface PostData {
   companion_note?: string;
   // 申込フォームを別記事のイベントに紐付けたい場合に指定（再告知記事など）
   registration_event_slug?: string;
+  // 申込フォームの入力項目。
+  // 'full'（既定）= バス＆サイクリングツアー用（自転車の種類・ブレーキ・支払い方法まで聞く）
+  // 'simple'      = 氏名と電話番号だけ。参加費無料・自走集合のイベント用（price が無くても申込を受ける）
+  registration_mode?: 'simple' | 'full';
+  // registration_mode: 'simple' のときだけ使う。
+  // 参加費以外に当日かかる実費の案内（フォーム上部に出す）
+  onsite_cost_note?: string;
+  // 申込完了後に出す当日の案内（集合時間・場所など）
+  completion_note?: string;
+  // 申込ページ（/events/<slug>）に出す当日の流れ。"07:30|cycleZ集合" のように
+  // 時刻と内容を | で区切る。告知記事の本文表と同じ内容を短くしたもの
+  event_schedule?: string[];
 }
 
 export function getAllPosts(): PostData[] {
@@ -124,6 +136,10 @@ export function getAllPosts(): PostData[] {
         organizers: data.organizers,
         companion_note: data.companion_note,
         registration_event_slug: data.registration_event_slug,
+        registration_mode: data.registration_mode,
+        onsite_cost_note: data.onsite_cost_note,
+        completion_note: data.completion_note,
+        event_schedule: data.event_schedule,
       };
     })
     .filter((post) => post.date <= today);
@@ -158,6 +174,10 @@ export function getPostBySlug(slug: string): PostData | null {
       organizers: data.organizers,
       companion_note: data.companion_note,
       registration_event_slug: data.registration_event_slug,
+      registration_mode: data.registration_mode,
+      onsite_cost_note: data.onsite_cost_note,
+      completion_note: data.completion_note,
+      event_schedule: data.event_schedule,
     };
   } catch {
     return null;
