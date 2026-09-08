@@ -87,11 +87,11 @@ Two characters (chain and tire) standing on a riverside path. The tire character
 
 ```bash
 # チェーンくん（シーン1）
-node ~/開発プロジェクト/03_FIREFITNESS/firefitness-lp/scripts/generate-reel-audio.mjs "なぁタイヤくん、最近グラベルグラベルゆう客が増えとるんじゃけど、ありゃ何なん？" --output chain-gravel-01.mp3 --speed 1.8
+node ~/開発プロジェクト/11_FIREFITNESS/firefitness-lp/scripts/generate-reel-audio.mjs "なぁタイヤくん、最近グラベルグラベルゆう客が増えとるんじゃけど、ありゃ何なん？" --output chain-gravel-01.mp3 --speed 1.8
 
 # タイヤくん（シーン1）
-node ~/開発プロジェクト/03_FIREFITNESS/firefitness-lp/scripts/generate-reel-audio.mjs "ワシのことじゃが！！" --output tire-gravel-01.mp3 --speed 1.8
+node ~/開発プロジェクト/11_FIREFITNESS/firefitness-lp/scripts/generate-reel-audio.mjs "ワシのことじゃが！！" --output tire-gravel-01.mp3 --speed 1.8
 
 # チェーンくん（シーン5 CTA）
-node ~/開発プロジェクト/03_FIREFITNESS/firefitness-lp/scripts/generate-reel-audio.mjs "迷うとる人は、サイクルゼットで両方乗り比べてみんちゃい！" --output chain-gravel-cta.mp3 --speed 1.8
+node ~/開発プロジェクト/11_FIREFITNESS/firefitness-lp/scripts/generate-reel-audio.mjs "迷うとる人は、サイクルゼットで両方乗り比べてみんちゃい！" --output chain-gravel-cta.mp3 --speed 1.8
 ```

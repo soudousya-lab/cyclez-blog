@@ -132,40 +132,40 @@ Character waves enthusiastically with both arms, big grin, slight bounce. No spe
 ## 音声生成コマンド（一括）
 
 ```bash
-cd ~/開発プロジェクト/cycleZ/reel-audio
+cd ~/開発プロジェクト/12_cycleZ/reel-audio
 
 # シーン1
-node ~/開発プロジェクト/03_FIREFITNESS/firefitness-lp/scripts/generate-reel-audio.mjs \
+node ~/開発プロジェクト/11_FIREFITNESS/firefitness-lp/scripts/generate-reel-audio.mjs \
   "なんでこれで届くん！？通販で買うた自転車、最後の組み立て自分でやらんといけんのよ。" \
   --voice sekishusai --target 10 --speed 1.8 \
   --output cyclez_chain_online_01.mp3
 
 # シーン2
-node ~/開発プロジェクト/03_FIREFITNESS/firefitness-lp/scripts/generate-reel-audio.mjs \
+node ~/開発プロジェクト/11_FIREFITNESS/firefitness-lp/scripts/generate-reel-audio.mjs \
   "ほんでハンドルちょっと斜め、ブレーキ片効き、変速も決まらん。これで走るんけ？危ねぇて。" \
   --voice sekishusai --target 10 --speed 1.8 \
   --output cyclez_chain_online_02.mp3
 
 # シーン3
-node ~/開発プロジェクト/03_FIREFITNESS/firefitness-lp/scripts/generate-reel-audio.mjs \
+node ~/開発プロジェクト/11_FIREFITNESS/firefitness-lp/scripts/generate-reel-audio.mjs \
   "で、半年したらブレーキ効かんようになって、結局店に持ち込むんよ。最初から相談しときゃええんに。" \
   --voice sekishusai --target 10 --speed 1.8 \
   --output cyclez_chain_online_03.mp3
 
 # シーン4
-node ~/開発プロジェクト/03_FIREFITNESS/firefitness-lp/scripts/generate-reel-audio.mjs \
+node ~/開発プロジェクト/11_FIREFITNESS/firefitness-lp/scripts/generate-reel-audio.mjs \
   "最初は2万安く見えても、5年走ったらほぼ一緒。後の調整代、ポジション、保証、全部入れたらな。" \
   --voice sekishusai --target 10 --speed 1.8 \
   --output cyclez_chain_online_04.mp3
 
 # シーン5
-node ~/開発プロジェクト/03_FIREFITNESS/firefitness-lp/scripts/generate-reel-audio.mjs \
+node ~/開発プロジェクト/11_FIREFITNESS/firefitness-lp/scripts/generate-reel-audio.mjs \
   "困ったとき駆け込める場所があるんが一番デカい。これは値段表に載らんやつなんよ。" \
   --voice sekishusai --target 10 --speed 1.8 \
   --output cyclez_chain_online_05.mp3
 
 # シーン6
-node ~/開発プロジェクト/03_FIREFITNESS/firefitness-lp/scripts/generate-reel-audio.mjs \
+node ~/開発プロジェクト/11_FIREFITNESS/firefitness-lp/scripts/generate-reel-audio.mjs \
   "買う前に一回寄ってみてや。岡山駅から自転車で数分、cycleZで待っとるけぇ。" \
   --voice sekishusai --target 10 --speed 1.8 \
   --output cyclez_chain_online_06.mp3

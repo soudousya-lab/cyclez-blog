@@ -20,7 +20,7 @@ Instagramカルーセル 5枚（1080x1350）:
 
 - `public/images/social/surly-clubride-2026-06/story.png` — 参加者募集（朝の集合写真）
 
-> 生成スクリプト: `cycleZ/scripts/generate-ig-surly-clubride.py`（実写真背景＋文字合成。再生成は `python3 scripts/generate-ig-surly-clubride.py`）
+> 生成スクリプト: `12_cycleZ/scripts/generate-ig-surly-clubride.py`（実写真背景＋文字合成。再生成は `python3 scripts/generate-ig-surly-clubride.py`）
 > 旧AI生成版（01-main〜04-clubride / story-main）は実写真版に差し替え済みで削除。
 
 ## Instagram / Threads 本文
