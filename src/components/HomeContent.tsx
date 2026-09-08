@@ -13,6 +13,22 @@ import DiagnosisQuiz from "./DiagnosisQuiz";
 import SummerCampaignSection from "./SummerCampaignSection";
 import { MdPedalBike } from "react-icons/md";
 import SearchIntentAnswer from "./SearchIntentAnswer";
+import { event } from "./Analytics";
+
+// トップページのブランドpill。/lineup の取扱ブランドと同じ並びを保つこと。
+// 自社ページがあるのは CINELLI / BISYA / macchi cycles の3つだけで、残りは /lineup へ送る
+// （2026-09-08: Clarityのトップページ デッドクリック52回のうち30回がこのブランド名だった）。
+const BRAND_PILLS = [
+  "GIOS", "BASSO", "De Rosa", "Wilier", "SCOTT", "CERVELO", "CINELLI",
+  "FELT", "BOMA", "BISYA", "SURLY", "JAMIS", "CYCLEHEART",
+  "Tyrell", "macchi cycles",
+] as const;
+
+const BRAND_HREF: Record<string, string> = {
+  CINELLI: "/lineup/cinelli",
+  BISYA: "/lineup/bisya",
+  "macchi cycles": "/lineup/macchi",
+};
 
 // 回転するホイールSVG（CTA装飾用）
 function SpinningWheel({ className = "" }: { className?: string }) {
@@ -148,17 +164,17 @@ export default function HomeContent({ latestNews, eventPosts, latestPosts }: Hom
             有名すぎない、けれど本物。あなたに似合う一台が、きっと見つかります。
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-2 sm:gap-3">
-            {[
-              "GIOS", "BASSO", "De Rosa", "Wilier", "SCOTT", "CERVELO", "CINELLI",
-              "FELT", "BOMA", "BISYA", "SURLY", "JAMIS", "CYCLEHEART",
-              "Tyrell", "macchi cycles",
-            ].map((b) => (
-              <span
+            {BRAND_PILLS.map((b) => (
+              <Link
                 key={b}
-                className="bg-gray-50 border border-gray-200 text-gray-800 text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full"
+                href={BRAND_HREF[b] ?? "/lineup"}
+                onClick={() =>
+                  event({ action: "brand_click", category: "navigation", label: b })
+                }
+                className="bg-gray-50 border border-gray-200 text-gray-800 text-xs sm:text-sm font-semibold px-3 py-1.5 rounded-full hover:bg-white hover:border-[#c41e3a] hover:text-[#c41e3a] transition-colors"
               >
                 {b}
-              </span>
+              </Link>
             ))}
           </div>
           <div className="mt-7">
