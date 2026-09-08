@@ -162,6 +162,24 @@ function StepIndicator({ currentStep }: { currentStep: number }) {
   );
 }
 
+/**
+ * ⚠️ 未使用。マウントする前に必ず handleSubmit を実装すること。
+ *
+ * 2026-09-08 時点でこのコンポーネントはどこからも import されていない。
+ * 本番の /maintenance/reserve（src/app/maintenance/reserve/page.tsx）は
+ * 電話番号を案内するだけで、このフォームは描画していない。
+ *
+ * **このまま画面に出すと顧客の予約が消える。**
+ * handleSubmit は setIsSubmitted(true) と GA4/PostHog へのイベント送信しかせず、
+ * サーバーへ何も送らないのに、完了画面が「予約リクエストを送信しました」
+ * 「店舗からの折り返し連絡をもって予約確定とさせていただきます」と表示する。
+ * 客は予約できたと信じ、店には何も届かない。
+ *
+ * 使うなら EventRegistrationForm.tsx と同じ形で
+ * POST /api/... を実装してから（あちらは src/app/api/events/register/route.ts が受け口で、
+ * 電話番号の正規化・桁チェック・氏名/電話の長さ制限・二重申込ブロックをサーバー側でやっている。
+ * 予約は PII なので、同等の検証をクライアントではなくサーバーで必ず行うこと）。
+ */
 export default function MaintenanceReserveForm() {
   // フォームの状態管理
   const [currentStep, setCurrentStep] = useState(1);
